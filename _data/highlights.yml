@@ -5,6 +5,8 @@
   AI: "OpenAI 수학 원고 722편 공개 / Anthropic CVP 3단계 확대·Glasswing 통합 / 메타·월마트·스트라이프 Personal Agent Protocol / Lambda 최대 40억 달러 조달 / OpenAI EU 텍스트 워터마크"
   모델: "Mistral Large 4(1T/49B 활성, 이달 말 가중치) / EmbeddingGemma 2(740M 멀티모달 임베딩) / Cantina apex-flash-1(보안 특화 321B) / Nano Banana 2.1 검색 탑재"
   엔진: "EmbeddingGemma 2 day-0(Ollama·llama.cpp·vLLM·SGLang) / Phoronix llama.cpp Vulkan vs ROCm / llama.cpp RPC 텐서 분할·신규 모델 지원"
+  GitHub: "VoiceStudio(주간 +12.0K), paperclip(+6.0K), OpenShell(+5.9K), Agent-Reach(+5.7K), iFixAi(+5.1K) / 일간 rea(+3.0K)·e2e(+1.7K) 등 25개 저장소"
+
 "2026-10-06":
   IT: "미국, 말레이시아·태국행 AI 칩 수출 제한 초안 / 온세미 Qilin 랜섬웨어 등재 / Cloudflare Containers 크로스테넌트 노출 수정 / 인피니언 C2i 인수 / 삼성·SK 영업익 ~180조 vs 투자계획 3200조"
   AI: "OpenAI 1.4조 달러 가치 300억 달러 조달(MGX·블랙록) / Anthropic 11월 9일 주간 IPO 로드쇼(최대 2조 달러) / Cohere North 2 / Collibra×trail ML, Zeta×Senso"
