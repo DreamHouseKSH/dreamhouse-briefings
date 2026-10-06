@@ -1,16 +1,16 @@
-# DreamHouse 브리핑 아카이브 — 목차
+# 문서 — 운영 · 에이전트 안내
 
-> 날짜별 뉴스·GitHub 트렌드 요약 모음 (최신이 위). 각 링크는 GitHub가 마크다운으로 렌더링해서 보여줍니다.
-> 운영 규칙: [WORKFLOW.md](WORKFLOW.md) · 에이전트 핸드오프: [AGENTS.md](../AGENTS.md)
+> 🌐 이 아카이브는 GitHub Pages로 **인터넷에 공개**됩니다: <https://dreamhouseksh.github.io/dreamhouse-briefings/>
+> 날짜별 목록은 사이트가 `news/`, `github/` 폴더를 읽어 **자동으로** 만듭니다. → [전체 아카이브](https://dreamhouseksh.github.io/dreamhouse-briefings/archive/)
 
-| 날짜 (KST) | IT | AI | 모델 | 엔진 | GitHub 트렌드 |
-|---|---|---|---|---|---|
-| 2026-10-06 (화) | [IT](../news/2026-10-06/IT.md) | [AI](../news/2026-10-06/AI.md) | [모델](../news/2026-10-06/모델.md) | [엔진](../news/2026-10-06/엔진.md) | [GitHub](../github/2026-10-06.md) |
+| 문서 | 내용 |
+|---|---|
+| [AGENTS.md](../AGENTS.md) | 에이전트 핸드오프 — 작업 전 필독, 매일 체크리스트 |
+| [WORKFLOW.md](WORKFLOW.md) | 루틴 · 요약 스타일 · 저작권 · Pages 사이트 구조 상세 규칙 |
+| [README (GitHub)](https://github.com/DreamHouseKSH/dreamhouse-briefings#readme) | 저장소 소개 (저장소 자체는 private) |
+| [뉴스 항목 템플릿 (GitHub)](https://github.com/DreamHouseKSH/dreamhouse-briefings/blob/main/templates/news-item.md) | 새 뉴스 항목 작성용 템플릿 |
 
-## 2026-10-06 하이라이트
+## 사이트 바로가기
 
-- **IT:** 미국, 말레이시아·태국행 AI 칩 수출 제한 초안 / 온세미 Qilin 랜섬웨어 등재 / Cloudflare Containers 크로스테넌트 노출 수정 / 인피니언 C2i 인수 / 삼성·SK 영업익 ~180조 vs 투자계획 3200조
-- **AI:** OpenAI 1.4조 달러 가치 300억 달러 조달(MGX·블랙록) / Anthropic 11월 9일 주간 IPO 로드쇼(최대 2조 달러) / Cohere North 2 / Collibra×trail ML, Zeta×Senso
-- **모델:** Reflection Beam(501B/23B MoE, SWE 80.9) / Reka Rho-1(19B 옴니) / interfaze-1-lite
-- **엔진:** Strata / vLLM 0.31 + CVE / llama.cpp 0.6.0 / SGLang 0.5.21 / Ollama MLX RC / 결정 모델 API / KoboldCpp Agent / vllm-metal
-- **GitHub:** VoiceStudio(주간 +14.7K), hindsight(+10.6K), paperclip(+8.7K), OpenShell(+6.0K) 외 25개
+- [홈 (최신 브리핑 + 하이라이트)](https://dreamhouseksh.github.io/dreamhouse-briefings/)
+- 분야별: [IT](https://dreamhouseksh.github.io/dreamhouse-briefings/category/it/) · [AI](https://dreamhouseksh.github.io/dreamhouse-briefings/category/ai/) · [모델](https://dreamhouseksh.github.io/dreamhouse-briefings/category/model/) · [엔진](https://dreamhouseksh.github.io/dreamhouse-briefings/category/engine/) · [GitHub 트렌드](https://dreamhouseksh.github.io/dreamhouse-briefings/category/github/)

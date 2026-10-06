@@ -1,0 +1,75 @@
+# DreamHouse 브리핑 — GitHub Pages (Jekyll, 브랜치 main / 루트(/) 게시)
+title: DreamHouse 브리핑
+description: 평일 아침 IT·AI·모델·엔진 뉴스와 GitHub 트렌드를 날짜별로 쌓는 한국어 요약 아카이브
+lang: ko-KR
+url: https://dreamhouseksh.github.io
+baseurl: /dreamhouse-briefings
+repository: DreamHouseKSH/dreamhouse-briefings
+timezone: Asia/Seoul
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter_opts:
+    disable: true
+
+# 앞머리(front matter) 없는 .md도 페이지로 렌더링하고, .md 링크를 .html로 바꿔줌
+plugins:
+  - jekyll-optional-front-matter
+  - jekyll-relative-links
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+
+relative_links:
+  enabled: true
+  collections: false
+
+titles_from_headings:
+  enabled: true
+  strip_title: false
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# 사이트 메뉴용 분야 정의 (slug, 표시 이름, 파일 이름)
+briefing_sections:
+  - slug: it
+    label: IT
+    file: IT
+    icon: "💻"
+    desc: IT 산업 · 반도체 · 보안
+  - slug: ai
+    label: AI
+    file: AI
+    icon: "🧠"
+    desc: AI 기업 · 투자 · 제품
+  - slug: model
+    label: 모델
+    file: 모델
+    icon: "🧪"
+    desc: 신규 모델 발표
+  - slug: engine
+    label: 엔진
+    file: 엔진
+    icon: "⚙️"
+    desc: 추론 엔진 · 런타임 릴리스
+  - slug: github
+    label: GitHub 트렌드
+    file: github
+    icon: "⭐"
+    desc: 카테고리별 급상승 저장소
+
+exclude:
+  - templates/
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .jekyll-cache/
+
+optional_front_matter:
+  remove_originals: true

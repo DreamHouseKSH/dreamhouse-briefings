@@ -1,0 +1,14 @@
+---
+layout: default
+title: "GitHub 트렌드 브리핑 모아보기"
+section: github
+permalink: /category/github/
+---
+{%- assign cat = site.briefing_sections | where: "slug", "github" | first -%}
+<div class="narrow">
+<header class="page-head">
+  <h1>⭐ GitHub 트렌드</h1>
+  <p>{{ cat.desc }} — 날짜별 목록(최신이 위)</p>
+</header>
+{% include category-list.html slug="github" %}
+</div>

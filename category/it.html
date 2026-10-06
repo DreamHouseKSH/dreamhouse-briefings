@@ -1,0 +1,14 @@
+---
+layout: default
+title: "IT 브리핑 모아보기"
+section: it
+permalink: /category/it/
+---
+{%- assign cat = site.briefing_sections | where: "slug", "it" | first -%}
+<div class="narrow">
+<header class="page-head">
+  <h1>💻 IT</h1>
+  <p>{{ cat.desc }} — 날짜별 목록(최신이 위)</p>
+</header>
+{% include category-list.html slug="it" %}
+</div>

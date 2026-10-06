@@ -1,0 +1,1 @@
+{%- assign _wd = include.date | date: "%w" | plus: 0 -%}{%- assign _days = "일,월,화,수,목,금,토" | split: "," -%}{{ _days[_wd] }}

@@ -4,7 +4,7 @@
 
 ## 이 저장소는 무엇인가
 
-- 사용자(성현 김)에게 평일 아침 전달되는 **IT·AI·모델·엔진 뉴스 브리핑**과 **GitHub 트렌드 브리핑**을 날짜별로 쌓는 **비공개(private) 아카이브**입니다.
+- 사용자(성현 김)에게 평일 아침 전달되는 **IT·AI·모델·엔진 뉴스 브리핑**과 **GitHub 트렌드 브리핑**을 날짜별로 쌓는 아카이브입니다. 저장소는 **private**이지만, 내용은 **GitHub Pages로 인터넷에 공개**됩니다 → https://dreamhouseksh.github.io/dreamhouse-briefings/ (사용자 승인, 2026-10-06)
 - 저장소: https://github.com/DreamHouseKSH/dreamhouse-briefings (private, 기본 브랜치 `main`)
 - 박스(box) 작업 경로: `/workspace/dreamhouse-briefings` — 없으면 `gh repo clone DreamHouseKSH/dreamhouse-briefings`
 - gh 인증 계정: **DreamHouseKSH** (박스에 이미 로그인됨, `gh auth status`로 확인). 다른 계정으로 push하지 마세요.
@@ -27,14 +27,16 @@ news/YYYY-MM-DD/엔진.md     # 추론 엔진(vLLM, llama.cpp, SGLang, Ollama…
 github/YYYY-MM-DD.md       # GitHub 트렌드 (카테고리별 표 + 별 증가량)
 templates/news-item.md     # 뉴스 항목 템플릿
 docs/WORKFLOW.md           # 상세 운영 규칙
-docs/index.md              # 날짜별 목차 (새 날짜 추가 시 갱신!)
+docs/index.md              # 문서 허브 (사이트 /docs/)
+_data/highlights.yml       # 날짜별 하이라이트 한 줄 (새 날짜 추가 시 갱신!)
+_config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/  # Pages 사이트
 ```
 
 ## 매일 해야 할 일 (체크리스트)
 
 1. `cd /workspace/dreamhouse-briefings && git pull --ff-only`
 2. 아침 루틴에서 전달된 브리핑 내용으로 `news/<오늘>/*.md`, `github/<오늘>.md` 작성 (템플릿·스타일은 WORKFLOW 참고)
-3. [`docs/index.md`](docs/index.md) 맨 위에 오늘 날짜 행 추가
+3. `_data/highlights.yml` 맨 위에 오늘 날짜 하이라이트 추가 (날짜 목록·분야 링크는 사이트가 폴더에서 **자동 생성**하므로 목차 표 편집 불필요)
 4. `git add -A && git commit -m "briefings: YYYY-MM-DD news + github trends" && git push origin main`
 
 ## 실행 시각 (KST, 평일)
@@ -45,12 +47,12 @@ docs/index.md              # 날짜별 목차 (새 날짜 추가 시 갱신!)
 | GitHub 트렌드 아카이브 | **08:06** | `github/YYYY-MM-DD.md` |
 | (엔진 다이제스트) | 정오 무렵 전달분 | `news/YYYY-MM-DD/엔진.md` 에 추가/갱신 |
 
-## 열람 방법
+## 열람 방법 (GitHub Pages — 공개)
 
-GitHub Pages는 **사용하지 않습니다**(개인 계정의 private 저장소는 비공개 Pages가 불가 — 자세한 이유는 [`docs/WORKFLOW.md` 6장](docs/WORKFLOW.md#6-열람-방법)). 대신:
-
-- 목차: https://github.com/DreamHouseKSH/dreamhouse-briefings/blob/main/docs/index.md
-- 웹 에디터: https://github.dev/DreamHouseKSH/dreamhouse-briefings (또는 저장소 페이지에서 `.` 키)
+- **사이트:** https://dreamhouseksh.github.io/dreamhouse-briefings/ — 브랜치 `main` / 폴더 `/`(루트), GitHub 기본 Jekyll 빌드. push 후 1~2분 내 반영.
+- ⚠️ **사이트는 인터넷 전체 공개**입니다(저장소는 private). 요약·원문 링크 원칙(저작권)을 더 엄격히 지키고, 공개되면 안 되는 메모·개인정보는 커밋하지 마세요.
+- push 후 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status` → `built` 이면 정상.
+- 사이트 구조 상세: [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 6장.
 
 ## 알려진 공백 / 다음 에이전트에게
 

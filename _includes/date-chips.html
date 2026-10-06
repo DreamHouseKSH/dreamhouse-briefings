@@ -1,0 +1,7 @@
+{%- comment -%} 입력: include.date → 해당 날짜에 존재하는 분야 칩 링크 {%- endcomment -%}
+<span class="chips">
+{%- for c in site.briefing_sections -%}
+  {%- include page-for.html date=include.date file=c.file -%}
+  {%- if hit -%}<a class="chip chip-{{ c.slug }}" href="{{ hit.url | relative_url }}">{{ c.icon }} {{ c.label }}</a>{%- endif -%}
+{%- endfor -%}
+</span>

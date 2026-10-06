@@ -1,0 +1,55 @@
+---
+layout: default
+home: true
+title: DreamHouse 브리핑
+---
+{%- include collect-dates.html -%}
+{%- assign latest = dates | first -%}
+{%- assign hl = site.data.highlights[latest] -%}
+<section class="hero">
+  <p class="eyebrow">평일 아침 · KST</p>
+  <h1>DreamHouse 브리핑 아카이브</h1>
+  <p class="lead">IT · AI · 모델 · 엔진 뉴스와 GitHub 트렌드를 날짜별로 쌓는 <b>요약</b> 아카이브입니다. 각 항목은 넉넉한 한국어 요약과 원문 링크로 구성됩니다.</p>
+</section>
+
+{%- if latest -%}
+<div class="section-title">
+  <h2>📌 최신 브리핑 · {{ latest }} ({% include weekday.html date=latest %})</h2>
+  <a href="{{ '/archive/' | relative_url }}">전체 아카이브 →</a>
+</div>
+<div class="cards">
+{%- for c in site.briefing_sections -%}
+  {%- include page-for.html date=latest file=c.file -%}
+  {%- assign key = c.file -%}{%- if key == "github" -%}{%- assign key = "GitHub" -%}{%- endif -%}
+  {%- if hit -%}
+  <a class="card card-{{ c.slug }}" href="{{ hit.url | relative_url }}">
+    <span class="card-head">{{ c.icon }} {{ c.label }} <span class="go">→</span></span>
+    <p class="card-desc">{{ c.desc }}</p>
+    {%- if hl and hl[key] -%}<p class="card-hl">{{ hl[key] }}</p>{%- endif -%}
+  </a>
+  {%- else -%}
+  <div class="card card-{{ c.slug }} missing">
+    <span class="card-head">{{ c.icon }} {{ c.label }}</span>
+    <p class="card-desc">이 날짜에는 소식이 없습니다.</p>
+  </div>
+  {%- endif -%}
+{%- endfor -%}
+</div>
+{%- endif -%}
+
+<div class="section-title"><h2>🗂️ 분야별 모아보기</h2></div>
+<nav class="cat-nav" aria-label="분야별 모아보기">
+{%- for c in site.briefing_sections -%}
+  <a class="card-{{ c.slug }}" href="{{ '/category/' | append: c.slug | append: '/' | relative_url }}"><b>{{ c.icon }} {{ c.label }}</b><small>{{ c.desc }}</small></a>
+{%- endfor -%}
+</nav>
+
+<div class="section-title">
+  <h2>📅 날짜별</h2>
+  <a href="{{ '/archive/' | relative_url }}">전체 보기 →</a>
+</div>
+<ul class="archive">
+{%- for d in dates limit: 14 -%}
+  <li><span class="d">{{ d }} <span class="wd">({% include weekday.html date=d %})</span></span>{% include date-chips.html date=d %}</li>
+{%- endfor -%}
+</ul>

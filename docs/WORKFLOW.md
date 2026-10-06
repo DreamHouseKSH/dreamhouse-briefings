@@ -27,7 +27,8 @@
 | `news/YYYY-MM-DD/엔진.md` | 추론 엔진·런타임 릴리스, 관련 CVE | 소식 없으면 **파일 생략** |
 | `github/YYYY-MM-DD.md` | GitHub 트렌드 | 카테고리별 표 + 별 증가량 |
 | `templates/news-item.md` | 뉴스 항목 템플릿 | |
-| `docs/index.md` | 날짜별 목차 | **새 날짜마다 맨 위에 행 추가** |
+| `_data/highlights.yml` | 날짜별 하이라이트 한 줄(분야별) | **새 날짜마다 맨 위에 추가** |
+| `docs/index.md` | 문서 허브(사이트 `/docs/`) | 날짜 목록은 자동 생성 — 편집 불필요 |
 
 - 날짜는 **KST 기준 브리핑 전달일**. 파일명·폴더명은 `YYYY-MM-DD`.
 - 파일 인코딩 UTF-8, 한글 파일명(`모델.md`, `엔진.md`) 그대로 사용.
@@ -78,23 +79,30 @@
 - 공휴일에도 루틴이 돌면 그대로 기록(브리핑이 없으면 파일을 만들지 않음).
 - GitHub 트렌드 원천 스냅샷은 박스의 `/workspace/trend/{daily,weekly,go,rust}.html` 에 저장되어 있을 수 있음(아침 수집분). 별 수치 검증에 사용.
 
-## 6. 열람 방법
+## 6. 열람 방법 — GitHub Pages (공개)
 
-### GitHub Pages를 쓰지 않는 이유
+### 공개 범위
 
-- 이 저장소는 **개인(User) 계정 DreamHouseKSH 소유의 private 저장소**입니다.
-- GitHub Pages의 **비공개 게시(access control, 저장소 읽기 권한자만 열람)** 는 **GitHub Enterprise Cloud 조직 소유 저장소에서만** 가능합니다([공식 문서](https://docs.github.com/en/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site)).
-- 개인 계정(Pro 이상)에서 private 저장소로 Pages를 켜면 **사이트 자체는 인터넷 전체에 공개**됩니다 → 비공개 아카이브 + 저작권 방침과 충돌하므로 **켜지 않습니다**. 켜려면 사용자 명시 승인 필요.
+- 저장소는 **개인 계정 DreamHouseKSH 소유 private** 그대로입니다(git 히스토리·이슈·설정은 비공개).
+- 2026-10-06 사용자 승인으로 **GitHub Pages를 켰고, 사이트는 인터넷 전체에 공개**됩니다: **https://dreamhouseksh.github.io/dreamhouse-briefings/**
+  (개인 계정은 "로그인한 사람만 보는" 비공개 Pages가 불가 — Enterprise Cloud 조직 전용. [공식 문서](https://docs.github.com/en/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site))
+- 따라서 4장 저작권 규칙(요약 + 원문 링크, 전문·번역 금지)이 **공개 웹 기준**으로 적용됩니다. 개인정보·내부 메모는 커밋 금지.
 
-### 권장 열람 방법
+### 사이트 구조 (Jekyll, GitHub 기본 빌드)
 
-1. **목차(GitHub 마크다운 렌더링):** https://github.com/DreamHouseKSH/dreamhouse-briefings/blob/main/docs/index.md
-2. **저장소 브라우즈:** https://github.com/DreamHouseKSH/dreamhouse-briefings → `news/`, `github/` 폴더
-3. **github.dev 웹 에디터(검색·파일트리 편리):** https://github.dev/DreamHouseKSH/dreamhouse-briefings (저장소 페이지에서 `.` 키)
-4. **모바일:** GitHub 앱에서 로그인 후 저장소 열람
-5. **로컬:** `gh repo clone DreamHouseKSH/dreamhouse-briefings` 후 아무 마크다운 뷰어
+- Pages 소스: 브랜치 `main`, 폴더 `/`(루트). `main`에 push하면 GitHub가 자동 빌드(보통 1~2분).
+- 테마: 외부 테마 없이 **커스텀 레이아웃** — `_layouts/default.html`, `assets/css/style.css`(Pretendard 글꼴, `word-break: keep-all`, 본문 폭 약 46rem, 라이트/다크 자동+토글), `assets/js/site.js`(맨 URL 자동 링크, 표 가로 스크롤, 오른쪽 목차).
+- 앞머리(front matter) 없는 `.md`도 그대로 페이지가 됩니다(`jekyll-optional-front-matter`). 마크다운 안의 `.md` 상대 링크는 `.html`로 자동 변환(`jekyll-relative-links`). **브리핑 파일에 front matter를 넣을 필요 없음.**
+- 홈(`index.html`) · 전체 아카이브(`archive.html`) · 분야별(`category/*.html`)의 날짜 목록과 같은 날짜 탭, 이전/다음 날짜 이동은 `news/YYYY-MM-DD/*.md`, `github/YYYY-MM-DD.md` **파일 경로에서 자동 생성**됩니다(`_includes/collect-dates.html`). 파일명 규칙을 지키는 것이 중요.
+- 하이라이트 한 줄(홈 카드·아카이브·분야별 목록)은 `_data/highlights.yml` 에서 읽습니다. 키: `IT`, `AI`, `모델`, `엔진`, `GitHub`. 해당 날짜 브리핑 파일에 있는 내용만 요약.
+- `templates/` 는 사이트에서 제외(`_config.yml` 의 `exclude`).
+- 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq '.status, .error.message'`
 
-모두 DreamHouseKSH 계정(또는 콜라보레이터)으로 로그인해야 보입니다.
+### 그 밖의 열람 방법
+
+1. **저장소 브라우즈(로그인 필요):** https://github.com/DreamHouseKSH/dreamhouse-briefings → `news/`, `github/` 폴더
+2. **github.dev 웹 에디터(로그인 필요):** https://github.dev/DreamHouseKSH/dreamhouse-briefings (저장소 페이지에서 `.` 키)
+3. **로컬:** `gh repo clone DreamHouseKSH/dreamhouse-briefings` 후 아무 마크다운 뷰어
 
 ## 7. 새 날짜 추가 절차 (복붙용)
 
@@ -104,8 +112,9 @@ git pull --ff-only
 D=$(date +%F)            # 박스 시계는 KST
 mkdir -p news/$D
 # ... news/$D/{IT,AI,모델,엔진}.md, github/$D.md 작성 ...
-# docs/index.md 표 맨 위에 $D 행 추가
+# _data/highlights.yml 맨 위에 "$D" 하이라이트 추가 (날짜 목록은 사이트가 자동 생성)
 git add -A
 git commit -m "briefings: $D news + github trends"
 git push origin main
+gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status   # 잠시 후 built 확인
 ```

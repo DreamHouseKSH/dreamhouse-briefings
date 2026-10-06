@@ -1,0 +1,7 @@
+{%- comment -%} 입력: include.date, include.file(IT|AI|모델|엔진|github) → 출력 변수 `hit` (없으면 nil) {%- endcomment -%}
+{%- if include.file == "github" -%}
+  {%- assign want = "github/" | append: include.date | append: ".md" -%}
+{%- else -%}
+  {%- assign want = "news/" | append: include.date | append: "/" | append: include.file | append: ".md" -%}
+{%- endif -%}
+{%- assign hit = site.pages | where: "path", want | first -%}

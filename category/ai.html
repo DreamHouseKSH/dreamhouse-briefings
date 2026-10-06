@@ -1,0 +1,14 @@
+---
+layout: default
+title: "AI 브리핑 모아보기"
+section: ai
+permalink: /category/ai/
+---
+{%- assign cat = site.briefing_sections | where: "slug", "ai" | first -%}
+<div class="narrow">
+<header class="page-head">
+  <h1>🧠 AI</h1>
+  <p>{{ cat.desc }} — 날짜별 목록(최신이 위)</p>
+</header>
+{% include category-list.html slug="ai" %}
+</div>

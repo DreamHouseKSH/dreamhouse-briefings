@@ -1,0 +1,28 @@
+---
+layout: default
+title: 전체 아카이브
+section: archive
+permalink: /archive/
+---
+{%- include collect-dates.html -%}
+<div class="narrow">
+<header class="page-head">
+  <h1>📅 전체 아카이브</h1>
+  <p>날짜별 브리핑 목록입니다(최신이 위). 하이라이트를 펼치면 그날의 주요 소식을 볼 수 있습니다.</p>
+</header>
+<ul class="archive">
+{%- for d in dates -%}
+  {%- assign hl = site.data.highlights[d] -%}
+  <li id="d-{{ d }}"><span class="d">{{ d }} <span class="wd">({% include weekday.html date=d %})</span></span>{% include date-chips.html date=d %}
+  {%- if hl -%}
+    <details{% if forloop.first %} open{% endif %}><summary>하이라이트</summary><ul>
+    {%- for c in site.briefing_sections -%}
+      {%- assign key = c.file -%}{%- if key == "github" -%}{%- assign key = "GitHub" -%}{%- endif -%}
+      {%- if hl[key] -%}<li><b>{% if c.slug == "github" %}GitHub{% else %}{{ c.label }}{% endif %}:</b> {{ hl[key] }}</li>{%- endif -%}
+    {%- endfor -%}
+    </ul></details>
+  {%- endif -%}
+  </li>
+{%- endfor -%}
+</ul>
+</div>

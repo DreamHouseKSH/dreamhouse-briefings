@@ -1,0 +1,17 @@
+{%- comment -%}
+  news/YYYY-MM-DD/*.md, github/YYYY-MM-DD.md 경로에서 날짜를 모아 최신순 배열 `dates` 로 만든다.
+{%- endcomment -%}
+{%- assign dates = "" | split: "" -%}
+{%- for p in site.pages -%}
+  {%- assign parts = p.path | split: "/" -%}
+  {%- assign d = "" -%}
+  {%- if parts[0] == "news" and parts.size == 3 -%}
+    {%- assign d = parts[1] -%}
+  {%- elsif parts[0] == "github" and parts.size == 2 -%}
+    {%- assign d = parts[1] | remove: ".md" -%}
+  {%- endif -%}
+  {%- if d.size == 10 and d contains "-" -%}
+    {%- assign dates = dates | push: d -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign dates = dates | uniq | sort | reverse -%}

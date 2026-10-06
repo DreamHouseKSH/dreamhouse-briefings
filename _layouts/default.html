@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- assign page_title = page.title | default: site.title -%}
+  <title>{% if page_title != site.title %}{{ page_title | strip_html }} · {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="color-scheme" content="light dark">
+  <script>
+    (function () {
+      try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
+    })();
+  </script>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+</head>
+{%- assign parts = page.path | split: "/" -%}
+{%- assign cur_date = "" -%}{%- assign cur_file = "" -%}
+{%- if parts[0] == "news" and parts.size == 3 -%}
+  {%- assign cur_date = parts[1] -%}{%- assign cur_file = parts[2] | remove: ".md" -%}
+{%- elsif parts[0] == "github" and parts.size == 2 -%}
+  {%- assign cur_date = parts[1] | remove: ".md" -%}{%- assign cur_file = "github" -%}
+{%- endif -%}
+{%- assign is_brief = false -%}{%- if cur_date.size == 10 -%}{%- assign is_brief = true -%}{%- endif -%}
+{%- assign is_doc = false -%}
+{%- if page.path == "AGENTS.md" or page.path == "README.md" or parts[0] == "docs" -%}{%- assign is_doc = true -%}{%- endif -%}
+<body class="{% if is_brief %}is-brief{% elsif page.home %}is-home{% else %}is-page{% endif %}">
+  <a class="skip" href="#content">본문 바로가기</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">☕</span><span>DreamHouse <b>브리핑</b></span></a>
+      <nav class="main-nav" aria-label="분야">
+        {%- for c in site.briefing_sections -%}
+          {%- assign active = false -%}
+          {%- if cur_file == c.file or page.section == c.slug -%}{%- assign active = true -%}{%- endif -%}
+          <a class="nav-{{ c.slug }}{% if active %} active{% endif %}" href="{{ '/category/' | append: c.slug | append: '/' | relative_url }}">{% if c.slug == "github" %}GitHub{% else %}{{ c.label }}{% endif %}</a>
+        {%- endfor -%}
+        <a class="nav-archive{% if page.section == 'archive' %} active{% endif %}" href="{{ '/archive/' | relative_url }}">아카이브</a>
+        <a class="nav-docs{% if is_doc %} active{% endif %}" href="{{ '/docs/' | relative_url }}">문서</a>
+      </nav>
+      <button class="theme-toggle" type="button" aria-label="다크/라이트 모드 전환" title="다크/라이트 모드 전환">◐</button>
+    </div>
+  </header>
+
+  {%- if is_brief -%}
+  {%- include collect-dates.html -%}
+  <div class="brief-bar">
+    <div class="wrap">
+      <div class="crumbs"><a href="{{ '/' | relative_url }}">홈</a> <span>›</span> <a href="{{ '/archive/' | relative_url }}#d-{{ cur_date }}">{{ cur_date }} ({% include weekday.html date=cur_date %})</a></div>
+      <nav class="tabs" aria-label="같은 날짜의 다른 분야">
+        {%- for c in site.briefing_sections -%}
+          {%- include page-for.html date=cur_date file=c.file -%}
+          {%- if hit -%}<a class="tab tab-{{ c.slug }}{% if cur_file == c.file %} active{% endif %}" href="{{ hit.url | relative_url }}">{{ c.icon }} {% if c.slug == "github" %}GitHub{% else %}{{ c.label }}{% endif %}</a>{%- endif -%}
+        {%- endfor -%}
+      </nav>
+    </div>
+  </div>
+  {%- endif -%}
+
+  <main id="content" class="wrap main">
+    {%- if is_brief or is_doc -%}
+    <div class="article-grid">
+      <article class="prose">
+        {{ content }}
+      </article>
+      <aside class="toc" aria-label="이 페이지 목차" hidden>
+        <div class="toc-inner"><p class="toc-title">이 페이지</p><ol></ol></div>
+      </aside>
+    </div>
+    {%- if is_brief -%}
+    {%- comment -%} 같은 분야의 이전/다음 날짜 {%- endcomment -%}
+    {%- assign prev_hit = nil -%}{%- assign next_hit = nil -%}{%- assign seen = false -%}
+    {%- for d in dates -%}
+      {%- include page-for.html date=d file=cur_file -%}
+      {%- if d == cur_date -%}{%- assign seen = true -%}{%- continue -%}{%- endif -%}
+      {%- if hit -%}
+        {%- if seen -%}{%- if prev_hit == nil -%}{%- assign prev_hit = hit -%}{%- assign prev_d = d -%}{%- endif -%}
+        {%- else -%}{%- assign next_hit = hit -%}{%- assign next_d = d -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    <nav class="pager" aria-label="같은 분야 다른 날짜">
+      {%- if prev_hit -%}<a class="prev" href="{{ prev_hit.url | relative_url }}">← {{ prev_d }}</a>{%- else -%}<span></span>{%- endif -%}
+      {%- if next_hit -%}<a class="next" href="{{ next_hit.url | relative_url }}">{{ next_d }} →</a>{%- else -%}<span></span>{%- endif -%}
+    </nav>
+    {%- endif -%}
+    {%- else -%}
+      {{ content }}
+    {%- endif -%}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>요약 아카이브입니다 — 기사 전문이 아니며, 사실 확인과 세부 내용은 각 항목의 <b>원문 링크</b>를 참고하세요. 시간은 모두 KST 기준.</p>
+      <p class="muted"><a href="{{ '/docs/' | relative_url }}">문서</a> · <a href="{{ '/AGENTS.html' | relative_url }}">AGENTS</a> · <a href="{{ '/docs/WORKFLOW.html' | relative_url }}">WORKFLOW</a> · 마지막 빌드 {{ site.time | date: "%Y-%m-%d %H:%M" }} KST</p>
+    </div>
+  </footer>
+  <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+</body>
+</html>
