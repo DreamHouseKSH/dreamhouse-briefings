@@ -6,6 +6,7 @@
 > 저장소 자체(git 히스토리·이슈 등)는 **private** 그대로지만, Pages로 게시되는 사이트 내용은 **누구나 볼 수 있습니다.** 공개되면 안 되는 내용은 커밋하지 마세요.
 >
 > ⚠️ **현재 상태 (2026-10-06):** 사이트 파일은 준비 완료됐지만 **Pages 활성화가 아직 안 됨** — GitHub가 "Your current plan does not support GitHub Pages for this repository"(HTTP 422)로 거부. 개인 계정 **Free 플랜은 private 저장소의 Pages를 지원하지 않음**(GitHub Pro 이상 필요). 활성화되기 전까지 위 URL은 404입니다. 활성화 후 이 줄을 지우세요.
+
 기사 전문 복제·통번역은 하지 않습니다. 각 항목은 넉넉한 요약 + 기술용어 괄호 설명 + 원문 링크입니다.
 
 - 🤖 **에이전트라면 먼저:** [`AGENTS.md`](AGENTS.md) (핸드오프) → [`docs/WORKFLOW.md`](docs/WORKFLOW.md) (상세 규칙)
