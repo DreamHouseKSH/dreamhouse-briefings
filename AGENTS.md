@@ -49,6 +49,8 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 
 ## 열람 방법 (GitHub Pages — 공개)
 
+> ⚠️ **현재 상태 (2026-10-06):** 사이트 파일은 준비 완료됐지만 **Pages 활성화가 아직 안 됨** — GitHub가 "Your current plan does not support GitHub Pages for this repository"(HTTP 422)로 거부. 개인 계정 **Free 플랜은 private 저장소의 Pages를 지원하지 않음**(GitHub Pro 이상 필요). 활성화되기 전까지 위 URL은 404입니다. 활성화 후 이 줄을 지우세요.
+
 - **사이트:** https://dreamhouseksh.github.io/dreamhouse-briefings/ — 브랜치 `main` / 폴더 `/`(루트), GitHub 기본 Jekyll 빌드. push 후 1~2분 내 반영.
 - ⚠️ **사이트는 인터넷 전체 공개**입니다(저장소는 private). 요약·원문 링크 원칙(저작권)을 더 엄격히 지키고, 공개되면 안 되는 메모·개인정보는 커밋하지 마세요.
 - push 후 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status` → `built` 이면 정상.
