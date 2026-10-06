@@ -7,7 +7,7 @@
 |---|---|
 | [AGENTS.md](../AGENTS.md) | 에이전트 핸드오프 — 작업 전 필독, 매일 체크리스트 |
 | [WORKFLOW.md](WORKFLOW.md) | 루틴 · 요약 스타일 · 저작권 · Pages 사이트 구조 상세 규칙 |
-| [README (GitHub)](https://github.com/DreamHouseKSH/dreamhouse-briefings#readme) | 저장소 소개 (저장소 자체는 private) |
+| [README (GitHub)](https://github.com/DreamHouseKSH/dreamhouse-briefings#readme) | 저장소 소개 (public) |
 | [뉴스 항목 템플릿 (GitHub)](https://github.com/DreamHouseKSH/dreamhouse-briefings/blob/main/templates/news-item.md) | 새 뉴스 항목 작성용 템플릿 |
 
 ## 사이트 바로가기

@@ -10,6 +10,12 @@
 - **분야:** IT · 반도체/수출통제
 - **날짜:** 2026-10-06 브리핑
 
+### 미디어
+
+![기사 대표 이미지 (Thai Times)](https://as.ainewslabs.com/images/25/07/17517191994cvr_d4e9e6515e281c3b5bd9624405bbf606.jpg)
+
+> 출처: 원문 페이지 (Thai Times) — 원본 이미지 링크(복제 저장 아님)
+
 ### 요약
 
 미국 상무부가 엔비디아(Nvidia) 등의 AI 칩을 말레이시아와 태국으로 보내는 것을 제한하는 규정 초안(draft rule)을 준비 중이라는 보도입니다. 핵심 목적은 **우회 수출(transshipment, 제3국을 거쳐 원래 금지된 국가로 물건이 흘러가는 것)** 차단으로, 첨단 엔비디아 프로세서 판매가 사실상 막혀 있는 중국이 동남아 중간 거점을 통해 칩을 확보하는 경로를 막으려는 것입니다.
@@ -28,6 +34,12 @@
 - **분야:** IT · 보안
 - **날짜:** 2026-10-05 등재 공개
 
+### 미디어
+
+![onsemi·Qilin 랜섬웨어 피해 게시 카드](https://cyberthreatintelligence.net/og-image/onsemi-qilin-2026.png)
+
+> 출처: 원문 페이지 (cyberthreatintelligence.net) — 원본 이미지 링크(복제 저장 아님)
+
 ### 요약
 
 미국 전력·센서 반도체 기업 온세미가 2026년 10월 5일 랜섬웨어 그룹 **Qilin(치린)** 의 **다크웹 유출 사이트(leak site, 피해 기업 이름과 훔친 데이터를 공개하겠다고 압박하는 사이트)** 에 피해자로 올라왔습니다. 이 기록은 공개 유출 사이트를 집계한 데이터에 기반하며, 등재일은 실제 침해 시점과 다를 수 있고 어떤 데이터가 빠져나갔는지는 독립적으로 확인되지 않았습니다.
@@ -43,6 +55,12 @@ Qilin은 2022년부터 활동한 Go 언어 기반 랜섬웨어로, **이중 갈�
 - **원문:** https://www.infoq.com/news/2026/10/cloudflare-cross-tenant-exposure/
 - **분야:** IT · 클라우드 보안
 - **날짜:** 2026-10-05 보도
+
+### 미디어
+
+![InfoQ 기사 헤더 이미지](https://res.infoq.com/news/2026/10/cloudflare-cross-tenant-exposure/en/headerimage/generatedHeaderImage-1790844732167.jpg)
+
+> 출처: 원문 페이지 (InfoQ) — 원본 이미지 링크(복제 저장 아님)
 
 ### 요약
 
@@ -62,6 +80,12 @@ Cloudflare는 제보 당일 수정을 배포하기 시작해 9월 7일 롤아웃
 - **분야:** IT · 반도체 M&A
 - **날짜:** 2026-10-05 발표
 
+### 미디어
+
+![인피니언 보도자료 사진 — 파워 시스템 사업부 사장 Adam White](https://assets.infineon.com/is/image/infineon/division-president-power-systems-adam-white.jpg:asset-680-16x9)
+
+> 출처: 원문 페이지 (Infineon 보도자료) — 원본 이미지 링크(복제 저장 아님)
+
 ### 요약
 
 독일 인피니언이 인도 벵갈루루의 **C2i Semiconductors** 인수를 완료했습니다. C2i는 AI 데이터센터용 **소프트웨어 정의 멀티페이즈 컨트롤러(software-defined multiphase controller, 여러 전력 단계를 디지털 제어로 묶어 프로세서에 안정적으로 전력을 공급하는 칩)** 와 **스마트 파워 스테이지(smart power stage, 전력 변환과 감시 기능을 통합한 부품)** 전문 기업입니다.
@@ -77,6 +101,12 @@ AI 프로세서는 부하가 순간적으로 크게 요동치기 때문에, 전�
 - **원문:** https://api.emetro.co.kr/article/20261005500208
 - **분야:** IT · 반도체/국내
 - **날짜:** 2026-10-05 보도
+
+### 미디어
+
+![기사 대표 이미지 (메트로신문)](https://cdn.emetro.co.kr/data2/content/image/2026/10/05/.cache/512/20261005500209.jpg)
+
+> 출처: 원문 페이지 (메트로신문) — 원본 이미지 링크(복제 저장 아님)
 
 ### 요약
 

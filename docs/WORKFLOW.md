@@ -46,6 +46,11 @@
 - **분야:** {IT|AI|모델|엔진} · {세부}
 - **날짜:** {원문 날짜 또는 브리핑 날짜}
 
+### 미디어
+![짧은 설명](https://원문의-og-image-URL)
+
+> 출처: 원문 페이지 (복제 저장 아님)
+
 ### 요약
 {3~4문단 넉넉한 요약}
 
@@ -59,7 +64,9 @@
 3. **수치·날짜·인명은 원문 그대로.** 반올림·추정 금지. 자체 발표·미검증 수치는 "회사 발표 기준"이라 표시.
 4. **추측 금지.** 브리핑·원문에 없는 전망은 쓰지 않음. "시사점"은 원문 맥락에서 자연스럽게 도출되는 수준으로만.
 5. **시간 표기는 KST.** 원문이 UTC/PT면 변환하거나 원문 기준임을 명시.
-6. GitHub 파일: 카테고리별 표(저장소 링크 | 언어 | 누적 ⭐ | 일간/주간 증가) + 저장소별 1~2문장 설명(용어 괄호 풀이). 증가량 기준(일간=stars today, 주간=this week)을 상단에 명시.
+6. **미디어(선택).** 메타 목록(원문/분야/날짜) 바로 아래, `### 요약` 앞에 `### 미디어` 섹션을 둡니다. 원문 페이지의 `og:image` / `twitter:image` / 본문 대표(hero) 이미지 URL을 마크다운 이미지로 **핫링크**하고, 바로 아래 `> 출처:` 줄을 붙입니다. 쓸 만한 이미지가 없으면 섹션 **전체를 생략**(“없음” 금지). 상세 규칙은 4장.
+   - 추출 예: `curl -sL -A "Mozilla/5.0 …" URL | grep -oE '<meta[^>]+(og:image|twitter:image)[^>]*>'` → 이미지 URL이 HTTP 200·`image/*` 인지 `curl -sI` 로 대략 확인.
+7. GitHub 파일: 카테고리별 표(저장소 링크 | 언어 | 누적 ⭐ | 일간/주간 증가) + 저장소별 1~2문장 설명(용어 괄호 풀이). 증가량 기준(일간=stars today, 주간=this week)을 상단에 명시.
 
 ## 4. 저작권 (중요)
 
@@ -67,7 +74,15 @@
 - 직접 인용은 꼭 필요할 때 한 문장 이내, 따옴표와 출처 표시.
 - 원문 링크는 항상 포함 — 아카이브는 원문으로 가는 **안내판** 역할.
 - 페이월 우회·로그인 필요 콘텐츠 긁어오기 금지.
-- 이미지·차트 복제 금지(링크만).
+- **이미지·미디어 (핫링크만, 복제 저장 금지):**
+  - 언론사·기업의 이미지 파일을 **내려받아 이 저장소에 커밋하지 않습니다**(`assets/` 등 어디에도). 재호스팅·재압축·잘라내기도 금지.
+  - 대신 항목당 대표 이미지 **1~2장**을 마크다운 `![짧은 설명](https://...)` 으로 **원문 자체의 URL을 그대로 링크(핫링크)** 합니다 — 원문의 `og:image` / `twitter:image` / 본문 대표(hero) 이미지 CDN 주소.
+  - **HTTPS 절대 URL**을 우선. 추적용 쿼리(`utm_*`, `fbclid` 등)는 가능하면 제거(단, CDN 리사이즈·버전 파라미터처럼 이미지 표시에 필요한 쿼리는 유지). `data:` URI, 로그인·페이월 뒤 자산, 아주 작은 로고/아이콘 SVG는 쓰지 않습니다.
+  - **영상:** 임의 사이트를 `<iframe>` 으로 넣지 않습니다. 영상 페이지로 연결되는 썸네일 이미지(`og:image`)를 `[![설명](썸네일URL)](영상페이지URL)` 형태로 넣거나, `[영상 보기](URL)` 처럼 분명한 링크만. YouTube/Vimeo도 썸네일(선택) + 링크.
+  - **차트·스크린샷**도 이미지와 같은 규칙(원문 URL 핫링크만). 페이월 뒤 전체 갤러리를 긁어오지 않습니다.
+  - 이미지 바로 아래에 원문을 밝히는 캡션 줄을 둡니다: `> 출처: 원문 페이지 (매체명) — 원본 이미지 링크(복제 저장 아님)`.
+  - GitHub 릴리스/저장소만 원문인 항목은 GitHub 자동 생성 소셜 카드(`opengraph.githubassets.com/...`)를 쓰거나 생략. 스크린샷을 새로 만들어 넣지 않습니다.
+  - 이미지 URL이 확인되지 않거나 깨지면 미디어 섹션을 빼는 것이 원칙입니다.
 
 ## 5. 실행 시각 (cron, KST, 평일 월~금)
 
@@ -83,9 +98,8 @@
 
 ### 공개 범위
 
-- 저장소는 **개인 계정 DreamHouseKSH 소유 private** 그대로입니다(git 히스토리·이슈·설정은 비공개).
-- 2026-10-06 사용자 승인으로 **GitHub Pages를 켰고, 사이트는 인터넷 전체에 공개**됩니다: **https://dreamhouseksh.github.io/dreamhouse-briefings/**
-  (개인 계정은 "로그인한 사람만 보는" 비공개 Pages가 불가 — Enterprise Cloud 조직 전용. [공식 문서](https://docs.github.com/en/pages/getting-started-with-github-pages/changing-the-visibility-of-your-github-pages-site))
+- 저장소는 **개인 계정 DreamHouseKSH 소유 public** 입니다(코드·git 히스토리·이슈 모두 공개).
+- **GitHub Pages가 켜져 있고 운영 중**이며, 사이트는 인터넷 전체에 공개됩니다: **https://dreamhouseksh.github.io/dreamhouse-briefings/** (2026-10-06 사용자 승인)
 - 따라서 4장 저작권 규칙(요약 + 원문 링크, 전문·번역 금지)이 **공개 웹 기준**으로 적용됩니다. 개인정보·내부 메모는 커밋 금지.
 
 ### 사이트 구조 (Jekyll, GitHub 기본 빌드)
@@ -100,8 +114,8 @@
 
 ### 그 밖의 열람 방법
 
-1. **저장소 브라우즈(로그인 필요):** https://github.com/DreamHouseKSH/dreamhouse-briefings → `news/`, `github/` 폴더
-2. **github.dev 웹 에디터(로그인 필요):** https://github.dev/DreamHouseKSH/dreamhouse-briefings (저장소 페이지에서 `.` 키)
+1. **저장소 브라우즈(공개, 로그인 불필요):** https://github.com/DreamHouseKSH/dreamhouse-briefings → `news/`, `github/` 폴더
+2. **github.dev 웹 에디터(편집은 로그인 필요):** https://github.dev/DreamHouseKSH/dreamhouse-briefings (저장소 페이지에서 `.` 키)
 3. **로컬:** `gh repo clone DreamHouseKSH/dreamhouse-briefings` 후 아무 마크다운 뷰어
 
 ## 7. 새 날짜 추가 절차 (복붙용)

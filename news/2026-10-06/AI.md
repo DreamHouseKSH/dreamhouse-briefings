@@ -10,6 +10,12 @@
 - **분야:** AI · 투자
 - **날짜:** 2026-10-06 브리핑
 
+### 미디어
+
+![OpenAI 로고가 띄워진 스마트폰 (TNW 기사 대표 이미지)](https://media.thenextweb.com/2026/07/openai-models-escaped-hacked-hugging-face.jpg)
+
+> 출처: 원문 페이지 (The Next Web) — 원본 이미지 링크(복제 저장 아님)
+
 ### 요약
 
 OpenAI가 기업가치 약 1.4조 달러(약 1.4T)에 최소 300억 달러를 조달하기 위해 아부다비 국부 성격 투자사 **MGX** 를 비롯한 UAE 자금(합산 최대 약 100억 달러 가능성)과 **블랙록(BlackRock)** 과 협상 중이라는 보도입니다. 특이점은 **리드 투자자(lead investor, 라운드 조건을 주도해 정하는 대표 투자자)** 없이 OpenAI가 스스로 정한 고정 가격으로 라운드를 제시하고 있다는 점입니다.
@@ -26,6 +32,12 @@ OpenAI가 기업가치 약 1.4조 달러(약 1.4T)에 최소 300억 달러를 �
 - **분야:** AI · 투자/상장
 - **날짜:** 2026-10-04 게시 / 10-05 업데이트
 
+### 미디어
+
+![기사 대표 이미지 (Wright Research)](https://www.wrightresearch.in/media/django-summernote/2026-10-03/ff2c3294-8ac6-4e4e-8c3f-66886233a783.webp)
+
+> 출처: 원문 페이지 (Wright Research) — 원본 이미지 링크(복제 저장 아님)
+
 ### 요약
 
 Anthropic이 11월 9일이 속한 주에 **IPO 로드쇼(roadshow, 상장 전 기관투자자들을 돌며 공모가 수요를 확인하는 설명회)** 를 계획 중이며, 기업가치를 1.8조~2조 달러로 노리고 있다는 분석 글입니다. 직전 확정 가치는 2026년 5월 9,650억 달러였습니다.
@@ -41,6 +53,12 @@ Anthropic이 11월 9일이 속한 주에 **IPO 로드쇼(roadshow, 상장 전 �
 - **원문:** https://venturebeat.com/orchestration/coheres-north-2-puts-ai-agents-on-a-budget-and-gives-them-a-memory
 - **분야:** AI · 엔터프라이즈 에이전트
 - **날짜:** 2026-10-05
+
+### 미디어
+
+![기사 대표 이미지 (VentureBeat)](https://images.ctfassets.net/jdtwqhzvc2n1/5SCZ0uahknJ9oTbPIsxmMh/1c1031d78bf35ebe6dc066b69ee393e7/image_of_ai_harnes_image.jpeg?w=1200&q=80)
+
+> 출처: 원문 페이지 (VentureBeat) — 원본 이미지 링크(복제 저장 아님)
 
 ### 요약
 
@@ -65,6 +83,12 @@ Cohere는 별도 성능 벤치마크나 가격은 공개하지 않았습니다.
 - **분야:** AI · 거버넌스 M&A
 - **날짜:** 2026-10-05
 
+### 미디어
+
+![Collibra 보도자료 대표 이미지](https://web-dev-publisher-worker.collibra.workers.dev/social-images/collibra.com/default/76c5177a-8f16-43d8-9f83-bd32aa2abc37/2026-10-05T12%3A55%3A06Z.png)
+
+> 출처: 원문 페이지 (Collibra 보도자료) — 원본 이미지 링크(복제 저장 아님)
+
 데이터·AI 통제 플랫폼 Collibra가 2023년 뮌헨에서 설립된 **trail ML** 을 인수했습니다(금액 비공개). trail ML은 AI 시스템의 증거 자료를 분석해 어떤 규제·표준(**EU AI Act**, **ISO 42001(AI 경영시스템 국제표준)**, **NIST AI RMF(미국 AI 위험관리 프레임워크)** 등)이 적용되는지 판단하고 통제 충족 여부와 공백을 자동 평가하는 에이전트 기반 자동화를 제공합니다. 특히 **런타임 통제(runtime enforcement, 에이전트가 실제로 동작하는 순간 정책 위반 행동을 차단)** 기능이 Collibra 정책과 결합됩니다.
 
 ### 4-2. Zeta Global, YC 출신 AI 엔지니어링 기업 Senso 인수 합의
@@ -72,6 +96,12 @@ Cohere는 별도 성능 벤치마크나 가격은 공개하지 않았습니다.
 - **원문:** https://www.zetaglobal.com/news/zeta-global-to-acquire-senso-adding-ai-engineering-and-frontier-model-connectivity-to-its-intelligent-ai-infrastructure/
 - **분야:** AI · 마케팅 M&A
 - **날짜:** 2026-10-05
+
+### 미디어
+
+![Zeta Global 보도자료 대표 이미지](https://images.prismic.io/zeta-global/aj6ZA1bRV8_Qf64k_ai-marketing-cloud-meta-image.jpg?auto=format%2Ccompress&rect=0%2C0%2C1196%2C628&w=1200&h=630)
+
+> 출처: 원문 페이지 (Zeta Global 보도자료) — 원본 이미지 링크(복제 저장 아님)
 
 마케팅 기술 기업 Zeta Global(NYSE: ZETA)이 **Y Combinator** 투자를 받은 **Senso** 인수 계약을 맺었습니다(조건 비공개). Senso 기술은 이미 Zeta의 **GEO(Generative Engine Optimization, ChatGPT·Gemini·Claude·Google AI Overviews 같은 AI 답변에 브랜드가 잘 노출되도록 최적화하는 것 — 검색엔진 최적화 SEO의 AI판)** 상품을 뒷받침해 왔습니다. 인수로 기술 내재화, AI 엔지니어 확보, **프런티어 모델(최상위 성능 AI 모델)** 연동 강화를 노립니다.
 
