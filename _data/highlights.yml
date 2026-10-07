@@ -1,13 +1,11 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
 "2026-10-08":
-  GitHub: "rea(일간 +4.7K, 이틀 연속 1위)·AnyPS5(+2.7K)·openGym(+1.5K)·skills(+1.4K) / 주간 Agent-Reach(+6.5K)·OpenShell(+5.2K)·hyperframes(+3.6K)·openrig(+3.3K) 등 20개 저장소"
-
-"2026-10-08":
   IT: "삼성전자 오늘 3Q 잠정실적, 첫 분기 영업익 100조 전망 / 리사 수 방한, 삼성 전영현·SK 곽노정 회동 / MS Surface Laptop Ultra(RTX Spark, $2,599)·윈도우 MXC / 아틀라시안 DC 8종 CVE-2026-21589 공격 개시"
   AI: "ChatGPT GPT-6 + Intelligent UI(오늘 무료 확대) / 구글 SynthID Detector 전 세계 공개 / Anthropic Sonnet 5.5 캐시 읽기 50% 인하·Max/Team 월 API 크레딧 / Nous Research 9천만 달러(15억 달러 가치) / 구글 Playground"
   모델: "Claude Haiku 5.5($0.10/$0.50, Haiku 4.5 대비 ~75%↓) / Liquid d1-3B·d1-omni-600M 결정 모델 / Perplexity pplx-embed-v2-late(0.6B·9B)"
   엔진: "LMCache CVE-2026-105192(9.8, 패치 없음) / llama.cpp d1-3B 지원·MoE 전문가 GPU 캐시·GLM5Next MTP"
+  GitHub: "rea(일간 +4.7K, 이틀 연속 1위)·AnyPS5(+2.7K)·openGym(+1.5K)·skills(+1.4K) / 주간 Agent-Reach(+6.5K)·OpenShell(+5.2K)·hyperframes(+3.6K)·openrig(+3.3K) 등 20개 저장소"
 
 "2026-10-07":
   IT: "SpaceX, 엔비디아 칩용 400억 달러 조달 추진(FT) / 삼성 내년 HBM4 공급가 2배+ 협상 / EY 유출로 골드만·맨그룹 고객 정보 노출 / FBI, 패치 누락 액센추어 계약자 퇴출 / GitLab AI 게이트웨이 CVE-2026-90970(9.9)"
