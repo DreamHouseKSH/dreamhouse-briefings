@@ -5,6 +5,7 @@
   AI: "구글 Gemini agent(기업 우선) / Anthropic OSS Scanner / Anthropic Genesis Mission 1.5억 달러·3년 / OpenAI GPT-6.1 Sol Ultrafast"
   모델: "JetBrains Mellum2.1(12B MoE) / HuggingFace Bio Carbon-A 1.2B·CADB / LightOnOCR-3(0.8B·4B)"
   엔진: "llama.cpp b11499(CUDA roll) / Ollama v0.40.1(클라우드 usage 프록시·Windows 수정)"
+  GitHub: "rea(일간 +7.7K, 사흘 연속 최대)·AnyPS5(+4.7K)·ArtCraft(+2.1K)·skills(+1.8K) / 주간 AnyPS5(+10.2K, 1위)·skills(+7.4K)·Agent-Reach(+7.0K)·openGym(+6.1K) 등 24개 저장소"
 
 "2026-10-08":
   IT: "삼성전자 오늘 3Q 잠정실적, 첫 분기 영업익 100조 전망 / 리사 수 방한, 삼성 전영현·SK 곽노정 회동 / MS Surface Laptop Ultra(RTX Spark, $2,599)·윈도우 MXC / 아틀라시안 DC 8종 CVE-2026-21589 공격 개시"
