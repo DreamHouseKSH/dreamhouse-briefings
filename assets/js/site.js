@@ -69,6 +69,72 @@
     if (n && n.tagName === "UL") n.classList.add("stance");
   });
 
+  // 4-2) 뉴스 항목(## N. 제목)마다 '🔍 리서치 요청' 버튼 → 미리 채운 GitHub 이슈 작성 화면(새 탭)
+  //      처리 규칙: docs/WORKFLOW.md 9장 (research 라벨 + 작성자 DreamHouseKSH 만 처리)
+  var newsM = decodeURIComponent(location.pathname).match(/\/news\/(\d{4}-\d{2}-\d{2})\/([^\/]+?)(?:\.html)?\/?$/);
+  if (newsM) {
+    var ISSUE_NEW = "https://github.com/DreamHouseKSH/dreamhouse-briefings/issues/new";
+    var rDate = newsM[1], rField = newsM[2];
+    var pageUrl = location.origin + location.pathname;
+    prose.querySelectorAll("h2").forEach(function (h) {
+      var raw = h.textContent.replace(/\s+/g, " ").trim();
+      var tm = raw.match(/^\d+\.\s*(.+)$/);
+      if (!tm) return;
+      var title = tm[1];
+      var meta = h.nextElementSibling;
+      var src = "";
+      if (meta && meta.tagName === "UL") {
+        meta.querySelectorAll("li").forEach(function (li) {
+          var st = li.querySelector("strong");
+          if (!st) return;
+          var label = st.textContent.trim();
+          if (label.indexOf("원문") === 0 && !src) {
+            var a = li.querySelector('a[href^="http"]');
+            if (a) src = a.href;
+          }
+          if (label.indexOf("심층 리서치") === 0) li.classList.add("research-done");
+        });
+      } else {
+        meta = null;
+      }
+      var anchorUrl = pageUrl + (h.id ? "#" + encodeURIComponent(h.id) : "");
+      var body = [
+        "## 리서치 요청",
+        "",
+        "- 날짜: " + rDate,
+        "- 분야: " + rField,
+        "- 기사 제목: " + title,
+        "- 원문: " + (src || "(원문 링크 없음)"),
+        "- 아카이브: " + anchorUrl,
+        "",
+        "궁금한 점(선택): ",
+        ""
+      ].join("\n");
+      var href = ISSUE_NEW +
+        "?title=" + encodeURIComponent("[research] " + title) +
+        "&labels=research" +
+        "&body=" + encodeURIComponent(body);
+      var btn = document.createElement("a");
+      btn.className = "research-btn";
+      btn.href = href;
+      btn.target = "_blank";
+      btn.rel = "noopener noreferrer";
+      btn.textContent = "🔍 리서치 요청";
+      btn.title = "이 기사 심층 리서치 요청 (GitHub 이슈 작성 화면이 새 탭으로 열립니다)";
+      var li2 = document.createElement("li");
+      li2.className = "research-req";
+      li2.appendChild(btn);
+      if (meta) {
+        meta.appendChild(li2);
+      } else {
+        var wrap = document.createElement("p");
+        wrap.className = "research-req";
+        wrap.appendChild(btn);
+        h.parentNode.insertBefore(wrap, h.nextSibling);
+      }
+    });
+  }
+
   // 5) 오른쪽 목차(h2) + 현재 위치 강조
   var toc = document.querySelector(".toc");
   var heads = Array.prototype.slice.call(prose.querySelectorAll("h2"));

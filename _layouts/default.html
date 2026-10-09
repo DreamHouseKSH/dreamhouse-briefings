@@ -27,6 +27,7 @@
 {%- assign is_brief = false -%}{%- if cur_date.size == 10 -%}{%- assign is_brief = true -%}{%- endif -%}
 {%- assign is_doc = false -%}
 {%- if page.path == "AGENTS.md" or page.path == "README.md" or parts[0] == "docs" -%}{%- assign is_doc = true -%}{%- endif -%}
+{%- assign is_research = false -%}{%- if parts[0] == "research" -%}{%- assign is_research = true -%}{%- endif -%}
 <body class="{% if is_brief %}is-brief{% elsif page.home %}is-home{% else %}is-page{% endif %}">
   <a class="skip" href="#content">본문 바로가기</a>
   <header class="site-header">
@@ -39,6 +40,7 @@
           <a class="nav-{{ c.slug }}{% if active %} active{% endif %}" href="{{ '/category/' | append: c.slug | append: '/' | relative_url }}">{% if c.slug == "github" %}GitHub{% else %}{{ c.label }}{% endif %}</a>
         {%- endfor -%}
         <a class="nav-archive{% if page.section == 'archive' %} active{% endif %}" href="{{ '/archive/' | relative_url }}">아카이브</a>
+        <a class="nav-research{% if is_research %} active{% endif %}" href="{{ '/research/' | relative_url }}">리서치</a>
         <a class="nav-docs{% if is_doc %} active{% endif %}" href="{{ '/docs/' | relative_url }}">문서</a>
       </nav>
       <button class="theme-toggle" type="button" aria-label="다크/라이트 모드 전환" title="다크/라이트 모드 전환">◐</button>
@@ -61,7 +63,7 @@
   {%- endif -%}
 
   <main id="content" class="wrap main">
-    {%- if is_brief or is_doc -%}
+    {%- if is_brief or is_doc or is_research -%}
     <div class="article-grid">
       <article class="prose">
         {{ content }}

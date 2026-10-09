@@ -248,6 +248,25 @@ a:hover { color: var(--link-hover); text-decoration: underline; text-underline-o
 .is-brief .prose ul.stance ul { padding-left: 1.1em; margin: .2rem 0 0; list-style: disc; }
 .is-brief .prose ul.stance ul li { margin: .25rem 0; }
 
+/* 뉴스 항목별 '🔍 리서치 요청' 버튼 (site.js 4-2) + '심층 리서치' 링크 */
+.is-brief .prose li.research-req { margin: .55rem 0 .1rem; padding-top: .55rem; border-top: 1px dashed var(--border); }
+.research-btn {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-size: .84rem; font-weight: 650; line-height: 1.4; white-space: nowrap; word-break: keep-all !important;
+  padding: .28rem .8rem; border-radius: 999px;
+  color: var(--text-2); background: var(--bg); border: 1px solid var(--border);
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+.research-btn:hover, .research-btn:focus-visible {
+  text-decoration: none; color: var(--accent); border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface));
+}
+.research-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.is-brief .prose li.research-done a { font-weight: 650; }
+.is-brief .prose li.research-done strong { color: var(--accent); }
+.research-list .rl-meta { color: var(--muted); font-size: .85rem; }
+@media print { .research-btn, .research-req { display: none !important; } }
+
 .pager { max-width: calc(var(--measure) + 18rem); margin: 3rem auto 0; display: flex; justify-content: space-between; gap: 1rem; }
 .pager a { padding: .6rem 1rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); font-weight: 600; }
 

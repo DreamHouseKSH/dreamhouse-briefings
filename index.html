@@ -37,6 +37,22 @@ title: DreamHouse 브리핑
 </div>
 {%- endif -%}
 
+{%- assign rs = site.pages | where_exp: "p", "p.path contains 'research/'" | sort: "path" | reverse -%}
+{%- if rs.size > 1 -%}
+<div class="section-title">
+  <h2>🔬 심층 리서치</h2>
+  <a href="{{ '/research/' | relative_url }}">전체 보기 →</a>
+</div>
+<ul class="date-list research-list">
+{%- assign shown = 0 -%}
+{%- for p in rs -%}
+  {%- if p.path == "research/index.md" or shown >= 5 -%}{%- continue -%}{%- endif -%}
+  {%- assign shown = shown | plus: 1 -%}
+  <li><a class="date-link" href="{{ p.url | relative_url }}">{{ p.title | remove: "심층 리서치 — " }}</a> <span class="rl-meta">{{ p.path | remove: "research/" | slice: 0, 10 }}</span></li>
+{%- endfor -%}
+</ul>
+{%- endif -%}
+
 <div class="section-title"><h2>🗂️ 분야별 모아보기</h2></div>
 <nav class="cat-nav" aria-label="분야별 모아보기">
 {%- for c in site.briefing_sections -%}
