@@ -10,6 +10,11 @@
   <meta name="site-base" content="{{ '/' | relative_url }}">
   <meta name="site-build" content="{{ site.time | date: '%s' }}">
   <meta name="site-version-url" content="{{ '/version.json' | relative_url }}">
+  {%- assign gc_code = site.analytics.code | default: "" | strip -%}
+  {%- if site.analytics.provider == "goatcounter" and gc_code != "" %}
+  <meta name="analytics-goatcounter" content="https://{{ gc_code }}.goatcounter.com" data-show-today="{% if site.analytics.show_today == false %}0{% else %}1{% endif %}">
+  <link rel="preconnect" href="https://{{ gc_code }}.goatcounter.com" crossorigin>
+  {%- endif %}
   <script>
     (function () {
       try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
@@ -48,6 +53,7 @@
         <a class="nav-docs{% if is_doc %} active{% endif %}" href="{{ '/docs/' | relative_url }}">문서</a>
       </nav>
       <div class="header-actions">
+        <span class="visitors-today" hidden aria-live="polite"></span>
         <button class="refresh-btn" type="button" aria-label="새로고침 (최신 내용 불러오기)" title="새로고침 (최신 내용 불러오기)">↻</button>
         <button class="theme-toggle" type="button" aria-label="다크/라이트 모드 전환" title="다크/라이트 모드 전환">◐</button>
       </div>
@@ -107,5 +113,8 @@
     </div>
   </footer>
   <script src="{{ '/assets/js/site.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+  {%- if site.analytics.provider == "goatcounter" and gc_code != "" %}
+  <script data-goatcounter="https://{{ gc_code }}.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+  {%- endif %}
 </body>
 </html>

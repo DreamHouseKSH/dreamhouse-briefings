@@ -496,3 +496,31 @@
     }
   }
 })();
+
+/* 오늘 방문자 수 (GoatCounter 공개 카운터 JSON, IP·쿠키 저장 없음). 설정이 없거나 실패하면 조용히 숨김 */
+(function () {
+  var meta = document.querySelector('meta[name="analytics-goatcounter"]');
+  var el = document.querySelector(".visitors-today");
+  if (!meta || !el || meta.getAttribute("data-show-today") === "0") return;
+  var base = (meta.getAttribute("content") || "").replace(/\/+$/, "");
+  if (!/^https:\/\/[a-z0-9-]+\.goatcounter\.com$/i.test(base)) return;
+  var todayKST = function () {
+    var d = new Date(Date.now() + 9 * 3600 * 1000); // KST 날짜 (GoatCounter 사이트 시간대도 Asia/Seoul 로 맞출 것)
+    return d.toISOString().slice(0, 10);
+  };
+  var load = function () {
+    if (!window.fetch) return;
+    fetch(base + "/counter/TOTAL.json?no_branding=1&start=" + todayKST(), { mode: "cors", credentials: "omit", cache: "no-cache" })
+      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(function (j) {
+        var n = j && (j.count != null ? j.count : j.count_unique);
+        if (n == null || !/^[\d,.\s]+$/.test(String(n))) throw new Error("bad");
+        el.textContent = "오늘 " + String(n).trim() + "명";
+        el.title = "오늘(KST) 방문자 수 · GoatCounter 집계, 최대 몇 시간 늦게 반영될 수 있음";
+        el.hidden = false;
+      })
+      .catch(function () { el.hidden = true; });
+  };
+  load();
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") load(); });
+})();

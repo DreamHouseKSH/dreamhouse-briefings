@@ -7,6 +7,15 @@ baseurl: /dreamhouse-briefings
 repository: DreamHouseKSH/dreamhouse-briefings
 timezone: Asia/Seoul
 
+# 방문 통계 (GoatCounter — IP·쿠키 저장 없음). code 에 GoatCounter 사이트 코드만 넣으면 켜짐.
+#   예: code: dreamhouse  →  https://dreamhouse.goatcounter.com 대시보드
+#   상단 '오늘 N명' 표시는 GoatCounter 설정에서 'Allow adding visitor counts on your website' 를 켜야 보임
+#   (꺼져 있거나 실패하면 표시만 조용히 숨김). code 를 비우면 추적·표시 모두 꺼짐.
+analytics:
+  provider: goatcounter
+  code: ""
+  show_today: true
+
 markdown: kramdown
 kramdown:
   input: GFM

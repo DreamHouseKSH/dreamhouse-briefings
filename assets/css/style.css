@@ -131,6 +131,11 @@ a:hover { color: var(--link-hover); text-decoration: underline; text-underline-o
 }
 .theme-toggle:hover { background: var(--surface-2); }
 .header-actions { display: flex; align-items: center; gap: .35rem; flex: none; }
+.visitors-today {
+  font-size: .78rem; font-weight: 600; color: var(--text-2); white-space: nowrap; font-variant-numeric: tabular-nums;
+  padding: .2rem .6rem; border: 1px solid var(--border); border-radius: 999px; background: var(--surface-2);
+}
+.visitors-today[hidden] { display: none; }
 .refresh-btn {
   border: 1px solid transparent; background: transparent; color: var(--muted);
   width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 1.05rem; line-height: 1; flex: none;
@@ -403,7 +408,7 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
   .main { padding-top: 1.25rem; }
 }
 @media print {
-  .site-header, .brief-bar, .toc, .pager, .theme-toggle, .refresh-btn, .update-banner, .back-btn { display: none !important; }
+  .site-header, .brief-bar, .toc, .pager, .theme-toggle, .refresh-btn, .update-banner, .back-btn, .visitors-today { display: none !important; }
   body { background: #fff; color: #000; }
 }
 
