@@ -423,10 +423,10 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
 
 /* ---------- 줄임말·전문용어 자동 풀이 (assets/js/glossary.js, 원본 _data/glossary.yml) ---------- */
 .gl-x {
-  font-size: .8em; font-weight: 400; color: var(--muted); letter-spacing: -0.01em;
-  margin-left: .08em; overflow-wrap: anywhere;
+  /* 본문에 직접 쓴 풀이와 똑같이 보이도록 본문 글꼴·크기·색을 그대로 씀 */
+  font: inherit; color: inherit; letter-spacing: inherit;
+  overflow-wrap: anywhere;
 }
-.prose strong .gl-x, .prose b .gl-x { font-weight: 400; color: var(--muted); }
 @media print { .gl-x { color: #555; } }
 /* ---------- 용어집 페이지 (/glossary/) ---------- */
 .glossary-page .gl-index { display: flex; flex-wrap: wrap; gap: .3rem; margin: 0 0 1rem; padding: 0; list-style: none; }
