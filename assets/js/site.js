@@ -39,7 +39,11 @@
     bar.setAttribute("role", "status");
     var go = document.createElement("button");
     go.type = "button"; go.className = "ub-go"; go.textContent = "새 내용이 있어요 · 새로고침";
-    go.addEventListener("click", function () { go.disabled = true; hardReload(); });
+    go.addEventListener("click", function () {
+      go.disabled = true;
+      try { sessionStorage.setItem(RK, JSON.stringify({ to: nb, from: curBuild, t: Date.now() })); } catch (e) {} // 다시 연 HTML이 아직 옛 버전이어도 자동 재시도 루프 방지
+      hardReload();
+    });
     var x = document.createElement("button");
     x.type = "button"; x.className = "ub-close"; x.setAttribute("aria-label", "닫기"); x.title = "닫기"; x.textContent = "✕";
     x.addEventListener("click", function () { dismissedBuild = nb || ""; bar.remove(); });
