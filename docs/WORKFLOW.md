@@ -69,6 +69,8 @@
 
 1. **넉넉하게.** 한 줄 요약 금지. 무엇이/누가/왜/숫자/다음 체크포인트까지 3~4문단.
 2. **기술 용어·줄임말 괄호 풀이.** 처음 등장할 때 `용어(원어 전체 이름, 쉬운 설명)` 형태. 줄임말은 원어 전체 이름을 꼭 씁니다(사용자가 읽으며 공부할 수 있게). 예: `GA(General Availability, 누구나 쓸 수 있는 정식 출시)`, `CVE(Common Vulnerabilities and Exposures, 공개 취약점 식별 번호)`, `KV 캐시(Key-Value cache, 이전 토큰 계산 결과 저장소)`.
+   - **용어집 등록 필수(2026-10-09 사용자 피드백 — '아래쪽에서도 풀이가 보이게').** 본문에는 지금처럼 **처음 나올 때만** 괄호로 풀어 쓰고, 그 줄임말·전문용어가 `_data/glossary.yml` 에 없으면 **같은 커밋에서 반드시 추가**합니다(`term`=본문 표기 그대로·대소문자 구분, `full`=원어 전체 이름(공식 원어가 없거나 확실하지 않으면 `""`), `ko`=쉬운 뜻 한 줄; 너무 흔한 말은 `inline: false`, HBM4처럼 세대 숫자가 붙는 건 `prefix: true`). 뜻이 확실하지 않으면 넣지 않습니다.
+   - 그러면 **나머지 위치는 사이트가 자동으로 풀어 줍니다**(`assets/js/glossary.js`): 뉴스·GitHub·리서치 본문에서 용어집 단어가 나올 때마다 바로 뒤에 작고 연한 글씨로 `(원어, 쉬운 뜻)` 을 붙이고(툴팁 아님, 모바일에서도 보임), `HBM(고대역폭 메모리)`처럼 원어가 빠진 괄호에는 원어만 끼워 넣습니다. 링크 글자·코드·제목(h1~h3)·버튼·URL 안은 건드리지 않고, 이미 괄호 풀이가 붙은 곳에는 중복으로 달지 않습니다. 전체 목록은 사이트 상단 **'용어'** 메뉴(`/glossary/`). 자동 풀이를 막고 싶은 문단은 `{: .no-gloss}`.
 3. **수치·날짜·인명은 원문 그대로.** 반올림·추정 금지. 자체 발표·미검증 수치는 "회사 발표 기준"이라 표시.
 4. **추측 금지.** 브리핑·원문에 없는 전망은 쓰지 않음. "시사점"은 원문 맥락에서 자연스럽게 도출되는 수준으로만.
 5. **시간 표기는 KST.** 원문이 UTC/PT면 변환하거나 원문 기준임을 명시.
@@ -129,6 +131,7 @@
 - 앞머리(front matter) 없는 `.md`도 그대로 페이지가 됩니다(`jekyll-optional-front-matter`). 마크다운 안의 `.md` 상대 링크는 `.html`로 자동 변환(`jekyll-relative-links`). **브리핑 파일에 front matter를 넣을 필요 없음.**
 - 홈(`index.html`) · 전체 아카이브(`archive.html`) · 분야별(`category/*.html`)의 날짜 목록과 같은 날짜 탭, 이전/다음 날짜 이동은 `news/YYYY-MM-DD/*.md`, `github/YYYY-MM-DD.md` **파일 경로에서 자동 생성**됩니다(`_includes/collect-dates.html`). 파일명 규칙을 지키는 것이 중요.
 - 하이라이트 한 줄(홈 카드·아카이브·분야별 목록)은 `_data/highlights.yml` 에서 읽습니다. 키: `IT`, `AI`, `모델`, `엔진`, `GitHub`. 해당 날짜 브리핑 파일에 있는 내용만 요약.
+- **줄임말 자동 풀이 + 용어집:** `_data/glossary.yml`(term·full·ko) → `assets/js/glossary.js`(Jekyll이 용어집을 JSON으로 넣어 빌드, `<head>` 에서 `defer` 로드, `site.js` 와 독립). 뉴스·GitHub·리서치 본문(`article.prose`)의 텍스트에서 용어집 단어를 **단어 경계·대소문자 구분**으로 찾아(예: `API` O, `rapid`·`LightOnOCR` X, `CVE-2026-1234` 는 번호까지 한 단어) 바로 뒤에 `<span class="gl-x">(원어, 뜻)</span>`(작고 연한 글씨)을 붙입니다. 제외: 링크 글자·`code`/`pre`·h1~h3·버튼·URL·`.no-gloss`. 중복 방지: 바로 뒤에 `(` 가 붙은 첫 풀이, 몇 글자 안 괄호에 원어가 있는 경우, `강화학습(RL, …)` 처럼 이미 풀이 안의 줄임말은 건너뜀. `HBM(고대역폭 메모리)` 처럼 우리말 뜻만 있는 괄호엔 원어만 끼우고(`gl-in`), `에너지부(DOE)` 처럼 괄호 안 줄임말엔 `, 원어, 뜻` 을 이어 붙입니다. 한 페이지 처리 약 3ms. 용어집 페이지는 `glossary/index.html`(`/glossary/`, 상단 메뉴 **'용어'**, 가나다 → ABC 순, 검색 상자).
 - `templates/` 는 사이트에서 제외(`_config.yml` 의 `exclude`).
 - 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq '.status, .error.message'`
 
@@ -202,7 +205,7 @@ gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status
   4. **접힌 '참고 자료'** — 구분선(`---`) 뒤 `<details class="research-refs" markdown="1">` + `<summary>참고 자료 — …</summary>` 안에 `### 핵심 수치`(표: 수치·사실 | 출처 | 검증 여부), `### 앞으로 볼 체크포인트`(목록), `### 출처 목록`(번호 목록: 제목·매체·날짜·링크). details를 쓸 수 없는 환경이면 구분선과 작은 제목(`###`)으로만 나눕니다.
 - **본문에는 표·글머리표 목록을 쓰지 않습니다.** 표와 목록은 '참고 자료'에만 둡니다.
 - **출처 표기:** 본문에서는 문장 안에 `매체 이름 + 짧은 링크` 정도만(예: `The Verge([기사](https://…))는 …`). 문단마다 링크를 도배하지 않습니다(대략 문단당 1~2개). 전체 출처는 참고 자료의 출처 목록에 모읍니다.
-- **전문용어·줄임말 풀이(공부용):** 처음 나올 때 괄호 안에 **원어 전체 이름 + 쉬운 뜻**을 같이 씁니다. 예: `GA(General Availability, 누구나 쓸 수 있는 정식 출시)`, `SKU(Stock Keeping Unit, 따로 값을 매겨 파는 판매 단위)`, `MCP(Model Context Protocol, AI가 외부 도구·데이터에 붙는 표준 규격)`, `LLM(Large Language Model, 대규모 언어 모델)`, `API(Application Programming Interface, 프로그램끼리 기능을 주고받는 창구)`, `SaaS(Software as a Service, 설치 없이 구독으로 쓰는 소프트웨어)`, `RAG(Retrieval-Augmented Generation, 문서를 찾아 붙여서 답하게 하는 방식)`. 원어가 없는 우리말 용어는 쉬운 뜻만. 두 번째부터는 줄임말만 써도 됩니다.
+- **전문용어·줄임말 풀이(공부용):** 처음 나올 때 괄호 안에 **원어 전체 이름 + 쉬운 뜻**을 같이 씁니다. 예: `GA(General Availability, 누구나 쓸 수 있는 정식 출시)`, `SKU(Stock Keeping Unit, 따로 값을 매겨 파는 판매 단위)`, `MCP(Model Context Protocol, AI가 외부 도구·데이터에 붙는 표준 규격)`, `LLM(Large Language Model, 대규모 언어 모델)`, `API(Application Programming Interface, 프로그램끼리 기능을 주고받는 창구)`, `SaaS(Software as a Service, 설치 없이 구독으로 쓰는 소프트웨어)`, `RAG(Retrieval-Augmented Generation, 문서를 찾아 붙여서 답하게 하는 방식)`. 원어가 없는 우리말 용어는 쉬운 뜻만. 두 번째부터는 줄임말만 써도 됩니다 — **단, 새 줄임말은 반드시 `_data/glossary.yml` 에 추가**(3장 2번). 그러면 아래쪽·참고 자료에 다시 나오는 줄임말도 사이트가 같은 풀이를 자동으로 붙입니다.
 - **회사 발표는 그렇다고 밝힙니다**("회사 발표 기준", "구글 자체 집계"). 실제 출처가 있는 반론만 반론으로 쓰고, 출처 없는 일반론은 `예상 쟁점:` 라벨을 붙입니다. 못 찾았으면 `찾은 반론 없음 (검색 범위: …)`.
 - **지어낸 정보 금지**(3장 3·4번) — 확인 못 한 것은 "확인되지 않음"이라고 씁니다.
 - **저작권(4장) 동일 적용:** 전문 복제·번역 금지(인용은 한 문장 이내), **이미지는 원문 URL 핫링크만**(저장소에 파일 저장 금지), 페이월 우회 금지.

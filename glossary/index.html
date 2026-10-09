@@ -1,0 +1,63 @@
+---
+title: 용어집
+permalink: /glossary/
+section: glossary
+description: 브리핑·리서치에 나오는 줄임말·전문용어의 원어 전체 이름과 쉬운 뜻
+---
+{%- assign latin = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789" -%}
+{%- assign items = site.data.glossary | sort_natural: "term" -%}
+{%- assign letters = "" -%}{%- assign ko_letters = "" -%}
+{%- for g in items -%}
+  {%- assign f = g.term | slice: 0 | upcase -%}
+  {%- if latin contains f -%}{%- unless letters contains f -%}{%- assign letters = letters | append: f -%}{%- endunless -%}
+  {%- else -%}{%- assign ko_letters = "가" -%}{%- endif -%}
+{%- endfor -%}
+<article class="prose glossary-page">
+<h1>📖 용어집</h1>
+<p class="muted">브리핑·리서치에 나오는 줄임말과 전문용어 <b>{{ items.size }}개</b>입니다. 본문에서는 이 목록에 있는 줄임말이 어디에 나오든 바로 뒤에 <span class="gl-x" style="margin:0">(원어 전체 이름, 쉬운 뜻)</span>이 작은 글씨로 붙습니다. 원본은 <a href="https://github.com/{{ site.repository }}/blob/main/_data/glossary.yml" target="_blank" rel="noopener">_data/glossary.yml</a> (가나다 → ABC 순).</p>
+<input class="gl-filter" type="search" placeholder="용어·원어·뜻으로 찾기 (예: GPU, 메모리)" aria-label="용어 찾기">
+<ul class="gl-index" aria-label="첫 글자">
+  {%- if ko_letters != "" %}<li><a href="#gl-ko">가</a></li>{% endif -%}
+  {%- assign ls = letters | split: "" -%}
+  {%- for l in ls %}<li><a href="#gl-{{ l }}">{{ l }}</a></li>{% endfor %}
+</ul>
+{%- if ko_letters != "" %}
+<h2 id="gl-ko">가나다</h2>
+<dl class="gl-list">
+{%- for g in items -%}{%- assign f = g.term | slice: 0 | upcase -%}{%- if latin contains f -%}{%- continue -%}{%- endif %}
+  <dt id="g-{{ g.term | slugify }}">{{ g.term }}{% if g.full != "" and g.full %}<span class="gl-full">{{ g.full }}</span>{% endif %}{% if g.inline == false %}<span class="gl-off">본문 자동 풀이 안 함(흔한 말)</span>{% endif %}</dt>
+  <dd>{{ g.ko }}</dd>
+{%- endfor %}
+</dl>
+{%- endif %}
+{%- for l in ls %}
+<h2 id="gl-{{ l }}">{{ l }}</h2>
+<dl class="gl-list">
+{%- for g in items -%}{%- assign f = g.term | slice: 0 | upcase -%}{%- if f != l -%}{%- continue -%}{%- endif %}
+  <dt id="g-{{ g.term | slugify }}">{{ g.term }}{% if g.full != "" and g.full %}<span class="gl-full">{{ g.full }}</span>{% endif %}{% if g.inline == false %}<span class="gl-off">본문 자동 풀이 안 함(흔한 말)</span>{% endif %}</dt>
+  <dd>{{ g.ko }}</dd>
+{%- endfor %}
+</dl>
+{%- endfor %}
+<p class="muted" id="gl-empty" hidden>찾는 용어가 없어요.</p>
+</article>
+<script>
+(function () {
+  var box = document.querySelector(".gl-filter"); if (!box) return;
+  var page = document.querySelector(".glossary-page");
+  box.addEventListener("input", function () {
+    var q = box.value.trim().toLowerCase(), any = false;
+    page.querySelectorAll(".gl-list").forEach(function (dl) {
+      var shown = 0;
+      dl.querySelectorAll("dt").forEach(function (dt) {
+        var dd = dt.nextElementSibling;
+        var hit = !q || (dt.textContent + " " + (dd ? dd.textContent : "")).toLowerCase().indexOf(q) >= 0;
+        dt.hidden = !hit; if (dd) dd.hidden = !hit; if (hit) shown++;
+      });
+      dl.hidden = !shown; var h = dl.previousElementSibling; if (h && h.tagName === "H2") h.hidden = !shown;
+      if (shown) any = true;
+    });
+    document.getElementById("gl-empty").hidden = any;
+  });
+})();
+</script>

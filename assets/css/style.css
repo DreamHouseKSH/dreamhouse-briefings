@@ -420,3 +420,22 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
 .prose .research-refs { margin: 1rem 0 0; }
 .prose .research-refs > summary { cursor: pointer; font-weight: 700; color: var(--text-2); padding: .4rem 0; }
 .prose .research-refs[open] > summary { margin-bottom: .6rem; }
+
+/* ---------- 줄임말·전문용어 자동 풀이 (assets/js/glossary.js, 원본 _data/glossary.yml) ---------- */
+.gl-x {
+  font-size: .8em; font-weight: 400; color: var(--muted); letter-spacing: -0.01em;
+  margin-left: .08em; overflow-wrap: anywhere;
+}
+.prose strong .gl-x, .prose b .gl-x { font-weight: 400; color: var(--muted); }
+@media print { .gl-x { color: #555; } }
+/* ---------- 용어집 페이지 (/glossary/) ---------- */
+.glossary-page .gl-index { display: flex; flex-wrap: wrap; gap: .3rem; margin: 0 0 1rem; padding: 0; list-style: none; }
+.glossary-page .gl-index a { display: inline-block; min-width: 2rem; text-align: center; padding: .2rem .5rem; border-radius: 999px; border: 1px solid var(--border); font-weight: 700; font-size: .85rem; }
+.glossary-page .gl-filter { width: 100%; max-width: 26rem; font: inherit; padding: .55rem .8rem; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); color: var(--text); margin: 0 0 1rem; }
+.glossary-page .gl-list { margin: 0 0 1.2rem; }
+.glossary-page .gl-list dt { font-weight: 800; margin-top: .9rem; scroll-margin-top: 5rem; }
+.glossary-page .gl-list dt .gl-full { font-weight: 500; color: var(--text-2); margin-left: .35rem; }
+.glossary-page .gl-list dt .gl-off { font-size: .72rem; font-weight: 600; color: var(--muted); margin-left: .35rem; }
+.glossary-page .gl-list dd { margin: .15rem 0 0; color: var(--text-2); }
+.glossary-page h2[hidden], .glossary-page dl[hidden], .glossary-page dt[hidden], .glossary-page dd[hidden] { display: none; }
+.gl-x.gl-in { margin-left: 0; }
