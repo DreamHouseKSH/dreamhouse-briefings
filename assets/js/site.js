@@ -79,7 +79,7 @@
   if (rbtn) {
     rbtn.addEventListener("click", function () {
       rbtn.classList.add("is-spinning");
-      try { sessionStorage.removeItem("dh-research-open-v1"); } catch (e) {}
+      try { localStorage.removeItem("dh-research-v2"); } catch (e) {}
       hardReload();
     });
   }
@@ -142,6 +142,7 @@
   // 4-2) 뉴스 항목(## N. 제목)마다 리서치 버튼 (상태 3가지, 규칙: docs/WORKFLOW.md 8장)
   //   ① 📄 리서치 보기   — 기사 메타에 '**심층 리서치:**' 링크가 있으면(빌드된 마크다운 → API 불필요) 그 페이지로
   //   ② ⏳ 리서치 진행 중 — 열린 research 이슈(작성자 DreamHouseKSH)가 이 기사를 가리키면 그 이슈로 (GitHub REST, 비인증)
+  //      닫힌 이슈면 📄 리서치 보기(마지막 댓글의 research/ URL, 없으면 이슈) — 새로고침 없이 3분마다 갱신
   //   ③ 🔍 리서치 요청   — 그 외: 미리 채운 GitHub 이슈 작성 화면(새 탭)
   var newsM = decodeURIComponent(location.pathname).match(/\/news\/(\d{4}-\d{2}-\d{2})\/([^\/]+?)(?:\.html)?\/?$/);
   if (newsM) {
@@ -235,35 +236,37 @@
       }
     });
 
-    // 진행 중 표시: 열린 research 이슈 조회(비인증 60회/시간 → sessionStorage 5분 캐시, 실패 시 조용히 기본 버튼 유지)
-    var markInProgress = function (issues) {
-      issues = issues || [];
-      items.forEach(function (it) {
-        if (it.btn.getAttribute("data-state") === "progress") { // 다시 확인할 때를 위해 기본 상태로 되돌린 뒤 판정
-          it.btn.classList.remove("is-progress");
-          it.btn.href = it.orig.href; it.btn.textContent = it.orig.text; it.btn.title = it.orig.title;
-          it.btn.setAttribute("data-state", "request");
-        }
-        for (var i = 0; i < issues.length; i++) {
-          var is = issues[i];
-          var hit = (it.src && is.srcs.indexOf(it.src) !== -1) ||
-                    (it.page && is.pages.indexOf(it.page) !== -1) ||
-                    (is.date === rDate && is.title && is.title === it.title);
-          if (!hit) continue;
-          it.btn.classList.add("is-progress");
-          it.btn.href = is.url;
-          it.btn.textContent = "⏳ 리서치 진행 중";
-          it.btn.title = "리서치 진행 중 (요청 이슈 #" + is.number + " 보기)";
-          it.btn.setAttribute("data-state", "progress");
-          break;
-        }
-      });
+    // 실시간 상태 갱신 (새로고침 없이 버튼만 DOM에서 교체: 🔍 요청 → ⏳ 진행 중 → 📄 리서치 보기)
+    //   GET /repos/{REPO}/issues?labels=research&state=all&creator=DreamHouseKSH (비인증, 시간당 60회 한도)
+    //   - 화면이 보이는 동안 약 3분마다 + 화면 복귀 시(마지막 확인 2분 경과 시). 숨겨진 동안은 호출 안 함.
+    //   - 결과는 localStorage 로 모든 탭이 공유(마지막 확인 170초 이내면 호출 대신 공유 결과 사용, 20초 잠금으로 동시 호출 방지)
+    //     → 탭을 여러 개 열어도 이슈 목록은 시간당 약 20회. 'storage' 이벤트로 다른 탭 결과도 즉시 반영.
+    //   - 남은 한도 X-RateLimit-Remaining < 10 이면 reset 시각까지 쉼. 실패하면 조용히 현재 버튼 유지.
+    //   - 닫힌 이슈(완료) + 페이지에 '심층 리서치' 링크가 아직 없음 → 마지막 댓글에서 research/ URL을 찾아 연결
+    //     (https://dreamhouseksh.github.io/dreamhouse-briefings/research/ 로 시작하는 것만 허용, 아니면 이슈 링크).
+    //     댓글 조회는 이 페이지에 해당 기사가 있을 때만, 이슈당 1회(결과를 localStorage 에 영구 캐시).
+    var LS = "dh-research-v2", LSC = "dh-research-comments-v2", LSL = "dh-research-lock-v2", LSB = "dh-research-backoff-v2";
+    var POLL = 3 * 60 * 1000, FRESH = 170 * 1000, REVISIT = 120 * 1000;
+    var RESEARCH_PREFIX = "https://dreamhouseksh.github.io/dreamhouse-briefings/research/";
+    var lsGet = function (k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } };
+    var lsSet = function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
+    var apiGet = function (path) {
+      return fetch("https://api.github.com/repos/" + REPO + path,
+                   { headers: { "Accept": "application/vnd.github+json" }, cache: "no-store" })
+        .then(function (r) {
+          var rem = Number(r.headers.get("x-ratelimit-remaining")), rst = Number(r.headers.get("x-ratelimit-reset"));
+          if (!isNaN(rem) && rem < 10 && rst) lsSet(LSB, { until: rst * 1000 });
+          if (r.status === 403 || r.status === 429) lsSet(LSB, { until: rst ? rst * 1000 : Date.now() + 15 * 60 * 1000 });
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        });
     };
     var parseIssues = function (arr) {
       var out = [];
       (Array.isArray(arr) ? arr : []).forEach(function (x) {
-        if (!x || x.pull_request || x.state !== "open") return;
+        if (!x || x.pull_request) return;
         if (!x.user || x.user.login !== OWNER) return; // 다른 작성자 이슈 무시
+        if (x.state === "closed" && x.state_reason === "not_planned") return; // 처리 안 하고 닫은 요청은 무시
         var hasLabel = (x.labels || []).some(function (l) { return (l && (l.name || l)) === "research"; });
         if (!hasLabel) return;
         var b = String(x.body || ""), srcs = [], pages = [], date = "", m;
@@ -274,37 +277,98 @@
           else date = m[2];
         }
         var t = String(x.title || "").replace(/^\s*\[research\]\s*/i, "").replace(/\s+/g, " ").trim();
-        out.push({ number: x.number, url: x.html_url, srcs: srcs, pages: pages, date: date, title: t });
+        out.push({ number: x.number, url: x.html_url, state: x.state, closedAt: x.closed_at || "", comments: x.comments || 0,
+                   srcs: srcs, pages: pages, date: date, title: t });
       });
       return out;
     };
-    var CK = "dh-research-open-v1", TTL = 5 * 60 * 1000, REVISIT = 60 * 1000, inflight = false;
-    var loadResearch = function (maxAge) {
-      if (!items.length || !window.fetch || inflight) return;
-      var cached = null;
-      try {
-        var c = JSON.parse(sessionStorage.getItem(CK) || "null");
-        if (c && c.t && Date.now() - c.t < maxAge && Array.isArray(c.d)) cached = c.d;
-      } catch (e) {}
-      if (cached) { markInProgress(cached); return; }
-      inflight = true;
-      fetch("https://api.github.com/repos/" + REPO + "/issues?labels=research&state=open&per_page=50",
-            { headers: { "Accept": "application/vnd.github+json" }, cache: "no-store" })
-        .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    var matches = function (it, is) {
+      return (it.src && is.srcs.indexOf(it.src) !== -1) ||
+             (it.page && is.pages.indexOf(it.page) !== -1) ||
+             (is.date === rDate && is.title && is.title === it.title);
+    };
+    var setBtn = function (it, state, href, text, title, external) {
+      var b = it.btn;
+      b.classList.toggle("is-progress", state === "progress");
+      b.classList.toggle("is-done", state === "done");
+      b.href = href; b.textContent = text; b.title = title;
+      if (external) { b.target = "_blank"; b.rel = "noopener noreferrer"; } else { b.removeAttribute("target"); b.removeAttribute("rel"); }
+      b.setAttribute("data-state", state);
+    };
+    var findResearchUrl = function (comments) {
+      // 마지막 댓글부터 거꾸로, 허용된 접두사로 시작하는 URL만
+      for (var i = comments.length - 1; i >= 0; i--) {
+        var urls = String(comments[i] && comments[i].body || "").match(/https?:\/\/[^\s<>()"'`\]]+/g) || [];
+        for (var j = 0; j < urls.length; j++) {
+          var u = urls[j].replace(/[.,;:!?·)]+$/, "");
+          if (u.indexOf(RESEARCH_PREFIX) === 0 && u.length > RESEARCH_PREFIX.length && !/[\\]|\.\./.test(u)) return u;
+        }
+        if (comments[i] && comments[i].user && comments[i].user.login === OWNER) break; // 마지막 내 댓글까지만
+      }
+      return "";
+    };
+    var pendingComments = {};
+    var resolveClosed = function (is) {
+      var cc = lsGet(LSC) || {};
+      if (Object.prototype.hasOwnProperty.call(cc, is.number)) return cc[is.number];
+      if (pendingComments[is.number] || !is.comments) return is.comments ? null : "";
+      var bo = lsGet(LSB); if (bo && bo.until > Date.now()) return null;
+      pendingComments[is.number] = true;
+      var last = Math.max(1, Math.ceil(is.comments / 100));
+      apiGet("/issues/" + is.number + "/comments?per_page=100&page=" + last)
+        .then(function (cs) {
+          var c2 = lsGet(LSC) || {};
+          c2[is.number] = findResearchUrl(Array.isArray(cs) ? cs.filter(function (c) { return c && c.user && c.user.login === OWNER; }) : []);
+          lsSet(LSC, c2);
+          applyStatus((lsGet(LS) || {}).d || []);
+        })
+        .catch(function () {})
+        .then(function () { delete pendingComments[is.number]; });
+      return null; // 아직 모름 → 일단 이슈 링크
+    };
+    var applyStatus = function (issues) {
+      items.forEach(function (it) {
+        var open = null, closed = null;
+        issues.forEach(function (is) {
+          if (!matches(it, is)) return;
+          if (is.state === "open") { if (!open) open = is; }
+          else if (!closed || is.closedAt > closed.closedAt) closed = is;
+        });
+        if (open) {
+          setBtn(it, "progress", open.url, "⏳ 리서치 진행 중", "리서치 진행 중 (요청 이슈 #" + open.number + " 보기)", true);
+        } else if (closed) {
+          var ru = resolveClosed(closed);
+          if (ru) setBtn(it, "done", ru, "📄 리서치 보기", "이 기사의 심층 리서치 결과 보기", false);
+          else setBtn(it, "done", closed.url, "📄 리서치 보기", "리서치 완료 (요청 이슈 #" + closed.number + " 보기)", true);
+        } else {
+          setBtn(it, "request", it.orig.href, it.orig.text, it.orig.title, true);
+        }
+      });
+    };
+    var refreshStatus = function (maxAge) {
+      if (!items.length || !window.fetch) return;
+      var c = lsGet(LS);
+      if (c && Array.isArray(c.d)) applyStatus(c.d);           // 공유 결과 먼저 반영
+      if (c && c.t && Date.now() - c.t < maxAge) return;        // 아직 신선 → 호출 안 함
+      var bo = lsGet(LSB); if (bo && bo.until > Date.now()) return;
+      var lk = lsGet(LSL); if (lk && Date.now() - lk.t < 20000) return; // 다른 탭이 호출 중
+      lsSet(LSL, { t: Date.now() });
+      apiGet("/issues?labels=research&state=all&creator=" + OWNER + "&per_page=50&sort=updated")
         .then(function (j) {
           var d = parseIssues(j);
-          try { sessionStorage.setItem(CK, JSON.stringify({ t: Date.now(), d: d })); } catch (e) {}
-          markInProgress(d);
+          lsSet(LS, { t: Date.now(), d: d });
+          applyStatus(d);
         })
         .catch(function () { /* 조용히 현재 버튼 유지 */ })
-        .then(function () { inflight = false; });
+        .then(function () { try { localStorage.removeItem(LSL); } catch (e) {} });
     };
-    loadResearch(TTL);
-    // 화면에 돌아올 때(앱 전환·탭 복귀·bfcache 복원) 캐시가 1분 넘었으면 다시 확인
-    document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") loadResearch(REVISIT); });
-    window.addEventListener("pageshow", function (e) { if (e.persisted) loadResearch(REVISIT); });
-    // 보는 중에는 캐시(5분)가 만료될 때만 다시 확인 (version.json 3분 주기와 별개, 시간당 최대 ~12회/탭)
-    if (items.length) setInterval(function () { if (document.visibilityState === "visible") loadResearch(TTL); }, TTL + 5000);
+    refreshStatus(FRESH);
+    document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") refreshStatus(REVISIT); });
+    window.addEventListener("pageshow", function (e) { if (e.persisted) refreshStatus(REVISIT); });
+    window.addEventListener("storage", function (e) {
+      if ((e.key === LS || e.key === LSC) && items.length) { var c = lsGet(LS); if (c && Array.isArray(c.d)) applyStatus(c.d); }
+    });
+    if (items.length) setInterval(function () { if (document.visibilityState === "visible") refreshStatus(FRESH); }, POLL);
   }
 
   // 5) 오른쪽 목차(h2) + 현재 위치 강조

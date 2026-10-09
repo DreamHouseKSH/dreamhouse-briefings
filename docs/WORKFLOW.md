@@ -123,7 +123,7 @@
 
 - Pages 소스: 브랜치 `main`, 폴더 `/`(루트). `main`에 push하면 GitHub가 자동 빌드(보통 1~2분).
 - 테마: 외부 테마 없이 **커스텀 레이아웃** — `_layouts/default.html`, `assets/css/style.css`(Pretendard 글꼴, `word-break: keep-all`, 본문 폭 약 46rem, 라이트/다크 자동+토글), `assets/js/site.js`(맨 URL 자동 링크, 표 가로 스크롤, 오른쪽 목차, 뉴스 항목별 리서치 요청 버튼).
-- **새 내용 자동 반영(iPad 홈 화면 웹앱 등):** 빌드마다 `version.json`(`{"build": site.time}`)이 바뀌고, 각 페이지 `<meta name="site-build">` 에 같은 값이 박힙니다. `site.js` 가 페이지를 열 때와 화면에 돌아올 때(`visibilitychange`·`pageshow`) `version.json` 을 `cache: 'no-store'` 로 받아 값이 다르면 HTML 캐시를 갱신하고 `location.reload()` 합니다(무한 새로고침 방지: 같은 버전은 5분에 1회·최소 30초 간격, sessionStorage 가드 — 가드에 걸리면 배너로 대신). 화면을 **보고 있는 동안**(`visibilityState === 'visible'`)에는 **3분마다** `version.json` 을 no-store로 확인하고, 바뀌었으면 바로 reload하지 않고 상단에 **'새 내용이 있어요 · 새로고침'** 배너(누르면 reload, ✕로 닫기)를 띄웁니다. 리서치 상태 API는 호출 한도(시간당 60회) 때문에 이 3분 주기로 돌리지 않고, 캐시(5분) 만료 시·화면 복귀 시에만 다시 확인합니다. 헤더 오른쪽 **↻** 버튼은 수동 새로고침(리서치 상태 캐시도 비움). 리서치 상태 API 캐시는 화면 복귀 시 1분 넘었으면 다시 확인. **서비스워커·manifest는 없고 만들지 않습니다**(오래된 캐시가 남을 경로 없음).
+- **새 내용 자동 반영(iPad 홈 화면 웹앱 등):** 빌드마다 `version.json`(`{"build": site.time}`)이 바뀌고, 각 페이지 `<meta name="site-build">` 에 같은 값이 박힙니다. `site.js` 가 페이지를 열 때와 화면에 돌아올 때(`visibilitychange`·`pageshow`) `version.json` 을 `cache: 'no-store'` 로 받아 값이 다르면 HTML 캐시를 갱신하고 `location.reload()` 합니다(무한 새로고침 방지: 같은 버전은 5분에 1회·최소 30초 간격, sessionStorage 가드 — 가드에 걸리면 배너로 대신). 화면을 **보고 있는 동안**(`visibilityState === 'visible'`)에는 **3분마다** `version.json` 을 no-store로 확인하고, 바뀌었으면 바로 reload하지 않고 상단에 **'새 내용이 있어요 · 새로고침'** 배너(누르면 reload, ✕로 닫기)를 띄웁니다. 리서치 버튼 상태는 페이지 새로고침 없이 따로 갱신됩니다(8장 '버튼 상태'). 헤더 오른쪽 **↻** 버튼은 수동 새로고침(리서치 상태 공유 캐시도 비움). **서비스워커·manifest는 없고 만들지 않습니다**(오래된 캐시가 남을 경로 없음).
 - 앞머리(front matter) 없는 `.md`도 그대로 페이지가 됩니다(`jekyll-optional-front-matter`). 마크다운 안의 `.md` 상대 링크는 `.html`로 자동 변환(`jekyll-relative-links`). **브리핑 파일에 front matter를 넣을 필요 없음.**
 - 홈(`index.html`) · 전체 아카이브(`archive.html`) · 분야별(`category/*.html`)의 날짜 목록과 같은 날짜 탭, 이전/다음 날짜 이동은 `news/YYYY-MM-DD/*.md`, `github/YYYY-MM-DD.md` **파일 경로에서 자동 생성**됩니다(`_includes/collect-dates.html`). 파일명 규칙을 지키는 것이 중요.
 - 하이라이트 한 줄(홈 카드·아카이브·분야별 목록)은 `_data/highlights.yml` 에서 읽습니다. 키: `IT`, `AI`, `모델`, `엔진`, `GitHub`. 해당 날짜 브리핑 파일에 있는 내용만 요약.
@@ -165,13 +165,15 @@ gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status
 | 상태 | 표시 | 조건 | 연결 | 판정 방식 |
 |---|---|---|---|---|
 | 완료 | **📄 리서치 보기** (초록 채움) | 기사 메타 목록에 `- **심층 리서치:** [..](../../research/….md)` 줄이 있음 | 그 리서치 페이지(같은 탭) | 빌드된 마크다운 링크만 봄 → **GitHub API 실패와 무관하게 항상 표시** |
-| 진행 중 | **⏳ 리서치 진행 중** (노랑 점선) | 열린 이슈 + 라벨 `research` + **작성자 `DreamHouseKSH`** 가 이 기사를 가리킴 | 그 이슈(새 탭) | 브라우저가 `GET https://api.github.com/repos/DreamHouseKSH/dreamhouse-briefings/issues?labels=research&state=open` (비인증) 호출 |
+| 완료(링크 반영 전) | **📄 리서치 보기** | 이 기사를 가리키는 **닫힌** 이슈(작성자 `DreamHouseKSH`, `not_planned` 로 닫은 건 제외)가 있는데 페이지에 아직 '심층 리서치' 링크가 없음 | 이슈의 마지막(내) 댓글 속 `https://dreamhouseksh.github.io/dreamhouse-briefings/research/` 로 시작하는 URL만 허용, 없으면 그 이슈 | GitHub API(아래) |
+| 진행 중 | **⏳ 리서치 진행 중** (노랑 점선) | 열린 이슈 + 라벨 `research` + **작성자 `DreamHouseKSH`** 가 이 기사를 가리킴 | 그 이슈(새 탭) | 브라우저가 `GET https://api.github.com/repos/DreamHouseKSH/dreamhouse-briefings/issues?labels=research&state=all&creator=DreamHouseKSH` (비인증) 호출 |
 | 요청 | **🔍 리서치 요청** (회색 테두리, 기본) | 위 둘 다 아님 | 미리 채운 이슈 작성 화면(새 탭) | — |
 
-- 우선순위: 완료 > 진행 중 > 요청. '심층 리서치' 링크가 있으면 API를 보지 않습니다.
+- 우선순위: 마크다운 '심층 리서치' 링크(완료) > 열린 이슈(진행 중) > 닫힌 이슈(완료) > 요청. 마크다운 링크가 있는 항목은 API 결과로 바꾸지 않습니다.
+- **새로고침 없이 그 자리에서 바뀜:** 화면이 보이는 동안 **약 3분마다** 이슈 목록을 비동기로 확인해 버튼만 DOM에서 교체합니다(🔍 요청 → ⏳ 진행 중 → 📄 리서치 보기). 화면 복귀 시에도 마지막 확인이 2분 넘었으면 확인. 숨겨진 동안은 호출하지 않습니다.
 - 진행 중 매칭(이슈 본문 기준): `- 원문: URL` 이 기사 원문 URL과 같거나(프로토콜·`www.`·끝 `/`·`#` 무시), `- 아카이브: URL` 의 `news/날짜/분야#앵커` 가 같거나, `- 날짜:` + 제목(`[research] ` 뗀 것)이 같으면 진행 중. 버튼이 만든 이슈 본문 형식을 바꾸면 이 매칭도 같이 고칠 것.
 - 다른 작성자가 연 이슈, PR, 닫힌 이슈는 무시합니다(공개 저장소라 누구나 이슈를 열 수 있음).
-- 비인증 API 한도(IP당 시간당 60회) 때문에 결과를 `sessionStorage`(키 `dh-research-open-v1`)에 **5분** 캐시합니다. 호출 실패·한도 초과·네트워크 오류면 **조용히 기본 버튼(🔍 리서치 요청)** 으로 둡니다. 그래서 이슈를 연 직후나 닫은 직후 최대 5분은 이전 상태가 보일 수 있습니다.
+- 비인증 API 한도(IP당 시간당 60회): 결과를 **localStorage**(`dh-research-v2`)로 **모든 탭이 공유**합니다. 마지막 확인이 170초 이내면 호출하지 않고 공유 결과를 쓰고, 20초 잠금(`dh-research-lock-v2`)으로 탭끼리 동시 호출을 막고, `storage` 이벤트로 다른 탭이 받은 결과를 바로 반영합니다 → 탭 수와 상관없이 이슈 목록 호출은 시간당 약 20회(최대 30회). 닫힌 이슈의 댓글 조회는 이 페이지에 해당 기사가 있을 때만 이슈당 1회(결과 `dh-research-comments-v2` 에 영구 캐시). 남은 한도가 10 미만이거나 403/429면 reset 시각까지 쉽니다(`dh-research-backoff-v2`). 실패하면 **조용히 현재 버튼 유지**. 사이트 버전 배너(6장)와는 별개입니다.
 - ⚠️ **리서치 루틴이 끝나면 원래 기사에 '심층 리서치' 링크를 꼭 넣어야** 버튼이 '📄 리서치 보기'로 바뀝니다(아래 '완료 처리' 1번). 링크 없이 이슈만 닫으면 버튼은 '🔍 리서치 요청'으로 되돌아갑니다.
 
 ### 처리 규칙 (보안 — 반드시 지킬 것)

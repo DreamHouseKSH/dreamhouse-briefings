@@ -62,7 +62,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 - **한 번 확인할 때 최대 3건**까지(오래된 것부터). 남은 건 다음 확인 때. 새 요청이 없으면 채팅으로 알리지 않음. 처리한 건이 있으면 채팅으로 건마다 한 줄 결론·핵심 발견·리서치 페이지 링크를 알림.
 - 산출물 `research/YYYY-MM-DD-{slug}.md`(작성일 KST, 템플릿 `templates/research.md`): 한 줄 결론 → 배경 → 핵심 사실과 수치(출처별) → 이해관계자별 입장과 논조 → 반론과 쟁점 → 앞으로 볼 체크포인트 → 출처 목록. 용어 괄호 풀이, 전문 복제·번역 금지, 이미지는 원문 URL 핫링크만, 지어낸 정보 금지.
 - 완료: 원래 기사 메타 목록에 `- **심층 리서치:** [제목](../../research/….md)` 추가 → push·Pages built 확인 → 이슈에 리서치 페이지 링크 댓글 후 닫기 → 사용자에게 알림.
-- **버튼 상태(사이트, `assets/js/site.js` 4-2):** 기사에 `**심층 리서치:**` 링크가 있으면 **📄 리서치 보기**(리서치 페이지로, 마크다운 기준이라 API 실패와 무관) → 아니면 열린 `research` 이슈 중 **작성자 DreamHouseKSH** 이고 본문의 원문 URL/아카이브 앵커/날짜+제목이 이 기사와 맞으면 **⏳ 리서치 진행 중**(그 이슈로, 비인증 GitHub REST·sessionStorage 5분 캐시·실패 시 조용히 기본) → 그 외 **🔍 리서치 요청**. 다른 작성자 이슈는 무시.
+- **버튼 상태(사이트, `assets/js/site.js` 4-2):** 기사에 `**심층 리서치:**` 링크가 있으면 **📄 리서치 보기**(리서치 페이지로, 마크다운 기준이라 API 실패와 무관) → 아니면 `research` 이슈(state=all, **작성자 DreamHouseKSH**) 중 본문의 원문 URL/아카이브 앵커/날짜+제목이 이 기사와 맞는 게 열려 있으면 **⏳ 리서치 진행 중**(그 이슈로), 닫혀 있으면 **📄 리서치 보기**(마지막 내 댓글의 `https://dreamhouseksh.github.io/dreamhouse-briefings/research/…` URL만 허용, 없으면 이슈) → 그 외 **🔍 리서치 요청**. 다른 작성자 이슈는 무시. 화면이 보이는 동안 약 3분마다 비인증 GitHub REST로 확인해 **새로고침 없이 버튼만 교체**, 결과는 localStorage로 탭끼리 공유(시간당 약 20회), 실패 시 조용히 유지. 그래서 완료 댓글에 리서치 페이지 URL(`…/research/YYYY-MM-DD-slug.html`)을 꼭 넣을 것.
 - ⚠️ **리서치 루틴 마지막에 원래 기사에 '심층 리서치' 링크를 반드시 넣을 것.** 이 링크가 있어야 버튼이 '📄 리서치 보기'로 바뀝니다(없이 이슈만 닫으면 '🔍 리서치 요청'으로 되돌아감). 상세: `docs/WORKFLOW.md` 8장 '버튼 상태'.
 
 ## 열람 방법 (GitHub Pages — 공개)
@@ -70,7 +70,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 - **사이트(운영 중):** https://dreamhouseksh.github.io/dreamhouse-briefings/ — 브랜치 `main` / 폴더 `/`(루트), GitHub 기본 Jekyll 빌드. push 후 1~2분 내 반영.
 - ⚠️ **사이트와 저장소 모두 인터넷 전체 공개**입니다. 요약·원문 링크 원칙(저작권)을 더 엄격히 지키고, 공개되면 안 되는 메모·개인정보는 커밋하지 마세요.
 - push 후 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status` → `built` 이면 정상.
-- 새 빌드 자동 반영: `version.json`(빌드마다 바뀜)을 `site.js` 가 열 때·화면 복귀 시 no-store로 확인해 바뀌었으면 바로 새로고침(루프 가드 있음), 보는 중에는 3분마다 확인해 바뀌면 '새 내용이 있어요 · 새로고침' 배너(닫기 가능). 리서치 상태 API는 3분 주기로 돌리지 않음(캐시 만료·화면 복귀 시만), 헤더 **↻** 수동 새로고침. **서비스워커는 없고 만들지 않음.** `version.json`·`<meta name="site-build">` 를 지우지 말 것.
+- 새 빌드 자동 반영: `version.json`(빌드마다 바뀜)을 `site.js` 가 열 때·화면 복귀 시 no-store로 확인해 바뀌었으면 바로 새로고침(루프 가드 있음), 보는 중에는 3분마다 확인해 바뀌면 '새 내용이 있어요 · 새로고침' 배너(닫기 가능). 리서치 버튼 상태는 새로고침 없이 따로 갱신(위 '버튼 상태'), 헤더 **↻** 수동 새로고침. **서비스워커는 없고 만들지 않음.** `version.json`·`<meta name="site-build">` 를 지우지 말 것.
 - 사이트 구조 상세: [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 6장.
 
 ## 알려진 공백 / 다음 에이전트에게
