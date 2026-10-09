@@ -61,6 +61,14 @@
     w.appendChild(t);
   });
 
+  // 4-1) "### 논조·다른 시각" 섹션 목록에 클래스 부여(스타일용)
+  prose.querySelectorAll("h3").forEach(function (h) {
+    if (h.textContent.trim().indexOf("논조") !== 0) return;
+    h.classList.add("stance-head");
+    var n = h.nextElementSibling;
+    if (n && n.tagName === "UL") n.classList.add("stance");
+  });
+
   // 5) 오른쪽 목차(h2) + 현재 위치 강조
   var toc = document.querySelector(".toc");
   var heads = Array.prototype.slice.call(prose.querySelectorAll("h2"));

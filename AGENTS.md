@@ -9,13 +9,14 @@
 - 박스(box) 작업 경로: `/workspace/dreamhouse-briefings` — 없으면 `gh repo clone DreamHouseKSH/dreamhouse-briefings`
 - gh 인증 계정: **DreamHouseKSH** (박스에 이미 로그인됨, `gh auth status`로 확인). 다른 계정으로 push하지 마세요.
 
-## 가장 중요한 규칙 5가지
+## 가장 중요한 규칙 6가지
 
 1. **전문 복제·번역 금지.** 기사 본문을 통째로 옮기거나 번역하지 않습니다. 항상 "넉넉한 한국어 요약 + 원문 링크". **이미지는 저장소에 저장하지 않고** 원문의 og:image/대표 이미지 URL을 `### 미디어` 섹션에 핫링크만(+ `> 출처:` 줄). 없으면 섹션 생략.
 2. **기술 용어는 괄호로 풀어쓰기.** 예: `MoE(Mixture of Experts, 전문가 혼합 — 일부 하위 네트워크만 골라 계산하는 구조)`.
 3. **사실을 지어내지 않기.** 브리핑(또는 그 원문)에 있는 사실만 씁니다. 표현은 풀어 써도 되지만 수치·날짜·주장은 원문 그대로. 회사 자체 발표 수치는 "회사 발표 기준"이라고 표시.
 4. **시간은 KST(Asia/Seoul).** 파일 날짜·문서 내 시각 모두 KST 기준. UTC로 표시된 원문 시각은 변환해서 적습니다.
 5. **`main`에 직접 커밋·push** 하되, force-push·히스토리 재작성은 사용자 승인 없이 하지 않습니다.
+6. **뉴스 항목마다 `### 논조·다른 시각`.** 기사 논조(긍정/부정/중립/혼재) · 논조 점검(출처 편중·회사 발표 받아쓰기·과장·빠진 반론·이해관계) · 다른 시각(실제 출처 링크 1~3개, 못 찾으면 "찾은 반론 없음", 일반론은 `예상 쟁점:` 라벨). 이를 위해 같은 주제의 다른 기사를 찾아 읽는 것은 허용(WORKFLOW 3장 8번).
 
 ## 파일 레이아웃 (요약)
 
@@ -35,7 +36,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 ## 매일 해야 할 일 (체크리스트)
 
 1. `cd /workspace/dreamhouse-briefings && git pull --ff-only`
-2. 아침 루틴에서 전달된 브리핑 내용으로 `news/<오늘>/*.md`, `github/<오늘>.md` 작성 (템플릿·스타일은 WORKFLOW 참고). 각 항목 원문의 `og:image` 를 찾아 `### 미디어` 에 핫링크(WORKFLOW 3·4장)
+2. 아침 루틴에서 전달된 브리핑 내용으로 `news/<오늘>/*.md`, `github/<오늘>.md` 작성 (템플릿·스타일은 WORKFLOW 참고). 각 항목 원문의 `og:image` 를 찾아 `### 미디어` 에 핫링크(WORKFLOW 3·4장). 각 뉴스 항목에 `### 논조·다른 시각` 작성(웹 검색으로 다른 매체·반응 확인)
 3. `_data/highlights.yml` 맨 위에 오늘 날짜 하이라이트 추가 (날짜 목록·분야 링크는 사이트가 폴더에서 **자동 생성**하므로 목차 표 편집 불필요)
 4. `git add -A && git commit -m "briefings: YYYY-MM-DD news + github trends" && git push origin main`
 

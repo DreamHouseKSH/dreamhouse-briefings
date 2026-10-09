@@ -237,6 +237,17 @@ a:hover { color: var(--link-hover); text-decoration: underline; text-underline-o
 }
 :root[data-theme="dark"] .is-brief .prose img, :root[data-theme="dark"] .is-brief .prose video { box-shadow: none; }
 
+/* 논조·다른 시각 (### 논조·다른 시각 → site.js 가 .stance 부여) */
+.is-brief .prose h3.stance-head { font-size: 1rem; color: var(--text-2); margin-top: 1.6rem; }
+.is-brief .prose ul.stance {
+  list-style: none; padding: .75rem 1rem; margin: 0 0 1.3rem;
+  background: var(--surface-2); border: 1px solid var(--border); border-left: 4px solid var(--muted);
+  border-radius: 10px; font-size: .93rem; line-height: 1.65;
+}
+.is-brief .prose ul.stance > li { margin: .4rem 0; }
+.is-brief .prose ul.stance ul { padding-left: 1.1em; margin: .2rem 0 0; list-style: disc; }
+.is-brief .prose ul.stance ul li { margin: .25rem 0; }
+
 .pager { max-width: calc(var(--measure) + 18rem); margin: 3rem auto 0; display: flex; justify-content: space-between; gap: 1rem; }
 .pager a { padding: .6rem 1rem; border: 1px solid var(--border); border-radius: 10px; background: var(--surface); font-weight: 600; }
 
