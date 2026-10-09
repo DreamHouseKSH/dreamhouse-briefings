@@ -13,7 +13,7 @@ timezone: Asia/Seoul
 #   (꺼져 있거나 실패하면 표시만 조용히 숨김). code 를 비우면 추적·표시 모두 꺼짐.
 analytics:
   provider: goatcounter
-  code: ""
+  code: "dh-news"
   show_today: true
 
 markdown: kramdown
