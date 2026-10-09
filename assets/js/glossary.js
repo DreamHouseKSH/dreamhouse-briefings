@@ -3,7 +3,7 @@ layout: null
 # Jekyll 이 _data/glossary.yml 을 JSON 으로 넣어 줌 (front matter 필수)
 ---
 /* 줄임말·전문용어 자동 풀이 — 같은 페이지 어디에 나와도 '용어(원어, 쉬운 뜻)'를 본문에 바로 표시
- * 원본: _data/glossary.yml · 규칙: docs/WORKFLOW.md 2-1 · 용어집 페이지: /glossary/
+ * 원본: _data/glossary.yml · 규칙: docs/WORKFLOW.md 3장 2번 · 용어집 페이지: /glossary/
  * - 대상: 뉴스(news/)·GitHub(github/)·리서치(research/) 페이지의 article.prose 본문
  * - 건드리지 않음: 링크 글자(a), 코드(code/pre/kbd/samp), 제목(h1~h3), 버튼, URL 문자열, .no-gloss 안쪽
  * - 중복 방지: 바로 뒤에 이미 '('가 붙어 있거나(본문의 첫 풀이), 몇 글자 안에 원어가 든 괄호가 있거나,
