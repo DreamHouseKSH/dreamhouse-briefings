@@ -9,6 +9,7 @@
 - **원문:** https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/
 - **분야:** AI · 제품/엔터프라이즈
 - **날짜:** 2026-10-08
+- **심층 리서치:** [구글 기업용 Gemini agent, 뭐가 새롭고 뭐가 미확인인가](../../research/2026-10-09-google-gemini-agent-enterprise.md)
 
 ### 미디어
 
