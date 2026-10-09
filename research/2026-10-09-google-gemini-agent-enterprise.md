@@ -3,7 +3,7 @@
 - **요청:** [#1](https://github.com/DreamHouseKSH/dreamhouse-briefings/issues/1)
 - **원래 기사:** [2026-10-09 AI · 1. 구글 클라우드, 기업용 Gemini agent 공개](../news/2026-10-09/AI.md)
 - **원문:** https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/
-- **작성:** 2026-10-09 17:55 KST (2026-10-09 18:40 KST 에세이형으로 다시 씀)
+- **작성:** 2026-10-09 17:55 KST (2026-10-09 18:15 KST 에세이형으로 다시 씀)
 
 구글이 Gemini를 대답하는 챗봇에서 자기 계정과 권한, 감사 기록을 가진 '업무용 AI 동료'로 바꾸겠다고 발표했어요. 설계는 분석가들에게 좋은 평가를 받았지만, 지금은 일부 기업만 쓰는 비공개 프리뷰라 '출시'보다는 '정식 출시 예고'에 가깝고, 가격과 신뢰성은 아직 확인되지 않았습니다.
 {: .research-lead}
