@@ -31,8 +31,9 @@
     if (!window.fetch) return go();
     fetch(location.href, { cache: "reload", credentials: "same-origin" }).then(go, go);
   };
-  var showUpdateBanner = function () {
-    if (document.querySelector(".update-banner")) return;
+  var dismissedBuild = "";
+  var showUpdateBanner = function (nb) {
+    if (document.querySelector(".update-banner") || (nb && nb === dismissedBuild)) return; // 닫은 버전은 다시 띄우지 않음
     var bar = document.createElement("div");
     bar.className = "update-banner";
     bar.setAttribute("role", "status");
@@ -41,7 +42,7 @@
     go.addEventListener("click", function () { go.disabled = true; hardReload(); });
     var x = document.createElement("button");
     x.type = "button"; x.className = "ub-close"; x.setAttribute("aria-label", "닫기"); x.title = "닫기"; x.textContent = "✕";
-    x.addEventListener("click", function () { bar.remove(); });
+    x.addEventListener("click", function () { dismissedBuild = nb || ""; bar.remove(); });
     bar.appendChild(go); bar.appendChild(x);
     var hdr = document.querySelector(".site-header");
     if (hdr && hdr.parentNode) hdr.parentNode.insertBefore(bar, hdr.nextSibling); else document.body.insertBefore(bar, document.body.firstChild);
@@ -58,11 +59,11 @@
         var nb = v && String(v.build || "");
         if (!nb || nb === curBuild) return;
         if (Number(nb) && Number(curBuild) && Number(nb) < Number(curBuild)) return; // CDN이 더 옛 버전을 준 경우 무시
-        if (mode === "poll") { showUpdateBanner(); return; }
+        if (mode === "poll") { showUpdateBanner(nb); return; }
         var g = null;
         try { g = JSON.parse(sessionStorage.getItem(RK) || "null"); } catch (e) {}
-        if (g && ((g.to === nb && Date.now() - g.t < 300000) || Date.now() - g.t < 30000)) { showUpdateBanner(); return; } // 루프 방지 → 배너로 대신
-        try { sessionStorage.setItem(RK, JSON.stringify({ to: nb, from: curBuild, t: Date.now() })); } catch (e) { showUpdateBanner(); return; }
+        if (g && ((g.to === nb && Date.now() - g.t < 300000) || Date.now() - g.t < 30000)) { showUpdateBanner(nb); return; } // 루프 방지 → 배너로 대신
+        try { sessionStorage.setItem(RK, JSON.stringify({ to: nb, from: curBuild, t: Date.now() })); } catch (e) { showUpdateBanner(nb); return; }
         hardReload();
       })
       .catch(function () { /* 오프라인 등: 조용히 무시 */ });
