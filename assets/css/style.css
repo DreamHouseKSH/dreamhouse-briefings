@@ -439,3 +439,41 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
 .glossary-page .gl-list dd { margin: .15rem 0 0; color: var(--text-2); }
 .glossary-page h2[hidden], .glossary-page dl[hidden], .glossary-page dt[hidden], .glossary-page dd[hidden] { display: none; }
 .gl-x.gl-in { margin-left: 0; }
+
+/* ---------- 본문 이미지 폭 제한 (리서치 등 .is-brief 아닌 페이지 포함). 표(.table-wrap) 가로 스크롤은 유지 ---------- */
+.prose img,
+.prose video {
+  max-width: 100%;
+  height: auto;
+}
+.prose figure,
+.prose a:has(> img) {
+  max-width: 100%;
+}
+
+/* ---------- 아이패드(~820px)·폰: 상단 메뉴 두 줄로 줄바꿈, 항목 전부 보이게 ---------- */
+@media (max-width: 56rem) {
+  .header-inner {
+    flex-wrap: wrap;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+    gap: .2rem .5rem;
+  }
+  .main-nav {
+    order: 3;
+    width: 100%;
+    margin-left: -.4rem;
+    margin-right: -.4rem;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    gap: .05rem;
+  }
+  .main-nav a {
+    font-size: .84rem;
+    padding: .3rem .5rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+  .header-actions { margin-left: auto; }
+}
