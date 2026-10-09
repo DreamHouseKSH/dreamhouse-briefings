@@ -1,4 +1,5 @@
 ---
+layout: null
 # Jekyll 이 _data/glossary.yml 을 JSON 으로 넣어 줌 (front matter 필수)
 ---
 /* 줄임말·전문용어 자동 풀이 — 같은 페이지 어디에 나와도 '용어(원어, 쉬운 뜻)'를 본문에 바로 표시
