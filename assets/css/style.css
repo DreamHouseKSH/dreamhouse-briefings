@@ -115,6 +115,14 @@ a:hover { color: var(--link-hover); text-decoration: underline; text-underline-o
   width: 2.2rem; height: 2.2rem; border-radius: 50%; cursor: pointer; font-size: 1rem; flex: none;
 }
 .theme-toggle:hover { background: var(--surface-2); }
+.header-actions { display: flex; align-items: center; gap: .35rem; flex: none; }
+.refresh-btn {
+  border: 1px solid transparent; background: transparent; color: var(--muted);
+  width: 2.2rem; height: 2.2rem; border-radius: 50%; cursor: pointer; font-size: 1.05rem; line-height: 1; flex: none;
+}
+.refresh-btn:hover, .refresh-btn:focus-visible { color: var(--text); background: var(--surface-2); border-color: var(--border); }
+.refresh-btn.is-spinning { animation: dh-spin .8s linear infinite; }
+@keyframes dh-spin { to { transform: rotate(360deg); } }
 
 /* ---------- briefing bar (같은 날짜 탭) ---------- */
 .brief-bar { border-bottom: 1px solid var(--border); background: var(--surface); }
@@ -362,10 +370,10 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
   body { font-size: 16px; line-height: 1.75; }
   .header-inner { flex-wrap: wrap; padding-top: .45rem; padding-bottom: .45rem; gap: .25rem .5rem; }
   .main-nav { order: 3; width: 100%; margin-left: -.6rem; }
-  .theme-toggle { margin-left: auto; }
+  .header-actions { margin-left: auto; }
   .main { padding-top: 1.25rem; }
 }
 @media print {
-  .site-header, .brief-bar, .toc, .pager, .theme-toggle { display: none !important; }
+  .site-header, .brief-bar, .toc, .pager, .theme-toggle, .refresh-btn { display: none !important; }
   body { background: #fff; color: #000; }
 }

@@ -7,6 +7,8 @@
   <title>{% if page_title != site.title %}{{ page_title | strip_html }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="color-scheme" content="light dark">
+  <meta name="site-build" content="{{ site.time | date: '%s' }}">
+  <meta name="site-version-url" content="{{ '/version.json' | relative_url }}">
   <script>
     (function () {
       try { var t = localStorage.getItem("theme"); if (t) document.documentElement.setAttribute("data-theme", t); } catch (e) {}
@@ -43,7 +45,10 @@
         <a class="nav-research{% if is_research %} active{% endif %}" href="{{ '/research/' | relative_url }}">리서치</a>
         <a class="nav-docs{% if is_doc %} active{% endif %}" href="{{ '/docs/' | relative_url }}">문서</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="다크/라이트 모드 전환" title="다크/라이트 모드 전환">◐</button>
+      <div class="header-actions">
+        <button class="refresh-btn" type="button" aria-label="새로고침 (최신 내용 불러오기)" title="새로고침 (최신 내용 불러오기)">↻</button>
+        <button class="theme-toggle" type="button" aria-label="다크/라이트 모드 전환" title="다크/라이트 모드 전환">◐</button>
+      </div>
     </div>
   </header>
 

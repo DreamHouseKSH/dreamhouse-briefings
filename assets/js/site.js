@@ -14,6 +14,55 @@
     });
   }
 
+
+  // 1-1) 새 빌드 자동 반영 (iPad 홈 화면 웹앱 등 standalone에서 오래된 화면이 남는 문제)
+  //   페이지의 <meta name="site-build"> 와 /version.json(no-store)을 비교해 다르면 다시 불러옴.
+  //   무한 새로고침 방지: 같은 목표 버전으로는 5분에 1회만 자동 새로고침 + 최소 30초 간격(sessionStorage 가드).
+  //   서비스워커 없음(만들지 않음) — HTTP 캐시만 갱신하면 됨. 규칙: docs/WORKFLOW.md 6장.
+  var buildMeta = document.querySelector('meta[name="site-build"]');
+  var verMeta = document.querySelector('meta[name="site-version-url"]');
+  var curBuild = buildMeta ? buildMeta.getAttribute("content") : "";
+  var verUrl = verMeta ? verMeta.getAttribute("content") : "";
+  var RK = "dh-reload-guard-v1", lastVerCheck = 0;
+  var hardReload = function () {
+    // HTML을 HTTP 캐시 무시하고 한 번 받아 캐시를 갱신한 뒤 reload (Pages HTML max-age=600 대응)
+    var go = function () { location.reload(); };
+    if (!window.fetch) return go();
+    fetch(location.href, { cache: "reload", credentials: "same-origin" }).then(go, go);
+  };
+  var checkVersion = function (force) {
+    if (!curBuild || !verUrl || !window.fetch) return;
+    var now = Date.now();
+    if (!force && now - lastVerCheck < 15000) return; // 너무 잦은 확인 방지
+    lastVerCheck = now;
+    fetch(verUrl + "?t=" + now, { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then(function (v) {
+        var nb = v && String(v.build || "");
+        if (!nb || nb === curBuild) return;
+        if (Number(nb) && Number(curBuild) && Number(nb) < Number(curBuild)) return; // CDN이 더 옛 버전을 준 경우 무시
+        var g = null;
+        try { g = JSON.parse(sessionStorage.getItem(RK) || "null"); } catch (e) {}
+        if (g && ((g.to === nb && Date.now() - g.t < 300000) || Date.now() - g.t < 30000)) return; // 같은 버전은 5분에 1회, 어떤 경우든 30초 간격 → 루프 방지
+        try { sessionStorage.setItem(RK, JSON.stringify({ to: nb, from: curBuild, t: Date.now() })); } catch (e) { return; } // 가드 저장 불가 시 자동 새로고침 안 함
+        hardReload();
+      })
+      .catch(function () { /* 오프라인 등: 조용히 무시 */ });
+  };
+  checkVersion(true);
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") checkVersion(false); });
+  window.addEventListener("pageshow", function (e) { if (e.persisted) checkVersion(true); });
+
+  // 1-2) 헤더 ↻ 새로고침 버튼 (수동, 항상 표시)
+  var rbtn = document.querySelector(".refresh-btn");
+  if (rbtn) {
+    rbtn.addEventListener("click", function () {
+      rbtn.classList.add("is-spinning");
+      try { sessionStorage.removeItem("dh-research-open-v1"); } catch (e) {}
+      hardReload();
+    });
+  }
+
   var prose = document.querySelector(".prose");
   if (!prose) return;
 
@@ -149,7 +198,8 @@
         btn.textContent = "🔍 리서치 요청";
         btn.title = "이 기사 심층 리서치 요청 (GitHub 이슈 작성 화면이 새 탭으로 열립니다)";
         btn.setAttribute("data-state", "request");
-        items.push({ btn: btn, src: normUrl(src), page: normPage(anchorUrl), title: title.replace(/\s+/g, " ").trim() });
+        items.push({ btn: btn, src: normUrl(src), page: normPage(anchorUrl), title: title.replace(/\s+/g, " ").trim(),
+                     orig: { href: btn.href, text: btn.textContent, title: btn.title } });
       }
       var li2 = document.createElement("li");
       li2.className = "research-req";
@@ -166,8 +216,13 @@
 
     // 진행 중 표시: 열린 research 이슈 조회(비인증 60회/시간 → sessionStorage 5분 캐시, 실패 시 조용히 기본 버튼 유지)
     var markInProgress = function (issues) {
-      if (!issues || !issues.length) return;
+      issues = issues || [];
       items.forEach(function (it) {
+        if (it.btn.getAttribute("data-state") === "progress") { // 다시 확인할 때를 위해 기본 상태로 되돌린 뒤 판정
+          it.btn.classList.remove("is-progress");
+          it.btn.href = it.orig.href; it.btn.textContent = it.orig.text; it.btn.title = it.orig.title;
+          it.btn.setAttribute("data-state", "request");
+        }
         for (var i = 0; i < issues.length; i++) {
           var is = issues[i];
           var hit = (it.src && is.srcs.indexOf(it.src) !== -1) ||
@@ -202,26 +257,31 @@
       });
       return out;
     };
-    if (items.length && window.fetch) {
-      var CK = "dh-research-open-v1", TTL = 5 * 60 * 1000, cached = null;
+    var CK = "dh-research-open-v1", TTL = 5 * 60 * 1000, REVISIT = 60 * 1000, inflight = false;
+    var loadResearch = function (maxAge) {
+      if (!items.length || !window.fetch || inflight) return;
+      var cached = null;
       try {
         var c = JSON.parse(sessionStorage.getItem(CK) || "null");
-        if (c && c.t && Date.now() - c.t < TTL && Array.isArray(c.d)) cached = c.d;
+        if (c && c.t && Date.now() - c.t < maxAge && Array.isArray(c.d)) cached = c.d;
       } catch (e) {}
-      if (cached) {
-        markInProgress(cached);
-      } else {
-        fetch("https://api.github.com/repos/" + REPO + "/issues?labels=research&state=open&per_page=50",
-              { headers: { "Accept": "application/vnd.github+json" } })
-          .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-          .then(function (j) {
-            var d = parseIssues(j);
-            try { sessionStorage.setItem(CK, JSON.stringify({ t: Date.now(), d: d })); } catch (e) {}
-            markInProgress(d);
-          })
-          .catch(function () { /* 조용히 기본 버튼 유지 */ });
-      }
-    }
+      if (cached) { markInProgress(cached); return; }
+      inflight = true;
+      fetch("https://api.github.com/repos/" + REPO + "/issues?labels=research&state=open&per_page=50",
+            { headers: { "Accept": "application/vnd.github+json" }, cache: "no-store" })
+        .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+        .then(function (j) {
+          var d = parseIssues(j);
+          try { sessionStorage.setItem(CK, JSON.stringify({ t: Date.now(), d: d })); } catch (e) {}
+          markInProgress(d);
+        })
+        .catch(function () { /* 조용히 현재 버튼 유지 */ })
+        .then(function () { inflight = false; });
+    };
+    loadResearch(TTL);
+    // 화면에 돌아올 때(앱 전환·탭 복귀·bfcache 복원) 캐시가 1분 넘었으면 다시 확인
+    document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") loadResearch(REVISIT); });
+    window.addEventListener("pageshow", function (e) { if (e.persisted) loadResearch(REVISIT); });
   }
 
   // 5) 오른쪽 목차(h2) + 현재 위치 강조
