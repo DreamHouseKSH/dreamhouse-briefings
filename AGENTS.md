@@ -2,12 +2,18 @@
 
 이 파일은 이 저장소를 이어서 다루는 **모든 DreamHouse / Grok Bot 에이전트**를 위한 1차 안내서입니다. 작업 전에 반드시 읽고, 상세 규칙은 [`docs/WORKFLOW.md`](docs/WORKFLOW.md)를 따르세요.
 
+## 변경 이력 (요약 — 상세는 [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 맨 위 '변경 이력')
+
+- **2026-10-09:** 리서치 요청 = 이슈 방식(작성자 `DreamHouseKSH` 만) · 매일 24시간 15분마다 확인 · 한 번에 최대 3건 · 리서치 본문은 에세이형 산문 + 접힌 참고 자료 · 줄임말은 원어 전체 이름 + 쉬운 뜻 · 리서치 버튼 3상태(요청/진행 중/리서치 보기, 3분마다 새로고침 없이 갱신) · 새 내용 자동 반영(`version.json`·배너·↻) · '←' 뒤로(본 순서대로)·외부 링크 새 탭 · 방문 통계 GoatCounter `dh-news`(IP·쿠키 저장 없음, 헤더 '오늘 N명') · 열람 환경 = iPad 홈 화면 웹앱 · 동시 작업 시 커밋 전마다 `git pull --rebase`.
+- **2026-10-06:** 아카이브 시작, GitHub Pages 공개 운영.
+
 ## 이 저장소는 무엇인가
 
 - 사용자(성현 김)에게 평일 아침 전달되는 **IT·AI·모델·엔진 뉴스 브리핑**과 **GitHub 트렌드 브리핑**을 날짜별로 쌓는 아카이브입니다. 저장소는 **public**이고, 내용은 **GitHub Pages로 인터넷에 공개(운영 중)** 됩니다 → https://dreamhouseksh.github.io/dreamhouse-briefings/ (사용자 승인, 2026-10-06)
 - 저장소: https://github.com/DreamHouseKSH/dreamhouse-briefings (public, 기본 브랜치 `main`)
 - 박스(box) 작업 경로: `/workspace/dreamhouse-briefings` — 없으면 `gh repo clone DreamHouseKSH/dreamhouse-briefings`
 - gh 인증 계정: **DreamHouseKSH** (박스에 이미 로그인됨, `gh auth status`로 확인). 다른 계정으로 push하지 마세요.
+- 사용자는 사이트를 주로 **iPad 홈 화면 웹앱**(Safari '홈 화면에 추가', 주소창·뒤로 버튼·당겨서 새로고침 없음)으로 봅니다. UI 변경은 이 환경 기준으로 확인하세요(WORKFLOW 6장 '사용자 열람 환경').
 
 ## 가장 중요한 규칙 6가지
 
@@ -15,7 +21,7 @@
 2. **기술 용어·줄임말은 처음 나올 때 괄호로 풀어쓰기 — 원어 전체 이름 + 쉬운 뜻.** 예: `MoE(Mixture of Experts, 전문가 혼합 — 일부 하위 네트워크만 골라 계산하는 구조)`, `GA(General Availability, 누구나 쓸 수 있는 정식 출시)`, `SKU(Stock Keeping Unit, 따로 값을 매겨 파는 판매 단위)`. GA·SKU·MCP·LLM·API·SaaS·RAG 같은 줄임말도 예외 없이. **새 줄임말·전문용어가 나오면 같은 커밋에서 `_data/glossary.yml` 에 반드시 추가**(term·full·ko, 뜻이 확실하지 않으면 넣지 않음) — 그러면 페이지 아래쪽 등 나머지 위치는 사이트(`assets/js/glossary.js`)가 같은 `(원어, 쉬운 뜻)` 풀이를 자동으로 붙이고, 상단 '용어' 메뉴(`/glossary/`)에도 실립니다. 상세: WORKFLOW 3장 2번.
 3. **사실을 지어내지 않기.** 브리핑(또는 그 원문)에 있는 사실만 씁니다. 표현은 풀어 써도 되지만 수치·날짜·주장은 원문 그대로. 회사 자체 발표 수치는 "회사 발표 기준"이라고 표시.
 4. **시간은 KST(Asia/Seoul).** 파일 날짜·문서 내 시각 모두 KST 기준. UTC로 표시된 원문 시각은 변환해서 적습니다.
-5. **`main`에 직접 커밋·push** 하되, force-push·히스토리 재작성은 사용자 승인 없이 하지 않습니다.
+5. **`main`에 직접 커밋·push** 하되, force-push·히스토리 재작성은 사용자 승인 없이 하지 않습니다. 여러 에이전트가 동시에 작업하므로 **커밋 전마다 `git pull --rebase`**, 충돌 시 **양쪽 변경을 모두 살려** 해결. 작업 폴더에 남의 커밋 안 된 변경이 있으면 건드리지 말고 `git worktree` 로 따로 작업.
 6. **뉴스 항목마다 `### 논조·다른 시각`.** 기사 논조(긍정/부정/중립/혼재) · 논조 점검(출처 편중·회사 발표 받아쓰기·과장·빠진 반론·이해관계) · 다른 시각(실제 출처 링크 1~3개, 못 찾으면 "찾은 반론 없음", 일반론은 `예상 쟁점:` 라벨). 이를 위해 같은 주제의 다른 기사를 찾아 읽는 것은 허용(WORKFLOW 3장 8번).
 
 ## 파일 레이아웃 (요약)
@@ -38,10 +44,10 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 
 ## 매일 해야 할 일 (체크리스트)
 
-1. `cd /workspace/dreamhouse-briefings && git pull --ff-only`
+1. `cd /workspace/dreamhouse-briefings && git pull --rebase`
 2. 아침 루틴에서 전달된 브리핑 내용으로 `news/<오늘>/*.md`, `github/<오늘>.md` 작성 (템플릿·스타일은 WORKFLOW 참고). 각 항목 원문의 `og:image` 를 찾아 `### 미디어` 에 핫링크(WORKFLOW 3·4장). 각 뉴스 항목에 `### 논조·다른 시각` 작성(웹 검색으로 다른 매체·반응 확인)
 3. `_data/highlights.yml` 맨 위에 오늘 날짜 하이라이트 추가 (날짜 목록·분야 링크는 사이트가 폴더에서 **자동 생성**하므로 목차 표 편집 불필요)
-4. `git add -A && git commit -m "briefings: YYYY-MM-DD news + github trends" && git push origin main`
+4. `git add -A && git commit -m "briefings: YYYY-MM-DD news + github trends" && git pull --rebase && git push origin main` → Pages `built` 확인
 
 ## 실행 시각 (KST)
 
@@ -72,6 +78,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 - push 후 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status` → `built` 이면 정상.
 - 새 빌드 자동 반영: `version.json`(빌드마다 바뀜)을 `site.js` 가 열 때·화면 복귀 시 no-store로 확인해 바뀌었으면 바로 새로고침(루프 가드 있음), 보는 중에는 3분마다 확인해 바뀌면 '새 내용이 있어요 · 새로고침' 배너(닫기 가능). 리서치 버튼 상태는 새로고침 없이 따로 갱신(위 '버튼 상태'), 헤더 **↻** 수동 새로고침. **서비스워커는 없고 만들지 않음.** `version.json`·`<meta name="site-build">` 를 지우지 말 것.
 - 헤더 **'←' 뒤로 버튼**(standalone 웹앱용): sessionStorage `dh-nav-v1` 사이트 내 방문 스택으로 판단 → 있으면 `history.back()`, 없으면 홈, 홈에서는 숨김. 새로고침은 스택 유지, 같은 페이지 앵커는 history에 안 쌓음(replaceState). 사이트 밖 링크는 전부 새 탭, 사이트 안 링크는 같은 창. `<meta name="site-base">` 를 지우지 말 것. 상세: `docs/WORKFLOW.md` 6장.
+- **방문 통계:** GoatCounter 사이트 코드 **`dh-news`**, 대시보드 https://dh-news.goatcounter.com (사용자 로그인). **IP·쿠키 저장 없음.** 헤더에 **'오늘 N명'** 배지(공개 카운터 JSON `counter/TOTAL.json?start=오늘KST`, GoatCounter 캐시로 **최대 약 4시간 지연**, 실패·403이면 숨김 — 403이면 GoatCounter 설정 'Allow adding visitor counts on your website' 가 꺼진 것). 설정은 `_config.yml` 의 `analytics`(`code` 비우면 꺼짐). **비밀값은 커밋 금지**(필요 없음). 상세: WORKFLOW 6장 '방문 통계'.
 - 사이트 구조 상세: [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 6장.
 
 ## 알려진 공백 / 다음 에이전트에게

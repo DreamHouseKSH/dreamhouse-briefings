@@ -2,6 +2,28 @@
 
 > 대상: 이 저장소에 쓰는 모든 DreamHouse / Grok Bot 에이전트. 요약 핸드오프는 루트의 [`AGENTS.md`](../AGENTS.md).
 
+## 변경 이력 (날짜별 주요 작업 방식 변경)
+
+> 작업 방식이 바뀌면 **맨 위에 날짜(KST)별로 추가**하고, 본문 해당 장과 `AGENTS.md` 를 같은 커밋에서 함께 고칩니다.
+
+### 2026-10-09
+
+- **심층 리서치 요청 = 이슈 방식 확정**(사용자 승인). 웹훅 원클릭은 쓰지 않음(공개 페이지 키 노출). 처리 대상은 라벨 `research` + **작성자 `DreamHouseKSH`** 인 열린 이슈만. → 8장
+- **리서치 요청 확인: 매일 24시간, 15분마다**(KST 매시 05·20·35·50분), 한 번에 **최대 3건**, 새 요청이 없으면 채팅 알림 없음. → 5장·8장
+- **리서치 산출물 = 에세이형 산문**: 리드 → 소제목 3~5개 본문 → `## 그래서 어떻게 보면 되나` → 접힌 '참고 자료'(표·체크포인트·출처). 본문에 표·목록 금지. 완료 시 원래 기사에 `**심층 리서치:**` 링크 + 이슈 댓글에 research 페이지 URL 남기고 닫기. → 8장
+- **전문용어·줄임말 풀이 강화**: 뉴스 브리핑·리서치 모두 `GA(General Availability, 누구나 쓸 수 있는 정식 출시)` 처럼 **원어 전체 이름 + 쉬운 뜻**(사용자가 읽으며 공부할 수 있게). → 3장 2번·8장
+- **리서치 버튼 3상태**: 🔍 리서치 요청 / ⏳ 리서치 진행 중 / 📄 리서치 보기, 화면을 보는 동안 **3분마다 새로고침 없이** 버튼만 갱신. → 8장 '버튼 상태'
+- **새 내용 자동 반영**: `version.json` 확인 → 앱 복귀 시 자동 새로고침, 보는 중엔 '새 내용이 있어요 · 새로고침' 배너, 헤더 **↻** 버튼. 서비스워커 없음. → 6장
+- **헤더 '←' 뒤로 버튼**: 페이지 계층이 아니라 **사용자가 실제로 본 순서**대로 돌아감. 사이트 밖 링크는 전부 새 탭. → 6장
+- **방문 통계(GoatCounter `dh-news`)**: IP·쿠키 저장 없음, 헤더에 '오늘 N명'(최대 약 4시간 캐시). 설정은 `_config.yml` 의 `analytics`. → 6장 '방문 통계'
+- **열람 환경 명시**: 사용자는 주로 **iPad 홈 화면 웹앱**(Safari '홈 화면에 추가', 주소창·뒤로 버튼·당겨서 새로고침 없음)으로 봄 → UI 변경은 이 환경 기준으로 확인. → 6장
+- **동시 작업 규칙**: 여러 에이전트가 같은 `main` 에 동시에 작업할 수 있으므로 **커밋 전마다 `git pull --rebase`**, 충돌 시 **양쪽 변경을 모두 살려** 해결. force-push 금지. → 1장
+- (기존 규칙 유지) 뉴스 항목마다 `### 논조·다른 시각`(기사 논조 · 논조 점검 · 다른 시각, 실제 출처만). → 3장 8번
+
+### 2026-10-06
+
+- 아카이브 시작, GitHub Pages 공개 운영(사용자 승인). 뉴스·GitHub 트렌드는 평일 아침 루틴.
+
 ## 1. 전체 흐름
 
 ```
@@ -10,12 +32,18 @@
   08:01       뉴스 아카이브 루틴 → news/YYYY-MM-DD/{IT,AI,모델,엔진}.md 작성 → push
   08:06       GitHub 트렌드 루틴 → github/YYYY-MM-DD.md 작성 → push
   정오 무렵    엔진 다이제스트 전달 → news/YYYY-MM-DD/엔진.md 추가/갱신 → push
+
+[매일 24시간, 15분마다 (KST 매시 05·20·35·50분)]
+  리서치 요청 확인 → 열린 research 이슈(작성자 DreamHouseKSH, 최대 3건) 처리
+                   → research/YYYY-MM-DD-{slug}.md → push → 이슈 댓글·닫기 → 채팅 알림
+                   (새 요청 없으면 아무것도 하지 않음, 상세 8장)
 ```
 
 - **소스는 "사용자에게 실제로 전달된 브리핑"** 입니다. 아카이브에 새 뉴스를 추가 발굴하지 않습니다. 요약을 넉넉하게 만들기 위해 브리핑에 달린 **원문 링크를 읽는 것은 허용**되지만, 그 기사에 대한 사실 범위를 넘지 않습니다.
   - **예외 — 논조·다른 시각(3장 8번):** 각 항목의 `### 논조·다른 시각` 을 쓰기 위해 **같은 주제의 다른 기사·분석·공식 발언·커뮤니티 반응을 찾아 읽는 것은 허용**합니다. 이렇게 찾은 내용은 그 섹션의 "다른 시각"에만 출처 링크와 함께 쓰고, 새 뉴스 항목으로 추가하거나 `### 요약` 의 사실로 섞지 않습니다.
 - 커밋 계정: gh 로그인 계정 **DreamHouseKSH** (박스 `/home/box/.config/gh`에 설정됨). 토큰 파일을 직접 읽거나 출력하지 마세요. `gh` / `git` 명령만 사용.
-- 브랜치: `main` 직접 push. 충돌 시 `git pull --rebase` 후 재시도. force-push 금지(사용자 승인 필요).
+- 브랜치: `main` 직접 push. 여러 에이전트가 동시에 작업할 수 있으므로 **커밋 전마다 `git pull --rebase`** 하고, push가 거절되면 다시 `git pull --rebase` 후 재시도. 충돌이 나면 **양쪽 변경을 모두 살려** 해결(남의 변경을 지우는 쪽으로 고르지 않음). force-push·히스토리 재작성 금지(사용자 승인 필요).
+- 같은 박스 작업 폴더(`/workspace/dreamhouse-briefings`)에 다른 에이전트의 커밋 안 된 변경이 있으면 건드리지 말고, 필요하면 `git worktree add` 로 별도 폴더에서 작업한 뒤 `git push origin HEAD:main`.
 - 커밋 메시지 예: `briefings: 2026-10-06 news (IT/AI/모델/엔진) + github trends`
 
 ## 2. 파일 레이아웃
@@ -121,6 +149,12 @@
 - **GitHub Pages가 켜져 있고 운영 중**이며, 사이트는 인터넷 전체에 공개됩니다: **https://dreamhouseksh.github.io/dreamhouse-briefings/** (2026-10-06 사용자 승인)
 - 따라서 4장 저작권 규칙(요약 + 원문 링크, 전문·번역 금지)이 **공개 웹 기준**으로 적용됩니다. 개인정보·내부 메모는 커밋 금지.
 
+### 사용자 열람 환경 — iPad 홈 화면 웹앱
+
+- 사용자는 이 사이트를 주로 **iPad Safari '홈 화면에 추가'로 만든 웹앱(standalone)** 으로 봅니다. 이 환경에는 주소창·브라우저 뒤로 버튼·당겨서 새로고침이 없고, 앱을 백그라운드로 보내면 iPad가 페이지를 멈춰 둡니다.
+- 그래서 사이트가 직접 **새 내용 자동 반영 + ↻ 버튼**, **'←' 뒤로 버튼**, **외부 링크 새 탭** 을 제공합니다(아래). UI를 바꿀 때는 이 환경(터치 영역 44px 이상, safe-area 여백, 좁은 세로 화면)을 기준으로 확인합니다.
+- 백그라운드에 있는 동안은 어떤 확인도 돌지 않고, **앱으로 돌아오거나 다시 열 때** 반영됩니다. 화면을 보고 있는 동안에는 3분 주기 비동기 확인으로 새로고침 없이 반영됩니다(버전 배너·리서치 버튼).
+
 ### 사이트 구조 (Jekyll, GitHub 기본 빌드)
 
 - Pages 소스: 브랜치 `main`, 폴더 `/`(루트). `main`에 push하면 GitHub가 자동 빌드(보통 1~2분).
@@ -135,6 +169,16 @@
 - `templates/` 는 사이트에서 제외(`_config.yml` 의 `exclude`).
 - 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq '.status, .error.message'`
 
+### 방문 통계 (GoatCounter)
+
+- 서비스: **GoatCounter**, 사이트 코드 **`dh-news`** → 대시보드 **https://dh-news.goatcounter.com** (사용자 계정, 로그인 필요). 2026-10-09 사용자 선택(통계 대시보드 서비스 방식).
+- **IP·쿠키를 저장하지 않습니다.** 정적 사이트라 서버가 없고 저장소가 public이므로, IP 등 방문자 개인정보를 저장소·사이트에 기록하는 방식은 쓰지 않습니다.
+- 설정 위치: `_config.yml` 의 `analytics` (`provider: goatcounter`, `code: "dh-news"`, `show_today: true`). `code` 를 비우면 추적·표시가 모두 꺼집니다. **비밀값(API 키·토큰·비밀번호)은 커밋하지 않습니다** — 이 기능은 공개 카운트 스크립트와 공개 카운터 JSON만 쓰므로 비밀값이 필요 없습니다.
+- 추적 스크립트(`_layouts/default.html` 맨 아래): `<script data-goatcounter="https://dh-news.goatcounter.com/count" async src="https://gc.zgo.at/count.js">` (GoatCounter 안내의 `//gc.zgo.at/count.js` 와 같은 주소를 https로 명시).
+- **헤더 '오늘 N명' 배지**(`.visitors-today`, `site.js` 끝): `https://dh-news.goatcounter.com/counter/TOTAL.json?start=오늘(KST)` 를 비인증으로 받아 표시, 화면 복귀 시 다시 확인. GoatCounter 쪽 **캐시 때문에 최대 약 4시간 늦게** 반영될 수 있습니다. 실패(설정 꺼짐 = 403 등)하면 배지만 조용히 숨깁니다.
+- 배지가 보이려면 GoatCounter 설정에서 **'Allow adding visitor counts on your website'** 를 켜야 하고, 사이트 시간대는 **Asia/Seoul** 로 맞춥니다(사용자가 직접 설정).
+- 확인: `curl -s -o /dev/null -w '%{http_code}' "https://dh-news.goatcounter.com/counter/TOTAL.json?start=$(date +%F)"` → 200이면 공개 카운트 켜짐, 403이면 위 설정이 꺼진 상태. headless 브라우저 방문은 GoatCounter가 봇으로 보고 집계에서 뺄 수 있습니다.
+
 ### 그 밖의 열람 방법
 
 1. **저장소 브라우즈(공개, 로그인 불필요):** https://github.com/DreamHouseKSH/dreamhouse-briefings → `news/`, `github/` 폴더
@@ -145,13 +189,14 @@
 
 ```bash
 cd /workspace/dreamhouse-briefings
-git pull --ff-only
+git pull --rebase
 D=$(date +%F)            # 박스 시계는 KST
 mkdir -p news/$D
 # ... news/$D/{IT,AI,모델,엔진}.md, github/$D.md 작성 ...
 # _data/highlights.yml 맨 위에 "$D" 하이라이트 추가 (날짜 목록은 사이트가 자동 생성)
 git add -A
 git commit -m "briefings: $D news + github trends"
+git pull --rebase        # 다른 에이전트 변경 반영 (충돌 시 양쪽 모두 살리기)
 git push origin main
 gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status   # 잠시 후 built 확인
 ```

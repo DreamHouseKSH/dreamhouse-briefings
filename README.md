@@ -52,7 +52,10 @@ index.html, archive.html, category/           # 홈·아카이브·분야별 페
 - 넉넉한 한국어 요약 (과도한 축약 X)
 - 기술 용어는 괄호로 풀어 씀 예: MoE(Mixture of Experts, 전문가 혼합)
 
-## 자동화 (KST, 평일)
+## 자동화 (KST)
 
-- 08:01 뉴스 아카이브 → `news/`
-- 08:06 GitHub 트렌드 아카이브 → `github/`
+- 평일 08:01 뉴스 아카이브 → `news/`
+- 평일 08:06 GitHub 트렌드 아카이브 → `github/`
+- 매일 24시간, 15분마다(매시 05·20·35·50분) 리서치 요청 이슈 확인 → `research/` (요청 있을 때만, 최대 3건)
+
+방문 통계는 GoatCounter(`dh-news`, IP·쿠키 저장 없음)로 헤더에 '오늘 N명'을 표시합니다. 작업 방식 변경 이력은 [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 맨 위에 있습니다.
