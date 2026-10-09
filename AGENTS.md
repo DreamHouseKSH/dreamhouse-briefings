@@ -71,6 +71,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 - ⚠️ **사이트와 저장소 모두 인터넷 전체 공개**입니다. 요약·원문 링크 원칙(저작권)을 더 엄격히 지키고, 공개되면 안 되는 메모·개인정보는 커밋하지 마세요.
 - push 후 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status` → `built` 이면 정상.
 - 새 빌드 자동 반영: `version.json`(빌드마다 바뀜)을 `site.js` 가 열 때·화면 복귀 시 no-store로 확인해 바뀌었으면 바로 새로고침(루프 가드 있음), 보는 중에는 3분마다 확인해 바뀌면 '새 내용이 있어요 · 새로고침' 배너(닫기 가능). 리서치 버튼 상태는 새로고침 없이 따로 갱신(위 '버튼 상태'), 헤더 **↻** 수동 새로고침. **서비스워커는 없고 만들지 않음.** `version.json`·`<meta name="site-build">` 를 지우지 말 것.
+- 헤더 **'←' 뒤로 버튼**(standalone 웹앱용): sessionStorage `dh-nav-v1` 사이트 내 방문 스택으로 판단 → 있으면 `history.back()`, 없으면 홈, 홈에서는 숨김. 새로고침은 스택 유지, 같은 페이지 앵커는 history에 안 쌓음(replaceState). 사이트 밖 링크는 전부 새 탭, 사이트 안 링크는 같은 창. `<meta name="site-base">` 를 지우지 말 것. 상세: `docs/WORKFLOW.md` 6장.
 - 사이트 구조 상세: [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 6장.
 
 ## 알려진 공백 / 다음 에이전트에게

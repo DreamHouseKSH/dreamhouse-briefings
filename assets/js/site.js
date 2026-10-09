@@ -15,6 +15,101 @@
   }
 
 
+  // 0) 사이트 안 '←' 뒤로 버튼 + 링크 열기 규칙 (iPad 홈 화면 웹앱처럼 브라우저 뒤로 버튼이 없는 경우)
+  //   - sessionStorage 'dh-nav-v1' = { s: [사이트 내 경로(해시 제외)...], i: 현재 위치 }
+  //   - 새 이동(navigate): referrer 가 사이트 안이면 현재 위치 뒤를 잘라내고 쌓음, 밖이거나 없으면 새로 시작
+  //   - reload(↻·버전 자동 새로고침): 스택 그대로 / back_forward·bfcache 복원: 위치만 옮김
+  //   - 같은 페이지 앵커 이동은 history 를 쌓지 않음(replaceState) → 뒤로는 항상 이전 '페이지'로
+  //   - 버튼: 돌아갈 곳이 있으면 history.back(), 없으면 홈으로. 홈에서는 숨김. 규칙: docs/WORKFLOW.md 6장
+  var baseMeta = document.querySelector('meta[name="site-base"]');
+  var BASE = baseMeta ? baseMeta.getAttribute("content") : "/";
+  var NK = "dh-nav-v1";
+  var keyOf = function (u) {
+    try { var x = new URL(u, location.href); return x.pathname.replace(/\/index\.html$/, "/") + x.search; } catch (e) { return ""; }
+  };
+  var inSite = function (u) {
+    try { var x = new URL(u, location.href); return x.origin === location.origin && x.pathname.indexOf(BASE) === 0; } catch (e) { return false; }
+  };
+  var curKey = keyOf(location.href);
+  var isHome = curKey === BASE || curKey === BASE.replace(/\/$/, "");
+  var navLoad = function () { try { return JSON.parse(sessionStorage.getItem(NK) || "null"); } catch (e) { return null; } };
+  var navSave = function (n) { try { sessionStorage.setItem(NK, JSON.stringify(n)); } catch (e) {} };
+  var navSync = function (kind) {
+    var n = navLoad();
+    if (!n || !Array.isArray(n.s) || typeof n.i !== "number") n = null;
+    if (kind === "reload" && n && n.s[n.i] === curKey) return n;
+    if ((kind === "back_forward" || kind === "reload") && n) {
+      var best = -1;
+      for (var k = 0; k < n.s.length; k++) if (n.s[k] === curKey && (best < 0 || Math.abs(k - n.i) < Math.abs(best - n.i))) best = k;
+      if (best >= 0) { n.i = best; navSave(n); return n; }
+    }
+    var ref = document.referrer;
+    if (n && ref && inSite(ref)) {
+      var rk = keyOf(ref), at = -1;
+      if (n.s[n.i] === rk) at = n.i; else for (var j = n.s.length - 1; j >= 0; j--) if (n.s[j] === rk) { at = j; break; }
+      if (at >= 0) n.s = n.s.slice(0, at + 1); else n.s = n.s.slice(0, n.i + 1).concat([rk]);
+      if (n.s[n.s.length - 1] !== curKey) n.s.push(curKey);
+      if (n.s.length > 50) n.s = n.s.slice(-50);
+      n.i = n.s.length - 1;
+    } else if (!n && ref && inSite(ref) && keyOf(ref) !== curKey) {
+      n = { s: [keyOf(ref), curKey], i: 1 };  // 스택이 없지만 사이트 안에서 왔음(새 세션 등)
+    } else {
+      n = { s: [curKey], i: 0 };               // 첫 페이지 / 외부에서 바로 들어옴
+    }
+    navSave(n);
+    return n;
+  };
+  var navEntry = (performance.getEntriesByType && performance.getEntriesByType("navigation")[0]) || null;
+  var navKind = navEntry ? navEntry.type : (performance.navigation && performance.navigation.type === 1 ? "reload" : performance.navigation && performance.navigation.type === 2 ? "back_forward" : "navigate");
+  var navState = navSync(navKind);
+  var backBtn = document.querySelector(".back-btn");
+  var renderBack = function () {
+    if (!backBtn) return;
+    if (isHome) { backBtn.hidden = true; return; }
+    backBtn.hidden = false;
+    var canBack = navState && navState.i > 0;
+    backBtn.setAttribute("data-mode", canBack ? "back" : "home");
+    backBtn.href = canBack ? navState.s[navState.i - 1] : BASE;
+    backBtn.title = canBack ? "뒤로 (이전 페이지)" : "홈으로";
+    backBtn.setAttribute("aria-label", backBtn.title);
+  };
+  renderBack();
+  window.addEventListener("pageshow", function (e) { if (e.persisted) { navState = navSync("back_forward"); renderBack(); } });
+  if (backBtn) {
+    backBtn.addEventListener("click", function (e) {
+      if (backBtn.getAttribute("data-mode") !== "back") return;  // 홈으로: 기본 링크 이동
+      e.preventDefault();
+      var fallback = backBtn.href, left = false;
+      window.addEventListener("pagehide", function () { left = true; }, { once: true });
+      history.back();
+      setTimeout(function () { if (!left && document.visibilityState === "visible") location.href = fallback; }, 700); // history 가 없으면 스택 주소로
+    });
+  }
+  // 링크 열기 규칙: 사이트 밖 → 새 탭(standalone 웹앱 안에서 열리지 않게), 사이트 안 → 같은 창, 같은 페이지 앵커 → history 안 쌓음
+  var fixLink = function (a) {
+    var href = a.getAttribute("href");
+    if (!href || /^(mailto:|tel:|javascript:)/i.test(href) || a.hasAttribute("download")) return;
+    if (/^https?:/i.test(a.href) && !inSite(a.href)) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
+    else if (inSite(a.href) && a.target === "_blank") { a.removeAttribute("target"); }
+  };
+  document.querySelectorAll("a[href]").forEach(fixLink);
+  document.addEventListener("click", function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a) return;
+    fixLink(a);  // 나중에 생긴 링크(리서치 버튼 등)도 클릭 순간에 확인
+    var u; try { u = new URL(a.href, location.href); } catch (x) { return; }
+    if (u.hash && u.origin === location.origin && u.pathname === location.pathname && u.search === location.search && !a.target) {
+      var id = decodeURIComponent(u.hash.slice(1)), el = id ? document.getElementById(id) : null;
+      if (!el) return;
+      e.preventDefault();
+      history.replaceState(history.state, "", u.hash);
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      if (!el.hasAttribute("tabindex") && !/^(A|BUTTON|INPUT|SELECT|TEXTAREA)$/.test(el.tagName)) el.setAttribute("tabindex", "-1");
+      try { el.focus({ preventScroll: true }); } catch (x) {}
+    }
+  }, true);
+
   // 1-1) 새 빌드 자동 반영 (iPad 홈 화면 웹앱 등 standalone에서 오래된 화면이 남는 문제)
   //   페이지의 <meta name="site-build"> 와 /version.json(no-store)을 비교. 열 때·화면 복귀 시 다르면 바로 reload,
   //   화면을 보는 중(3분 주기 확인)에 바뀌면 상단 '새 내용이 있어요 · 새로고침' 배너(닫기 가능).

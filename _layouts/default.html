@@ -2,11 +2,12 @@
 <html lang="ko">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   {%- assign page_title = page.title | default: site.title -%}
   <title>{% if page_title != site.title %}{{ page_title | strip_html }} · {% endif %}{{ site.title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="color-scheme" content="light dark">
+  <meta name="site-base" content="{{ '/' | relative_url }}">
   <meta name="site-build" content="{{ site.time | date: '%s' }}">
   <meta name="site-version-url" content="{{ '/version.json' | relative_url }}">
   <script>
@@ -34,6 +35,7 @@
   <a class="skip" href="#content">본문 바로가기</a>
   <header class="site-header">
     <div class="wrap header-inner">
+      <a class="back-btn" href="{{ '/' | relative_url }}" aria-label="홈으로" title="홈으로"{% if page.home or page.url == "/" %} hidden{% endif %}><span aria-hidden="true">←</span></a>
       <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-mark">☕</span><span>DreamHouse <b>브리핑</b></span></a>
       <nav class="main-nav" aria-label="분야">
         {%- for c in site.briefing_sections -%}

@@ -95,6 +95,21 @@ a:hover { color: var(--link-hover); text-decoration: underline; text-underline-o
   border-bottom: 1px solid var(--border);
 }
 .header-inner { display: flex; align-items: center; gap: 1rem; min-height: 3.6rem; }
+/* safe-area (viewport-fit=cover: iPad 홈 화면 웹앱·가로 모드 노치) */
+.site-header { padding-top: env(safe-area-inset-top, 0px); }
+.site-header .wrap, .brief-bar .wrap, .update-banner { padding-left: max(1.25rem, env(safe-area-inset-left, 0px)); padding-right: max(1.25rem, env(safe-area-inset-right, 0px)); }
+.site-footer { padding-bottom: env(safe-area-inset-bottom, 0px); }
+/* '←' 뒤로 버튼 (site.js 0) — 터치 영역 44px 이상 */
+.back-btn {
+  display: inline-flex; align-items: center; justify-content: center; flex: none;
+  min-width: 44px; min-height: 44px; margin-left: -.5rem; margin-right: -.6rem; border-radius: 50%;
+  color: var(--text-2); font-size: 1.3rem; font-weight: 600; line-height: 1;
+  -webkit-tap-highlight-color: transparent;
+}
+.back-btn[hidden] { display: none; }
+.back-btn:hover, .back-btn:focus-visible { text-decoration: none; color: var(--text); background: var(--surface-2); }
+.back-btn:active { background: var(--border); }
+.back-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
 .brand { display: inline-flex; align-items: center; gap: .5rem; color: var(--text); font-size: 1.05rem; white-space: nowrap; }
 .brand:hover { text-decoration: none; color: var(--text); }
 .brand b { font-weight: 800; }
@@ -118,7 +133,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; text-underline-o
 .header-actions { display: flex; align-items: center; gap: .35rem; flex: none; }
 .refresh-btn {
   border: 1px solid transparent; background: transparent; color: var(--muted);
-  width: 2.2rem; height: 2.2rem; border-radius: 50%; cursor: pointer; font-size: 1.05rem; line-height: 1; flex: none;
+  width: 44px; height: 44px; border-radius: 50%; cursor: pointer; font-size: 1.05rem; line-height: 1; flex: none;
 }
 .refresh-btn:hover, .refresh-btn:focus-visible { color: var(--text); background: var(--surface-2); border-color: var(--border); }
 .refresh-btn.is-spinning { animation: dh-spin .8s linear infinite; }
@@ -388,6 +403,6 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
   .main { padding-top: 1.25rem; }
 }
 @media print {
-  .site-header, .brief-bar, .toc, .pager, .theme-toggle, .refresh-btn, .update-banner { display: none !important; }
+  .site-header, .brief-bar, .toc, .pager, .theme-toggle, .refresh-btn, .update-banner, .back-btn { display: none !important; }
   body { background: #fff; color: #000; }
 }
