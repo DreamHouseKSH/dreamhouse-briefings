@@ -16,7 +16,8 @@
 
 
   // 1-1) 새 빌드 자동 반영 (iPad 홈 화면 웹앱 등 standalone에서 오래된 화면이 남는 문제)
-  //   페이지의 <meta name="site-build"> 와 /version.json(no-store)을 비교해 다르면 다시 불러옴.
+  //   페이지의 <meta name="site-build"> 와 /version.json(no-store)을 비교. 열 때·화면 복귀 시 다르면 바로 reload,
+  //   화면을 보는 중(3분 주기 확인)에 바뀌면 상단 '새 내용이 있어요 · 새로고침' 배너(닫기 가능).
   //   무한 새로고침 방지: 같은 목표 버전으로는 5분에 1회만 자동 새로고침 + 최소 30초 간격(sessionStorage 가드).
   //   서비스워커 없음(만들지 않음) — HTTP 캐시만 갱신하면 됨. 규칙: docs/WORKFLOW.md 6장.
   var buildMeta = document.querySelector('meta[name="site-build"]');
@@ -30,10 +31,26 @@
     if (!window.fetch) return go();
     fetch(location.href, { cache: "reload", credentials: "same-origin" }).then(go, go);
   };
-  var checkVersion = function (force) {
+  var showUpdateBanner = function () {
+    if (document.querySelector(".update-banner")) return;
+    var bar = document.createElement("div");
+    bar.className = "update-banner";
+    bar.setAttribute("role", "status");
+    var go = document.createElement("button");
+    go.type = "button"; go.className = "ub-go"; go.textContent = "새 내용이 있어요 · 새로고침";
+    go.addEventListener("click", function () { go.disabled = true; hardReload(); });
+    var x = document.createElement("button");
+    x.type = "button"; x.className = "ub-close"; x.setAttribute("aria-label", "닫기"); x.title = "닫기"; x.textContent = "✕";
+    x.addEventListener("click", function () { bar.remove(); });
+    bar.appendChild(go); bar.appendChild(x);
+    var hdr = document.querySelector(".site-header");
+    if (hdr && hdr.parentNode) hdr.parentNode.insertBefore(bar, hdr.nextSibling); else document.body.insertBefore(bar, document.body.firstChild);
+  };
+  // mode: "load"(처음 열 때)·"return"(화면 복귀) → 바뀌었으면 바로 reload / "poll"(보는 중 3분 주기) → 배너만
+  var checkVersion = function (mode) {
     if (!curBuild || !verUrl || !window.fetch) return;
     var now = Date.now();
-    if (!force && now - lastVerCheck < 15000) return; // 너무 잦은 확인 방지
+    if (mode === "return" && now - lastVerCheck < 15000) return; // 너무 잦은 확인 방지
     lastVerCheck = now;
     fetch(verUrl + "?t=" + now, { cache: "no-store" })
       .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
@@ -41,17 +58,20 @@
         var nb = v && String(v.build || "");
         if (!nb || nb === curBuild) return;
         if (Number(nb) && Number(curBuild) && Number(nb) < Number(curBuild)) return; // CDN이 더 옛 버전을 준 경우 무시
+        if (mode === "poll") { showUpdateBanner(); return; }
         var g = null;
         try { g = JSON.parse(sessionStorage.getItem(RK) || "null"); } catch (e) {}
-        if (g && ((g.to === nb && Date.now() - g.t < 300000) || Date.now() - g.t < 30000)) return; // 같은 버전은 5분에 1회, 어떤 경우든 30초 간격 → 루프 방지
-        try { sessionStorage.setItem(RK, JSON.stringify({ to: nb, from: curBuild, t: Date.now() })); } catch (e) { return; } // 가드 저장 불가 시 자동 새로고침 안 함
+        if (g && ((g.to === nb && Date.now() - g.t < 300000) || Date.now() - g.t < 30000)) { showUpdateBanner(); return; } // 루프 방지 → 배너로 대신
+        try { sessionStorage.setItem(RK, JSON.stringify({ to: nb, from: curBuild, t: Date.now() })); } catch (e) { showUpdateBanner(); return; }
         hardReload();
       })
       .catch(function () { /* 오프라인 등: 조용히 무시 */ });
   };
-  checkVersion(true);
-  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") checkVersion(false); });
-  window.addEventListener("pageshow", function (e) { if (e.persisted) checkVersion(true); });
+  checkVersion("load");
+  document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") checkVersion("return"); });
+  window.addEventListener("pageshow", function (e) { if (e.persisted) checkVersion("return"); });
+  // 보는 중에는 3분마다 확인(숨겨진 동안은 건너뜀). 리서치 상태 API는 이 주기로 돌리지 않음(호출 한도).
+  setInterval(function () { if (document.visibilityState === "visible") checkVersion("poll"); }, 3 * 60 * 1000);
 
   // 1-2) 헤더 ↻ 새로고침 버튼 (수동, 항상 표시)
   var rbtn = document.querySelector(".refresh-btn");
@@ -282,6 +302,8 @@
     // 화면에 돌아올 때(앱 전환·탭 복귀·bfcache 복원) 캐시가 1분 넘었으면 다시 확인
     document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") loadResearch(REVISIT); });
     window.addEventListener("pageshow", function (e) { if (e.persisted) loadResearch(REVISIT); });
+    // 보는 중에는 캐시(5분)가 만료될 때만 다시 확인 (version.json 3분 주기와 별개, 시간당 최대 ~12회/탭)
+    if (items.length) setInterval(function () { if (document.visibilityState === "visible") loadResearch(TTL); }, TTL + 5000);
   }
 
   // 5) 오른쪽 목차(h2) + 현재 위치 강조

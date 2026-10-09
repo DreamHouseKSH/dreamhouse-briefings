@@ -70,7 +70,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 - **사이트(운영 중):** https://dreamhouseksh.github.io/dreamhouse-briefings/ — 브랜치 `main` / 폴더 `/`(루트), GitHub 기본 Jekyll 빌드. push 후 1~2분 내 반영.
 - ⚠️ **사이트와 저장소 모두 인터넷 전체 공개**입니다. 요약·원문 링크 원칙(저작권)을 더 엄격히 지키고, 공개되면 안 되는 메모·개인정보는 커밋하지 마세요.
 - push 후 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status` → `built` 이면 정상.
-- 새 빌드 자동 반영: `version.json`(빌드마다 바뀜)을 `site.js` 가 열 때·화면 복귀 시 no-store로 확인해 바뀌었으면 새로고침(루프 가드 있음), 헤더 **↻** 수동 새로고침. **서비스워커는 없고 만들지 않음.** `version.json`·`<meta name="site-build">` 를 지우지 말 것.
+- 새 빌드 자동 반영: `version.json`(빌드마다 바뀜)을 `site.js` 가 열 때·화면 복귀 시 no-store로 확인해 바뀌었으면 바로 새로고침(루프 가드 있음), 보는 중에는 3분마다 확인해 바뀌면 '새 내용이 있어요 · 새로고침' 배너(닫기 가능). 리서치 상태 API는 3분 주기로 돌리지 않음(캐시 만료·화면 복귀 시만), 헤더 **↻** 수동 새로고침. **서비스워커는 없고 만들지 않음.** `version.json`·`<meta name="site-build">` 를 지우지 말 것.
 - 사이트 구조 상세: [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 6장.
 
 ## 알려진 공백 / 다음 에이전트에게
