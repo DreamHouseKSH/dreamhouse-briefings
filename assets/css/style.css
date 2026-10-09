@@ -406,3 +406,12 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
   .site-header, .brief-bar, .toc, .pager, .theme-toggle, .refresh-btn, .update-banner, .back-btn { display: none !important; }
   body { background: #fff; color: #000; }
 }
+
+/* 심층 리서치: 에세이형 본문 (research/*.md 의 .research-essay / .research-lead / .research-refs 만) */
+.prose .research-lead { font-size: 1.08rem; line-height: 1.8; color: var(--text); margin: 0 0 1.6rem; }
+.prose .research-credit { color: var(--muted); font-size: .82rem; margin-top: -.4rem; }
+.prose .research-essay p { line-height: 1.95; margin: 0 0 1.45em; }
+.prose .research-essay h2 { margin-top: 2.6rem; }
+.prose .research-refs { margin: 1rem 0 0; }
+.prose .research-refs > summary { cursor: pointer; font-weight: 700; color: var(--text-2); padding: .4rem 0; }
+.prose .research-refs[open] > summary { margin-bottom: .6rem; }
