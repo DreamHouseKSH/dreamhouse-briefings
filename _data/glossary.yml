@@ -108,3 +108,17 @@
 - { term: "VRP", full: "Vulnerability Reward Program", ko: "취약점 신고 보상 프로그램(버그 바운티)" }
 - { term: "YC", full: "Y Combinator", ko: "미국의 대표적 스타트업 액셀러레이터" }
 - { term: "npm", full: "", ko: "자바스크립트·Node.js용 패키지 관리 도구이자 공개 패키지 저장소" }
+# --- 2026-10-11 GitHub 카드 형식 추가분
+- { term: "AGPL", full: "GNU Affero General Public License", ko: "고쳐서 서비스로 제공해도 소스 공개 의무가 있는 강한 공개 라이선스", prefix: true }
+- { term: "GPL", full: "GNU General Public License", ko: "고쳐서 배포하면 소스 공개 의무가 있는 공개 라이선스", prefix: true }
+- { term: "CAD", full: "Computer-Aided Design", ko: "컴퓨터로 하는 설계 도면·3D 모델링" }
+- { term: "CNC", full: "Computer Numerical Control", ko: "컴퓨터로 제어하는 절삭 가공" }
+- { term: "VPS", full: "Virtual Private Server", ko: "월 단위로 빌려 쓰는 가상 서버" }
+- { term: "SVG", full: "Scalable Vector Graphics", ko: "확대해도 깨지지 않는 벡터 그림 형식" }
+- { term: "PDB", full: "Program Database", ko: "윈도 프로그램의 디버그 정보 파일" }
+- { term: "DWARF", full: "Debugging With Attributed Record Formats", ko: "리눅스 등에서 쓰는 디버그 정보 형식" }
+- { term: "KPI", full: "Key Performance Indicator", ko: "핵심 성과 지표" }
+- { term: "YAML", full: "YAML Ain't Markup Language", ko: "사람이 읽기 쉬운 설정 파일 형식" }
+- { term: "ToS", full: "Terms of Service", ko: "서비스 이용약관" }
+- { term: "HN", full: "Hacker News", ko: "개발자들이 기술 뉴스를 올리고 토론하는 커뮤니티 사이트" }
+- { term: "PyPI", full: "Python Package Index", ko: "파이썬 패키지 공식 저장소" }

@@ -243,7 +243,10 @@
   //   ② ⏳ 리서치 진행 중 — 열린 research 이슈(작성자 DreamHouseKSH)가 이 기사를 가리키면 그 이슈로 (GitHub REST, 비인증)
   //      닫힌 이슈면 📄 리서치 보기(마지막 댓글의 research/ URL, 없으면 이슈) — 새로고침 없이 3분마다 갱신
   //   ③ 🔍 리서치 요청   — 그 외: 미리 채운 GitHub 이슈 작성 화면(새 탭)
+  //   GitHub 트렌드(github/YYYY-MM-DD) 페이지는 레포 카드(article.gh-card[data-repo])마다 같은 버튼(분야 GitHub, 원문 = 레포 URL)
   var newsM = decodeURIComponent(location.pathname).match(/\/news\/(\d{4}-\d{2}-\d{2})\/([^\/]+?)(?:\.html)?\/?$/);
+  var ghM = !newsM && decodeURIComponent(location.pathname).match(/\/github\/(\d{4}-\d{2}-\d{2})(?:\.html)?\/?$/);
+  if (ghM) newsM = [ghM[0], ghM[1], "GitHub"];
   if (newsM) {
     var REPO = "DreamHouseKSH/dreamhouse-briefings";
     var OWNER = "DreamHouseKSH";
@@ -260,16 +263,28 @@
       if (!u) return "";
       try { u = decodeURIComponent(u); } catch (e) {}
       var m = u.match(/\/news\/(\d{4}-\d{2}-\d{2})\/([^\/#?]+?)(?:\.html|\.md)?\/?(?:\?[^#]*)?(#.*)?$/);
-      return m ? ("news/" + m[1] + "/" + m[2] + (m[3] || "")).toLowerCase() : "";
+      if (m) return ("news/" + m[1] + "/" + m[2] + (m[3] || "")).toLowerCase();
+      var g = u.match(/\/github\/(\d{4}-\d{2}-\d{2})(?:\.html|\.md)?\/?(?:\?[^#]*)?(#.*)?$/);
+      return g ? ("github/" + g[1] + (g[2] || "")).toLowerCase() : "";
     };
     var items = [];
-    prose.querySelectorAll("h2").forEach(function (h) {
-      var raw = h.textContent.replace(/\s+/g, " ").trim();
-      var tm = raw.match(/^\d+\.\s*(.+)$/);
-      if (!tm) return;
-      var title = tm[1];
-      var meta = h.nextElementSibling;
-      var src = "", doneHref = "";
+    var heads = [];
+    if (ghM) {
+      prose.querySelectorAll("article.gh-card[data-repo]").forEach(function (c) {
+        var repo = c.getAttribute("data-repo"), hh = c.querySelector("h3");
+        if (!/^[\w.-]+\/[\w.-]+$/.test(repo || "") || !hh) return;
+        heads.push({ h: c, title: repo, src: "https://github.com/" + repo, meta: c.querySelector("ul"), card: c });
+      });
+    } else {
+      prose.querySelectorAll("h2").forEach(function (h) {
+        var tm = h.textContent.replace(/\s+/g, " ").trim().match(/^\d+\.\s*(.+)$/);
+        if (tm) heads.push({ h: h, title: tm[1], src: "", meta: h.nextElementSibling });
+      });
+    }
+    heads.forEach(function (hd) {
+      var h = hd.h, title = hd.title;
+      var meta = hd.meta;
+      var src = hd.src, doneHref = "";
       if (meta && meta.tagName === "UL") {
         meta.querySelectorAll("li").forEach(function (li) {
           var st = li.querySelector("strong");
@@ -303,7 +318,7 @@
           "",
           "- 날짜: " + rDate,
           "- 분야: " + rField,
-          "- 기사 제목: " + title,
+          (ghM ? "- 레포: " : "- 기사 제목: ") + title,
           "- 원문: " + (src || "(원문 링크 없음)"),
           "- 아카이브: " + anchorUrl,
           "",
@@ -325,7 +340,13 @@
       var li2 = document.createElement("li");
       li2.className = "research-req";
       li2.appendChild(btn);
-      if (meta) {
+      if (hd.card) {
+        var bw = document.createElement("p");
+        bw.className = "research-req gh-actions";
+        bw.appendChild(btn);
+        var bd = hd.card.querySelector(".gh-badges");
+        if (bd) bd.parentNode.insertBefore(bw, bd.nextSibling); else hd.card.appendChild(bw);
+      } else if (meta) {
         meta.appendChild(li2);
       } else {
         var wrap = document.createElement("p");
