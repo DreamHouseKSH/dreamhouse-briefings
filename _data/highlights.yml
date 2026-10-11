@@ -5,6 +5,7 @@
   AI: "엔비디아, Reflection AI 인수·추가 투자 협상(FT) / TypeSafe AI(Jev) 8.7억 달러 시리즈 A·75억 달러 가치 / Claude Managed Agents 동적 워크플로 베타"
   모델: "Microsoft-Decision-1($0.042/M 입력·출력 무료) / Nace AI Drex 1.5(9B 오픈 결정 모델) / Qwen-Image-2.1-Turbo(8단계)"
   엔진: "Ollama v0.40.2 자동 모델 업그레이드→v0.40.3 잠정 중단 / llama.cpp 서버 기본 포트 9931·ggml OOB 쓰기 수정·MiniCPM-V 4.7"
+  GitHub: "rea(일간 +25.6K, 나흘 연속 1위·누적 10만)·artcraft(+3.0K)·diagram-design(+1.1K) / 주간 AnyPS5(+21.4K, 1위)·moli(+10.0K, NEW)·skills(+9.2K)·e2e(+6.6K)·MXC(v1.0, HN 194점) 등 25개 저장소"
 
 "2026-10-09":
   IT: "삼성 3Q 잠정 매출 195조·영업익 107.4조(분기 100조 돌파) / 브로드컴 OpenAI 칩 500억 달러+ 조달(WSJ) / GF–TSMC 미 인터포저 20억 달러 / 엔비디아 DCGM CVE-2026-47483 / Shai-Hulud→Tensorlake npm"

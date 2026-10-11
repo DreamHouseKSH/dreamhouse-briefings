@@ -136,3 +136,17 @@
 - { term: "OpenCL", full: "Open Computing Language", ko: "여러 제조사 GPU·CPU에서 병렬 계산을 하게 해 주는 개방형 규격" }
 - { term: "결정 모델", full: "decision model", ko: "글을 생성하지 않고 정해진 선택지마다 확률을 매기는 AI 모델" }
 - { term: "애크하이어", full: "acqui-hire", ko: "회사 전체 대신 인재와 기술을 사들이는 인수 방식" }
+# --- 2026-10-12 GitHub 트렌드 추가분
+- { term: "SRE", full: "Site Reliability Engineering", ko: "서비스가 멈추지 않게 운영하고 장애에 대응하는 엔지니어링" }
+- { term: "OSINT", full: "Open Source Intelligence", ko: "공개된 정보로 하는 정보 수집·조사" }
+- { term: "CDP", full: "Chrome DevTools Protocol", ko: "크롬 브라우저를 프로그램으로 조종하는 규격" }
+- { term: "PSD", full: "Photoshop Document", ko: "포토샵 기본 파일 형식" }
+- { term: "PSB", full: "Photoshop Big", ko: "아주 큰 이미지용 포토샵 파일 형식" }
+- { term: "VM", full: "Virtual Machine", ko: "컴퓨터 안에서 소프트웨어로 만든 가상 컴퓨터" }
+- { term: "LXC", full: "Linux Containers", ko: "리눅스의 가벼운 격리 실행 환경(컨테이너)" }
+- { term: "MXC", full: "Microsoft eXecution Container", ko: "마이크로소프트의 믿을 수 없는 코드 격리 실행 시스템" }
+- { term: "CSS", full: "Cascading Style Sheets", ko: "웹 화면의 모양을 꾸미는 규칙 언어" }
+- { term: "ALPR", full: "Automatic License Plate Recognition", ko: "자동 번호판 인식" }
+- { term: "SDL", full: "Simple DirectMedia Layer", ko: "게임용 입력·화면·소리 처리 라이브러리" }
+- { term: "헤드리스 브라우저", full: "headless browser", ko: "화면 없이 프로그램이 조종하는 웹 브라우저" }
+- { term: "샌드박스", full: "sandbox", ko: "밖에 영향을 주지 못하게 가둔 격리 실행 공간" }
