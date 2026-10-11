@@ -13,7 +13,7 @@
 
 <p class="gh-badges no-gloss"><span class="gb gb-new">NEW</span><span class="gb gb-lang">언어</span><span class="gb gb-star">⭐ 누적</span><span class="gb gb-up">📈 일간 +N / 주간 +N</span><span class="gb gb-lic">⚖️ 라이선스</span><span class="gb gb-rel">🏷️ 태그 · MM/DD HH:MM</span><span class="gb gb-streak">🔥 N일 연속</span></p>
 
-![owner/repo 대표 이미지](https://README-첫-이미지-또는-opengraph.githubassets.com/1/owner/repo){: .gh-img loading="lazy"}
+![owner/repo 대표 이미지](https://README-첫-이미지(상대경로는 cdn.jsdelivr.net/gh/owner/repo@브랜치/경로)-또는-opengraph.githubassets.com/1/owner/repo){: .gh-img loading="lazy"}
 
 {한두 문장: 무엇인지. 용어·줄임말은 괄호로 원어+뜻}
 {: .gh-lead}
