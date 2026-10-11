@@ -1,5 +1,11 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
+"2026-10-12":
+  IT: "Ledger 리셀러 CryptoBilis 기기 하드웨어 임플란트 확인(피해 추정 7,200만~9,320만 달러) / 최태원 '호남 팹, 인프라 늦어도 선제 착공' / 루멘텀 AI 광부품 2029년 초까지 완판"
+  AI: "엔비디아, Reflection AI 인수·추가 투자 협상(FT) / TypeSafe AI(Jev) 8.7억 달러 시리즈 A·75억 달러 가치 / Claude Managed Agents 동적 워크플로 베타"
+  모델: "Microsoft-Decision-1($0.042/M 입력·출력 무료) / Nace AI Drex 1.5(9B 오픈 결정 모델) / Qwen-Image-2.1-Turbo(8단계)"
+  엔진: "Ollama v0.40.2 자동 모델 업그레이드→v0.40.3 잠정 중단 / llama.cpp 서버 기본 포트 9931·ggml OOB 쓰기 수정·MiniCPM-V 4.7"
+
 "2026-10-09":
   IT: "삼성 3Q 잠정 매출 195조·영업익 107.4조(분기 100조 돌파) / 브로드컴 OpenAI 칩 500억 달러+ 조달(WSJ) / GF–TSMC 미 인터포저 20억 달러 / 엔비디아 DCGM CVE-2026-47483 / Shai-Hulud→Tensorlake npm"
   AI: "구글 Gemini agent(기업 우선) / Anthropic OSS Scanner / Anthropic Genesis Mission 1.5억 달러·3년 / OpenAI GPT-6.1 Sol Ultrafast"

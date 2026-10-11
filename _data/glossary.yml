@@ -122,3 +122,17 @@
 - { term: "ToS", full: "Terms of Service", ko: "서비스 이용약관" }
 - { term: "HN", full: "Hacker News", ko: "개발자들이 기술 뉴스를 올리고 토론하는 커뮤니티 사이트" }
 - { term: "PyPI", full: "Python Package Index", ko: "파이썬 패키지 공식 저장소" }
+- { term: "USDT", full: "Tether USD", ko: "테더사가 발행하는 달러 1:1 연동 스테이블코인" }
+- { term: "CFG", full: "Classifier-Free Guidance", ko: "이미지 생성에서 프롬프트를 얼마나 강하게 따를지 조절하는 추가 계산" }
+- { term: "P50", full: "50th percentile", ko: "중간값 — 요청 절반이 이 시간 안에 끝난다는 뜻의 지연 시간 지표" }
+- { term: "RAIL-M", full: "Responsible AI License — Model", ko: "특정 용도를 금지하는 조항이 붙은 AI 모델 라이선스" }
+- { term: "MAI", full: "Microsoft AI", ko: "마이크로소프트의 자체 AI 조직과 그 모델" }
+- { term: "GC", full: "Garbage Collection", ko: "프로그램이 안 쓰는 메모리를 자동으로 치우는 작업" }
+- { term: "InP", full: "Indium Phosphide", ko: "인화인듐 — 레이저 등 광소자에 쓰는 화합물 반도체" }
+- { term: "a16z", full: "Andreessen Horowitz", ko: "미국 대형 벤처캐피털" }
+- { term: "FT", full: "Financial Times", ko: "영국 경제 일간지 파이낸셜타임스" }
+- { term: "AVX2", full: "Advanced Vector Extensions 2", ko: "여러 숫자를 한 번에 계산하는 x86 CPU 명령어 확장" }
+- { term: "MXFP4", full: "Microscaling FP4", ko: "작은 묶음마다 배율을 공유하는 4비트 부동소수점 형식" }
+- { term: "OpenCL", full: "Open Computing Language", ko: "여러 제조사 GPU·CPU에서 병렬 계산을 하게 해 주는 개방형 규격" }
+- { term: "결정 모델", full: "decision model", ko: "글을 생성하지 않고 정해진 선택지마다 확률을 매기는 AI 모델" }
+- { term: "애크하이어", full: "acqui-hire", ko: "회사 전체 대신 인재와 기술을 사들이는 인수 방식" }
