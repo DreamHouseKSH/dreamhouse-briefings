@@ -164,3 +164,18 @@
 - { term: "EPYC", full: "", ko: "AMD의 서버용 CPU 브랜드" }
 - { term: "DPU", full: "Data Processing Unit", ko: "네트워크·저장 같은 데이터 이동을 맡는 전용 프로세서" }
 - { term: "SLA", full: "Service Level Agreement", ko: "서비스가 지켜야 할 성능·가용성 약속" }
+- { term: "ELv2", full: "Elastic License 2.0", ko: "소스는 공개하지만 관리형 서비스로 되파는 것 등을 막는 '소스 공개형' 라이선스(오픈소스 정의에는 안 맞음)" }
+- { term: "FTS5", full: "Full-Text Search 5", ko: "SQLite 데이터베이스에 들어 있는 문장 검색 기능(5번째 버전)" }
+- { term: "BM25", full: "Best Matching 25", ko: "단어가 얼마나 자주·드물게 나오는지로 문서 관련도를 매기는 검색 점수 방식" }
+- { term: "OCI", full: "Open Container Initiative", ko: "컨테이너 이미지와 저장소(레지스트리) 형식의 업계 표준" }
+- { term: "TLS", full: "Transport Layer Security", ko: "인터넷 통신을 암호화하는 보안 규약(HTTPS의 바탕)" }
+- { term: "RFC", full: "Request for Comments", ko: "인터넷 기술 표준을 담은 공식 문서 번호" }
+- { term: "SSE", full: "Server-Sent Events", ko: "서버가 브라우저로 데이터를 끊지 않고 계속 흘려보내는 방식" }
+- { term: "TUI", full: "Text User Interface", ko: "터미널 안에서 글자로 그린 화면으로 조작하는 방식" }
+- { term: "NIM", full: "NVIDIA Inference Microservices", ko: "엔비디아가 AI 모델을 API로 돌려 주는 추론 서비스" }
+- { term: "APK", full: "Android Package", ko: "안드로이드 앱 설치 파일" }
+- { term: "리버스 엔지니어링", full: "reverse engineering", ko: "완성된 프로그램을 거꾸로 분석해 동작 원리를 알아내는 일" }
+- { term: "양자화", full: "quantization", ko: "모델 숫자의 정밀도를 낮춰 크기·메모리를 줄이는 기법" }
+- { term: "포팅", full: "porting", ko: "프로그램을 다른 기기·운영체제에서 돌도록 옮기는 일" }
+- { term: "셀프호스팅", full: "self-hosting", ko: "남의 서비스 대신 내 서버·컴퓨터에 직접 설치해 쓰는 것" }
+- { term: "하네스", full: "harness", ko: "AI 모델을 감싸 도구 사용·실행을 관리하는 틀(예: Claude Code)" }
