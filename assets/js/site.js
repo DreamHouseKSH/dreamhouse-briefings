@@ -570,15 +570,18 @@
   fade();
   nav.addEventListener("scroll", fade, { passive: true });
   window.addEventListener("resize", fade);
-  var mq = window.matchMedia("(max-width: 56rem)"), lastY = window.scrollY, ticking = false;
+  var mq = window.matchMedia("(max-width: 56rem)"), lastY = window.scrollY, ticking = false, lockUntil = 0;
   window.addEventListener("scroll", function () {
     if (ticking) return; ticking = true;
     requestAnimationFrame(function () {
-      var y = window.scrollY, d = y - lastY;
-      if (!mq.matches || y < 80) hdr.classList.remove("nav-hidden");
-      else if (d > 8) hdr.classList.add("nav-hidden");
-      else if (d < -8) hdr.classList.remove("nav-hidden");
-      if (Math.abs(d) > 8 || y < 80) lastY = y;
+      var y = window.scrollY, d = y - lastY, now = Date.now();
+      if (now < lockUntil) { lastY = y; ticking = false; return; } // 숨김/표시 직후 레이아웃 변화로 생긴 스크롤은 무시
+      var was = hdr.classList.contains("nav-hidden"), want = was;
+      if (!mq.matches || y < 80) want = false;
+      else if (d > 12) want = true;
+      else if (d < -12) want = false;
+      if (want !== was) { hdr.classList.toggle("nav-hidden", want); lockUntil = now + 350; }
+      if (Math.abs(d) > 12 || y < 80) lastY = y;
       ticking = false;
     });
   }, { passive: true });

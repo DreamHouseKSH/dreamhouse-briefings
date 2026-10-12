@@ -617,3 +617,19 @@ html, body { overflow-x: clip; }
   .footer-nav a { flex: 1 1 0; justify-content: center; padding: 0 .6rem; }
 }
 .stats-top a { white-space: normal; }
+
+/* 폰: 로고 줄 한 줄 유지 (← · 로고 · 배지·↻·테마) + 같은 날짜 탭도 한 줄 가로 스크롤 */
+html { overflow-anchor: none; }
+@media (max-width: 40rem) {
+  .site-header .wrap { padding-left: max(.6rem, env(safe-area-inset-left, 0px)); padding-right: max(.6rem, env(safe-area-inset-right, 0px)); }
+  .header-inner { flex-wrap: wrap; gap: 0 .25rem; }
+  .back-btn { margin-left: -.25rem; margin-right: -.5rem; }
+  .brand { font-size: .95rem; gap: .3rem; min-width: 0; }
+  .brand-mark { font-size: 1.1rem; }
+  .header-actions { gap: .15rem; }
+  .visitors-today { font-size: .72rem; padding: .15rem .45rem; }
+  .brief-bar .wrap { gap: .3rem; padding-top: .4rem; padding-bottom: .4rem; }
+  .brief-bar .tabs { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; width: 100%; padding-bottom: 2px; }
+  .brief-bar .tabs::-webkit-scrollbar { display: none; }
+  .brief-bar .tab { flex: none; min-height: 44px; display: inline-flex; align-items: center; }
+}
