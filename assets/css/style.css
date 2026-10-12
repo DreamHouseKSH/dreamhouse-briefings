@@ -595,9 +595,3 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
   .stats-chart svg { height: 160px; }
   .stats-top li { grid-template-columns: 1.4rem minmax(0, 1fr) 22% 2rem; gap: .45rem; }
 }
-/* 폰 폭: 메뉴 항목이 늘어도(통계 추가) 메뉴는 한 줄 → 헤더 전체 두 줄 유지 */
-@media (max-width: 40rem) {
-  .main-nav { gap: 0; }
-  .main-nav a { padding: .3rem .42rem; font-size: .84rem; letter-spacing: -0.02em; }
-}
-@media (max-width: 23rem) { .main-nav a { padding: .3rem .3rem; font-size: .8rem; } }
