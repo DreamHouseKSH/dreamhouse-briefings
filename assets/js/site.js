@@ -536,8 +536,11 @@
       .then(function (j) {
         var n = j && (j.count != null ? j.count : j.count_unique);
         if (n == null || !/^[\d,.\s]+$/.test(String(n))) throw new Error("bad");
-        el.textContent = "오늘 " + String(n).trim() + "명";
-        el.title = "오늘(KST) 방문자 수 · GoatCounter 집계, 최대 몇 시간 늦게 반영될 수 있음";
+        var v = parseInt(String(n).replace(/[^\d]/g, ""), 10) || 0;
+        // 0 = 아직 집계 전일 가능성이 큼(공개 카운터 캐시 최대 4시간, 자정 KST 리셋) → '0명' 대신 '—'
+        el.textContent = v > 0 ? "오늘 " + String(n).trim() + "명" : "오늘 —";
+        el.title = v > 0 ? "오늘(KST) 방문자 수 · GoatCounter 집계, 최대 몇 시간 늦게 반영될 수 있음"
+                         : "오늘(KST) 방문자 집계 중 · GoatCounter 공개 카운터는 최대 4시간 늦게 반영돼요";
         el.hidden = false;
       })
       .catch(function () { el.hidden = true; });

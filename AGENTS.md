@@ -4,6 +4,7 @@
 
 ## 변경 이력 (요약 — 상세는 [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 맨 위 '변경 이력')
 
+- **2026-10-12:** 날짜 페이지 본문 끝에 **다음 파트 큰 버튼**(IT→AI→모델→엔진→GitHub, 없는 파트 건너뜀, 마지막은 '오늘 브리핑 끝 · 홈으로') + 상단과 같은 파트 탭(`_includes/part-tabs.html` 공용 — 탭 코드 중복 금지) · 헤더 방문자 0/집계 전이면 '오늘 —'('0명' 표시 안 함).
 - **2026-10-11:** GitHub 트렌드 페이지 = 카드 형식(`templates/github-item.md`: 오늘의 흐름 에세이 · TOP 5 · 어제 대비 → 분야별 섹션에 레포 카드 — 배지·대표 이미지 핫링크·무엇인가/왜 지금/어떻게 쓰나/비교/주의할 점) · 레포 카드마다 🔍 리서치 버튼(분야 GitHub, 원문 = 레포 URL) · 리서치 루틴이 github 카드도 처리, 완료 시 카드에 '심층 리서치' 줄.
 - **2026-10-09:** 리서치 요청 = 이슈 방식(작성자 `DreamHouseKSH` 만) · 매일 24시간 15분마다 확인 · 한 번에 최대 3건 · 리서치 본문은 에세이형 산문 + 접힌 참고 자료 · 줄임말은 원어 전체 이름 + 쉬운 뜻 · 줄임말 자동 풀이 + 용어집(`_data/glossary.yml` 등록 필수, 상단 '용어' 메뉴) · 리서치 버튼 3상태(요청/진행 중/리서치 보기, 3분마다 새로고침 없이 갱신) · 새 내용 자동 반영(`version.json`·배너·↻) · '←' 뒤로(본 순서대로)·외부 링크 새 탭 · 방문 통계 GoatCounter `dh-news`(IP·쿠키 저장 없음, 헤더 '오늘 N명') · 열람 환경 = iPad 홈 화면 웹앱 · 동시 작업 시 커밋 전마다 `git pull --rebase`.
 - **2026-10-06:** 아카이브 시작, GitHub Pages 공개 운영.
@@ -81,7 +82,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 - push 후 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status` → `built` 이면 정상.
 - 새 빌드 자동 반영: `version.json`(빌드마다 바뀜)을 `site.js` 가 열 때·화면 복귀 시 no-store로 확인해 바뀌었으면 바로 새로고침(루프 가드 있음), 보는 중에는 3분마다 확인해 바뀌면 '새 내용이 있어요 · 새로고침' 배너(닫기 가능). 리서치 버튼 상태는 새로고침 없이 따로 갱신(위 '버튼 상태'), 헤더 **↻** 수동 새로고침. **서비스워커는 없고 만들지 않음.** `version.json`·`<meta name="site-build">` 를 지우지 말 것.
 - 헤더 **'←' 뒤로 버튼**(standalone 웹앱용): sessionStorage `dh-nav-v1` 사이트 내 방문 스택으로 판단 → 있으면 `history.back()`, 없으면 홈, 홈에서는 숨김. 새로고침은 스택 유지, 같은 페이지 앵커는 history에 안 쌓음(replaceState). 사이트 밖 링크는 전부 새 탭, 사이트 안 링크는 같은 창. `<meta name="site-base">` 를 지우지 말 것. 상세: `docs/WORKFLOW.md` 6장.
-- **방문 통계:** GoatCounter 사이트 코드 **`dh-news`**, 대시보드 https://dh-news.goatcounter.com (사용자 로그인). **IP·쿠키 저장 없음.** 헤더에 **'오늘 N명'** 배지(공개 카운터 JSON `counter/TOTAL.json?start=오늘KST`, GoatCounter 캐시로 **최대 약 4시간 지연**, 실패·403이면 숨김 — 403이면 GoatCounter 설정 'Allow adding visitor counts on your website' 가 꺼진 것). 설정은 `_config.yml` 의 `analytics`(`code` 비우면 꺼짐). **비밀값은 커밋 금지**(필요 없음). 상세: WORKFLOW 6장 '방문 통계'.
+- **방문 통계:** GoatCounter 사이트 코드 **`dh-news`**, 대시보드 https://dh-news.goatcounter.com (사용자 로그인). **IP·쿠키 저장 없음.** 헤더에 **'오늘 N명'** 배지(공개 카운터 JSON `counter/TOTAL.json?start=오늘KST`, GoatCounter 캐시로 **최대 약 4시간 지연**, 0이면 '오늘 —'(집계 전), 실패·403이면 숨김 — 403이면 GoatCounter 설정 'Allow adding visitor counts on your website' 가 꺼진 것). 설정은 `_config.yml` 의 `analytics`(`code` 비우면 꺼짐). **비밀값은 커밋 금지**(필요 없음). 상세: WORKFLOW 6장 '방문 통계'.
 - 사이트 구조 상세: [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 6장.
 
 ## 알려진 공백 / 다음 에이전트에게

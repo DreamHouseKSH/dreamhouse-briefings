@@ -538,3 +538,26 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
   .gh-flow { padding: .1rem .85rem .5rem; }
   .gh-card img.gh-img { max-height: 200px; }
 }
+
+/* ---------- 본문 끝: 다음 파트 + 파트 탭 ---------- */
+.part-end { max-width: calc(var(--measure) + 18rem); margin: 3rem auto 0; padding-top: 1.5rem; border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: .9rem; }
+.next-part {
+  display: flex; flex-direction: column; justify-content: center; min-height: 64px; padding: .8rem 1.2rem;
+  border-radius: 14px; border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  border-left: 6px solid var(--accent);
+}
+.next-part:hover { text-decoration: none; border-color: var(--muted); }
+.next-part small { color: var(--muted); font-size: .85rem; font-weight: 600; }
+.next-part span { font-size: 1.2rem; font-weight: 800; }
+.next-it { border-left-color: var(--c-it); } .next-ai { border-left-color: var(--c-ai); }
+.next-model { border-left-color: var(--c-model); } .next-engine { border-left-color: var(--c-engine); }
+.next-github { border-left-color: var(--c-github); }
+.part-end .tabs { gap: .5rem; }
+.part-end .tab { min-height: 44px; display: inline-flex; align-items: center; padding: .4rem 1rem; font-size: .95rem; }
+.part-end + .pager { margin-top: 1.25rem; }
+.pager a { min-height: 44px; display: inline-flex; align-items: center; }
+@media (max-width: 40rem) {
+  .part-end .tabs { display: grid; grid-template-columns: repeat(3, 1fr); }
+  .part-end .tab { justify-content: center; padding: .4rem .5rem; }
+}
+@media print { .part-end { display: none !important; } }

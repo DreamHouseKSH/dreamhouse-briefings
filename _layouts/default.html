@@ -67,12 +67,7 @@
   <div class="brief-bar">
     <div class="wrap">
       <div class="crumbs"><a href="{{ '/' | relative_url }}">홈</a> <span>›</span> <a href="{{ '/archive/' | relative_url }}#d-{{ cur_date }}">{{ cur_date }} ({% include weekday.html date=cur_date %})</a></div>
-      <nav class="tabs" aria-label="같은 날짜의 다른 분야">
-        {%- for c in site.briefing_sections -%}
-          {%- include page-for.html date=cur_date file=c.file -%}
-          {%- if hit -%}<a class="tab tab-{{ c.slug }}{% if cur_file == c.file %} active{% endif %}" href="{{ hit.url | relative_url }}">{{ c.icon }} {% if c.slug == "github" %}GitHub{% else %}{{ c.label }}{% endif %}</a>{%- endif -%}
-        {%- endfor -%}
-      </nav>
+      {%- include part-tabs.html date=cur_date cur=cur_file -%}
     </div>
   </div>
   {%- endif -%}
@@ -98,6 +93,23 @@
         {%- else -%}{%- assign next_hit = hit -%}{%- assign next_d = d -%}{%- endif -%}
       {%- endif -%}
     {%- endfor -%}
+    {%- comment -%} 하단: 다음 파트(IT→AI→모델→엔진→GitHub, 없는 파트 건너뜀) + 같은 탭 {%- endcomment -%}
+    {%- assign np_hit = nil -%}{%- assign np_sec = nil -%}{%- assign passed = false -%}
+    {%- for c in site.briefing_sections -%}
+      {%- if c.file == cur_file -%}{%- assign passed = true -%}{%- continue -%}{%- endif -%}
+      {%- if passed and np_hit == nil -%}
+        {%- include page-for.html date=cur_date file=c.file -%}
+        {%- if hit -%}{%- assign np_hit = hit -%}{%- assign np_sec = c -%}{%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    <section class="part-end" aria-label="다음 파트로 이동">
+      {%- if np_hit -%}
+      <a class="next-part next-{{ np_sec.slug }}" href="{{ np_hit.url | relative_url }}"><small>다음 파트</small><span>{{ np_sec.icon }} {% if np_sec.slug == "github" %}GitHub{% else %}{{ np_sec.label }}{% endif %} →</span></a>
+      {%- else -%}
+      <a class="next-part next-done" href="{{ '/' | relative_url }}"><small>{{ cur_date }} 브리핑</small><span>✅ 오늘 브리핑 끝 · 홈으로</span></a>
+      {%- endif -%}
+      {%- include part-tabs.html date=cur_date cur=cur_file label="같은 날짜의 다른 분야 (하단)" -%}
+    </section>
     <nav class="pager" aria-label="같은 분야 다른 날짜">
       {%- if prev_hit -%}<a class="prev" href="{{ prev_hit.url | relative_url }}">← {{ prev_d }}</a>{%- else -%}<span></span>{%- endif -%}
       {%- if next_hit -%}<a class="next" href="{{ next_hit.url | relative_url }}">{{ next_d }} →</a>{%- else -%}<span></span>{%- endif -%}

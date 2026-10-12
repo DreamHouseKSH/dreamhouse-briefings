@@ -1,0 +1,7 @@
+{%- comment -%} 같은 날짜 파트 탭 (상단 brief-bar · 하단 part-end 공용). 인자: date, cur, label(aria) {%- endcomment -%}
+<nav class="tabs" aria-label="{{ include.label | default: '같은 날짜의 다른 분야' }}">
+  {%- for c in site.briefing_sections -%}
+    {%- include page-for.html date=include.date file=c.file -%}
+    {%- if hit -%}<a class="tab tab-{{ c.slug }}{% if include.cur == c.file %} active{% endif %}" href="{{ hit.url | relative_url }}"{% if include.cur == c.file %} aria-current="page"{% endif %}>{{ c.icon }} {% if c.slug == "github" %}GitHub{% else %}{{ c.label }}{% endif %}</a>{%- endif -%}
+  {%- endfor -%}
+</nav>
