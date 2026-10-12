@@ -1,5 +1,11 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
+"2026-10-13":
+  IT: "삼성 OCP서 HBM5·CXL·SSD 3축 메모리 전략·AMD 공동 시연 / AMD Helion 에이전트 랙(CPU 최대 32,768코어, 11월) / 엔비디아 Vera Rubin·MGX OCP 기여"
+  AI: "Anthropic, 소형 모델 IoT 자가복제 연구(연말 문턱 전망) / 아마존 Decart 약 70억 달러 인수 협상(WSJ) / Anthropic–IREN 다년 클라우드 보도(The Information, 미확인)"
+  모델: "Meta Muse Wonder·Wonder Full(AA Index 52·56) / Continuum OrcaCyber Zero 1.5(회사 기준 CVE-Bench 95.8%)"
+  엔진: "Ollama v0.40.4-rc0(llama.cpp b11521·결정 모델·EmbeddingGemma 2) / llama.cpp b11571~b11577(vLLM Decision-2·d3 지원)"
+
 "2026-10-12":
   IT: "Ledger 리셀러 CryptoBilis 기기 하드웨어 임플란트 확인(피해 추정 7,200만~9,320만 달러) / 최태원 '호남 팹, 인프라 늦어도 선제 착공' / 루멘텀 AI 광부품 2029년 초까지 완판"
   AI: "엔비디아, Reflection AI 인수·추가 투자 협상(FT) / TypeSafe AI(Jev) 8.7억 달러 시리즈 A·75억 달러 가치 / Claude Managed Agents 동적 워크플로 베타"

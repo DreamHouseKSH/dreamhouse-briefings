@@ -150,3 +150,17 @@
 - { term: "SDL", full: "Simple DirectMedia Layer", ko: "게임용 입력·화면·소리 처리 라이브러리" }
 - { term: "헤드리스 브라우저", full: "headless browser", ko: "화면 없이 프로그램이 조종하는 웹 브라우저" }
 - { term: "샌드박스", full: "sandbox", ko: "밖에 영향을 주지 못하게 가둔 격리 실행 공간" }
+# --- 2026-10-13 뉴스 브리핑 추가분
+- { term: "OCP", full: "Open Compute Project", ko: "빅테크·서버 업체가 데이터센터 하드웨어 표준을 함께 만드는 오픈 프로젝트" }
+- { term: "CXL", full: "Compute Express Link", ko: "AI 가속기와 메모리를 효율적으로 이어 주는 개방형 연결 규격" }
+- { term: "PIM", full: "Processing-In-Memory", ko: "메모리 안에서 일부 계산을 직접 처리하는 기술" }
+- { term: "CMM-D", full: "CXL Memory Module-DRAM", ko: "CXL로 붙이는 D램 메모리 모듈" }
+- { term: "zHBM", full: "", ko: "연산칩 위에 메모리를 적층하는 삼성전자의 HBM 형태" }
+- { term: "HBF", full: "High Bandwidth Flash", ko: "낸드플래시를 쌓아 HBM과 SSD 사이를 보완하는 고대역 저장 기술" }
+- { term: "IoT", full: "Internet of Things", ko: "인터넷에 연결된 가전·센서 같은 기기들" }
+- { term: "ADB", full: "Android Debug Bridge", ko: "안드로이드 기기를 디버깅·제어하는 통로" }
+- { term: "WSJ", full: "Wall Street Journal", ko: "미국 경제 일간지 월스트리트저널" }
+- { term: "AWS", full: "Amazon Web Services", ko: "아마존의 클라우드 컴퓨팅 서비스" }
+- { term: "EPYC", full: "", ko: "AMD의 서버용 CPU 브랜드" }
+- { term: "DPU", full: "Data Processing Unit", ko: "네트워크·저장 같은 데이터 이동을 맡는 전용 프로세서" }
+- { term: "SLA", full: "Service Level Agreement", ko: "서비스가 지켜야 할 성능·가용성 약속" }
