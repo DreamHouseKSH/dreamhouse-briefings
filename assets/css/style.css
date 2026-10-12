@@ -561,3 +561,37 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
   .part-end .tab { justify-content: center; padding: .4rem .5rem; }
 }
 @media print { .part-end { display: none !important; } }
+
+/* ---------- 통계 페이지 (stats/) ---------- */
+.stats-page { max-width: 52rem; margin: 0 auto; }
+.stats-head h1 { margin: .2rem 0 .3rem; font-size: clamp(1.6rem, 4vw, 2.1rem); letter-spacing: -0.03em; }
+.stats-head .lead { color: var(--text-2); margin: 0 0 1.25rem; }
+.stats-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: .6rem; }
+.stat-card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: .8rem 1rem; }
+.stat-card small { display: block; color: var(--muted); font-weight: 600; font-size: .85rem; }
+.stat-card b { font-size: 1.7rem; font-weight: 850; letter-spacing: -0.02em; color: var(--text); }
+.stats-page h2 { font-size: 1.15rem; margin: 1.8rem 0 .7rem; }
+.stats-chart { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 1rem .8rem .4rem; }
+.stats-chart svg { width: 100%; height: 190px; display: block; overflow: visible; }
+.stats-chart .bar { fill: var(--accent); opacity: .55; }
+.stats-chart .bar.today { opacity: 1; }
+.stats-chart text { fill: var(--text-2); font-size: 7px; font-weight: 700; }
+.stats-chart text.ax { fill: var(--muted); font-weight: 500; }
+.stats-chart .base { stroke: var(--border); stroke-width: 1; }
+.stats-top { list-style: none; padding: 0; margin: 0; counter-reset: t; }
+.stats-top li { counter-increment: t; display: grid; grid-template-columns: 1.6rem minmax(0, 1fr) 30% 2.5rem; align-items: center; gap: .6rem; min-height: 44px; border-bottom: 1px solid var(--border); }
+.stats-top li::before { content: counter(t); color: var(--muted); font-weight: 700; text-align: right; }
+.stats-top li.muted { display: block; }
+.stats-top li.muted::before { content: none; }
+.stats-top a { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
+.stats-top .tb { height: 8px; background: var(--surface-2); border-radius: 99px; overflow: hidden; }
+.stats-top .tb i { display: block; height: 100%; background: var(--accent); border-radius: 99px; }
+.stats-top b { text-align: right; }
+.stats-note { margin-top: 1.8rem; padding: 1rem 1.1rem; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; font-size: .93rem; color: var(--text-2); }
+.stats-note p { margin: .4rem 0; }
+.stats-dash { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
+@media (max-width: 40rem) {
+  .stats-cards { grid-template-columns: repeat(2, 1fr); }
+  .stats-chart svg { height: 160px; }
+  .stats-top li { grid-template-columns: 1.4rem minmax(0, 1fr) 22% 2rem; gap: .45rem; }
+}

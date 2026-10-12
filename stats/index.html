@@ -1,0 +1,43 @@
+---
+title: 방문 통계
+permalink: /stats/
+section: stats
+description: 최근 30일 날짜별 방문자 수 · 누적 · 많이 본 페이지 (GoatCounter 공개 카운터)
+---
+{%- assign gc_code = site.analytics.code | default: "" | strip -%}
+<section class="stats-page" data-gc="{% if gc_code != '' %}https://{{ gc_code }}.goatcounter.com{% endif %}">
+  <header class="stats-head">
+    <h1>📊 방문 통계</h1>
+    <p class="lead">IP나 쿠키는 저장하지 않고 방문 수만 셉니다. 날짜는 모두 한국 시간(KST) 기준이에요.</p>
+  </header>
+
+  <div class="stats-cards">
+    <div class="stat-card"><small>전체 누적</small><b data-k="total">…</b></div>
+    <div class="stat-card"><small>최근 7일</small><b data-k="week">…</b></div>
+    <div class="stat-card"><small>최근 30일</small><b data-k="month">…</b></div>
+    <div class="stat-card"><small>오늘</small><b data-k="today">…</b></div>
+  </div>
+
+  <h2>최근 30일 날짜별 방문자</h2>
+  <div class="stats-chart" role="img" aria-label="최근 30일 날짜별 방문자 막대그래프"><p class="muted">불러오는 중…</p></div>
+
+  <h2>많이 본 페이지 TOP 10 <small class="muted">(최근 30일)</small></h2>
+  <ol class="stats-top"><li class="muted">불러오는 중…</li></ol>
+
+  <div class="stats-note">
+    <p><b>숫자가 늦게 바뀔 수 있어요.</b> 이 페이지는 누구나 볼 수 있는 공개 숫자를 쓰는데, 이 숫자는 한 번 만들어지면 최대 4시간 동안 그대로 보여요. 그래서 방금 들어온 방문이나 오늘 아침 방문은 아직 0으로 보일 수 있어요. 이 페이지도 같은 숫자를 1시간 동안 기기에 저장해 두고 다시 씁니다.</p>
+    <p>‘많이 본 페이지’는 사이트의 주요 페이지(홈·메뉴 페이지와 최근 30일 날짜·리서치 페이지)를 하나씩 조회해서 고른 거예요. 그 밖의 주소나 유입 경로·기기·지역은 이 방식으로 볼 수 없어서, 자세한 건 대시보드에서 확인해 주세요.</p>
+    <p><a class="stats-dash" href="https://dh-news.goatcounter.com" target="_blank" rel="noopener">GoatCounter 대시보드에서 자세히 보기 ↗</a> <span class="muted">(로그인 필요)</span></p>
+    <p class="muted stats-updated"></p>
+  </div>
+</section>
+<script>
+window.DH_STATS_PAGES = [
+{%- for p in site.pages -%}
+  {%- assign u = p.url -%}
+  {%- if u contains "/assets/" or u contains "/templates/" or u contains ".json" or u contains ".xml" or u contains ".css" or u contains ".js" or u == "/stats/" or u contains "/.github/" -%}{%- continue -%}{%- endif -%}
+  {"u": {{ u | relative_url | jsonify }}, "t": {{ p.title | default: u | strip_html | jsonify }}}{% unless forloop.last %},{% endunless %}
+{%- endfor -%}
+];
+</script>
+<script src="{{ '/assets/js/stats.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
