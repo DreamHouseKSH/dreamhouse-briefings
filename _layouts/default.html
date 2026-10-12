@@ -51,9 +51,6 @@
         {%- endfor -%}
         <a class="nav-archive{% if page.section == 'archive' %} active{% endif %}" href="{{ '/archive/' | relative_url }}">아카이브</a>
         <a class="nav-research{% if is_research %} active{% endif %}" href="{{ '/research/' | relative_url }}">리서치</a>
-        <a class="nav-glossary{% if page.section == 'glossary' %} active{% endif %}" href="{{ '/glossary/' | relative_url }}">용어</a>
-        <a class="nav-stats{% if page.section == 'stats' %} active{% endif %}" href="{{ '/stats/' | relative_url }}">통계</a>
-        <a class="nav-docs{% if is_doc %} active{% endif %}" href="{{ '/docs/' | relative_url }}">문서</a>
       </nav>
       <div class="header-actions">
         <span class="visitors-today" hidden aria-live="polite"></span>
@@ -123,6 +120,11 @@
 
   <footer class="site-footer">
     <div class="wrap">
+      <nav class="footer-nav" aria-label="사이트 도구">
+        <a class="fn-glossary{% if page.section == 'glossary' %} active{% endif %}" href="{{ '/glossary/' | relative_url }}"{% if page.section == 'glossary' %} aria-current="page"{% endif %}>📖 용어</a>
+        <a class="fn-stats{% if page.section == 'stats' %} active{% endif %}" href="{{ '/stats/' | relative_url }}"{% if page.section == 'stats' %} aria-current="page"{% endif %}>📊 통계</a>
+        <a class="fn-docs{% if is_doc %} active{% endif %}" href="{{ '/docs/' | relative_url }}"{% if is_doc %} aria-current="page"{% endif %}>📄 문서</a>
+      </nav>
       <p>요약 아카이브입니다 — 기사 전문이 아니며, 사실 확인과 세부 내용은 각 항목의 <b>원문 링크</b>를 참고하세요. 시간은 모두 KST 기준.</p>
       <p class="muted"><a href="{{ '/docs/' | relative_url }}">문서</a> · <a href="{{ '/AGENTS.html' | relative_url }}">AGENTS</a> · <a href="{{ '/docs/WORKFLOW.html' | relative_url }}">WORKFLOW</a> · 마지막 빌드 {{ site.time | date: "%Y-%m-%d %H:%M" }} KST</p>
     </div>

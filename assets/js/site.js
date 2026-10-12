@@ -221,6 +221,13 @@
     if (a.hostname !== location.hostname) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
   });
 
+  // 3-1) 링크 글자가 긴 URL 그대로면 도메인만 보이게 (전체 주소는 title)
+  prose.querySelectorAll('a[href^="http"]').forEach(function (a) {
+    var t = (a.textContent || "").trim();
+    if (a.children.length || !/^https?:\/\//.test(t) || t.length <= 32) return;
+    try { a.title = a.href; a.textContent = new URL(a.href).hostname.replace(/^www\./, "") + " ↗"; a.classList.add("url-short"); } catch (e) {}
+  });
+
   // 4) 표는 가로 스크롤 래퍼로 감싸기
   prose.querySelectorAll("table").forEach(function (t) {
     if (t.parentNode.classList && t.parentNode.classList.contains("table-wrap")) return;
@@ -547,4 +554,32 @@
   };
   load();
   document.addEventListener("visibilitychange", function () { if (document.visibilityState === "visible") load(); });
+})();
+
+/* 상단 메뉴(폰·아이패드): 한 줄 가로 스크롤 · 양끝 흐림 · 현재 항목 자동 스크롤 · 아래로 스크롤 시 메뉴 줄 숨김 */
+(function () {
+  var nav = document.querySelector(".main-nav"), hdr = document.querySelector(".site-header");
+  if (!nav || !hdr) return;
+  var fade = function () {
+    var max = nav.scrollWidth - nav.clientWidth;
+    nav.classList.toggle("fade-l", nav.scrollLeft > 4);
+    nav.classList.toggle("fade-r", max > 4 && nav.scrollLeft < max - 4);
+  };
+  var act = nav.querySelector("a.active");
+  if (act && nav.scrollWidth > nav.clientWidth) nav.scrollLeft = Math.max(0, act.offsetLeft - (nav.clientWidth - act.offsetWidth) / 2);
+  fade();
+  nav.addEventListener("scroll", fade, { passive: true });
+  window.addEventListener("resize", fade);
+  var mq = window.matchMedia("(max-width: 56rem)"), lastY = window.scrollY, ticking = false;
+  window.addEventListener("scroll", function () {
+    if (ticking) return; ticking = true;
+    requestAnimationFrame(function () {
+      var y = window.scrollY, d = y - lastY;
+      if (!mq.matches || y < 80) hdr.classList.remove("nav-hidden");
+      else if (d > 8) hdr.classList.add("nav-hidden");
+      else if (d < -8) hdr.classList.remove("nav-hidden");
+      if (Math.abs(d) > 8 || y < 80) lastY = y;
+      ticking = false;
+    });
+  }, { passive: true });
 })();
