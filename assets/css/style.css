@@ -458,6 +458,9 @@ a.card:hover { text-decoration: none; transform: translateY(-2px); color: var(--
     gap: 0; -webkit-overflow-scrolling: touch; overscroll-behavior-x: contain; scroll-padding: 0 1.5rem;
     max-height: 48px; transition: max-height .2s ease, opacity .2s ease;
   }
+  .brief-bar .tabs.fade-r { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
+  .brief-bar .tabs.fade-l { -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%); mask-image: linear-gradient(90deg, transparent, #000 15%); }
+  .brief-bar .tabs.fade-l.fade-r { -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }
   .main-nav.fade-r { -webkit-mask-image: linear-gradient(90deg, #000 85%, transparent); mask-image: linear-gradient(90deg, #000 85%, transparent); }
   .main-nav.fade-l { -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%); mask-image: linear-gradient(90deg, transparent, #000 15%); }
   .main-nav.fade-l.fade-r { -webkit-mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent); }

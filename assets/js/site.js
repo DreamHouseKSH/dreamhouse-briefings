@@ -560,16 +560,19 @@
 (function () {
   var nav = document.querySelector(".main-nav"), hdr = document.querySelector(".site-header");
   if (!nav || !hdr) return;
-  var fade = function () {
-    var max = nav.scrollWidth - nav.clientWidth;
-    nav.classList.toggle("fade-l", nav.scrollLeft > 4);
-    nav.classList.toggle("fade-r", max > 4 && nav.scrollLeft < max - 4);
-  };
-  var act = nav.querySelector("a.active");
-  if (act && nav.scrollWidth > nav.clientWidth) nav.scrollLeft = Math.max(0, act.offsetLeft - (nav.clientWidth - act.offsetWidth) / 2);
-  fade();
-  nav.addEventListener("scroll", fade, { passive: true });
-  window.addEventListener("resize", fade);
+  [nav, document.querySelector(".brief-bar .tabs")].forEach(function (el) { // 상단 메뉴 + 같은 날짜 탭 공용
+    if (!el) return;
+    var fade = function () {
+      var max = el.scrollWidth - el.clientWidth;
+      el.classList.toggle("fade-l", el.scrollLeft > 4);
+      el.classList.toggle("fade-r", max > 4 && el.scrollLeft < max - 4);
+    };
+    var act = el.querySelector("a.active");
+    if (act && el.scrollWidth > el.clientWidth) el.scrollLeft = Math.max(0, act.offsetLeft - el.offsetLeft - (el.clientWidth - act.offsetWidth) / 2);
+    fade();
+    el.addEventListener("scroll", fade, { passive: true });
+    window.addEventListener("resize", fade);
+  });
   var mq = window.matchMedia("(max-width: 56rem)"), lastY = window.scrollY, ticking = false, lockUntil = 0;
   window.addEventListener("scroll", function () {
     if (ticking) return; ticking = true;
