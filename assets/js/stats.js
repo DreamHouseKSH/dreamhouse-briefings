@@ -56,7 +56,7 @@
       var h = x.n ? Math.max(2, Math.round(x.n / max * H)) : 0, X = i * 12 + 2;
       svg += '<rect class="bar' + (i === s.days.length - 1 ? ' today' : '') + '" x="' + X + '" y="' + (H - h) + '" width="' + bw + '" height="' + h + '" rx="2"><title>' + x.d + ' · ' + (x.n == null ? '실패' : x.n + '명') + '</title></rect>';
       if (x.n) svg += '<text x="' + (X + bw / 2) + '" y="' + (H - h - 3) + '" text-anchor="middle">' + x.n + '</text>';
-      if (i % 7 === 0 || i === s.days.length - 1) svg += '<text class="ax" x="' + (X + bw / 2) + '" y="' + (H + 15) + '" text-anchor="middle">' + x.d.slice(5).replace("-", "/") + '</text>';
+      if ((i % 7 === 0 && i < s.days.length - 4) || i === s.days.length - 1) svg += '<text class="ax" x="' + (X + bw / 2) + '" y="' + (H + 15) + '" text-anchor="middle">' + x.d.slice(5).replace("-", "/") + '</text>';
     });
     svg += '<line class="base" x1="0" x2="' + W + '" y1="' + H + '" y2="' + H + '"/></svg>';
     root.querySelector(".stats-chart").innerHTML = svg;
