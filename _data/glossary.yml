@@ -219,3 +219,14 @@
 - { term: "YaRN", full: "Yet another RoPE extensioN", ko: "위치 인코딩을 늘려 더 긴 문맥을 다루게 하는 기법" }
 - { term: "SME2", full: "Scalable Matrix Extension 2", ko: "Arm CPU의 행렬 연산 전용 확장 명령어" }
 - { term: "ONNX", full: "Open Neural Network Exchange", ko: "여러 프레임워크가 함께 쓰는 모델 파일 형식·실행 환경" }
+
+# --- 2026-10-14 github trends ---
+- { term: "PPTX", full: "PowerPoint Open XML", ko: "파워포인트에서 쓰는 발표 자료 파일 형식" }
+- { term: "SwiftPM", full: "Swift Package Manager", ko: "스위프트 패키지를 받아 빌드·의존성을 관리하는 도구" }
+- { term: "Xcode", full: "", ko: "애플의 macOS용 공식 앱 개발 환경" }
+- { term: "WebDriver", full: "", ko: "브라우저 자동화 표준 규격" }
+- { term: "CDN", full: "Content Delivery Network", ko: "콘텐츠를 사용자 가까운 서버에서 빠르게 나눠 주는 망" }
+- { term: "PS5", full: "PlayStation 5", ko: "소니의 가정용 게임기" }
+- { term: "TTS", full: "Text-to-Speech", ko: "글자를 소리로 바꾸는 기술" }
+- { term: "BAS", full: "Breach and Attack Simulation", ko: "공격 시나리오를 자동 재현해 방어를 점검하는 것" }
+- { term: "OSI", full: "Open Source Initiative", ko: "오픈소스 정의를 관리하는 단체" }
