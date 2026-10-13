@@ -184,3 +184,13 @@
 - { term: "컨텍스트 창", full: "context window", ko: "AI가 한 번에 읽고 처리할 수 있는 글의 양" }
 - { term: "프로프라이어터리", full: "proprietary", ko: "가중치·코드를 공개하지 않고 회사가 독점하는 방식" }
 - { term: "모델 카드", full: "model card", ko: "AI 모델의 성능·한계·안전성 평가를 정리한 공식 문서" }
+- { term: "CEO", full: "Chief Executive Officer", ko: "최고경영자", inline: false }
+- { term: "PC", full: "Personal Computer", ko: "개인용 컴퓨터", inline: false }
+- { term: "GB", full: "Gigabyte", ko: "기가바이트(약 10억 바이트) 용량 단위", inline: false }
+- { term: "MB", full: "Megabyte", ko: "메가바이트(약 100만 바이트) 용량 단위", inline: false }
+- { term: "KB", full: "Kilobyte", ko: "킬로바이트(약 1천 바이트) 용량 단위", inline: false }
+- { term: "DB", full: "Database", ko: "데이터를 체계적으로 저장·조회하는 시스템" }
+- { term: "UTC", full: "Coordinated Universal Time", ko: "세계 표준시(한국 시간은 UTC+9)" }
+- { term: "ML", full: "Machine Learning", ko: "데이터로 규칙을 스스로 학습하는 AI 기법" }
+- { term: "PDF", full: "Portable Document Format", ko: "어디서나 같은 모양으로 보이는 문서 파일 형식", inline: false }
+- { term: "README", full: "", ko: "저장소 첫 화면에 보이는 프로젝트 소개·사용법 문서", inline: false }
