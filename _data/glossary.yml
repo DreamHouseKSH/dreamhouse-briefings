@@ -194,3 +194,28 @@
 - { term: "ML", full: "Machine Learning", ko: "데이터로 규칙을 스스로 학습하는 AI 기법" }
 - { term: "PDF", full: "Portable Document Format", ko: "어디서나 같은 모양으로 보이는 문서 파일 형식", inline: false }
 - { term: "README", full: "", ko: "저장소 첫 화면에 보이는 프로젝트 소개·사용법 문서", inline: false }
+- { term: "CXMT", full: "ChangXin Memory Technologies", ko: "중국 최대 D램 업체 창신메모리" }
+- { term: "DDR5", full: "Double Data Rate 5", ko: "5세대 D램 메모리 규격" }
+- { term: "VKOSPI", full: "KOSPI 200 Volatility Index", ko: "코스피200 변동성지수, 한국형 공포지수" }
+- { term: "VPN", full: "Virtual Private Network", ko: "회사 내부망에 밖에서 안전하게 접속하게 해 주는 가상 사설망" }
+- { term: "MotW", full: "Mark of the Web", ko: "인터넷에서 받은 파일에 붙는 경고 표식" }
+- { term: "WDAC", full: "Windows Defender Application Control", ko: "허용된 앱만 실행되게 막는 윈도 보안 기능" }
+- { term: "EoP", full: "Elevation of Privilege", ko: "권한 상승 취약점" }
+- { term: "LAPS", full: "Local Administrator Password Solution", ko: "PC별 로컬 관리자 비밀번호를 자동 관리하는 윈도 기능" }
+- { term: "ZDI", full: "Zero Day Initiative", ko: "트렌드마이크로의 취약점 제보·분석 프로그램" }
+- { term: "제로데이", full: "zero-day", ko: "패치가 나오기 전에 알려졌거나 악용되는 취약점" }
+- { term: "SEC", full: "Securities and Exchange Commission", ko: "미국 증권거래위원회" }
+- { term: "S-1", full: "Form S-1", ko: "미국 상장 신고서" }
+- { term: "HR", full: "Human Resources", ko: "인사 업무" }
+- { term: "HCM", full: "Human Capital Management", ko: "인적 자원 관리 소프트웨어" }
+- { term: "VLM", full: "Vision-Language Model", ko: "이미지와 글을 함께 이해하는 모델" }
+- { term: "PT", full: "Pacific Time", ko: "미국 태평양 시간, 여름엔 한국보다 16시간 늦음" }
+- { term: "ET", full: "Eastern Time", ko: "미국 동부 시간, 여름엔 한국보다 13시간 늦음" }
+- { term: "EDT", full: "Eastern Daylight Time", ko: "미국 동부 여름 시간, 한국보다 13시간 늦음" }
+- { term: "GQA", full: "Grouped-Query Attention", ko: "여러 질문 헤드가 키·값을 나눠 써 메모리를 아끼는 어텐션" }
+- { term: "SFT", full: "Supervised Fine-Tuning", ko: "정답 예시로 하는 지도 미세조정" }
+- { term: "CDM", full: "Constrained Decoding Model", ko: "정해진 답만 고르도록 만든 작업 전용 모델" }
+- { term: "NVFP4", full: "NVIDIA 4-bit Floating Point", ko: "엔비디아의 4비트 부동소수점 형식" }
+- { term: "YaRN", full: "Yet another RoPE extensioN", ko: "위치 인코딩을 늘려 더 긴 문맥을 다루게 하는 기법" }
+- { term: "SME2", full: "Scalable Matrix Extension 2", ko: "Arm CPU의 행렬 연산 전용 확장 명령어" }
+- { term: "ONNX", full: "Open Neural Network Exchange", ko: "여러 프레임워크가 함께 쓰는 모델 파일 형식·실행 환경" }
