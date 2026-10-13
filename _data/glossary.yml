@@ -179,3 +179,8 @@
 - { term: "포팅", full: "porting", ko: "프로그램을 다른 기기·운영체제에서 돌도록 옮기는 일" }
 - { term: "셀프호스팅", full: "self-hosting", ko: "남의 서비스 대신 내 서버·컴퓨터에 직접 설치해 쓰는 것" }
 - { term: "하네스", full: "harness", ko: "AI 모델을 감싸 도구 사용·실행을 관리하는 틀 — Claude Code 같은 것" }
+- { term: "MSL", full: "Meta Superintelligence Labs", ko: "메타 초지능 연구소 — 알렉산더 왕이 이끄는 Meta의 AI 조직" }
+- { term: "CBRN", full: "Chemical, Biological, Radiological, Nuclear", ko: "화학·생물·방사능·핵 무기 위험 — AI 안전 평가의 주요 위험 분야" }
+- { term: "컨텍스트 창", full: "context window", ko: "AI가 한 번에 읽고 처리할 수 있는 글의 양" }
+- { term: "프로프라이어터리", full: "proprietary", ko: "가중치·코드를 공개하지 않고 회사가 독점하는 방식" }
+- { term: "모델 카드", full: "model card", ko: "AI 모델의 성능·한계·안전성 평가를 정리한 공식 문서" }
