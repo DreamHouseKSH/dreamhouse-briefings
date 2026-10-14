@@ -236,3 +236,19 @@
 - { term: "TTS", full: "Text-to-Speech", ko: "글자를 소리로 바꾸는 기술" }
 - { term: "BAS", full: "Breach and Attack Simulation", ko: "공격 시나리오를 자동 재현해 방어를 점검하는 것" }
 - { term: "OSI", full: "Open Source Initiative", ko: "오픈소스 정의를 관리하는 단체" }
+# --- 2026-10-15 뉴스 브리핑 추가분
+- { term: "SEDEX", full: "Semiconductor Exhibition", ko: "한국반도체산업협회가 여는 국내 최대 반도체 전시회" }
+- { term: "EUV", full: "Extreme Ultraviolet", ko: "극자외선 — 아주 미세한 회로를 웨이퍼에 찍는 노광 빛" }
+- { term: "High-NA", full: "High Numerical Aperture", ko: "고개구수 — EUV 렌즈를 더 키워 더 미세한 회로를 찍는 차세대 노광" }
+- { term: "DUV", full: "Deep Ultraviolet", ko: "심자외선 — EUV보다 덜 미세한 노광에 쓰는 빛" }
+- { term: "CDO", full: "Chief Development Officer", ko: "개발총괄 책임자" }
+- { term: "OpenShell", full: "", ko: "엔비디아의 개방형 보안 런타임 — 에이전트를 샌드박스에서 돌리게 돕는 소프트웨어" }
+- { term: "zNAND-O", full: "", ko: "삼성전자의 엣지 AI용 3D 낸드 솔루션 모형" }
+- { term: "베이스 다이", full: "base die", ko: "HBM 아래에서 로직·입출력을 담당하는 밑판 칩" }
+- { term: "NFC", full: "Normalization Form C", ko: "유니코드 정규화 형식 C — 같은 글자의 다른 바이트 표현을 하나로 맞춤" }
+- { term: "Unigram", full: "", ko: "문장을 확률 기반으로 토큰 단위로 나누는 토크나이저 방식" }
+- { term: "speech-to-speech", full: "", ko: "글을 거치지 않고 말소리를 바로 말로 주고받는 음성 AI 방식" }
+- { term: "Full Duplex", full: "", ko: "말하다 끼어들기와 턴 교체를 자연스럽게 처리하는 양방향 통화 능력" }
+- { term: "EVA-Bench", full: "", ko: "ServiceNow가 만든 기업용 음성 에이전트 평가 벤치마크" }
+- { term: "τ-Voice", full: "tau-Voice", ko: "억양·소음·방해가 있는 고객지원 통화를 얼마나 잘 처리하는지 재는 벤치마크" }
+- { term: "툴 콜", full: "tool call", ko: "모델이 외부 함수·도구를 부르도록 하는 호출" }

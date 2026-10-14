@@ -1,5 +1,11 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
+"2026-10-15":
+  IT: "SEDEX 2026 삼성·SK하이닉스 HBM4E 실물·zHBM/HBF·용인 360조 / ASML 3Q 순이익 상회·2026 매출 €44–45B·2029~30 주문 관심"
+  AI: "OpenAI 인프라 수장 Katti 사임→Ruddarraju(xAI 출신) / 엔비디아 英 에이전트 안전 컴퓨트 2.5억 달러(5년) / Anthropic Princen '오픈웨이트는 정의상 더 위험'"
+  모델: "xAI Grok Voice 3.0(AA Speech-to-Speech 86.9·1위, 분당 $0.08)"
+  엔진: "Ollama v0.40.5-rc0(Metal→CUDA 커널·Responses 툴콜) / llama.cpp b11607~b11624(Unigram NFC·서버 특수토큰 이스케이프·Adreno MoE)"
+
 "2026-10-14":
   IT: "코스피 5.46% 급락 'CXMT 쇼크'(삼성전자 -7.39%·SK하이닉스 -10.09%, 매도 사이드카) / MS 10월 패치 1,411건·실제 악용 제로데이 1건 / 이반티 Connect Secure 제로데이 연쇄 악용(CISA KEV 등재)"
   AI: "Anthropic, 상장 전 투자자에 3분기 재무 공개 예정(CNBC) / 워크데이–Anthropic 제휴·C1.ai 인수 / Prime Intellect, Moondream 인수 / 젠슨 황 '일주일 내 유럽 20억 달러 추가 투자'"
