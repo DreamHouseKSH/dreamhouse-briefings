@@ -5,6 +5,7 @@
   AI: "OpenAI 인프라 수장 Katti 사임→Ruddarraju(xAI 출신) / 엔비디아 英 에이전트 안전 컴퓨트 2.5억 달러(5년) / Anthropic Princen '오픈웨이트는 정의상 더 위험'"
   모델: "xAI Grok Voice 3.0(AA Speech-to-Speech 86.9·1위, 분당 $0.08)"
   엔진: "Ollama v0.40.5-rc0(Metal→CUDA 커널·Responses 툴콜) / llama.cpp b11607~b11624(Unigram NFC·서버 특수토큰 이스케이프·Adreno MoE)"
+  GitHub: "rea(일간 +41.2K, 이레 연속 1위·처음 증가 폭 감소·누적 24.0만)·VoiceStudio(+3.5K)·iFixAi(+2.1K, 재등장) / 주간 rea(+183.8K, 전체 1위)·AnyPS5(+28.7K)·artcraft(+21.9K)·skills(+12.0K) / NEW cc-switch·ghidra·folia-major, 재등장 freellmapi 등 25개 저장소"
 
 "2026-10-14":
   IT: "코스피 5.46% 급락 'CXMT 쇼크'(삼성전자 -7.39%·SK하이닉스 -10.09%, 매도 사이드카) / MS 10월 패치 1,411건·실제 악용 제로데이 1건 / 이반티 Connect Secure 제로데이 연쇄 악용(CISA KEV 등재)"

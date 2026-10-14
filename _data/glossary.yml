@@ -12,6 +12,14 @@
 # --- 2026-10-12 GitHub 트렌드 추가분
 # --- 2026-10-13 뉴스 브리핑 추가분
 
+# --- 2026-10-15 github trends ---
+- { term: "JDK", full: "Java Development Kit", ko: "자바 프로그램을 만들고 돌리는 개발 도구 묶음" }
+- { term: "NSA", full: "National Security Agency", ko: "미국 국가안보국 — 신호정보·사이버보안 담당 정보기관" }
+- { term: "TOML", full: "Tom's Obvious Minimal Language", ko: "사람이 읽기 쉬운 설정 파일 형식" }
+- { term: "Tauri", full: "", ko: "웹 기술로 화면을 만들고 Rust로 가볍게 감싸는 데스크톱 앱 틀" }
+- { term: "Electron", full: "", ko: "웹 기술(HTML·자바스크립트)로 데스크톱 앱을 만드는 틀" }
+- { term: "Navidrome", full: "", ko: "내 서버에 올린 음악을 스트리밍하는 자체 호스팅 음악 서버" }
+
 # --- 2026-10-14 github trends ---
 
 - { term: "AI", full: "Artificial Intelligence", ko: "인공지능", inline: false }
