@@ -8,6 +8,12 @@
 # 뒤에 -숫자 꼬리가 붙은 식별자(CVE-2026-1234, CWE-770)는 자동으로 꼬리까지 한 단어로 봄.
 # 뜻이 확실하지 않으면 넣지 말 것.
 
+# --- 2026-10-11 GitHub 카드 형식 추가분
+# --- 2026-10-12 GitHub 트렌드 추가분
+# --- 2026-10-13 뉴스 브리핑 추가분
+
+# --- 2026-10-14 github trends ---
+
 - { term: "AI", full: "Artificial Intelligence", ko: "인공지능", inline: false }
 - { term: "API", full: "Application Programming Interface", ko: "프로그램끼리 기능을 주고받는 약속된 창구" }
 - { term: "ARR", full: "Annual Recurring Revenue", ko: "연간 반복 매출 — 지금 매출 속도를 1년으로 환산한 값" }
@@ -41,6 +47,7 @@
 - { term: "GEO", full: "Generative Engine Optimization", ko: "AI 답변에 내 정보가 잘 나오게 하는 최적화" }
 - { term: "GGUF", full: "", ko: "llama.cpp 등에서 쓰는 (주로 양자화된) 모델 파일 형식" }
 - { term: "GKE", full: "Google Kubernetes Engine", ko: "구글 클라우드의 관리형 쿠버네티스(컨테이너 운영) 서비스" }
+- { term: "GLM", full: "General Language Model", ko: "중국 Zhipu(즈푸)의 대형 언어 모델 시리즈" }
 - { term: "GPU", full: "Graphics Processing Unit", ko: "그래픽 처리 장치 — AI 연산에 주로 쓰는 병렬 연산 칩" }
 - { term: "GRPO", full: "Group Relative Policy Optimization", ko: "여러 답안을 묶어 서로 비교해 보상을 주는 강화학습 기법" }
 - { term: "GUI", full: "Graphical User Interface", ko: "창·버튼으로 조작하는 그래픽 화면" }
@@ -62,6 +69,7 @@
 - { term: "LLM", full: "Large Language Model", ko: "대규모 언어 모델" }
 - { term: "LoRA", full: "Low-Rank Adaptation", ko: "일부 가중치만 저비용으로 덧대어 학습하는 미세조정 기법" }
 - { term: "MCP", full: "Model Context Protocol", ko: "AI가 외부 도구·데이터에 붙는 표준 규격" }
+- { term: "MIT", full: "MIT License", ko: "매사추세츠 공과대학에서 만든 관대한 오픈소스 라이선스" }
 - { term: "MKL", full: "Math Kernel Library", ko: "인텔의 고성능 수학 연산 라이브러리" }
 - { term: "MLA", full: "Multi-head Latent Attention", ko: "키·값을 압축해 메모리를 줄인 어텐션 방식(DeepSeek 고안)" }
 - { term: "MLX", full: "", ko: "애플이 만든 머신러닝 프레임워크 — 맥의 통합 메모리에 최적화" }
@@ -94,21 +102,23 @@
 - { term: "RL", full: "Reinforcement Learning", ko: "강화학습 — 보상 신호로 행동을 개선하는 학습" }
 - { term: "ROCm", full: "", ko: "AMD의 GPU 연산 플랫폼 — 엔비디아 CUDA에 대응" }
 - { term: "RPC", full: "Remote Procedure Call", ko: "다른 컴퓨터의 기능을 네트워크로 호출하는 방식" }
+- { term: "RTX", full: "", ko: "엔비디아의 소비자·프로용 GPU 브랜드" }
 - { term: "SDK", full: "Software Development Kit", ko: "개발 도구 모음" }
 - { term: "SKU", full: "Stock Keeping Unit", ko: "따로 값을 매겨 파는 판매 단위" }
 - { term: "SQL", full: "Structured Query Language", ko: "데이터베이스에 질의하는 언어" }
 - { term: "SSD", full: "Solid State Drive", ko: "반도체 기반 저장 장치" }
 - { term: "SSO", full: "Single Sign-On", ko: "한 번 로그인으로 여러 서비스를 쓰는 통합 로그인" }
 - { term: "STT", full: "Speech-to-Text", ko: "음성을 텍스트로 바꾸는 기술" }
+- { term: "SWE", full: "Software Engineering", ko: "소프트웨어 공학 — SWE-Bench는 AI의 코딩 실력을 재는 벤치마크" }
 - { term: "SYCL", full: "", ko: "C++로 여러 종류의 칩(인텔 GPU 등)에서 병렬 연산을 하게 하는 크로노스 그룹 표준" }
 - { term: "SaaS", full: "Software as a Service", ko: "설치 없이 인터넷으로 구독해 쓰는 소프트웨어" }
+- { term: "TSMC", full: "Taiwan Semiconductor Manufacturing Company", ko: "대만 반도체 위탁생산(파운드리) 기업" }
 - { term: "TTFT", full: "Time To First Token", ko: "첫 토큰이 나오기까지 걸리는 시간" }
 - { term: "UI", full: "User Interface", ko: "사용자 화면·조작 방식" }
 - { term: "VRAM", full: "Video RAM", ko: "GPU에 달린 전용 메모리" }
 - { term: "VRP", full: "Vulnerability Reward Program", ko: "취약점 신고 보상 프로그램(버그 바운티)" }
 - { term: "YC", full: "Y Combinator", ko: "미국의 대표적 스타트업 액셀러레이터" }
 - { term: "npm", full: "", ko: "자바스크립트·Node.js용 패키지 관리 도구이자 공개 패키지 저장소" }
-# --- 2026-10-11 GitHub 카드 형식 추가분
 - { term: "AGPL", full: "GNU Affero General Public License", ko: "고쳐서 서비스로 제공해도 소스 공개 의무가 있는 강한 공개 라이선스", prefix: true }
 - { term: "GPL", full: "GNU General Public License", ko: "고쳐서 배포하면 소스 공개 의무가 있는 공개 라이선스", prefix: true }
 - { term: "CAD", full: "Computer-Aided Design", ko: "컴퓨터로 하는 설계 도면·3D 모델링" }
@@ -136,7 +146,6 @@
 - { term: "OpenCL", full: "Open Computing Language", ko: "여러 제조사 GPU·CPU에서 병렬 계산을 하게 해 주는 개방형 규격" }
 - { term: "결정 모델", full: "decision model", ko: "글을 생성하지 않고 정해진 선택지마다 확률을 매기는 AI 모델" }
 - { term: "애크하이어", full: "acqui-hire", ko: "회사 전체 대신 인재와 기술을 사들이는 인수 방식" }
-# --- 2026-10-12 GitHub 트렌드 추가분
 - { term: "SRE", full: "Site Reliability Engineering", ko: "서비스가 멈추지 않게 운영하고 장애에 대응하는 엔지니어링" }
 - { term: "OSINT", full: "Open Source Intelligence", ko: "공개된 정보로 하는 정보 수집·조사" }
 - { term: "CDP", full: "Chrome DevTools Protocol", ko: "크롬 브라우저를 프로그램으로 조종하는 규격" }
@@ -150,7 +159,6 @@
 - { term: "SDL", full: "Simple DirectMedia Layer", ko: "게임용 입력·화면·소리 처리 라이브러리" }
 - { term: "헤드리스 브라우저", full: "headless browser", ko: "화면 없이 프로그램이 조종하는 웹 브라우저" }
 - { term: "샌드박스", full: "sandbox", ko: "밖에 영향을 주지 못하게 가둔 격리 실행 공간" }
-# --- 2026-10-13 뉴스 브리핑 추가분
 - { term: "OCP", full: "Open Compute Project", ko: "빅테크·서버 업체가 데이터센터 하드웨어 표준을 함께 만드는 오픈 프로젝트" }
 - { term: "CXL", full: "Compute Express Link", ko: "AI 가속기와 메모리를 효율적으로 이어 주는 개방형 연결 규격" }
 - { term: "PIM", full: "Processing-In-Memory", ko: "메모리 안에서 일부 계산을 직접 처리하는 기술" }
@@ -219,8 +227,6 @@
 - { term: "YaRN", full: "Yet another RoPE extensioN", ko: "위치 인코딩을 늘려 더 긴 문맥을 다루게 하는 기법" }
 - { term: "SME2", full: "Scalable Matrix Extension 2", ko: "Arm CPU의 행렬 연산 전용 확장 명령어" }
 - { term: "ONNX", full: "Open Neural Network Exchange", ko: "여러 프레임워크가 함께 쓰는 모델 파일 형식·실행 환경" }
-
-# --- 2026-10-14 github trends ---
 - { term: "PPTX", full: "PowerPoint Open XML", ko: "파워포인트에서 쓰는 발표 자료 파일 형식" }
 - { term: "SwiftPM", full: "Swift Package Manager", ko: "스위프트 패키지를 받아 빌드·의존성을 관리하는 도구" }
 - { term: "Xcode", full: "", ko: "애플의 macOS용 공식 앱 개발 환경" }
