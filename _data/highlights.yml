@@ -1,5 +1,12 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
+
+"2026-10-16":
+  IT: "삼성전자 −9.48%·SK하이닉스 −11.06%(외국인 2.5조 순매도)·글로벌 AI·반도체 시총 주간 $1T+ 증발 / 송재혁 '4F² D램 개발 중' 공식 확인"
+  AI: "Anthropic 3Q 매출 $16.8B·조정 흑자·현금흐름 흑자(IPO 가치 일부 $1.5T로 하향 논의) / OpenAI·Meta, 연방법원 증거위에 딥페이크 탐지 한계 경고"
+  모델: "엔비디아 Nemotron 3.5 Super VL(120B/12B)·Bolt 74B-A9B / Meta Muse Spark Open(816B/42B, M5 Ultra×2)"
+  엔진: "llama.cpp v0.7.0(MoE GPU 캐시·LiliCorr·Nemotron day-0·포트 9931) / Actual Computer e(DGX Station·Nemotron 455~10k+ tok/s 회사 측정)"
+
 "2026-10-15":
   IT: "SEDEX 2026 삼성·SK하이닉스 HBM4E 실물·zHBM/HBF·용인 360조 / ASML 3Q 순이익 상회·2026 매출 €44–45B·2029~30 주문 관심"
   AI: "OpenAI 인프라 수장 Katti 사임→Ruddarraju(xAI 출신) / 엔비디아 英 에이전트 안전 컴퓨트 2.5억 달러(5년) / Anthropic Princen '오픈웨이트는 정의상 더 위험'"

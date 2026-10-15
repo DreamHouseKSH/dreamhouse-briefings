@@ -260,3 +260,23 @@
 - { term: "EVA-Bench", full: "", ko: "ServiceNow가 만든 기업용 음성 에이전트 평가 벤치마크" }
 - { term: "τ-Voice", full: "tau-Voice", ko: "억양·소음·방해가 있는 고객지원 통화를 얼마나 잘 처리하는지 재는 벤치마크" }
 - { term: "툴 콜", full: "tool call", ko: "모델이 외부 함수·도구를 부르도록 하는 호출" }
+
+# --- 2026-10-16 뉴스 브리핑 추가분
+- { term: "CPI", full: "Consumer Price Index", ko: "소비자물가지수 — 물가 상승을 재는 지표" }
+- { term: "FCF", full: "Free Cash Flow", ko: "자유현금흐름 — 영업으로 벌어 투자 쓰고 남은 현금" }
+- { term: "ADR", full: "American Depositary Receipt", ko: "미국주식예탁증서 — 해외 주식을 미국에서 거래하게 한 증권" }
+- { term: "KOSPI", full: "Korea Composite Stock Price Index", ko: "코스피 — 한국 유가증권시장 주가지수" }
+- { term: "4F²", full: "4F-squared", ko: "D램 셀 면적을 6F²보다 약 33% 줄인 고밀도 메모리 구조" }
+- { term: "6F²", full: "6F-squared", ko: "현재 널리 쓰는 D램 셀 면적 구조" }
+- { term: "DDR5", full: "Double Data Rate 5", ko: "5세대 더블데이터레이트 — 최신 세대 주기억장치 규격" }
+- { term: "RDIMM", full: "Registered Dual In-line Memory Module", ko: "서버용 등록형 메모리 모듈" }
+- { term: "DS", full: "Device Solutions", ko: "삼성전자의 반도체(디바이스 솔루션) 사업 부문" }
+- { term: "SGLang", full: "", ko: "고성능 LLM 추론·서빙 엔진(오픈소스)" }
+- { term: "vLLM", full: "", ko: "고처리량 LLM 추론 엔진 — PagedAttention 등으로 유명" }
+- { term: "LRU", full: "Least Recently Used", ko: "가장 오래 안 쓴 항목부터 버리는 캐시 교체 방식" }
+- { term: "Nemotron", full: "", ko: "엔비디아가 공개하는 오픈 가중치 AI 모델 패밀리" }
+- { term: "deepfake", full: "", ko: "AI로 만든 가짜 영상·음성·이미지" }
+- { term: "Dynamo", full: "", ko: "엔비디아의 LLM 추론 서빙·스케줄링 스택" }
+- { term: "Helion", full: "", ko: "GPU 커널을 자동 튜닝하는 프레임워크(Meta 등이 활용)" }
+- { term: "DGX Station", full: "", ko: "엔비디아의 워크스테이션급 AI 서버 제품" }
+- { term: "confidential compute", full: "", ko: "하드웨어 격리로 클라우드·중개자도 데이터를 못 보게 하는 보안 실행" }
