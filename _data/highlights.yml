@@ -6,6 +6,7 @@
   AI: "Anthropic 3Q 매출 $16.8B·조정 흑자·현금흐름 흑자(IPO 가치 일부 $1.5T로 하향 논의) / OpenAI·Meta, 연방법원 증거위에 딥페이크 탐지 한계 경고"
   모델: "엔비디아 Nemotron 3.5 Super VL(120B/12B)·Bolt 74B-A9B / Meta Muse Spark Open(816B/42B, M5 Ultra×2)"
   엔진: "llama.cpp v0.7.0(MoE GPU 캐시·LiliCorr·Nemotron day-0·포트 9931) / Actual Computer e(DGX Station·Nemotron 455~10k+ tok/s 회사 측정)"
+  GitHub: "rea(일간 +32.3K, 여덟 연속 1위·증가 폭 재감소·누적 26.9만)·VoiceStudio(+3.0K)·ECC(+1.0K, NEW)·ghidra(+1.4K) / 주간 rea(+214.8K)·AnyPS5(+28.2K)·artcraft(+23.3K)·skills(+12.3K) / NEW caveman·superpowers·claude-plugins-official·xerj 등, 재등장 openGym — 25개"
 
 "2026-10-15":
   IT: "SEDEX 2026 삼성·SK하이닉스 HBM4E 실물·zHBM/HBF·용인 360조 / ASML 3Q 순이익 상회·2026 매출 €44–45B·2029~30 주문 관심"

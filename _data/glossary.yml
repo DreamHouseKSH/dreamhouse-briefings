@@ -280,3 +280,15 @@
 - { term: "Helion", full: "", ko: "GPU 커널을 자동 튜닝하는 프레임워크(Meta 등이 활용)" }
 - { term: "DGX Station", full: "", ko: "엔비디아의 워크스테이션급 AI 서버 제품" }
 - { term: "confidential compute", full: "", ko: "하드웨어 격리로 클라우드·중개자도 데이터를 못 보게 하는 보안 실행" }
+
+# --- 2026-10-16 github trends ---
+- { term: "SwiftUI", full: "", ko: "스위프트로 애플 플랫폼 화면(UI)을 만드는 프레임워크" }
+- { term: "TensorRT-LLM", full: "", ko: "엔비디아 GPU에서 대규모 언어 모델을 빠르게 돌리기 위한 추론 엔진" }
+- { term: "harness", full: "", ko: "에이전트를 감싸 도구·워크플로·정책을 묶어 주는 실행 틀" }
+- { term: "Agent Skills", full: "", ko: "에이전트가 읽고 따르는 재사용 작업 지침의 공개 표준 형식" }
+- { term: "TDD", full: "Test-Driven Development", ko: "테스트를 먼저 쓰고 구현하는 개발 방식" }
+- { term: "YAGNI", full: "You Aren't Gonna Need It", ko: "당장 필요 없는 기능은 넣지 말라는 원칙" }
+- { term: "DRY", full: "Don't Repeat Yourself", ko: "같은 내용을 반복하지 말라는 원칙" }
+- { term: "kNN", full: "k-Nearest Neighbors", ko: "가장 가까운 이웃 k개를 찾아 분류·검색하는 방식" }
+- { term: "VoiceOver", full: "", ko: "애플 기기의 화면 읽기 접근성 기능" }
+
