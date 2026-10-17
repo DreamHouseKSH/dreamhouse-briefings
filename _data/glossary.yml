@@ -292,3 +292,6 @@
 - { term: "kNN", full: "k-Nearest Neighbors", ko: "가장 가까운 이웃 k개를 찾아 분류·검색하는 방식" }
 - { term: "VoiceOver", full: "", ko: "애플 기기의 화면 읽기 접근성 기능" }
 
+# --- 2026-10-17 weekly review ---
+- { term: "LiliCorr", full: "", ko: "llama.cpp의 추측 디코딩(다음 토큰을 미리 예측해 속도를 올리는 기법) 방식" }
+- { term: "GTC", full: "GPU Technology Conference", ko: "엔비디아 개발자 컨퍼런스" }
