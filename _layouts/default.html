@@ -37,6 +37,7 @@
 {%- assign is_doc = false -%}
 {%- if page.path == "AGENTS.md" or page.path == "README.md" or parts[0] == "docs" -%}{%- assign is_doc = true -%}{%- endif -%}
 {%- assign is_research = false -%}{%- if parts[0] == "research" -%}{%- assign is_research = true -%}{%- endif -%}
+{%- assign is_weekly = false -%}{%- if parts[0] == "weekly" -%}{%- assign is_weekly = true -%}{%- endif -%}
 <body class="{% if is_brief %}is-brief{% elsif page.home %}is-home{% else %}is-page{% endif %}">
   <a class="skip" href="#content">본문 바로가기</a>
   <header class="site-header">
@@ -51,6 +52,7 @@
         {%- endfor -%}
         <a class="nav-archive{% if page.section == 'archive' %} active{% endif %}" href="{{ '/archive/' | relative_url }}">아카이브</a>
         <a class="nav-research{% if is_research %} active{% endif %}" href="{{ '/research/' | relative_url }}">리서치</a>
+        <a class="nav-weekly{% if is_weekly %} active{% endif %}" href="{{ '/weekly/' | relative_url }}">주간</a>
       </nav>
       <div class="header-actions">
         <span class="visitors-today" hidden aria-live="polite"></span>
