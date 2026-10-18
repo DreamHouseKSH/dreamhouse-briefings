@@ -1,0 +1,54 @@
+# X 추적 명단 — dream 재량으로 주기적 추가·삭제 (2026-10-18 사용자 일임)
+# 형식: handle — 이름 — 소속/역할 — 추적 이유
+# 뉴스 크론이 매일 아침 이 명단을 읽고 최근 24시간 게시글 중 화제가 된 것을 선정.
+# 매월 첫 평일에 명단 점검: 2주 이상 게시글 없는 계정은 후보 교체, 새로 부상한 인물은 추가.
+
+- handle: "@sama"
+  name: "Sam Altman"
+  role: "OpenAI CEO"
+  reason: "OpenAI 발표·제품 힌트를 X에 먼저 흘림"
+
+- handle: "@elonmusk"
+  name: "Elon Musk"
+  role: "xAI · Tesla · X"
+  reason: "xAI/Grok 발표, AI 논쟁의 진원지"
+
+- handle: "@demishassabis"
+  name: "Demis Hassabis"
+  role: "Google DeepMind CEO"
+  reason: "DeepMind 연구 방향·AGI 관점"
+
+- handle: "@ylecun"
+  name: "Yann LeCun"
+  role: "AMI Labs 공동창업자·의장 (전 Meta 수석 AI 과학자)"
+  reason: "월드모델 vs LLM 논쟁, 10.3억 달러 시드 유치"
+
+- handle: "@karpathy"
+  name: "Andrej Karpathy"
+  role: "전 OpenAI · Tesla"
+  reason: "AI 교육·기술 해설, 개발자 영향력 큼"
+
+- handle: "@satyanadella"
+  name: "Satya Nadella"
+  role: "Microsoft CEO"
+  reason: "MS AI 전략·Copilot 관련 발언"
+
+- handle: "@LisaSu"
+  name: "Lisa Su"
+  role: "AMD CEO"
+  reason: "AMD AI 칩·데이터센터 전략"
+
+- handle: "@nvidia"
+  name: "NVIDIA (공식)"
+  role: "NVIDIA"
+  reason: "Jensen Huang 개인 계정 비활성이라 공식 계정으로 대체 — GTC·제품 발표"
+
+- handle: "@DarioAmodei"
+  name: "Dario Amodei"
+  role: "Anthropic CEO"
+  reason: "Anthropic 전략·AI 안전 관점, 드물지만 무거운 발언"
+
+- handle: "@AmandaAskell"
+  name: "Amanda Askell"
+  role: "Anthropic 연구원"
+  reason: "Claude 페르소나·AI 안전, 활발한 발언"

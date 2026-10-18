@@ -1,0 +1,14 @@
+---
+layout: default
+title: "X 동향 모아보기"
+section: x
+permalink: /category/x/
+---
+{%- assign cat = site.briefing_sections | where: "slug", "x" | first -%}
+<div class="narrow">
+<header class="page-head">
+  <h1>🐦 X 동향</h1>
+  <p>{{ cat.desc }} — 날짜별 목록(최신이 위)</p>
+</header>
+{% include category-list.html slug="x" %}
+</div>

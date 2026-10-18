@@ -7,9 +7,9 @@
 > 작업 방식이 바뀌면 **맨 위에 날짜(KST)별로 추가**하고, 본문 해당 장과 `AGENTS.md` 를 같은 커밋에서 함께 고칩니다.
 
 ### 2026-10-12
-- **모바일 헤더·푸터 개편**: 상단 메뉴는 IT·AI·모델·엔진·GitHub·아카이브·리서치 7개만. 용어·통계·문서는 `_layouts/default.html` 푸터의 `.footer-nav`(현재 페이지 강조, 터치 44px). 56rem 이하(390 폰·820 iPad)는 로고 줄 + 메뉴 한 줄: 넘치면 가로 스크롤(줄바꿈 금지), 양끝 mask 흐림(`fade-l`/`fade-r`), 현재 항목 자동 스크롤, 아래로 스크롤하면 메뉴 줄 숨김(`nav-hidden`, 위로 스크롤·상단 80px 이내면 다시 표시) — `assets/js/site.js` 마지막 블록. ←·오늘 배지·↻·테마 버튼 유지, safe-area 좌우·상하 반영. 본문: 링크 글자가 32자 넘는 URL이면 도메인+↗만 표시(전체 주소는 title), 표·코드는 가로 스크롤 상자, TOP 10 제목은 폰에서 말줄임 없이 줄바꿈. → 6장
+- **모바일 헤더·푸터 개편**: 상단 메뉴는 IT·AI·모델·엔진·X·GitHub·아카이브·리서치 8개만. 용어·통계·문서는 `_layouts/default.html` 푸터의 `.footer-nav`(현재 페이지 강조, 터치 44px). 56rem 이하(390 폰·820 iPad)는 로고 줄 + 메뉴 한 줄: 넘치면 가로 스크롤(줄바꿈 금지), 양끝 mask 흐림(`fade-l`/`fade-r`), 현재 항목 자동 스크롤, 아래로 스크롤하면 메뉴 줄 숨김(`nav-hidden`, 위로 스크롤·상단 80px 이내면 다시 표시) — `assets/js/site.js` 마지막 블록. ←·오늘 배지·↻·테마 버튼 유지, safe-area 좌우·상하 반영. 본문: 링크 글자가 32자 넘는 URL이면 도메인+↗만 표시(전체 주소는 title), 표·코드는 가로 스크롤 상자, TOP 10 제목은 폰에서 말줄임 없이 줄바꿈. → 6장
 - **통계 페이지 `stats/`** (상단 메뉴 '통계', iPad 두 줄 줄바꿈 유지): `assets/js/stats.js` 가 GoatCounter 공개 카운터만 사용 — 날짜별 `counter/TOTAL.json?start=D&end=D+1`(**end는 미포함**) × 30일, 누적 `TOTAL.json`, TOP 10은 `site.pages` 경로(날짜 페이지는 최근 30일 것만, 최대 150개)별 `counter/{퍼센트 인코딩 경로}.json?start=30일 전`(404 = 기록 없음). 동시 6개씩 묶어 조회, localStorage `dh-stats-v1` 1시간 캐시. 공개 API에 여러 날짜를 한 요청으로 받는 기능이나 유입·기기·지역 정보는 없음 → 대시보드 링크로 안내. → 6장 '방문 통계'
-- **본문 끝 파트 이동**: 날짜 페이지(`news/YYYY-MM-DD/*.md`, `github/YYYY-MM-DD.md`) 본문 끝에 '다음 파트: 🧪 모델 →' 큰 버튼(순서 IT→AI→모델→엔진→GitHub, 그날 없는 파트 건너뜀, 마지막 파트는 '✅ 오늘 브리핑 끝 · 홈으로') + 상단과 같은 파트 탭, 그 아래 기존 이전/다음 날짜 pager. 탭은 상·하단 모두 `_includes/part-tabs.html` 하나로 렌더(레이아웃 `_layouts/default.html`), 터치 영역 44px 이상. 마크다운 수정 불필요. → 6장
+- **본문 끝 파트 이동**: 날짜 페이지(`news/YYYY-MM-DD/*.md`, `github/YYYY-MM-DD.md`) 본문 끝에 '다음 파트: 🧪 모델 →' 큰 버튼(순서 IT→AI→모델→엔진→X→GitHub, 그날 없는 파트 건너뜀, 마지막 파트는 '✅ 오늘 브리핑 끝 · 홈으로') + 상단과 같은 파트 탭, 그 아래 기존 이전/다음 날짜 pager. 탭은 상·하단 모두 `_includes/part-tabs.html` 하나로 렌더(레이아웃 `_layouts/default.html`), 터치 영역 44px 이상. 마크다운 수정 불필요. → 6장
 - **방문자 배지 0 처리**: 공개 카운터가 0이면 '오늘 0명' 대신 '오늘 —'(툴팁 '집계 중'). GoatCounter 공개 카운터는 캐시로 최대 약 4시간 늦게 반영되고 자정(KST)에 0부터 시작하므로, 아침엔 실제 방문이 있어도 0으로 나올 수 있음. → 6장 '방문 통계'
 
 ### 2026-10-11
@@ -42,7 +42,7 @@
 ```
 [평일 아침 루틴 (KST)]
   08:00 전후  IT·AI 뉴스 브리핑 → 사용자에게 채팅으로 전달
-  08:01       뉴스 아카이브 루틴 → news/YYYY-MM-DD/{IT,AI,모델,엔진}.md 작성 → push
+  08:01       뉴스 아카이브 루틴 → news/YYYY-MM-DD/{IT,AI,모델,엔진,X}.md 작성 → push
   08:06       GitHub 트렌드 루틴 → github/YYYY-MM-DD.md 작성 → push
   정오 무렵    엔진 다이제스트 전달 → news/YYYY-MM-DD/엔진.md 추가/갱신 → push
 
@@ -57,7 +57,7 @@
 - 커밋 계정: gh 로그인 계정 **DreamHouseKSH** (박스 `/home/box/.config/gh`에 설정됨). 토큰 파일을 직접 읽거나 출력하지 마세요. `gh` / `git` 명령만 사용.
 - 브랜치: `main` 직접 push. 여러 에이전트가 동시에 작업할 수 있으므로 **커밋 전마다 `git pull --rebase`** 하고, push가 거절되면 다시 `git pull --rebase` 후 재시도. 충돌이 나면 **양쪽 변경을 모두 살려** 해결(남의 변경을 지우는 쪽으로 고르지 않음). force-push·히스토리 재작성 금지(사용자 승인 필요).
 - 같은 박스 작업 폴더(`/workspace/dreamhouse-briefings`)에 다른 에이전트의 커밋 안 된 변경이 있으면 건드리지 말고, 필요하면 `git worktree add` 로 별도 폴더에서 작업한 뒤 `git push origin HEAD:main`.
-- 커밋 메시지 예: `briefings: 2026-10-06 news (IT/AI/모델/엔진) + github trends`
+- 커밋 메시지 예: `briefings: 2026-10-06 news (IT/AI/모델/엔진/X) + github trends`
 
 ## 2. 파일 레이아웃
 
@@ -67,6 +67,7 @@
 | `news/YYYY-MM-DD/AI.md` | AI 기업·투자·제품·M&A | |
 | `news/YYYY-MM-DD/모델.md` | 신규 모델 발표 | 성능 수치는 "회사 발표" 명시 |
 | `news/YYYY-MM-DD/엔진.md` | 추론 엔진·런타임 릴리스, 관련 CVE | 소식 없으면 **파일 생략** |
+| `news/YYYY-MM-DD/X.md` | X 유명인 게시글·해석 | `_data/x-watchlist.yml` 명단 기준, 3~5건 |
 | `github/YYYY-MM-DD.md` | GitHub 트렌드 | 카테고리별 표 + 별 증가량 |
 | `templates/news-item.md` | 뉴스 항목 템플릿 | |
 | `_data/highlights.yml` | 날짜별 하이라이트 한 줄(분야별) | **새 날짜마다 맨 위에 추가** |
@@ -85,7 +86,7 @@
 
 ## N. {제목}
 - **원문:** {url}
-- **분야:** {IT|AI|모델|엔진} · {세부}
+- **분야:** {IT|AI|모델|엔진|X} · {세부}
 - **날짜:** {원문 날짜 또는 브리핑 날짜}
 
 ### 미디어
@@ -126,6 +127,13 @@
    - **주의할 점 필수 항목:** 성숙도(버전 0.x·알파·생성일·열린 이슈), 라이선스(AGPL·GPL·표시 없음), 보안·법(원격 조종, `curl | sh`, 약관, 저작권), **스타 급증의 신뢰성**(며칠 새 몇 배·포크 비율 이상 등).
    - 용어·줄임말은 괄호 풀이 + `_data/glossary.yml` 등록(2번). 배지 줄은 `no-gloss` 라 자동 풀이가 붙지 않음.
    - **🔍 리서치 버튼은 쓰지 않음** — `site.js` 가 카드마다 자동으로 붙임(8장). 리서치가 끝나면 카드 안 맨 끝에 `- **심층 리서치:** [제목](../research/YYYY-MM-DD-slug.md)`.
+
+7-2. **X 파일 = 게시글 인용 + 해석(2026-10-18).** 파일명 `news/YYYY-MM-DD/X.md` (대문자). 템플릿은 `templates/news-item.md` 형식을 따르되 항목 구조가 다릅니다.
+   - **명단:** `_data/x-watchlist.yml` 이 원본 (핸들·이름·역할·추적 이유). 뉴스 크론이 매일 아침 읽음.
+   - **수집:** X 직접 API 없음. `browser.search` 로 명단 인물들의 최근 24시간 게시글 중 화제가 된 것을 찾음. 언론·블로그가 받아쓴 게시글 위주 (검증 가능성). 검색어 예: "{이름} X post", "{핸들} 트윗".
+   - **선정:** 3~5건. 기준 — AI·IT 업계에 영향을 주는 발언, 제품·전략 힌트, 논쟁적 주장. 단순 일상글·홍보는 제외.
+   - **항목 구조:** `## N. {인물} — {게시글 요지 한 줄}` → `- **게시글:** {원문 링크}` → `- **날짜:**` → `### 인용` (원문 1~2문장, 번역 시 원문 병기) → `### 해석` (왜 올렸는지·배경 맥락·빠진 정보·업계 의미, 2~4문단) → `### 논조·다른 시각` (8번 규칙 준용).
+   - **명단 관리:** 사용자가 2026-10-18에 dream 재량으로 일임. 매월 첫 평일 브리핑 때 점검 — 2주 이상 게시글 없는 계정은 교체 후보, 새로 부상한 인물은 추가. 소속·역할 변경(이직·창업) 시 `role`·`reason` 업데이트. 변경 시 커밋 메시지에 밝힘.
 
 8. **논조·다른 시각(뉴스 파일 필수).** 모든 뉴스 항목에 `### 요약` 다음, `**시사점:**` 앞에 `### 논조·다른 시각` 섹션을 둡니다(템플릿: `templates/news-item.md`). 세 줄 구성:
    - **기사 논조:** 긍정 / 부정 / 중립 / 혼재 중 하나 + 한 문장 근거(기대와 우려 중 어디에 무게를 두는지). 판단 대상은 **링크한 원문 기사(또는 발표문)** 입니다.
@@ -185,7 +193,7 @@
 - **링크 열기 규칙:** 사이트 밖 링크(원문·GitHub 등, `https://dreamhouseksh.github.io/dreamhouse-briefings/` 밖)는 문서 전체에서 `target="_blank"`(웹앱 안이 아니라 새 탭/Safari), 사이트 안 링크는 같은 창(`target` 제거). 나중에 생긴 링크도 클릭 순간에 같은 규칙을 적용합니다.
 - 앞머리(front matter) 없는 `.md`도 그대로 페이지가 됩니다(`jekyll-optional-front-matter`). 마크다운 안의 `.md` 상대 링크는 `.html`로 자동 변환(`jekyll-relative-links`). **브리핑 파일에 front matter를 넣을 필요 없음.**
 - 홈(`index.html`) · 전체 아카이브(`archive.html`) · 분야별(`category/*.html`)의 날짜 목록과 같은 날짜 탭, 이전/다음 날짜 이동은 `news/YYYY-MM-DD/*.md`, `github/YYYY-MM-DD.md` **파일 경로에서 자동 생성**됩니다(`_includes/collect-dates.html`). 파일명 규칙을 지키는 것이 중요.
-- 하이라이트 한 줄(홈 카드·아카이브·분야별 목록)은 `_data/highlights.yml` 에서 읽습니다. 키: `IT`, `AI`, `모델`, `엔진`, `GitHub`. 해당 날짜 브리핑 파일에 있는 내용만 요약.
+- 하이라이트 한 줄(홈 카드·아카이브·분야별 목록)은 `_data/highlights.yml` 에서 읽습니다. 키: `IT`, `AI`, `모델`, `엔진`, `X`, `GitHub`. 해당 날짜 브리핑 파일에 있는 내용만 요약.
 - **줄임말 자동 풀이 + 용어집:** `_data/glossary.yml`(term·full·ko) → `assets/js/glossary.js`(Jekyll이 용어집을 JSON으로 넣어 빌드, `<head>` 에서 `defer` 로드, `site.js` 와 독립). 뉴스·GitHub·리서치 본문(`article.prose`)의 텍스트에서 용어집 단어를 **단어 경계·대소문자 구분**으로 찾아(예: `API` O, `rapid`·`LightOnOCR` X, `CVE-2026-1234` 는 번호까지 한 단어) 바로 뒤에 `<span class="gl-x">(원어, 뜻)</span>`(작고 연한 글씨)을 붙입니다. 제외: 링크 글자·`code`/`pre`·h1~h3·버튼·URL·`.no-gloss`. 중복 방지: 바로 뒤에 `(` 가 붙은 첫 풀이, 몇 글자 안 괄호에 원어가 있는 경우, `강화학습(RL, …)` 처럼 이미 풀이 안의 줄임말은 건너뜀. `HBM(고대역폭 메모리)` 처럼 우리말 뜻만 있는 괄호엔 원어만 끼우고(`gl-in`), `에너지부(DOE)` 처럼 괄호 안 줄임말엔 `, 원어, 뜻` 을 이어 붙입니다. 한 페이지 처리 약 3ms. 용어집 페이지는 `glossary/index.html`(`/glossary/`, 상단 메뉴 **'용어'**, 가나다 → ABC 순, 검색 상자).
 - `templates/` 는 사이트에서 제외(`_config.yml` 의 `exclude`).
 - 빌드 확인: `gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq '.status, .error.message'`
@@ -213,7 +221,7 @@ cd /workspace/dreamhouse-briefings
 git pull --rebase
 D=$(date +%F)            # 박스 시계는 KST
 mkdir -p news/$D
-# ... news/$D/{IT,AI,모델,엔진}.md, github/$D.md 작성 ...
+# ... news/$D/{IT,AI,모델,엔진,X}.md, github/$D.md 작성 ...
 # _data/highlights.yml 맨 위에 "$D" 하이라이트 추가 (날짜 목록은 사이트가 자동 생성)
 git add -A
 git commit -m "briefings: $D news + github trends"
