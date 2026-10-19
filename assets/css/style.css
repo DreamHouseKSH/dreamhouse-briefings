@@ -636,3 +636,39 @@ html { overflow-anchor: none; }
   .brief-bar .tabs::-webkit-scrollbar { display: none; }
   .brief-bar .tab { flex: none; min-height: 44px; display: inline-flex; align-items: center; }
 }
+
+/* ── 주간 브리핑 매거진 스타일 (2026-10-18) ──
+   weekly/*.md에서 쓰는 이미지 클래스. kramdown IAL: ![alt](url){: .weekly-img } */
+.weekly-img {
+  display: block;
+  width: 100%;
+  max-height: 26rem;
+  object-fit: cover;
+  border-radius: .75rem;
+  margin: 1.25rem 0 .4rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,.10);
+}
+.weekly-hero {
+  display: block;
+  width: 100%;
+  max-height: 30rem;
+  object-fit: cover;
+  border-radius: .9rem;
+  margin: 1.5rem 0 .4rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,.14);
+}
+/* 이미지 바로 뒤 출처 캡션: "> 📷 출처: 매체명" */
+p:has(> img.weekly-img),
+p:has(> img.weekly-hero) { margin-bottom: .25rem; }
+p:has(> img.weekly-img) + blockquote,
+p:has(> img.weekly-hero) + blockquote {
+  font-size: .82rem;
+  color: var(--muted, #6b7280);
+  border-left: none;
+  padding-left: 0;
+  margin-top: 0;
+  text-align: right;
+}
+@media (max-width: 40rem) {
+  .weekly-img, .weekly-hero { border-radius: .6rem; max-height: 18rem; }
+}

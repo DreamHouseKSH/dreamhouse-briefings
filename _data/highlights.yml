@@ -1,8 +1,12 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
-
 "2026-10-19":
-  GitHub: "rea(주간 +239.9K, 주간 1위·누적 32.2만·9일 연속·30배 급증 주의)·ai-job-search(일간 +2.2K·1위, NEW·포크 33% 주의)·VoiceStudio(일간 +2.1K)·opencode(일간 +1.4K, NEW) / 주간 artcraft(+18.5K)·AnyPS5(+16.3K)·diagram-design(+8.4K)·ghidra(+7.6K) / NEW ai-job-search·opencode·orca·ax 등 13개, 빠짐 13개 — 25개"
+  IT: "삼성, 엔비디아 NVHBM 베이스 다이 TSMC 3nm 위탁(로이터, 서울경제 인용) / 국민연금 지분 5% 이상 상장사 평가액 182조 감소(71.8%가 삼성·SK하이닉스, 에프앤가이드 추정) / 삼성 AX 토큰 사용량 보고 지시, 토크노믹스 부상 / Cisco Secure Email Gateway CVE-2026-76519 실제 악용(CVSS 9.8, CISA KEV 등재)"
+  AI: "OpenAI 로그 에이전트 오정렬 사건 4건 추가 공개(누적 19건, 6월 발생·2건 critical) / Replit, Anthropic→OpenAI 기본 모델 전환(CEO 선언 뒤 '선호 파트너'로 완화) / OpenCode Console 침해로 OpenAI·Anthropic·Google API 키 노출 가능 / Amazon이 Grok 에이전트 결제 차단하자 머스크 'X Shop' 시사"
+  모델: "DeepSeek V4.1 Flash 1017(회사 기준 벤치 11종 상승·MIT 가중치, Code Arena WebDev 오픈 1위) / Kling 4.0 글로벌 출시(한 번에 30초 생성, 발표일 10/16)"
+  엔진: "vLLM v0.32.0(POST /v1/systemone 구조화 판단·NVFP4 KV 캐시 확대·Python 3.10 종료, GitHub 릴리스)"
+  X: "머스크 '아마존 경쟁사를 하나 시작해볼까' / 아모데이 AI '신뢰 위기' 장문 에세이 / 올트먼, 테슬라 로드스터에 'good job @elonmusk'"
+
 
 "2026-10-16":
   IT: "삼성전자 −9.48%·SK하이닉스 −11.06%(외국인 2.5조 순매도)·글로벌 AI·반도체 시총 주간 $1T+ 증발 / 송재혁 '4F² D램 개발 중' 공식 확인"
@@ -66,3 +70,4 @@
   모델: "Reflection Beam(501B/23B MoE, SWE 80.9) / Reka Rho-1(19B 옴니) / interfaze-1-lite"
   엔진: "Strata / vLLM 0.31 + CVE / llama.cpp 0.6.0 / SGLang 0.5.21 / Ollama MLX RC / 결정 모델 API / KoboldCpp Agent / vllm-metal"
   GitHub: "VoiceStudio(주간 +14.7K), hindsight(+10.6K), paperclip(+8.7K), OpenShell(+6.0K) 등 25개 저장소"
+

@@ -296,13 +296,22 @@
 - { term: "LiliCorr", full: "", ko: "llama.cpp의 추측 디코딩(다음 토큰을 미리 예측해 속도를 올리는 기법) 방식" }
 - { term: "GTC", full: "GPU Technology Conference", ko: "엔비디아 개발자 컨퍼런스" }
 
-# --- 2026-10-19 github trends ---
-- { term: "OIDC", full: "OpenID Connect", ko: "소셜 로그인 등에 쓰는 표준 인증 방식" }
-- { term: "MFA", full: "Multi-Factor Authentication", ko: "비밀번호 외에 한 단계를 더 거쳐 본인을 확인하는 인증" }
-- { term: "Z-Library", full: "", ko: "저작권 논란이 있는 온라인 전자도서관(그림자 도서관)" }
-- { term: "CV", full: "Curriculum Vitae", ko: "학력·경력을 적은 이력서" }
-- { term: "포크", full: "fork", ko: "저장소를 통째로 복사해 내 계정으로 가져가는 것" }
-- { term: "트로이목마", full: "Trojan horse", ko: "정상 프로그램으로 위장한 악성코드" }
-- { term: "PQC", full: "Post-Quantum Cryptography", ko: "양자컴퓨터로도 깨기 어려운 암호" }
-- { term: "ARQ", full: "Automatic Repeat reQuest", ko: "깨진 패킷을 자동으로 다시 요청하는 오류 복구 방식" }
-- { term: "NAS", full: "Network Attached Storage", ko: "네트워크에 붙여 쓰는 저장 장치" }
+
+# --- 2026-10-19 news briefing ---
+- { term: "HLE", full: "Humanity's Last Exam", ko: "인류 최후의 시험 — 어려운 종합 추론 능력을 재는 벤치마크" }
+- { term: "Grok", full: "", ko: "xAI의 챗봇" }
+- { term: "NVHBM", full: "", ko: "엔비디아 요구 규격에 맞춘 맞춤형 고대역폭 메모리 제품" }
+- { term: "티어", full: "Tier", ko: "(서비스·권한의) 등급" }
+- { term: "AsyncOS", full: "", ko: "시스코 어플라이언스용 운영체제" }
+- { term: "PSIRT", full: "Product Security Incident Response Team", ko: "시스코의 제품 보안 사고 대응 조직" }
+- { term: "EP", full: "Expert Parallelism", ko: "전문가 병렬 — MoE의 전문가들을 여러 GPU에 나눠 처리하는 기법" }
+- { term: "VBench", full: "Vibe Benchmark", ko: "바이브 벤치마크 — 앱을 처음부터 만들어보며 코딩 모델을 평가하는 Replit 자체 지표" }
+- { term: "오정렬 보고서", full: "Misalignment Report", ko: "모델이 의도·규칙에서 벗어난 행동을 기록·공개하는 문서" }
+- { term: "prefill", full: "", ko: "입력 처리 단계 — 모델이 프롬프트를 읽고 이해하는 추론의 전반부" }
+- { term: "decoding", full: "", ko: "생성 단계 — 모델이 토큰을 하나씩 써내는 추론의 후반부" }
+- { term: "토크노믹스", full: "Tokenomics", ko: "AI 토큰 사용량·비용·생산성 효과를 종합 관리하는 일" }
+- { term: "AX", full: "AI Transformation", ko: "일하는 방식을 AI 중심으로 바꾸는 것" }
+- { term: "냉가스 추진기", full: "cold-gas thruster", ko: "압축공기를 분사해 추력을 얻는 장치" }
+- { term: "N-그램", full: "N-gram", ko: "연속된 n개의 토큰 묶음" }
+- { term: "systemone", full: "System One API", ko: "구조화 판단 API — 예/아니오·선택·점수 같은 판단을 텍스트 대신 확률로 반환" }
+- { term: "토큰", full: "Token", ko: "AI가 문장·데이터를 처리할 때 쓰는 기본 단위" }

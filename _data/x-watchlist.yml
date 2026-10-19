@@ -2,6 +2,7 @@
 # 형식: handle — 이름 — 소속/역할 — 추적 이유
 # 뉴스 크론이 매일 아침 이 명단을 읽고 최근 24시간 게시글 중 화제가 된 것을 선정.
 # 매월 첫 평일에 명단 점검: 2주 이상 게시글 없는 계정은 후보 교체, 새로 부상한 인물은 추가.
+# 2026-10-19 월간 점검: @karpathy role 업데이트(Anthropic 프리트레이닝 팀 합류), @AmandaAskell(2주 무활동)→@alexandrw 교체
 
 - handle: "@sama"
   name: "Sam Altman"
@@ -25,8 +26,8 @@
 
 - handle: "@karpathy"
   name: "Andrej Karpathy"
-  role: "전 OpenAI · Tesla"
-  reason: "AI 교육·기술 해설, 개발자 영향력 큼"
+  role: "Anthropic 프리트레이닝 팀 (2026-05-19 합류, 전 OpenAI 공동창업자·Tesla AI)"
+  reason: "AI 교육·기술 해설, 개발자 영향력 큼 — Anthropic 합류로 경쟁 구도 발언 주목"
 
 - handle: "@satyanadella"
   name: "Satya Nadella"
@@ -48,7 +49,8 @@
   role: "Anthropic CEO"
   reason: "Anthropic 전략·AI 안전 관점, 드물지만 무거운 발언"
 
-- handle: "@AmandaAskell"
-  name: "Amanda Askell"
-  role: "Anthropic 연구원"
-  reason: "Claude 페르소나·AI 안전, 활발한 발언"
+- handle: "@alexandrw"
+  name: "Alexandr Wang"
+  role: "Meta 최고AI책임자·Meta Superintelligence Labs 총괄"
+  reason: "10월 17~18경 Muse 출시 감사 장문 포스트, X 파워유저 (밈 350+개 포스트로 Muse 앱 미국 앱스토어 1위 견인)"
+
