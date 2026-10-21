@@ -1,5 +1,10 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
+"2026-10-22":
+  IT: "PHP 중대 취약점 수정 4개 버전·실행환경 업데이트 확인 / NVIDIA DSX POD, 준비된 부지 최소 14일 배치 주장·2027년 초 공급 목표"
+  AI: "OpenAI 모델·Codex의 Google Cloud 공급 예정 / ChatGPT 광고와 답변 생성 분리 설계 공개(회사 설명)"
+  모델: "IBM Granite Speech 5 상세 설명(한국어 전사 미지원) / bekko 정적 임베딩, 속도·비용과 검색 정확도 교환관계"
+
 "2026-10-21":
   IT: "삼성전자 −2.98%·SK하이닉스 −4.23% 동반 급락(고금리·AI 투자 부담, 산경투데이) / 네이버-브룩필드 AI 데이터센터 약 12조원 본계약 협상 이번주 시한(7/27 협상 시작, SPV 조달·네이버 임차 구조) / 마이크론 대만 노조 22일 파업 예고(영업익 15% 영구 배분 요구, 삼성·SK 전례)"
   AI: "OpenAI, Anthropic 11월 IPO 전 약 300억 달러 조달 가속(밸류 1.4조 달러 이상 관측, 로이터) / Anthropic 지분 5% 공익기금(Anthropic Public Benefit Fund) 출연 — 공익 목적 지분 약 20% / JB금융그룹, 업스테이지 400억원 투자·지분 약 2%(시리즈 C-2 1차 주도)"
@@ -77,5 +82,3 @@
   모델: "Reflection Beam(501B/23B MoE, SWE 80.9) / Reka Rho-1(19B 옴니) / interfaze-1-lite"
   엔진: "Strata / vLLM 0.31 + CVE / llama.cpp 0.6.0 / SGLang 0.5.21 / Ollama MLX RC / 결정 모델 API / KoboldCpp Agent / vllm-metal"
   GitHub: "VoiceStudio(주간 +14.7K), hindsight(+10.6K), paperclip(+8.7K), OpenShell(+6.0K) 등 25개 저장소"
-
-
