@@ -3,6 +3,7 @@
 "2026-10-22":
   IT: "PHP 중대 취약점 수정 4개 버전·실행환경 업데이트 확인 / NVIDIA DSX POD, 준비된 부지 최소 14일 배치 주장·2027년 초 공급 목표"
   AI: "OpenAI 모델·Codex의 Google Cloud 공급 예정 / ChatGPT 광고와 답변 생성 분리 설계 공개(회사 설명)"
+  엔진: "Ollama v0.40.8, Recursive Flint 추가·macOS 우선 지원, 다른 GPU는 후속 예고"
   모델: "IBM Granite Speech 5 상세 설명(한국어 전사 미지원) / bekko 정적 임베딩, 속도·비용과 검색 정확도 교환관계"
 
 "2026-10-21":

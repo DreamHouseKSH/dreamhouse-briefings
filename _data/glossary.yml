@@ -351,3 +351,5 @@
 - {"term": "DSX POD", "full": "", "ko": "엔비디아의 모듈형 AI 데이터센터 참조 설계"}
 - {"term": "MNanoBEIR", "full": "", "ko": "다국어 검색 품질 비교용 평가 데이터 모음"}
 - {"term": "Apache 2.0", "full": "Apache License 2.0", "ko": "저작권 고지 등 조건을 지켜 이용·수정·배포할 수 있는 공개 소프트웨어 라이선스"}
+
+- { term: "Flint", full: "", ko: "Recursive의 코딩용 전문가 혼합 모델" }
