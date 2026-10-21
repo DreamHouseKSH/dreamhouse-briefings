@@ -1,6 +1,7 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
 "2026-10-22":
+  GitHub: "보안 감사·에이전트 운영 도구 강세 / Ponytail 일간 +2,051 / rea 주간 +157,631 / 일간·주간·Go·Rust 12개 선별"
   IT: "PHP 중대 취약점 수정 4개 버전·실행환경 업데이트 확인 / NVIDIA DSX POD, 준비된 부지 최소 14일 배치 주장·2027년 초 공급 목표"
   AI: "OpenAI 모델·Codex의 Google Cloud 공급 예정 / ChatGPT 광고와 답변 생성 분리 설계 공개(회사 설명)"
   엔진: "Ollama v0.40.8, Recursive Flint 추가·macOS 우선 지원, 다른 GPU는 후속 예고"

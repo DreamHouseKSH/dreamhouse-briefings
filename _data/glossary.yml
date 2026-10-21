@@ -353,3 +353,7 @@
 - {"term": "Apache 2.0", "full": "Apache License 2.0", "ko": "저작권 고지 등 조건을 지켜 이용·수정·배포할 수 있는 공개 소프트웨어 라이선스"}
 
 - { term: "Flint", full: "", ko: "Recursive의 코딩용 전문가 혼합 모델" }
+
+# --- 2026-10-22 GitHub trends ---
+- {"term": "AST", "full": "Abstract Syntax Tree", "ko": "소스코드를 문법 구조대로 나눈 트리"}
+- {"term": "하이브리드 검색", "full": "Hybrid Search", "ko": "키워드 일치와 의미 기반 검색을 결합하는 방식"}
