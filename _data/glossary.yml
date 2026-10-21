@@ -315,3 +315,23 @@
 - { term: "N-그램", full: "N-gram", ko: "연속된 n개의 토큰 묶음" }
 - { term: "systemone", full: "System One API", ko: "구조화 판단 API — 예/아니오·선택·점수 같은 판단을 텍스트 대신 확률로 반환" }
 - { term: "토큰", full: "Token", ko: "AI가 문장·데이터를 처리할 때 쓰는 기본 단위" }
+
+
+
+# --- 2026-10-21 news briefing ---
+- { term: "M&A", full: "Mergers and Acquisitions", ko: "인수합병 — 회사끼리 합치거나 사들이는 일" }
+- { term: "SPV", full: "Special Purpose Vehicle", ko: "특수목적법인 — 특정 사업만을 위해 세운 별도 회사" }
+- { term: "PF", full: "Project Financing", ko: "사업 자체의 수익을 담보로 자금을 빌리는 금융 방식" }
+- { term: "네오클라우드", full: "neocloud", ko: "엔비디아 GPU를 사서 컴퓨팅을 빌려주는 신생 클라우드 업체" }
+- { term: "LLC", full: "Limited Liability Company", ko: "유한책임회사 — 출자 책임이 출자액에 한정되는 회사 형태" }
+- { term: "OpenMDW", full: "", ko: "엔비디아의 개방형 모델 라이선스 — 상업 이용 허용" }
+- { term: "임베딩", full: "embedding", ko: "문장·이미지를 숫자 벡터로 바꿔 의미를 담아내는 것" }
+- { term: "리랭크", full: "rerank", ko: "검색 결과를 다시 점수 매겨 순서를 정하는 일" }
+- { term: "MOU", full: "Memorandum of Understanding", ko: "업무협약 — 협력을 약속하는 문서" }
+- { term: "국부펀드", full: "sovereign wealth fund", ko: "나라가 운영하는 대형 투자 기금" }
+- { term: "시리즈 C-2", full: "Series C-2", ko: "스타트업의 후기 대규모 투자 유치 라운드" }
+- { term: "어텐션", full: "attention", ko: "AI가 입력 중 중요한 부분에 집중하는 계산 방식" }
+- { term: "잠재 공간", full: "latent space", ko: "압축된 형태로 정보를 다루는 계산 공간" }
+- { term: "롤아웃", full: "rollout", ko: "일부부터 단계적으로 출시하는 것" }
+- { term: "디커플링", full: "decoupling", ko: "따로 움직이는 현상 — 시장이 갈라져 다른 방향으로 가는 것" }
+- { term: "노프리런치 정리", full: "no free lunch theorem", ko: "모든 문제에 최고인 단일 알고리즘은 없다는 정리" }
