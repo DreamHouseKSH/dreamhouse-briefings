@@ -357,3 +357,21 @@
 # --- 2026-10-22 GitHub trends ---
 - {"term": "AST", "full": "Abstract Syntax Tree", "ko": "소스코드를 문법 구조대로 나눈 트리"}
 - {"term": "하이브리드 검색", "full": "Hybrid Search", "ko": "키워드 일치와 의미 기반 검색을 결합하는 방식"}
+
+
+# 2026-10-23 GitHub 트렌드 추가 용어
+- term: 지식 그래프
+  full: Knowledge Graph
+  ko: 개념과 관계를 연결해 탐색하는 데이터 구조
+- term: WSL
+  full: Windows Subsystem for Linux
+  ko: Windows 안에서 Linux 환경을 실행하는 기능
+- term: 역공학
+  full: Reverse Engineering
+  ko: 완성된 프로그램의 구조와 동작을 거꾸로 분석하는 작업
+- term: worktree
+  full: Git worktree
+  ko: 같은 저장소에서 별도로 분리해 쓰는 작업 폴더
+- term: BSD-3-Clause
+  full: Berkeley Software Distribution 3-Clause License
+  ko: 저작권 고지 등 세 조건을 지키며 사용·수정·배포할 수 있는 라이선스

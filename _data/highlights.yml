@@ -1,5 +1,8 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
+"2026-10-23":
+  GitHub: "검증·격리 도구 주목 / Cloudflare 일간 +2,979 / Graphify v0.9.94 / 일간·주간·Go·Rust 10개 선별"
+
 "2026-10-22":
   GitHub: "보안 감사·에이전트 운영 도구 강세 / Ponytail 일간 +2,051 / rea 주간 +157,631 / 일간·주간·Go·Rust 12개 선별"
   IT: "PHP 중대 취약점 수정 4개 버전·실행환경 업데이트 확인 / NVIDIA DSX POD, 준비된 부지 최소 14일 배치 주장·2027년 초 공급 목표"
@@ -84,3 +87,4 @@
   모델: "Reflection Beam(501B/23B MoE, SWE 80.9) / Reka Rho-1(19B 옴니) / interfaze-1-lite"
   엔진: "Strata / vLLM 0.31 + CVE / llama.cpp 0.6.0 / SGLang 0.5.21 / Ollama MLX RC / 결정 모델 API / KoboldCpp Agent / vllm-metal"
   GitHub: "VoiceStudio(주간 +14.7K), hindsight(+10.6K), paperclip(+8.7K), OpenShell(+6.0K) 등 25개 저장소"
+
