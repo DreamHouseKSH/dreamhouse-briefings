@@ -375,3 +375,12 @@
 - term: BSD-3-Clause
   full: Berkeley Software Distribution 3-Clause License
   ko: 저작권 고지 등 세 조건을 지키며 사용·수정·배포할 수 있는 라이선스
+
+# --- 2026-10-23 news briefing ---
+- {"term":"MCU","full":"Microcontroller Unit","ko":"연산부와 메모리·입출력을 묶은 소형 제어 칩"}
+- {"term":"MRAM","full":"Magnetoresistive Random Access Memory","ko":"자기 상태로 정보를 저장하는 비휘발성 메모리"}
+- {"term":"환경 변수","full":"Environment variable","ko":"프로그램 실행에 필요한 설정값을 외부에서 전달하는 값"}
+- {"term":"프롬프트 캐시","full":"prompt cache","ko":"이미 처리한 입력을 재사용하는 저장 기능"}
+- {"term":"GeoTIFF","full":"Geographic Tagged Image File Format","ko":"지리 좌표를 함께 저장하는 영상 파일 형식"}
+- {"term":"앙상블","full":"ensemble","ko":"여러 모델의 결과를 결합하는 방식"}
+- {"term":"IQR","full":"Interquartile Range","ko":"자료의 가운데 50% 구간의 폭"}
