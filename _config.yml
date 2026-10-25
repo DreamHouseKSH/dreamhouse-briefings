@@ -78,6 +78,7 @@ briefing_sections:
     desc: 유명인 게시글 · 해석
 
 exclude:
+  - output/
   - templates/
   - README.md
   - Gemfile

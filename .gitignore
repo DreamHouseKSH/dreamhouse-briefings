@@ -2,3 +2,7 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .sass-cache/
+
+# Local browser QA artifacts
+.playwright-cli/
+output/

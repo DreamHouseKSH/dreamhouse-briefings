@@ -1,0 +1,41 @@
+---
+layout: default
+---
+{% assign body_parts = content | split: '</h1>' %}
+{% assign scope_parts = content | split: '<blockquote>' %}
+{% assign scope_note = scope_parts[1] | split: '</blockquote>' | first %}
+{% capture scope_block %}<blockquote>{{ scope_note }}</blockquote>{% endcapture %}
+{% assign original_title = body_parts.first | strip_html | strip %}
+<div class="weekly-magazine">
+  <header class="wm-cover">
+    <div class="wm-masthead"><span>DREAMHOUSE / 주말의 시선</span><span>{{ page.edition | escape }}</span></div>
+    <p class="wm-period">{{ page.period | escape }} <span>· KST</span></p>
+    <h1>{{ page.magazine_title | default: original_title | escape }}</h1>
+    <p class="wm-lead">{{ page.lead | escape }}</p>
+    <div class="wm-cover-art" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="wm-cover-foot"><span>{{ original_title }}</span><a href="{{ '/weekly/' | relative_url }}">주간 보고 목록 ↗</a></div>
+  </header>
+  <div class="wm-scope">{{ scope_block }}</div>
+  <nav class="wm-contents" aria-label="주간 보고 목차">
+    <p class="wm-kicker">CONTENTS / 이 호의 순서</p>
+    <ol>
+    {% assign sections = content | split: '<h2 id="' %}
+    {% for section in sections offset:1 %}
+      {% assign section_id = section | split: '"' | first %}
+      {% assign section_name = section | split: '</h2>' | first | split: '>' | last | strip_html %}
+      <li><a href="#{{ section_id }}"><span>{{ forloop.index | prepend: '0' }}</span>{{ section_name }}</a></li>
+    {% endfor %}
+    </ol>
+  </nav>
+  {% if page.findings %}
+  <section class="wm-findings" aria-label="핵심 발견 — 본문에서 뽑은 문장">
+    <p class="wm-kicker">THE EDIT / 본문에서 뽑은 핵심 발견</p>
+    <div class="wm-cards">{% for item in page.findings %}<div class="wm-card" data-field="{{ item.field | escape }}"><p>{{ item.label | escape }}</p><blockquote>{{ item.text | escape }}</blockquote></div>{% endfor %}</div>
+  </section>
+  {% endif %}
+  <div class="wm-reading">
+    <aside class="wm-margin" aria-label="본문 강조 문장"><p class="wm-kicker">PERSPECTIVE</p><blockquote>“{{ page.pullquote | escape }}”</blockquote><p>이 호 본문에서</p><a href="#wm-body">전체 본문 읽기 ↓</a></aside>
+    <article id="wm-body" class="prose wm-body">{% for part in body_parts offset:1 %}{{ part | remove_first: scope_block }}{% endfor %}</article>
+  </div>
+  <nav class="wm-end" aria-label="주간 보고 탐색"><span>주말의 시선 · {{ page.period | escape }}</span><a href="{{ '/weekly/' | relative_url }}">모든 주간 보고 읽기 →</a></nav>
+</div>
