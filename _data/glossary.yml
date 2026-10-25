@@ -384,3 +384,19 @@
 - {"term":"GeoTIFF","full":"Geographic Tagged Image File Format","ko":"지리 좌표를 함께 저장하는 영상 파일 형식"}
 - {"term":"앙상블","full":"ensemble","ko":"여러 모델의 결과를 결합하는 방식"}
 - {"term":"IQR","full":"Interquartile Range","ko":"자료의 가운데 50% 구간의 폭"}
+
+- term: "Model Garden"
+  full: ""
+  ko: "Google Cloud에서 여러 인공지능 모델을 찾아 활용하는 제품 목록"
+
+- term: "macOS"
+  full: ""
+  ko: "애플의 Mac용 운영체제"
+
+- term: "시계열"
+  full: "time series"
+  ko: "시간 순서대로 쌓인 관측값"
+
+- term: "클라우드"
+  full: "cloud computing"
+  ko: "인터넷을 통해 원격 컴퓨팅 자원을 이용하는 방식"
