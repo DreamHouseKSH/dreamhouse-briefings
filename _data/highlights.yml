@@ -1,5 +1,10 @@
 # 날짜별 하이라이트 (홈 화면·아카이브에 표시). 새 날짜는 맨 위에 추가.
 # 키: IT / AI / 모델 / 엔진 / GitHub — 해당 날짜 브리핑 파일 내용에서만 뽑아 한 줄로 요약.
+"2026-10-26":
+  IT: "tuios 0.11.0 승인 우회 수정 / llama-server 입력 제한·자원 낭비 개선"
+  AI: "Claude 두 차례 오류 복구 완료 / AI21 LIFT 해설, 형식 점수와 실제 과업 완수 구분"
+  엔진: "llama.cpp DeepSeek-V4.1-Flash 지원·Qwen 재변환 최적화, 개발자 자체 성능 수치"
+
 "2026-10-23":
   IT: "Railway 빌드·배포 회복, 신규 가입 중단 유지 / Renesas RX74M·RX74N 22nm·MRAM MCU"
   AI: "Decisions API 정식 출시·최대 10배 속도는 회사 수치 / Uber 3만 명 이상 직원에 ChatGPT Work 확대"
