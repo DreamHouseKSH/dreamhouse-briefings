@@ -413,3 +413,8 @@
 - {"term":"데몬","full":"daemon","ko":"뒤에서 계속 실행되며 특정 기능을 제공하는 프로그램"}
 - {"term":"강화학습","full":"reinforcement learning","ko":"행동의 보상을 이용해 더 나은 행동을 학습하는 방법"}
 - {"term":"후크","full":"hook","ko":"특정 이벤트가 생겼을 때 자동으로 실행되는 연결 동작"}
+
+# --- 2026-10-27 GitHub 트렌드 추가분
+- { term: "SEO", full: "Search Engine Optimization", ko: "검색엔진이 웹페이지를 이해하고 찾기 쉽게 만드는 작업" }
+- { term: "정적 분석", full: "static analysis", ko: "프로그램을 실행하지 않고 코드와 내용을 살피는 검사" }
+- { term: "오탐", full: "false positive", ko: "안전한 대상을 위험하다고 잘못 판단하는 일" }
