@@ -418,3 +418,12 @@
 - { term: "SEO", full: "Search Engine Optimization", ko: "검색엔진이 웹페이지를 이해하고 찾기 쉽게 만드는 작업" }
 - { term: "정적 분석", full: "static analysis", ko: "프로그램을 실행하지 않고 코드와 내용을 살피는 검사" }
 - { term: "오탐", full: "false positive", ko: "안전한 대상을 위험하다고 잘못 판단하는 일" }
+
+# --- 2026-10-27 news ---
+- {"term":"뷰","full":"view","ko":"원본 데이터를 복사하지 않고 일부 구간을 바라보는 자료 표현"}
+- {"term":"회귀 시험","full":"regression test","ko":"변경 뒤 기존 기능이 망가지지 않았는지 확인하는 시험"}
+- {"term":"캐시","full":"cache","ko":"이전 입력이나 계산 결과를 저장해 다시 사용하는 방식"}
+- {"term":"추론 강도","full":"reasoning effort","ko":"답을 내기 위해 모델이 들이는 계산 노력의 수준"}
+- {"term":"플러그인","full":"plugin","ko":"기존 제품에 업무 기능을 덧붙이는 확장 묶음"}
+- {"term":"스킬","full":"skill","ko":"반복 업무의 절차와 지침을 묶은 기능"}
+- {"term":"에이전트","full":"agent","ko":"목표에 맞춰 도구를 사용하며 여러 단계의 일을 수행하는 AI"}
