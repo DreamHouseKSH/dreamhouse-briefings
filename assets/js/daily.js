@@ -15,7 +15,7 @@
   let index = 0, step = 3, playing = false, timer = null, isStatic = motion.matches, scriptsOpen = false;
   let focused = false, returnY = 0, returnTarget = null, exitPending = false, lockedStyles = null;
   let savedInert = [], narrator, afterFocusClose = null, focusHasHistory = false;
-  let lastHistoryWrite = 0, hashTimer = null;
+  let lastHistoryWrite = 0, hashTimer = null, originalRootOverflow = '';
   const total = 3;
   try { const saved = JSON.parse(sessionStorage.getItem('dh-day-20261027') || 'null'); if (saved && Number.isInteger(saved.index) && saved.index >= 0 && saved.index < slides.length) { index = saved.index; step = Math.max(0, Math.min(total, Number(saved.step) || 0)); } } catch (_) {}
   function historyWrite(method, state, url) {
@@ -128,7 +128,8 @@
     stop(); render(); if (focused) return;
     returnY = window.scrollY; window.scrollTo(0, returnY); returnTarget = document.activeElement; focused = true; settings.open = false;
     lockedStyles = {position:document.body.style.position, top:document.body.style.top, width:document.body.style.width, overflow:document.body.style.overflow};
-    document.body.style.position = 'fixed'; document.body.style.top = -returnY + 'px'; document.body.style.width = '100%'; document.body.style.overflow = 'hidden'; window.scrollTo(0, 0);
+    originalRootOverflow = document.documentElement.style.overflow;
+    document.documentElement.style.overflow = 'hidden'; document.body.style.overflow = 'hidden';
     savedInert = Array.from(document.querySelectorAll('.site-header,.site-footer,.day-index')).map(el => [el, el.inert]); savedInert.forEach(([el]) => {el.inert = true;});
     deck.classList.add('day-focused'); deck.setAttribute('role','dialog'); deck.setAttribute('aria-modal','true'); deck.setAttribute('aria-labelledby','day-focus-title'); focusbar.hidden = false;
     clearTimeout(hashTimer); focusHasHistory = historyWrite('pushState', Object.assign({}, history.state, {dhDayFocus:true}), location.href);
@@ -139,7 +140,7 @@
     if (afterClose) afterFocusClose = afterClose;
     stop(); if (narrator) narrator.cancel(false); if (!focused) return;
     focused = false; deck.classList.remove('day-focused'); deck.removeAttribute('role'); deck.removeAttribute('aria-modal'); deck.removeAttribute('aria-labelledby'); focusbar.hidden = true; settings.open = false;
-    Object.assign(document.body.style, lockedStyles); savedInert.forEach(([el, value]) => {el.inert = value;});
+    Object.assign(document.body.style, lockedStyles); document.documentElement.style.overflow = originalRootOverflow; savedInert.forEach(([el, value]) => {el.inert = value;});
     window.scrollTo(0, returnY); if (returnTarget && returnTarget.isConnected) returnTarget.focus({preventScroll:true}); render();
     if (!fromHistory && focusHasHistory && history.state && history.state.dhDayFocus) {exitPending = true;history.back();}
     else { clearTimeout(hashTimer); if(afterFocusClose){const action=afterFocusClose;afterFocusClose=null;action();} else saveHash(true); }

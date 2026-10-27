@@ -374,3 +374,5 @@ gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status
 - 검증은 WebKit 엔진의 iPhone 프로필과 실제 iPhone 기기를 구분한다. 모바일 세로/가로·주소창에 따른 화면 높이 변화·설정 메뉴·내부 본문 전체 접근·닫기/뒤로·터치와 스크롤·기존 19개 항목·데스크톱을 포함한다. 음성 모의 이벤트 검증과 실제 엔진 발화 start/end, 사람이 실제 소리를 들은 검증을 각각 구분해 보고한다.
 
 - 발표 내부 앵커는 공통 사이트의 smooth-scroll 캡처 처리보다 먼저 처리한다. 집중 보기 뒤 문서가 함께 스크롤되거나, WebKit에서 화면에 보이는 링크와 터치 좌표가 어긋나지 않게 내부 목차 왕복은 즉시 스크롤한다. 빠른 장 선택은 중복 URL 기록을 생략하고 300ms 간격으로 제한하며, History API 제한 오류로 UI가 멈추지 않게 한다.
+
+- 집중 보기의 배경 잠금은 html/body의 overflow로 처리하고 body를 음수 top의 position:fixed로 옮기지 않는다. WebKit에서 긴 본문 하단 링크의 터치 스크롤과 hit test가 어긋나는 조건을 피하면서 내부 stage의 세로 스크롤을 유지한다.
