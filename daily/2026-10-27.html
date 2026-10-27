@@ -5,16 +5,26 @@ daily: true
 ---
 {% assign edition = site.data.day_20261027 %}
 <div class="day-deck" id="day-deck">
+  <div class="day-focusbar" hidden><div><strong id="day-focus-title">10월 27일 · 집중 보기</strong><small>웹 화면 안에서 확대합니다 · 브라우저 주소창은 유지됩니다</small></div><button type="button" data-action="close-focus">닫기 ✕</button></div>
   <div class="day-heading"><div><p class="eyebrow">DAILY MOTION BRIEFING · KST</p><h1>2026년 10월 27일 · 하루 발표</h1></div><a href="#day-index">전체 기사 목차 ↓</a></div>
   <p class="day-scope">뉴스 10개 · GitHub 9개 카드. 10월 27일 아침 수집창에서 누락된 4건을 10월 28일 KST 보충했습니다. 뉴스 조사 구간은 10/26 08:01~10/27 08:01 KST. 기존 AI 두 건(비영리 Claude·Oracle)은 원문 시각 미공개로 날짜 일치 후보입니다. X는 원문 확인 제한으로 미수록. 아래 관계도는 편집 해설입니다.</p>
   <div class="day-controls" hidden aria-label="발표 조작">
     <button type="button" data-action="prev" aria-label="이전 단계">← 이전</button><button type="button" data-action="play">자동 재생</button><button type="button" data-action="next" aria-label="다음 단계">다음 →</button>
-    <label>속도 <select id="day-speed"><option value="1">1×</option><option value="0.5">0.5×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
-    <button type="button" data-action="full">전체화면</button><button type="button" data-action="static" aria-pressed="false">정적 보기</button>
+    <button type="button" data-action="full" aria-pressed="false">집중 보기</button>
+    <details class="day-options"><summary>설정·음성</summary><div class="day-options-panel">
+      <label>속도 <select id="day-speed"><option value="1">1×</option><option value="0.5">0.5×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
+      <button type="button" data-action="voice" aria-pressed="false" disabled>음성 켜기</button>
+      <label>기기 내장 한국어 음성 <select id="day-voice" disabled><option>음성 확인 중</option></select></label>
+      <p id="day-voice-status" role="status">기기 내장 한국어 음성을 확인합니다. 대본은 각 장에서 읽을 수 있습니다.</p>
+      <button type="button" data-action="script" aria-pressed="false">대본 보기</button>
+      <p>한국어 내장 음성이 준비되면 재생 버튼으로 읽기를 시작합니다. 일시정지는 발화를 취소하며 다시 재생하면 현재 문장 처음부터 읽습니다. 기기 음색과 발화 속도는 다를 수 있습니다.</p>
+      <button type="button" data-action="static" aria-pressed="false">정적 보기</button>
+      <button type="button" data-action="native" hidden>기기 전체화면</button>
+    </div></details>
     <span id="day-status" role="status" aria-live="polite"></span>
   </div>
-  <p class="day-help" hidden>← → 키: 단계 이동 · Space: 재생/일시정지 · Home/End: 처음/끝 · 그림 좌우 쓸기: 단계 이동. 자동 재생은 마지막에서 멈춥니다.</p>
-  <div class="day-stage" aria-label="하루 브리핑 발표">
+  <p class="day-help" hidden>← → 키: 단계 이동 · Space: 재생/일시정지 · Home/End: 처음/끝 · 그림 좌우 쓸기: 단계 이동 · 세로 스크롤: 전체 내용 읽기. 자동 재생은 마지막에서 멈춥니다.</p>
+  <div class="day-stage" tabindex="0" aria-label="하루 브리핑 발표 · 세로로 스크롤해 전체 내용을 읽을 수 있습니다">
   {% for slide in edition.slides %}
   <section class="day-slide day-{{ slide.kind }}" id="slide-{{ forloop.index }}" aria-labelledby="slide-title-{{ forloop.index }}" data-slide="{{ forloop.index0 }}">
     <div class="day-copy"><p class="day-kicker">{{ slide.kicker }}</p><h2 id="slide-title-{{ forloop.index }}" tabindex="-1">{{ slide.title | newline_to_br }}</h2><p class="day-intro">{{ slide.intro }}</p></div>
@@ -29,6 +39,7 @@ daily: true
       <p class="day-diagram-caption">관계도 · 편집 해설 / 도형 크기는 수치를 나타내지 않습니다</p>
     </div>
     {% if slide.note %}<p class="day-note">{{slide.note}}</p>{% endif %}
+    <details class="day-script"><summary>발표 대본 · {{forloop.index}}장</summary><ol>{% for sentence in slide.narration %}<li>{{sentence}}</li>{% endfor %}</ol></details>
     <div class="day-refs"><span>이 장의 근거 · 상세</span>{% for ref in slide.refs %}{% assign item = edition.items | where: 'id', ref | first %}<a href="#item-{{item.id}}">{{item.short}}</a>{% endfor %}</div>
     <span class="day-folio">{{forloop.index}} / {{edition.slides.size}}</span>
   </section>
