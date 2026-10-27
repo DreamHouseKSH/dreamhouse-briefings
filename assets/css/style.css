@@ -672,3 +672,8 @@ p:has(> img.weekly-hero) + blockquote {
 @media (max-width: 40rem) {
   .weekly-img, .weekly-hero { border-radius: .6rem; max-height: 18rem; }
 }
+
+/* Entry point for the standalone daily presentation. */
+.day-promo { margin: 1.5rem 0; border-color: var(--c-model); }
+.day-promo strong { display: block; font-size: 1.2rem; }
+.day-promo span { display: block; margin-top: .4rem; color: var(--text-2); }

@@ -427,3 +427,9 @@
 - {"term":"플러그인","full":"plugin","ko":"기존 제품에 업무 기능을 덧붙이는 확장 묶음"}
 - {"term":"스킬","full":"skill","ko":"반복 업무의 절차와 지침을 묶은 기능"}
 - {"term":"에이전트","full":"agent","ko":"목표에 맞춰 도구를 사용하며 여러 단계의 일을 수행하는 AI"}
+
+# 2026-10-28: 10/27 사후 보충
+- { term: "ECU", full: "Electronic Control Unit", ko: "차량의 장치나 기능을 제어하는 전자제어장치" }
+- { term: "SDV", full: "Software-Defined Vehicle", ko: "소프트웨어로 주요 기능을 구현하고 개선하는 차량" }
+- { term: "하이브리드 본딩", full: "Hybrid Bonding", ko: "칩의 절연면과 금속 연결부를 함께 접합하는 기술" }
+- { term: "MCU", full: "Microcontroller Unit", ko: "센서와 장치를 제어하는 소형 칩" }
