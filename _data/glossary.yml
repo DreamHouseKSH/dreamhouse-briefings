@@ -444,3 +444,10 @@
 - {"term":"랙","full":"rack","ko":"여러 연산장치와 연결 장비를 담는 표준 장비 틀"}
 - {"term":"DFlash2","full":"","ko":"추측 디코딩에서 초안 토큰을 만드는 모델 계열"}
 - {"term":"Apple Silicon","full":"","ko":"Apple이 설계한 Mac 등의 기기용 칩"}
+
+- {"term":"텔레메트리","full":"telemetry","ko":"소프트웨어의 사용 과정이나 상태 정보를 모아 전송하는 기능"}
+- {"term":"랜딩페이지","full":"landing page","ko":"방문자가 특정 목적이나 안내를 보고 행동하도록 구성한 웹페이지"}
+- {"term":"PolyForm Noncommercial","full":"PolyForm Noncommercial License","ko":"허용된 비상업 목적에 사용 범위를 제한하는 소프트웨어 라이선스"}
+
+- {"term":"세션","full":"session","ko":"로그인이나 작업 상태를 유지하는 연결 정보"}
+- {"term":"WebSocket","full":"","ko":"연결을 유지하며 양방향 메시지를 주고받는 웹 통신 방식"}
