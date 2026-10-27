@@ -135,6 +135,7 @@
     viewport(); render(); stage.scrollTop = 0; closeButton.focus({preventScroll:true});
   }
   function leaveFocus(fromHistory, afterClose) {
+    if(document.fullscreenElement === deck && document.exitFullscreen)document.exitFullscreen().catch(()=>{});
     if (afterClose) afterFocusClose = afterClose;
     stop(); if (narrator) narrator.cancel(false); if (!focused) return;
     focused = false; deck.classList.remove('day-focused'); deck.removeAttribute('role'); deck.removeAttribute('aria-modal'); deck.removeAttribute('aria-labelledby'); focusbar.hidden = true; settings.open = false;
@@ -200,26 +201,37 @@
   document.addEventListener('visibilitychange', () => {if(document.hidden){stop();if(narrator)narrator.cancel(false);render();}});
   window.addEventListener('pagehide', () => {clearTimeout(hashTimer);stop();if(narrator)narrator.cancel(false);render();});
   window.addEventListener('pageshow', () => {stop();syncHash();render();});
-  document.addEventListener('click', e => {
-    const a=e.target.closest('a');if(!a)return;
+  function followLocalLink(url) {
     clearTimeout(hashTimer);
-    stop();if(narrator)narrator.cancel(false);render();
+    if(url.pathname === location.pathname && url.search === location.search && url.hash) {
+      historyWrite('replaceState', history.state, url.hash);
+      const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
+      if(target){
+        if(target.classList.contains('day-slide')) revealSlide();
+        else target.scrollIntoView({block:'start',behavior:'auto'});
+        if(!target.hasAttribute('tabindex'))target.setAttribute('tabindex','-1');
+        target.focus({preventScroll:true});
+      }
+    } else location.assign(url.href);
+  }
+  // Run before the shared site's capture listener: its smooth scrolling must not
+  // scroll the document behind the fixed focus view, particularly in WebKit.
+  document.addEventListener('click', e => {
+    if(e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)return;
+    const a=e.target.closest('a');if(!a)return;
+    clearTimeout(hashTimer); stop();if(narrator)narrator.cancel(false);render();
+    const url = new URL(a.href, location.href);
+    const localAnchor = url.origin === location.origin && url.pathname === location.pathname && url.search === location.search && url.hash && a.closest('.day-deck,.day-index');
     const m=(a.getAttribute('href') || '').match(/^#slide-(\d+)$/);if(m)jump(Number(m[1])-1,false);
-    if(focused) {
-      e.preventDefault(); e.stopImmediatePropagation();
-      const url = new URL(a.href, location.href);
-      if (url.origin !== location.origin) { window.open(url.href, '_blank', 'noopener,noreferrer'); leaveFocus(false); }
-      else leaveFocus(false, () => {
-        if(url.pathname === location.pathname && url.search === location.search && url.hash) {
-          clearTimeout(hashTimer);historyWrite('replaceState', history.state, url.hash);
-          const target = document.getElementById(decodeURIComponent(url.hash.slice(1)));
-          if(target){target.scrollIntoView({block:'start'});target.focus({preventScroll:true});}
-        } else location.assign(url.href);
-      });
+    if(focused || localAnchor) {
+      e.preventDefault(); e.stopImmediatePropagation(); settings.open=false;
+      if(url.origin !== location.origin) {window.open(url.href,'_blank','noopener,noreferrer');leaveFocus(false);}
+      else if(focused)leaveFocus(false,()=>followLocalLink(url));
+      else followLocalLink(url);
       return;
     }
     if(document.fullscreenElement && !a.hash.startsWith('#slide-'))document.exitFullscreen().catch(()=>{});
-  });
+  }, true);
   window.addEventListener('hashchange', () => {if(!exitPending)syncHash();});
   motion.addEventListener('change', e => {if(e.matches){stop();if(narrator)narrator.cancel(false);isStatic=true;render();}});
   window.addEventListener('resize',viewport); window.addEventListener('orientationchange',()=>{stop();settings.open=false;viewport();render();});
