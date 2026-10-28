@@ -451,3 +451,21 @@
 
 - {"term":"세션","full":"session","ko":"로그인이나 작업 상태를 유지하는 연결 정보"}
 - {"term":"WebSocket","full":"","ko":"연결을 유지하며 양방향 메시지를 주고받는 웹 통신 방식"}
+
+
+# --- 2026-10-29 news ---
+- {"term": "CFO", "full": "Chief Financial Officer", "ko": "최고재무책임자"}
+- {"term": "OEM", "full": "Original Equipment Manufacturer", "ko": "완제품 제조사에 공급되는 제품·소프트웨어"}
+- {"term": "GAAP", "full": "Generally Accepted Accounting Principles", "ko": "일반적으로 인정되는 회계기준"}
+- {"term": "non-GAAP", "full": "", "ko": "회사가 특정 항목을 조정해 제시하는 보조 실적 지표"}
+- {"term": "EPS", "full": "Earnings Per Share", "ko": "주당순이익"}
+- {"term": "Brotli", "full": "", "ko": "웹 콘텐츠 등의 크기를 줄이는 압축 기술"}
+- {"term": "공개가중치", "full": "open weights", "ko": "학습된 모델 수치를 내려받는 배포 방식"}
+- {"term": "활성 파라미터", "full": "active parameters", "ko": "한 번의 처리에 실제 계산에 참여하는 모델 수치"}
+- {"term": "온프레미스", "full": "on-premises", "ko": "기업 자체 시설·장비에서 시스템을 운영하는 방식"}
+- {"term": "미세조정", "full": "fine-tuning", "ko": "추가 데이터로 모델을 특정 목적에 맞추는 학습"}
+- {"term": "시드 투자", "full": "seed funding", "ko": "초기 제품·사업 검증 단계의 투자"}
+- {"term": "시리즈 A", "full": "Series A", "ko": "초기 검증 이후 사업 확장을 위한 투자 단계"}
+- {"term": "사용 크레딧", "full": "usage credits", "ko": "서비스 사용료에 적용되는 지원 잔액"}
+- {"term": "Autonomous Context Engine", "full": "", "ko": "Fragment가 데이터와 사내 규칙을 연결하는 제품에 붙인 명칭"}
+- {"term": "SDLC", "full": "Software Development Life Cycle", "ko": "소프트웨어를 기획·구현·검증·운영하는 과정"}

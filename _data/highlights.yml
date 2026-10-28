@@ -1,3 +1,10 @@
+"2026-10-29":
+  IT: "SK하이닉스·MS 실적 성장과 투자 부담 / 어드밴테스트 전망 상향 / Brotli 경보는 게시시각 미상"
+  AI: "OpenAI–ServiceNow 통합 확대·Fragment 누적 5,600만 달러 투자·Anthropic 과학기관 지원 / 현재 제공과 계획 구분"
+  모델: "Nemotron 3.5 Transcribe 지시형 전사·Rime Prism 발화 전 검사 / 회사 평가·배포 조건 주의"
+  엔진: "llama.cpp 0.8.0 실시간 음성·도구 호출·LFM3 영상 / 실험적 API와 호환성 점검"
+  X: "Nadella의 에이전트 개발 흐름 소개 1건 간접 확인 / X 직접 접근 403·반응 수 미확인"
+
 "2026-10-28":
   GitHub: "디자인·음성·학습 도구 강세 / Hallmark 일간 +2,859 / OpenBot 비상업용·실행 권한 주의 / 일간·주간·Python·Rust·Go 10개 선별"
   IT: "M6 Mac 발표·AMD/Meta Helios 시험·ASM 매출 성장·NIST 양자내성암호 전환 최종본"
@@ -111,4 +118,5 @@
   모델: "Reflection Beam(501B/23B MoE, SWE 80.9) / Reka Rho-1(19B 옴니) / interfaze-1-lite"
   엔진: "Strata / vLLM 0.31 + CVE / llama.cpp 0.6.0 / SGLang 0.5.21 / Ollama MLX RC / 결정 모델 API / KoboldCpp Agent / vllm-metal"
   GitHub: "VoiceStudio(주간 +14.7K), hindsight(+10.6K), paperclip(+8.7K), OpenShell(+6.0K) 등 25개 저장소"
+
 
