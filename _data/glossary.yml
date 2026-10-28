@@ -469,3 +469,9 @@
 - {"term": "사용 크레딧", "full": "usage credits", "ko": "서비스 사용료에 적용되는 지원 잔액"}
 - {"term": "Autonomous Context Engine", "full": "", "ko": "Fragment가 데이터와 사내 규칙을 연결하는 제품에 붙인 명칭"}
 - {"term": "SDLC", "full": "Software Development Life Cycle", "ko": "소프트웨어를 기획·구현·검증·운영하는 과정"}
+
+# 2026-10-29 GitHub 트렌드
+- {"term":"WebAssembly","full":"","ko":"브라우저 등 여러 환경에서 실행할 수 있는 이식 가능한 코드 형식"}
+- {"term":"Puppeteer","full":"","ko":"Chrome 등 브라우저를 코드로 조작하고 검사하는 자동화 라이브러리"}
+- {"term":"정밀도","full":"precision","ko":"문제라고 지적한 항목 가운데 실제 문제인 항목의 비율"}
+- {"term":"재현율","full":"recall","ko":"실제 존재하는 문제 가운데 검사에서 찾아낸 항목의 비율"}
