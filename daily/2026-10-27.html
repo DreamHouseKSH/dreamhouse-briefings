@@ -9,21 +9,26 @@ daily: true
   <div class="day-heading"><div><p class="eyebrow">DAILY MOTION BRIEFING · KST</p><h1>2026년 10월 27일 · 하루 발표</h1></div><a href="#day-index">전체 기사 목차 ↓</a></div>
   <p class="day-scope">뉴스 10개 · GitHub 9개 카드. 10월 27일 아침 수집창에서 누락된 4건을 10월 28일 KST 보충했습니다. 뉴스 조사 구간은 10/26 08:01~10/27 08:01 KST. 기존 AI 두 건(비영리 Claude·Oracle)은 원문 시각 미공개로 날짜 일치 후보입니다. X는 원문 확인 제한으로 미수록. 아래 관계도는 편집 해설입니다.</p>
   <div class="day-controls" hidden aria-label="발표 조작">
-    <button type="button" data-action="prev" aria-label="이전 단계">← 이전</button><button type="button" data-action="play">자동 재생</button><button type="button" data-action="next" aria-label="다음 단계">다음 →</button>
+    <button type="button" data-action="prev" aria-label="이전 단계">← 이전</button><button type="button" data-action="play">▶ 발표 시작</button><button type="button" data-action="next" aria-label="다음 단계">다음 →</button>
     <button type="button" data-action="full" aria-pressed="false">집중 보기</button>
     <details class="day-options"><summary>설정·음성</summary><div class="day-options-panel">
       <label>속도 <select id="day-speed"><option value="1">1×</option><option value="0.5">0.5×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
-      <button type="button" data-action="voice" aria-pressed="false" disabled>음성 켜기</button>
-      <label>기기 내장 한국어 음성 <select id="day-voice" disabled><option>음성 확인 중</option></select></label>
-      <p id="day-voice-status" role="status">기기 내장 한국어 음성을 확인합니다. 대본은 각 장에서 읽을 수 있습니다.</p>
+      <button type="button" data-action="voice" aria-pressed="false">음소거</button>
+      <p id="day-voice-status" role="status">미리 만든 한국어 오디오로 자동 발표합니다. 기기에 한국어 음성을 설치할 필요가 없습니다.</p>
       <button type="button" data-action="script" aria-pressed="false">대본 보기</button>
-      <p>한국어 내장 음성이 준비되면 재생 버튼으로 읽기를 시작합니다. 일시정지는 발화를 취소하며 다시 재생하면 현재 문장 처음부터 읽습니다. 기기 음색과 발화 속도는 다를 수 있습니다.</p>
+      <p>발표 시작 한 번으로 음성·단계·다음 장이 자동 진행됩니다. 일시정지 후 같은 위치에서 이어 듣습니다. 내용을 세로로 스크롤해도 재생은 계속됩니다. 소리가 작으면 기기의 미디어 음량을 확인해 주세요.</p>
+      <details class="day-native-audio"><summary>기본 오디오 플레이어</summary>
+        <audio id="day-audio" controls playsinline preload="metadata" src="{{ '/assets/audio/2026-10-27-narration.mp3' | relative_url }}">오디오 재생을 지원하지 않는 브라우저입니다.</audio>
+        <a href="{{ '/assets/audio/2026-10-27-narration.mp3' | relative_url }}">한국어 발표 오디오 파일 열기 ↗</a>
+      </details>
       <button type="button" data-action="static" aria-pressed="false">정적 보기</button>
       <button type="button" data-action="native" hidden>기기 전체화면</button>
     </div></details>
     <span id="day-status" role="status" aria-live="polite"></span>
   </div>
-  <p class="day-help" hidden>← → 키: 단계 이동 · Space: 재생/일시정지 · Home/End: 처음/끝 · 그림 좌우 쓸기: 단계 이동 · 세로 스크롤: 전체 내용 읽기. 자동 재생은 마지막에서 멈춥니다.</p>
+  <script id="day-audio-cues" type="application/json">{{ site.data.day_20261027_audio.cues | jsonify }}</script>
+  <p class="day-help" hidden>한 번 시작하면 음성과 함께 자동 진행됩니다. ← → 키: 단계 이동 · Space: 재생/일시정지 · Home/End: 처음/끝 · 그림 좌우 쓸기: 단계 이동 · 세로 스크롤: 전체 내용 읽기. 직접 이전·다음으로 이동하면 일시정지합니다. 자동 발표는 마지막에서 멈춥니다.</p>
+  <noscript><p>자바스크립트가 꺼져 있어 자동 화면 전환은 사용할 수 없습니다. 한국어 오디오와 아래 전체 대본을 함께 읽을 수 있습니다.</p><audio controls preload="none" src="{{ '/assets/audio/2026-10-27-narration.mp3' | relative_url }}"></audio></noscript>
   <div class="day-stage" tabindex="0" aria-label="하루 브리핑 발표 · 세로로 스크롤해 전체 내용을 읽을 수 있습니다">
   {% for slide in edition.slides %}
   <section class="day-slide day-{{ slide.kind }}" id="slide-{{ forloop.index }}" aria-labelledby="slide-title-{{ forloop.index }}" data-slide="{{ forloop.index0 }}">

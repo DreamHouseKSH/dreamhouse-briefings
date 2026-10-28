@@ -80,6 +80,7 @@ briefing_sections:
 exclude:
   - output/
   - templates/
+  - scripts/
   - README.md
   - Gemfile
   - Gemfile.lock

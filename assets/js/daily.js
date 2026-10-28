@@ -9,10 +9,10 @@
   const staticButton = deck.querySelector('[data-action="static"]'), focusButton = deck.querySelector('[data-action="full"]');
   const closeButton = deck.querySelector('[data-action="close-focus"]'), nativeButton = deck.querySelector('[data-action="native"]');
   const focusbar = deck.querySelector('.day-focusbar'), settings = deck.querySelector('.day-options');
-  const speed = deck.querySelector('#day-speed'), voiceButton = deck.querySelector('[data-action="voice"]'), voiceSelect = deck.querySelector('#day-voice');
+  const speed = deck.querySelector('#day-speed'), voiceButton = deck.querySelector('[data-action="voice"]');
   const voiceStatus = deck.querySelector('#day-voice-status'), scriptButton = deck.querySelector('[data-action="script"]');
   const motion = matchMedia('(prefers-reduced-motion: reduce)');
-  let index = 0, step = 3, playing = false, timer = null, isStatic = motion.matches, scriptsOpen = false;
+  let index = 0, step = 3, playing = false, isStatic = motion.matches, scriptsOpen = false;
   let focused = false, returnY = 0, returnTarget = null, exitPending = false, lockedStyles = null;
   let savedInert = [], narrator, afterFocusClose = null, focusHasHistory = false;
   let lastHistoryWrite = 0, hashTimer = null, originalRootOverflow = '';
@@ -30,7 +30,7 @@
     if (!immediate && delay > 0) { hashTimer = setTimeout(() => saveHash(), delay); return; }
     historyWrite('replaceState', history.state, hash);
   }
-  function stop() { playing = false; clearTimeout(timer); timer = null; if (narrator) narrator.pause(); }
+  function stop() { playing = false; if (narrator) narrator.pause(); }
   function render() {
     deck.classList.toggle('is-static', isStatic);
     slides.forEach((slide, i) => {
@@ -38,21 +38,18 @@
       slide.querySelectorAll('[data-step]').forEach(el => el.classList.toggle('is-future', i === index && Number(el.dataset.step) > step));
       slide.querySelector('.day-wire').style.strokeDashoffset = isStatic ? 0 : String(1 - step / total);
     });
-    prev.disabled = isStatic || (index === 0 && step === 0);
+    prev.disabled = isStatic || (index === 0 && step <= 1);
     next.disabled = isStatic || (index === slides.length - 1 && step === total);
-    play.disabled = isStatic;
-    play.textContent = playing ? '일시정지' : narrator && narrator.enabled ? '음성 재생' : '자동 재생';
+    play.disabled = !narrator || !narrator.available;
+    play.textContent = playing ? '일시정지' : narrator && narrator.ended ? '처음부터 재생' : narrator && narrator.currentTime > 0 ? '이어서 재생' : '▶ 발표 시작';
     staticButton.setAttribute('aria-pressed', String(isStatic)); staticButton.textContent = isStatic ? '발표 보기' : '정적 보기';
     focusButton.setAttribute('aria-pressed', String(focused));
     chapters.querySelectorAll('button').forEach((b, i) => b.setAttribute('aria-current', String(i === index)));
     document.querySelectorAll('.day-return').forEach(a => a.setAttribute('href', '#slide-' + (index + 1)));
     try { sessionStorage.setItem('dh-day-20261027', JSON.stringify({index, step})); } catch (_) {}
-    const voiceState = narrator && narrator.enabled ? ' · ' + (narrator.state === 'speaking' ? '음성 읽는 중' : narrator.state === 'starting' ? '음성 시작 확인 중' : '음성 대기') : narrator && !narrator.available ? ' · 대본 제공' : ' · 무음';
-    status.textContent = isStatic ? '정적 보기 · 모든 장 표시' : `${index + 1} / ${slides.length}장 · ${step} / ${total}단계${playing ? ' · 재생 중' : ''}${voiceState}`;
-    if (narrator) {
-      voiceButton.disabled = !narrator.available; voiceButton.textContent = narrator.enabled ? '음성 끄기' : '음성 켜기';
-      voiceButton.setAttribute('aria-pressed', String(narrator.enabled)); voiceStatus.textContent = narrator.message;
-    }
+    const audioState = narrator ? ' · ' + (narrator.state==='playing' ? (narrator.enabled?'음성 자동 진행':'음소거 자동 진행') : narrator.state==='loading'?'오디오 준비 중':narrator.state==='error'?'오디오 오류':narrator.state==='ended'?'발표 끝':'재생 대기') : '';
+    status.textContent = isStatic ? '정적 보기 · 모든 장 표시' : `${index + 1} / ${slides.length}장 · ${step} / ${total}단계${audioState}`;
+    if(narrator){voiceButton.disabled=false;voiceButton.textContent=narrator.enabled?'음소거':'음소거 해제';voiceButton.setAttribute('aria-pressed',String(!narrator.enabled));voiceStatus.textContent=narrator.message;}
   }
   function revealSlide() {
     if (focused) { stage.scrollTop = 0; return; }
@@ -60,49 +57,32 @@
     slides[index].style.scrollMarginTop = Math.ceil((document.fullscreenElement ? 0 : header.getBoundingClientRect().height) + controls.offsetHeight + 12) + 'px';
     slides[index].scrollIntoView({block: 'start', behavior: 'auto'});
   }
-  function schedule() {
-    clearTimeout(timer);
-    if (playing && !isStatic && !document.hidden && !(narrator && narrator.enabled)) timer = setTimeout(() => advance(1, true), 5500 / Number(speed.value));
-  }
-  function advance(direction, automatic) {
+  function advance(direction) {
     if (isStatic) return;
     const previousIndex = index;
-    if (!automatic) stop();
-    if (narrator) narrator.cancel(false);
+    stop();
+
     if (direction > 0) {
       if (step < total) step++;
-      else if (index < slides.length - 1) { index++; step = 0; }
+      else if (index < slides.length - 1) { index++; step = 1; }
       else stop();
-    } else if (step > 0) step--;
+    } else if (step > 1) step--;
     else if (index > 0) { index--; step = total; }
     if (index === slides.length - 1 && step === total) stop();
-    saveHash(); render(); if (index !== previousIndex) revealSlide(); schedule();
+    if(narrator)narrator.select(index,step);
+    saveHash(); render(); if (index !== previousIndex) revealSlide();
   }
   function jump(i, focus) {
-    stop(); if (narrator) narrator.cancel(false); index = Math.max(0, Math.min(slides.length - 1, i)); step = total;
+    stop(); index = Math.max(0, Math.min(slides.length - 1, i)); step = total;
+    if(narrator)narrator.select(index,1);
     saveHash(); render(); if (focus) { revealSlide(); slides[index].querySelector('h2').focus({preventScroll:true}); }
   }
   function syncHash() { const m = location.hash.match(/^#slide-(\d+)$/); if (m) jump(Number(m[1]) - 1, false); }
-  if (window.createDailySpeech) narrator = window.createDailySpeech({
+  if(window.createDailyAudio)narrator=window.createDailyAudio({
     change: render,
-    modechange: () => {if(playing){stop();}render();},
-    error: () => { playing = false; clearTimeout(timer); render(); },
-    voices: (voices, selected) => {
-      const current = voiceSelect.value;
-      voiceSelect.replaceChildren();
-      if (!voices.length) { const option = document.createElement('option'); option.textContent = '내장 한국어 음성 없음'; voiceSelect.appendChild(option); }
-      voices.forEach(v => { const option = document.createElement('option'); option.value = v.voiceURI; option.textContent = v.name + ' · ' + v.lang; voiceSelect.appendChild(option); });
-      if (selected) voiceSelect.value = voices.some(v => v.voiceURI === current) ? current : selected.voiceURI;
-      voiceSelect.disabled = !voices.length;
-    },
-    chunk: (number, count) => { step = Math.min(total, Math.ceil(number / count * total)); render(); },
-    complete: () => {
-      if (!playing || isStatic || document.hidden) return;
-      if (index === slides.length - 1) { stop(); render(); return; }
-      index++; step = 0; saveHash(); render(); revealSlide();
-      // The next utterance is queued only after the previous slide finished.
-      narrator.start(slides[index], Number(speed.value), false);
-    }
+    state: active=>{playing=active;if(active)isStatic=false;render();},
+    position: (slide,part)=>{const moved=index!==slide;index=slide;step=part;saveHash();render();if(moved)revealSlide();},
+    complete: ()=>{playing=false;index=slides.length-1;step=total;saveHash();render();}
   });
   function positionOptions() {
     if (!settings.open) return;
@@ -125,7 +105,7 @@
     positionOptions();
   }
   function enterFocus() {
-    stop(); render(); if (focused) return;
+    render(); if (focused) return;
     returnY = window.scrollY; window.scrollTo(0, returnY); returnTarget = document.activeElement; focused = true; settings.open = false;
     lockedStyles = {position:document.body.style.position, top:document.body.style.top, width:document.body.style.width, overflow:document.body.style.overflow};
     originalRootOverflow = document.documentElement.style.overflow;
@@ -138,7 +118,7 @@
   function leaveFocus(fromHistory, afterClose) {
     if(document.fullscreenElement === deck && document.exitFullscreen)document.exitFullscreen().catch(()=>{});
     if (afterClose) afterFocusClose = afterClose;
-    stop(); if (narrator) narrator.cancel(false); if (!focused) return;
+    stop();  if (!focused) return;
     focused = false; deck.classList.remove('day-focused'); deck.removeAttribute('role'); deck.removeAttribute('aria-modal'); deck.removeAttribute('aria-labelledby'); focusbar.hidden = true; settings.open = false;
     Object.assign(document.body.style, lockedStyles); document.documentElement.style.overflow = originalRootOverflow; savedInert.forEach(([el, value]) => {el.inert = value;});
     window.scrollTo(0, returnY); if (returnTarget && returnTarget.isConnected) returnTarget.focus({preventScroll:true}); render();
@@ -150,19 +130,14 @@
     if (b.dataset.action === 'prev') advance(-1);
     if (b.dataset.action === 'next') advance(1);
     if (b.dataset.action === 'play') {
-      settings.open = false;
-      if (playing) stop();
-      else {
-        if (index === slides.length - 1 && step === total && !(narrator && narrator.enabled)) {index=0;step=0;revealSlide();}
-        playing = true;
-        if (narrator && narrator.enabled) { clearTimeout(timer); narrator.start(slides[index], Number(speed.value), true); }
-        else schedule();
-      }
+      settings.open=false;
+      if(playing)stop();
+      else if(narrator){if(isStatic){isStatic=false;render();}enterFocus();narrator.start(Number(speed.value));}
       render();
     }
-    if (b.dataset.action === 'static') {stop(); if(narrator)narrator.cancel(false); isStatic=!isStatic; settings.open=false; render();}
+    if (b.dataset.action === 'static') {stop(); isStatic=!isStatic; settings.open=false; render();}
     if (b.dataset.action === 'full') enterFocus();
-    if (b.dataset.action === 'voice' && narrator) {stop();narrator.setEnabled(!narrator.enabled);render();}
+    if (b.dataset.action === 'voice' && narrator) {narrator.setEnabled(!narrator.enabled);render();}
     if (b.dataset.action === 'script') {scriptsOpen=!scriptsOpen;slides.forEach(s=>s.querySelector('.day-script').open=scriptsOpen);scriptButton.setAttribute('aria-pressed',String(scriptsOpen));scriptButton.textContent=scriptsOpen?'대본 접기':'대본 보기';settings.open=false;}
     if (b.dataset.action === 'native') {
       stop(); render(); settings.open=false;
@@ -174,9 +149,7 @@
   document.addEventListener('fullscreenchange', () => {nativeButton.textContent=document.fullscreenElement?'기기 전체화면 종료':'기기 전체화면';stop();render();});
   window.addEventListener('popstate', () => {if(focused)leaveFocus(true);else if(exitPending){exitPending=false;clearTimeout(hashTimer);if(afterFocusClose){const action=afterFocusClose;afterFocusClose=null;action();}else saveHash(true);}});
   chapters.addEventListener('click', e => {const b=e.target.closest('[data-jump]');if(b)jump(Number(b.dataset.jump),true);});
-  function changeSpeechSetting() {if(playing && narrator && narrator.enabled){narrator.pause();narrator.start(slides[index],Number(speed.value),true);}else schedule();render();}
-  speed.addEventListener('change', changeSpeechSetting);
-  voiceSelect.addEventListener('change', () => {if(narrator){narrator.choose(voiceSelect.value);changeSpeechSetting();}});
+  speed.addEventListener('change',()=>{if(narrator)narrator.rate(Number(speed.value));render();});
   document.addEventListener('keydown', e => {
     if (e.key==='Escape' && focused) {e.preventDefault();leaveFocus(false);return;}
     if (e.key==='Tab' && focused) {
@@ -193,15 +166,13 @@
   });
   let start = null;
   stage.addEventListener('touchstart', e => {
-    if(playing){stop();render();}
     if(e.touches.length===1 && e.target.closest('.day-diagram') && !e.target.closest('a,button'))start=[e.touches[0].clientX,e.touches[0].clientY,stage.scrollTop];else start=null;
   },{passive:true});
   stage.addEventListener('touchend', e => {if(!start||!e.changedTouches.length)return;const t=e.changedTouches[0],dx=t.clientX-start[0],dy=t.clientY-start[1],scrolled=Math.abs(stage.scrollTop-start[2]);start=null;if(Math.abs(dx)>65 && Math.abs(dx)>Math.abs(dy)*1.5 && scrolled<12)advance(dx<0?1:-1);},{passive:true});
   stage.addEventListener('touchcancel',()=>{start=null;},{passive:true});
-  stage.addEventListener('wheel',()=>{if(playing){stop();render();}},{passive:true});
-  document.addEventListener('visibilitychange', () => {if(document.hidden){stop();if(narrator)narrator.cancel(false);render();}});
-  window.addEventListener('pagehide', () => {clearTimeout(hashTimer);stop();if(narrator)narrator.cancel(false);render();});
-  window.addEventListener('pageshow', () => {stop();syncHash();render();});
+  document.addEventListener('visibilitychange', () => {if(document.hidden){stop();render();}});
+  window.addEventListener('pagehide', () => {clearTimeout(hashTimer);stop();render();});
+  window.addEventListener('pageshow', () => {stop();if(narrator && narrator.currentTime>0)narrator.sync();else syncHash();render();});
   function followLocalLink(url) {
     clearTimeout(hashTimer);
     if(url.pathname === location.pathname && url.search === location.search && url.hash) {
@@ -220,7 +191,7 @@
   document.addEventListener('click', e => {
     if(e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey)return;
     const a=e.target.closest('a');if(!a)return;
-    clearTimeout(hashTimer); stop();if(narrator)narrator.cancel(false);render();
+    clearTimeout(hashTimer); stop();render();
     const url = new URL(a.href, location.href);
     const localAnchor = url.origin === location.origin && url.pathname === location.pathname && url.search === location.search && url.hash && a.closest('.day-deck,.day-index');
     const m=(a.getAttribute('href') || '').match(/^#slide-(\d+)$/);if(m)jump(Number(m[1])-1,false);
@@ -234,7 +205,7 @@
     if(document.fullscreenElement && !a.hash.startsWith('#slide-'))document.exitFullscreen().catch(()=>{});
   }, true);
   window.addEventListener('hashchange', () => {if(!exitPending)syncHash();});
-  motion.addEventListener('change', e => {if(e.matches){stop();if(narrator)narrator.cancel(false);isStatic=true;render();}});
+  motion.addEventListener('change', e => {if(e.matches){stop();isStatic=true;render();}});
   window.addEventListener('resize',viewport); window.addEventListener('orientationchange',()=>{stop();settings.open=false;viewport();render();});
   if(window.visualViewport){visualViewport.addEventListener('resize',viewport);visualViewport.addEventListener('scroll',viewport);}
   nativeButton.hidden=!(document.fullscreenEnabled && deck.requestFullscreen && matchMedia('(pointer: fine)').matches);
