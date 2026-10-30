@@ -29,7 +29,7 @@
 .day-script ol{padding-left:1.3rem;margin:.8rem 0 0}.day-script li+li{margin-top:.8rem}
 .day-diagram{touch-action:pan-y pinch-zoom}
 .day-deck.day-focused{position:fixed;inset:auto;top:var(--day-vtop,0px);left:0;z-index:1000;width:var(--day-vwidth,100%);max-width:none;height:100vh;height:100dvh;height:var(--day-vh,100dvh);margin:0;background:var(--bg);box-sizing:border-box;padding: max(6px,env(safe-area-inset-top,0px)) max(10px,env(safe-area-inset-right,0px)) max(8px,env(safe-area-inset-bottom,0px)) max(10px,env(safe-area-inset-left,0px));display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;gap:4px;overflow:hidden;overscroll-behavior:none}
-.day-focused>.day-heading,.day-focused>.day-scope,.day-focused>.day-help{display:none!important}
+.day-focused>.day-heading,.day-focused>.day-scope,.day-focused>.day-source-notices,.day-focused>.day-help{display:none!important}
 .day-focused>.day-controls{position:relative;top:auto;padding:4px 0;margin:0;z-index:4}
 .day-focused [data-action="full"]{display:none}
 .day-focused>.day-stage{min-height:0;min-width:0;overflow-y:auto;overflow-x:hidden;-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain;scroll-padding:8px;touch-action:pan-y pinch-zoom;outline-offset:-3px}
