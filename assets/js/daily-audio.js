@@ -1,16 +1,22 @@
 /* One pre-generated Korean audio track: its playback clock drives every slide. */
 (function () {
   'use strict';
+  const storageKey = 'dh-day-audio-' + (document.querySelector('.day-deck')?.dataset.date || location.pathname).replace(/-/g, '');
   window.createDailyAudio = function (options) {
     const audio = document.getElementById('day-audio');
     let cues = [], token = 0, state = 'ready', message = '한 번 시작하면 한국어 설명과 단계·다음 장이 자동 진행됩니다.', pendingSeek = null;
-    try { cues = JSON.parse(document.getElementById('day-audio-cues').textContent); } catch (_) {}
+    try { const parsed = JSON.parse(document.getElementById('day-audio-cues').textContent); cues = Array.isArray(parsed) ? parsed : []; } catch (_) {}
     let failure = !audio || !cues.length;
+    if (failure) return {
+      available: false, enabled: false, state: 'error', ended: false, currentTime: 0,
+      message: '이 날짜의 오디오가 준비되지 않았습니다. 정적 보기와 대본을 이용해 주세요.',
+      start() {}, pause() {}, select() {}, rate() {}, setEnabled() {}, sync() {}
+    };
     function change() { options.change(); }
     function position() {
       if (!cues.length || pendingSeek !== null) return;
       const time = audio.currentTime;
-      try {sessionStorage.setItem('dh-day-audio-20261027',String(time));} catch (_) {}
+      try {sessionStorage.setItem(storageKey,String(time));} catch (_) {}
       let cue = cues[0];
       for (const candidate of cues) { if (candidate.start > time + 0.04) break; cue = candidate; }
       options.position(cue.slide, cue.step);
@@ -23,7 +29,7 @@
       pendingSeek = time;
       if (audio.readyState >= 1) { try {const target=Number.isFinite(audio.duration)?Math.min(time,audio.duration):time;if(!audio.seeking && Math.abs(audio.currentTime-target)<.02){pendingSeek=null;position();return;}audio.currentTime=target;} catch (_) {} }
     }
-    try { const saved = Number(sessionStorage.getItem('dh-day-audio-20261027')); if(Number.isFinite(saved) && saved > 0)pendingSeek=saved; } catch (_) {}
+    try { const saved = Number(sessionStorage.getItem(storageKey)); if(Number.isFinite(saved) && saved > 0)pendingSeek=saved; } catch (_) {}
     audio.addEventListener('loadedmetadata', () => { if (pendingSeek !== null) seek(pendingSeek); position(); });
     audio.addEventListener('timeupdate', position);
     audio.addEventListener('seeked',()=>{if(audio.seeking)return;pendingSeek=null;position();});
@@ -62,7 +68,7 @@
           fail(error.name==='NotAllowedError' ? '브라우저가 재생을 막았습니다. 설정·음성의 기본 오디오 플레이어에서 재생을 눌러 주세요.' : '오디오 재생을 시작하지 못했습니다. 파일 연결과 기기 음량을 확인해 주세요.');
         });
       },
-      pause() { token++; try {sessionStorage.setItem('dh-day-audio-20261027',String(audio.currentTime));} catch (_) {} audio.pause(); if(state==='loading'){state='paused';message='일시정지 · 같은 위치에서 이어서 재생합니다.';options.state(false);change();} },
+      pause() { token++; try {sessionStorage.setItem(storageKey,String(audio.currentTime));} catch (_) {} audio.pause(); if(state==='loading'){state='paused';message='일시정지 · 같은 위치에서 이어서 재생합니다.';options.state(false);change();} },
       select(slide, step) { token++; audio.pause(); const cue=cues.find(c=>c.slide===slide && c.step===Math.max(1,step)); if(cue)seek(cue.start); },
       rate(value) { audio.playbackRate=value; },
       setEnabled(value) {audio.muted=!value;change();},

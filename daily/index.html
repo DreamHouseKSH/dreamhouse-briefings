@@ -1,0 +1,8 @@
+---
+layout: default
+title: 날짜별 하루 발표
+permalink: /daily/
+---
+<h1>날짜별 하루 발표</h1><p>한 번 시작하면 한국어 음성과 함께 단계·다음 장이 자동 진행됩니다. 각 날짜의 전체 기사 목차와 정적 대본도 제공합니다.</p>
+{% assign editions = site.pages | where: 'daily', true | sort: 'briefing_date' | reverse %}
+<ul class="date-list">{% for edition in editions %}<li><a href="{{ edition.url | relative_url }}">▶ {{ edition.briefing_date }} · 하루 전체 발표</a></li>{% endfor %}</ul>

@@ -4,4 +4,5 @@
     {%- include page-for.html date=include.date file=c.file -%}
     {%- if hit -%}<a class="tab tab-{{ c.slug }}{% if include.cur == c.file %} active{% endif %}" href="{{ hit.url | relative_url }}"{% if include.cur == c.file %} aria-current="page"{% endif %}>{{ c.icon }} {% if c.slug == "github" %}GitHub{% else %}{{ c.label }}{% endif %}</a>{%- endif -%}
   {%- endfor -%}
+{% assign daily_path = 'daily/' | append: include.date | append: '.html' %}{% assign daily_hit = site.pages | where: 'path', daily_path | first %}{% if daily_hit %}<a class="tab" href="{{ daily_hit.url | relative_url }}">▶ 하루 발표</a>{% endif %}
 </nav>

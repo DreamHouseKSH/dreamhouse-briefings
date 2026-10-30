@@ -1,5 +1,6 @@
 (function () {
   'use strict';
+  const storageKey = 'dh-day-' + (document.querySelector('.day-deck')?.dataset.date || location.pathname).replace(/-/g, '');
   const deck = document.querySelector('.day-deck');
   if (!deck) return;
   const slides = Array.from(deck.querySelectorAll('.day-slide'));
@@ -17,7 +18,7 @@
   let savedInert = [], narrator, afterFocusClose = null, focusHasHistory = false;
   let lastHistoryWrite = 0, hashTimer = null, originalRootOverflow = '';
   const total = 3;
-  try { const saved = JSON.parse(sessionStorage.getItem('dh-day-20261027') || 'null'); if (saved && Number.isInteger(saved.index) && saved.index >= 0 && saved.index < slides.length) { index = saved.index; step = Math.max(0, Math.min(total, Number(saved.step) || 0)); } } catch (_) {}
+  try { const saved = JSON.parse(sessionStorage.getItem(storageKey) || 'null'); if (saved && Number.isInteger(saved.index) && saved.index >= 0 && saved.index < slides.length) { index = saved.index; step = Math.max(0, Math.min(total, Number(saved.step) || 0)); } } catch (_) {}
   function historyWrite(method, state, url) {
     try { history[method](state, '', url); lastHistoryWrite = Date.now(); return true; }
     catch (_) { return false; } // WebKit rate limits must never disable controls or closing.
@@ -41,15 +42,16 @@
     prev.disabled = isStatic || (index === 0 && step <= 1);
     next.disabled = isStatic || (index === slides.length - 1 && step === total);
     play.disabled = !narrator || !narrator.available;
+    if(narrator && !narrator.available)deck.querySelector('.day-help').textContent='오디오가 준비되지 않았습니다. 이전·다음, 정적 보기와 아래 전체 대본·기사 목차를 이용해 주세요.';
     play.textContent = playing ? '일시정지' : narrator && narrator.ended ? '처음부터 재생' : narrator && narrator.currentTime > 0 ? '이어서 재생' : '▶ 발표 시작';
     staticButton.setAttribute('aria-pressed', String(isStatic)); staticButton.textContent = isStatic ? '발표 보기' : '정적 보기';
     focusButton.setAttribute('aria-pressed', String(focused));
     chapters.querySelectorAll('button').forEach((b, i) => b.setAttribute('aria-current', String(i === index)));
     document.querySelectorAll('.day-return').forEach(a => a.setAttribute('href', '#slide-' + (index + 1)));
-    try { sessionStorage.setItem('dh-day-20261027', JSON.stringify({index, step})); } catch (_) {}
+    try { sessionStorage.setItem(storageKey, JSON.stringify({index, step})); } catch (_) {}
     const audioState = narrator ? ' · ' + (narrator.state==='playing' ? (narrator.enabled?'음성 자동 진행':'음소거 자동 진행') : narrator.state==='loading'?'오디오 준비 중':narrator.state==='error'?'오디오 오류':narrator.state==='ended'?'발표 끝':'재생 대기') : '';
     status.textContent = isStatic ? '정적 보기 · 모든 장 표시' : `${index + 1} / ${slides.length}장 · ${step} / ${total}단계${audioState}`;
-    if(narrator){voiceButton.disabled=false;voiceButton.textContent=narrator.enabled?'음소거':'음소거 해제';voiceButton.setAttribute('aria-pressed',String(!narrator.enabled));voiceStatus.textContent=narrator.message;}
+    if(narrator){voiceButton.disabled=!narrator.available;voiceButton.textContent=narrator.enabled?'음소거':'음소거 해제';voiceButton.setAttribute('aria-pressed',String(!narrator.enabled));voiceStatus.textContent=narrator.message;}
   }
   function revealSlide() {
     if (focused) { stage.scrollTop = 0; return; }

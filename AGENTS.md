@@ -4,6 +4,7 @@
 
 ## 변경 이력 (요약 — 상세는 [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 맨 위 '변경 이력')
 
+- **2026-10-30 (일일 발표):** 뉴스와 GitHub 작성 후 `python3 scripts/build-daily.py YYYY-MM-DD --audio --if-ready`, 생성 완료 후 `--check`를 실행한다. 날짜별 데이터·공용 화면·Yuna 연속 오디오·cue를 생성하며 기존 판은 체크만 한다. source hash 변경·경합은 중단한다. 홈·날짜 칩·기사 탭·`daily/` 목록은 실제 판을 자동 연결한다. HTML/JSON 생성은 표준 Python이며 Yuna 합성만 macOS에 의존한다. WORKFLOW 10장 참고.
 - **2026-10-28 (연속 오디오):** iPhone 재현 후 기본 발표를 사전 생성 한국어 MP3 한 파일로 전환했다. `daily-audio.js`가 재생 시간과 39개 cue로 단계·장 전체를 자동 진행한다. Web Speech/기기 음성 목록·문장별 발화 이벤트에 의존하지 않는다. 생성은 `scripts/build-daily-audio.py`, 자세한 검증은 WORKFLOW 10장.
 - **2026-10-28 (모바일·음성):** iPhone 피드백 후 기본 확대를 `집중 보기`로 변경. 동적 화면 높이·안전 여백·본문 단일 스크롤·닫기/뒤로와 13장 발표 대본·기기 내장 한국어 음성을 제공한다. WebKit 엔진 검증과 실제 iPhone 기기를 구분한다. WORKFLOW 10장 참고.
 - **2026-10-28:** 10/27 하루 발표 시범: `daily/2026-10-27.html`, `_data/day_20261027.json`, `daily.css/js`. 뉴스 10건(사후 보충 4건 포함)·GitHub 9카드의 정적 목차를 보존하며 자동/수동 단계 재생을 제공한다. WORKFLOW 10장 참고.
@@ -58,7 +59,8 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 1. `cd /workspace/dreamhouse-briefings && git pull --rebase`
 2. 아침 루틴에서 전달된 브리핑 내용으로 `news/<오늘>/*.md`, `github/<오늘>.md` 작성 (템플릿·스타일은 WORKFLOW 참고; GitHub는 카드 형식 `templates/github-item.md`, 레포마다 `gh api` 로 README·릴리스·라이선스 확인). 각 항목 원문의 `og:image` 를 찾아 `### 미디어` 에 핫링크(WORKFLOW 3·4장). 각 뉴스 항목에 `### 논조·다른 시각` 작성(웹 검색으로 다른 매체·반응 확인)
 3. `_data/highlights.yml` 맨 위에 오늘 날짜 하이라이트 추가 (날짜 목록·분야 링크는 사이트가 폴더에서 **자동 생성**하므로 목차 표 편집 불필요)
-4. `git add -A && git commit -m "briefings: YYYY-MM-DD news + github trends" && git pull --rebase && git push origin main` → Pages `built` 확인
+4. **뉴스와 GitHub 양쪽 완성 후 하루 발표 생성:** `python3 scripts/build-daily.py YYYY-MM-DD --audio --if-ready` → 생성 완료면 `python3 scripts/build-daily.py YYYY-MM-DD --check`. PENDING이면 체크를 보류한다. 한쪽만 있으면 PENDING으로 남기고, 두 번째 발행 루틴이 반드시 생성한다. 기존 판의 아카이브가 바뀌었거나 다른 작성자가 동일 날짜 파일을 만들면 덮어쓰지 말고 중단·보고한다. Mac 음성 생성이 불가능하면 무음 성공으로 게시하지 말고 막힌 단계를 보고한다.
+5. `git add -A && git commit -m "briefings: YYYY-MM-DD news + github trends" && git pull --rebase && git push origin main` → Pages `built` 확인
 
 ## 실행 시각 (KST)
 

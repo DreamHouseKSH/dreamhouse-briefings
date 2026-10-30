@@ -4,5 +4,5 @@
   {%- include page-for.html date=include.date file=c.file -%}
   {%- if hit -%}<a class="chip chip-{{ c.slug }}" href="{{ hit.url | relative_url }}">{{ c.icon }} {{ c.label }}</a>{%- endif -%}
 {%- endfor -%}
-{% if include.date == '2026-10-27' %}<a class="chip" href="{{ '/daily/2026-10-27.html' | relative_url }}">▶ 하루 발표</a>{% endif %}
+{% assign daily_path = 'daily/' | append: include.date | append: '.html' %}{% assign daily_hit = site.pages | where: 'path', daily_path | first %}{% if daily_hit %}<a class="chip" href="{{ daily_hit.url | relative_url }}">▶ 하루 발표</a>{% endif %}
 </span>

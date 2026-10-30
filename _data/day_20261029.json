@@ -1,0 +1,865 @@
+{
+  "date": "2026-10-29",
+  "generator_version": 1,
+  "source_hashes": {
+    "news/2026-10-29/AI.md": "b7dac43b552fd3b2690c484a4af4547092057d8c411326af090e8868649b38a1",
+    "news/2026-10-29/IT.md": "c9ca5998fb887774fcc7efdd40759375b17d899581f68e52a13ad7938ad8ee11",
+    "news/2026-10-29/X.md": "654d80ed94bfb91804e412db94bb4797c1a1323b5914e9bfb1fcb45b3290b804",
+    "news/2026-10-29/모델.md": "f2dcba5f4cbba0b74ebce43b79b00c458ae3696c584bc27e535b7ebc781594d7",
+    "news/2026-10-29/엔진.md": "1b00ab3c99e4c052e029e1633b00c08dfd10505bdb0ed5951fbe8770e865b0ce",
+    "github/2026-10-29.md": "4e14644fdea6e245547e51cc2ba0dec533586a6704df234380f6819c4d02b400"
+  },
+  "news_count": 11,
+  "github_count": 10,
+  "scope": "뉴스 11건 · GitHub 10개 카드. 기존 공개 아카이브에서 생성했습니다. 원문의 날짜·조사 구간·회사 주장·미확인 범위는 아래 수집 안내와 상세 기사에서 확인하세요. 도형은 편집 해설입니다.",
+  "notices": [
+    "AI: 대상: 2026-10-28 08:00~10-29 08:00 KST. 날짜만 공개된 원문에는 시각 미상을 명시했다. 회사 자체 평가와 독립 검증은 다르며, 원문을 요약한 글이다.",
+    "IT: 대상: 2026-10-28 08:00~10-29 08:00 KST 공개 소식. 날짜만 확인되는 보안 경보는 시각 미확인 항목으로 구분했다. 회사 발표·전망과 독립 검증을 분리한 요약이며 전문을 복제하지 않았다.",
+    "X: 확인 범위: 2026-10-28 08:00–2026-10-29 08:00 KST. 명단의 최근 글을 검색했으나 X 직접 열람은 제한됐습니다. 아래 1건은 매체의 원포스트 인용·링크로 간접 확인하고 제품 내용은 공식 블로그와 대조했습니다. 3–5건을 채우려고 날짜나 반응을 추정하지 않았습니다.",
+    "모델: 대상: 2026-10-28 08:00~10-29 08:00 KST. 날짜만 공개된 원문에는 시각 미상을 명시했다. 회사 자체 평가와 독립 검증은 다르며, 원문을 요약한 글이다.",
+    "엔진: 확인 범위: 2026-10-28 08:00–2026-10-29 08:00 KST. 변경 제안이나 자동 테스트 실행만으로 출시라고 판단하지 않고 공식 릴리스와 병합 상태를 확인했습니다.",
+    "GitHub: 확인 기준: 10/29 08:04~08:10 KST. GitHub Trending 원문을 직접 읽어 오늘·주간·Python·Rust·Go 목록을 대조하고, 10개 저장소의 README·릴리스·라이선스·누적 별 수를 확인했다. 일간·주간 증가는 Trending의 stars today / this week 표시이며 한국 달력 날짜별 집계가 아니다. 누적 별 수·열린 이슈와 PR(Pull Request·변경 제안) 합계는 API(Application Programming Interface·프로그램 간 조회 창구) 조회 시점 값으로, 품질·안전성의 증거가 아니다. 오래된 검색 캐시와 직접 조회 결과가 달라 최신 직접 조회만 채택했다."
+  ],
+  "items": [
+    {
+      "id": "n1",
+      "field": "AI",
+      "title": "1. OpenAI–ServiceNow, 대화창과 기업 업무 시스템의 연결 확대",
+      "short": "OpenAI–ServiceNow, 대화창과 기업 업무 시스템의 연결 확대",
+      "summary": "OpenAI와 ServiceNow가 개발·IT 업무·보안 영역의 제휴 확대를 발표했다. 현재 제공되는 ServiceNow MCP(Model Context Protocol·AI와 외부 도구를 연결하는 규약) 플러그인으로 기업은 자체 시스템과 연결하고 허용할 작업을 선택할 수 있다. 회사는 기존 업무 규칙과 권한을 적용한다고 설명했다. OpenAI 원문",
+      "metadata": "- 원문: https://openai.com/index/openai-servicenow-partnership-expansion/\n- 분야: AI\n- 날짜: 2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "detail": "/news/2026-10-29/AI.html#1-openaiservicenow-대화창과-기업-업무-시스템의-연결-확대",
+      "source": "https://openai.com/index/openai-servicenow-partnership-expansion/",
+      "sources": [
+        "https://openai.com/index/openai-servicenow-partnership-expansion/"
+      ],
+      "caveat": "‘신뢰할 수 있는 실행’은 공급자의 설명이다. 권한 적용과 독립 보안 검증을 동일시하지 않았다."
+    },
+    {
+      "id": "n2",
+      "field": "AI",
+      "title": "2. Fragment, 조달 업무 AI로 누적 5,600만 달러 투자 공개",
+      "short": "Fragment, 조달 업무 AI로 누적 5,600만 달러 투자 공개",
+      "summary": "기업용 AI 스타트업 Fragment가 출시와 함께 누적 5,600만 달러 투자 유치를 발표했다. 8VC 주도의 시리즈 A(초기 검증 뒤 사업 확장을 위한 투자)와 General Catalyst·A 공동 주도의 시드 투자(초기 사업 검증 단계 투자)가 합쳐진 금액이다. 시리즈 A 한 번의 금액이 5,600만 달러라는 뜻은 아니다. 회사 명의 원문",
+      "metadata": "- 원문: https://www.globenewswire.com/news-release/2026/10/28/3390260/0/en/fragment-launches-with-56-million-to-automate-the-work-enterprise-software-leaves-behind.html\n- 분야: AI\n- 날짜: 2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "detail": "/news/2026-10-29/AI.html#2-fragment-조달-업무-ai로-누적-5600만-달러-투자-공개",
+      "source": "https://www.globenewswire.com/news-release/2026/10/28/3390260/0/en/fragment-launches-with-56-million-to-automate-the-work-enterprise-software-leaves-behind.html",
+      "sources": [
+        "https://www.globenewswire.com/news-release/2026/10/28/3390260/0/en/fragment-launches-with-56-million-to-automate-the-work-enterprise-software-leaves-behind.html"
+      ],
+      "caveat": "투자금은 누적액이며, 고객 추천은 독립 성과평가가 아니다. 일부 재보도의 ‘5,600만 달러 시리즈 A’ 표현을 배제했다."
+    },
+    {
+      "id": "n3",
+      "field": "AI",
+      "title": "3. Anthropic, AI for Science 지원을 연구기관·재단으로 확대",
+      "short": "Anthropic, AI for Science 지원을 연구기관·재단으로 확대",
+      "summary": "Anthropic이 AI for Science 프로그램에서 협력하는 과학 재단·기관·연구그룹 20곳을 공개했다. 연구자에게 무료 Claude 사용 크레딧을 제공하는 프로그램으로, Sloan·Simons 재단과 Wellcome Sanger Institute 등이 포함됐다. Anthropic 원문",
+      "metadata": "- 원문: https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions\n- 분야: AI\n- 날짜: 2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "detail": "/news/2026-10-29/AI.html#3-anthropic-ai-for-science-지원을-연구기관재단으로-확대",
+      "source": "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions",
+      "sources": [
+        "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+      ],
+      "caveat": "지원 규모와 검증된 연구 성과를 혼동하지 않았다. ‘20곳 신규 계약’ 대신 ‘20곳 협력기관·그룹 공개’로 표현했다."
+    },
+    {
+      "id": "n4",
+      "field": "IT",
+      "title": "1. SK하이닉스, 분기 매출 100조원 돌파…HBM4·장기계약 확대",
+      "short": "SK하이닉스, 분기 매출 100조원 돌파…HBM4·장기계약 확대",
+      "summary": "SK하이닉스는 28일 3분기 매출 104조6155억원, 영업이익 83조3338억원을 발표했다. 전분기 대비 각각 32%, 38% 증가했다. 회사는 서버용 DDR5(Double Data Rate 5, 5세대 주기억장치)와 HBM4(High Bandwidth Memory 4, 4세대 고대역폭 메모리), 데이터센터용 SSD(Solid State Drive, 반도체 저장장치) 판매 확대를 주요 배경으로 설명했다. 회사 발표",
+      "metadata": "- 원문: https://news.skhynix.com/en/q3-2026-business-results/\n- 분야: IT\n- 날짜: 2026-10-28 (원문 기준; KST 확인 근거와 시각 한계는 아래 별도 표기)",
+      "detail": "/news/2026-10-29/IT.html#1-sk하이닉스-분기-매출-100조원-돌파hbm4장기계약-확대",
+      "source": "https://news.skhynix.com/en/q3-2026-business-results/",
+      "sources": [
+        "https://news.skhynix.com/en/q3-2026-business-results/"
+      ],
+      "caveat": "공식 영문·중문과 Reuters의 매출·영업이익 절대금액 일치. 연합뉴스 영업이익 전년비와 다른 출처의 증가율이 충돌해 해당 비율은 제외했다. '순익 역대 최대'도 사용하지 않았다."
+    },
+    {
+      "id": "n5",
+      "field": "IT",
+      "title": "2. MS, Azure 48% 성장…전체 실적과 AI 투자 회수는 구분해야",
+      "short": "MS, Azure 48% 성장…전체 실적과 AI 투자 회수는 구분해야",
+      "summary": "마이크로소프트는 28일 발표한 2027회계연도 1분기 실적에서 매출 923억달러, 영업이익 459억달러를 기록했다고 밝혔다. 전년 대비 각각 19%, 21% 늘었다. Microsoft Cloud 매출은 639억달러로 30%, Azure 매출은 48% 증가했다. MS 발표",
+      "metadata": "- 원문: https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast\n- 분야: IT\n- 날짜: 2026-10-28 (원문 기준; KST 확인 근거와 시각 한계는 아래 별도 표기)",
+      "detail": "/news/2026-10-29/IT.html#2-ms-azure-48-성장전체-실적과-ai-투자-회수는-구분해야",
+      "source": "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast",
+      "sources": [
+        "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast"
+      ],
+      "caveat": "GAAP와 조정 EPS(Earnings Per Share, 주당순이익)를 혼용하지 않았다. 일부 외부 기사는 4.92달러를 non-GAAP로 잘못 표기한다. 금융리스 포함 자본지출과 현금 설비취득액도 서로 다른 지표이므로 원고에 혼용하지 않았다."
+    },
+    {
+      "id": "n6",
+      "field": "IT",
+      "title": "3. 캐나다 사이버당국, Brotli 경보…숨은 의존성까지 업데이트 확인",
+      "short": "캐나다 사이버당국, Brotli 경보…숨은 의존성까지 업데이트 확인",
+      "summary": "캐나다 사이버보안센터는 28일 Brotli(웹 콘텐츠 등의 압축 기술) 압축해제 라이브러리의 공개 취약점 식별번호 CVE-2026-111497에 해당하는 취약점에 경보를 발령했다. 메모리 손상과 정보유출, 충돌 또는 임의 코드 실행으로 이어질 수 있다는 설명이다. 센터는 CISA(Cybersecurity and Infrastructure Security Agency, 미국 사이버보안·기반시설보안청)가 전날 이를 실제 악용 취약점 목록에 추가했다고 밝혔다. 캐나다 정부 경보",
+      "metadata": "- 원문: https://www.cyber.gc.ca/en/alerts-advisories/al26-027-critical-vulnerability-impacting-google-brotli-cve-2026-111497\n- 분야: IT\n- 날짜: 2026-10-28 (원문 기준; KST 확인 근거와 시각 한계는 아래 별도 표기)",
+      "detail": "/news/2026-10-29/IT.html#3-캐나다-사이버당국-brotli-경보숨은-의존성까지-업데이트-확인",
+      "source": "https://www.cyber.gc.ca/en/alerts-advisories/al26-027-critical-vulnerability-impacting-google-brotli-cve-2026-111497",
+      "sources": [
+        "https://www.cyber.gc.ca/en/alerts-advisories/al26-027-critical-vulnerability-impacting-google-brotli-cve-2026-111497"
+      ],
+      "caveat": "새 뉴스는 10/28 캐나다 경보다. 최초 공개나 패치가 이날 나왔다고 쓰지 않았다. CISA 직접 조회는 403 차단으로, KEV(Known Exploited Vulnerabilities, 실제 악용 취약점 목록) 추가 사실은 캐나다 정부 설명을 근거로 했다."
+    },
+    {
+      "id": "n7",
+      "field": "IT",
+      "title": "4. 어드밴테스트, 연간 전망 상향…AI 검사장비 수요 확산",
+      "short": "어드밴테스트, 연간 전망 상향…AI 검사장비 수요 확산",
+      "summary": "일본 검사장비 업체 어드밴테스트는 28일 올해 4~9월 누적 매출 8452억엔, 영업이익 4568억900만엔을 발표했다. 전년 동기 대비 각각 60.5%, 96.5% 늘었다. 이는 6개월 누적 실적이지 7~9월 단일 분기 수치가 아니다. 회사 재무자료",
+      "metadata": "- 원문: https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_2Q.pdf\n- 분야: IT\n- 날짜: 2026-10-28 (원문 기준; KST 확인 근거와 시각 한계는 아래 별도 표기)",
+      "detail": "/news/2026-10-29/IT.html#4-어드밴테스트-연간-전망-상향ai-검사장비-수요-확산",
+      "source": "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_2Q.pdf",
+      "sources": [
+        "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_2Q.pdf"
+      ],
+      "caveat": "공식 PDF의 단위 million yen과 누적기간을 확인했다. 재배포 자료를 독립적인 검증 보도로 세지 않았다."
+    },
+    {
+      "id": "n8",
+      "field": "X",
+      "title": "1. Satya Nadella — Copilot을 코드 보조에서 여러 에이전트의 작업 관리로",
+      "short": "Satya Nadella — Copilot을 코드 보조에서 여러 에이전트의 작업 관리로",
+      "summary": "Nadella는 GitHub Universe 발표를 소개하며 소프트웨어 개발 전 과정이 에이전트 중심으로 바뀐다는 메시지를 냈다. 인용 보도에서 강조한 항목은 작업에 맞게 모델을 조합하는 Copilot Fusion, 여러 저장소의 에이전트 작업을 묶는 Copilot Projects, 그리고 Microsoft Foundry에서 제공하는 실행 기반이다. 단순 코드 자동완성보다 작업을 배분하고 완료 결과를 검토하는 경험에 초점을 둔다.",
+      "metadata": "- 게시글: @satyanadella의 X 게시글\n- 검증 자료: 게시글 인용과 시각을 담은 Gokhshtein 보도, 원포스트 링크를 제시한 RuntimeWire 보도, GitHub Universe 공식 발표\n- 분야: X · AI 개발 도구\n- 날짜: 인용 매체가 제시한 게시 시각은 2026-10-28 17:08 UTC, 즉 2026-10-29 02:08 KST. X 자체 시각은 직접 확인하지 못했다.\n- 접근 상태: X 원포스트와 @satyanadella·@nvidia 프로필 열람은 HTTP 403. 인용 매체는 검색 도구가 반환한 본문으로 확인했으며, 별도 페이지 열기는 실패했다. 조회·좋아요·재게시 수는 확인하지 않았다.",
+      "detail": "/news/2026-10-29/X.html#1-satya-nadella--copilot을-코드-보조에서-여러-에이전트의-작업-관리로",
+      "source": "https://x.com/satyanadella/status/2115490856685990244",
+      "sources": [
+        "https://x.com/satyanadella/status/2115490856685990244",
+        "https://gokhshtein.com/news/2026-10-28-satya-nadella-details-github-copilot-advancements",
+        "https://runtimewire.com/article/github-copilot-agent-orchestration-universe-2026",
+        "https://github.blog/news-insights/company-news/github-universe-2026-evolving-every-layer-of-the-stack/"
+      ],
+      "caveat": "X 원포스트와 @satyanadella·@nvidia 프로필 열람은 HTTP 403. 인용 매체는 검색 도구가 반환한 본문으로 확인했으며, 별도 페이지 열기는 실패했다. 조회·좋아요·재게시 수는 확인하지 않았다. 기업 발표자의 주장이다. 공식 블로그도 같은 이해관계자이므로 독립 검증으로 취급하지 않았다. X 직접 열람과 반응 수 확인은 실패했다."
+    },
+    {
+      "id": "n9",
+      "field": "모델",
+      "title": "1. NVIDIA, 지시를 받아 전사하는 Nemotron 3.5 Transcribe 공개",
+      "short": "NVIDIA, 지시를 받아 전사하는 Nemotron 3.5 Transcribe 공개",
+      "summary": "NVIDIA가 전사·화자 구분·번역·음성 질의응답을 처리하는 공개가중치(학습된 모델 수치를 내려받는 방식) 모델 Nemotron 3.5 Transcribe를 발표했다. 공식 연구 페이지는 40개 언어와 최대 한 시간 녹음을 지원하며, 자연어 지시로 전사 형식을 바꿀 수 있다고 설명한다. 활성 파라미터(한 번의 처리에 실제 참여하는 모델 수치)는 약 43억 개다. 공식 연구 발표",
+      "metadata": "- 원문: https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/\n- 분야: 모델\n- 날짜: 2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "detail": "/news/2026-10-29/모델.html#1-nvidia-지시를-받아-전사하는-nemotron-35-transcribe-공개",
+      "source": "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/",
+      "sources": [
+        "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/"
+      ],
+      "caveat": "공식 연구 페이지 영어 WER(Word Error Rate, 단어 오류율)은 4.71%인데 일부 언론 보도에는 5.33%가 등장한다. 평가 시점·조건이 확인되지 않은 수치는 합쳐 쓰지 않는다. 본문에는 순위·오류율의 단정적 홍보를 넣지 않았다."
+    },
+    {
+      "id": "n10",
+      "field": "모델",
+      "title": "2. Rime, 발화 전 텍스트를 검사하는 기업용 음성 모델 Prism 출시",
+      "short": "Rime, 발화 전 텍스트를 검사하는 기업용 음성 모델 Prism 출시",
+      "summary": "Rime이 기업용 speech-to-speech(음성을 받아 음성으로 응답하는 방식) 모델 Prism을 출시했다. 실제 소리가 나오기 전에 텍스트를 만들어 기업 규칙으로 검사할 수 있다는 것이 핵심이다. 회사는 온프레미스(자체 시설에서 운영)·사설 클라우드 배포도 제시했다. 공식 상세 발표",
+      "metadata": "- 원문: https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise\n- 분야: 모델\n- 날짜: 2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "detail": "/news/2026-10-29/모델.html#2-rime-발화-전-텍스트를-검사하는-기업용-음성-모델-prism-출시",
+      "source": "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise",
+      "sources": [
+        "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise"
+      ],
+      "caveat": "인간 수준이라는 주장과 직접 검증된 결과를 구분했다. 상세 발표의 0.57초를 사용했으며 SNS 재전재의 300ms를 섞지 않았다. 회사 명의 PR Newswire 발표 역시 독립 검증 자료가 아니다."
+    },
+    {
+      "id": "n11",
+      "field": "엔진",
+      "title": "1. llama.cpp 0.8.0, 로컬 실시간 음성·도구 호출을 하나의 서버로",
+      "short": "llama.cpp 0.8.0, 로컬 실시간 음성·도구 호출을 하나의 서버로",
+      "summary": "llama.cpp가 0.8.0을 공개했다. 이번 변화는 작은 속도 패치보다 실행 범위의 확장에 가깝다. Liquid AI의 LFM3 텍스트·비전·오디오·옴니 모델군을 지원하고, 서버에 실시간 대화·전사용 /v1/realtime과 음성 합성용 /tts 경로를 추가했다. 모델 발표 자체와 이를 실제로 실행하는 엔진 지원을 구분해 볼 소식이다.",
+      "metadata": "- 원문: 공식 v0.8.0 릴리스, 실시간 도구 호출 PR 31287, LFM3 영상 입력 PR 31283\n- 분야: 엔진 · 로컬 추론 · 음성\n- 날짜: 2026-10-28 21:47 KST 릴리스 공개. GitHub API의 published_at은 2026-10-28T12:47:51Z.",
+      "detail": "/news/2026-10-29/엔진.html#1-llamacpp-080-로컬-실시간-음성도구-호출을-하나의-서버로",
+      "source": "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
+      "sources": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
+        "https://github.com/ggml-org/llama.cpp/pull/31287",
+        "https://github.com/ggml-org/llama.cpp/pull/31283"
+      ],
+      "caveat": "개발자 변경 기록이며 독립 성능평가가 아니다. PR의 예시 지연시간을 일반적인 성능 보장으로 옮기지 않았다. 실험적 인터페이스와 모델별 지원 차이가 있다."
+    },
+    {
+      "id": "g1",
+      "field": "GitHub",
+      "title": "HKUDS/DeepTutor",
+      "short": "HKUDS/DeepTutor",
+      "summary": "문서 지식베이스와 대화, 학습 계획, 노트북을 묶은 학습 에이전트다. v1.7.0은 블록 단위 노트와 Dito 보조 편집, 모듈별 설치, 자막·선택적 음성 해설을 갖춘 Video Lesson을 추가했다. 생성 코드는 WebAssembly(브라우저 등에서 실행하는 이식 가능한 코드 형식) 인터프리터 안에서 제한적으로 검사한다.",
+      "detail": "/github/2026-10-29.html#hkuds-deeptutor",
+      "source": "https://github.com/HKUDS/DeepTutor",
+      "caveat": "교육 효과는 독립 검증하지 않았다. 인용이 있어도 수학·사실 오류를 원문과 대조해야 한다. 코어와 기능 패키지 버전을 맞추고 실행 중 모듈을 바꾸지 말라는 릴리스 주의가 있다. 개인 문서와 외부 모델 연결의 전송 범위도 확인해야 한다. 저장소 생성일은 2025-12-28(UTC), 열린 이슈·PR 합계는 203건이다.",
+      "trend": "일간 +2,376으로 어제 +1,587보다 표시 증가량이 789 커졌다. v1.7.0은 10/28 23:13 KST 공개됐다. 새 기능과 별 증가가 함께 관측됐지만 인과관계는 확인되지 않았다. Hacker News 검색에서 관련 글은 확인했으나 현재 유행의 주원인으로 단정하지 않는다. 확인한 HN 글은 과거 글을 포함하며 오늘의 반응으로 집계하지 않았다."
+    },
+    {
+      "id": "g2",
+      "field": "GitHub",
+      "title": "debpalash/VoiceStudio",
+      "short": "debpalash/VoiceStudio",
+      "summary": "컴퓨터와 휴대전화에서 음성 모델을 내려받아 구동하는 앱이다. 제작자는 646개 언어를 내세우지만 언어별 품질을 독립 시험한 수치는 아니다. 모델 관리, 영상 더빙, 오디오북과 일괄 작업을 묶고 외부 연동 기능도 제공한다.",
+      "detail": "/github/2026-10-29.html#debpalash-voicestudio",
+      "source": "https://github.com/debpalash/VoiceStudio",
+      "caveat": "0.x 버전이며 iOS·Android는 프리뷰다. 본인 소유 또는 사용 동의를 받은 음성만 다루고 합성음성임을 밝히는 것이 필요하다. 앱의 AGPL-3.0과 각 모델의 사용허락 조건은 별개다. 특히 기본 OmniVoice 등 모델별 상업 이용 조건을 따로 확인해야 한다. Windows 설치파일은 서명되지 않았다는 릴리스 설명도 있다. 저장소 생성일은 2026-04-09(UTC), 열린 이슈·PR 합계는 48건이다.",
+      "trend": "Python 일간 +1,831로 어제 +2,601보다 770 낮다. 누적 별은 계속 늘어도 하루 표시 증가폭은 줄 수 있다. 최신 v0.5.7은 10/26 23:59 KST로 오늘 신규 발표가 아니다. 해당 버전의 모바일 프리뷰와 CPU 설치 개선은 계속 관찰할 기능이다. 확인한 HN 글은 과거 글을 포함하며 오늘의 반응으로 집계하지 않았다."
+    },
+    {
+      "id": "g3",
+      "field": "GitHub",
+      "title": "Nutlope/hallmark",
+      "short": "Nutlope/hallmark",
+      "summary": "코딩 에이전트에 디자인 절차를 제공한다. README는 50개 테마, 사용 목적에 따른 페이지 구성, 실제 화면 캡처, 정적·브라우저 검사, 새 맥락의 검토자를 설명한다. 대비·키보드 포커스·모션 감소 설정·허위 사실·깨진 모바일 화면은 통과시켜선 안 되는 기본선으로 분리한다.",
+      "detail": "/github/2026-10-29.html#nutlope-hallmark",
+      "source": "https://github.com/Nutlope/hallmark",
+      "caveat": "별도 최신 릴리스가 없어 실제 사용하는 커밋을 고정하는 편이 재현에 유리하다. MIT는 코드에 대한 조건이며 사진은 각각 별도 라이선스와 표시 조건을 갖는다. 제작자가 제시한 ‘AI처럼 보이지 않음’은 미적 주장이다. 자동 검사를 통과해도 실제 폼 전송·접근성·아이폰 화면을 직접 확인해야 한다. 저장소 생성일은 2026-04-27(UTC), 열린 이슈·PR 합계는 67건이다.",
+      "trend": "일간 +2,109로 어제 +2,859보다 750 낮지만 디자인 도구의 강세는 유지된다. README의 50개 테마는 어제도 확인된 수치이며 오늘 새로 추가됐다고 쓰지 않는다. GitHub 최신 릴리스 조회는 404여서 별도 정식 릴리스 날짜를 붙이지 않았다. 확인한 HN 글은 과거 글을 포함하며 오늘의 반응으로 집계하지 않았다."
+    },
+    {
+      "id": "g4",
+      "field": "GitHub",
+      "title": "elayadesign/ai-design-skills",
+      "short": "elayadesign/ai-design-skills",
+      "summary": "현재 README 표에 실린 스킬은 landing-page-design 한 개다. 요구사항 질문, 페이지 구조, 전환을 위한 문구, 글꼴·간격·모서리·모션을 포함한 시각 체계를 다룬다. ‘계속 커지는 모음’이라는 소개를 이미 여러 스킬이 있다는 뜻으로 해석하면 안 된다.",
+      "detail": "/github/2026-10-29.html#elayadesign-ai-design-skills",
+      "source": "https://github.com/elayadesign/ai-design-skills",
+      "caveat": "개발 초기의 작은 모음이며 정식 릴리스가 확인되지 않는다. README의 ‘표시 불필요’라는 문장보다 실제 MIT 허가문의 저작권·허가문 유지 조건을 우선 확인해야 한다. 외부 스킬은 상위 지시를 바꿀 권한이 없으며 문구·디자인 자동 생성이 사업 성과를 보장하지 않는다. 저장소 생성일은 2026-07-29(UTC), 열린 이슈·PR 합계는 7건이다.",
+      "trend": "일간 +1,938로 어제 +1,395보다 543 높다. 10/28 카드에 이어 다시 선정했으며 저장소 신규 공개를 뜻하지 않는다. 최신 릴리스 조회는 404, 외부 반응 검색에서는 저장소명에 해당하는 Hacker News 글을 찾지 못했다. 인기 원인은 확정할 수 없다."
+    },
+    {
+      "id": "g5",
+      "field": "GitHub",
+      "title": "pbakaus/impeccable",
+      "short": "pbakaus/impeccable",
+      "summary": "현재 README 기준 1개 스킬, 24개 명령, 62개 결정적 탐지 규칙을 제공한다. 여기서 결정적 검사는 같은 입력에 같은 규칙을 적용하는 검사라는 뜻이다. 디자인 비평과 별도로 명령행·브라우저 확장 검사는 언어 모델이나 API 키 없이 실행할 수 있다고 설명한다.",
+      "detail": "/github/2026-10-29.html#pbakaus-impeccable",
+      "source": "https://github.com/pbakaus/impeccable",
+      "caveat": "62개 규칙은 전체 접근성·보안 보증서가 아니다. 모델의 미적 비평과 반복 가능한 검사 결과를 구분해야 한다. 첫 실행 시 엔진 바이너리 다운로드가 있을 수 있고 훅은 파일 편집에 관여하므로 신뢰할 버전·범위를 확인해야 한다. Apache-2.0 조건도 함께 검토한다. 저장소 생성일은 2025-11-16(UTC), 열린 이슈·PR 합계는 48건이다.",
+      "trend": "일간 +1,471로 어제 +1,458보다 13 높고, 주간은 +6,713이다. 최신 cli-v4.8.0은 10/27 08:41 KST 공개됐다. GitHub Actions 줄 단위 주석과 규칙 목록 출력 등을 추가했지만 오늘 발표는 아니다. 별 증가 원인을 릴리스 하나로 환원하지 않는다."
+    },
+    {
+      "id": "g6",
+      "field": "GitHub",
+      "title": "obra/superpowers",
+      "short": "obra/superpowers",
+      "summary": "서로 조합할 수 있는 스킬로 설계 승인, 구현 계획, 격리 작업, 검토, TDD(Test-Driven Development·테스트를 먼저 쓰는 개발)를 연결한다. 실행 엔진이나 모델 자체를 대체하기보다 기존 코딩 도구의 일하는 방식을 구성하는 층이다.",
+      "detail": "/github/2026-10-29.html#obra-superpowers",
+      "source": "https://github.com/obra/superpowers",
+      "caveat": "릴리스의 승인 누락 감소 시험은 제작자의 제한된 시나리오 결과이지 모든 작업에서의 보장 수치가 아니다. 스킬이 있다고 명령 실행이 격리되거나 권한 승인이 자동 보장되지 않는다. 모델 호출·검토 루프 비용과 MIT 조건을 확인하고, 실제 테스트 없이 완료라고 보고하지 않도록 운영 절차를 유지해야 한다. 저장소 생성일은 2025-10-09(UTC), 열린 이슈·PR 합계는 369건이다.",
+      "trend": "일간 전체 목록에서 +1,096을 확인했다. 어제 브리핑의 10개 카드에는 없었으므로 오늘의 새 선정이지 저장소 신설은 아니다. 최신 v7.0.1은 10/22 06:05 KST로, 반복적 질문을 줄이고 먼저 프로젝트 문맥을 읽도록 조정했다. 오늘 증가의 원인은 확인되지 않았다."
+    },
+    {
+      "id": "g7",
+      "field": "GitHub",
+      "title": "JetBrains/thinkrail",
+      "short": "JetBrains/thinkrail",
+      "summary": "JetBrains 인큐베이터 프로젝트인 ThinkRail은 pi 코딩 에이전트 주위에 편집기·터미널·대화·변경 검토 화면을 붙인 통합개발환경이다. Git worktree(한 저장소에서 여러 작업 디렉터리를 분리하는 기능)로 병렬 작업을 나누고, 코드 옆의 SPEC.md 명세를 지속적으로 유지해 다음 대화에서도 설계 의도를 참조하게 한다. 데스크톱 앱과 브라우저 인터페이스를 제공한다.",
+      "detail": "/github/2026-10-29.html#jetbrains-thinkrail",
+      "source": "https://github.com/JetBrains/thinkrail",
+      "caveat": "2026년 7월 생성된 0.x 프로젝트이며 열린 이슈·PR 합계는 241건이다. 기본 사용 이벤트와 오류 보고가 전송된다고 README에 명시돼 있으므로 ‘분석 끄기’ 옵션을 모든 수집 중단으로 해석하면 안 된다. 저장소가 정의한 외부 도구와 코드 실행의 신뢰 여부를 검토하고, 모델 공급자 데이터 처리 정책도 별도로 확인해야 한다.",
+      "trend": "전체 일간 Trending에서 +1,075를 확인했다. 10/27 브리핑에 실렸으므로 재선정으로 표시했다. 단순 채팅보다 여러 에이전트의 작업을 분리하고 결과를 검토하려는 용도와 맞닿아 있다는 것이 편집부의 해석이다. 최신 정식 릴리스 v0.2.0은 10월 19일 KST에 게시됐으며 MCP(Model Context Protocol·모델과 외부 도구를 연결하는 규약) 서버 관리·변경 검토·작업공간 관련 개선이 포함됐다. 오늘의 증가가 새 릴리스 때문이라고 단정할 근거는 없다."
+    },
+    {
+      "id": "g8",
+      "field": "GitHub",
+      "title": "alibaba/open-code-review",
+      "short": "alibaba/open-code-review",
+      "summary": "OpenCodeReview는 Git 변경 내역을 읽고 관련 파일과 문맥을 모델에 전달해 줄 단위 리뷰 의견을 만드는 명령줄 도구다. 전체 파일을 검사하는 ocr scan도 제공한다. 파일 묶기·규칙 선택·의견 위치 조정은 프로그램이 담당하고, 에이전트가 코드 문맥을 조사하는 혼합 구조다.",
+      "detail": "/github/2026-10-29.html#alibaba-open-code-review",
+      "source": "https://github.com/alibaba/open-code-review",
+      "caveat": "2026년 5월 생성된 프로젝트로 열린 이슈·PR 합계는 361건이다. 모델 공급자에 변경 코드와 문맥이 전달될 수 있으므로 회사 코드의 외부 전송 정책과 비용을 먼저 확인해야 한다. README도 높은 정밀도(지적한 문제 중 실제 문제의 비율)를 위해 재현율(실제 문제 중 찾아낸 비율)이 낮아지는 절충을 인정한다. ‘지적이 적다’를 ‘결함이 없다’로 해석하지 말고 테스트와 사람의 검토를 유지해야 한다.",
+      "trend": "Go 일간 Trending에서 +312를 확인했다. 생성된 코드를 더 많이 검토해야 하는 개발 흐름에 대응하는 도구라는 해석은 가능하다. 다만 Alibaba 내부 개발자 수·발견 결함 수와 토큰 절감 벤치마크는 제작자 자체 설명이다. 최신 v1.13.3은 빈 리뷰 의견 묶음 처리, MCP 도구 목록 페이지 처리와 PR 정책 검사 상태 오염 문제를 수정한 릴리스다."
+    },
+    {
+      "id": "g9",
+      "field": "GitHub",
+      "title": "cloudflare/security-audit-skill",
+      "short": "cloudflare/security-audit-skill",
+      "summary": "구조·신뢰 경계 파악, 검사 범위 기록, 후보 조사, 검증, 구조화 결과, 독립 확인과 보고를 연결한다. confirmed, needs_validation, rejected를 분리하고 미해결 결과를 확정 취약점처럼 쓰지 않는 설계다.",
+      "detail": "/github/2026-10-29.html#cloudflare-security-audit-skill",
+      "source": "https://github.com/cloudflare/security-audit-skill",
+      "caveat": "자체 설명의 반복 실행 탐지 효과를 독립 성능검증으로 인용하지 않았다. 권한 없는 시스템이나 실서비스를 시험하면 안 된다. 격리 조건을 갖추지 못하면 실행 대신 검증 필요 상태로 남겨야 한다. 별 수와 MIT 라이선스는 발견 내용의 정확성·완전성을 보증하지 않는다. 저장소 생성일은 2026-06-18(UTC), 열린 이슈·PR 합계는 101건이다.",
+      "trend": "주간 +16,388로 어제 주간 표시 +16,593보다 205 낮다. 이동하는 주간 창의 값이므로 오늘 하루 별이 205 감소했다는 뜻이 아니다. Hacker News에서 관련 글과 토론이 확인되지만 전체 커뮤니티의 평가를 대표하지 않는다. 최신 릴리스는 조회되지 않았다. 확인한 HN 글은 과거 글을 포함하며 오늘의 반응으로 집계하지 않았다."
+    },
+    {
+      "id": "g10",
+      "field": "GitHub",
+      "title": "trymirai/uzu",
+      "short": "trymirai/uzu",
+      "summary": "uzu는 모델 다운로드와 실행, 대화 세션을 높은 수준의 API로 묶는다. Swift·Python·TypeScript 연결을 제공하며 Apple 기기의 통합 메모리를 활용한다. 로컬 앱에 AI 기능을 넣거나, 로컬 HTTP 서버를 통해 기존 클라이언트와 연결하려는 용도다.",
+      "detail": "/github/2026-10-29.html#trymirai-uzu",
+      "source": "https://github.com/trymirai/uzu",
+      "caveat": "2025년 6월 생성됐으며 열린 이슈·PR 합계는 25건이다. Windows·Linux·일부 WebAssembly 대상은 README에 개발 중으로 표시돼 있다. ‘지연 없음·완전한 개인정보 보호·추론 비용 없음’은 제작자의 홍보 문구로, 실제 지연·메모리·전력 비용이 사라진다는 뜻이 아니다. MIT는 엔진 코드의 라이선스이며 내려받는 모델의 이용 조건은 별도로 확인해야 한다.",
+      "trend": "Rust 일간 Trending에서 +360을 확인했다. API 호출 중심 개발 외에 앱 내부 추론을 선택하려는 관심과 연결해 읽을 수 있지만, 별 증가의 직접 원인은 검증하지 못했다. 최신 릴리스는 10월 23일 KST의 0.6.13이며 릴리스 본문이 비어 있어 이번 버전의 성능 개선을 주장하지 않는다."
+    }
+  ],
+  "slides": [
+    {
+      "kicker": "THE DAILY / 2026-10-29",
+      "title": "2026-10-29\n하루 전체 브리핑",
+      "intro": "뉴스 11건과 GitHub 10개 카드를 함께 읽습니다. 관계도는 원문 요약을 구조화한 편집 해설이며 인과관계나 정량 통계가 아닙니다.",
+      "nodes": [
+        "뉴스",
+        "개발 도구",
+        "확인점"
+      ],
+      "labels": [
+        "아카이브 뉴스 11건",
+        "GitHub 카드 10개",
+        "조건·출처·검증 한계"
+      ],
+      "kind": "orbit",
+      "refs": [],
+      "narration": [
+        "10월 29일 하루 브리핑을 시작하겠습니다. 오늘 아카이브의 뉴스 11건을 차례로 살펴보겠습니다.",
+        "이어서 깃허브 도구 10개를 기능과 사용 방법, 주의점으로 나눠 설명하겠습니다.",
+        "발표와 계획, 실제로 확인된 결과는 구분해서 읽어 주세요. 모든 항목의 상세 기사와 원문은 아래 목차에 연결했습니다."
+      ]
+    },
+    {
+      "kicker": "AI / 2026-10-29",
+      "title": "OpenAI–ServiceNow, 대화창과 기업 업무 시스템의 연결 확대",
+      "intro": "OpenAI와 ServiceNow가 개발·IT 업무·보안 영역의 제휴 확대를 발표했다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "OpenAI와 ServiceNow가 개발·IT 업무·보안 영역의 제휴 확대를 발표했다.",
+        "전체 기능이 즉시 출시된 것은 아니다.",
+        "‘신뢰할 수 있는 실행’은 공급자의 설명이다."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n1"
+      ],
+      "note": "‘신뢰할 수 있는 실행’은 공급자의 설명이다. 권한 적용과 독립 보안 검증을 동일시하지 않았다.",
+      "narration": [
+        "OpenAI와 ServiceNow가 개발·IT 업무·보안 영역의 제휴 확대를 발표했다.",
+        "전체 기능이 즉시 출시된 것은 아니다.",
+        "여기서 확인할 한계입니다. ‘신뢰할 수 있는 실행’은 공급자의 설명이다."
+      ]
+    },
+    {
+      "kicker": "AI / 2026-10-29",
+      "title": "Fragment, 조달 업무 AI로 누적 5,600만 달러 투자 공개",
+      "intro": "기업용 AI 스타트업 Fragment가 출시와 함께 누적 5,600만 달러 투자 유치를 발표했다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "기업용 AI 스타트업 Fragment가 출시와 함께 누적 5,600만 달러 투자 유치를 발표했다.",
+        "회사는 제조·유통·에너지 기업의 구매와 지급 과정에서 발생하는 예외 처리를 겨냥한다.",
+        "투자금은 누적액이며, 고객 추천은 독립 성과평가가 아니다."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n2"
+      ],
+      "note": "투자금은 누적액이며, 고객 추천은 독립 성과평가가 아니다. 일부 재보도의 ‘5,600만 달러 시리즈 A’ 표현을 배제했다.",
+      "narration": [
+        "기업용 AI 스타트업 Fragment가 출시와 함께 누적 5,600만 달러 투자 유치를 발표했다.",
+        "회사는 제조·유통·에너지 기업의 구매와 지급 과정에서 발생하는 예외 처리를 겨냥한다.",
+        "여기서 확인할 한계입니다. 투자금은 누적액이며, 고객 추천은 독립 성과평가가 아니다."
+      ]
+    },
+    {
+      "kicker": "AI / 2026-10-29",
+      "title": "Anthropic, AI for Science 지원을 연구기관·재단으로 확대",
+      "intro": "Anthropic이 AI for Science 프로그램에서 협력하는 과학 재단·기관·연구그룹 20곳을 공개했다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "Anthropic이 AI for Science 프로그램에서 협력하는 과학 재단·기관·연구그룹 20곳을 공개했다.",
+        "이번 발표는 개별 연구자 지원에서 기관 단위 협력으로 범위를 넓히는 내용이다.",
+        "지원 규모와 검증된 연구 성과를 혼동하지 않았다."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n3"
+      ],
+      "note": "지원 규모와 검증된 연구 성과를 혼동하지 않았다. ‘20곳 신규 계약’ 대신 ‘20곳 협력기관·그룹 공개’로 표현했다.",
+      "narration": [
+        "Anthropic이 AI for Science 프로그램에서 협력하는 과학 재단·기관·연구그룹 20곳을 공개했다.",
+        "이번 발표는 개별 연구자 지원에서 기관 단위 협력으로 범위를 넓히는 내용이다.",
+        "여기서 확인할 한계입니다. 지원 규모와 검증된 연구 성과를 혼동하지 않았다."
+      ]
+    },
+    {
+      "kicker": "IT / 2026-10-29",
+      "title": "SK하이닉스, 분기 매출 100조원 돌파…HBM4·장기계약 확대",
+      "intro": "SK하이닉스는 28일 3분기 매출 104조6155억원, 영업이익 83조3338억원을 발표했다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "SK하이닉스는 28일 3분기 매출 104조6155억원, 영업이익 83조3338억원을 발표했다.",
+        "회사는 2027~2028년 생산능력의 50% 이상에 해당하는 장기계약을 확보했다고 밝혔다.",
+        "공식 영문·중문과 Reuters의 매출·영업이익 절대금액 일치."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n4"
+      ],
+      "note": "공식 영문·중문과 Reuters의 매출·영업이익 절대금액 일치. 연합뉴스 영업이익 전년비와 다른 출처의 증가율이 충돌해 해당 비율은 제외했다. '순익 역대 최대'도 사용하지 않았다.",
+      "narration": [
+        "SK하이닉스는 28일 3분기 매출 104조6155억원, 영업이익 83조3338억원을 발표했다.",
+        "회사는 2027~2028년 생산능력의 50% 이상에 해당하는 장기계약을 확보했다고 밝혔다.",
+        "여기서 확인할 한계입니다. 공식 영문·중문과 Reuters의 매출·영업이익 절대금액 일치."
+      ]
+    },
+    {
+      "kicker": "IT / 2026-10-29",
+      "title": "MS, Azure 48% 성장…전체 실적과 AI 투자 회수는 구분해야",
+      "intro": "마이크로소프트는 28일 발표한 2027회계연도 1분기 실적에서 매출 923억달러, 영업이익 459억달러를 기록했다고 밝혔다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "마이크로소프트는 28일 발표한 2027회계연도 1분기 실적에서 매출 923억달러, 영업이익 459억달러를 기록했다고 밝혔다.",
+        "반면 Windows OEM(Original Equipment Manufacturer, 완제품 제조사 공급)·기기 매출은 22% 감소했다.",
+        "GAAP와 조정 EPS(Earnings Per Share, 주당순이익)를 혼용하지 않았다."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n5"
+      ],
+      "note": "GAAP와 조정 EPS(Earnings Per Share, 주당순이익)를 혼용하지 않았다. 일부 외부 기사는 4.92달러를 non-GAAP로 잘못 표기한다. 금융리스 포함 자본지출과 현금 설비취득액도 서로 다른 지표이므로 원고에 혼용하지 않았다.",
+      "narration": [
+        "마이크로소프트는 28일 발표한 2027회계연도 1분기 실적에서 매출 923억달러, 영업이익 459억달러를 기록했다고 밝혔다.",
+        "반면 Windows OEM(Original Equipment Manufacturer, 완제품 제조사 공급)·기기 매출은 22% 감소했다.",
+        "여기서 확인할 한계입니다. GAAP와 조정 EPS(Earnings Per Share, 주당순이익)를 혼용하지 않았다."
+      ]
+    },
+    {
+      "kicker": "IT / 2026-10-29",
+      "title": "캐나다 사이버당국, Brotli 경보…숨은 의존성까지 업데이트 확인",
+      "intro": "캐나다 사이버보안센터는 28일 Brotli(웹 콘텐츠 등의 압축 기술) 압축해제 라이브러리의 공개 취약점 식별번호 CVE-2026-111497에 해당하는 취약점에 경보를 발령했다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "캐나다 사이버보안센터는 28일 Brotli(웹 콘텐츠 등의 압축 기술) 압축해제 라이브러리의 공개 취약점 식별번호 CVE-2026-111497에 해당하는 취약점에 경보를 발령했다.",
+        "수정판은 Brotli 1.0.10·1.1.1·1.2.1이다.",
+        "새 뉴스는 10/28 캐나다 경보다."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n6"
+      ],
+      "note": "새 뉴스는 10/28 캐나다 경보다. 최초 공개나 패치가 이날 나왔다고 쓰지 않았다. CISA 직접 조회는 403 차단으로, KEV(Known Exploited Vulnerabilities, 실제 악용 취약점 목록) 추가 사실은 캐나다 정부 설명을 근거로 했다.",
+      "narration": [
+        "캐나다 사이버보안센터는 28일 Brotli(웹 콘텐츠 등의 압축 기술) 압축해제 라이브러리의 공개 취약점 식별번호 CVE-2026-111497에 해당하는 취약점에 경보를 발령했다.",
+        "수정판은 Brotli 1.0.10·1.1.1·1.2.1이다.",
+        "여기서 확인할 한계입니다. 새 뉴스는 10/28 캐나다 경보다."
+      ]
+    },
+    {
+      "kicker": "IT / 2026-10-29",
+      "title": "어드밴테스트, 연간 전망 상향…AI 검사장비 수요 확산",
+      "intro": "일본 검사장비 업체 어드밴테스트는 28일 올해 4~9월 누적 매출 8452억엔, 영업이익 4568억900만엔을 발표했다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "일본 검사장비 업체 어드밴테스트는 28일 올해 4~9월 누적 매출 8452억엔, 영업이익 4568억900만엔을 발표했다.",
+        "회사는 2027년 3월 끝나는 회계연도 매출 전망을 1조7140억엔에서 1조8630억엔, 영업이익 전망을 8460억엔에서 9670억엔으로 높였다.",
+        "공식 PDF의 단위 million yen과 누적기간을 확인했다."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n7"
+      ],
+      "note": "공식 PDF의 단위 million yen과 누적기간을 확인했다. 재배포 자료를 독립적인 검증 보도로 세지 않았다.",
+      "narration": [
+        "일본 검사장비 업체 어드밴테스트는 28일 올해 4~9월 누적 매출 8452억엔, 영업이익 4568억900만엔을 발표했다.",
+        "회사는 2027년 3월 끝나는 회계연도 매출 전망을 1조7140억엔에서 1조8630억엔, 영업이익 전망을 8460억엔에서 9670억엔으로 높였다.",
+        "여기서 확인할 한계입니다. 공식 PDF의 단위 million yen과 누적기간을 확인했다."
+      ]
+    },
+    {
+      "kicker": "X / 2026-10-29",
+      "title": "Satya Nadella — Copilot을 코드 보조에서 여러 에이전트의 작업 관리로",
+      "intro": "Nadella는 GitHub Universe 발표를 소개하며 소프트웨어 개발 전 과정이 에이전트 중심으로 바뀐다는 메시지를 냈다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "Nadella는 GitHub Universe 발표를 소개하며 소프트웨어 개발 전 과정이 에이전트 중심으로 바뀐다는 메시지를 냈다.",
+        "제품의 구체적인 범위는 GitHub 공식 발표에서 확인했다.",
+        "X 원포스트와 @satyanadella·@nvidia 프로필 열람은 HTTP 403."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n8"
+      ],
+      "note": "X 원포스트와 @satyanadella·@nvidia 프로필 열람은 HTTP 403. 인용 매체는 검색 도구가 반환한 본문으로 확인했으며, 별도 페이지 열기는 실패했다. 조회·좋아요·재게시 수는 확인하지 않았다. 기업 발표자의 주장이다. 공식 블로그도 같은 이해관계자이므로 독립 검증으로 취급하지 않았다. X 직접 열람과 반응 수 확인은 실패했다.",
+      "narration": [
+        "Nadella는 GitHub Universe 발표를 소개하며 소프트웨어 개발 전 과정이 에이전트 중심으로 바뀐다는 메시지를 냈다.",
+        "제품의 구체적인 범위는 GitHub 공식 발표에서 확인했다.",
+        "여기서 확인할 한계입니다. X 원포스트와 @satyanadella·@nvidia 프로필 열람은 HTTP 403."
+      ]
+    },
+    {
+      "kicker": "모델 / 2026-10-29",
+      "title": "NVIDIA, 지시를 받아 전사하는 Nemotron 3.5 Transcribe 공개",
+      "intro": "NVIDIA가 전사·화자 구분·번역·음성 질의응답을 처리하는 공개가중치(학습된 모델 수치를 내려받는 방식) 모델 Nemotron 3.5 Transcribe를 발표했다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "NVIDIA가 전사·화자 구분·번역·음성 질의응답을 처리하는 공개가중치(학습된 모델 수치를 내려받는 방식) 모델 Nemotron 3.5 Transcribe를 발표했다.",
+        "단순 받아쓰기와 달리 전문 용어·출력 형식을 미리 지정하거나 화자별 기록을 요구할 수 있다는 점이 특징이다.",
+        "공식 연구 페이지 영어 WER(Word Error Rate, 단어 오류율)은 4.71%인데 일부 언론 보도에는 5.33%가 등장한다."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n9"
+      ],
+      "note": "공식 연구 페이지 영어 WER(Word Error Rate, 단어 오류율)은 4.71%인데 일부 언론 보도에는 5.33%가 등장한다. 평가 시점·조건이 확인되지 않은 수치는 합쳐 쓰지 않는다. 본문에는 순위·오류율의 단정적 홍보를 넣지 않았다.",
+      "narration": [
+        "NVIDIA가 전사·화자 구분·번역·음성 질의응답을 처리하는 공개가중치(학습된 모델 수치를 내려받는 방식) 모델 Nemotron 3.5 Transcribe를 발표했다.",
+        "단순 받아쓰기와 달리 전문 용어·출력 형식을 미리 지정하거나 화자별 기록을 요구할 수 있다는 점이 특징이다.",
+        "여기서 확인할 한계입니다. 공식 연구 페이지 영어 WER(Word Error Rate, 단어 오류율)은 4.71%인데 일부 언론 보도에는 5.33%가 등장한다."
+      ]
+    },
+    {
+      "kicker": "모델 / 2026-10-29",
+      "title": "Rime, 발화 전 텍스트를 검사하는 기업용 음성 모델 Prism 출시",
+      "intro": "Rime이 기업용 speech-to-speech(음성을 받아 음성으로 응답하는 방식) 모델 Prism을 출시했다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "Rime이 기업용 speech-to-speech(음성을 받아 음성으로 응답하는 방식) 모델 Prism을 출시했다.",
+        "Rime은 자체 실행한 τ-Voice(고객 응대·도구 사용을 평가하는 음성 에이전트 시험) 평가에서 56.6점, 첫 음성까지 0.57초를 기록했다고 밝혔다.",
+        "인간 수준이라는 주장과 직접 검증된 결과를 구분했다."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n10"
+      ],
+      "note": "인간 수준이라는 주장과 직접 검증된 결과를 구분했다. 상세 발표의 0.57초를 사용했으며 SNS 재전재의 300ms를 섞지 않았다. 회사 명의 PR Newswire 발표 역시 독립 검증 자료가 아니다.",
+      "narration": [
+        "Rime이 기업용 speech-to-speech(음성을 받아 음성으로 응답하는 방식) 모델 Prism을 출시했다.",
+        "Rime은 자체 실행한 τ-Voice(고객 응대·도구 사용을 평가하는 음성 에이전트 시험) 평가에서 56.6점, 첫 음성까지 0.57초를 기록했다고 밝혔다.",
+        "여기서 확인할 한계입니다. 인간 수준이라는 주장과 직접 검증된 결과를 구분했다."
+      ]
+    },
+    {
+      "kicker": "엔진 / 2026-10-29",
+      "title": "llama.cpp 0.8.0, 로컬 실시간 음성·도구 호출을 하나의 서버로",
+      "intro": "llama.cpp가 0.8.0을 공개했다.",
+      "nodes": [
+        "발표 내용",
+        "적용 범위",
+        "검증 범위"
+      ],
+      "labels": [
+        "llama.cpp가 0.8.0을 공개했다.",
+        "같은 날 병합된 도구 호출 변경은 LFM3-Audio-2B와 LFM3-Omni-2B를 대상으로 음성 요청, 도구 실행, 결과를 받아 음성으로 답하는 흐름을 예시로 제시한다.",
+        "개발자 변경 기록이며 독립 성능평가가 아니다."
+      ],
+      "kind": "matrix",
+      "refs": [
+        "n11"
+      ],
+      "note": "개발자 변경 기록이며 독립 성능평가가 아니다. PR의 예시 지연시간을 일반적인 성능 보장으로 옮기지 않았다. 실험적 인터페이스와 모델별 지원 차이가 있다.",
+      "narration": [
+        "llama.cpp가 0.8.0을 공개했다.",
+        "같은 날 병합된 도구 호출 변경은 LFM3-Audio-2B와 LFM3-Omni-2B를 대상으로 음성 요청, 도구 실행, 결과를 받아 음성으로 답하는 흐름을 예시로 제시한다.",
+        "여기서 확인할 한계입니다. 개발자 변경 기록이며 독립 성능평가가 아니다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "HKUDS/DeepTutor",
+      "intro": "일간 +2,376으로 어제 +1,587보다 표시 증가량이 789 커졌다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "문서 지식베이스와 대화, 학습 계획, 노트북을 묶은 학습 에이전트다.",
+        "전체 웹 앱은 새 설치 프로필인 deeptutor[full]을 사용한다.",
+        "교육 효과는 독립 검증하지 않았다."
+      ],
+      "kind": "orbit",
+      "refs": [
+        "g1"
+      ],
+      "note": "교육 효과는 독립 검증하지 않았다.",
+      "narration": [
+        "다음은 HKUDS의 DeepTutor입니다. 문서 지식베이스와 대화, 학습 계획, 노트북을 묶은 학습 에이전트다.",
+        "전체 웹 앱은 새 설치 프로필인 deeptutor[full]을 사용한다.",
+        "교육 효과는 독립 검증하지 않았다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "debpalash/VoiceStudio",
+      "intro": "Python 일간 +1,831로 어제 +2,601보다 770 낮다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "컴퓨터와 휴대전화에서 음성 모델을 내려받아 구동하는 앱이다.",
+        "운영체제에 맞는 공식 배포본과 필요한 모델을 고른 뒤 짧은 비민감 텍스트로 시험한다.",
+        "0.x 버전이며 iOS·Android는 프리뷰다."
+      ],
+      "kind": "orbit",
+      "refs": [
+        "g2"
+      ],
+      "note": "0.x 버전이며 iOS·Android는 프리뷰다.",
+      "narration": [
+        "다음은 debpalash의 VoiceStudio입니다. 컴퓨터와 휴대전화에서 음성 모델을 내려받아 구동하는 앱이다.",
+        "운영체제에 맞는 공식 배포본과 필요한 모델을 고른 뒤 짧은 비민감 텍스트로 시험한다.",
+        "0.x 버전이며 iOS·Android는 프리뷰다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "Nutlope/hallmark",
+      "intro": "일간 +2,109로 어제 +2,859보다 750 낮지만 디자인 도구의 강세는 유지된다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "코딩 에이전트에 디자인 절차를 제공한다.",
+        "스킬을 현재 프로젝트 범위에 설치하고 새 제작·지정 경로 재설계·감사를 구분해 호출한다.",
+        "별도 최신 릴리스가 없어 실제 사용하는 커밋을 고정하는 편이 재현에 유리하다."
+      ],
+      "kind": "orbit",
+      "refs": [
+        "g3"
+      ],
+      "note": "별도 최신 릴리스가 없어 실제 사용하는 커밋을 고정하는 편이 재현에 유리하다.",
+      "narration": [
+        "다음은 Nutlope의 hallmark입니다. 코딩 에이전트에 디자인 절차를 제공한다.",
+        "스킬을 현재 프로젝트 범위에 설치하고 새 제작·지정 경로 재설계·감사를 구분해 호출한다.",
+        "별도 최신 릴리스가 없어 실제 사용하는 커밋을 고정하는 편이 재현에 유리하다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "elayadesign/ai-design-skills",
+      "intro": "일간 +1,938로 어제 +1,395보다 543 높다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "현재 README 표에 실린 스킬은 landing-page-design 한 개다.",
+        "필요한 스킬 폴더 또는 마크다운 규칙을 읽고 프로젝트의 에이전트 설정에 맞춰 적용한다.",
+        "개발 초기의 작은 모음이며 정식 릴리스가 확인되지 않는다."
+      ],
+      "kind": "orbit",
+      "refs": [
+        "g4"
+      ],
+      "note": "개발 초기의 작은 모음이며 정식 릴리스가 확인되지 않는다.",
+      "narration": [
+        "다음은 elayadesign의 ai-design-skills입니다. 현재 README 표에 실린 스킬은 landing-page-design 한 개다.",
+        "필요한 스킬 폴더 또는 마크다운 규칙을 읽고 프로젝트의 에이전트 설정에 맞춰 적용한다.",
+        "개발 초기의 작은 모음이며 정식 릴리스가 확인되지 않는다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "pbakaus/impeccable",
+      "intro": "일간 +1,471로 어제 +1,458보다 13 높고, 주간은 +6,713이다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "현재 README 기준 1개 스킬, 24개 명령, 62개 결정적 탐지 규칙을 제공한다.",
+        "프로젝트 범위 설치 후 초기 설정으로 제품 맥락을 기록하고 감사·비평·다듬기 명령을 목적에 맞게 쓴다.",
+        "62개 규칙은 전체 접근성·보안 보증서가 아니다."
+      ],
+      "kind": "orbit",
+      "refs": [
+        "g5"
+      ],
+      "note": "62개 규칙은 전체 접근성·보안 보증서가 아니다.",
+      "narration": [
+        "다음은 pbakaus의 impeccable입니다. 현재 README 기준 1개 스킬, 24개 명령, 62개 결정적 탐지 규칙을 제공한다.",
+        "프로젝트 범위 설치 후 초기 설정으로 제품 맥락을 기록하고 감사·비평·다듬기 명령을 목적에 맞게 쓴다.",
+        "62개 규칙은 전체 접근성·보안 보증서가 아니다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "obra/superpowers",
+      "intro": "일간 전체 목록에서 +1,096을 확인했다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "서로 조합할 수 있는 스킬로 설계 승인, 구현 계획, 격리 작업, 검토, TDD(Test-Driven Development·테스트를 먼저 쓰는 개발)를 연결한다.",
+        "사용 중인 코딩 도구에 맞는 공식 설치 안내를 따르고, 작은 작업에서 설계 승인과 계획·시험 흐름이 실제로 작동하는지 확인한다.",
+        "릴리스의 승인 누락 감소 시험은 제작자의 제한된 시나리오 결과이지 모든 작업에서의 보장 수치가 아니다."
+      ],
+      "kind": "orbit",
+      "refs": [
+        "g6"
+      ],
+      "note": "릴리스의 승인 누락 감소 시험은 제작자의 제한된 시나리오 결과이지 모든 작업에서의 보장 수치가 아니다.",
+      "narration": [
+        "다음은 obra의 superpowers입니다. 서로 조합할 수 있는 스킬로 설계 승인, 구현 계획, 격리 작업, 검토, TDD(Test-Driven Development·테스트를 먼저 쓰는 개발)를 연결한다.",
+        "사용 중인 코딩 도구에 맞는 공식 설치 안내를 따르고, 작은 작업에서 설계 승인과 계획·시험 흐름이 실제로 작동하는지 확인한다.",
+        "릴리스의 승인 누락 감소 시험은 제작자의 제한된 시나리오 결과이지 모든 작업에서의 보장 수치가 아니다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "JetBrains/thinkrail",
+      "intro": "전체 일간 Trending에서 +1,075를 확인했다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "JetBrains 인큐베이터 프로젝트인 ThinkRail은 pi 코딩 에이전트 주위에 편집기·터미널·대화·변경 검토 화면을 붙인 통합개발환경이다.",
+        "운영체제에 맞는 릴리스 설치 파일과 체크섬을 확인한 뒤, 기존 Git 저장소를 프로젝트로 열고 별도 작업공간에서 작은 변경부터 시험한다.",
+        "2026년 7월 생성된 0.x 프로젝트이며 열린 이슈·PR 합계는 241건이다."
+      ],
+      "kind": "orbit",
+      "refs": [
+        "g7"
+      ],
+      "note": "2026년 7월 생성된 0.x 프로젝트이며 열린 이슈·PR 합계는 241건이다.",
+      "narration": [
+        "다음은 JetBrains의 thinkrail입니다. JetBrains 인큐베이터 프로젝트인 ThinkRail은 pi 코딩 에이전트 주위에 편집기·터미널·대화·변경 검토 화면을 붙인 통합개발환경이다.",
+        "운영체제에 맞는 릴리스 설치 파일과 체크섬을 확인한 뒤, 기존 Git 저장소를 프로젝트로 열고 별도 작업공간에서 작은 변경부터 시험한다.",
+        "2026년 7월 생성된 0.x 프로젝트이며 열린 이슈·PR 합계는 241건이다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "alibaba/open-code-review",
+      "intro": "Go 일간 Trending에서 +312를 확인했다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "OpenCodeReview는 Git 변경 내역을 읽고 관련 파일과 문맥을 모델에 전달해 줄 단위 리뷰 의견을 만드는 명령줄 도구다.",
+        "Git 2.41 이상 환경에서 공식 패키지 또는 릴리스 바이너리를 설치하고 모델 공급자·모델을 설정한다.",
+        "2026년 5월 생성된 프로젝트로 열린 이슈·PR 합계는 361건이다."
+      ],
+      "kind": "orbit",
+      "refs": [
+        "g8"
+      ],
+      "note": "2026년 5월 생성된 프로젝트로 열린 이슈·PR 합계는 361건이다.",
+      "narration": [
+        "다음은 alibaba의 open-code-review입니다. OpenCodeReview는 Git 변경 내역을 읽고 관련 파일과 문맥을 모델에 전달해 줄 단위 리뷰 의견을 만드는 명령줄 도구다.",
+        "Git 2.41 이상 환경에서 공식 패키지 또는 릴리스 바이너리를 설치하고 모델 공급자·모델을 설정한다.",
+        "2026년 5월 생성된 프로젝트로 열린 이슈·PR 합계는 361건이다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "cloudflare/security-audit-skill",
+      "intro": "주간 +16,388로 어제 주간 표시 +16,593보다 205 낮다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "구조·신뢰 경계 파악, 검사 범위 기록, 후보 조사, 검증, 구조화 결과, 독립 확인과 보고를 연결한다.",
+        "승인된 코드베이스에 한정해 스킬을 적용하고, 검사 결과와 검사하지 못한 범위를 함께 검토한다.",
+        "자체 설명의 반복 실행 탐지 효과를 독립 성능검증으로 인용하지 않았다."
+      ],
+      "kind": "shield",
+      "refs": [
+        "g9"
+      ],
+      "note": "자체 설명의 반복 실행 탐지 효과를 독립 성능검증으로 인용하지 않았다.",
+      "narration": [
+        "다음은 cloudflare의 security-audit-skill입니다. 구조·신뢰 경계 파악, 검사 범위 기록, 후보 조사, 검증, 구조화 결과, 독립 확인과 보고를 연결한다.",
+        "승인된 코드베이스에 한정해 스킬을 적용하고, 검사 결과와 검사하지 못한 범위를 함께 검토한다.",
+        "자체 설명의 반복 실행 탐지 효과를 독립 성능검증으로 인용하지 않았다."
+      ]
+    },
+    {
+      "kicker": "GITHUB / 2026-10-29",
+      "title": "trymirai/uzu",
+      "intro": "Rust 일간 Trending에서 +360을 확인했다.",
+      "nodes": [
+        "기능",
+        "사용 방법",
+        "주의점"
+      ],
+      "labels": [
+        "uzu는 모델 다운로드와 실행, 대화 세션을 높은 수준의 API로 묶는다.",
+        "README의 버전 고정 패키지를 프로젝트에 추가한 뒤 엔진을 만들고, 지원 모델을 내려받아 대화 세션을 실행한다.",
+        "2025년 6월 생성됐으며 열린 이슈·PR 합계는 25건이다."
+      ],
+      "kind": "orbit",
+      "refs": [
+        "g10"
+      ],
+      "note": "2025년 6월 생성됐으며 열린 이슈·PR 합계는 25건이다.",
+      "narration": [
+        "다음은 trymirai의 uzu입니다. uzu는 모델 다운로드와 실행, 대화 세션을 높은 수준의 API로 묶는다.",
+        "README의 버전 고정 패키지를 프로젝트에 추가한 뒤 엔진을 만들고, 지원 모델을 내려받아 대화 세션을 실행한다.",
+        "2025년 6월 생성됐으며 열린 이슈·PR 합계는 25건이다."
+      ]
+    },
+    {
+      "kicker": "READ / VERIFY / FOLLOW UP",
+      "title": "사실과 조건을 나누고\n원문으로 확인하세요.",
+      "intro": "뉴스 11건·GitHub 10개를 모두 연결했습니다. 자동 발표 후에도 정적 목차와 날짜별 상세 기사로 돌아갈 수 있습니다.",
+      "nodes": [
+        "발표 사실",
+        "남은 조건",
+        "상세 원문"
+      ],
+      "labels": [
+        "발표값·회사 주장 구분",
+        "계획·미확인 범위 확인",
+        "논조와 다른 시각까지 읽기"
+      ],
+      "kind": "matrix",
+      "refs": [],
+      "narration": [
+        "오늘의 전체 항목을 살펴봤습니다. 발표된 수치와 계획을 이미 완료된 결과로 바꿔 읽지 않는 것이 중요합니다.",
+        "도구의 인기나 모델의 자체 평가가 실제 작업의 품질과 안전성을 보장하는 것은 아닙니다.",
+        "아래 전체 목차에서 각 항목의 원문과 상세 기사, 검증 한계를 다시 확인하실 수 있습니다. 오늘 발표를 마칩니다."
+      ]
+    }
+  ]
+}

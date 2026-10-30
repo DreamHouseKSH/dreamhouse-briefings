@@ -2,57 +2,9 @@
 layout: default
 title: 하루 발표 — 2026-10-27
 daily: true
+briefing_date: "2026-10-27"
+edition_key: day_20261027
+audio_key: day_20261027_audio
+scope: 뉴스 10개 · GitHub 9개 카드. 10월 27일 아침 수집창에서 누락된 4건을 10월 28일 KST 보충했습니다. 뉴스 조사 구간은 10/26 08:01~10/27 08:01 KST. 기존 AI 두 건(비영리 Claude·Oracle)은 원문 시각 미공개로 날짜 일치 후보입니다. X는 원문 확인 제한으로 미수록. 아래 관계도는 편집 해설입니다.
 ---
-{% assign edition = site.data.day_20261027 %}
-<div class="day-deck" id="day-deck">
-  <div class="day-focusbar" hidden><div><strong id="day-focus-title">10월 27일 · 집중 보기</strong><small>웹 화면 안에서 확대합니다 · 브라우저 주소창은 유지됩니다</small></div><button type="button" data-action="close-focus">닫기 ✕</button></div>
-  <div class="day-heading"><div><p class="eyebrow">DAILY MOTION BRIEFING · KST</p><h1>2026년 10월 27일 · 하루 발표</h1></div><a href="#day-index">전체 기사 목차 ↓</a></div>
-  <p class="day-scope">뉴스 10개 · GitHub 9개 카드. 10월 27일 아침 수집창에서 누락된 4건을 10월 28일 KST 보충했습니다. 뉴스 조사 구간은 10/26 08:01~10/27 08:01 KST. 기존 AI 두 건(비영리 Claude·Oracle)은 원문 시각 미공개로 날짜 일치 후보입니다. X는 원문 확인 제한으로 미수록. 아래 관계도는 편집 해설입니다.</p>
-  <div class="day-controls" hidden aria-label="발표 조작">
-    <button type="button" data-action="prev" aria-label="이전 단계">← 이전</button><button type="button" data-action="play">▶ 발표 시작</button><button type="button" data-action="next" aria-label="다음 단계">다음 →</button>
-    <button type="button" data-action="full" aria-pressed="false">집중 보기</button>
-    <details class="day-options"><summary>설정·음성</summary><div class="day-options-panel">
-      <label>속도 <select id="day-speed"><option value="1">1×</option><option value="0.5">0.5×</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label>
-      <button type="button" data-action="voice" aria-pressed="false">음소거</button>
-      <p id="day-voice-status" role="status">미리 만든 한국어 오디오로 자동 발표합니다. 기기에 한국어 음성을 설치할 필요가 없습니다.</p>
-      <button type="button" data-action="script" aria-pressed="false">대본 보기</button>
-      <p>발표 시작 한 번으로 음성·단계·다음 장이 자동 진행됩니다. 일시정지 후 같은 위치에서 이어 듣습니다. 내용을 세로로 스크롤해도 재생은 계속됩니다. 소리가 작으면 기기의 미디어 음량을 확인해 주세요.</p>
-      <details class="day-native-audio"><summary>기본 오디오 플레이어</summary>
-        <audio id="day-audio" controls playsinline preload="metadata" src="{{ '/assets/audio/2026-10-27-narration.mp3' | relative_url }}">오디오 재생을 지원하지 않는 브라우저입니다.</audio>
-        <a href="{{ '/assets/audio/2026-10-27-narration.mp3' | relative_url }}">한국어 발표 오디오 파일 열기 ↗</a>
-      </details>
-      <button type="button" data-action="static" aria-pressed="false">정적 보기</button>
-      <button type="button" data-action="native" hidden>기기 전체화면</button>
-    </div></details>
-    <span id="day-status" role="status" aria-live="polite"></span>
-  </div>
-  <script id="day-audio-cues" type="application/json">{{ site.data.day_20261027_audio.cues | jsonify }}</script>
-  <p class="day-help" hidden>한 번 시작하면 음성과 함께 자동 진행됩니다. ← → 키: 단계 이동 · Space: 재생/일시정지 · Home/End: 처음/끝 · 그림 좌우 쓸기: 단계 이동 · 세로 스크롤: 전체 내용 읽기. 직접 이전·다음으로 이동하면 일시정지합니다. 자동 발표는 마지막에서 멈춥니다.</p>
-  <noscript><p>자바스크립트가 꺼져 있어 자동 화면 전환은 사용할 수 없습니다. 한국어 오디오와 아래 전체 대본을 함께 읽을 수 있습니다.</p><audio controls preload="none" src="{{ '/assets/audio/2026-10-27-narration.mp3' | relative_url }}"></audio></noscript>
-  <div class="day-stage" tabindex="0" aria-label="하루 브리핑 발표 · 세로로 스크롤해 전체 내용을 읽을 수 있습니다">
-  {% for slide in edition.slides %}
-  <section class="day-slide day-{{ slide.kind }}" id="slide-{{ forloop.index }}" aria-labelledby="slide-title-{{ forloop.index }}" data-slide="{{ forloop.index0 }}">
-    <div class="day-copy"><p class="day-kicker">{{ slide.kicker }}</p><h2 id="slide-title-{{ forloop.index }}" tabindex="-1">{{ slide.title | newline_to_br }}</h2><p class="day-intro">{{ slide.intro }}</p></div>
-    <div class="day-diagram" aria-label="{{ slide.nodes | join: '、' }}의 관계">
-      <svg viewBox="0 0 600 250" aria-hidden="true" focusable="false"><defs><pattern id="grid-{{forloop.index}}" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M 25 0 L 0 0 0 25" fill="none" stroke="currentColor" stroke-opacity=".09"/></pattern></defs><rect width="600" height="250" fill="url(#grid-{{forloop.index}})"/>
-      {% if slide.kind == 'stake' %}<g class="day-special" aria-hidden="true"><rect x="190" y="25" width="220" height="45" rx="6"/><rect x="215" y="80" width="170" height="45" rx="6"/><path d="M240 70V80M280 70V80M320 70V80M360 70V80"/><text x="300" y="210" text-anchor="middle">거래 후 목표 약 20% · 조건부</text></g>{% elsif slide.kind == 'vehicle' %}<path class="day-special" d="M95 45Q90 12 140 12H460Q510 12 505 45L550 175Q560 220 510 225H90Q40 220 50 175ZM175 18L130 222M425 18L470 222"/>{% elsif slide.kind == 'finance' %}<g class="day-special"><path d="M60 45H140L100 15ZM65 50V75M100 50V75M135 50V75M55 80H145M460 35H540V80H460ZM475 45H490V60H475ZM510 45H525V60H510Z"/><text x="300" y="220" text-anchor="middle">약정 → 구매 → 임대 · 실행 완료 아님</text></g>{% endif %}
-      {% if slide.kind == 'orbit' %}<ellipse class="day-orbit" cx="300" cy="125" rx="260" ry="85"/><circle class="day-orbit" cx="300" cy="125" r="110"/>{% elsif slide.kind == 'shield' %}<path class="day-orbit" d="M300 12L555 65V145L300 238L45 145V65Z"/>{% elsif slide.kind == 'matrix' %}<path class="day-orbit" d="M50 35H550V215H50ZM50 95H550M50 155H550M150 35V215M250 35V215M350 35V215M450 35V215"/>{% else %}<path class="day-orbit" d="M35 65H565M35 185H565"/>{% endif %}
-      <path class="day-wire" pathLength="1" d="M100 125H500"/>
-      {% for node in slide.nodes %}{% assign cx = forloop.index0 | times: 200 | plus: 100 %}<g class="day-node{% if slide.kind == 'process' and forloop.index > 1 %} day-unfinished{% endif %}" data-step="{{ forloop.index }}"><circle cx="{{cx}}" cy="125" r="46"/><text x="{{cx}}" y="132" text-anchor="middle">{{node}}</text></g>{% endfor %}
-      </svg>
-      <ol class="day-labels">{% for label in slide.labels %}<li data-step="{{forloop.index}}"><span>0{{forloop.index}}</span>{{label}}</li>{% endfor %}</ol>
-      <p class="day-diagram-caption">관계도 · 편집 해설 / 도형 크기는 수치를 나타내지 않습니다</p>
-    </div>
-    {% if slide.note %}<p class="day-note">{{slide.note}}</p>{% endif %}
-    <details class="day-script"><summary>발표 대본 · {{forloop.index}}장</summary><ol>{% for sentence in slide.narration %}<li>{{sentence}}</li>{% endfor %}</ol></details>
-    <div class="day-refs"><span>이 장의 근거 · 상세</span>{% for ref in slide.refs %}{% assign item = edition.items | where: 'id', ref | first %}<a href="#item-{{item.id}}">{{item.short}}</a>{% endfor %}</div>
-    <span class="day-folio">{{forloop.index}} / {{edition.slides.size}}</span>
-  </section>
-  {% endfor %}
-  </div>
-  <nav class="day-chapters" aria-label="발표 장 선택" hidden>{% for slide in edition.slides %}<button type="button" data-jump="{{forloop.index0}}" aria-label="{{forloop.index}}장 {{slide.kicker}}">{{forloop.index}}</button>{% endfor %}</nav>
-</div>
-<section class="day-index" id="day-index" tabindex="-1">
- <p class="eyebrow">READ THE WHOLE DAY</p><h2>전체 기사 목차와 요약</h2><p>모든 항목의 요약·원문·상세 기사로 이동할 수 있습니다. 상세에는 논조·다른 시각·검증 범위를 유지했습니다. GitHub 수치는 08:04~08:05 KST 화면 기준이며 일간·주간을 합산하지 않습니다. 관심은 사용자 수·품질·안전성의 증명이 아닙니다.</p>
- <div class="day-library">{% for item in edition.items %}<article id="item-{{item.id}}" class="day-item" tabindex="-1"><p class="day-kicker">{{item.field}} · {{item.id | upcase}}</p><h3>{{item.title}}</h3><p>{{item.summary}}</p><p class="day-caveat">{{item.caveat}}</p><div><a href="{{item.detail | relative_url}}">상세 기사 →</a><a href="{{item.source}}" target="_blank" rel="noopener noreferrer">원문 ↗</a>{% if item.verification %}<a href="{{item.verification}}" target="_blank" rel="noopener noreferrer">접수 교차 확인 ↗</a>{% endif %}</div><a href="#slide-1" class="day-return">발표로 돌아가기 ↑</a></article>{% endfor %}</div>
-</section>
+{% include daily-deck.html %}
