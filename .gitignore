@@ -6,3 +6,7 @@ _site/
 # Local browser QA artifacts
 .playwright-cli/
 output/
+
+# Python bytecode from local checks
+__pycache__/
+*.py[cod]

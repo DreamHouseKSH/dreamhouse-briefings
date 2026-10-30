@@ -489,3 +489,7 @@
 - {"term": "Git worktree", "full": "Git worktree", "ko": "같은 Git 저장소에서 별도 파일 트리로 작업하는 기능"}
 
 - {"term": "가상 머신", "full": "Virtual Machine", "ko": "소프트웨어로 분리한 컴퓨터 실행 환경"}
+
+# --- 2026-10-30 cloud Sohee generation ---
+- { term: "SDPA", full: "Scaled Dot Product Attention", ko: "질의와 키의 내적을 크기에 맞게 조정해 정보 간 주의 가중치를 계산하는 방식" }
+- { term: "ASR", full: "Automatic Speech Recognition", ko: "음성 신호를 글자로 바꾸는 자동 음성 인식" }

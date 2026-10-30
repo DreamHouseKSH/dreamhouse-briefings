@@ -1,261 +1,311 @@
 {
   "date": "2026-10-30",
-  "source": "Existing public archive narration; locally generated with installed macOS Yuna voice",
+  "source": "Existing public archive narration; generated in Linux cloud with official Qwen3-TTS Sohee (CPU)",
+  "pronunciation_policy": "Selected technical names use Korean pronunciation and long numeric identifiers use exact-value Korean number reading; public narration unchanged",
+  "spoken_text_sha256": "7f9504494e1b10e39616567526757e7cbd44b91191d03382363af361e7bf14aa",
+  "backend": "sohee",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+  "license": "Apache-2.0",
+  "settings": {
+    "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "speaker": "Sohee",
+    "language": "Korean",
+    "instruct": "차분하고 따뜻한 목소리로 자연스럽게 말해주세요.",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "threads": 4,
+    "sample_rate": 24000,
+    "padding_seconds": 0.2,
+    "max_new_tokens": 1024,
+    "qwen_tts": "0.1.1",
+    "torch": "2.15.0+cpu"
+  },
   "text_sha256": "953110ee4d1653856b119620cbe9e4f8314e05445907797b9f096c6b97829683",
-  "audio_sha256": "7f250fa99e570f82993ea8a3ea33d3921152e8ec1bcf96c0c2a40ec05fe3af0d",
-  "duration": 307.444625,
+  "audio_sha256": "94ff903f147894a9dc72b17391b9b3e71c32e89a1321759a6cd90d1ab8763e6d",
+  "duration": 371.28,
   "cues": [
     {
       "slide": 0,
       "step": 1,
       "start": 0.0,
-      "end": 6.617324
+      "end": 7.56
     },
     {
       "slide": 0,
       "step": 2,
-      "start": 6.617324,
-      "end": 12.713106
+      "start": 7.56,
+      "end": 14.16
     },
     {
       "slide": 0,
       "step": 3,
-      "start": 12.713106,
-      "end": 21.334421
+      "start": 14.16,
+      "end": 25.96
     },
     {
       "slide": 1,
       "step": 1,
-      "start": 21.334421,
-      "end": 29.809977
+      "start": 25.96,
+      "end": 35.2
     },
     {
       "slide": 1,
       "step": 2,
-      "start": 29.809977,
-      "end": 39.966712
+      "start": 35.2,
+      "end": 47.08
     },
     {
       "slide": 1,
       "step": 3,
-      "start": 39.966712,
-      "end": 45.864807
+      "start": 47.08,
+      "end": 52.96
     },
     {
       "slide": 2,
       "step": 1,
-      "start": 45.864807,
-      "end": 53.074558
+      "start": 52.96,
+      "end": 61.96
     },
     {
       "slide": 2,
       "step": 2,
-      "start": 53.074558,
-      "end": 64.53161
+      "start": 61.96,
+      "end": 75.04
     },
     {
       "slide": 2,
       "step": 3,
-      "start": 64.53161,
-      "end": 71.497823
+      "start": 75.04,
+      "end": 83.4
     },
     {
       "slide": 3,
       "step": 1,
-      "start": 71.497823,
-      "end": 82.363447
+      "start": 83.4,
+      "end": 95.76
     },
     {
       "slide": 3,
       "step": 2,
-      "start": 82.363447,
-      "end": 97.143356
+      "start": 95.76,
+      "end": 116.12
     },
     {
       "slide": 3,
       "step": 3,
-      "start": 97.143356,
-      "end": 103.84254
+      "start": 116.12,
+      "end": 123.6
     },
     {
       "slide": 4,
       "step": 1,
-      "start": 103.84254,
-      "end": 109.0561
+      "start": 123.6,
+      "end": 129.08
     },
     {
       "slide": 4,
       "step": 2,
-      "start": 109.0561,
-      "end": 114.6239
+      "start": 129.08,
+      "end": 135.2
     },
     {
       "slide": 4,
       "step": 3,
-      "start": 114.6239,
-      "end": 120.939954
+      "start": 135.2,
+      "end": 142.04
     },
     {
       "slide": 5,
       "step": 1,
-      "start": 120.939954,
-      "end": 126.513786
+      "start": 142.04,
+      "end": 153.36
     },
     {
       "slide": 5,
       "step": 2,
-      "start": 126.513786,
-      "end": 137.84594
+      "start": 153.36,
+      "end": 170.76
     },
     {
       "slide": 5,
       "step": 3,
-      "start": 137.84594,
-      "end": 145.404262
+      "start": 170.76,
+      "end": 180.24
     },
     {
       "slide": 6,
       "step": 1,
-      "start": 145.404262,
-      "end": 151.820316
+      "start": 180.24,
+      "end": 189.48
     },
     {
       "slide": 6,
       "step": 2,
-      "start": 151.820316,
-      "end": 161.056869
+      "start": 189.48,
+      "end": 200.56
     },
     {
       "slide": 6,
       "step": 3,
-      "start": 161.056869,
-      "end": 166.044715
+      "start": 200.56,
+      "end": 205.08
     },
     {
       "slide": 7,
       "step": 1,
-      "start": 166.044715,
-      "end": 173.714647
+      "start": 205.08,
+      "end": 214.88
     },
     {
       "slide": 7,
       "step": 2,
-      "start": 173.714647,
-      "end": 179.332425
+      "start": 214.88,
+      "end": 220.44
     },
     {
       "slide": 7,
       "step": 3,
-      "start": 179.332425,
-      "end": 184.226665
+      "start": 220.44,
+      "end": 226.64
     },
     {
       "slide": 8,
       "step": 1,
-      "start": 184.226665,
-      "end": 193.487164
+      "start": 226.64,
+      "end": 237.96
     },
     {
       "slide": 8,
       "step": 2,
-      "start": 193.487164,
-      "end": 198.515191
+      "start": 237.96,
+      "end": 244.72
     },
     {
       "slide": 8,
       "step": 3,
-      "start": 198.515191,
-      "end": 202.56535
+      "start": 244.72,
+      "end": 248.36
     },
     {
       "slide": 9,
       "step": 1,
-      "start": 202.56535,
-      "end": 212.835917
+      "start": 248.36,
+      "end": 259.92
     },
     {
       "slide": 9,
       "step": 2,
-      "start": 212.835917,
-      "end": 218.154058
+      "start": 259.92,
+      "end": 266.6
     },
     {
       "slide": 9,
       "step": 3,
-      "start": 218.154058,
-      "end": 221.915917
+      "start": 266.6,
+      "end": 271.28
     },
     {
       "slide": 10,
       "step": 1,
-      "start": 221.915917,
-      "end": 231.8956
+      "start": 271.28,
+      "end": 283.88
     },
     {
       "slide": 10,
       "step": 2,
-      "start": 231.8956,
-      "end": 236.476643
+      "start": 283.88,
+      "end": 288.48
     },
     {
       "slide": 10,
       "step": 3,
-      "start": 236.476643,
-      "end": 241.72458
+      "start": 288.48,
+      "end": 294.12
     },
     {
       "slide": 11,
       "step": 1,
-      "start": 241.72458,
-      "end": 250.3117
+      "start": 294.12,
+      "end": 303.04
     },
     {
       "slide": 11,
       "step": 2,
-      "start": 250.3117,
-      "end": 256.395283
+      "start": 303.04,
+      "end": 309.56
     },
     {
       "slide": 11,
       "step": 3,
-      "start": 256.395283,
-      "end": 261.59746
+      "start": 309.56,
+      "end": 316.88
     },
     {
       "slide": 12,
       "step": 1,
-      "start": 261.59746,
-      "end": 273.098684
+      "start": 316.88,
+      "end": 331.64
     },
     {
       "slide": 12,
       "step": 2,
-      "start": 273.098684,
-      "end": 281.09297
+      "start": 331.64,
+      "end": 340.4
     },
     {
       "slide": 12,
       "step": 3,
-      "start": 281.09297,
-      "end": 284.773786
+      "start": 340.4,
+      "end": 345.16
     },
     {
       "slide": 13,
       "step": 1,
-      "start": 284.773786,
-      "end": 292.634693
+      "start": 345.16,
+      "end": 353.76
     },
     {
       "slide": 13,
       "step": 2,
-      "start": 292.634693,
-      "end": 299.003446
+      "start": 353.76,
+      "end": 361.8
     },
     {
       "slide": 13,
       "step": 3,
-      "start": 299.003446,
-      "end": 307.444625
+      "start": 361.8,
+      "end": 371.28
     }
-  ]
+  ],
+  "validation": {
+    "sample_rate": 24000,
+    "decoded_samples": 8910720,
+    "segments": 42,
+    "token_cap_exhausted": false,
+    "load_seconds": 1.484,
+    "run_seconds": 83.69,
+    "synthesis_seconds": 1405.741,
+    "cache_hits": 41,
+    "peak_rss_kib": 4987992
+  },
+  "quality_review": {
+    "asr_model": "openai/whisper-small",
+    "asr_revision": "973afd24965f72e36ca33b3055d56a652f456b4d",
+    "initial_full_cues_reviewed": 42,
+    "pronunciation_corrected_cues": [
+      10,
+      11,
+      13
+    ],
+    "corrected_cues_rechecked": true,
+    "critical_identifiers_verified": [
+      "2026-109618",
+      "2026-109619"
+    ],
+    "human_listening_performed": false,
+    "limitations": "ASR is a content review aid; proper-name spelling and naturalness are not independently certified.",
+    "telemetry": "ORT and Hugging Face telemetry disabled before dependency initialization; correction runs use offline cached weights."
+  }
 }

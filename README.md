@@ -2,21 +2,21 @@
 
 평일 아침 브리핑을 **요약형**으로 날짜·분야별로 쌓는 아카이브입니다.
 
-> 🌐 **공개 사이트 (GitHub Pages, 인터넷 전체 공개):** **https://dreamhouseksh.github.io/dreamhouse-briefings/**
+> 🌐 **공개 사이트 (GitHub Pages, 인터넷 전체 공개):** **https://daily.dahangis.co.kr/**
 > 저장소와 사이트 모두 **public**이며 Pages는 운영 중입니다. **누구나 볼 수 있으니** 공개되면 안 되는 내용은 커밋하지 마세요.
 
 기사 전문 복제·통번역은 하지 않습니다. 각 항목은 넉넉한 요약 + 기술용어 괄호 설명 + 원문 링크이며, 대표 이미지는 저장소에 복제하지 않고 원문 이미지 URL을 핫링크해 보여 줍니다.
 
 - 🤖 **에이전트라면 먼저:** [`AGENTS.md`](AGENTS.md) (핸드오프) → [`docs/WORKFLOW.md`](docs/WORKFLOW.md) (상세 규칙)
-- 📑 **목차(날짜별):** 사이트의 [전체 아카이브](https://dreamhouseksh.github.io/dreamhouse-briefings/archive/) (자동 생성) · 문서 허브 [`docs/index.md`](docs/index.md)
+- 📑 **목차(날짜별):** 사이트의 [전체 아카이브](https://daily.dahangis.co.kr/archive/) (자동 생성) · 문서 허브 [`docs/index.md`](docs/index.md)
 
 ## 열람 방법
 
 | 방법 | 주소 | 공개 범위 |
 |---|---|---|
-| **GitHub Pages 사이트 (권장)** | https://dreamhouseksh.github.io/dreamhouse-briefings/ | 🌐 **공개** (로그인 불필요) |
+| **GitHub Pages 사이트 (권장)** | https://daily.dahangis.co.kr/ | 🌐 **공개** (로그인 불필요) |
 | 분야별 모아보기 | `/category/it/` · `/category/ai/` · `/category/model/` · `/category/engine/` · `/category/github/` | 🌐 공개 |
-| 전체 아카이브 | https://dreamhouseksh.github.io/dreamhouse-briefings/archive/ | 🌐 공개 |
+| 전체 아카이브 | https://daily.dahangis.co.kr/archive/ | 🌐 공개 |
 | 저장소 브라우즈 | https://github.com/DreamHouseKSH/dreamhouse-briefings | 🌐 공개 |
 | github.dev (웹 에디터) | https://github.dev/DreamHouseKSH/dreamhouse-briefings — 저장소 페이지에서 `.` 키 | 🔒 편집은 로그인 필요 |
 

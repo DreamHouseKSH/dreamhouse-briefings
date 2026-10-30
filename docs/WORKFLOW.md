@@ -6,6 +6,12 @@
 
 > 작업 방식이 바뀌면 **맨 위에 날짜(KST)별로 추가**하고, 본문 해당 장과 `AGENTS.md` 를 같은 커밋에서 함께 고칩니다.
 
+### 2026-10-30
+
+- 공개 브리핑의 맞춤 주소를 `daily.dahangis.co.kr`로 지정한다. Jekyll의 `url`은 HTTPS 맞춤 주소, `baseurl`은 빈 문자열이다. DNS·인증서·HTTPS 강제 적용은 GitHub Pages 설정에서 별도로 확인하며 코드 변경만으로 완료를 주장하지 않는다. 기존 연구 완료 댓글의 GitHub Pages 주소도 링크 판정에서 계속 허용한다.
+
+- 하루 발표의 새 기본 음성을 공식 Qwen3-TTS Sohee의 클라우드/Linux CPU 합성으로 전환하는 사용자 승인을 반영한다. 기존 공개 대본을 cue 단위로 합성하고 실측 길이로 연속 오디오를 구성한다. 10/27~29 Yuna 기록은 유지한다. 고정 모델·격리 환경·검증·수정 발행 절차는 10장과 [`SOHEE-CLOUD.md`](SOHEE-CLOUD.md). 새 예약 실행기, 사용자 정의 Actions, 계정·키·지속 권한을 구성한 것은 아니다.
+
 ### 2026-10-28
 
 - 10/27 하루 발표 시범 도입. 13장 벡터 관계도·단계 재생과 전체 19개 항목의 정적 목차를 함께 제공한다. 원문과 편집 해설, 계획과 완료를 구분한다. 기존 뉴스·GitHub·주간과 별도 기능이며 상세는 10장.
@@ -187,7 +193,7 @@
 ### 공개 범위
 
 - 저장소는 **개인 계정 DreamHouseKSH 소유 public** 입니다(코드·git 히스토리·이슈 모두 공개).
-- **GitHub Pages가 켜져 있고 운영 중**이며, 사이트는 인터넷 전체에 공개됩니다: **https://dreamhouseksh.github.io/dreamhouse-briefings/** (2026-10-06 사용자 승인)
+- **GitHub Pages가 켜져 있고 운영 중**이며, 사이트는 인터넷 전체에 공개됩니다: **https://daily.dahangis.co.kr/** (2026-10-06 사용자 승인)
 - 따라서 4장 저작권 규칙(요약 + 원문 링크, 전문·번역 금지)이 **공개 웹 기준**으로 적용됩니다. 개인정보·내부 메모는 커밋 금지.
 
 ### 사용자 열람 환경 — iPad 홈 화면 웹앱
@@ -202,7 +208,7 @@
 - 테마: 외부 테마 없이 **커스텀 레이아웃** — `_layouts/default.html`, `assets/css/style.css`(Pretendard 글꼴, `word-break: keep-all`, 본문 폭 약 46rem, 라이트/다크 자동+토글), `assets/js/site.js`(맨 URL 자동 링크, 표 가로 스크롤, 오른쪽 목차, 뉴스 항목별 리서치 요청 버튼).
 - **새 내용 자동 반영(iPad 홈 화면 웹앱 등):** 빌드마다 `version.json`(`{"build": site.time}`)이 바뀌고, 각 페이지 `<meta name="site-build">` 에 같은 값이 박힙니다. `site.js` 가 페이지를 열 때와 화면에 돌아올 때(`visibilitychange`·`pageshow`) `version.json` 을 `cache: 'no-store'` 로 받아 값이 다르면 HTML 캐시를 갱신하고 `location.reload()` 합니다(무한 새로고침 방지: 같은 버전은 5분에 1회·최소 30초 간격, sessionStorage 가드 — 가드에 걸리면 배너로 대신). 화면을 **보고 있는 동안**(`visibilityState === 'visible'`)에는 **3분마다** `version.json` 을 no-store로 확인하고, 바뀌었으면 바로 reload하지 않고 상단에 **'새 내용이 있어요 · 새로고침'** 배너(누르면 reload, ✕로 닫기)를 띄웁니다. 리서치 버튼 상태는 페이지 새로고침 없이 따로 갱신됩니다(8장 '버튼 상태'). 헤더 오른쪽 **↻** 버튼은 수동 새로고침(리서치 상태 공유 캐시도 비움). **서비스워커·manifest는 없고 만들지 않습니다**(오래된 캐시가 남을 경로 없음).
 - **'←' 뒤로 버튼(헤더 왼쪽, 브라우저 뒤로 버튼이 없는 iPad 홈 화면 웹앱용):** `site.js` 0번. sessionStorage `dh-nav-v1` 에 사이트 내 방문 스택(경로, 해시 제외)과 현재 위치를 저장합니다. 사이트 안 링크로 새로 이동하면 쌓고(뒤로 간 다음 새 링크를 타면 그 뒤는 잘라냄), 브라우저 뒤로·앞으로·bfcache 복원이면 위치만 옮기고, **새로고침(↻·버전 자동 새로고침)은 스택을 건드리지 않습니다.** 돌아갈 곳이 있으면 `history.back()`(history가 없으면 스택의 이전 주소로), 없으면(첫 페이지·외부에서 바로 들어옴) 홈으로 갑니다. **홈에서는 숨김.** 같은 페이지 앵커 이동(목차·아카이브 `#d-날짜` 등)은 `replaceState` 로 처리해 history·스택에 쌓지 않으므로 뒤로는 항상 이전 페이지로 갑니다. 터치 영역 44px 이상, `viewport-fit=cover` + `env(safe-area-inset-*)` 여백.
-- **링크 열기 규칙:** 사이트 밖 링크(원문·GitHub 등, `https://dreamhouseksh.github.io/dreamhouse-briefings/` 밖)는 문서 전체에서 `target="_blank"`(웹앱 안이 아니라 새 탭/Safari), 사이트 안 링크는 같은 창(`target` 제거). 나중에 생긴 링크도 클릭 순간에 같은 규칙을 적용합니다.
+- **링크 열기 규칙:** 사이트 밖 링크(원문·GitHub 등, `https://daily.dahangis.co.kr/` 밖)는 문서 전체에서 `target="_blank"`(웹앱 안이 아니라 새 탭/Safari), 사이트 안 링크는 같은 창(`target` 제거). 나중에 생긴 링크도 클릭 순간에 같은 규칙을 적용합니다.
 - 앞머리(front matter) 없는 `.md`도 그대로 페이지가 됩니다(`jekyll-optional-front-matter`). 마크다운 안의 `.md` 상대 링크는 `.html`로 자동 변환(`jekyll-relative-links`). **브리핑 파일에 front matter를 넣을 필요 없음.**
 - 홈(`index.html`) · 전체 아카이브(`archive.html`) · 분야별(`category/*.html`)의 날짜 목록과 같은 날짜 탭, 이전/다음 날짜 이동은 `news/YYYY-MM-DD/*.md`, `github/YYYY-MM-DD.md` **파일 경로에서 자동 생성**됩니다(`_includes/collect-dates.html`). 파일명 규칙을 지키는 것이 중요.
 - 하이라이트 한 줄(홈 카드·아카이브·분야별 목록)은 `_data/highlights.yml` 에서 읽습니다. 키: `IT`, `AI`, `모델`, `엔진`, `X`, `GitHub`. 해당 날짜 브리핑 파일에 있는 내용만 요약.
@@ -256,7 +262,7 @@ gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status
 | 상태 | 표시 | 조건 | 연결 | 판정 방식 |
 |---|---|---|---|---|
 | 완료 | **📄 리서치 보기** (초록 채움) | 기사 메타 목록에 `- **심층 리서치:** [..](../../research/….md)` 줄이 있음 | 그 리서치 페이지(같은 탭) | 빌드된 마크다운 링크만 봄 → **GitHub API 실패와 무관하게 항상 표시** |
-| 완료(링크 반영 전) | **📄 리서치 보기** | 이 기사를 가리키는 **닫힌** 이슈(작성자 `DreamHouseKSH`, `not_planned` 로 닫은 건 제외)가 있는데 페이지에 아직 '심층 리서치' 링크가 없음 | 이슈의 마지막(내) 댓글 속 `https://dreamhouseksh.github.io/dreamhouse-briefings/research/` 로 시작하는 URL만 허용, 없으면 그 이슈 | GitHub API(아래) |
+| 완료(링크 반영 전) | **📄 리서치 보기** | 이 기사를 가리키는 **닫힌** 이슈(작성자 `DreamHouseKSH`, `not_planned` 로 닫은 건 제외)가 있는데 페이지에 아직 '심층 리서치' 링크가 없음 | 이슈의 마지막(내) 댓글 속 `https://daily.dahangis.co.kr/research/` 로 시작하는 URL만 허용, 없으면 그 이슈 | GitHub API(아래) |
 | 진행 중 | **⏳ 리서치 진행 중** (노랑 점선) | 열린 이슈 + 라벨 `research` + **작성자 `DreamHouseKSH`** 가 이 기사를 가리킴 | 그 이슈(새 탭) | 브라우저가 `GET https://api.github.com/repos/DreamHouseKSH/dreamhouse-briefings/issues?labels=research&state=all&creator=DreamHouseKSH` (비인증) 호출 |
 | 요청 | **🔍 리서치 요청** (회색 테두리, 기본) | 위 둘 다 아님 | 미리 채운 이슈 작성 화면(새 탭) | — |
 
@@ -306,7 +312,7 @@ gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status
 2. 커밋·push(`research: #{번호} {slug}`), Pages `built` 확인 후 사이트 URL이 열리는지 확인.
 3. 이슈에 리서치 페이지 링크를 댓글로 달고 닫기:
    ```bash
-   gh issue comment N -R DreamHouseKSH/dreamhouse-briefings --body "심층 리서치 완료: https://dreamhouseksh.github.io/dreamhouse-briefings/research/YYYY-MM-DD-slug.html"
+   gh issue comment N -R DreamHouseKSH/dreamhouse-briefings --body "심층 리서치 완료: https://daily.dahangis.co.kr/research/YYYY-MM-DD-slug.html"
    gh issue close N -R DreamHouseKSH/dreamhouse-briefings
    ```
 4. 사용자에게 채팅으로 건마다 한 줄 결론·핵심 발견·리서치 페이지 링크를 알립니다(새 요청이 없었던 확인 시각에는 알리지 않음).
@@ -368,7 +374,8 @@ gh api repos/DreamHouseKSH/dreamhouse-briefings/pages/builds/latest --jq .status
 뉴스 루틴과 GitHub 루틴은 **각자 콘텐츠 작성이 끝난 뒤** 다음 명령을 실행한다. 첫 루틴에서 다른 파트가 없으면 PENDING으로 끝나며, 두 번째 루틴이 같은 명령을 실행해 전체 판을 만든다. `--if-ready`는 입력이 없을 때만 보류하며 잘못된 본문 형식이나 충돌을 숨기지 않는다. 기사 갯수만 채우거나 다른 날짜를 섞지 않는다.
 
 ```sh
-python3 scripts/build-daily.py YYYY-MM-DD --audio --if-ready
+# docs/SOHEE-CLOUD.md의 격리 Python 환경을 먼저 활성화한다.
+python3 scripts/build-daily.py YYYY-MM-DD --audio --audio-backend sohee --if-ready
 python3 scripts/build-daily.py YYYY-MM-DD --check
 ```
 
@@ -381,18 +388,20 @@ python3 scripts/build-daily.py YYYY-MM-DD --check
 
 ### Mac·클라우드 운영 범위
 
-이미 게시된 HTML·벡터 애니메이션·MP3·출처 링크는 GitHub Pages/CDN에서 제공되므로 Mac 전원과 무관하다. push 이후 GitHub의 관리형 Pages Jekyll 빌드·배포도 GitHub 호스팅에서 실행된다. 그러나 현재 저장소에는 조사·작성·Python 생성·음성 합성을 실행하는 사용자 정의 Actions 작업이 없다. 연결된 로컬 Mac 작업의 예약 실행을 이미 구성된 클라우드 실행 환경으로 표현하지 않는다.
+이미 게시된 HTML·벡터 애니메이션·MP3·출처 링크는 GitHub Pages/CDN에서 제공되므로 Mac 전원과 무관하다. push 이후 GitHub의 관리형 Pages Jekyll 빌드·배포도 GitHub 호스팅에서 실행된다. **이 변경은 조사·작성·음성 합성을 매일 실행할 새 예약 실행기나 사용자 정의 Actions를 설치하지 않는다.** 기존 뉴스·GitHub 발행 루틴은 승인된 클라우드 실행 환경에서 아래 생성 명령을 호출해야 하며, 루틴이 실제로 그 환경에 연결되어 있는지는 별도로 확인한다. 문서에 명령이 있다는 이유만으로 예약 발행이 설정됐다고 보고하지 않는다.
 
-뉴스 조사·편집과 저장소 접근은 실행 가능한 호스트와 승인된 도구가 필요하다. 이 Python 생성기는 Linux나 클라우드에서도 실행 가능하지만, 기존 Yuna 음성 경로의 `say`는 macOS 전용이다. 별도 Sohee 샘플의 MLX는 Apple Silicon용이며 공개 음성 교체 승인은 대기 상태다. 이번 변경은 새 음성 서비스·모델·계정·키·지속 권한을 추가하지 않는다.
+뉴스 조사·편집과 저장소 접근에는 실행 가능한 호스트와 승인된 도구가 필요하다. 새 기본 합성기는 `scripts/build-daily-sohee.py`이며, 공식 `qwen-tts`와 고정된 `Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice` 모델의 `Sohee`를 Linux CPU에서 사용한다. 공개 모델을 실행 호스트의 별도 캐시에 내려받아 공개 대본만 처리하고 새 음성 서비스·계정·키·유료 호출·사용자 목소리 복제·지속 권한은 추가하지 않는다. Mac의 MLX 변환 모델이 아니라 공식 PyTorch 모델이므로 이름이 같은 화자라도 파형이 같다고 가정하지 않는다. 설치 버전·모델 revision·실행 자원과 제한은 [`SOHEE-CLOUD.md`](SOHEE-CLOUD.md)를 따른다.
 
-Mac 없이 생성까지 연결하는 최소 변경안은 **기존 Pages 빌드 앞에서 표준 Python으로 HTML/JSON을 생성하고 검증하는 단계**를 두는 것이다. 관리형 브랜치 Pages는 임의 Python을 실행하지 않으므로, 실제 적용에는 맞춤 Actions 빌드로 전환하거나 별도 콘텐츠 생성 실행 환경을 명시적으로 구성해야 한다. 신규 배포 권한·인증 설정은 이번 작업에서 시행하지 않았다. Yuna와 같은 음성을 유지하려면 Mac 합성 단계가 필요하며, 완전한 클라우드 음성 자동화는 별도 승인된 음성 경로가 필요하다. 음성이 없으면 재생 버튼을 비활성화하고 대본을 안내하며 성공 상태를 표시하지 않는다.
+`build-daily.py --audio`는 Sohee를 기본으로 사용하며 `--audio-backend sohee`로 명시할 수 있다. 기존 Yuna 합성기는 보존하고 `--audio-backend yuna`를 명시한 경우에만 macOS `say`가 필요하다. 10/27~29 기존 오디오를 일괄 변경하지 않는다. 10/30 등 기존 판의 승인된 교체도 먼저 별도 경로에서 새 오디오·메타데이터를 완성하고 대본 해시·음량·길이·전사·cue를 확인한 뒤 대상 두 파일만 함께 교체한다. 실패한 새 합성으로 기존 정상 오디오를 지우지 않는다.
+
+관리형 브랜치 Pages는 Python 합성 명령을 실행하지 않는다. 승인된 클라우드 실행 호스트가 콘텐츠·MP3·메타데이터를 검증해 기존 저장소에 게시하고, Pages는 그대로 정적 빌드·배포만 맡는다. 새로운 배포 설정·권한·외부 서비스를 만들지 않는다. 음성이 없거나 검증이 실패하면 재생 성공으로 표시하지 않고 대본과 정확한 차단 단계를 안내한다.
 
 ### iPhone 웹 환경과 발표 음성 (2026-10-28 보완)
 
 - 브라우저 종류를 특정하지 않고 iPhone 웹 환경 공통으로 `집중 보기`를 제공한다. 이 보기는 웹 페이지 안의 확대이며 주소창을 숨기지 않는다. 네이티브 요소 전체화면은 지원을 확인한 마우스 환경에서만 별도 `기기 전체화면` 옵션으로 제공한다. WebKit 문서의 macOS/iPadOS 지원을 iPhone 지원으로 오해하지 않는다.
 - 집중 보기는 동적 viewport 높이와 visualViewport 변화, safe area 여백을 반영한다. 닫기·이전/재생/다음·설정과 장 선택은 화면 안에 남고, 장 본문만 하나의 세로 스크롤 영역으로 읽는다. 설정 메뉴는 보이는 화면 안에서 별도 스크롤한다. 이전 문서 스크롤은 복구하며 브라우저 뒤로도 집중 보기부터 닫는다. 포커스는 보기 안에 두고 닫으면 원래 버튼으로 복구한다.
 - `_data/day_20261027.json`의 `narration`은 장별 자연스러운 한국어 발표 대본이다. 원문·회사 주장·계획·사후 보충·확인 한계의 범위를 유지한다. `.day-script`는 JavaScript나 음성이 없어도 읽을 수 있는 정적 대본이다.
-- 기본 음성은 `assets/audio/2026-10-27-narration.mp3`의 연속 한국어 오디오다. 공개 대본만 이미 설치된 macOS Yuna 음성으로 로컬 생성하며 새 계정·키·유료 서비스·음성 다운로드·사용자 목소리 복제는 쓰지 않는다. 생성기 `scripts/build-daily-audio.py`와 `_data/day_20261027_audio.json`의 대본/오디오 SHA256 및39개 cue를 함께 갱신한다. scripts는 사이트 게시에서 제외한다.
+- 10/27~29의 보존 음성은 macOS Yuna로 생성한 연속 한국어 오디오다. 예를 들어 `assets/audio/2026-10-27-narration.mp3`를 유지한다. 이 과거 경로에서는 공개 대본과 이미 설치된 음성만 사용했으며, 새 발표의 클라우드 Sohee 경로는 위 운영 범위를 따른다. 과거 생성기는 `scripts/build-daily-audio.py`이며 `_data/day_20261027_audio.json`의 대본/오디오 SHA256과 39개 cue도 함께 보존한다. scripts는 사이트 게시에서 제외한다.
 - `daily-audio.js`의 단일 HTMLAudioElement에 최초 사용자 재생 클릭 안에서 동기적으로 play()를 호출한다. 한 번의 시작으로 음성·각 단계·다음 슬라이드가 끝까지 진행한다. 단계/장은 문장별 Web Speech 이벤트나 별도 타이머가 아니라 동일한 연속 파일의 currentTime/timeupdate로 맞춘다. 기기 내장 한국어 음성이 없어도 동작한다. 기본 버튼은 `발표 시작`, 재생 중 `일시정지`, 중간 정지 후 `이어서 재생`, 종료 후 `처음부터 재생`이다.
 - 일시정지/재개는 오디오의 같은 위치를 유지한다. 속도와 음소거 변경은 파일을 다시 시작하거나 자동 진행을 중단하지 않는다. 읽기용 터치·세로 스크롤과 집중 보기 진입은 재생을 끊지 않는다. 이전/다음·장 선택·그림 스와이프는 수동 탐색이므로 재생을 멈추고 해당 cue로 이동한다. 정적 보기·집중 보기 닫기/뒤로·링크·백그라운드/페이지 이탈은 멈추며 복귀 시 자동 재생하지 않는다. 세션 내 위치는 보존하되 재개에는 사용자 클릭이 필요하다.
 - 중복 트랙을 만들지 않고 같은 오디오 요소를 사용한다. 취소된 play() Promise 거절은 세대 토큰으로 무시하고, 오래된 pause/playing 이벤트는 실제 paused 상태와 대조한다. 오류나 브라우저 재생 거절은 성공처럼 표시하지 않고 설정의 기본 오디오 컨트롤·파일 링크·대본을 안내한다. 네트워크 복구 후 다시 누르면 파일을 다시 불러올 수 있다. JavaScript가 꺼져도 전체 대본과 별도 기본 오디오 플레이어를 제공한다.

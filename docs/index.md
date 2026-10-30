@@ -1,7 +1,7 @@
 # 문서 — 운영 · 에이전트 안내
 
-> 🌐 이 아카이브는 GitHub Pages로 **인터넷에 공개**됩니다: <https://dreamhouseksh.github.io/dreamhouse-briefings/>
-> 날짜별 목록은 사이트가 `news/`, `github/` 폴더를 읽어 **자동으로** 만듭니다. → [전체 아카이브](https://dreamhouseksh.github.io/dreamhouse-briefings/archive/)
+> 🌐 이 아카이브는 GitHub Pages로 **인터넷에 공개**됩니다: <https://daily.dahangis.co.kr/>
+> 날짜별 목록은 사이트가 `news/`, `github/` 폴더를 읽어 **자동으로** 만듭니다. → [전체 아카이브](https://daily.dahangis.co.kr/archive/)
 
 | 문서 | 내용 |
 |---|---|
@@ -13,5 +13,5 @@
 
 ## 사이트 바로가기
 
-- [홈 (최신 브리핑 + 하이라이트)](https://dreamhouseksh.github.io/dreamhouse-briefings/)
-- 분야별: [IT](https://dreamhouseksh.github.io/dreamhouse-briefings/category/it/) · [AI](https://dreamhouseksh.github.io/dreamhouse-briefings/category/ai/) · [모델](https://dreamhouseksh.github.io/dreamhouse-briefings/category/model/) · [엔진](https://dreamhouseksh.github.io/dreamhouse-briefings/category/engine/) · [GitHub 트렌드](https://dreamhouseksh.github.io/dreamhouse-briefings/category/github/)
+- [홈 (최신 브리핑 + 하이라이트)](https://daily.dahangis.co.kr/)
+- 분야별: [IT](https://daily.dahangis.co.kr/category/it/) · [AI](https://daily.dahangis.co.kr/category/ai/) · [모델](https://daily.dahangis.co.kr/category/model/) · [엔진](https://daily.dahangis.co.kr/category/engine/) · [GitHub 트렌드](https://daily.dahangis.co.kr/category/github/)

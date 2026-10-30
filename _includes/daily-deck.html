@@ -1,6 +1,7 @@
 {% assign edition = site.data[page.edition_key] %}
 {% assign track = site.data[page.audio_key] %}
 {% assign audio_url = "/assets/audio/" | append: page.briefing_date | append: "-narration.mp3" %}
+{% if track.audio_sha256 %}{% assign audio_url = audio_url | append: "?v=" | append: track.audio_sha256 %}{% endif %}
 <div class="day-deck" id="day-deck" data-date="{{ page.briefing_date }}">
   <div class="day-focusbar" hidden><div><strong id="day-focus-title">{{ page.briefing_date }} · 집중 보기</strong><small>웹 화면 안에서 확대합니다 · 브라우저 주소창은 유지됩니다</small></div><button type="button" data-action="close-focus">닫기 ✕</button></div>
   <div class="day-heading"><div><p class="eyebrow">DAILY MOTION BRIEFING · KST</p><h1>{{ page.briefing_date }} · 하루 발표</h1></div><a href="#day-index">전체 기사 목차 ↓</a></div>

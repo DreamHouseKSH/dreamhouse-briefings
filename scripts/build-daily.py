@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build a complete dated motion deck from the existing news + GitHub archive.
-Standard library only. No model, API, credentials, network or news invention.
---audio uses the existing installed macOS Yuna route. --check is portable.
+Planning and checks use the standard library, without network or news invention.
+Audio synthesis loads the selected backend and may download pinned public weights.
+--audio defaults to official cloud CPU Sohee; --audio-backend yuna preserves the legacy macOS route. --check is portable.
 """
 import argparse,hashlib,html,importlib.util,json,re,tempfile,os
 from pathlib import Path
@@ -107,7 +108,7 @@ def check(date):
     assert abs(info['duration']-last)<0.001
     return {'date':date,'items':len(data['items']),'slides':len(data['slides']),'seconds':info['duration'],'status':'verified'}
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('date');p.add_argument('--audio',action='store_true');p.add_argument('--check',action='store_true');p.add_argument('--if-ready',action='store_true');p.add_argument('--plan',type=Path,help='Portable HTML/JSON preview directory; no audio or publication');args=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('date');p.add_argument('--audio',action='store_true');p.add_argument('--audio-backend',choices=['sohee','yuna'],default='sohee');p.add_argument('--model-dir',type=Path);p.add_argument('--work-dir',type=Path);p.add_argument('--check',action='store_true');p.add_argument('--if-ready',action='store_true');p.add_argument('--plan',type=Path,help='Portable HTML/JSON preview directory; no audio or publication');args=p.parse_args()
     Date.fromisoformat(args.date)
     if args.check:print(json.dumps(check(args.date)));return
     try:data=make(args.date)
@@ -124,21 +125,23 @@ def main():
     targets=paths(args.date)
     if any(x.exists() for x in targets):print(json.dumps(check(args.date)));return
     if not args.audio:raise ValueError('Use --audio to build all components together; partial silent editions are not published')
-    module=importlib.util.spec_from_file_location('audio_builder',ROOT/'scripts/build-daily-audio.py');audio_builder=importlib.util.module_from_spec(module);module.loader.exec_module(audio_builder)
+    builder='build-daily-sohee.py' if args.audio_backend=='sohee' else 'build-daily-audio.py'
+    module=importlib.util.spec_from_file_location('audio_builder',ROOT/'scripts'/builder);audio_builder=importlib.util.module_from_spec(module);module.loader.exec_module(audio_builder)
     with tempfile.TemporaryDirectory(prefix='dh-edition-') as folder:
         work=Path(folder);staged=[work/str(i) for i in range(4)]
         staged[0].write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
         key=args.date.replace('-','')
         staged[1].write_text(page_text)
-        audio_builder.build(data,args.date,staged[2],staged[3])
+        if args.audio_backend=='sohee':audio_builder.build(data,args.date,staged[2],staged[3],model_dir=args.model_dir,work_dir=args.work_dir)
+        else:audio_builder.build(data,args.date,staged[2],staged[3])
         if data['source_hashes']!=digest(inputs(args.date)):raise ValueError('Source changed during generation; stopped without writing')
         if any(x.exists() for x in targets):raise ValueError('Another writer created this date; stopped without overwriting')
         created=[]
         try:
             for source,target in zip(staged,targets):
                 target.parent.mkdir(parents=True,exist_ok=True)
-                with target.open('xb') as out:out.write(source.read_bytes())
-                created.append(target)
+                with target.open('xb') as out:
+                    created.append(target);out.write(source.read_bytes())
         except Exception:
             for target in created:target.unlink()
             raise

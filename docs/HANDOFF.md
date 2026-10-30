@@ -71,7 +71,7 @@
     - 예상 쟁점: (출처 없는 일반론, 라벨 필수)
   **시사점:** 한두 문장
   ```
-- **채팅 요약 형식:** 친구 말투 반말. 첫 줄 인사와 날짜, 그다음 **IT / AI / 모델 / 엔진** 굵은 제목 아래 글머리표. 기사마다 2~3문장(무엇·숫자·단서)과 출처 링크, 필요하면 '다른 시각' 한 줄. 줄임말은 나올 때마다 괄호 풀이. 마지막 줄에 사이트 링크 `https://dreamhouseksh.github.io/dreamhouse-briefings/news/YYYY-MM-DD/IT.html`. 기사 주소를 못 구해 매체 홈으로만 연결한 게 있으면 그렇다고 밝힌다.
+- **채팅 요약 형식:** 친구 말투 반말. 첫 줄 인사와 날짜, 그다음 **IT / AI / 모델 / 엔진** 굵은 제목 아래 글머리표. 기사마다 2~3문장(무엇·숫자·단서)과 출처 링크, 필요하면 '다른 시각' 한 줄. 줄임말은 나올 때마다 괄호 풀이. 마지막 줄에 사이트 링크 `https://daily.dahangis.co.kr/news/YYYY-MM-DD/IT.html`. 기사 주소를 못 구해 매체 홈으로만 연결한 게 있으면 그렇다고 밝힌다.
 - **성공 기준:** 그날 파일이 사이트에 뜨고(Pages `built`), 모든 항목에 원문 링크·요약·논조·다른 시각이 있고, 줄임말이 모두 풀이되고 용어집에 등록되고, 홈에 하이라이트가 보이고, 채팅 요약이 08시대에 도착한다.
 - **알림 규칙:** 평일마다 항상 보낸다. 중요한 뉴스가 없으면 한 문장으로 짧게 알린다.
 - **프롬프트 예시(그대로 넣어도 됨):**
@@ -110,7 +110,7 @@
   4. `### 어제(MM/DD) 대비` — 새로 들어옴(처음/재등장)·빠짐
   5. 분야별 `<section class="gh-sec gh-sec-…" markdown="1">` 안에 레포 카드 `<article class="gh-card" id="owner-repo" data-repo="owner/repo" markdown="1">`: 제목 링크 → 배지 줄 `<p class="gh-badges no-gloss">`(NEW/재등장·언어·⭐누적·📈 일간/주간 증가·⚖️ 라이선스·🏷️ 마지막 릴리스·🔥 연속 일수) → 대표 이미지 `{: .gh-img loading="lazy"}` → 리드 `{: .gh-lead}` → **무엇인가** / **왜 지금 뜨나** / **어떻게 쓰나** / **비슷한 도구와 비교** / **주의할 점**(`{: .gh-warn}`; 성숙도·라이선스·보안·법·스타 급증 신뢰성 필수)
   - 🔍 리서치 버튼은 마크다운에 쓰지 않는다. `assets/js/site.js`가 카드마다 자동으로 붙인다.
-- **채팅 요약 형식:** 반말. 몇 개를 골랐는지와 새로 들어온 것, 분야별 글머리표(레포 링크 + 한두 문장 + `일간/주간 +N · ⭐누적`), 마지막에 한 문단 총평과 `https://dreamhouseksh.github.io/dreamhouse-briefings/github/YYYY-MM-DD.html` 링크. 별이 비정상적으로 급증한 레포(포크 비율 이상 등)는 숫자를 조심하라고 짚는다.
+- **채팅 요약 형식:** 반말. 몇 개를 골랐는지와 새로 들어온 것, 분야별 글머리표(레포 링크 + 한두 문장 + `일간/주간 +N · ⭐누적`), 마지막에 한 문단 총평과 `https://daily.dahangis.co.kr/github/YYYY-MM-DD.html` 링크. 별이 비정상적으로 급증한 레포(포크 비율 이상 등)는 숫자를 조심하라고 짚는다.
 - **성공 기준:** 카드마다 다섯 문단과 배지가 다 있고, 이미지가 실제로 보이고(jsdelivr/opengraph), TOP5·전날 대비가 맞고, 사실 주장에 출처가 있거나 "확인되지 않음"으로 표시되고, 빌드가 `built`이다.
 - **알림 규칙:** 평일마다 항상 보낸다.
 - **프롬프트 예시:**
@@ -150,10 +150,10 @@
   5. 커밋(`research: #N slug`) → pull --rebase → push → `built` 확인 → 사이트 URL이 열리는지 확인.
   6. 이슈에 댓글을 달고 닫는다:
      ```bash
-     gh issue comment N -R DreamHouseKSH/dreamhouse-briefings --body "심층 리서치 완료: https://dreamhouseksh.github.io/dreamhouse-briefings/research/YYYY-MM-DD-slug.html"
+     gh issue comment N -R DreamHouseKSH/dreamhouse-briefings --body "심층 리서치 완료: https://daily.dahangis.co.kr/research/YYYY-MM-DD-slug.html"
      gh issue close N -R DreamHouseKSH/dreamhouse-briefings
      ```
-     댓글 속 URL은 반드시 `https://dreamhouseksh.github.io/dreamhouse-briefings/research/`로 시작해야 한다(사이트 버튼이 이 접두사만 인정).
+     댓글 속 URL은 반드시 `https://daily.dahangis.co.kr/research/`로 시작해야 한다(사이트 버튼은 이 주소와 기존 GitHub Pages 연구 주소를 함께 인정).
   7. 사용자에게 건마다 한 줄 결론, 핵심 발견, 리서치 페이지 링크를 채팅으로 보낸다.
 - **성공 기준:** 요청 후 약 15분 안에 처리를 시작하고, 리서치 페이지가 사이트에 뜨고, 원래 기사 버튼이 '📄 리서치 보기'로 바뀌고, 이슈는 댓글과 함께 닫힌다.
 - **알림 규칙:** **새 요청을 처리했을 때만** 알린다. 없으면 메시지를 보내지 않는다.
@@ -195,7 +195,7 @@
 
 ## 3. 브리핑 사이트와 저장소 구조
 
-- **사이트:** https://dreamhouseksh.github.io/dreamhouse-briefings/ (공개)
+- **사이트:** https://daily.dahangis.co.kr/ (공개)
 - **저장소:** https://github.com/DreamHouseKSH/dreamhouse-briefings (public, 기본 브랜치 `main`, Pages 소스 = `main` 루트)
 - **빌드:** GitHub 기본 Jekyll. 외부 테마 없이 커스텀 레이아웃. push 후 보통 1~2분이면 반영된다. 플러그인 `jekyll-optional-front-matter`, `jekyll-relative-links` 덕분에 브리핑 `.md`에는 front matter가 필요 없고, `.md` 상대 링크는 `.html`로 바뀐다. 시간대는 `_config.yml`의 `timezone: Asia/Seoul`.
 
