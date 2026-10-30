@@ -370,11 +370,11 @@
     //     → 탭을 여러 개 열어도 이슈 목록은 시간당 약 20회. 'storage' 이벤트로 다른 탭 결과도 즉시 반영.
     //   - 남은 한도 X-RateLimit-Remaining < 10 이면 reset 시각까지 쉼. 실패하면 조용히 현재 버튼 유지.
     //   - 닫힌 이슈(완료) + 페이지에 '심층 리서치' 링크가 아직 없음 → 마지막 댓글에서 research/ URL을 찾아 연결
-    //     (https://dreamhouseksh.github.io/dreamhouse-briefings/research/ 로 시작하는 것만 허용, 아니면 이슈 링크).
+    //     (새 맞춤 도메인과 기존 GitHub Pages의 정확한 research/ 접두사만 허용).
     //     댓글 조회는 이 페이지에 해당 기사가 있을 때만, 이슈당 1회(결과를 localStorage 에 영구 캐시).
     var LS = "dh-research-v2", LSC = "dh-research-comments-v2", LSL = "dh-research-lock-v2", LSB = "dh-research-backoff-v2";
     var POLL = 3 * 60 * 1000, FRESH = 170 * 1000, REVISIT = 120 * 1000;
-    var RESEARCH_PREFIX = "https://dreamhouseksh.github.io/dreamhouse-briefings/research/";
+    var RESEARCH_PREFIXES = ["https://daily.dahangis.co.kr/research/", "https://dreamhouseksh.github.io/dreamhouse-briefings/research/"];
     var lsGet = function (k) { try { return JSON.parse(localStorage.getItem(k) || "null"); } catch (e) { return null; } };
     var lsSet = function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
     var apiGet = function (path) {
@@ -428,7 +428,7 @@
         var urls = String(comments[i] && comments[i].body || "").match(/https?:\/\/[^\s<>()"'`\]]+/g) || [];
         for (var j = 0; j < urls.length; j++) {
           var u = urls[j].replace(/[.,;:!?·)]+$/, "");
-          if (u.indexOf(RESEARCH_PREFIX) === 0 && u.length > RESEARCH_PREFIX.length && !/[\\]|\.\./.test(u)) return u;
+          if (RESEARCH_PREFIXES.some(function (prefix) { return u.indexOf(prefix) === 0 && u.length > prefix.length; }) && !/[\\]|\.\./.test(u)) return u;
         }
         if (comments[i] && comments[i].user && comments[i].user.login === OWNER) break; // 마지막 내 댓글까지만
       }

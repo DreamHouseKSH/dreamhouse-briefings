@@ -2,8 +2,8 @@
 title: DreamHouse 브리핑
 description: 평일 아침 IT·AI·모델·엔진 뉴스와 GitHub 트렌드, X 유명인 동향을 날짜별로 쌓는 한국어 요약 아카이브
 lang: ko-KR
-url: https://dreamhouseksh.github.io
-baseurl: /dreamhouse-briefings
+url: https://daily.dahangis.co.kr
+baseurl: ""
 repository: DreamHouseKSH/dreamhouse-briefings
 timezone: Asia/Seoul
 

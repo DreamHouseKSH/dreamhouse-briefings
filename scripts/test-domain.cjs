@@ -1,0 +1,11 @@
+const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict'),path=require('node:path');
+const root=path.resolve(__dirname,'..'),source=fs.readFileSync(path.join(root,'assets/js/site.js'),'utf8');
+const prefix=source.match(/var RESEARCH_PREFIXES = (\[[^;]+\]);/)[1];
+const start=source.indexOf('    var findResearchUrl = function'),end=source.indexOf('\n    var ',start+8);
+const context={RESEARCH_PREFIXES:JSON.parse(prefix),OWNER:'DreamHouseKSH'};vm.createContext(context);vm.runInContext(source.slice(start,end),context);
+const find=url=>context.findResearchUrl([{body:url,user:{login:'DreamHouseKSH'}}]);
+for(const url of ['https://daily.dahangis.co.kr/research/2026-10-30-test.html','https://dreamhouseksh.github.io/dreamhouse-briefings/research/2026-10-30-test.html'])assert.equal(find(url),url);
+for(const url of ['https://daily.dahangis.co.kr.evil.test/research/test.html','https://evil.test/research/test.html','https://daily.dahangis.co.kr/research/../private','https://daily.dahangis.co.kr/research/','http://daily.dahangis.co.kr/research/test.html'])assert.equal(find(url),'');
+const config=fs.readFileSync(path.join(root,'_config.yml'),'utf8');assert.match(config,/^url: https:\/\/daily\.dahangis\.co\.kr$/m);assert.match(config,/^baseurl: ""$/m);
+assert.equal(fs.readFileSync(path.join(root,'CNAME'),'utf8').trim(),'daily.dahangis.co.kr');
+console.log('PASS: custom domain config, new/legacy research URLs, hostile-prefix/traversal rejection');
