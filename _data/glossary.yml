@@ -496,3 +496,6 @@
 
 - {"term": "추론 엔진", "full": "inference engine", "ko": "학습된 모델을 불러 실제 입력에 대한 결과를 계산하는 실행 소프트웨어"}
 - {"term": "이동 집계", "full": "rolling window", "ko": "관찰 시점이 옮겨가며 포함 기간도 함께 바뀌는 집계"}
+
+# --- 2026-11-01 weekly outlook ---
+- { term: "일광절약시간", full: "Daylight Saving Time", ko: "계절에 따라 표준시보다 시계를 앞당겨 쓰는 제도" }
