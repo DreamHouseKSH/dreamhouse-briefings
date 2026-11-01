@@ -1,3 +1,8 @@
+"2026-11-02":
+  IT: "삼성 일본 패키징 연구 점검·10월 반도체 수출 증가 / 기존 투자 계획과 금액·물량 구분"
+  AI: "Aramco HUMAIN 지분49% 거래 종결 / 2030년3GW는 계획·실제 가동과 구분"
+  엔진: "llama.cpp OpenCL IQ3 초기 지원·Hexagon 큰 간격 전송 수정 / 사전 릴리스·실기 검증 미수행"
+
 "2026-10-30":
   GitHub: "Impeccable 일간 +2,881·DeepTutor +1,926 / ThinkRail·OpenMausBot 새 버전 / 일간·주간·Python·TypeScript 7개 선별"
   IT: "삼성 반도체 호황·완제품 적자 병존 / PHP2Shell의 PAN-OS 관리 화면 실제 악용 후속 경보"
@@ -126,5 +131,6 @@
   모델: "Reflection Beam(501B/23B MoE, SWE 80.9) / Reka Rho-1(19B 옴니) / interfaze-1-lite"
   엔진: "Strata / vLLM 0.31 + CVE / llama.cpp 0.6.0 / SGLang 0.5.21 / Ollama MLX RC / 결정 모델 API / KoboldCpp Agent / vllm-metal"
   GitHub: "VoiceStudio(주간 +14.7K), hindsight(+10.6K), paperclip(+8.7K), OpenShell(+6.0K) 등 25개 저장소"
+
 
 

@@ -499,3 +499,14 @@
 
 # --- 2026-11-01 weekly outlook ---
 - { term: "일광절약시간", full: "Daylight Saving Time", ko: "계절에 따라 표준시보다 시계를 앞당겨 쓰는 제도" }
+
+
+- { term: "DMA", full: "Direct Memory Access", ko: "프로세서가 매번 복사하지 않고 장치가 메모리 데이터를 직접 옮기는 방식" }
+- { term: "IQ3_S", full: "", ko: "llama.cpp에서 모델 가중치를 낮은 비트 수로 저장하는 양자화 형식" }
+- { term: "IQ3_XXS", full: "", ko: "llama.cpp에서 모델 가중치를 낮은 비트 수로 저장하는 양자화 형식" }
+
+- { term: "APL", full: "Advanced Package Lab", ko: "삼성전자의 첨단 반도체 패키징 연구 거점" }
+- { term: "패키징", full: "packaging", ko: "여러 반도체를 연결하고 보호해 하나의 시스템으로 작동시키는 기술" }
+- { term: "PIF", full: "Public Investment Fund", ko: "사우디아라비아의 국부펀드" }
+- { term: "IEA", full: "International Energy Agency", ko: "에너지 수급과 정책을 분석하는 국제에너지기구" }
+- { term: "GW", full: "gigawatt", ko: "10억 와트에 해당하는 전력 단위" }
