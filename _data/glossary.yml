@@ -510,3 +510,5 @@
 - { term: "PIF", full: "Public Investment Fund", ko: "사우디아라비아의 국부펀드" }
 - { term: "IEA", full: "International Energy Agency", ko: "에너지 수급과 정책을 분석하는 국제에너지기구" }
 - { term: "GW", full: "gigawatt", ko: "10억 와트에 해당하는 전력 단위" }
+
+- {"term": "VAD", "full": "Voice Activity Detection", "ko": "녹음에서 음성이 있는 구간을 가려내는 처리"}
