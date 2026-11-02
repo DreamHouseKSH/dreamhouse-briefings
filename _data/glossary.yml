@@ -514,3 +514,13 @@
 - {"term": "VAD", "full": "Voice Activity Detection", "ko": "녹음에서 음성이 있는 구간을 가려내는 처리"}
 
 - { term: "MPS", full: "Metal Performance Shaders", ko: "Apple 기기의 그래픽 처리 장치에서 계산을 수행하도록 제공하는 기능" }
+
+- { term: "디지털 트윈", full: "Digital Twin", ko: "실제 환경을 가상 공간에 재현해 상태와 변경 영향을 시험하는 기술" }
+
+- { term: "SCOUT", full: "Smart Companion for Online Understanding and Training", ko: "Google 교육 허브에서 질문과 학습 계획을 돕는 AI" }
+
+- { term: "하이브리드·멀티클라우드", full: "Hybrid/Multi-cloud", ko: "사내 시스템과 여러 클라우드를 함께 사용하는 구성" }
+
+- { term: "자기회귀", full: "Autoregressive", ko: "앞선 입력과 출력을 바탕으로 다음 토큰을 순서대로 생성하는 방식" }
+
+- { term: "디코딩", full: "Decoding", ko: "입력을 처리한 뒤 출력 토큰을 차례로 생성하는 단계" }
