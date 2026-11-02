@@ -37,7 +37,9 @@
     slides.forEach((slide, i) => {
       slide.hidden = !isStatic && i !== index;
       slide.querySelectorAll('[data-step]').forEach(el => el.classList.toggle('is-future', i === index && Number(el.dataset.step) > step));
-      slide.querySelector('.day-wire').style.strokeDashoffset = isStatic ? 0 : String(1 - step / total);
+      const wire = slide.querySelector('.day-wire');
+      if (wire) wire.style.strokeDashoffset = isStatic ? 0 : String(1 - step / total);
+      slide.dataset.activeStep = String(isStatic ? total : step);
     });
     prev.disabled = isStatic || (index === 0 && step <= 1);
     next.disabled = isStatic || (index === slides.length - 1 && step === total);
@@ -168,7 +170,7 @@
   });
   let start = null;
   stage.addEventListener('touchstart', e => {
-    if(e.touches.length===1 && e.target.closest('.day-diagram') && !e.target.closest('a,button'))start=[e.touches[0].clientX,e.touches[0].clientY,stage.scrollTop];else start=null;
+    if(e.touches.length===1 && e.target.closest('.day-diagram, .day-visual') && !e.target.closest('a,button'))start=[e.touches[0].clientX,e.touches[0].clientY,stage.scrollTop];else start=null;
   },{passive:true});
   stage.addEventListener('touchend', e => {if(!start||!e.changedTouches.length)return;const t=e.changedTouches[0],dx=t.clientX-start[0],dy=t.clientY-start[1],scrolled=Math.abs(stage.scrollTop-start[2]);start=null;if(Math.abs(dx)>65 && Math.abs(dx)>Math.abs(dy)*1.5 && scrolled<12)advance(dx<0?1:-1);},{passive:true});
   stage.addEventListener('touchcancel',()=>{start=null;},{passive:true});

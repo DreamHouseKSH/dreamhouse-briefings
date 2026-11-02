@@ -124,6 +124,13 @@ def main():
         print(json.dumps({'date':args.date,'status':'HTML/JSON preview only; no audio generated','items':len(data['items'])}));return
     targets=paths(args.date)
     if any(x.exists() for x in targets):print(json.dumps(check(args.date)));return
+    manifest_path=ROOT/f'_data/day_{key}_visuals.json'
+    if not manifest_path.is_file():raise ValueError('PENDING: reviewed content-specific visual manifest required; use --plan first (WORKFLOW 10)')
+    spec=importlib.util.spec_from_file_location('visual_validator',ROOT/'scripts/check-daily-visuals.py')
+    visual_validator=importlib.util.module_from_spec(spec);spec.loader.exec_module(visual_validator)
+    manifest_digest=hashlib.sha256(manifest_path.read_bytes()).hexdigest()
+    visual_validator.validate(json.loads(manifest_path.read_text()),data)
+    page_text=page_text.replace(f'audio_key: day_{key}_audio\n',f'audio_key: day_{key}_audio\nvisual_key: day_{key}_visuals\n')
     if not args.audio:raise ValueError('Use --audio to build all components together; partial silent editions are not published')
     builder='build-daily-sohee.py' if args.audio_backend=='sohee' else 'build-daily-audio.py'
     module=importlib.util.spec_from_file_location('audio_builder',ROOT/'scripts'/builder);audio_builder=importlib.util.module_from_spec(module);module.loader.exec_module(audio_builder)
@@ -135,6 +142,7 @@ def main():
         if args.audio_backend=='sohee':audio_builder.build(data,args.date,staged[2],staged[3],model_dir=args.model_dir,work_dir=args.work_dir)
         else:audio_builder.build(data,args.date,staged[2],staged[3])
         if data['source_hashes']!=digest(inputs(args.date)):raise ValueError('Source changed during generation; stopped without writing')
+        if manifest_digest!=hashlib.sha256(manifest_path.read_bytes()).hexdigest():raise ValueError('Visual plan changed during generation; stopped without writing')
         if any(x.exists() for x in targets):raise ValueError('Another writer created this date; stopped without overwriting')
         created=[]
         try:

@@ -1,8 +1,9 @@
 {% assign edition = site.data[page.edition_key] %}
+{% assign visuals = site.data[page.visual_key] %}
 {% assign track = site.data[page.audio_key] %}
 {% assign audio_url = "/assets/audio/" | append: page.briefing_date | append: "-narration.mp3" %}
 {% if track.audio_sha256 %}{% assign audio_url = audio_url | append: "?v=" | append: track.audio_sha256 %}{% endif %}
-<div class="day-deck" id="day-deck" data-date="{{ page.briefing_date }}">
+<div class="day-deck" id="day-deck" data-date="{{ page.briefing_date }}"{% if visuals %} data-visual-edition="{{ visuals.schema_version }}"{% endif %}>
   <div class="day-focusbar" hidden><div><strong id="day-focus-title">{{ page.briefing_date }} · 집중 보기</strong><small>웹 화면 안에서 확대합니다 · 브라우저 주소창은 유지됩니다</small></div><button type="button" data-action="close-focus">닫기 ✕</button></div>
   <div class="day-heading"><div><p class="eyebrow">DAILY MOTION BRIEFING · KST</p><h1>{{ page.briefing_date }} · 하루 발표</h1></div><a href="#day-index">전체 기사 목차 ↓</a></div>
   <p class="day-scope">{{ edition.scope | default: page.scope }}</p>
@@ -30,8 +31,10 @@
   <noscript><p>자바스크립트가 꺼져 있어 자동 화면 전환은 사용할 수 없습니다. {% if track.cues %}한국어 오디오와 아래 전체 대본을 함께 읽을 수 있습니다.{% else %}오디오가 준비되지 않아 아래 전체 대본을 읽을 수 있습니다.{% endif %}</p>{% if track.cues %}<audio controls preload="none" src="{{ audio_url | relative_url }}"></audio>{% endif %}</noscript>
   <div class="day-stage" tabindex="0" aria-label="하루 브리핑 발표 · 세로로 스크롤해 전체 내용을 읽을 수 있습니다">
   {% for slide in edition.slides %}
-  <section class="day-slide day-{{ slide.kind }}" id="slide-{{ forloop.index }}" aria-labelledby="slide-title-{{ forloop.index }}" data-slide="{{ forloop.index0 }}">
-    <div class="day-copy"><p class="day-kicker">{{ slide.kicker }}</p><h2 id="slide-title-{{ forloop.index }}" tabindex="-1">{{ slide.title | newline_to_br }}</h2><p class="day-intro">{{ slide.intro }}</p></div>
+  {% assign visual = visuals.scenes[forloop.index0] %}
+  <section class="day-slide day-{{ slide.kind }}{% if visual %} day-visual-slide visual-{{ visual.type }}{% endif %}" id="slide-{{ forloop.index }}" aria-labelledby="slide-title-{{ forloop.index }}" data-slide="{{ forloop.index0 }}">
+    <div class="day-copy"><p class="day-kicker">{{ slide.kicker }}</p><h2 id="slide-title-{{ forloop.index }}" tabindex="-1">{% if visual %}{{ visual.title | escape | newline_to_br }}{% else %}{{ slide.title | newline_to_br }}{% endif %}</h2><p class="day-intro">{% if visual %}{{ visual.dek | escape }}{% else %}{{ slide.intro }}{% endif %}</p></div>
+    {% if visual %}{% include daily-visual.html visual=visual number=forloop.index %}{% else %}
     <div class="day-diagram" aria-label="{{ slide.nodes | join: '、' }}의 관계">
       <svg viewBox="0 0 600 250" aria-hidden="true" focusable="false"><defs><pattern id="grid-{{forloop.index}}" width="25" height="25" patternUnits="userSpaceOnUse"><path d="M 25 0 L 0 0 0 25" fill="none" stroke="currentColor" stroke-opacity=".09"/></pattern></defs><rect width="600" height="250" fill="url(#grid-{{forloop.index}})"/>
       {% if slide.kind == 'stake' %}<g class="day-special" aria-hidden="true"><rect x="190" y="25" width="220" height="45" rx="6"/><rect x="215" y="80" width="170" height="45" rx="6"/><path d="M240 70V80M280 70V80M320 70V80M360 70V80"/><text x="300" y="210" text-anchor="middle">거래 후 목표 약 20% · 조건부</text></g>{% elsif slide.kind == 'vehicle' %}<path class="day-special" d="M95 45Q90 12 140 12H460Q510 12 505 45L550 175Q560 220 510 225H90Q40 220 50 175ZM175 18L130 222M425 18L470 222"/>{% elsif slide.kind == 'finance' %}<g class="day-special"><path d="M60 45H140L100 15ZM65 50V75M100 50V75M135 50V75M55 80H145M460 35H540V80H460ZM475 45H490V60H475ZM510 45H525V60H510Z"/><text x="300" y="220" text-anchor="middle">약정 → 구매 → 임대 · 실행 완료 아님</text></g>{% endif %}
@@ -42,6 +45,7 @@
       <ol class="day-labels">{% for label in slide.labels %}<li data-step="{{forloop.index}}"><span>0{{forloop.index}}</span>{{label}}</li>{% endfor %}</ol>
       <p class="day-diagram-caption">관계도 · 편집 해설 / 도형 크기는 수치를 나타내지 않습니다</p>
     </div>
+    {% endif %}
     {% if slide.note %}<p class="day-note">{{slide.note}}</p>{% endif %}
     <details class="day-script"><summary>발표 대본 · {{forloop.index}}장</summary><ol>{% for sentence in slide.narration %}<li>{{sentence}}</li>{% endfor %}</ol></details>
     <div class="day-refs"><span>이 장의 근거 · 상세</span>{% for ref in slide.refs %}{% assign item = edition.items | where: 'id', ref | first %}<a href="#item-{{item.id}}">{{item.short}}</a>{% endfor %}</div>

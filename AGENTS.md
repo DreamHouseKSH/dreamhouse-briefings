@@ -4,6 +4,7 @@
 
 ## 변경 이력 (요약 — 상세는 [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 맨 위 '변경 이력')
 
+- **2026-11-02 (내용별 시각화):** 새 하루 발표는 `_data/day_YYYYMMDD_visuals.json`의 근거 연결 장면과 `visual_key`를 갖추고 `python3 scripts/check-daily-visuals.py YYYY-MM-DD` 및 실제 모바일/데스크톱 검수를 통과해야 완성이다. 같은 세 원·카드 반복은 초안으로 남긴다. 원본 대본·오디오·cue는 보존하며 과거 판 검사·재사용은 변경하지 않는다. WORKFLOW 10장 내용별 시각화 발행 게이트 참고.
 - **2026-10-30 (클라우드 Sohee):** 사용자 승인 후 새 발표의 기본 합성을 공식 Qwen3-TTS Sohee의 Linux CPU 경로로 전환한다. `--audio-backend sohee`로 명시할 수 있으며 `--check`는 합성 없이 실행된다. 10/27~29 Yuna 기록은 보존하고, 기존 판의 교체는 별도 생성·전사·cue 검증 후에만 진행한다. 새 계정·유료 음성 서비스·Mac 실행은 필요 없다. 실행 환경 준비와 매일 발행 명령은 [`docs/SOHEE-CLOUD.md`](docs/SOHEE-CLOUD.md). 이는 실행 가능한 생성 경로이지 새 예약 실행기나 Actions 스케줄을 설치했다는 뜻은 아니다.
 - **2026-10-30 (일일 발표):** 뉴스와 GitHub 작성 후 `python3 scripts/build-daily.py YYYY-MM-DD --audio --if-ready`, 생성 완료 후 `--check`를 실행한다. 날짜별 데이터·공용 화면·연속 오디오·cue를 생성하며 기존 판은 체크만 한다. source hash 변경·경합은 중단한다. 홈·날짜 칩·기사 탭·`daily/` 목록은 실제 판을 자동 연결한다. HTML/JSON 생성은 표준 Python이며, Sohee 합성은 별도 Python 환경에서 실행한다. 보존용 Yuna 합성 경로만 macOS에 의존한다. WORKFLOW 10장 참고.
 - **2026-10-28 (연속 오디오):** iPhone 재현 후 기본 발표를 사전 생성 한국어 MP3 한 파일로 전환했다. `daily-audio.js`가 재생 시간과 39개 cue로 단계·장 전체를 자동 진행한다. Web Speech/기기 음성 목록·문장별 발화 이벤트에 의존하지 않는다. 생성은 `scripts/build-daily-audio.py`, 자세한 검증은 WORKFLOW 10장.

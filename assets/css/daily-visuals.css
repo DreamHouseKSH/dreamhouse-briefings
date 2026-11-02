@@ -1,0 +1,36 @@
+/* Content-led scenes. Enabled only for editions with reviewed visual manifests. */
+.day-visual-slide{--scene-accent:#60d5c4;--scene-secondary:#d3b87a;background:linear-gradient(130deg,#122624,#101719 70%);color:#eef5f2;grid-template-columns:.82fr 1.18fr!important;gap:1.5rem!important;padding:clamp(1.2rem,3vw,2.6rem)!important}
+.day-visual-slide .day-copy h2{font-size:clamp(1.9rem,3.5vw,3.1rem);line-height:1.18;letter-spacing:-.055em;text-wrap:balance;color:#fff;margin:.6rem 0 1.1rem}
+.day-visual-slide .day-intro{font-size:1.05rem;line-height:1.65;color:#b8ccc6;max-width:27em}
+.day-visual-slide .day-kicker{color:var(--scene-accent);letter-spacing:.09em}
+.day-visual{margin:0;min-width:0;border-left:1px solid #ffffff20;padding-left:1.2rem}
+.day-visual svg{width:100%;height:auto;display:block;overflow:visible;color:#cbd9d6;font-family:inherit}
+.day-visual svg rect,.day-visual svg path,.day-visual svg ellipse{fill:none;stroke:currentColor;stroke-width:2}
+.day-visual svg text{fill:#edf6f2;stroke:none;font-size:25px;font-weight:650;letter-spacing:-.025em}
+.day-visual svg .v-eyebrow{font-size:16px;letter-spacing:.08em;fill:var(--scene-accent);font-weight:700}
+.day-visual svg .v-small{font-size:21px;fill:#c4d3ce;font-weight:500}
+.day-visual svg .v-hero{font-size:145px;font-weight:800;letter-spacing:-.065em;fill:var(--scene-accent)}
+.day-visual svg .v-number{font-size:42px;font-weight:750;fill:var(--scene-accent)}
+.day-visual svg .v-value{font-weight:800;fill:#fff}
+.day-visual svg .v-accent{fill:var(--scene-accent);stroke:none}
+.day-visual svg .v-secondary{fill:var(--scene-secondary);stroke:none}
+.day-visual svg .v-inverse{fill:#10201d;font-weight:750;font-size:24px}
+.day-visual svg .v-dashed{stroke-dasharray:6 6;stroke:var(--scene-secondary)}
+.day-visual svg .v-wave{stroke:var(--scene-accent);stroke-width:4;fill:none}
+.visual-steps{list-style:none;padding:0;margin:1rem 0 .7rem;display:grid;gap:.4rem}
+.visual-steps li{font-size:.88rem;line-height:1.5;color:#edf6f2;display:flex;gap:.8rem;align-items:baseline}
+.visual-steps span{color:var(--scene-accent);font-size:.72rem;font-weight:800;letter-spacing:.1em}
+.day-visual figcaption{font-size:.73rem;line-height:1.55;color:#a8bcb5;border-top:1px solid #ffffff20;padding-top:.6rem}
+.day-deck.is-enhanced:not(.is-static) .day-visual-slide [data-step].is-future{opacity:.45;transform:none}
+.day-visual-slide [data-step]{transition:opacity .55s ease}
+.day-visual-slide .day-refs,.day-visual-slide .day-note{color:#bccbc6}
+.day-visual-slide .day-refs a{color:var(--scene-accent)}
+.visual-ownership{--scene-accent:#a6d9ab;--scene-secondary:#cfb877}.visual-package{--scene-accent:#a5adf3;--scene-secondary:#78b8be;background:linear-gradient(130deg,#21283e,#14191f)}
+.visual-exports{--scene-accent:#e7b965;background:linear-gradient(130deg,#30271e,#191a1c)}
+.visual-engine,.visual-headless{--scene-accent:#90baff;background:linear-gradient(130deg,#19273b,#141a23)}
+.visual-studio{--scene-accent:#e7a5a2}.visual-memory{--scene-accent:#bdade9}.visual-vision{--scene-accent:#93c1ec;--scene-secondary:#e4be79}
+.day-visual-slide .day-script{color:#dce7e3;background:#192724;border-color:#3e514b}.day-visual-slide .day-folio{color:#a4b7b0}
+@media(max-width:950px){.day-visual-slide{grid-template-columns:1fr!important;gap:1rem!important}.day-visual{border-left:0;border-top:1px solid #ffffff20;padding:1rem 0 0;max-width:650px;width:100%;justify-self:center}.day-visual-slide .day-copy h2{font-size:clamp(1.9rem,6vw,2.7rem)}.day-visual-slide .day-copy h2 br{display:none}.day-visual-slide .day-intro{margin-bottom:0}.visual-steps{grid-template-columns:1fr;gap:.2rem}.day-visual-slide .day-copy{width:100%}}
+@media(prefers-reduced-motion:reduce){.day-visual-slide [data-step]{transition:none}}
+
+.day-visual{touch-action:pan-y pinch-zoom}
