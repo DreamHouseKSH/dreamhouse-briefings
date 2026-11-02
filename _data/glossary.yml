@@ -524,3 +524,5 @@
 - { term: "자기회귀", full: "Autoregressive", ko: "앞선 입력과 출력을 바탕으로 다음 토큰을 순서대로 생성하는 방식" }
 
 - { term: "디코딩", full: "Decoding", ko: "입력을 처리한 뒤 출력 토큰을 차례로 생성하는 단계" }
+
+- {"term": "접근성 트리", "full": "Accessibility tree", "ko": "운영체제가 버튼·창·입력 요소를 계층 구조로 표현한 정보"}
