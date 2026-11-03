@@ -79,6 +79,69 @@ class VisualGateTests(unittest.TestCase):
     def test_engine_releases(self):
         self.rejects(lambda m: m['scenes'][4].pop('opencl_release'))
 
+    def semantic_scene(self, kind, **fields):
+        m = copy.deepcopy(self.manifest)
+        m['scenes'][1].update(type=kind, eyebrow='SOURCE / TEST', condition='조건 확인', **fields)
+        return m
+
+    def test_metric_bars_and_scale(self):
+        m = self.semantic_scene('metric-bars', unit='%', scale_max=100,
+            metrics=[{'label': '부하 편차 감소', 'value': 34, 'qualifier': '최대'},
+                     {'label': '집중 부하 감소', 'value': 16, 'qualifier': '최대'}], caption='회사 실증 기준 감소율 %')
+        self.assertEqual(v.validate(m, self.edition), 14)
+        for bad in (0, -1, float('nan'), 30, True):
+            n = copy.deepcopy(m); n['scenes'][1]['scale_max'] = bad
+            with self.assertRaises(ValueError): v.validate(n, self.edition)
+        m['scenes'][1]['metrics'][0]['qualifier'] = ''
+        with self.assertRaises(ValueError): v.validate(m, self.edition)
+
+    def test_semantic_flows_and_boundaries(self):
+        nodes = [{'label': '실제 망', 'detail': '관측 자료', 'state': 'observed'},
+                 {'label': '가상 검증', 'detail': '디지털 트윈', 'state': 'concept'},
+                 {'label': '확대 적용', 'detail': '후속 계획', 'state': 'planned'}]
+        for kind, key in [('process-flow', 'nodes'), ('architecture', 'layers')]:
+            m = self.semantic_scene(kind, **{key: copy.deepcopy(nodes)}, boundary='검증된 실행 범위')
+            self.assertEqual(v.validate(m, self.edition), 14)
+            m['scenes'][1][key][0]['state'] = 'complete-and-safe'
+            with self.assertRaises(ValueError): v.validate(m, self.edition)
+        m = self.semantic_scene('architecture', layers=nodes, boundary='')
+        with self.assertRaises(ValueError): v.validate(m, self.edition)
+
+    def test_compatibility_limits_and_preview(self):
+        rows = [{'component': 'CUDA', 'before': '12.9', 'after': '13.0', 'status': 'changed'},
+                {'component': 'vLLM', 'before': 'v0.32.0', 'after': 'v0.33.0rc3', 'status': 'preview'}]
+        m = self.semantic_scene('compatibility', rows=rows, headings=['항목', '문서 A', '문서 B'])
+        self.assertEqual(v.validate(m, self.edition), 14)
+        m['scenes'][1]['rows'][0]['after'] = 'a' * 11
+        with self.assertRaises(ValueError): v.validate(m, self.edition)
+
+    def test_worktree_and_timeline(self):
+        m = self.semantic_scene('worktree-tree', root_label='공통 Git 기록', branches=[
+            {'label': 'branch A', 'directory': '작업 폴더 A'},
+            {'label': 'branch B', 'directory': '작업 폴더 B'}])
+        self.assertEqual(v.validate(m, self.edition), 14)
+        m['scenes'][1]['branches'].append({'label': 'branch C', 'directory': '작업 폴더 C'})
+        self.assertEqual(v.validate(m, self.edition), 14)
+        m['scenes'][1]['branches'][0]['directory'] = 'x' * 9
+        with self.assertRaises(ValueError): v.validate(m, self.edition)
+        m = self.semantic_scene('timeline', output='영상 출력', caption='개념도: 길이는 실제 재생 시간이 아님',
+            tracks=[{'label': 'HTML', 'content': '장면 구조'}, {'label': 'CSS', 'content': '스타일과 움직임'}])
+        self.assertEqual(v.validate(m, self.edition), 14)
+        m['scenes'][1]['caption'] = '실제 영상'
+        with self.assertRaises(ValueError): v.validate(m, self.edition)
+
+    def test_sandbox_optional_labels(self):
+        m = self.semantic_scene('sandbox', labels={'eyebrow': 'DESKTOP / PERMISSIONS',
+            'request': '요청', 'agent': '도구', 'target': '컴퓨터', 'condition': '권한은 별도 확인'})
+        self.assertEqual(v.validate(m, self.edition), 14)
+        del m['scenes'][1]['labels']['target']
+        with self.assertRaises(ValueError): v.validate(m, self.edition)
+
+    def test_previous_rendering_branches_preserved(self):
+        # New branches are additive; previous edition still uses only original types.
+        self.assertFalse({'metric-bars', 'process-flow', 'architecture', 'compatibility'} &
+                         {s['type'] for s in self.manifest['scenes']})
+
     def test_existing_audio_contract_unchanged(self):
         import hashlib
         track = json.loads((ROOT / '_data/day_20261102_audio.json').read_text())

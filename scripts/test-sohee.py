@@ -29,6 +29,13 @@ class SoheeChecks(unittest.TestCase):
         data['slides'][0]['narration'][0] += ' 변경'
         self.assertNotEqual(sohee.narration_hash(data), expected)
 
+    def test_reviewed_nov3_names_and_numbers(self):
+        self.assertEqual(sohee.speech_text('44%·75%'), '사십사 퍼센트, 칠십오 퍼센트')
+        self.assertEqual(sohee.speech_text('README는 Node.js 22'), '리드미는 노드 제이에스 스물두')
+        self.assertEqual(sohee.speech_text('vercel-labs의 agent-desktop'), '버셀 랩스의 에이전트 데스크톱')
+        self.assertEqual(sohee.speech_text('Lumen'), '루 멘')
+        self.assertEqual(sohee.speech_text('v0.5'), '브이 영 점 오')
+
     def test_identifier_pronunciation_preserves_values_and_ordinary_dates(self):
         self.assertEqual(sohee.speech_text('2026-109618·2026-109619'), '이천이십육 하이픈 십만구천육백십팔, 이천이십육 하이픈 십만구천육백십구')
         self.assertEqual(sohee.speech_text('2026-109618·2026-109619에 해당'), '이천이십육 하이픈 십만구천육백십팔, 이천이십육 하이픈 십만구천육백십구에 해당')

@@ -1,0 +1,365 @@
+{
+  "date": "2026-11-03",
+  "source": "Existing public archive narration; generated in Linux cloud with official Qwen3-TTS Sohee (CPU)",
+  "pronunciation_policy": "Selected technical names use Korean pronunciation and long numeric identifiers use exact-value Korean number reading; public narration unchanged",
+  "spoken_text_sha256": "c02ca9f4c33d245895324eaceff81d10702bc15957f2a112d7b634ff4c569324",
+  "backend": "sohee",
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+  "model_revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+  "license": "Apache-2.0",
+  "settings": {
+    "model": "Qwen/Qwen3-TTS-12Hz-1.7B-CustomVoice",
+    "revision": "0c0e3051f131929182e2c023b9537f8b1c68adfe",
+    "speaker": "Sohee",
+    "language": "Korean",
+    "instruct": "차분하고 따뜻한 목소리로 자연스럽게 말해주세요.",
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "threads": 4,
+    "sample_rate": 24000,
+    "padding_seconds": 0.2,
+    "max_new_tokens": 1024,
+    "qwen_tts": "0.1.1",
+    "torch": "2.15.0+cpu"
+  },
+  "text_sha256": "72644ddc23d9300682810e7c2e43a200caa4d3adef9ebfa5e1f960593301bb5b",
+  "audio_sha256": "de5e586a64eb65520dd82656ef1dd7776807fa1440559b1752232650f71c84da",
+  "duration": 414.56,
+  "cues": [
+    {
+      "slide": 0,
+      "step": 1,
+      "start": 0.0,
+      "end": 7.8
+    },
+    {
+      "slide": 0,
+      "step": 2,
+      "start": 7.8,
+      "end": 14.48
+    },
+    {
+      "slide": 0,
+      "step": 3,
+      "start": 14.48,
+      "end": 26.28
+    },
+    {
+      "slide": 1,
+      "step": 1,
+      "start": 26.28,
+      "end": 31.92
+    },
+    {
+      "slide": 1,
+      "step": 2,
+      "start": 31.92,
+      "end": 42.44
+    },
+    {
+      "slide": 1,
+      "step": 3,
+      "start": 42.44,
+      "end": 47.44
+    },
+    {
+      "slide": 2,
+      "step": 1,
+      "start": 47.44,
+      "end": 52.36
+    },
+    {
+      "slide": 2,
+      "step": 2,
+      "start": 52.36,
+      "end": 56.16
+    },
+    {
+      "slide": 2,
+      "step": 3,
+      "start": 56.16,
+      "end": 60.44
+    },
+    {
+      "slide": 3,
+      "step": 1,
+      "start": 60.44,
+      "end": 67.92
+    },
+    {
+      "slide": 3,
+      "step": 2,
+      "start": 67.92,
+      "end": 79.88
+    },
+    {
+      "slide": 3,
+      "step": 3,
+      "start": 79.88,
+      "end": 84.4
+    },
+    {
+      "slide": 4,
+      "step": 1,
+      "start": 84.4,
+      "end": 90.6
+    },
+    {
+      "slide": 4,
+      "step": 2,
+      "start": 90.6,
+      "end": 100.16
+    },
+    {
+      "slide": 4,
+      "step": 3,
+      "start": 100.16,
+      "end": 104.68
+    },
+    {
+      "slide": 5,
+      "step": 1,
+      "start": 104.68,
+      "end": 111.2
+    },
+    {
+      "slide": 5,
+      "step": 2,
+      "start": 111.2,
+      "end": 123.8
+    },
+    {
+      "slide": 5,
+      "step": 3,
+      "start": 123.8,
+      "end": 133.44
+    },
+    {
+      "slide": 6,
+      "step": 1,
+      "start": 133.44,
+      "end": 139.4
+    },
+    {
+      "slide": 6,
+      "step": 2,
+      "start": 139.4,
+      "end": 147.6
+    },
+    {
+      "slide": 6,
+      "step": 3,
+      "start": 147.6,
+      "end": 155.08
+    },
+    {
+      "slide": 7,
+      "step": 1,
+      "start": 155.08,
+      "end": 160.72
+    },
+    {
+      "slide": 7,
+      "step": 2,
+      "start": 160.72,
+      "end": 165.56
+    },
+    {
+      "slide": 7,
+      "step": 3,
+      "start": 165.56,
+      "end": 174.72
+    },
+    {
+      "slide": 8,
+      "step": 1,
+      "start": 174.72,
+      "end": 179.8
+    },
+    {
+      "slide": 8,
+      "step": 2,
+      "start": 179.8,
+      "end": 190.8
+    },
+    {
+      "slide": 8,
+      "step": 3,
+      "start": 190.8,
+      "end": 201.88
+    },
+    {
+      "slide": 9,
+      "step": 1,
+      "start": 201.88,
+      "end": 211.2
+    },
+    {
+      "slide": 9,
+      "step": 2,
+      "start": 211.2,
+      "end": 218.04
+    },
+    {
+      "slide": 9,
+      "step": 3,
+      "start": 218.04,
+      "end": 221.6
+    },
+    {
+      "slide": 10,
+      "step": 1,
+      "start": 221.6,
+      "end": 232.28
+    },
+    {
+      "slide": 10,
+      "step": 2,
+      "start": 232.28,
+      "end": 239.92
+    },
+    {
+      "slide": 10,
+      "step": 3,
+      "start": 239.92,
+      "end": 244.68
+    },
+    {
+      "slide": 11,
+      "step": 1,
+      "start": 244.68,
+      "end": 258.8
+    },
+    {
+      "slide": 11,
+      "step": 2,
+      "start": 258.8,
+      "end": 264.68
+    },
+    {
+      "slide": 11,
+      "step": 3,
+      "start": 264.68,
+      "end": 270.32
+    },
+    {
+      "slide": 12,
+      "step": 1,
+      "start": 270.32,
+      "end": 279.24
+    },
+    {
+      "slide": 12,
+      "step": 2,
+      "start": 279.24,
+      "end": 284.8
+    },
+    {
+      "slide": 12,
+      "step": 3,
+      "start": 284.8,
+      "end": 289.24
+    },
+    {
+      "slide": 13,
+      "step": 1,
+      "start": 289.24,
+      "end": 299.92
+    },
+    {
+      "slide": 13,
+      "step": 2,
+      "start": 299.92,
+      "end": 307.24
+    },
+    {
+      "slide": 13,
+      "step": 3,
+      "start": 307.24,
+      "end": 313.68
+    },
+    {
+      "slide": 14,
+      "step": 1,
+      "start": 313.68,
+      "end": 328.12
+    },
+    {
+      "slide": 14,
+      "step": 2,
+      "start": 328.12,
+      "end": 336.88
+    },
+    {
+      "slide": 14,
+      "step": 3,
+      "start": 336.88,
+      "end": 340.52
+    },
+    {
+      "slide": 15,
+      "step": 1,
+      "start": 340.52,
+      "end": 349.04
+    },
+    {
+      "slide": 15,
+      "step": 2,
+      "start": 349.04,
+      "end": 355.4
+    },
+    {
+      "slide": 15,
+      "step": 3,
+      "start": 355.4,
+      "end": 359.68
+    },
+    {
+      "slide": 16,
+      "step": 1,
+      "start": 359.68,
+      "end": 376.84
+    },
+    {
+      "slide": 16,
+      "step": 2,
+      "start": 376.84,
+      "end": 383.12
+    },
+    {
+      "slide": 16,
+      "step": 3,
+      "start": 383.12,
+      "end": 388.68
+    },
+    {
+      "slide": 17,
+      "step": 1,
+      "start": 388.68,
+      "end": 397.6
+    },
+    {
+      "slide": 17,
+      "step": 2,
+      "start": 397.6,
+      "end": 405.32
+    },
+    {
+      "slide": 17,
+      "step": 3,
+      "start": 405.32,
+      "end": 414.56
+    }
+  ],
+  "validation": {
+    "sample_rate": 24000,
+    "decoded_samples": 9949440,
+    "segments": 54,
+    "token_cap_exhausted": false,
+    "load_seconds": 1.827,
+    "run_seconds": 97.613,
+    "synthesis_seconds": 1608.469,
+    "cache_hits": 51,
+    "peak_rss_kib": 4643440
+  }
+}

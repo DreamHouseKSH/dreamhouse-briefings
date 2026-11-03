@@ -16,7 +16,8 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 TYPES = {'cover', 'ownership', 'package', 'exports', 'engine', 'devices',
          'studio', 'memory', 'dictation', 'sandbox', 'voice-filter',
-         'headless', 'vision', 'closing'}
+         'headless', 'vision', 'closing', 'metric-bars', 'process-flow',
+         'architecture', 'compatibility', 'worktree-tree', 'timeline'}
 
 
 def require(condition, message):
@@ -65,6 +66,87 @@ def validate(manifest, edition):
             require(bool(refs), f'{sid}: content scene needs a source')
         for ref in refs:
             require(text(items[ref].get('source')), f'{sid}: source URL missing')
+        if kind in ('metric-bars', 'process-flow', 'architecture', 'compatibility'):
+            require(text(scene.get('eyebrow')) and len(scene['eyebrow']) <= 40,
+                    f'{sid}: concise eyebrow required (40 characters max)')
+            require(text(scene.get('condition')) and len(scene['condition']) <= 28,
+                    f'{sid}: concise visible condition required (28 characters max)')
+        if kind == 'metric-bars':
+            require(text(scene.get('unit')) and len(scene['unit']) <= 3,
+                    f'{sid}: concise unit required')
+            require(number(scene.get('scale_max')) and scene['scale_max'] > 0,
+                    f'{sid}: explicit positive common scale required')
+            rows = scene.get('metrics')
+            require(isinstance(rows, list) and 2 <= len(rows) <= 3,
+                    f'{sid}: two or three comparable metrics required')
+            for row in rows:
+                require(isinstance(row, dict) and text(row.get('label')) and len(row['label']) <= 18,
+                        f'{sid}: metric label required (18 characters max)')
+                require(number(row.get('value')) and row['value'] <= scene['scale_max'],
+                        f'{sid}: metric value outside scale')
+                require(len(str(row['value']) + scene['unit']) <= 8, f'{sid}: metric display too long')
+                require(text(row.get('qualifier')) and len(row['qualifier']) <= 7,
+                        f'{sid}: value qualifier required (7 characters max)')
+            require(scene['unit'] in scene['caption'], f'{sid}: caption must state unit and measurement basis')
+        if kind in ('process-flow', 'architecture'):
+            rows = scene.get('nodes' if kind == 'process-flow' else 'layers')
+            require(isinstance(rows, list) and 2 <= len(rows) <= 4,
+                    f'{sid}: two to four semantic elements required')
+            for row in rows:
+                require(isinstance(row, dict) and text(row.get('label')) and len(row['label']) <= 20,
+                        f'{sid}: element label required (20 characters max)')
+                require(text(row.get('detail')) and len(row['detail']) <= 24,
+                        f'{sid}: element detail required (24 characters max)')
+                require(row.get('state') in ('observed', 'planned', 'concept'),
+                        f'{sid}: each element must distinguish observed/planned/concept')
+            if kind == 'architecture':
+                require(text(scene.get('boundary')) and len(scene['boundary']) <= 26,
+                        f'{sid}: explicit architecture boundary required')
+        if kind == 'compatibility':
+            if 'headings' in scene:
+                require(isinstance(scene['headings'], list) and len(scene['headings']) == 3 and
+                        all(text(h) and len(h) <= 12 for h in scene['headings']),
+                        f'{sid}: headings must contain three short text labels')
+            rows = scene.get('rows')
+            require(isinstance(rows, list) and 2 <= len(rows) <= 4,
+                    f'{sid}: two to four compatibility rows required')
+            for row in rows:
+                require(isinstance(row, dict), f'{sid}: row must be an object')
+                for key in ('component', 'before', 'after'):
+                    require(text(row.get(key)) and len(row[key]) <= 10,
+                            f'{sid}: {key} required (10 characters max)')
+                require(row.get('status') in ('changed', 'retained', 'preview'),
+                        f'{sid}: explicit compatibility status required')
+        if kind in ('worktree-tree', 'timeline'):
+            for field, limit in [('eyebrow', 40), ('condition', 28)]:
+                require(text(scene.get(field)) and len(scene[field]) <= limit,
+                        f'{sid}: concise {field} required')
+        if kind == 'worktree-tree':
+            require(text(scene.get('root_label')) and len(scene['root_label']) <= 20,
+                    f'{sid}: concise shared repository label required')
+            branches = scene.get('branches')
+            require(isinstance(branches, list) and 2 <= len(branches) <= 3,
+                    f'{sid}: two or three distinct worktree branches required')
+            for branch in branches:
+                require(isinstance(branch, dict) and all(text(branch.get(k)) and len(branch[k]) <= 8
+                        for k in ('label', 'directory')), f'{sid}: concise branch and directory labels required')
+        if kind == 'timeline':
+            tracks = scene.get('tracks')
+            require(isinstance(tracks, list) and 2 <= len(tracks) <= 3,
+                    f'{sid}: two or three semantic tracks required')
+            for track in tracks:
+                require(isinstance(track, dict) and text(track.get('label')) and len(track['label']) <= 10 and
+                        text(track.get('content')) and len(track['content']) <= 18,
+                        f'{sid}: concise track label/content required')
+            require(text(scene.get('output')) and len(scene['output']) <= 22,
+                    f'{sid}: explicit output required')
+            require('개념' in scene['caption'] and ('길이' in scene['caption'] or '시간' in scene['caption']),
+                    f'{sid}: timeline caption must disclose conceptual lengths/timing')
+        if kind == 'sandbox' and 'labels' in scene:
+            require(isinstance(scene['labels'], dict), f'{sid}: sandbox labels must be an object')
+            for key, limit in [('eyebrow', 40), ('request', 10), ('agent', 10), ('target', 10), ('condition', 24)]:
+                require(text(scene['labels'].get(key)) and len(scene['labels'][key]) <= limit,
+                        f'{sid}: sandbox {key} label required')
         if kind == 'engine':
             require(text(scene.get('opencl_release')) and text(scene.get('hexagon_release')),
                     f'{sid}: engine releases must be explicit')

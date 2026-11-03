@@ -36,7 +36,18 @@ def speech_text(text):
     mapping={'Palo Alto Networks':'팔로 알토 네트웍스','Unit 42':'유닛 포티 투',
              'PHP2Shell':'피에이치피 투 셸','PAN-OS':'팬 오에스',
              'CVE(Common Vulnerabilities and Exposures,':'씨브이이, 커먼 벌너러빌리티스 앤드 익스포저스,',
-             'PHP':'피에이치피','Mistral':'미스트랄','Large 4':'라지 포','Le Chonk':'르 촌크'}
+             'PHP':'피에이치피','Mistral':'미스트랄','Large 4':'라지 포','Le Chonk':'르 촌크',
+             'Microsoft Marketplace':'마이크로소프트 마켓플레이스', 'Microsoft':'마이크로소프트', 'Azure':'애저', 'Lumen':'루 멘', '44%·75%':'사십사 퍼센트, 칠십오 퍼센트',
+             'pingdotgg':'핑 닷 지지', 't3code':'티 쓰리 코드',
+             'vercel-labs':'버셀 랩스', 'agent-desktop':'에이전트 데스크톱',
+             'max-sixty':'맥스 식스티', 'worktrunk':'워크트렁크', 'Git worktree':'깃 워크트리',
+             'thedotmack':'더 닷 맥', 'claude-mem':'클로드 엠 이 엠',
+             'D4Vinci':'디 포 빈치', 'v0.5':'브이 영 점 오',
+             'FlashML-org':'플래시 엠엘 오알지', 'MoE(Mixture of Experts,':'엠오이, 믹스처 오브 엑스퍼츠,',
+             'Windows·Linux':'윈도우와 리눅스', 'JustVugg':'저스트 브이 유 지 지', 'colibri':'콜리브리',
+             'GB 이상':'기가바이트 이상', 'heygen-com':'헤이젠 닷컴', 'hyperframes':'하이퍼프레임스',
+             'HTML(HyperText Markup Language,':'에이치티엠엘, 하이퍼텍스트 마크업 랭귀지,',
+             'README는 Node.js 22':'리드미는 노드 제이에스 스물두'}
     for source,target in mapping.items():text=text.replace(source,target)
     pattern=r'(?<![0-9])[0-9]{4}-[0-9]{4,6}(?![0-9])'
     if re.search(pattern,text):

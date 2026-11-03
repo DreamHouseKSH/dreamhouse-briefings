@@ -34,3 +34,21 @@
 @media(prefers-reduced-motion:reduce){.day-visual-slide [data-step]{transition:none}}
 
 .day-visual{touch-action:pan-y pinch-zoom}
+
+/* Declarative semantic scenes: labels are editorial data, not generic placeholders. */
+.visual-metric-bars{--scene-accent:#e7b965;background:linear-gradient(130deg,#30271e,#191a1c)}
+.visual-process-flow{--scene-accent:#91d6c0}.visual-architecture{--scene-accent:#b6b2ef;background:linear-gradient(130deg,#24253c,#151b24)}
+.visual-compatibility{--scene-accent:#90baff;background:linear-gradient(130deg,#19273b,#141a23)}
+.day-visual svg .v-track{fill:#ffffff12;stroke:#ffffff30}
+.day-visual svg .v-layer{fill:#ffffff08;stroke:var(--scene-accent)}
+.day-visual svg .v-flow-arrow{stroke:var(--scene-accent)}
+.day-visual svg .v-flow-label{font-size:22px}
+.day-visual svg .v-micro{font-size:17px;fill:#c4d3ce;font-weight:500}
+.day-visual svg .v-condition{font-size:19px;fill:#d3b87a;font-weight:500}
+.day-visual svg .v-metric{font-size:32px;fill:var(--scene-accent);font-weight:800}
+.day-visual svg .v-table-label{font-size:18px}.day-visual svg .v-preview{fill:var(--scene-secondary)}
+
+.visual-worktree-tree{--scene-accent:#a2d6b1;background:linear-gradient(130deg,#193327,#151e1a)}
+.visual-timeline{--scene-accent:#efb49d;background:linear-gradient(130deg,#35251f,#1d191b)}
+.day-visual svg .v-tree-folder{fill:#ffffff08;stroke:var(--scene-accent)}
+.day-visual svg .v-tree-label{font-size:18px}.day-visual svg .v-timeline-axis{stroke:var(--scene-accent)}
