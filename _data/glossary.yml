@@ -526,3 +526,12 @@
 - { term: "디코딩", full: "Decoding", ko: "입력을 처리한 뒤 출력 토큰을 차례로 생성하는 단계" }
 
 - {"term": "접근성 트리", "full": "Accessibility tree", "ko": "운영체제가 버튼·창·입력 요소를 계층 구조로 표현한 정보"}
+
+# --- 2026-11-04 뉴스와 GitHub ---
+- {"term": "K-12", "full": "Kindergarten through Grade 12", "ko": "유치원부터 고등학교 과정"}
+- {"term": "PCB", "full": "Printed Circuit Board", "ko": "전자 부품과 배선을 연결하는 인쇄회로기판"}
+- {"term": "NCCL", "full": "NVIDIA Collective Communications Library", "ko": "여러 그래픽 연산 장치 사이의 데이터 교환 라이브러리"}
+- {"term": "텐서 병렬 처리", "full": "Tensor Parallelism", "ko": "모델 계산을 여러 장치로 나누는 방식"}
+- {"term": "temperature", "full": "", "ko": "답변 선택의 무작위성을 조절하는 값"}
+- {"term": "top_p", "full": "", "ko": "누적 확률로 후보 범위를 제한하는 값"}
+- {"term": "Docker", "full": "", "ko": "실행 환경을 묶은 컨테이너를 구동하는 플랫폼"}
