@@ -545,3 +545,7 @@
 - {"term": "개인 에이전트", "full": "personal agent", "ko": "사용자의 요청에 따라 검색·탐색 등을 대신 수행하는 AI 도구"}
 - {"term": "청력도", "full": "Audiogram", "ko": "주파수별 청력 수준을 나타낸 그래프"}
 - {"term": "TCC", "full": "Tesla Compute Cluster", "ko": "NVIDIA의 Windows 계산 전용 드라이버 모드"}
+
+- {"term": "베타", "full": "Beta", "ko": "정식 출시 전에 제한된 범위에서 제공하는 시험 단계"}
+- {"term": "추론 훅", "full": "Inference hooks", "ko": "모델 입력이나 도구 실행 전에 조직의 보안 검사를 연결하는 기능"}
+- {"term": "EDR", "full": "Endpoint Detection and Response", "ko": "사용자 기기의 위협을 탐지하고 대응하는 보안 체계"}
