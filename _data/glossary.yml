@@ -560,3 +560,20 @@
 - { term: "Quantum System Two", full: "", ko: "IBM의 모듈형 양자컴퓨팅 시스템 제품 이름" }
 - { term: "Nighthawk", full: "", ko: "IBM 양자컴퓨터에 사용하는 양자 프로세서 제품 이름" }
 - { term: "위키", full: "wiki", ko: "여러 문서를 연결하고 계속 수정해 지식을 정리하는 문서 체계" }
+
+# --- 2026-11-07 주간 정리 ---
+- term: 공개 미리보기
+  full: Public Preview
+  ko: 일반 이용자가 시험할 수 있지만 정식 제공 전인 단계
+- term: 권한 회수
+  full: Access revocation
+  ko: 이미 부여한 접근·실행 권한을 거두는 절차
+- term: 릴리스 후보
+  full: Release Candidate
+  ko: 정식 공개 전 최종 검증을 위한 후보판
+- term: 처리량
+  full: Throughput
+  ko: 일정 시간 동안 처리한 요청·작업의 양
+- term: CNCF
+  full: Cloud Native Computing Foundation
+  ko: 클라우드 네이티브 기술을 지원하는 재단
