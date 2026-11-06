@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-12",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-12/AI.md": "ec363807bbfd5e0fe9a97a7aaccd9cbb2ad038e109d6d955311e3e317f0effd6",
+    "news/2026-10-12/IT.md": "7a1916854a34a91b5329fadbab2929e0db4a450e8c27135decfa52f8f50fcd4b",
+    "news/2026-10-12/모델.md": "956347fc6252f78c92c18f7ad385fa69cdaf0de22aeb67f9b96d393b9ed1e145",
+    "news/2026-10-12/엔진.md": "b31de3309ecd7b2f1aff346c0ef79825181924edcbd97cb838e4c72cd4d92b95"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-12/AI/1",
+      "article_id": "url-928186a7de3abc8a49f42d09cfd722688d7414e4c0fba1b1c89c6585189b269f",
+      "revision_id": "editorial-124ca2e364d90ff02064aa7ba1ab395ae99959fdd1f5583eb0e4eb8429754dc8",
+      "briefing_date": "2026-10-12",
+      "category": "AI",
+      "heading": "1. 엔비디아, 오픈 가중치 모델 스타트업 Reflection AI 인수·추가 투자 협상(FT 보도)",
+      "title": "엔비디아, 오픈 가중치 모델 스타트업 Reflection AI 인수·추가 투자 협상(FT 보도)",
+      "summary": "엔비디아가 미국 스타트업 Reflection AI에 대한 투자를 늘리거나 컴퓨팅 자원을 제공하는 방안을 협상 중이라고, 사정을 아는 사람을 인용해 블룸버그가 11일 보도했습니다(Business Times 게재). 앞서 파이낸셜타임스(FT) 는 10일 이 협상이 인수 제안으로 이어질 수도 있다고 전했습니다. FT가 거론한 방식은 세 가지입니다. 직원을 데려오고 기술은 라이선스로 받는 애크하이어(acqui-hire, 회사 대신 인재와 기술을 사들이는 방식), 칩을 더 공급하는 계약, 지분 투자 확대입니다. 협상은 초기 단계이고 조건은 정해지지 않았으며, 엔비디아는 답하지 않았고 Reflection은 논평을 거부했습니다.",
+      "source_urls": [
+        "https://www.businesstimes.com.sg/international/global/nvidia-weighs-deeper-ties-open-model-developer-reflection-ai-through-investment-or-computing-deal"
+      ],
+      "canonical_urls": [
+        "https://www.businesstimes.com.sg/international/global/nvidia-weighs-deeper-ties-open-model-developer-reflection-ai-through-investment-or-computing-deal"
+      ],
+      "publication_note": "2026-10-11",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/AI.md",
+      "archive_url": "/news/2026-10-12/AI.html#1-엔비디아-오픈-가중치-모델-스타트업-reflection-ai-인수추가-투자-협상ft-보도",
+      "section_sha256": "77cf243724323826338cbeb79b45f65c3331f383bb0c72e5334071695b09778a",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/AI/2",
+      "article_id": "url-7984e92e6601d72ffb7cce04fce6689671a38351e6e8ff2c496ef38caadfdc25",
+      "revision_id": "editorial-49499a6207f056f1b221480f38c65ed9bd0eff8a1d894a7a2c60ebaa301e744c",
+      "briefing_date": "2026-10-12",
+      "category": "AI",
+      "heading": "2. 'Jev' 만든 TypeSafe AI, 출시 몇 주 만에 8억 7천만 달러 시리즈 A — 기업가치 75억 달러",
+      "title": "'Jev' 만든 TypeSafe AI, 출시 몇 주 만에 8억 7천만 달러 시리즈 A — 기업가치 75억 달러",
+      "summary": "결정 모델(decision model, 글을 쓰는 대신 정해진 선택지마다 확률을 매겨 주는 AI 모델) Jev를 만든 TypeSafe AI가 기업가치 75억 달러에 8억 7천만 달러를 조달했습니다. a16z(Andreessen Horowitz, 미국 대형 벤처캐피털) 가 주도하고 세쿼이아와 기존 투자자 DCVC가 참여했습니다. Jev는 9월 15일 출시 직후 폭발적인 관심을 받았고, 회사는 포춘 500 기업의 3분의 1이 이미 Jev를 쓰고 있다고 주장합니다.",
+      "source_urls": [
+        "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
+      ],
+      "canonical_urls": [
+        "https://techcrunch.com/2026/10/09/the-maker-of-non-text-ai-model-jev-valued-at-7-5b-just-weeks-after-launch/"
+      ],
+      "publication_note": "2026-10-09 (PDT, 한국 시각 10일 새벽)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/AI.md",
+      "archive_url": "/news/2026-10-12/AI.html#2-jev-만든-typesafe-ai-출시-몇-주-만에-8억-7천만-달러-시리즈-a--기업가치-75억-달러",
+      "section_sha256": "327efcfc661ec7c8bf968661df4285653daca4f5f2f2cb44e6ada54e02bf40d1",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/AI/3",
+      "article_id": "url-4182359e79e632d3734e01b3cd5836ba41ea87f9ffa80056ead3738bb3c1b686",
+      "revision_id": "editorial-4c73d952c4fb1e0dbb40b5ae4e7d6c133926f25005121bbae844acb15c3bcc64",
+      "briefing_date": "2026-10-12",
+      "category": "AI",
+      "heading": "3. Claude Managed Agents에 '동적 워크플로' 베타 — 에이전트가 직접 짠 프로그램으로 수백 개 에이전트를 돌린다",
+      "title": "Claude Managed Agents에 '동적 워크플로' 베타 — 에이전트가 직접 짠 프로그램으로 수백 개 에이전트를 돌린다",
+      "summary": "Anthropic이 9일 Claude Managed Agents(Anthropic 서버에서 Claude를 자율 에이전트로 돌려 주는 관리형 서비스) 에 동적 워크플로(dynamic workflows) 를 베타로 추가했습니다. 수백 개 문서 검토처럼 조각이 많은 일을 받으면, 에이전트가 직접 '워크플로'라는 프로그램을 짜고 서버가 그것을 백그라운드에서 실행합니다. 워크플로는 여러 에이전트를 단계(phase)별로 돌리고 결과를 합칩니다. 켜는 방법은 에이전트 설정의 multiagent 항목을 multiagent_20261001 타입으로 바꾸고 workflows를 켜는 것입니다.",
+      "source_urls": [
+        "https://platform.claude.com/docs/en/release-notes/overview"
+      ],
+      "canonical_urls": [
+        "https://platform.claude.com/docs/en/release-notes/overview"
+      ],
+      "publication_note": "2026-10-09",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/AI.md",
+      "archive_url": "/news/2026-10-12/AI.html#3-claude-managed-agents에-동적-워크플로-베타--에이전트가-직접-짠-프로그램으로-수백-개-에이전트를-돌린다",
+      "section_sha256": "d9ef1a1561eda73aa0a1e2542eefb4f1e02967192191d519a8bb44a4fc9e836d",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/IT/1",
+      "article_id": "url-fe30b4881a6cb9c02d5223dd22daf602b77c5625466679693904be19472606c8",
+      "revision_id": "editorial-762f7ce5ef55b999e474125cb7703693d324da977722b334683cd2f7b32f5f0d",
+      "briefing_date": "2026-10-12",
+      "category": "IT",
+      "heading": "1. Ledger, 동남아 리셀러 CryptoBilis 판매 기기에서 '하드웨어 임플란트' 확인 — 피해 추정 7,200만~9,320만 달러",
+      "title": "Ledger, 동남아 리셀러 CryptoBilis 판매 기기에서 '하드웨어 임플란트' 확인 — 피해 추정 7,200만~9,320만 달러",
+      "summary": "프랑스 하드웨어 지갑(암호화폐 열쇠를 인터넷과 떨어진 작은 기기에 보관하는 장치) 업체 Ledger가 10일(UTC, 한국 시각 11일 새벽) 인도네시아·말레이시아·필리핀에서 영업하던 공인 리셀러 CryptoBilis가 판 기기 가운데 적어도 한 대에 허가받지 않은 하드웨어 임플란트(몰래 심은 부품) 가 들어 있었다고 확인했습니다. 피해자들은 최근 3개월 안에 이 리셀러에서 기기를 산 사람들이었고, 기사는 이를 리셀러와 연결된 Ledger 기기의 물리적 임플란트가 확인된 첫 사례라고 설명합니다.",
+      "source_urls": [
+        "https://cryptobriefing.com/ledger-cryptobilis-hardware-implant-draining/"
+      ],
+      "canonical_urls": [
+        "https://cryptobriefing.com/ledger-cryptobilis-hardware-implant-draining/"
+      ],
+      "publication_note": "2026-10-11",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/IT.md",
+      "archive_url": "/news/2026-10-12/IT.html#1-ledger-동남아-리셀러-cryptobilis-판매-기기에서-하드웨어-임플란트-확인--피해-추정-7200만9320만-달러",
+      "section_sha256": "a644dfaf76bdfca35f2a676ab2d0d60fd2306551c7bdb6eaa723f5a0bbf231a7",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/IT/2",
+      "article_id": "url-4aa5c61fe200af74307bd6f2edc9b8fd20a77f7aad213135888fc2a32907f133",
+      "revision_id": "editorial-391758228df40d6a7ddd01cd361a76bc9b3ae1fcdcbc780aadf0a08a1154ecf5",
+      "briefing_date": "2026-10-12",
+      "category": "IT",
+      "heading": "2. 최태원 SK 회장 \"호남 팹, 전력·용수 늦어도 선제 착공\" — 투자 지연 우려 직접 진화",
+      "title": "최태원 SK 회장 \"호남 팹, 전력·용수 늦어도 선제 착공\" — 투자 지연 우려 직접 진화",
+      "summary": "최태원 SK그룹 회장이 9일 곽노정 SK하이닉스 사장 등 경영진과 함께 광주 군공항 부지와 탄약고 일대 등 '호남 반도체 클러스터' 예정지를 처음 직접 찾았습니다. 민형배 전남광주통합특별시장 등에게 산업단지 조성 계획과 전력·용수·교통 같은 기반 시설 준비 상황을 들었습니다. SK하이닉스는 지난 6월 호남권에 약 400조 원을 들여 팹(반도체 생산 공장) 2기를 짓겠다고 발표한 바 있습니다.",
+      "source_urls": [
+        "https://www.newsis.com/view/NISX20261011_0003820897"
+      ],
+      "canonical_urls": [
+        "https://www.newsis.com/view/NISX20261011_0003820897"
+      ],
+      "publication_note": "2026-10-11",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/IT.md",
+      "archive_url": "/news/2026-10-12/IT.html#2-최태원-sk-회장-호남-팹-전력용수-늦어도-선제-착공--투자-지연-우려-직접-진화",
+      "section_sha256": "c2172f9501b1472f7ae3a3104d2b0fcb0f2b65a471e417d7c8fcfffa4bedf911",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/IT/3",
+      "article_id": "url-f597bc6672f9a9c5b93d6ed3acda3fc0ea3d60f9920c82ecee0e9ee1b2e9760f",
+      "revision_id": "editorial-a5f9a793322e4cd94aab121485de818b37f873b07e2deba4248188158e2cb032",
+      "briefing_date": "2026-10-12",
+      "category": "IT",
+      "heading": "3. 루멘텀 CEO \"AI 광부품, 2029년 초까지 완판\" — 6개월 전엔 2028년이었다",
+      "title": "루멘텀 CEO \"AI 광부품, 2029년 초까지 완판\" — 6개월 전엔 2028년이었다",
+      "summary": "AI 데이터센터용 광부품 업체 루멘텀(Lumentum) 의 마이클 헐스턴 CEO가 9일 도쿄에서 블룸버그 인터뷰를 통해, 자사 광부품이 2029년 초까지 \"완전히 매진\" 됐다고 말했습니다. 일부 제품은 내년까지 수요의 약 70%를, 다른 일부 제품은 2028년까지 수요의 30%를 맞추지 못할 것이라고 했습니다. 불과 6개월 전 그는 2028년까지 생산능력이 매진될 것이라고 말했는데, 그 시점이 더 뒤로 밀린 셈입니다.",
+      "source_urls": [
+        "https://www.japantimes.co.jp/business/2026/10/09/companies/lumentum-ai-server-sold-out/"
+      ],
+      "canonical_urls": [
+        "https://www.japantimes.co.jp/business/2026/10/09/companies/lumentum-ai-server-sold-out/"
+      ],
+      "publication_note": "2026-10-09",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/IT.md",
+      "archive_url": "/news/2026-10-12/IT.html#3-루멘텀-ceo-ai-광부품-2029년-초까지-완판--6개월-전엔-2028년이었다",
+      "section_sha256": "9802475a926a157b1de670d98335c6147a5d5a075f9e589e7e442a581f02283c",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/모델/1",
+      "article_id": "url-fb900a38eb855015e847ac591032aa6747ce663f78c9fbc01a056d2eedd64913",
+      "revision_id": "editorial-6beea151227dcb81f8b2585b192bab80d6dbb5d9d46c37a05ed1abe9e2e24bdd",
+      "briefing_date": "2026-10-12",
+      "category": "모델",
+      "heading": "1. 마이크로소프트, 결정 모델 'Microsoft-Decision-1' 출시 — 입력 100만 토큰당 0.042달러, 출력은 무료",
+      "title": "마이크로소프트, 결정 모델 'Microsoft-Decision-1' 출시 — 입력 100만 토큰당 0.042달러, 출력은 무료",
+      "summary": "마이크로소프트가 결정 모델(decision model, 글을 생성하지 않고 정해진 선택지마다 확률을 매기는 모델) Microsoft-Decision-1을 내놨습니다. 기업용 AI 개발 플랫폼 Microsoft Foundry와 여러 모델을 한 API로 묶어 파는 중개 서비스 OpenRouter에서 쓸 수 있습니다. 질문 유형은 예/아니오, 객관식, 점수 매기기이고, AI 답변이나 에이전트 행동을 기준표대로 채점하는 데도 쓸 수 있습니다. 쓰임새로는 요청 라우팅, 분류, 우선순위 정하기, 검증, 워크플로 제어를 꼽았습니다.",
+      "source_urls": [
+        "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+      ],
+      "canonical_urls": [
+        "https://commandline.microsoft.com/microsoft-decision-1-model-foundry/"
+      ],
+      "publication_note": "2026-10-09 (UTC, 한국 시각 10일 새벽)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/모델.md",
+      "archive_url": "/news/2026-10-12/모델.html#1-마이크로소프트-결정-모델-microsoft-decision-1-출시--입력-100만-토큰당-0042달러-출력은-무료",
+      "section_sha256": "47e6167bffd5ca90996f12250df465faed92eb45faeadc0435bb30a3b4917fcb",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/모델/2",
+      "article_id": "url-1b6b1b8053ca6be0758f6d3e80284de4bc258c72c1716282cfb3a18833305297",
+      "revision_id": "editorial-6a8b3e113b41e10e84f0152e16933228dbdc623757ad5b14d8f6ce9ed3b3ecbe",
+      "briefing_date": "2026-10-12",
+      "category": "모델",
+      "heading": "2. Nace AI, 9B 결정 모델 'Drex 1.5' 오픈소스 공개 — 닫힌 모델 Jev와 동급 점수",
+      "title": "Nace AI, 9B 결정 모델 'Drex 1.5' 오픈소스 공개 — 닫힌 모델 Jev와 동급 점수",
+      "summary": "Nace AI가 89억 5천만 개 파라미터(8.95B, 모델 크기)의 결정 모델 Drex 1.5를 공개했습니다. 텍스트를 쓰지 않고, 상태(텍스트나 JSON(JavaScript Object Notation, 데이터를 주고받는 표준 텍스트 형식))와 질문을 받아 사용자가 준 선택지마다 확률을 한 번의 계산(single forward pass)으로 돌려줍니다. 질문 유형은 객관식, 예/아니오, 순서 점수 세 가지입니다. TypeSafe의 Jev와 같은 POST /v1/systemone 요청 형식을 써서, 기존 Jev 사용 코드는 환경 변수 몇 개만 바꾸면 그대로 돌아간다고 회사는 설명합니다.",
+      "source_urls": [
+        "https://www.marktechpost.com/2026/10/09/nace-ai-open-sources-drex-1-5-a-9b-decision-model-that-scores-options-not-text/"
+      ],
+      "canonical_urls": [
+        "https://www.marktechpost.com/2026/10/09/nace-ai-open-sources-drex-1-5-a-9b-decision-model-that-scores-options-not-text/"
+      ],
+      "publication_note": "2026-10-09",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/모델.md",
+      "archive_url": "/news/2026-10-12/모델.html#2-nace-ai-9b-결정-모델-drex-15-오픈소스-공개--닫힌-모델-jev와-동급-점수",
+      "section_sha256": "04acf5cf007177cdee52ea66eaf35c9b21d0ca96e77120c2b85baf53deb021bc",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/모델/3",
+      "article_id": "url-167c7efa09e6db3667747012415fa57199c584cce53c21ac2d2728ac2a68a16c",
+      "revision_id": "editorial-8db6691e02845b58462afa2bf31d92b53f89f8945938396cdbdef8bd8b5b917d",
+      "briefing_date": "2026-10-12",
+      "category": "모델",
+      "heading": "3. 알리바바 Qwen-Image-2.1-Turbo 공개 — 40단계 걸리던 이미지 생성을 8단계로",
+      "title": "알리바바 Qwen-Image-2.1-Turbo 공개 — 40단계 걸리던 이미지 생성을 8단계로",
+      "summary": "알리바바 Qwen 팀이 이미지 생성·편집 모델 Qwen-Image-2.1의 가속판 Qwen-Image-2.1-Turbo를 9일 Hugging Face에 올렸습니다. 같은 70억 파라미터(7B) 구조를 그대로 쓰면서 디노이징(denoising, 잡음에서 시작해 조금씩 그림을 다듬는 생성 과정) 단계를 기본 모델 예제의 40단계에서 8단계로 줄인 체크포인트입니다. 이미지 라이브러리 Diffusers의 QwenImage21Pipeline으로 불러 쓰고, 2048×2048 정사각형을 포함한 7가지 해상도를 지원합니다.",
+      "source_urls": [
+        "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo"
+      ],
+      "canonical_urls": [
+        "https://huggingface.co/Qwen/Qwen-Image-2.1-Turbo"
+      ],
+      "publication_note": "2026-10-09",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/모델.md",
+      "archive_url": "/news/2026-10-12/모델.html#3-알리바바-qwen-image-21-turbo-공개--40단계-걸리던-이미지-생성을-8단계로",
+      "section_sha256": "f832a54f0a6d8f24e223f91d7d07f1665844510e49eb4df6c326731937706ec2",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/엔진/1",
+      "article_id": "url-de32d3b9322608aa8c64b95de984eaf59e404a66175caa536feb9a8e10426b36",
+      "revision_id": "editorial-8123e55b0992de8ad44f3cd9ca7a83db935274b8aafd4b749cccf5fd105007a7",
+      "briefing_date": "2026-10-12",
+      "category": "엔진",
+      "heading": "1. Ollama v0.40.2 → v0.40.3 — '기존 모델 자동 업그레이드' 넣었다가 사흘 만에 잠정 중단",
+      "title": "Ollama v0.40.2 → v0.40.3 — '기존 모델 자동 업그레이드' 넣었다가 사흘 만에 잠정 중단",
+      "summary": "로컬 LLM 실행 도구 Ollama가 v0.40.2(9일 KST)에서 '모델 업그레이드' 기능을 넣었습니다. 예전 버전으로 내려받은 모델을 처음 실행할 때 백그라운드에서 llama.cpp(C/C++로 만든 대표적인 로컬 LLM 추론 엔진) 런너에 맞게 자동으로 바꿔, 성능과 호환성을 높인다는 설명이었습니다. 버전을 되돌려도 안전하도록 원본은 백업으로 디스크에 남기고, 백업은 다음 릴리스에서 자동으로 지운다고 했습니다. 지금 바로 백업을 지우는 스크립트(jq 필요)도 릴리스 노트에 실렸습니다. 같은 릴리스에서 업그레이드된 모델이 ollama list에 두 번 보이던 문제가 고쳐졌고, ollama launch claude가 모델의 전체 컨텍스트 길이(모델이 한 번에 읽을 수 있는 토큰 수) 를 쓰도록 바뀌었습니다.",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.3"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.3"
+      ],
+      "publication_note": "2026-10-11 (v0.40.3, KST 오전 10시 39분) / v0.40.2는 2026-10-09 KST 새벽",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/엔진.md",
+      "archive_url": "/news/2026-10-12/엔진.html#1-ollama-v0402--v0403--기존-모델-자동-업그레이드-넣었다가-사흘-만에-잠정-중단",
+      "section_sha256": "1c66d4d882e1bc68151e2e9a005811eb35d2dae9f49312d69b263644ccde95e1",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-12/엔진/2",
+      "article_id": "url-994e352fe4595423c9305758e8c5f55023b33b58567826676bbc0da4850617d0",
+      "revision_id": "editorial-0ac57059e516e13d0635d8260de5fb33133e887f98fe71a9f18cbd028283beba",
+      "briefing_date": "2026-10-12",
+      "category": "엔진",
+      "heading": "2. llama.cpp 주말 빌드 b11515~b11559 — 서버 기본 포트 9931로 변경, ggml 메모리 경계 밖 쓰기 수정, MiniCPM-V 4.7 지원",
+      "title": "llama.cpp 주말 빌드 b11515~b11559 — 서버 기본 포트 9931로 변경, ggml 메모리 경계 밖 쓰기 수정, MiniCPM-V 4.7 지원",
+      "summary": "llama.cpp는 주말 사이(9~11일 UTC) 프리릴리스 빌드를 30개 넘게 쏟아냈습니다. 가장 눈에 띄는 것은 b11521의 llama-server 기본 포트를 8080에서 9931로 바꾼 변경(#30159) 입니다. 포트 번호를 따로 지정하지 않고 http://localhost:8080으로 붙던 스크립트·앱은 새 빌드에서 연결이 안 될 수 있습니다. PR 설명에 따르면 도커 이미지 안에서는 기존 도구가 깨지지 않도록 8080을 그대로 씁니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11521"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11521"
+      ],
+      "publication_note": "2026-10-09 ~ 2026-10-11",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-12/엔진.md",
+      "archive_url": "/news/2026-10-12/엔진.html#2-llamacpp-주말-빌드-b11515b11559--서버-기본-포트-9931로-변경-ggml-메모리-경계-밖-쓰기-수정-minicpm-v-47-지원",
+      "section_sha256": "e26ac936135fd67f62bc21466826291108da2ccffe0151249b6695bfc7b42a3a",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

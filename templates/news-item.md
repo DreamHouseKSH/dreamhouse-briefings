@@ -1,4 +1,4 @@
-## {제목}
+## N. {제목}
 
 - **원문:** {url}
 - **분야:** {IT|AI|모델|엔진}
@@ -34,3 +34,5 @@
   - 같은 기사·회사 발표를 다시 옮긴 2차 기사는 '다른 시각'으로 치지 않음. -->
 
 **시사점:** {한두 문장}
+
+<!-- 발행 전 scripts/article-index.py prepare → event 메타 작성 → candidates → review → gate 필수. docs/ARTICLE-INDEX.md 참고. 과거 본문에 색인용 필드를 억지로 추가하지 않습니다. -->

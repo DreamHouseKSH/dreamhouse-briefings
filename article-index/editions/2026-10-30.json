@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-30",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-30/AI.md": "539bd70c865065d8716ea419fb02b00a1992e305567c19d6e86571fee83acd20",
+    "news/2026-10-30/IT.md": "a62b04de6b4a6dd0382edd8094adb878452e23b301c2b8e76ce634769f1117d8",
+    "news/2026-10-30/모델.md": "3d04dd722d786a826948acc72e824b0b5d7cfbad1e1d0642aa47916d3fca88cb",
+    "news/2026-10-30/엔진.md": "d3af32b333aa18b6c10a4b213d08caf420cf4e7d25b9d9bd8b688d6737391afd"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-30/AI/1",
+      "article_id": "url-c2c4f027590cc4898f436b57c46048c866984ce8daf6ef40bf65756796852993",
+      "revision_id": "editorial-10f12590aff084e64fc3d61cd0cc5beb066ad8bf4452a063667eca8ed8f91259",
+      "briefing_date": "2026-10-30",
+      "category": "AI",
+      "heading": "1. Serval, 1억 5천만 달러 투자 유치 — 기업 업무 자동화의 구축·승인 구조에 주목",
+      "title": "Serval, 1억 5천만 달러 투자 유치 — 기업 업무 자동화의 구축·승인 구조에 주목",
+      "summary": "Serval은 Sequoia가 주도한 시리즈 C 투자로 1억 5천만 달러를 유치했고 기업가치는 30억 달러로 평가됐다고 발표했다. 이는 투자 유치 금액과 거래상의 평가액이며 매출이나 이익이 아니다. 회사는 12개월 사이 세 번째 투자라고 설명했다.",
+      "source_urls": [
+        "https://www.serval.com/blog/we-raised-150m-to-make-everyone-a-builder"
+      ],
+      "canonical_urls": [
+        "https://www.serval.com/blog/we-raised-150m-to-make-everyone-a-builder"
+      ],
+      "publication_note": "2026-10-29 (회사 원문 날짜, 시각·시간대 미표시). Reuters 보도 시각은 10/29 21:02 KST로 수집창 안에 확인.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-30/AI.md",
+      "archive_url": "/news/2026-10-30/AI.html#1-serval-1억-5천만-달러-투자-유치--기업-업무-자동화의-구축승인-구조에-주목",
+      "section_sha256": "846610e66e7a1f2c9d16895d9d025b782b5c1870dd295e99e985154727866992",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-30/IT/1",
+      "article_id": "url-ded49fc539329ab96e873e9cfd14b0bf93f7e98e508ce9f1459e796a7da90b5b",
+      "revision_id": "editorial-20c68a7b83f8090b23e38c5cdecfd8724adf308288199223dd79189d72e83627",
+      "briefing_date": "2026-10-30",
+      "category": "IT",
+      "heading": "1. 삼성전자 3분기 실적 — 반도체 이익과 완제품 부문 손실을 함께 봐야",
+      "title": "삼성전자 3분기 실적 — 반도체 이익과 완제품 부문 손실을 함께 봐야",
+      "summary": "삼성전자는 3분기 연결 매출 195.3조 원, 영업이익 107.4조 원을 발표했다. 회사 발표 기준 전분기 대비 매출은 14% 증가했다. 반도체를 담당하는 DS(Device Solutions, 메모리·시스템 반도체 사업) 부문은 매출 147.1조 원과 영업이익 106.5조 원을 기록했다. 메모리 가격과 인공지능용 제품 수요가 실적에 중요한 역할을 했다는 회사 설명이다.",
+      "source_urls": [
+        "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
+      ],
+      "canonical_urls": [
+        "https://news.samsung.com/global/samsung-electronics-announces-third-quarter-2026-results"
+      ],
+      "publication_note": "2026-10-29, 한국 공식 발표일. 게시 시각은 원문에 없어 수집창 시작 경계의 정확한 포함 여부는 미확인.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-30/IT.md",
+      "archive_url": "/news/2026-10-30/IT.html#1-삼성전자-3분기-실적--반도체-이익과-완제품-부문-손실을-함께-봐야",
+      "section_sha256": "425e0bce65843288045407fedcbfbd90bbe4b0a5623a6b7c93f55adee35c36ee",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-30/IT/2",
+      "article_id": "url-cb1bdeee47efc0de95777196842b8afe4c09842368bdc280ddb2a972ae164896",
+      "revision_id": "editorial-6ec62aa75ceee6912ce188b33488f733461ca24cf077edecc45005a4ac1e89c9",
+      "briefing_date": "2026-10-30",
+      "category": "IT",
+      "heading": "2. PHP2Shell 후속 경보 — 인터넷 노출 PAN-OS 관리 화면 대상 실제 악용 확인",
+      "title": "PHP2Shell 후속 경보 — 인터넷 노출 PAN-OS 관리 화면 대상 실제 악용 확인",
+      "summary": "Palo Alto Networks의 Unit 42는 PHP2Shell 취약점이 인터넷에 노출된 PAN-OS 관리 인터페이스를 대상으로 실제 악용되고 있다고 갱신했다. 공격자가 PHP의 취약점과 리눅스 커널 권한 상승 취약점을 연결해 최고 관리자 권한을 얻은 사례가 보고됐으며, Unit 42는 같은 공격 도구와 결과를 독립 확인했다고 밝혔다. 이는 업체의 조사 결과이며 모든 PAN-OS 장비가 침해됐다는 뜻은 아니다.",
+      "source_urls": [
+        "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+        "https://security.paloaltonetworks.com/CVE-2026-109618"
+      ],
+      "canonical_urls": [
+        "https://unit42.paloaltonetworks.com/cve-2026-109618-cve-2026-109619/",
+        "https://security.paloaltonetworks.com/CVE-2026-109618"
+      ],
+      "publication_note": "2026-10-30 03:00 KST (갱신 이력: 10/29 11:00 미국 태평양 일광시간). 취약점 자체의 최초 공개가 아닌 후속 악용 정보.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-30/IT.md",
+      "archive_url": "/news/2026-10-30/IT.html#2-php2shell-후속-경보--인터넷-노출-pan-os-관리-화면-대상-실제-악용-확인",
+      "section_sha256": "975793e439ca1d0dcd91cce55c0b24097be4111b5d58293850a69e5a0007f1ae",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-30/모델/1",
+      "article_id": "url-bd03e4a483646b8532a8be38f63038c71b34c72e91048d24fad76cc874818f73",
+      "revision_id": "editorial-a9ddbe4a8ffbe1933a4176ffb0735eb9d50681dea0874e7aed7f83b698dfda28",
+      "briefing_date": "2026-10-30",
+      "category": "모델",
+      "heading": "1. Mistral Large 4 가중치 공개 — 프리뷰와 다운로드 공개, 이용허락 조건을 구분",
+      "title": "Mistral Large 4 가중치 공개 — 프리뷰와 다운로드 공개, 이용허락 조건을 구분",
+      "summary": "Mistral이 Large 4, 별칭 Le Chonk의 개선된 가중치를 공개했다. 10월 초의 공개 프리뷰와 달리 이번에는 조직이 가중치를 내려받아 자체 인프라에서 배포·수정할 수 있게 됐다는 점이 핵심이다. 공개 가중치(Open weights, 학습된 모델의 수치 파일을 내려받을 수 있는 배포 방식)를 아무 조건 없는 사용허락과 같은 뜻으로 읽으면 안 된다.",
+      "source_urls": [
+        "https://mistral.ai/news/mistral-large-4-oss/",
+        "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE"
+      ],
+      "canonical_urls": [
+        "https://mistral.ai/news/mistral-large-4-oss/",
+        "https://huggingface.co/mistralai/Mistral-Large-4-1T-A52B/blob/main/LICENSE"
+      ],
+      "publication_note": "2026-10-29 (공식 날짜, 시각 미표시). Reuters 보도는 10/29 23:03 KST로 수집창 내 확인.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-30/모델.md",
+      "archive_url": "/news/2026-10-30/모델.html#1-mistral-large-4-가중치-공개--프리뷰와-다운로드-공개-이용허락-조건을-구분",
+      "section_sha256": "00c32474bec98bd0e072157f291162f4a37bc45bfbaa12d8b2b457cbf6dcf1a4",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-30/엔진/1",
+      "article_id": "url-4a32d2fe895871688c404872bdf6753e8d0d7c7fbaaf082315391122e18a8568",
+      "revision_id": "editorial-d352a362a96ce1df07f9d0c00760c55ea7976fcfddf8de3e980ec0b825cb622d",
+      "briefing_date": "2026-10-30",
+      "category": "엔진",
+      "heading": "1. llama.cpp, Limite 지원과 OpenCL IQ2 초기 지원 추가",
+      "title": "llama.cpp, Limite 지원과 OpenCL IQ2 초기 지원 추가",
+      "summary": "llama.cpp b11988은 Limite 1B 모델 계열 지원을 추가했다. 릴리스에 연결된 변경에는 모델 구조 정의, 변환 도구와 추론 실행 측 지원이 포함돼 있다. 새로운 모델을 엔진에서 읽고 실행할 수 있게 하는 호환성 변경이며 모델 자체의 신규 출시 발표나 성능 인증과는 다르다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11988",
+        "https://github.com/ggml-org/llama.cpp/pull/29433",
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11986",
+        "https://github.com/ggml-org/llama.cpp/pull/31267"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11988",
+        "https://github.com/ggml-org/llama.cpp/pull/29433",
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11986",
+        "https://github.com/ggml-org/llama.cpp/pull/31267"
+      ],
+      "publication_note": "b11988 2026-10-30 05:53:51 KST / b11986 05:16:04 KST (GitHub 릴리스 published_at 변환)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-30/엔진.md",
+      "archive_url": "/news/2026-10-30/엔진.html#1-llamacpp-limite-지원과-opencl-iq2-초기-지원-추가",
+      "section_sha256": "ab6ef8fa2b614b0c49d7feb1bda7edd1b5116433346c559515882dad87ed9f63",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

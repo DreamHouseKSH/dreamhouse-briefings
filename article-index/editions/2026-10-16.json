@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-16",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-16/AI.md": "1eb5e8b359bbe3b1b8b0644e9fa32c3d8f116afe05408a4a21ef4fe57860ef74",
+    "news/2026-10-16/IT.md": "28b1e07d9e69f5ce8bb8ad21e60156ced64b4b8ac514f54b8dd67cf25347478c",
+    "news/2026-10-16/모델.md": "8ff85c637fe6b92057886a9f6bb66729e334f8f772345422c9bc6da54a6b2fb3",
+    "news/2026-10-16/엔진.md": "c1db4b51568face67eb0d9de8e657a2402cfa1ae5ded0b47cef85cab4469510f"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-16/AI/1",
+      "article_id": "url-35c422e411c04f95ed31893c12b45324c4daf56352df09262a6c6abcc5541333",
+      "revision_id": "editorial-4df9f90fd64952f8816d319f4141c7a89947aa8bd2fd8784b70e0fb89306feb0",
+      "briefing_date": "2026-10-16",
+      "category": "AI",
+      "heading": "1. Anthropic 3분기 매출 168억 달러 — 조정 기준 흑자·현금흐름 흑자 발표, IPO 가치는 1.5조 달러로 낮추는 목소리",
+      "title": "Anthropic 3분기 매출 168억 달러 — 조정 기준 흑자·현금흐름 흑자 발표, IPO 가치는 1.5조 달러로 낮추는 목소리",
+      "summary": "Anthropic이 샌프란시스코에서 잠재 IPO(Initial Public Offering, 기업공개 — 주식시장에 처음 상장) 투자자들에게 3분기 매출이 168억 달러라고 밝혔다고 복수의 소식통이 CNBC·Financial Times·Axios·Reuters에 전했습니다. 2분기 약 116억 달러, 1분기 47억 달러에서 이어진 수치로, 전 분기 대비 약 45% 증가입니다. 회사는 같은 분기에 조정 기준 흑자였고 현금흐름도 흑자였다고 했으며, FT 인용으로는 컴퓨트 지출 1달러당 매출 1.70달러를 냈다고 합니다(회사→투자자 전달·미공개 공시).",
+      "source_urls": [
+        "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html"
+      ],
+      "canonical_urls": [
+        "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html"
+      ],
+      "publication_note": "2026-10-14~15 (미국 EDT; 샌프란시스코 투자자 미팅)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-16/AI.md",
+      "archive_url": "/news/2026-10-16/AI.html#1-anthropic-3분기-매출-168억-달러--조정-기준-흑자현금흐름-흑자-발표-ipo-가치는-15조-달러로-낮추는-목소리",
+      "section_sha256": "e28079cbbe84c579e1f591063f305a1a8cae78ec609752273fe0818f24365042",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-16/AI/2",
+      "article_id": "url-38f9d6cfc7c004b192ea90801dfe9c7728df1a7fd71f616379af0a788c370b19",
+      "revision_id": "editorial-09fbe8905d935d5eaa2adb6f20e2d78dd11a01cbe372e6bc54f9848e8df5f065",
+      "briefing_date": "2026-10-16",
+      "category": "AI",
+      "heading": "2. OpenAI·Meta, 미국 연방 증거규칙 자문위에 “딥페이크 탐지가 과학적으로 따라가기 어렵다” 경고",
+      "title": "OpenAI·Meta, 미국 연방 증거규칙 자문위에 “딥페이크 탐지가 과학적으로 따라가기 어렵다” 경고",
+      "summary": "OpenAI와 Meta의 기술·정책 담당자들이 15일(현지) 보스턴에서 열린 미국 사법회의 증거규칙 자문위원회(Advisory Committee on Evidence Rules) 에 참석해, 딥페이크(deepfake, AI로 만든 가짜 영상·음성·이미지) 품질이 사람·소프트웨어 모두 구분을 어렵게 만들 정도로 빨라졌다고 경고했다고 Reuters가 보도했습니다(UOL 등 재전송). OpenAI 정책 고문 Shira Anderson은 “AI 생성 이미지는 점점 좋아지고, 미래에 이를 과학적으로 탐지하는 방법이 있을 것이라고 보지 않는다”고 말했습니다. Meta 제품 책임자 Devin Norder는 최신 세대 모델로 만든 미디어가 사람에게는 진짜와 구분이 어렵고, 제작 비용·시간도 이미 매우 낮다고 했습니다.",
+      "source_urls": [
+        "https://www.uol.com.br/tilt/noticias/reuters/2026/10/15/openai-e-meta-alertam-poder-judiciario-dos-eua-sobre-risco-de-provas-deepfake.htm"
+      ],
+      "canonical_urls": [
+        "https://www.uol.com.br/tilt/noticias/reuters/2026/10/15/openai-e-meta-alertam-poder-judiciario-dos-eua-sobre-risco-de-provas-deepfake.htm"
+      ],
+      "publication_note": "2026-10-15 (미국 보스턴 회의; Reuters)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-16/AI.md",
+      "archive_url": "/news/2026-10-16/AI.html#2-openaimeta-미국-연방-증거규칙-자문위에-딥페이크-탐지가-과학적으로-따라가기-어렵다-경고",
+      "section_sha256": "98b0a2645279c624709e4b35715ed4223f8ad16427e961b9ed849691acd66992",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-16/IT/1",
+      "article_id": "url-1930169defa4f0af0b8691f9f7bd28224123052d980dcfd33a4d50bce40493ca",
+      "revision_id": "editorial-4c531034fe49f189a50f9ffd3d671999edae6e6bbf78c51b910c9bcd6a3118be",
+      "briefing_date": "2026-10-16",
+      "category": "IT",
+      "heading": "1. 삼성전자·SK하이닉스 급락 — 외국인 2.5조 원 순매도, 글로벌 AI 주식도 동반 매도",
+      "title": "삼성전자·SK하이닉스 급락 — 외국인 2.5조 원 순매도, 글로벌 AI 주식도 동반 매도",
+      "summary": "15일 유가증권시장에서 삼성전자는 전일 대비 9.48% 내린 21만 원, SK하이닉스는 11.06% 내린 126만 2천 원에 마감했습니다(연합뉴스). 두 종목 모두 지난 7월 28일(각 −13.39%, −16.02%) 이후 가장 큰 하루 낙폭입니다. 삼성전자는 이달 9거래일 중 6일을 하락으로 마쳤고, 상승을 멈춘 이달 2일부터 약 24% 빠졌습니다. SK하이닉스는 이달 6일부터 7거래일째 하락하며 약 31% 떨어졌습니다.",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20261015045351008"
+      ],
+      "canonical_urls": [
+        "https://www.yna.co.kr/view/AKR20261015045351008"
+      ],
+      "publication_note": "2026-10-15 (KST)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-16/IT.md",
+      "archive_url": "/news/2026-10-16/IT.html#1-삼성전자sk하이닉스-급락--외국인-25조-원-순매도-글로벌-ai-주식도-동반-매도",
+      "section_sha256": "af52a50db13f268fce6d425489ec5bd0d9f7c0ed00f6140f8f24cac29bcd040a",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-16/IT/2",
+      "article_id": "url-5a8b2499390353c3923f8556f5ce4d3ebf6341e0f3214f808bafd66c8b3394a5",
+      "revision_id": "editorial-d53ac7a43b93af0aa679eb5348a464b6641a5227445bb5dc2bd7ea2f2cea9bc6",
+      "briefing_date": "2026-10-16",
+      "category": "IT",
+      "heading": "2. 삼성전자 CTO 송재혁 — “4F² D램 개발하고 있다” (SEDEX 현장)",
+      "title": "삼성전자 CTO 송재혁 — “4F² D램 개발하고 있다” (SEDEX 현장)",
+      "summary": "14일 서울 코엑스 SEDEX(Semiconductor Exhibition, 반도체대전 — 한국반도체산업협회가 여는 국내 최대 반도체 전시회) 2026 현장에서 삼성전자 DS(Device Solutions, 디바이스 솔루션) 부문 CTO(Chief Technology Officer, 최고기술책임자) 송재혁 사장은 취재진이 “삼성도 4F²(포에프스퀘어 — D램 셀 면적을 기존 6F² 대비 약 33% 줄여 같은 공간에 더 많은 비트를 담는 구조) 기술을 개발하느냐”고 묻자 “그렇다”고 답했습니다. 진행 상황에 대해서는 “열심히 합니다”라며 구체 일정은 밝히지 않았습니다(뉴스핌).",
+      "source_urls": [
+        "https://www.newspim.com/news/view/20261014001245"
+      ],
+      "canonical_urls": [
+        "https://www.newspim.com/news/view/20261014001245"
+      ],
+      "publication_note": "2026-10-14 (KST; 15~16일 보도·확산)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-16/IT.md",
+      "archive_url": "/news/2026-10-16/IT.html#2-삼성전자-cto-송재혁--4f²-d램-개발하고-있다-sedex-현장",
+      "section_sha256": "9edb12e7677797aa9bb278cd26efc6c790ac2ff4cf96fd7d3be6b4e287f3ce3f",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-16/모델/1",
+      "article_id": "url-b655aadac97a31177c2f3953e289c0c49eb9557ba303f648d61f427a919973ce",
+      "revision_id": "editorial-7408e390da1d267da44b4d97768cfdafe6e8d87c9cc122edc7901969ec02f944",
+      "briefing_date": "2026-10-16",
+      "category": "모델",
+      "heading": "1. 엔비디아 Nemotron 3.5 Super VL·Bolt — 120B(활성 12B) 오픈 에이전트 모델과 로컬 24GB/4GB 변형",
+      "title": "엔비디아 Nemotron 3.5 Super VL·Bolt — 120B(활성 12B) 오픈 에이전트 모델과 로컬 24GB/4GB 변형",
+      "summary": "엔비디아가 Nemotron 3.5 Super VL을 오픈 가중치로 공개했습니다. 총 파라미터 약 1,200억(120B), 토큰당 활성 약 120억(12B) 인 MoE(Mixture of Experts, 전문가 혼합 — 일부 하위 네트워크만 골라 계산하는 구조) 백본에 비전 인코더를 붙인 VLM(Vision-Language Model, 이미지와 글을 함께 이해하는 모델) 입니다. 회사 블로그는 지시 따르기·툴 사용·다단계 업무·문서 시각 이해 등 에이전트 작업에서 자사 대형 추론 모델에 필적하는 정확도를 약 1/5 파라미터로 낸다고 주장하고, Artificial Analysis Intelligence Index 기준으로 동급 대비 처리량이 최대 5배 빠르다고 적었습니다(회사 발표·인용 벤치마크).",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+      ],
+      "canonical_urls": [
+        "https://blogs.nvidia.com/blog/nemotron-3-5-super-vl/"
+      ],
+      "publication_note": "2026-10-15 (회사 블로그)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-16/모델.md",
+      "archive_url": "/news/2026-10-16/모델.html#1-엔비디아-nemotron-35-super-vlbolt--120b활성-12b-오픈-에이전트-모델과-로컬-24gb4gb-변형",
+      "section_sha256": "5d1556796ab541b15a3463284b4fe7df4c945ccf11a47c3bec331973092a61e9",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-16/모델/2",
+      "article_id": "url-499fcbd081b8b35bf4722856fa5b3b40d9b4794609079e10c8914519004d979e",
+      "revision_id": "editorial-18a3b25e7986ef9f0fd53cb7abc8ac20207d0e227120ce6f014bb62bd9252ef0",
+      "briefing_date": "2026-10-16",
+      "category": "모델",
+      "heading": "2. Meta Muse Spark Open — 816B(활성 42B) 미국산 오픈 가중치, M5 Ultra Mac Studio 2대로 데스크톱 실행",
+      "title": "Meta Muse Spark Open — 816B(활성 42B) 미국산 오픈 가중치, M5 Ultra Mac Studio 2대로 데스크톱 실행",
+      "summary": "Meta가 Muse Spark Open 가중치를 공개했습니다. 네이티브 멀티모달 모델로 총 파라미터 816B, 활성 42B, 컨텍스트 100만 토큰이며, 코딩·에이전트·장기 과제에 초점을 둔다고 밝혔습니다. 회사는 이를 “현재까지 가장 능력 있는 미국산 오픈 가중치 모델”이라고 표현했습니다. Baseten·Fireworks·Groq·Modal·Nebius·OpenRouter·Together AI 등 API와 Amazon SageMaker·Google Cloud Model Garden·Hugging Face·Microsoft Foundry에서 받을 수 있고, SGLang·vLLM·TensorRT-LLM·Transformers·Apple MLX(애플 머신러닝 프레임워크 — 맥 통합 메모리 최적화)·llama.cpp·Unsloth에서 돌릴 수 있다고 합니다.",
+      "source_urls": [
+        "https://research.meta.ai/blog/muse-spark-open"
+      ],
+      "canonical_urls": [
+        "https://research.meta.ai/blog/muse-spark-open"
+      ],
+      "publication_note": "2026-10-15 (Meta AI Research)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-16/모델.md",
+      "archive_url": "/news/2026-10-16/모델.html#2-meta-muse-spark-open--816b활성-42b-미국산-오픈-가중치-m5-ultra-mac-studio-2대로-데스크톱-실행",
+      "section_sha256": "9e0712f78b1dd6c661979b0490322343117600271e757792165ce17f37f2d7ff",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-16/엔진/1",
+      "article_id": "url-f727b4e1831e7a08543a22d379f849c9a924a54986db4946136025a8bdd9d5cb",
+      "revision_id": "editorial-3ff57a2d9a48d42981beffed40811af34fe8a663385868cbbf59f98bbd0f9385",
+      "briefing_date": "2026-10-16",
+      "category": "엔진",
+      "heading": "1. llama.cpp v0.7.0 — MoE 전문가 GPU 캐시(최대 ~2.2×), LiliCorr 추측 디코딩, Nemotron·결정 모델 대거 지원",
+      "title": "llama.cpp v0.7.0 — MoE 전문가 GPU 캐시(최대 ~2.2×), LiliCorr 추측 디코딩, Nemotron·결정 모델 대거 지원",
+      "summary": "ggml-org/llama.cpp가 v0.7.0을 15일(UTC) 정식 태그로 올렸습니다. 하이라이트는 호스트 메모리에 둔 MoE(Mixture of Experts, 전문가 혼합) 전문가를 GPU LRU(Least Recently Used, 가장 오래 안 쓴 것부터 버리는) 캐시로 올리는 --moe-cache-mib(전문가 오프로드 시 디코드 최대 약 2.2배, 멀티 GPU 공유 #30112), LiliCorr 추측 디코딩(#30506), GLM5-Next용 MTP(Multi-Token Prediction, 한 번에 여러 토큰을 예측하는 기법) 경로(#29928)입니다. ggml는 v0.27.0으로 올랐습니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/v0.7.0"
+      ],
+      "publication_note": "2026-10-15 (UTC 17:13 ≈ KST 10/16 02:13)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-16/엔진.md",
+      "archive_url": "/news/2026-10-16/엔진.html#1-llamacpp-v070--moe-전문가-gpu-캐시최대-22-lilicorr-추측-디코딩-nemotron결정-모델-대거-지원",
+      "section_sha256": "0d40c5a30d772a157f440a53a0a888e594c4784279a82af64aa07b2a1d10f940",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-16/엔진/2",
+      "article_id": "url-66a9e8a7bfccdecfa66a08b3bd45d1b82070d775fa25d1ba229fc9b911793f92",
+      "revision_id": "editorial-b6ebd60c8a46099279a59c84a3334d0736731f4ed873f942da54f7f5d430ac1d",
+      "briefing_date": "2026-10-16",
+      "category": "엔진",
+      "heading": "2. Actual Computer 엔진 e — DGX Station에서 Nemotron 3.5 Super VL 단일 455 tok/s·256스트림 1만+ tok/s 주장",
+      "title": "Actual Computer 엔진 e — DGX Station에서 Nemotron 3.5 Super VL 단일 455 tok/s·256스트림 1만+ tok/s 주장",
+      "summary": "Actual Computer가 자사 추론 엔진 e로 NVIDIA DGX Station에서 Nemotron 3.5 Super VL을 서빙한 사례를 공개했습니다. 회사 측정(예비치)으로는 단일 스트림 455 tokens/s, 128스트림에서 8,000+ tokens/s, 256스트림에서 10,000+ tokens/s, 8K 프롬프트 첫 토큰 0.58초이며, FP8 가중치·MTP 켜짐·100만 컨텍스트 설정이라고 적었습니다. HTTP 서빙 경로는 1~128스트림에서 벤치 대비 약 5% 이내라고 합니다. api.actual.inc 릴레이는 confidential compute로 요청·응답을 Actual 측에서도 보지 못하게 한다고 주장합니다.",
+      "source_urls": [
+        "https://actual.inc/company/blog/case-study-dgx-station-and-nemotron-3-5-super-vl"
+      ],
+      "canonical_urls": [
+        "https://actual.inc/company/blog/case-study-dgx-station-and-nemotron-3-5-super-vl"
+      ],
+      "publication_note": "2026-10-15 (회사 블로그)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-16/엔진.md",
+      "archive_url": "/news/2026-10-16/엔진.html#2-actual-computer-엔진-e--dgx-station에서-nemotron-35-super-vl-단일-455-toks256스트림-1만-toks-주장",
+      "section_sha256": "930993a1ccf99e7010c29e11524836ab88cf131e6a3cbb328c926741d96b11e0",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

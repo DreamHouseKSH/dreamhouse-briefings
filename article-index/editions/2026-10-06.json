@@ -1,0 +1,773 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-06",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-06/AI.md": "43263dc329348e8a67d6268c14935457ed84b6ea9fc84bbe47e9017953a6f41b",
+    "news/2026-10-06/IT.md": "9c4ffba8c809160271cb44654f78f7beaeb9b4c40e67b7b9f47ab5be3c22a07c",
+    "news/2026-10-06/모델.md": "920e0a9fea7ab3a491ce5a25c169f2a469a28f2eeaa1908687c8d254a71d5aa0",
+    "news/2026-10-06/엔진.md": "cccfaa4594d3b1653ae02220dab4c0ed6f7959b83e8eeefb087310d97cffffb9"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-06/AI/1",
+      "article_id": "url-83e0a5f30f1f40d458c55203225f5fb3087d13aa2137648bf4e61a5208e1ee77",
+      "revision_id": "editorial-1b17b7372c179b77b9411507b2f51bd0b30a41d177b85a3d6569ef347f2bc109",
+      "briefing_date": "2026-10-06",
+      "category": "AI",
+      "heading": "1. OpenAI, 기업가치 1.4조 달러에 300억 달러 조달 추진 — MGX·블랙록과 협상",
+      "title": "OpenAI, 기업가치 1.4조 달러에 300억 달러 조달 추진 — MGX·블랙록과 협상",
+      "summary": "OpenAI가 기업가치 약 1.4조 달러(약 1.4T)에 최소 300억 달러를 조달하기 위해 아부다비 국부 성격 투자사 MGX 를 비롯한 UAE 자금(합산 최대 약 100억 달러 가능성)과 블랙록(BlackRock) 과 협상 중이라는 보도입니다. 특이점은 리드 투자자(lead investor, 라운드 조건을 주도해 정하는 대표 투자자) 없이 OpenAI가 스스로 정한 고정 가격으로 라운드를 제시하고 있다는 점입니다.",
+      "source_urls": [
+        "https://thenextweb.com/news/openai-30bn-mgx-blackrock-europe"
+      ],
+      "canonical_urls": [
+        "https://thenextweb.com/news/openai-30bn-mgx-blackrock-europe"
+      ],
+      "publication_note": "2026-10-06 브리핑",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/AI.md",
+      "archive_url": "/news/2026-10-06/AI.html#1-openai-기업가치-14조-달러에-300억-달러-조달-추진--mgx블랙록과-협상",
+      "section_sha256": "fc9d26322d921d63c09dd4156028cf7cd5effd10f3995131dc46158009d4a9de",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/AI/2",
+      "article_id": "url-365b2f724f4bb5c67186583f82a456aa042241cc8bafb1729bd5020ad664b1bf",
+      "revision_id": "editorial-2c7f148e6d0354f027bb188f0ccd341e5718d3d124d9ae4adfe7fc6512db9abf",
+      "briefing_date": "2026-10-06",
+      "category": "AI",
+      "heading": "2. Anthropic, 11월 9일 주간 IPO 로드쇼 계획 — 최대 2조 달러 가치 목표",
+      "title": "Anthropic, 11월 9일 주간 IPO 로드쇼 계획 — 최대 2조 달러 가치 목표",
+      "summary": "Anthropic이 11월 9일이 속한 주에 IPO 로드쇼(roadshow, 상장 전 기관투자자들을 돌며 공모가 수요를 확인하는 설명회) 를 계획 중이며, 기업가치를 1.8조~2조 달러로 노리고 있다는 분석 글입니다. 직전 확정 가치는 2026년 5월 9,650억 달러였습니다.",
+      "source_urls": [
+        "https://www.wrightresearch.in/blog/what-does-a-trillion-dollar-ai-listing-cost-everyone-else/"
+      ],
+      "canonical_urls": [
+        "https://www.wrightresearch.in/blog/what-does-a-trillion-dollar-ai-listing-cost-everyone-else/"
+      ],
+      "publication_note": "2026-10-04 게시 / 10-05 업데이트",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/AI.md",
+      "archive_url": "/news/2026-10-06/AI.html#2-anthropic-11월-9일-주간-ipo-로드쇼-계획--최대-2조-달러-가치-목표",
+      "section_sha256": "518526bbd3e714da64bf11197a84d12c37442b747046a76e35339bca85bea2fe",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/AI/3",
+      "article_id": "url-d7aea4e43e66cc4dbc44f627c2b2f2c6e223530833dc40451b749b55f05e6f02",
+      "revision_id": "editorial-9a4a37f14a5542e1299fc683883c458a4a0ce7fe161fe7c0eeb567dd8f0b8137",
+      "briefing_date": "2026-10-06",
+      "category": "AI",
+      "heading": "3. Cohere, 엔터프라이즈 에이전트 플랫폼 'North 2' 공개 — 예산 통제 + 메모리",
+      "title": "Cohere, 엔터프라이즈 에이전트 플랫폼 'North 2' 공개 — 예산 통제 + 메모리",
+      "summary": "Cohere가 기업용 에이전트 플랫폼 North의 새 버전 North 2 를 내놨습니다. 핵심은 두 가지 기업 고민, 즉 에이전트 비용 폭주 와 맥락 부족으로 인한 오답 을 겨냥한 기능입니다.",
+      "source_urls": [
+        "https://venturebeat.com/orchestration/coheres-north-2-puts-ai-agents-on-a-budget-and-gives-them-a-memory"
+      ],
+      "canonical_urls": [
+        "https://venturebeat.com/orchestration/coheres-north-2-puts-ai-agents-on-a-budget-and-gives-them-a-memory"
+      ],
+      "publication_note": "2026-10-05",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/AI.md",
+      "archive_url": "/news/2026-10-06/AI.html#3-cohere-엔터프라이즈-에이전트-플랫폼-north-2-공개--예산-통제--메모리",
+      "section_sha256": "f9d0038c82ef307e6432c548a7a3316c5235d47bc342a19a6df2b2cd8b0a94f8",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/AI/4-1",
+      "article_id": "url-c5a5527dff335f4b223e1fbe0b1500fb9666882017a1e3ad41194bf62f5b062e",
+      "revision_id": "editorial-b90420930a27eb6362ca54c2c5f5de656a5e2242ad13e20ef907a06315d2cf01",
+      "briefing_date": "2026-10-06",
+      "category": "AI",
+      "heading": "4-1. Collibra, 독일 AI 거버넌스 스타트업 trail ML 인수",
+      "title": "Collibra, 독일 AI 거버넌스 스타트업 trail ML 인수",
+      "summary": "데이터·AI 통제 플랫폼 Collibra가 2023년 뮌헨에서 설립된 trail ML 을 인수했습니다(금액 비공개). trail ML은 AI 시스템의 증거 자료를 분석해 어떤 규제·표준(EU AI Act, ISO 42001(AI 경영시스템 국제표준), NIST AI RMF(미국 AI 위험관리 프레임워크) 등)이 적용되는지 판단하고 통제 충족 여부와 공백을 자동 평가하는 에이전트 기반 자동화를 제공합니다. 특히 런타임 통제(runtime enforcement, 에이전트가 실제로 동작하는 순간 정책 위반 행동을 차단) 기능이 Collibra 정책과 결합됩니다.",
+      "source_urls": [
+        "https://www.collibra.com/company/newsroom/press-releases/collibra-acquires-trail-ml-to-automate-ai-governance-from-policy-to-production"
+      ],
+      "canonical_urls": [
+        "https://www.collibra.com/company/newsroom/press-releases/collibra-acquires-trail-ml-to-automate-ai-governance-from-policy-to-production"
+      ],
+      "publication_note": "2026-10-05",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/AI.md",
+      "archive_url": "/news/2026-10-06/AI.html#4-1-collibra-독일-ai-거버넌스-스타트업-trail-ml-인수",
+      "section_sha256": "d52e73c524e66f943cc4769a6f95cb1b4b091c1add601610ec397c72bf77497d",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/AI/4-2",
+      "article_id": "url-294ff0418e02ed655199bc4aac4b5107945189d7695d2c37c0f3358229c4b7b0",
+      "revision_id": "editorial-5d0eed9ccec469b3cb74feae2e0a9a599e23e96d490f191bdd66045e0bc0eaa3",
+      "briefing_date": "2026-10-06",
+      "category": "AI",
+      "heading": "4-2. Zeta Global, YC 출신 AI 엔지니어링 기업 Senso 인수 합의",
+      "title": "Zeta Global, YC 출신 AI 엔지니어링 기업 Senso 인수 합의",
+      "summary": "마케팅 기술 기업 Zeta Global(NYSE: ZETA)이 Y Combinator 투자를 받은 Senso 인수 계약을 맺었습니다(조건 비공개). Senso 기술은 이미 Zeta의 GEO(Generative Engine Optimization, ChatGPT·Gemini·Claude·Google AI Overviews 같은 AI 답변에 브랜드가 잘 노출되도록 최적화하는 것 — 검색엔진 최적화 SEO의 AI판) 상품을 뒷받침해 왔습니다. 인수로 기술 내재화, AI 엔지니어 확보, 프런티어 모델(최상위 성능 AI 모델) 연동 강화를 노립니다.",
+      "source_urls": [
+        "https://www.zetaglobal.com/news/zeta-global-to-acquire-senso-adding-ai-engineering-and-frontier-model-connectivity-to-its-intelligent-ai-infrastructure/"
+      ],
+      "canonical_urls": [
+        "https://www.zetaglobal.com/news/zeta-global-to-acquire-senso-adding-ai-engineering-and-frontier-model-connectivity-to-its-intelligent-ai-infrastructure/"
+      ],
+      "publication_note": "2026-10-05",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/AI.md",
+      "archive_url": "/news/2026-10-06/AI.html#4-2-zeta-global-yc-출신-ai-엔지니어링-기업-senso-인수-합의",
+      "section_sha256": "5d51618b2b4241009e5c60fbed6f00a482a37b86b8b04be04fbbb2869d8e2a05",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/IT/1",
+      "article_id": "url-582e64af6858b8e1bf0e526f49ce3636537d482f2c7f3ba074449dd9cd388ff5",
+      "revision_id": "editorial-6ad65f298285c5229f8b6d3cb6ca29424fb2ca01ab17f82159748a40171e069a",
+      "briefing_date": "2026-10-06",
+      "category": "IT",
+      "heading": "1. 미국, 말레이시아·태국행 AI 칩 수출 제한 초안 마련",
+      "title": "미국, 말레이시아·태국행 AI 칩 수출 제한 초안 마련",
+      "summary": "미국 상무부가 엔비디아(Nvidia) 등의 AI 칩을 말레이시아와 태국으로 보내는 것을 제한하는 규정 초안(draft rule)을 준비 중이라는 보도입니다. 핵심 목적은 우회 수출(transshipment, 제3국을 거쳐 원래 금지된 국가로 물건이 흘러가는 것) 차단으로, 첨단 엔비디아 프로세서 판매가 사실상 막혀 있는 중국이 동남아 중간 거점을 통해 칩을 확보하는 경로를 막으려는 것입니다.",
+      "source_urls": [
+        "https://thaitimes.com/us-administration-plans-to-restrict-ai-chip-shipments-to-malaysia-and-thailand"
+      ],
+      "canonical_urls": [
+        "https://thaitimes.com/us-administration-plans-to-restrict-ai-chip-shipments-to-malaysia-and-thailand"
+      ],
+      "publication_note": "2026-10-06 브리핑",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/IT.md",
+      "archive_url": "/news/2026-10-06/IT.html#1-미국-말레이시아태국행-ai-칩-수출-제한-초안-마련",
+      "section_sha256": "00ea232db8c1cfe7a8c21ec645693ea2b2e54a7ad14c7edfa6ef22642be17110",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/IT/2",
+      "article_id": "url-758c12bdbfe125bf0637d53f63224f3e19c42e6fe55e06478f2d16e85a6115ce",
+      "revision_id": "editorial-e59d235318db80f08d97b608365724d28ed350279049034670127a75c0f2309f",
+      "briefing_date": "2026-10-06",
+      "category": "IT",
+      "heading": "2. 온세미(Onsemi), 랜섬웨어 그룹 Qilin 유출 사이트에 등재 (10/5)",
+      "title": "온세미(Onsemi), 랜섬웨어 그룹 Qilin 유출 사이트에 등재 (10/5)",
+      "summary": "미국 전력·센서 반도체 기업 온세미가 2026년 10월 5일 랜섬웨어 그룹 Qilin(치린) 의 다크웹 유출 사이트(leak site, 피해 기업 이름과 훔친 데이터를 공개하겠다고 압박하는 사이트) 에 피해자로 올라왔습니다. 이 기록은 공개 유출 사이트를 집계한 데이터에 기반하며, 등재일은 실제 침해 시점과 다를 수 있고 어떤 데이터가 빠져나갔는지는 독립적으로 확인되지 않았습니다.",
+      "source_urls": [
+        "https://cyberthreatintelligence.net/ransomware-victim/onsemi-qilin-2026"
+      ],
+      "canonical_urls": [
+        "https://cyberthreatintelligence.net/ransomware-victim/onsemi-qilin-2026"
+      ],
+      "publication_note": "2026-10-05 등재 공개",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/IT.md",
+      "archive_url": "/news/2026-10-06/IT.html#2-온세미onsemi-랜섬웨어-그룹-qilin-유출-사이트에-등재-105",
+      "section_sha256": "4226faaaba151a2b578f66c8aab0529708208dc4e50a6e73bb0570bf271dfe0f",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/IT/3",
+      "article_id": "url-eed5f7c4b46424613cca13092f91943c5c1b2dddbe396f4e5c17ef47ae4198a1",
+      "revision_id": "editorial-ffa7b0a0d0d55df78c40de01834c96baa6a8eb6938ee2f3a7fa2371d18c4cc46",
+      "briefing_date": "2026-10-06",
+      "category": "IT",
+      "heading": "3. Cloudflare Containers, 고객 간(cross-tenant) 디스크 잔여 데이터 노출 취약점 수정",
+      "title": "Cloudflare Containers, 고객 간(cross-tenant) 디스크 잔여 데이터 노출 취약점 수정",
+      "summary": "Cloudflare가 자사 Containers(컨테이너 실행 플랫폼, Cloudflare Sandboxes의 기반) 에서 크로스 테넌트(cross-tenant, 서로 다른 고객 간 경계를 넘는) 데이터 노출 취약점을 공개하고 수정을 완료했습니다. Workers 유료 계정 고객이 같은 호스트에서 다른 고객 컨테이너가 남긴 잔여 디스크 블록(residual blocks, 삭제 후에도 지워지지 않고 남은 저장 데이터 조각) 을 읽을 수 있었던 문제입니다. 보안 연구자가 9월 4일 버그바운티로 제보했으며, Cloudflare는 악의적 악용 흔적은 없었다고 밝혔습니다.",
+      "source_urls": [
+        "https://www.infoq.com/news/2026/10/cloudflare-cross-tenant-exposure/"
+      ],
+      "canonical_urls": [
+        "https://www.infoq.com/news/2026/10/cloudflare-cross-tenant-exposure/"
+      ],
+      "publication_note": "2026-10-05 보도",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/IT.md",
+      "archive_url": "/news/2026-10-06/IT.html#3-cloudflare-containers-고객-간cross-tenant-디스크-잔여-데이터-노출-취약점-수정",
+      "section_sha256": "e843396623172ec9f4d8fb2673e6b8d08fcbc62ebab17c05c85521a727473338",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/IT/4",
+      "article_id": "url-99715ed03d541b40c1be84741b32244dd5ab839648f8990c4b3cb8abda1db82b",
+      "revision_id": "editorial-2dbf96eef478aa89700582cf981fb57c350aa37cee4ea705a3d425abc2084a97",
+      "briefing_date": "2026-10-06",
+      "category": "IT",
+      "heading": "4. 인피니언(Infineon), 인도 C2i Semiconductors 인수 완료",
+      "title": "인피니언(Infineon), 인도 C2i Semiconductors 인수 완료",
+      "summary": "독일 인피니언이 인도 벵갈루루의 C2i Semiconductors 인수를 완료했습니다. C2i는 AI 데이터센터용 소프트웨어 정의 멀티페이즈 컨트롤러(software-defined multiphase controller, 여러 전력 단계를 디지털 제어로 묶어 프로세서에 안정적으로 전력을 공급하는 칩) 와 스마트 파워 스테이지(smart power stage, 전력 변환과 감시 기능을 통합한 부품) 전문 기업입니다.",
+      "source_urls": [
+        "https://www.infineon.com/press-release/2026/infpr202610-002"
+      ],
+      "canonical_urls": [
+        "https://www.infineon.com/press-release/2026/infpr202610-002"
+      ],
+      "publication_note": "2026-10-05 발표",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/IT.md",
+      "archive_url": "/news/2026-10-06/IT.html#4-인피니언infineon-인도-c2i-semiconductors-인수-완료",
+      "section_sha256": "9fa907dca9cd7eda48c165c75654a2bf443556c086bc7c96cd2be165ff9fa3ba",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/IT/5",
+      "article_id": "url-b5e50d6687d67ba16e27d598fb1a3a200aae1c240ae989eb86d73ee8514ea506",
+      "revision_id": "editorial-461d0cdba4a277d7d9af43cc01e04b1f6235eef2bc7b5e6090f2272683c07fba",
+      "briefing_date": "2026-10-06",
+      "category": "IT",
+      "heading": "5. 삼성·SK하이닉스, 3분기 영업익 합산 ~180조 전망 vs 국내 투자계획 3200조",
+      "title": "삼성·SK하이닉스, 3분기 영업익 합산 ~180조 전망 vs 국내 투자계획 3200조",
+      "summary": "에프앤가이드 컨센서스(시장 전망치 평균) 기준 삼성전자 3분기 영업이익은 약 106.9조원(사상 첫 분기 100조 돌파 전망), SK하이닉스는 약 77.2조원으로, 두 회사 합산 약 184조원이 예상됩니다. D램(DRAM, 주기억장치용 메모리) 가격 상승과 HBM(고대역폭 메모리, AI 가속기에 붙는 적층형 메모리) 등 고부가 제품 판매 확대가 실적을 끌어올리고 있습니다.",
+      "source_urls": [
+        "https://api.emetro.co.kr/article/20261005500208"
+      ],
+      "canonical_urls": [
+        "https://api.emetro.co.kr/article/20261005500208"
+      ],
+      "publication_note": "2026-10-05 보도",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/IT.md",
+      "archive_url": "/news/2026-10-06/IT.html#5-삼성sk하이닉스-3분기-영업익-합산-180조-전망-vs-국내-투자계획-3200조",
+      "section_sha256": "9d0c7c4d4830bad1f60503ee6142da48da286cba71f42beecd34290acbf842fc",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/모델/1",
+      "article_id": "url-a7128a85cbf69ae6acfbcf4170e176bdb5499bc48a1d651bad61ea09313264e8",
+      "revision_id": "editorial-179b75dd04b91d4b0f20c8ae6430c0338f77da2168304ca1bde0a0517fa1be1f",
+      "briefing_date": "2026-10-06",
+      "category": "모델",
+      "heading": "1. Reflection AI 'Beam' — 501B/활성 23B MoE 오픈웨이트, SWE 80.9",
+      "title": "Reflection AI 'Beam' — 501B/활성 23B MoE 오픈웨이트, SWE 80.9",
+      "summary": "브루클린 기반 스타트업 Reflection AI가 첫 프런티어급 오픈웨이트(open-weight, 학습된 가중치를 공개해 누구나 내려받아 돌릴 수 있는) 모델 Beam 을 공개했습니다.",
+      "source_urls": [
+        "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
+      ],
+      "canonical_urls": [
+        "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/"
+      ],
+      "publication_note": "2026-10-05",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/모델.md",
+      "archive_url": "/news/2026-10-06/모델.html#1-reflection-ai-beam--501b활성-23b-moe-오픈웨이트-swe-809",
+      "section_sha256": "da81f02ef92f7a24e68d03106ae7dd77b9c8833ed65877cc17f4cccd97bf6c27",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/모델/2",
+      "article_id": "url-7e47260698b9142d6c75b78744f5c5ae82d9f283d559f987c0339c86a158b945",
+      "revision_id": "editorial-7f4e38a79f6b2f4d5b2f3255f188e60814770165f736efe0982ca45c97239c82",
+      "briefing_date": "2026-10-06",
+      "category": "모델",
+      "heading": "2. Reka AI 'Rho-1' — 19B 옴니 모델 (텍스트·이미지·영상·로봇 제어 단일 모델)",
+      "title": "Reka AI 'Rho-1' — 19B 옴니 모델 (텍스트·이미지·영상·로봇 제어 단일 모델)",
+      "summary": "Reka AI가 190억(19B) 파라미터 옴니 모델(omni-model, 여러 형태의 입력·출력을 하나의 모델이 모두 처리) Rho-1 의 리서치 프리뷰를 공개했습니다. 텍스트·이미지·영상·로봇 제어 액션(robot control actions, 로봇 관절·움직임 명령) 을 하나의 신경망에서 처리·생성하며, 모든 모달리티(modality, 데이터 형태) 를 토큰으로 바꿔 하나의 공유 컨텍스트에서 다룹니다. 별도 툴 호출(tool call) 이나 외부 모델로 작업을 넘기지 않습니다.",
+      "source_urls": [
+        "https://the-decoder.com/reka-ais-omni-model-rho-1-handles-text-images-video-and-robot-control-in-a-single-model/"
+      ],
+      "canonical_urls": [
+        "https://the-decoder.com/reka-ais-omni-model-rho-1-handles-text-images-video-and-robot-control-in-a-single-model/"
+      ],
+      "publication_note": "2026-10-05",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/모델.md",
+      "archive_url": "/news/2026-10-06/모델.html#2-reka-ai-rho-1--19b-옴니-모델-텍스트이미지영상로봇-제어-단일-모델",
+      "section_sha256": "b42ea7e1d6ce6d95ce3e80e1dd943d720dc14d1331db4d5d01697e61db427353",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/모델/3",
+      "article_id": "url-b312a07a5503421ee96435fb699c220dfe4ccc4c396c3babc2e8a5a98ce29802",
+      "revision_id": "editorial-ac1757ba4f8682a78a6d98ee144fc69c839010e1882f100518fe9a0a0e5eca12",
+      "briefing_date": "2026-10-06",
+      "category": "모델",
+      "heading": "3. Interfaze 'interfaze-1-lite' — OCR·음성·구조화 추출용 오픈웨이트",
+      "title": "Interfaze 'interfaze-1-lite' — OCR·음성·구조화 추출용 오픈웨이트",
+      "summary": "샌프란시스코 스타트업 Interfaze(구 JigsawStack)가 interfaze-1-lite 를 Apache 2.0(상업적 이용이 자유로운 오픈소스 라이선스) 으로 허깅페이스에 공개했습니다. 문서 OCR(광학 문자 인식), STT(음성→텍스트 변환), 구조화 추출(structured extraction, 문서에서 정해진 JSON 스키마로 값을 뽑아내는 것) 등 \"검증 가능한 출력\"이 필요한 작업을 겨냥합니다.",
+      "source_urls": [
+        "https://runtimewire.com/article/interfaze-1-lite-open-weight-model"
+      ],
+      "canonical_urls": [
+        "https://runtimewire.com/article/interfaze-1-lite-open-weight-model"
+      ],
+      "publication_note": "2026-10-05",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/모델.md",
+      "archive_url": "/news/2026-10-06/모델.html#3-interfaze-interfaze-1-lite--ocr음성구조화-추출용-오픈웨이트",
+      "section_sha256": "40d511cdf43bf3ea1096581361dff744d6f9794f6662f2edaea1e4ae44bf67fd",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/엔진/1",
+      "article_id": "url-89be4e220d9f6acb170fc63b77a3f0804233de21a22642a4ebd25c6e1c90f383",
+      "revision_id": "editorial-3354d317050f9e0b0b9da5129ac9c025b4be34aa0693341a26471f5113803261",
+      "briefing_date": "2026-10-06",
+      "category": "엔진",
+      "heading": "1. Strata — 125B MoE를 게이밍 GPU 한 장에서 돌리는 로컬 엔진",
+      "title": "Strata — 125B MoE를 게이밍 GPU 한 장에서 돌리는 로컬 엔진",
+      "summary": "Strata는 알리바바 큐원 팀의 125B 파라미터 MoE 모델 Qwen3.8-Flash-Next 를 소비자용 GPU(12GB VRAM급) 한 장에서 돌리는 MIT 라이선스 오픈소스 엔진입니다. 기존 도구처럼 트랜스포머 층 전체를 GPU↔CPU로 옮기는 레이어 오프로딩(layer offloading) 대신, 자주 쓰이는 전문가(expert, MoE의 하위 네트워크) 만 GPU에 캐시하고 나머지는 시스템 RAM에 두고 CPU로 계산하며, 큰 n-gram 조회 테이블 은 SSD에 두고 토큰마다 몇 줄만 읽는 방식입니다. 양자화는 ISTA-DASLab의 GSQ-RCO를 활용합니다.",
+      "source_urls": [
+        "https://github.com/Niko1221/Strata",
+        "https://startupfortune.com/strata-lets-a-125-billion-parameter-model-run-on-a-gaming-gpu/"
+      ],
+      "canonical_urls": [
+        "https://github.com/Niko1221/Strata",
+        "https://startupfortune.com/strata-lets-a-125-billion-parameter-model-run-on-a-gaming-gpu/"
+      ],
+      "publication_note": "v0.1.38(10/3), v0.1.39(10/4)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/엔진.md",
+      "archive_url": "/news/2026-10-06/엔진.html#1-strata--125b-moe를-게이밍-gpu-한-장에서-돌리는-로컬-엔진",
+      "section_sha256": "8c104c81ad422bbd783f657dbcfddc37a2993db84ff3b16a1457b59f443d122e",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/엔진/2",
+      "article_id": "url-9668af85ed2e1acf35b791be9e7a32b9a72b354fe13dca2998ddc5313107c6fd",
+      "revision_id": "editorial-a53d1e4fe4ed488e0ead6a94ff7f36097d5c2bf183ef191a75334a2684cec89c",
+      "briefing_date": "2026-10-06",
+      "category": "엔진",
+      "heading": "2. vLLM 0.31.0 + 보안 이슈(CVE-2026-105754)",
+      "title": "vLLM 0.31.0 + 보안 이슈(CVE-2026-105754)",
+      "summary": "vLLM(대규모 LLM 서빙용 오픈소스 엔진) 0.31.0은 717개 커밋, 307명 기여로 나왔습니다. 핵심은 재시작 비용과 멀티테넌트 안전성입니다.",
+      "source_urls": [
+        "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+        "https://app.opencve.io/cve/CVE-2026-105754"
+      ],
+      "canonical_urls": [
+        "https://github.com/vllm-project/vllm/releases/tag/v0.31.0",
+        "https://app.opencve.io/cve/CVE-2026-105754"
+      ],
+      "publication_note": "2026-10-05",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/엔진.md",
+      "archive_url": "/news/2026-10-06/엔진.html#2-vllm-0310--보안-이슈cve-2026-105754",
+      "section_sha256": "ae791287373e74bd53191bc7340c75c80b8c8deb99163c25cfda48e39e78d9a7",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/엔진/3",
+      "article_id": "url-7ce1dacb4f2add5e1d2594f379e6822ef702235d8f27e6972ef618843ff950f7",
+      "revision_id": "editorial-c4020c06fd9c592ea07142143a7dd773782b4121a5f8256ac8ddab5e979bf1de",
+      "briefing_date": "2026-10-06",
+      "category": "엔진",
+      "heading": "3. llama.cpp v0.6.0",
+      "title": "llama.cpp v0.6.0",
+      "summary": "v0.5.0(9/23) 이후 첫 안정 태그입니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/v0.6.0"
+      ],
+      "publication_note": "2026-10-05",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/엔진.md",
+      "archive_url": "/news/2026-10-06/엔진.html#3-llamacpp-v060",
+      "section_sha256": "e2e96f89bfceb2d570cf3797c4bcb142d232c1ae31079540c86473761f6bd808",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/엔진/4",
+      "article_id": "url-9b2f8ba750283adbd5d7c4a3446918c70316fecb62d78f62810808d9e83be9cd",
+      "revision_id": "editorial-36bef7f263ba26d59eb6a420c6db2d45f018dc8d16a0d6cb2cd99c60db4180db",
+      "briefing_date": "2026-10-06",
+      "category": "엔진",
+      "heading": "4. SGLang v0.5.21",
+      "title": "SGLang v0.5.21",
+      "summary": "779개 PR, 227명 기여. PD 분리(Prefill/Decode disaggregation, 입력 처리 단계와 토큰 생성 단계를 다른 인스턴스로 나누는 구성) 인스턴스가 재시작 없이 역할을 실시간 전환할 수 있게 됐고, 프리픽스 캐시(prefix cache, 공통 프롬프트 앞부분 계산 결과 재사용) 가 기본적으로 Rust 코어로 동작합니다. DeepSeek-V4.1 긴 프롬프트 첫 토큰 22% 단축, Kimi K3 PD 서빙 프리필 처리량 20.6% 향상, AMD MI355X에서 GLM-5.3-Flash 지원.",
+      "source_urls": [
+        "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+      ],
+      "canonical_urls": [
+        "https://github.com/sgl-project/sglang/releases/tag/v0.5.21"
+      ],
+      "publication_note": "2026-10-02 (KST)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/엔진.md",
+      "archive_url": "/news/2026-10-06/엔진.html#4-sglang-v0521",
+      "section_sha256": "5e35a467aaef93ea6eba4f3411eca9561853bdd41091be051b6498a6d1efdcdb",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/엔진/5",
+      "article_id": "url-00795a5db0aa8849a50cc2d5256385e6ef720831ae2648390cea9f888eabec40",
+      "revision_id": "editorial-49d6e5d4552925e1b1396a6b63a3f6f1dd1340b919c7fd6b642d0f259ebf0b55",
+      "briefing_date": "2026-10-06",
+      "category": "엔진",
+      "heading": "5. Ollama v0.40.0 RC — 애플 실리콘에서 MLX 기본 실행",
+      "title": "Ollama v0.40.0 RC — 애플 실리콘에서 MLX 기본 실행",
+      "summary": "Ollama 0.40.0 RC(Release Candidate, 정식 출시 전 후보판) 부터 애플 실리콘 맥에서 MLX(애플이 만든 머신러닝 프레임워크, 맥의 통합 메모리에 최적화) 런타임이 지원하는 모델 구조는 자동으로 MLX에서 실행됩니다. qwen3.8, gemma4, qwen3.6, qwen3.5 등이 대상이며, 결정 모델 Nimble, tev1, clef, clef-flash도 MLX로 돌아갑니다. 아직 프리릴리스이며 지원 모델은 계속 늘릴 예정입니다.",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.0-rc3"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.0-rc3"
+      ],
+      "publication_note": "10월 초 RC(릴리스 후보)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/엔진.md",
+      "archive_url": "/news/2026-10-06/엔진.html#5-ollama-v0400-rc--애플-실리콘에서-mlx-기본-실행",
+      "section_sha256": "c78a16976e852fbdeb112749c384d87d0839ca4895f9cf4309a91a80bf2cad11",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/엔진/6",
+      "article_id": "url-c0a0a5f5affd26928d0fd340f88982d915a498730c34226ffd0e46dc16ea882a",
+      "revision_id": "editorial-3cf1181c07cb7eab42b1f2cc04e369af77bd8f7791e9efc0ec7e9d5b02bb0ec3",
+      "briefing_date": "2026-10-06",
+      "category": "엔진",
+      "heading": "6. 결정 모델(Decision Model) API 확산 — Clef / Nimble / System One",
+      "title": "결정 모델(Decision Model) API 확산 — Clef / Nimble / System One",
+      "summary": "결정 모델(decision model) 은 자유 문장을 생성하는 대신 \"상태(state) + 유형이 정해진 질문들\"을 받아 각 질문에 대한 답과 확률 을 빠르게 돌려주는, 분류·판정 특화 모델입니다(예: \"이 티켓이 긴급한가?\"). Cloudflare가 오픈소스 결정 모델 Clef(빠른 9B 버전 Clef-flash 포함)를 Workers AI에 공개한 데 이어, 엔진들이 일제히 대응 API를 붙였습니다:",
+      "source_urls": [
+        "https://blog.cloudflare.com/clef-decision-models/"
+      ],
+      "canonical_urls": [
+        "https://blog.cloudflare.com/clef-decision-models/"
+      ],
+      "publication_note": "10월 첫째 주",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/엔진.md",
+      "archive_url": "/news/2026-10-06/엔진.html#6-결정-모델decision-model-api-확산--clef--nimble--system-one",
+      "section_sha256": "ad3dccdafc8a82572ff5716e10883b07f9da4e9dc7fc87b1118c33bfc311b847",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/엔진/7",
+      "article_id": "url-50b674944f22c35b18f6e0f6ddaeb70dec03b25b3e8b50c6b71773a604561414",
+      "revision_id": "editorial-a3113d78afc84dee898c058c32978208bff7804929fc75dc9569f09ff92bf0f6",
+      "briefing_date": "2026-10-06",
+      "category": "엔진",
+      "heading": "7. KoboldCpp — 내장 에이전트 모드(KoboldCpp Agent)",
+      "title": "KoboldCpp — 내장 에이전트 모드(KoboldCpp Agent)",
+      "summary": "llama.cpp 기반 올인원 로컬 실행기 KoboldCpp 에 가벼운 에이전트 하네스(agent harness, 모델이 도구를 써서 작업을 수행하게 해주는 실행 틀) 가 내장됐습니다. 9개 기본 도구, MCP(Model Context Protocol, AI가 외부 도구·데이터에 접속하는 표준 규약) 지원, AGENTS.md 인식, 컨텍스트 압축(context compaction, 대화가 길어지면 요약해 공간을 확보), OpenAI 호환 백엔드 연결을 제공합니다. GUI Admin 탭 또는 --agent 옵션으로 켜며, 권장 사양은 컨텍스트 28K 이상·생성 8K·VRAM 12GB입니다.",
+      "source_urls": [
+        "https://github.com/LostRuins/koboldcpp/releases"
+      ],
+      "canonical_urls": [
+        "https://github.com/LostRuins/koboldcpp/releases"
+      ],
+      "publication_note": "v1.122(9/26) 및 핫픽스 v1.122.1",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/엔진.md",
+      "archive_url": "/news/2026-10-06/엔진.html#7-koboldcpp--내장-에이전트-모드koboldcpp-agent",
+      "section_sha256": "8c3c9fe4485f7a3301b7a1cdb2a1b7567a04d2885d6d51596627ef622bf0f23c",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-06/엔진/8",
+      "article_id": "url-c5b70e7cc0002201dc1cbb74bcbeeeaeee5e59d6bff4a09108b2c70f28d35b83",
+      "revision_id": "editorial-a67ce8d7531f3d27e6671a83eca9455a8a1152353f450adf694bde751433c72d",
+      "briefing_date": "2026-10-06",
+      "category": "엔진",
+      "heading": "8. vllm-metal — 맥(애플 실리콘)용 vLLM 플러그인",
+      "title": "vllm-metal — 맥(애플 실리콘)용 vLLM 플러그인",
+      "summary": "vllm-metal 은 vLLM을 애플 실리콘에서 MLX 기반으로 돌리는 공식 프로젝트로, 맥에서도 여러 요청을 동시에 처리하는 동시 서빙(concurrent serving) 을 지원합니다. 현재 안정판 v0.30.0은 vLLM 코어 v0.30.0을 따라가며 macOS 15+, 네이티브 arm64 Python 3.12, MLX 0.32.1 고정 등을 요구합니다. 10월에도 개발용 프리릴리스(dev 빌드)가 계속 나오고 있어 vLLM 0.31 추종 여부를 지켜볼 만합니다.",
+      "source_urls": [
+        "https://github.com/vllm-project/vllm-metal/releases"
+      ],
+      "canonical_urls": [
+        "https://github.com/vllm-project/vllm-metal/releases"
+      ],
+      "publication_note": "v0.30.0 안정판(9/23), 10월 dev 프리릴리스 진행 중",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-06/엔진.md",
+      "archive_url": "/news/2026-10-06/엔진.html#8-vllm-metal--맥애플-실리콘용-vllm-플러그인",
+      "section_sha256": "7fd8774ee03d63d2e4d3efb6b760123fa2b9ebbfeddfbbf82a18d81f4ddbfccf",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

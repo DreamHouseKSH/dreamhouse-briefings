@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-29",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-29/AI.md": "b7dac43b552fd3b2690c484a4af4547092057d8c411326af090e8868649b38a1",
+    "news/2026-10-29/IT.md": "c9ca5998fb887774fcc7efdd40759375b17d899581f68e52a13ad7938ad8ee11",
+    "news/2026-10-29/X.md": "654d80ed94bfb91804e412db94bb4797c1a1323b5914e9bfb1fcb45b3290b804",
+    "news/2026-10-29/모델.md": "f2dcba5f4cbba0b74ebce43b79b00c458ae3696c584bc27e535b7ebc781594d7",
+    "news/2026-10-29/엔진.md": "1b00ab3c99e4c052e029e1633b00c08dfd10505bdb0ed5951fbe8770e865b0ce"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-29/AI/1",
+      "article_id": "url-ebc97573a6a94023d19d647b24523bc036b904abfc91fd60aaa88cc603ecd944",
+      "revision_id": "editorial-aafa28112b122a7020f31178ea1372c4687116caf128029d6e12056a8bf944ef",
+      "briefing_date": "2026-10-29",
+      "category": "AI",
+      "heading": "1. OpenAI–ServiceNow, 대화창과 기업 업무 시스템의 연결 확대",
+      "title": "OpenAI–ServiceNow, 대화창과 기업 업무 시스템의 연결 확대",
+      "summary": "OpenAI와 ServiceNow가 개발·IT 업무·보안 영역의 제휴 확대를 발표했다. 현재 제공되는 ServiceNow MCP(Model Context Protocol·AI와 외부 도구를 연결하는 규약) 플러그인으로 기업은 자체 시스템과 연결하고 허용할 작업을 선택할 수 있다. 회사는 기존 업무 규칙과 권한을 적용한다고 설명했다. OpenAI 원문",
+      "source_urls": [
+        "https://openai.com/index/openai-servicenow-partnership-expansion/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/openai-servicenow-partnership-expansion/"
+      ],
+      "publication_note": "2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/AI.md",
+      "archive_url": "/news/2026-10-29/AI.html#1-openaiservicenow-대화창과-기업-업무-시스템의-연결-확대",
+      "section_sha256": "14cdb986d90398a2ce82dae91bd2d16d890e615a41bbf24d0766400e4ad7d171",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/AI/2",
+      "article_id": "url-c785360e8f997d3f7f7ee0d3f1fd7aa1133cb18bef2a4b14f368df017bafb12b",
+      "revision_id": "editorial-d09d7230dba4ec6342b6932f223a4290807a416799829323b97a53d58a554448",
+      "briefing_date": "2026-10-29",
+      "category": "AI",
+      "heading": "2. Fragment, 조달 업무 AI로 누적 5,600만 달러 투자 공개",
+      "title": "Fragment, 조달 업무 AI로 누적 5,600만 달러 투자 공개",
+      "summary": "기업용 AI 스타트업 Fragment가 출시와 함께 누적 5,600만 달러 투자 유치를 발표했다. 8VC 주도의 시리즈 A(초기 검증 뒤 사업 확장을 위한 투자)와 General Catalyst·A 공동 주도의 시드 투자(초기 사업 검증 단계 투자)가 합쳐진 금액이다. 시리즈 A 한 번의 금액이 5,600만 달러라는 뜻은 아니다. 회사 명의 원문",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/28/3390260/0/en/fragment-launches-with-56-million-to-automate-the-work-enterprise-software-leaves-behind.html"
+      ],
+      "canonical_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/28/3390260/0/en/fragment-launches-with-56-million-to-automate-the-work-enterprise-software-leaves-behind.html"
+      ],
+      "publication_note": "2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/AI.md",
+      "archive_url": "/news/2026-10-29/AI.html#2-fragment-조달-업무-ai로-누적-5600만-달러-투자-공개",
+      "section_sha256": "39e43e25003faa042920d8aabc7a61fb6b6a9e0026345ecc067d12b298a32529",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/AI/3",
+      "article_id": "url-e63c44ee253751eb72aef3f2b8bd6200913735fee19428e07e0f2cafc0129b53",
+      "revision_id": "editorial-43089dffa376121da620b6c303bc4e6f5ff95ec295789f1cbe5672b6298361a2",
+      "briefing_date": "2026-10-29",
+      "category": "AI",
+      "heading": "3. Anthropic, AI for Science 지원을 연구기관·재단으로 확대",
+      "title": "Anthropic, AI for Science 지원을 연구기관·재단으로 확대",
+      "summary": "Anthropic이 AI for Science 프로그램에서 협력하는 과학 재단·기관·연구그룹 20곳을 공개했다. 연구자에게 무료 Claude 사용 크레딧을 제공하는 프로그램으로, Sloan·Simons 재단과 Wellcome Sanger Institute 등이 포함됐다. Anthropic 원문",
+      "source_urls": [
+        "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+      ],
+      "canonical_urls": [
+        "https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions"
+      ],
+      "publication_note": "2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/AI.md",
+      "archive_url": "/news/2026-10-29/AI.html#3-anthropic-ai-for-science-지원을-연구기관재단으로-확대",
+      "section_sha256": "bf996ba23dd73ca864c616aa2652664bfe09e84a5cba1338cc5d52988a5ab7c9",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/IT/1",
+      "article_id": "url-633545e05acad11ae36a64902f4e22f69b6cd58a90a1588afa0bbd74bf9f0954",
+      "revision_id": "editorial-0b2f0e9b8b0ee7c350d9d4f88b55dc1bad6ce0a696a009f44291ec2d7ed2d90c",
+      "briefing_date": "2026-10-29",
+      "category": "IT",
+      "heading": "1. SK하이닉스, 분기 매출 100조원 돌파…HBM4·장기계약 확대",
+      "title": "SK하이닉스, 분기 매출 100조원 돌파…HBM4·장기계약 확대",
+      "summary": "SK하이닉스는 28일 3분기 매출 104조6155억원, 영업이익 83조3338억원을 발표했다. 전분기 대비 각각 32%, 38% 증가했다. 회사는 서버용 DDR5(Double Data Rate 5, 5세대 주기억장치)와 HBM4(High Bandwidth Memory 4, 4세대 고대역폭 메모리), 데이터센터용 SSD(Solid State Drive, 반도체 저장장치) 판매 확대를 주요 배경으로 설명했다. 회사 발표",
+      "source_urls": [
+        "https://news.skhynix.com/en/q3-2026-business-results/"
+      ],
+      "canonical_urls": [
+        "https://news.skhynix.com/en/q3-2026-business-results/"
+      ],
+      "publication_note": "2026-10-28 (원문 기준; KST 확인 근거와 시각 한계는 아래 별도 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/IT.md",
+      "archive_url": "/news/2026-10-29/IT.html#1-sk하이닉스-분기-매출-100조원-돌파hbm4장기계약-확대",
+      "section_sha256": "a10bdd312da13bf86219c6c743377b69dfd54c53743968e6e8fc72a071690cc4",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/IT/2",
+      "article_id": "url-b02c52cac6763656b51b69c67a05529b8526520dc17b50e5d6077e4bcc5d7735",
+      "revision_id": "editorial-b72833cdead669629dd08e0ffd1657610ff15aa8cba48c19d55b33d7197b45bf",
+      "briefing_date": "2026-10-29",
+      "category": "IT",
+      "heading": "2. MS, Azure 48% 성장…전체 실적과 AI 투자 회수는 구분해야",
+      "title": "MS, Azure 48% 성장…전체 실적과 AI 투자 회수는 구분해야",
+      "summary": "마이크로소프트는 28일 발표한 2027회계연도 1분기 실적에서 매출 923억달러, 영업이익 459억달러를 기록했다고 밝혔다. 전년 대비 각각 19%, 21% 늘었다. Microsoft Cloud 매출은 639억달러로 30%, Azure 매출은 48% 증가했다. MS 발표",
+      "source_urls": [
+        "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast"
+      ],
+      "canonical_urls": [
+        "https://www.microsoft.com/en-us/Investor/earnings/FY-2027-Q1/press-release-webcast"
+      ],
+      "publication_note": "2026-10-28 (원문 기준; KST 확인 근거와 시각 한계는 아래 별도 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/IT.md",
+      "archive_url": "/news/2026-10-29/IT.html#2-ms-azure-48-성장전체-실적과-ai-투자-회수는-구분해야",
+      "section_sha256": "f1c27fff3d45648c7baf73919bf8258362453555b7ed5360b97699d255e1ee91",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/IT/3",
+      "article_id": "url-a4f7792df04727b35c61b6a618797a7a9329f1ce52c955c3949b44a33eb757f5",
+      "revision_id": "editorial-d7f0b1a06178c8e00b0d25d04bb12d013046c46474c13349a7aaa91ca1926593",
+      "briefing_date": "2026-10-29",
+      "category": "IT",
+      "heading": "3. 캐나다 사이버당국, Brotli 경보…숨은 의존성까지 업데이트 확인",
+      "title": "캐나다 사이버당국, Brotli 경보…숨은 의존성까지 업데이트 확인",
+      "summary": "캐나다 사이버보안센터는 28일 Brotli(웹 콘텐츠 등의 압축 기술) 압축해제 라이브러리의 공개 취약점 식별번호 CVE-2026-111497에 해당하는 취약점에 경보를 발령했다. 메모리 손상과 정보유출, 충돌 또는 임의 코드 실행으로 이어질 수 있다는 설명이다. 센터는 CISA(Cybersecurity and Infrastructure Security Agency, 미국 사이버보안·기반시설보안청)가 전날 이를 실제 악용 취약점 목록에 추가했다고 밝혔다. 캐나다 정부 경보",
+      "source_urls": [
+        "https://www.cyber.gc.ca/en/alerts-advisories/al26-027-critical-vulnerability-impacting-google-brotli-cve-2026-111497"
+      ],
+      "canonical_urls": [
+        "https://www.cyber.gc.ca/en/alerts-advisories/al26-027-critical-vulnerability-impacting-google-brotli-cve-2026-111497"
+      ],
+      "publication_note": "2026-10-28 (원문 기준; KST 확인 근거와 시각 한계는 아래 별도 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/IT.md",
+      "archive_url": "/news/2026-10-29/IT.html#3-캐나다-사이버당국-brotli-경보숨은-의존성까지-업데이트-확인",
+      "section_sha256": "87f1bb915a9fcd972b57c05f9c405dddbeda8dfcd9c1799b45ca838f84c8eca3",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/IT/4",
+      "article_id": "url-862915a8c8d67bf4c4bc9ff49b643b80774606dd5daa6cdf4e20b93ea554674f",
+      "revision_id": "editorial-da2409237551c0547b07e173c38a45d01d1da43a58a1b4f8d96060f8317d24a9",
+      "briefing_date": "2026-10-29",
+      "category": "IT",
+      "heading": "4. 어드밴테스트, 연간 전망 상향…AI 검사장비 수요 확산",
+      "title": "어드밴테스트, 연간 전망 상향…AI 검사장비 수요 확산",
+      "summary": "일본 검사장비 업체 어드밴테스트는 28일 올해 4~9월 누적 매출 8452억엔, 영업이익 4568억900만엔을 발표했다. 전년 동기 대비 각각 60.5%, 96.5% 늘었다. 이는 6개월 누적 실적이지 7~9월 단일 분기 수치가 아니다. 회사 재무자료",
+      "source_urls": [
+        "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_2Q.pdf"
+      ],
+      "canonical_urls": [
+        "https://www.advantest.com/document/en/investors/ir-library/result/E_FR_FY2026_2Q.pdf"
+      ],
+      "publication_note": "2026-10-28 (원문 기준; KST 확인 근거와 시각 한계는 아래 별도 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/IT.md",
+      "archive_url": "/news/2026-10-29/IT.html#4-어드밴테스트-연간-전망-상향ai-검사장비-수요-확산",
+      "section_sha256": "7cbff6dafb429a31a36744a6490329955efc7062eb4be7ceca844da5b8c373ef",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/X/1",
+      "article_id": "url-0700b1e7c42838cdbeb54dd37227eb30d2395f7d6203850b81d239a170ee1b6c",
+      "revision_id": "editorial-8f6d8e80ef4cb2d561074cfcf91cb2b0a2c77fbaadcb630fae6584ce7beaa247",
+      "briefing_date": "2026-10-29",
+      "category": "X",
+      "heading": "1. Satya Nadella — Copilot을 코드 보조에서 여러 에이전트의 작업 관리로",
+      "title": "Satya Nadella — Copilot을 코드 보조에서 여러 에이전트의 작업 관리로",
+      "summary": "Nadella는 GitHub Universe 발표를 소개하며 소프트웨어 개발 전 과정이 에이전트 중심으로 바뀐다는 메시지를 냈다. 인용 보도에서 강조한 항목은 작업에 맞게 모델을 조합하는 Copilot Fusion, 여러 저장소의 에이전트 작업을 묶는 Copilot Projects, 그리고 Microsoft Foundry에서 제공하는 실행 기반이다. 단순 코드 자동완성보다 작업을 배분하고 완료 결과를 검토하는 경험에 초점을 둔다.",
+      "source_urls": [
+        "https://x.com/satyanadella/status/2115490856685990244"
+      ],
+      "canonical_urls": [
+        "https://x.com/satyanadella/status/2115490856685990244"
+      ],
+      "publication_note": "인용 매체가 제시한 게시 시각은 2026-10-28 17:08 UTC, 즉 2026-10-29 02:08 KST. X 자체 시각은 직접 확인하지 못했다.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/X.md",
+      "archive_url": "/news/2026-10-29/X.html#1-satya-nadella--copilot을-코드-보조에서-여러-에이전트의-작업-관리로",
+      "section_sha256": "7bc2824258822c5678fc8461d18efa685e61bff63d1123c202061bc7e7efb08b",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/모델/1",
+      "article_id": "url-0818bd7447e1cfa5874720481d1867689825c8ab5bf679d7008457709439ebf0",
+      "revision_id": "editorial-743dbc07e16c2b44d219c403ecb019c1570299dcae20f77422eb90d34bfbd809",
+      "briefing_date": "2026-10-29",
+      "category": "모델",
+      "heading": "1. NVIDIA, 지시를 받아 전사하는 Nemotron 3.5 Transcribe 공개",
+      "title": "NVIDIA, 지시를 받아 전사하는 Nemotron 3.5 Transcribe 공개",
+      "summary": "NVIDIA가 전사·화자 구분·번역·음성 질의응답을 처리하는 공개가중치(학습된 모델 수치를 내려받는 방식) 모델 Nemotron 3.5 Transcribe를 발표했다. 공식 연구 페이지는 40개 언어와 최대 한 시간 녹음을 지원하며, 자연어 지시로 전사 형식을 바꿀 수 있다고 설명한다. 활성 파라미터(한 번의 처리에 실제 참여하는 모델 수치)는 약 43억 개다. 공식 연구 발표",
+      "source_urls": [
+        "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/"
+      ],
+      "canonical_urls": [
+        "https://research.nvidia.com/labs/nemotron/NVIDIA-Nemotron-3.5-Transcribe/"
+      ],
+      "publication_note": "2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/모델.md",
+      "archive_url": "/news/2026-10-29/모델.html#1-nvidia-지시를-받아-전사하는-nemotron-35-transcribe-공개",
+      "section_sha256": "fecda4adf1b979dccb75ba6f34f29f3939fd2f06e4d0e5ee83eef63b1d2575a6",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/모델/2",
+      "article_id": "url-a3a3b9a978b8219bbb016db3e679c8e35145fb8eb8c02b3405c76feacb6c6a90",
+      "revision_id": "editorial-59c0ac2fc061e06f9174afef17c613384fec10dfa2ab8ba7df2aed5924ba7a03",
+      "briefing_date": "2026-10-29",
+      "category": "모델",
+      "heading": "2. Rime, 발화 전 텍스트를 검사하는 기업용 음성 모델 Prism 출시",
+      "title": "Rime, 발화 전 텍스트를 검사하는 기업용 음성 모델 Prism 출시",
+      "summary": "Rime이 기업용 speech-to-speech(음성을 받아 음성으로 응답하는 방식) 모델 Prism을 출시했다. 실제 소리가 나오기 전에 텍스트를 만들어 기업 규칙으로 검사할 수 있다는 것이 핵심이다. 회사는 온프레미스(자체 시설에서 운영)·사설 클라우드 배포도 제시했다. 공식 상세 발표",
+      "source_urls": [
+        "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise"
+      ],
+      "canonical_urls": [
+        "https://www.rime.ai/resources/prism-first-speech-to-speech-for-enterprise"
+      ],
+      "publication_note": "2026-10-28 (원문 기준; KST 환산·확인 한계는 아래 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/모델.md",
+      "archive_url": "/news/2026-10-29/모델.html#2-rime-발화-전-텍스트를-검사하는-기업용-음성-모델-prism-출시",
+      "section_sha256": "5ffbb4f8fb02af35b64f01b6637f02e9667d02a5f12e38dcbaab50323d4eb13a",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-29/엔진/1",
+      "article_id": "url-dfe8f4ca2517538c6c73eb912a13c1e31caec330308f1fbcb7540eb93cc52ed4",
+      "revision_id": "editorial-0fb818ef41cf0698ba79090a1c870e92e82515f2fc2d6f71dcf8544d3739758d",
+      "briefing_date": "2026-10-29",
+      "category": "엔진",
+      "heading": "1. llama.cpp 0.8.0, 로컬 실시간 음성·도구 호출을 하나의 서버로",
+      "title": "llama.cpp 0.8.0, 로컬 실시간 음성·도구 호출을 하나의 서버로",
+      "summary": "llama.cpp가 0.8.0을 공개했다. 이번 변화는 작은 속도 패치보다 실행 범위의 확장에 가깝다. Liquid AI의 LFM3 텍스트·비전·오디오·옴니 모델군을 지원하고, 서버에 실시간 대화·전사용 /v1/realtime과 음성 합성용 /tts 경로를 추가했다. 모델 발표 자체와 이를 실제로 실행하는 엔진 지원을 구분해 볼 소식이다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
+        "https://github.com/ggml-org/llama.cpp/pull/31287",
+        "https://github.com/ggml-org/llama.cpp/pull/31283"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/v0.8.0",
+        "https://github.com/ggml-org/llama.cpp/pull/31287",
+        "https://github.com/ggml-org/llama.cpp/pull/31283"
+      ],
+      "publication_note": "2026-10-28 21:47 KST 릴리스 공개. GitHub API의 published_at은 2026-10-28T12:47:51Z.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-29/엔진.md",
+      "archive_url": "/news/2026-10-29/엔진.html#1-llamacpp-080-로컬-실시간-음성도구-호출을-하나의-서버로",
+      "section_sha256": "951c6660154e8cf4b82675cb8f57b6ac81e8e3fe82998bd4ec772bf2e85304d2",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

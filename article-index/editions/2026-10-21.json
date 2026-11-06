@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-21",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-21/AI.md": "589b20fb14ba303371b63b8dd6a33027f157de92b195630957ce69782d324a6b",
+    "news/2026-10-21/IT.md": "dd0718cbc895ad9cd63a569fe8ef3b50c0bc4269055486bc348df97870142e6b",
+    "news/2026-10-21/X.md": "d07e2e526bc100984d779cbb07f6820c7e26c3719e63be9938da4f0157073d86",
+    "news/2026-10-21/모델.md": "a849c47c7c103c025d19876e6c406ad15244bed9502d92d6f10a899a2dcb943f"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-21/AI/1",
+      "article_id": "url-0f009d055fddf0391cd05dda9655a2f2aa43c5433a93a92c90873b399fd4abe4",
+      "revision_id": "editorial-3c4f5cc637f6831cef96ee2ddf148c22e4b16b5bf1260eb558e2a0f80dcdddc2",
+      "briefing_date": "2026-10-21",
+      "category": "AI",
+      "heading": "1. OpenAI, Anthropic IPO 앞두고 300억 달러 조달 가속 — 밸류 1.4조 달러 이상 노려",
+      "title": "OpenAI, Anthropic IPO 앞두고 300억 달러 조달 가속 — 밸류 1.4조 달러 이상 노려",
+      "summary": "OpenAI가 약 300억 달러 규모의 신규 자금 조달을 서두르고 있다. 로이터가 사안에 정통한 2명의 소식통을 인용해 20일 보도한 내용이다. OpenAI는 경쟁사 Anthropic의 11월 중순 상장(IPO, Initial Public Offering — 주식시장에 처음 상장) 전에 투자자들의 투자 확약을 확보하려 하며, 이번 라운드에서 기업가치가 1조4000억 달러를 넘을 수 있다는 관측이 나온다. 기존 투자자인 소프트뱅크그룹과 아부다비 기반 투자사 MGX가 참여를 논의 중이지만 아직 확정되지는 않았다.",
+      "source_urls": [
+        "https://www.tokenpost.com/news/business/35385"
+      ],
+      "canonical_urls": [
+        "https://www.tokenpost.com/news/business/35385"
+      ],
+      "publication_note": "2026-10-20",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/AI.md",
+      "archive_url": "/news/2026-10-21/AI.html#1-openai-anthropic-ipo-앞두고-300억-달러-조달-가속--밸류-14조-달러-이상-노려",
+      "section_sha256": "2b838fd89a7a5ae343964a9aab072ed606c787eb489d426c7b566118ef645851",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/AI/2",
+      "article_id": "url-a0595c813318ccae8c08950da5c942c92349612b84631a22de879ac40ef1f743",
+      "revision_id": "editorial-0fd2d91edff230e1480f61ba5d7d90a2b007fcff01acf2ad1d170e4a1d76ff53",
+      "briefing_date": "2026-10-21",
+      "category": "AI",
+      "heading": "2. Anthropic, 지분 5%를 공익기금에 출연 — \"공익 목적 지분 약 20%\"",
+      "title": "Anthropic, 지분 5%를 공익기금에 출연 — \"공익 목적 지분 약 20%\"",
+      "summary": "Anthropic이 10월 18일 자사 지분의 일부를 'Anthropic Public Benefit Fund(공익기금)'에 출연한다고 발표했다. 주주 승인을 조건으로 지분 5%를 즉시 출연하고, 이후 회사 가치가 일정 기준선에서 50% 오를 때마다 이사회 재량으로 2%포인트씩 추가 출연할 수 있는 구조다. 기금은 전통적인 자선단체(501(c)(3), 미국 세법상 비영리 자선 규정)가 아닌 Anthropic이 100% 소유한 유한책임회사(LLC, Limited Liability Company — 출자 책임이 출자액에 한정되는 회사 형태)로 설립된다. 회사 측은 기부 방식의 유연성을 이유로 들었고, 기금이 보유한 지분은 미국 안팎의 로비나 정치 헌금에 쓰지 않겠다고 밝혔다.",
+      "source_urls": [
+        "https://www.anthropic.com/news/public-benefit-fund"
+      ],
+      "canonical_urls": [
+        "https://www.anthropic.com/news/public-benefit-fund"
+      ],
+      "publication_note": "2026-10-18",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/AI.md",
+      "archive_url": "/news/2026-10-21/AI.html#2-anthropic-지분-5를-공익기금에-출연--공익-목적-지분-약-20",
+      "section_sha256": "45c4168e37e90afe6c5c8c084d3f7d0072c056111313cd3660a6f17fec9df5ed",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/AI/3",
+      "article_id": "url-31f339d2802dcf006832805529dd6e53c16e81ef1cfdcb89cd10a41e469ba068",
+      "revision_id": "editorial-70d0dbf99716e6dc0d244a0bd7400920c2777509e7a6e23c8dc45b47f62c659c",
+      "briefing_date": "2026-10-21",
+      "category": "AI",
+      "heading": "3. JB금융그룹, 업스테이지 400억원 투자 — 지분 2% 확보",
+      "title": "JB금융그룹, 업스테이지 400억원 투자 — 지분 2% 확보",
+      "summary": "JB금융그룹이 인공지능(AI) 기술 기업 업스테이지에 대한 지분 투자에 나섰다. 계열사인 전북은행·광주은행·JB우리캐피탈 3사가 업스테이지의 시리즈 C-2(Series C-2, 스타트업 후기 대규모 투자 라운드) 라운드에 총 400억원 규모로 투자하는 계약을 체결했고, 이번 투자로 JB금융그룹은 업스테이지 지분 약 2%를 확보했다. JB금융 3사는 이번 라운드의 1차 투자를 주도하며 라운드를 출발시켰고, 업스테이지는 추가 투자 유치를 이어갈 계획이다.",
+      "source_urls": [
+        "https://www.g-enews.com/article/Finance/2026/10/202610200911264627bb91c46fcd_1"
+      ],
+      "canonical_urls": [
+        "https://www.g-enews.com/article/Finance/2026/10/202610200911264627bb91c46fcd_1"
+      ],
+      "publication_note": "2026-10-20",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/AI.md",
+      "archive_url": "/news/2026-10-21/AI.html#3-jb금융그룹-업스테이지-400억원-투자--지분-2-확보",
+      "section_sha256": "b1ad513167603e6583718efacde2cf770746c9ed38e23ff4f8ae952502454045",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/IT/1",
+      "article_id": "url-8976fd50735e01a4b846ed7aa0860aa1eefc38c601bfa75eab9b159b8e4590fd",
+      "revision_id": "editorial-0e9152a3655f0ff211cd3df995343fa6a295deac1ba394a9e21dd7530dbceda7",
+      "briefing_date": "2026-10-21",
+      "category": "IT",
+      "heading": "1. 삼성전자·SK하이닉스 동반 급락 — 미국 반도체주 반등에도 3%·4.2% 하락",
+      "title": "삼성전자·SK하이닉스 동반 급락 — 미국 반도체주 반등에도 3%·4.2% 하락",
+      "summary": "미국 반도체주가 9거래일 만에 반등했지만 국내 반도체 대형주인 삼성전자와 SK하이닉스는 20일 동반 하락하며 약세를 벗어나지 못했다. 삼성전자는 전 거래일 대비 2.98% 하락한 21만1500원, SK하이닉스는 4.23% 떨어진 122만3000원에 거래를 마쳤다. SK하이닉스는 장중 118만3000원까지 추락하며 한때 하락률이 7.36%에 달하기도 했다.",
+      "source_urls": [
+        "https://www.sankyungtoday.com/news/articleViewAmp.html?idxno=63707"
+      ],
+      "canonical_urls": [
+        "https://www.sankyungtoday.com/news/articleViewAmp.html?idxno=63707"
+      ],
+      "publication_note": "2026-10-20",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/IT.md",
+      "archive_url": "/news/2026-10-21/IT.html#1-삼성전자sk하이닉스-동반-급락--미국-반도체주-반등에도-342-하락",
+      "section_sha256": "c1907755a0177ae12ead9e099d48944f9cc54161a022e4f0ceb6a93912f31a25",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/IT/2",
+      "article_id": "url-bfe2def48474001dce1c809de2e2e48a65e6b4282c1c499db089d042bdef48df",
+      "revision_id": "editorial-8dbedf0ea1c1701857683528e25027311a1930bd750047b43c140d0b94bfb743",
+      "briefing_date": "2026-10-21",
+      "category": "IT",
+      "heading": "2. 네이버-브룩필드 AI 데이터센터 12조원 투자, 본계약 협상 시한 임박",
+      "title": "네이버-브룩필드 AI 데이터센터 12조원 투자, 본계약 협상 시한 임박",
+      "summary": "네이버가 글로벌 자산운용사 브룩필드와 추진하는 대규모 인공지능(AI) 데이터센터 프로젝트가 최종 투자 계약 체결을 앞두고 시험대에 올랐다. 지난 7월 27일 시작된 12주간의 투자 협상 시한이 이번 주를 기점으로 마무리될 전망이다. 현재 협상은 사업 계획을 넘어 세부 투자 조건과 국내외 금융기관을 통한 대규모 대출 조건을 확정하는 본계약 체결 절차다.",
+      "source_urls": [
+        "https://m.businesspost.co.kr/BP?command=mobile_view&num=449809"
+      ],
+      "canonical_urls": [
+        "https://m.businesspost.co.kr/BP?command=mobile_view&num=449809"
+      ],
+      "publication_note": "2026-10-20",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/IT.md",
+      "archive_url": "/news/2026-10-21/IT.html#2-네이버-브룩필드-ai-데이터센터-12조원-투자-본계약-협상-시한-임박",
+      "section_sha256": "f982228c5726c3cd0accf8a94f6f0f19a87dff54de360e01f0aa0437470bc6a0",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/IT/3",
+      "article_id": "url-bee9c77d99817ece58979d9684346982b12f159640b6aa48c2fa7448a9f0cf70",
+      "revision_id": "editorial-698c33e5c8bd39d89695991b89bb782f97880a55db78d6523ad29d2320dcedcd",
+      "briefing_date": "2026-10-21",
+      "category": "IT",
+      "heading": "3. 마이크론 대만 노조 22일 파업 예고 — \"삼성·SK처럼 영업익 15% 달라\"",
+      "title": "마이크론 대만 노조 22일 파업 예고 — \"삼성·SK처럼 영업익 15% 달라\"",
+      "summary": "미국 메모리 반도체 기업 마이크론의 대만 타오위안 사업장 노동조합이 22일 파업에 돌입한다고 밝혔다. 로이터에 따르면 이는 타이중 사업장 노조와의 조정회의가 열리는 날에 맞춰 파업을 결정해 협상력을 높이려는 전략으로 해석된다. 타오위안 노조는 이번 파업이 타이중 노조와의 연대를 보여주고 사측에 구체적 이익공유 방안을 제시하도록 압박하기 위한 것이라고 설명했다. 파업 기간은 밝히지 않았고 22일 세부 사항을 공개할 계획이다.",
+      "source_urls": [
+        "https://www.businesspost.co.kr/BP?command=article_view&num=449791"
+      ],
+      "canonical_urls": [
+        "https://www.businesspost.co.kr/BP?command=article_view&num=449791"
+      ],
+      "publication_note": "2026-10-20",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/IT.md",
+      "archive_url": "/news/2026-10-21/IT.html#3-마이크론-대만-노조-22일-파업-예고--삼성sk처럼-영업익-15-달라",
+      "section_sha256": "2779a68ec649cf0c33b158eab9764d4409d2c72b22e002f2b764c1d8ff6a2e2c",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/X/1",
+      "article_id": "url-61c5a67890aabd99760f5dabd242fea8e6be68d0128e205a2d77fc6fd6191a82",
+      "revision_id": "editorial-23f77a02fd3a2791ed8d2ee913f8b6f0146f8a61e73e8ccf69459238dab582c9",
+      "briefing_date": "2026-10-21",
+      "category": "X",
+      "heading": "1. Elon Musk — X 추천 알고리즘 변경 발표, \"끝까지 읽는 글이 뜬다\"",
+      "title": "Elon Musk — X 추천 알고리즘 변경 발표, \"끝까지 읽는 글이 뜬다\"",
+      "summary": "배경은 피드 품질 논쟁이다. X의 추천 시스템(Phoenix, 피닉스 — Grok 기반 트랜스포머 랭킹 체계)은 올해 1월·5월·8월에도 손질됐고, 8월에는 랭킹 가중치와 학습 코드를 Apache 2.0으로 오픈소스 공개까지 했다. 이번 변경은 그 연장선에서 \"좋아요 수\"가 아닌 \"체류 시간(dwell time, 사용자가 콘텐츠에 머무는 시간)\"과 \"완독률\"이라는 두 레버를 노린 것이다. 머스크가 내세운 \"활성 사용자 초 사상 최고\"는 X의 핵심 성과 지표인 '후회 없는 사용자 시간(unregretted user seconds)' 서사와 맞물린다.",
+      "source_urls": [
+        "https://cryptobriefing.com/x-new-ai-ranking-model-timeline/"
+      ],
+      "canonical_urls": [
+        "https://cryptobriefing.com/x-new-ai-ranking-model-timeline/"
+      ],
+      "publication_note": "2026-10-20",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/X.md",
+      "archive_url": "/news/2026-10-21/X.html#1-elon-musk--x-추천-알고리즘-변경-발표-끝까지-읽는-글이-뜬다",
+      "section_sha256": "dfdfc3cc77a9c8a661483e46e4256602f26537d77cbf08d1f3e4f5887569a578",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/X/2",
+      "article_id": "url-8ac18e24db3b5417710357606258f79132b3d13c51b13886e157268bd51fdb85",
+      "revision_id": "editorial-db3edc2e34686759094dec002d273724ad4855589dfc292a04a523500204efb8",
+      "briefing_date": "2026-10-21",
+      "category": "X",
+      "heading": "2. Elon Musk ↔ Demis Hassabis — \"AI가 새 과학 법칙을 찾을 수 있나\" X 설전",
+      "title": "Elon Musk ↔ Demis Hassabis — \"AI가 새 과학 법칙을 찾을 수 있나\" X 설전",
+      "summary": "발단은 하사비스가 X에 공유한 책 발췌문이었다. 세바스찬 맬러비의 『The Infinity Machine』 속 \"AI가 현실의 근본 규칙을 파헤치는 데 기여할 수 있다\"는 대목에 머스크가 응답하면서 설전이 시작됐다. 머스크는 뉴턴·아인슈타인급의 근본적 돌파구는 앞으로 드물 것이며, 미래의 일은 법칙 이해보다 \"새 시스템 만들기\"가 될 것이라고 했다. \"쿼크·렙톤·광자의 패턴이 거의 모든 것\"이라는 표현도 같은 맥락이다. 하사비스는 대규모 패턴 분석을 전제로 AI가 미해결 문제의 간결한 기술을 찾아낼 수 있다고 맞받았다. 머스크는 \"Demis의 생각에 동의한다\"고도 썼다.",
+      "source_urls": [
+        "https://obnews.co/Index/flowNewsDetail/id/14365049.html?val=0410e17463027f975904079620c25a1e"
+      ],
+      "canonical_urls": [
+        "https://obnews.co/Index/flowNewsDetail/id/14365049.html?val=0410e17463027f975904079620c25a1e"
+      ],
+      "publication_note": "2026-10-17",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/X.md",
+      "archive_url": "/news/2026-10-21/X.html#2-elon-musk--demis-hassabis--ai가-새-과학-법칙을-찾을-수-있나-x-설전",
+      "section_sha256": "a3dad860e0fa6eb808a203c65a53bd4b3a14ebd8d23d497aa3db2664ee0b47b3",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/X/3",
+      "article_id": "url-1b14441da8c7ea30e858028a7e012131f4a72e76aaa816ffb8a983879798675a",
+      "revision_id": "editorial-2272bc43af7ef4eb222d6ca4335ce9dece0e1910455d30b57cc201533e75f271",
+      "briefing_date": "2026-10-21",
+      "category": "X",
+      "heading": "3. Alexandr Wang — MSL 감사 장문, \"모델을 만드는 기계를 만들었다\"",
+      "title": "Alexandr Wang — MSL 감사 장문, \"모델을 만드는 기계를 만들었다\"",
+      "summary": "Muse Wonder와 오픈 가중치 Muse Spark Open 출시 직후 올린 장문 감사글이다. 왕은 MSL(Meta Superintelligence Labs, 메타 초지능 연구소 — 알렉산더 왕이 이끄는 Meta의 AI 조직)이 1년여 전 \"1년 안에 프론티어 모델을 만들겠다\"는 목표를 세웠을 때만 해도 Llama 4의 위치를 고려하면 \"믿기 어려울 정도로 대담한(audacious)\" 목표였다고 회고했다. \"마감 기한 없음\"을 원칙으로 프리트레이닝부터 안전·데이터·프론티어 연구까지 달렸고, \"밤늦게까지 이상한 손실 스파이크를 쫓는\" 팀 문화가 있었다고 썼다. 핵심 메시지는 '모델이 아니라 모델을 만드는 시스템'을 갖췄다는 것, 그리고 스케일링이 여전히 통한다는 확신이다.",
+      "source_urls": [
+        "https://www.7globe.in/meta-ai-ceo-alexandr-wang-sends-a-long-thanks-note-to-his-team-says-i-am-so-grateful-for-every-one-of-you-and-adds-a-reminder-our-work-is-not/"
+      ],
+      "canonical_urls": [
+        "https://www.7globe.in/meta-ai-ceo-alexandr-wang-sends-a-long-thanks-note-to-his-team-says-i-am-so-grateful-for-every-one-of-you-and-adds-a-reminder-our-work-is-not/"
+      ],
+      "publication_note": "2026-10-17",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/X.md",
+      "archive_url": "/news/2026-10-21/X.html#3-alexandr-wang--msl-감사-장문-모델을-만드는-기계를-만들었다",
+      "section_sha256": "814be4bd6aa3c96ff187edbf01af8b82f22317e4b95b14dfe50b4d59d75ae330",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/모델/1",
+      "article_id": "url-bad2b9522c8f693aaed61b7f15892e3a4c363ddbfd2b676c47a3a5ff6f20fa8b",
+      "revision_id": "editorial-553b0e7af291d0b6378170b1ddddcbe202754a1945d5ccc304e3f34969f29e59",
+      "briefing_date": "2026-10-21",
+      "category": "모델",
+      "heading": "1. VideoGen, 첫 AI 영상 모델 'Model 1' 공개 — 최대 10분 멀티샷 영상 생성",
+      "title": "VideoGen, 첫 AI 영상 모델 'Model 1' 공개 — 최대 10분 멀티샷 영상 생성",
+      "summary": "샌프란시스코의 YC(와이콤비네이터, 미국의 대표적 스타트업 액셀러레이터) 출신 AI 영상 회사 VideoGen이 10월 20일 첫 AI 영상 생성 모델 'VideoGen Model 1'을 공개했다. Model 1은 텍스트 프롬프트와 이미지를 입력받아 최대 10분 길이의 완성형 멀티샷 영상을 만든다. 텍스트-투-비디오와 이미지-투-비디오를 모두 지원하고, 최대 16장의 이미지를 시각 참조로 넣을 수 있으며 목표 길이와 화면비를 지정할 수 있다.",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/20/3384785/0/en/videogen-unveils-model-1-its-first-ai-video-generation-model-and-1-million-in-free-ai-credits.html"
+      ],
+      "canonical_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/20/3384785/0/en/videogen-unveils-model-1-its-first-ai-video-generation-model-and-1-million-in-free-ai-credits.html"
+      ],
+      "publication_note": "2026-10-20",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/모델.md",
+      "archive_url": "/news/2026-10-21/모델.html#1-videogen-첫-ai-영상-모델-model-1-공개--최대-10분-멀티샷-영상-생성",
+      "section_sha256": "69f21561f5e7a237feb7ccb2049d4ea424a3f16fe0b6689264cb80e68d06abbe",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-21/모델/2",
+      "article_id": "url-f13eddf37a203e4920aea5c0cd7caf88be7bef0fac545a4cfc2b955f7a02c8b5",
+      "revision_id": "editorial-6b6aa13b7a9ed67069b55c62cda444dc8140713c42c3319b30aa5afdf092066e",
+      "briefing_date": "2026-10-21",
+      "category": "모델",
+      "heading": "2. 엔비디아, Nemotron 3.5 Retriever 공개 — 임베딩·리랭크·파스 4종",
+      "title": "엔비디아, Nemotron 3.5 Retriever 공개 — 임베딩·리랭크·파스 4종",
+      "summary": "엔비디아가 Nemotron 3.5 검색(retrieval) 모델 컬렉션을 Hugging Face에 공개했다. 구성은 Nemotron-3.5-Embed-1B, Nemotron-3.5-Embed-8B, Nemotron-3.5-Rerank-8B, Nemotron-3.5-Parse 4종이다. 검색용 임베딩(embedding, 문장·이미지를 숫자 벡터로 바꿔 의미를 담아내는 것), 리랭크(rerank, 검색 결과를 다시 점수 매겨 순서를 정하는 일), 문서 파싱을 한 세트로 묶은 것으로, RAG(Retrieval-Augmented Generation, 검색한 자료를 근거로 붙여 답하게 하는 방식) 파이프라인을 통째로 겨냥한 라인업이다.",
+      "source_urls": [
+        "https://dailyaibrief.com/news/nvidia-releases-nemotron-3-5-retriever-models-curSnNOq"
+      ],
+      "canonical_urls": [
+        "https://dailyaibrief.com/news/nvidia-releases-nemotron-3-5-retriever-models-curSnNOq"
+      ],
+      "publication_note": "2026-10-20",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-21/모델.md",
+      "archive_url": "/news/2026-10-21/모델.html#2-엔비디아-nemotron-35-retriever-공개--임베딩리랭크파스-4종",
+      "section_sha256": "99b94fc8c78d3d746667b7b04cdedc71827dd25999c485d70e82f78f99290969",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

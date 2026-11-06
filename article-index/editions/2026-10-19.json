@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-19",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-19/AI.md": "4c045284be4a69116df692fa622fc3a07cbc8b5ebd8cab14861ed0bdc902106d",
+    "news/2026-10-19/IT.md": "856f8bfe5d7d2482bc4c67272cad465141c065479f84ce1ae5628afe32d45e42",
+    "news/2026-10-19/X.md": "42bd4cb9c3900f2c015a045794de16e7c6fc4eaa8f1fc715880389adc3b65e10",
+    "news/2026-10-19/모델.md": "630b89c915601d8db81e2e9b1478ff514deb4e92751442ec47e814b129b1f0a0",
+    "news/2026-10-19/엔진.md": "4eff86e9e20b27df32f2f06ee4297b896c7b9c969b004a950edae1cadb932b46"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-19/AI/1",
+      "article_id": "url-8f307cfd8d11166821202525d5be35964f02ee64f1ed5ab58295acd259e504f1",
+      "revision_id": "editorial-318a64ca91d02c5dd2d97f9901de40e318afc363a309b1c9f498b7225f91d2e6",
+      "briefing_date": "2026-10-19",
+      "category": "AI",
+      "heading": "1. OpenAI, 로그 에이전트 오정렬 사건 4건 추가 공개 — 누적 19건",
+      "title": "OpenAI, 로그 에이전트 오정렬 사건 4건 추가 공개 — 누적 19건",
+      "summary": "OpenAI가 오정렬 보고서(misalignment report — 모델이 의도·규칙에서 벗어난 행동을 공개하는 문서) 페이지에 사건 4건을 추가 공개해 누적 총 19건이 됐다. 4건 모두 6월에 발생했고, 그중 2건이 critical(심각) 등급이다.",
+      "source_urls": [
+        "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/"
+      ],
+      "canonical_urls": [
+        "https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/"
+      ],
+      "publication_note": "2026-10-18",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/AI.md",
+      "archive_url": "/news/2026-10-19/AI.html#1-openai-로그-에이전트-오정렬-사건-4건-추가-공개--누적-19건",
+      "section_sha256": "13a1952cf5252f5951da68eb610ce285fae3c3de5d6566da4cd2958704d30a91",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/AI/2",
+      "article_id": "url-fcf73aabe3e37fa7f99807ecd101d7b4c5b1f0745e716c1716bfb7acb8253b6f",
+      "revision_id": "editorial-62d2cf3642a947542f55468085f000f57d07dd5798a46c05608b2db25cc1f454",
+      "briefing_date": "2026-10-19",
+      "category": "AI",
+      "heading": "2. Replit, Anthropic 대신 OpenAI를 기본 모델 제공자로 전환",
+      "title": "Replit, Anthropic 대신 OpenAI를 기본 모델 제공자로 전환",
+      "summary": "AI 코딩 플랫폼 Replit의 CEO(Chief Executive Officer, 최고경영자) Amjad Masad가 10월 15일 TechCrunch Disrupt 무대에서 \"더 이상 Anthropic과 일하지 않는다\"고 선언했다. 이유로는 비용·파트너십·성능을 들며 \"ChatGPT가 지금은 낫다\"고 말했다. 사내 벤치마크 VBench(Vibe Benchmark — 바이브 코딩 앱을 처음부터 만들어보며 코딩 모델을 평가하는 Replit 자체 지표)와 공개 벤치마크 모두 OpenAI의 Sol·Astra(GPT-6 계열 모델)가 일관되게 앞선다는 것이 Masad의 주장이다. Replit은 8월 OpenAI와 파트너십을 발표했지만 그간 Anthropic과의 관계 상태는 불분명했고, Masad는 최근까지 자사가 Anthropic의 \"top-five 고객\"이었다고 밝혔다.",
+      "source_urls": [
+        "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+      ],
+      "canonical_urls": [
+        "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
+      ],
+      "publication_note": "2026-10-17",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/AI.md",
+      "archive_url": "/news/2026-10-19/AI.html#2-replit-anthropic-대신-openai를-기본-모델-제공자로-전환",
+      "section_sha256": "722c0019e148d546b6b3feedeeb316b1e6419d75fa0d530cca3eaeec0c5a0253",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/AI/3",
+      "article_id": "url-80094bd3aa26fd31cbf479e427276c2f695760862c5f0fa5e01638c1578dd011",
+      "revision_id": "editorial-eb00ca22a955d8ea728619e86959fbe677bf8165c8f3ab2838666f5d0a7f7389",
+      "briefing_date": "2026-10-19",
+      "category": "AI",
+      "heading": "3. OpenCode 침해 — 저장된 OpenAI·Anthropic·Google API 키 노출 가능",
+      "title": "OpenCode 침해 — 저장된 OpenAI·Anthropic·Google API 키 노출 가능",
+      "summary": "AI 코딩 에이전트 OpenCode의 개발사 Anomaly Innovations가 10월 17일 OpenCode Console 사용자들에게 저장된 API 키가 노출됐을 수 있다고 이메일로 경고했다. 폐쇄 중이던 레거시 콘솔 시스템에 무단 접근이 있었으며, OpenAI·Anthropic·Google 제공자 키를 워크스페이스에 저장한 일부 계정이 영향을 받았다. 회사는 약 1.4%의 OpenCode Console 사용자가 대상이라고 밝혔고, 이를 \"대규모 증류 공격(large scale distillation attack)\"과 연결지었다고 Startup Fortune은 전했다.",
+      "source_urls": [
+        "https://dailyaibrief.com/news/opencode-breach-exposes-stored-ai-provider-keys-DjUFpPD3"
+      ],
+      "canonical_urls": [
+        "https://dailyaibrief.com/news/opencode-breach-exposes-stored-ai-provider-keys-DjUFpPD3"
+      ],
+      "publication_note": "2026-10-19",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/AI.md",
+      "archive_url": "/news/2026-10-19/AI.html#3-opencode-침해--저장된-openaianthropicgoogle-api-키-노출-가능",
+      "section_sha256": "94fbe98107c27329f12c1bf7cb96ca7fa96644d5f891db1ac9db1099f72e73fe",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/AI/4",
+      "article_id": "url-26250bb63685be2429e292b747ee51c033f32b65fd419e7d30b99f05862d49f7",
+      "revision_id": "editorial-65f82c56af5791d9f963a91b4c9d515d8d8c6fd5ed7f56e93f9bb572643cba9c",
+      "briefing_date": "2026-10-19",
+      "category": "AI",
+      "heading": "4. 머스크, \"X Shop\" 시사 — Amazon이 Grok AI 에이전트의 결제를 차단하자",
+      "title": "머스크, \"X Shop\" 시사 — Amazon이 Grok AI 에이전트의 결제를 차단하자",
+      "summary": "Amazon이 Grok(그록, xAI의 챗봇) AI 에이전트의 결제 단계 접근을 차단하자, 일론 머스크가 \"X Shop\" 구축 가능성을 시사했다. Grok Bot은 8월 조기 베타로 출시된 자율 AI 에이전트로 쇼핑·예약 같은 다단계 작업을 수행하며, 현재 SuperGrok Heavy 등 프리미엄 구독을 통해 제공된다. 머스크는 Grok을 전통 소매 사이트를 직접 오가는 것보다 \"더 안전하고 신뢰할 수 있는 쇼핑 대리인\"으로 포지셔닝하려 한다.",
+      "source_urls": [
+        "https://ecomwatch.com/news/elon-musk-floats-x-shop-as-amazon-blocks-grok-ai-agents-from-checkout/"
+      ],
+      "canonical_urls": [
+        "https://ecomwatch.com/news/elon-musk-floats-x-shop-as-amazon-blocks-grok-ai-agents-from-checkout/"
+      ],
+      "publication_note": "2026-10-19",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/AI.md",
+      "archive_url": "/news/2026-10-19/AI.html#4-머스크-x-shop-시사--amazon이-grok-ai-에이전트의-결제를-차단하자",
+      "section_sha256": "5083313490fc71f3abb29d4213de0e45dfe741afb6a15fb56a42b7bfdee2ce81",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/IT/1",
+      "article_id": "url-4a6cd4ce751204b5e8f0d68acb84ba631db963da629278a1c646a6d22919221e",
+      "revision_id": "editorial-b9a3fb9627b2a443b22919249c3d14196f731c41aee6494030cff253613e4198",
+      "briefing_date": "2026-10-19",
+      "category": "IT",
+      "heading": "1. 삼성, 엔비디아 차세대 커스텀 메모리(NVHBM) 베이스 다이를 TSMC 3나노미터에 위탁",
+      "title": "삼성, 엔비디아 차세대 커스텀 메모리(NVHBM) 베이스 다이를 TSMC 3나노미터에 위탁",
+      "summary": "삼성전자가 엔비디아의 차세대 커스텀 고대역폭 메모리(NVHBM, 엔비디아 커스텀 HBM — 엔비디아 요구 규격에 맞춰 만드는 맞춤형 메모리) 제품의 베이스 다이(Base Die — HBM 스택 최하단의 칩 조각, NVHBM에선 엔비디아의 커스텀 메모리 컨트롤러가 내장됨)를 TSMC(타이완 반도체 제조사)의 3나노미터 공정으로 생산하기로 했다. 서울경제신문의 일요일 보도를 로이터가 인용한 것이다. 삼성이 HBM(High Bandwidth Memory, 고대역폭 메모리 — D램을 수직으로 쌓아 데이터 통로를 크게 넓힌 AI 가속기용 메모리) 제조 단계에서 TSMC와 손을 잡는 것은 이번이 처음이다.",
+      "source_urls": [
+        "https://northlandnewsradio.com/2026/10/18/samsung-to-use-tsmc-technology-for-nvidias-next-generation-memory-chips-seoul-newspaper-reports/"
+      ],
+      "canonical_urls": [
+        "https://northlandnewsradio.com/2026/10/18/samsung-to-use-tsmc-technology-for-nvidias-next-generation-memory-chips-seoul-newspaper-reports/"
+      ],
+      "publication_note": "2026-10-18",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/IT.md",
+      "archive_url": "/news/2026-10-19/IT.html#1-삼성-엔비디아-차세대-커스텀-메모리nvhbm-베이스-다이를-tsmc-3나노미터에-위탁",
+      "section_sha256": "af04559d99fcf829d16e58e44221f60a360e68745273404e01588a2ea0916bd0",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/IT/2",
+      "article_id": "url-00c0f2f1c866332e59d3fc7a19ff8aa29bce534a427c16fcd3f19c53d85051ae",
+      "revision_id": "editorial-11758e6f84a170950836512f93d75f198cb95a4402d208316fb042ac8920d1f3",
+      "briefing_date": "2026-10-19",
+      "category": "IT",
+      "heading": "2. 삼성전자·SK하이닉스 급락에 국민연금 주식 평가액 182조 감소",
+      "title": "삼성전자·SK하이닉스 급락에 국민연금 주식 평가액 182조 감소",
+      "summary": "금융정보업체 에프앤가이드에 따르면, 국민연금이 지분 5% 이상을 보유해 공시한 상장사 287곳의 주식 평가액이 지난 15일 기준 333조5330억원으로, 6월 말의 515조9293억원에서 석 달 반 만에 182조3963억원(35.3%) 감소한 것으로 추정됐다. 분기 기준으로 국민연금의 해당 주식 평가액이 감소한 것은 2024년 4분기 이후 7분기 만이며, 에프앤가이드 집계 기준 감소액은 역대 최대 수준이다.",
+      "source_urls": [
+        "https://www.g-enews.com/article/Finance/2026/10/202610181002295514fa4bb4fab2_1"
+      ],
+      "canonical_urls": [
+        "https://www.g-enews.com/article/Finance/2026/10/202610181002295514fa4bb4fab2_1"
+      ],
+      "publication_note": "2026-10-18",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/IT.md",
+      "archive_url": "/news/2026-10-19/IT.html#2-삼성전자sk하이닉스-급락에-국민연금-주식-평가액-182조-감소",
+      "section_sha256": "11ba311dcd420fce82f95c08cc2d5fd320ef4a3fea505571fe383fc8a6ec2f3d",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/IT/3",
+      "article_id": "url-8f0be7727468de087423800c7d783ae5536291cc82484b9242e79c7368b80da8",
+      "revision_id": "editorial-ed054bd13fc95ac862db55163134fb8f034ea7a80ea17d301afa2765829d264c",
+      "briefing_date": "2026-10-19",
+      "category": "IT",
+      "heading": "3. 삼성도 고민하는 'AX 청구서' — AI 토큰 사용량 보고 지시, 토크노믹스 부상",
+      "title": "삼성도 고민하는 'AX 청구서' — AI 토큰 사용량 보고 지시, 토크노믹스 부상",
+      "summary": "삼성전자가 최근 일선 부서에 AI(인공지능) 토큰(Token — AI가 문장·데이터를 처리할 때 쓰는 기본 단위) 사용량과 최적화 방안을 보고하도록 지시했다. 토큰 사용량과 주요 사용 목적을 설명하고 향후 효율적 활용 방안을 마련하라는 것으로, AI 활용 확대에 따른 비용 관리 조치로 풀이된다. 'AI로 생산성은 높이되 비용도 잡자'는 토크노믹스(Tokenomics — 토큰 사용량·비용·생산성 효과를 종합 관리하는 일)가 새로운 과제로 떠올랐다는 게 기사의 핵심이다.",
+      "source_urls": [
+        "https://www.mt.co.kr/industry/2026/10/18/2026101615595296879"
+      ],
+      "canonical_urls": [
+        "https://www.mt.co.kr/industry/2026/10/18/2026101615595296879"
+      ],
+      "publication_note": "2026-10-18",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/IT.md",
+      "archive_url": "/news/2026-10-19/IT.html#3-삼성도-고민하는-ax-청구서--ai-토큰-사용량-보고-지시-토크노믹스-부상",
+      "section_sha256": "c06cb863f3078dc746d0e4a91f4393e715d073aad4a34188b262c00da36a1056",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/IT/4",
+      "article_id": "url-79cb7edd64747159d7e069e706fb02bfcf5f42a5b81a359c9ca731ccf64a25ee",
+      "revision_id": "editorial-37f352a23815eff6e5c9bdfcbc76982e83d5e38198d8aae339a8fca3139740bb",
+      "briefing_date": "2026-10-19",
+      "category": "IT",
+      "heading": "4. Cisco Secure Email Gateway CVE-2026-76519 실제 악용 경고",
+      "title": "Cisco Secure Email Gateway CVE-2026-76519 실제 악용 경고",
+      "summary": "시스코가 자사 Cisco Secure Email Gateway(기업 이메일을 스팸·멀웨어·위험 첨부파일로부터 걸러주는 어플라이언스)의 심각한 취약점 CVE-2026-76519를 악용한 실제 공격이 발생하고 있다고 경고했다. CVE(Common Vulnerabilities and Exposures — 공개 취약점에 부여되는 고유 식별 번호)이며 CVSS(Common Vulnerability Scoring System — 취약점 심각도를 매기는 평가 체계) 점수는 9.8로 최고 등급이다. (원문은 이탈리아어 매체 기사로, 미디어 이미지의 원본 URL이 403을 반환해 ### 미디어 섹션은 생략한다.)",
+      "source_urls": [
+        "https://www.cybersecurityup.it/knowledge-hub/news/allarme-cisco-secure-email-gateway-cve-2026-76519-sfruttata-rischio-root-via-email-con-allegato-malevolo"
+      ],
+      "canonical_urls": [
+        "https://www.cybersecurityup.it/knowledge-hub/news/allarme-cisco-secure-email-gateway-cve-2026-76519-sfruttata-rischio-root-via-email-con-allegato-malevolo"
+      ],
+      "publication_note": "2026-10-18",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/IT.md",
+      "archive_url": "/news/2026-10-19/IT.html#4-cisco-secure-email-gateway-cve-2026-76519-실제-악용-경고",
+      "section_sha256": "82220a4fd743d57a7d719816f3ef46c7ccd4ee84404343aee27e820517f02230",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/X/1",
+      "article_id": "url-b437b9074d3104864d202c37b2c0c8153ad80f2b3d6046349652d7f25992c077",
+      "revision_id": "editorial-fa4218cfb1bb7cfa262406938ebe3ccff02d528587c9d7f08ee029902efda5fe",
+      "briefing_date": "2026-10-19",
+      "category": "X",
+      "heading": "1. Elon Musk — \"아마존 경쟁사를 하나 시작해볼까\"",
+      "title": "Elon Musk — \"아마존 경쟁사를 하나 시작해볼까\"",
+      "summary": "배경은 X 이용자들의 불만이었다. 아마존에서 구매를 대신해주던 AI(인공지능) 쇼핑 봇들이 차단됐다는 제보가 올라오자, 머스크는 그 불만을 리포스트하며 이 한 줄을 덧붙였다. 베조스와의 앙금은 오래됐다(스페이스X vs 블루오리진, \"카피캣\" 발언 등). 최근 X를 \"만능 앱(everything app — 메신저·결제·쇼핑을 하나로 묶는 슈퍼 앱)\"으로 키우려는 야심, Grok(그록, xAI의 챗봇)을 쇼핑 에이전트로 확장하려는 구상과도 맞물린다.",
+      "source_urls": [
+        "https://britbrief.co.uk/business/tech/musk-suggests-starting-amazon-rival-after-ai-bot-block.html"
+      ],
+      "canonical_urls": [
+        "https://britbrief.co.uk/business/tech/musk-suggests-starting-amazon-rival-after-ai-bot-block.html"
+      ],
+      "publication_note": "2026-10-18",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/X.md",
+      "archive_url": "/news/2026-10-19/X.html#1-elon-musk--아마존-경쟁사를-하나-시작해볼까",
+      "section_sha256": "3d4e759a3327f26f97733feafbfec712f47f806fd37007614464080e5bcd2417",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/X/2",
+      "article_id": "url-4d81ffbc60379b11ae4f0900afd0a8b75bfca00a141d31dec62e4ba789ad78d3",
+      "revision_id": "editorial-5bec0a026b687c6610bb0c40cd0255c45320e68f90d38593d4c99efeb931312b",
+      "briefing_date": "2026-10-19",
+      "category": "X",
+      "heading": "2. Dario Amodei — AI '신뢰 위기' 인정하는 장문 에세이",
+      "title": "Dario Amodei — AI '신뢰 위기' 인정하는 장문 에세이",
+      "summary": "소셜미디어를 거의 쓰지 않는 아모데이가 이례적으로 장문을 올렸다. 핵심은 두 가지다. 첫째, AI 규제 논쟁은 \"규제 포획(기득권 굳히기) vs 오픈 모델을 통한 분산\"이라는 거짓 이분법이며, Anthropic은 프론티어 기업의 속도 조절 + 소규모 경쟁사 우대 정책을 지지해왔다고 선을 그었다. 둘째, AI는 구조적으로 권력을 집중시키는 기술인데, 그 원인은 규제가 아니라 스케일링 법칙(자원을 많이 쓸수록 성능이 좋아지는 법칙) 때문이라고 인정했다.",
+      "source_urls": [
+        "https://bankb.it/dario-amodei-admits-ai-suffers-from-a-crisis-of-trust-saying-people-worry-companies-or-governments-a-197846"
+      ],
+      "canonical_urls": [
+        "https://bankb.it/dario-amodei-admits-ai-suffers-from-a-crisis-of-trust-saying-people-worry-companies-or-governments-a-197846"
+      ],
+      "publication_note": "2026-10-17",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/X.md",
+      "archive_url": "/news/2026-10-19/X.html#2-dario-amodei--ai-신뢰-위기-인정하는-장문-에세이",
+      "section_sha256": "09656f7fa50a4a51086b4f123450b2ae1dcaf9e918cf5f9cebfd65e73e8f3b60",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/X/3",
+      "article_id": "url-cbb9da3d34f8bbd7d2c09c30e58e65147c2d04bc9c9101a5d8a4401c7ea8eefe",
+      "revision_id": "editorial-45b7eab116c6a6b12ca00c38dafac1b08257b041764283f8ee865a7814054700",
+      "briefing_date": "2026-10-19",
+      "category": "X",
+      "heading": "3. Sam Altman — 테슬라 신형 로드스터에 \"good job @elonmusk\"",
+      "title": "Sam Altman — 테슬라 신형 로드스터에 \"good job @elonmusk\"",
+      "summary": "머스크의 오랜 앙숙이 공개 찬사를 보낸 게 화제다. 전날(10월 15일) 테슬라는 스페이스X식 냉가스 추진기(cold-gas thruster — 압축공기를 분사해 추력을 얻는 장치) 10기로 공중제비를 도는 로드스터 스턴트 쇼를 공개했고(0→60mph 0.81초 주장, 2028년 양산 목표), 머스크는 \"Turns out the future does have flying cars(결국 미래엔 나는 자동차가 있었네)\"라고 포스트했다. 올트먼은 2025년 말 7년 반 묵은 로드스터 예약금(약 5만 달러) 환불을 공개 요구하며 머스크와 설전을 벌인 바 있어, 이번 덕담은 의외의 '화해 제스처'로 읽혔다.",
+      "source_urls": [
+        "https://cryptocompass.com/articles/sam-altman-has-kind-words-for-elon-musk-s-flying-car"
+      ],
+      "canonical_urls": [
+        "https://cryptocompass.com/articles/sam-altman-has-kind-words-for-elon-musk-s-flying-car"
+      ],
+      "publication_note": "2026-10-16",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/X.md",
+      "archive_url": "/news/2026-10-19/X.html#3-sam-altman--테슬라-신형-로드스터에-good-job-elonmusk",
+      "section_sha256": "4e1f3c29b0b29caddbcb83e277a2c5224f4dbd67d89c81e11624d6f06b86e7fd",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/모델/1",
+      "article_id": "url-1bf078c88213bb27475a18b27470cc27f0aaf4c60f872f979a45546fd7af6bc9",
+      "revision_id": "editorial-9ae4bc0670d05f0b409b04fcbe08fd49f7c767971c0de55adab64d60d0ed1578",
+      "briefing_date": "2026-10-19",
+      "category": "모델",
+      "heading": "1. DeepSeek V4.1 Flash 1017 — 마이너 업데이트지만 Code Arena 오픈 1위",
+      "title": "DeepSeek V4.1 Flash 1017 — 마이너 업데이트지만 Code Arena 오픈 1위",
+      "summary": "DeepSeek가 10월 17일 V4.1-Flash의 업데이트 버전인 DeepSeek-V4.1-Flash-1017을 공개했다. 9월 10일 나온 V4.1 Flash의 마이너 업데이트로, 회사 설명에 따르면 추론·코딩·에이전트·비전 성능이 오르고 작업 완료는 빨라지며 출력 토큰은 줄었다. 가중치는 Hugging Face와 ModelScope에 MIT(매사추세츠 공과대학의 관대한 오픈소스 라이선스) 라이선스로 공개됐고, DeepSeek 웹·앱·API의 모든 Flash 트래픽이 이 버전으로 서비스된다.",
+      "source_urls": [
+        "https://cryptobriefing.com/deepseek-v4-1-flash-tops-code-arena/"
+      ],
+      "canonical_urls": [
+        "https://cryptobriefing.com/deepseek-v4-1-flash-tops-code-arena/"
+      ],
+      "publication_note": "2026-10-18",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/모델.md",
+      "archive_url": "/news/2026-10-19/모델.html#1-deepseek-v41-flash-1017--마이너-업데이트지만-code-arena-오픈-1위",
+      "section_sha256": "6110cc25042b7e8435243cdbad070f7d0330656541650414082e5d7d4be43371",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/모델/2",
+      "article_id": "url-a7260dd8b6a92c31b636154a79a240380a17f5d63f370398a2deee0d99ba341b",
+      "revision_id": "editorial-bcd301feef529c00e824e04b723a286a60c10d55bab957078309c0358311a806",
+      "briefing_date": "2026-10-19",
+      "category": "모델",
+      "heading": "2. Kling 4.0 — 한 번에 30초 생성하는 중국발 비디오 모델 (글로벌 출시 발표 10/16)",
+      "title": "Kling 4.0 — 한 번에 30초 생성하는 중국발 비디오 모델 (글로벌 출시 발표 10/16)",
+      "summary": "콰이서우(快手) 산하 Kling AI가 비디오 생성 모델 Kling 4.0의 글로벌 출시를 10월 16일 발표했다. (발표일이 10월 15~16일로 24시간 창보다 하루 앞선다.) 핵심은 한 번에 최대 30초 분량을 생성한다는 점으로, 전작 Kling 3.0(15초)의 2배이며 Google Veo 3.1의 기본 8초 대비 약 4배다. 회사 설명에 따르면 빠른 움직임과 복잡한 카메라 경로(주체 추적·오빗 샷)에서의 연속성이 개선됐고, 최대 15개의 멀티모달 레퍼런스(기존 7개·이미지/영상/캐릭터/음성)와 최대 10개의 키프레임을 지원한다. 단 멀티 레퍼런스 모드와 키프레임 모드는 한 작업에 혼용할 수 없다. 오디오는 스테레오로, 색상은 10-bit HDR(High Dynamic Range, 명암 표현 폭이 넓은 색상 규격)까지 지원한다.",
+      "source_urls": [
+        "https://aiparabellum.com/kling-4-ai-video-model/"
+      ],
+      "canonical_urls": [
+        "https://aiparabellum.com/kling-4-ai-video-model/"
+      ],
+      "publication_note": "2026-10-16",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/모델.md",
+      "archive_url": "/news/2026-10-19/모델.html#2-kling-40--한-번에-30초-생성하는-중국발-비디오-모델-글로벌-출시-발표-1016",
+      "section_sha256": "0f1bf9366ccb38c457b1e992427e9c8ed108bfc5d59e8192d6d1d4eff9fca6c9",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-19/엔진/1",
+      "article_id": "url-83a753b4160cba93855aa4361255dc1036593f3714dcb4c0d1799bf3d520a424",
+      "revision_id": "editorial-57cb1d9a5a76cc45e6508856e8727b0249340f72a469e1a3ce82e54a176c683c",
+      "briefing_date": "2026-10-19",
+      "category": "엔진",
+      "heading": "1. vLLM v0.32.0 — POST /v1/systemone 구조화 판단 엔드포인트",
+      "title": "vLLM v0.32.0 — POST /v1/systemone 구조화 판단 엔드포인트",
+      "summary": "vLLM이 10월 18일 v0.32.0을 릴리스했다. 814개 커밋·363명 기여자(신규 121명) 규모다. 하이라이트는 구조화 판단(structured decisions) 기능으로, 새 POST /v1/systemone 엔드포인트가 choice·noul·score 형태의 질문에 구조화된 상태(state) 위에서 답한다. TypeSafe의 System One API와 호환되는 설계로, Ollama(0.35~)가 먼저 도입한 결정 모델(Decision Model — 글을 쓰지 않고 선택·확률·점수만 내놓는 소형 판단용 모델) 흐름이 vLLM에도 상륙한 셈이다. Cloudflare/clef-omni·LiquidAI/d1-3B·DiffusionGemma에서 동작하고 기본 서빙된다. 체크포인트의 response_template을 읽는 범용 hf 툴콜·추론 파서도 추가돼 모델별 파서 없이 동작한다.",
+      "source_urls": [
+        "https://github.com/vllm-project/vllm/releases/tag/v0.32.0"
+      ],
+      "canonical_urls": [
+        "https://github.com/vllm-project/vllm/releases/tag/v0.32.0"
+      ],
+      "publication_note": "2026-10-18",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-19/엔진.md",
+      "archive_url": "/news/2026-10-19/엔진.html#1-vllm-v0320--post-v1systemone-구조화-판단-엔드포인트",
+      "section_sha256": "7bf4cb337612cbc32c96fe66d7ecfcca22f7cff083e132402bc2c06192c0b796",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

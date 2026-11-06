@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-22",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-22/AI.md": "cca1a796b8d40ee84381076a03416362a7a9c9a40f49a0a1d3ab1537d91c706b",
+    "news/2026-10-22/IT.md": "6825cf12ae261306f31c77718c375b0193c5d7bbb0935c6dd54b15e197d10290",
+    "news/2026-10-22/모델.md": "e4f012895abfe1ac27b7113d0f7df2a0d5cb56ac817169d9cd4ee7f0f70a3ba8",
+    "news/2026-10-22/엔진.md": "1be9dd6434999743b0ba431a00bb786dd89399b08e902759b1380256c7ff78e8"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-22/AI/1",
+      "article_id": "url-5c777dc5eda38b6a8e06cd2a7581716c509519916b0a901770ca0913706e0489",
+      "revision_id": "editorial-e059e52043fbf0c8e86f5206b393b8bb33a657790d4977fd1f2ad8f4d65c668a",
+      "briefing_date": "2026-10-22",
+      "category": "AI",
+      "heading": "1. OpenAI 모델·Codex, Google Cloud로 유통 확대 — 정식 제공은 앞으로",
+      "title": "OpenAI 모델·Codex, Google Cloud로 유통 확대 — 정식 제공은 앞으로",
+      "summary": "OpenAI와 Google Cloud가 OpenAI 모델 및 Codex 작업 흐름을 Google Cloud의 모델 선택 서비스인 Model Garden에 제공하기로 했다. 기업이 기존에 사용하는 클라우드 안에서 모델을 선택하도록 판매 경로를 넓히는 발표다. 새로운 모델 자체를 공개한 소식과는 구분해야 한다.",
+      "source_urls": [
+        "https://openai.com/index/openai-models-google-cloud/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/openai-models-google-cloud/"
+      ],
+      "publication_note": "2026-10-21 (원문 표기, 정확한 게시 시각·시간대 미공개)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-22/AI.md",
+      "archive_url": "/news/2026-10-22/AI.html#1-openai-모델codex-google-cloud로-유통-확대--정식-제공은-앞으로",
+      "section_sha256": "f98118921981581277107d2ae673e22d6efc26e94f49c4977c531d997f1eb892",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-22/AI/2",
+      "article_id": "url-f140eb9aaf81ef6b1559c712d56e842159f4c301693ddb6250ece5bc9953d4d8",
+      "revision_id": "editorial-6f722bb339ec586d6d8e25a44acde36b1b28892c91db19416b834978c7195185",
+      "briefing_date": "2026-10-22",
+      "category": "AI",
+      "heading": "2. ChatGPT 광고 시스템 공개 — 답변 생성과 광고 선택을 분리했다고 설명",
+      "title": "ChatGPT 광고 시스템 공개 — 답변 생성과 광고 선택을 분리했다고 설명",
+      "summary": "OpenAI가 ChatGPT 광고 시스템의 설계를 공개했다. 검색어 한 번보다 여러 차례 대화하며 바뀌는 목적을 파악하도록, 별도 언어 모델이 광고 검색·순위 결정·적합성 평가·경매 도구를 호출하는 구조다. 모든 상품 언급을 구매 의도로 취급하지 않는 것이 설계 목표다.",
+      "source_urls": [
+        "https://openai.com/index/building-chatgpt-ad-stack/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/building-chatgpt-ad-stack/"
+      ],
+      "publication_note": "2026-10-21 (원문 표기, 정확한 게시 시각·시간대 미공개)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-22/AI.md",
+      "archive_url": "/news/2026-10-22/AI.html#2-chatgpt-광고-시스템-공개--답변-생성과-광고-선택을-분리했다고-설명",
+      "section_sha256": "17979e6d7d363cc1d229b8115334fe90efd3f7c076e3ce08b88eb241e77e5b78",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-22/IT/1",
+      "article_id": "url-c8c26da0c20664a3d7739f281a141d9975b2c82ccdbf79be00f4ff6fa2e4bd4b",
+      "revision_id": "editorial-1a1d34d832e1010c3d0438b0a668d0b1bb0f3046a9d57e6b9b28849a6ba5f1c4",
+      "briefing_date": "2026-10-22",
+      "category": "IT",
+      "heading": "1. PHP 긴급 보안 업데이트: 발견만큼 중요한 실제 패치 적용",
+      "title": "PHP 긴급 보안 업데이트: 발견만큼 중요한 실제 패치 적용",
+      "summary": "웹 서버용 프로그래밍 언어 PHP(PHP: Hypertext Preprocessor)가 인증 없이 원격 코드 실행으로 이어질 수 있는 중대 취약점 두 건을 수정했다. 공식 수정 버전은 8.5.12·8.4.27·8.3.36·8.2.35다. 프로젝트는 웹 요청을 처리하는 설치 전반을 점검 대상으로 제시하고, 임시 완화책만으로 안전을 보장할 수 없다고 강조했다. 배포판이 구버전에 보안 수정을 옮겨 적용하는 백포트(backport, 구버전으로 수정을 옮기는 것)를 제공했을 수도 있으므로 숫자만 비교하지 말고 공급자의 공지도 확인해야 한다.",
+      "source_urls": [
+        "https://www.php.net/archive/2026.php#2026-10-21-5"
+      ],
+      "canonical_urls": [
+        "https://www.php.net/archive/2026.php"
+      ],
+      "publication_note": "2026-10-21 KST. 공식 릴리스 메일은 10월 21일 23:10:11 KST(14:10:11 UTC), 보안 권고 본문은 원문 날짜 10월 21일만 표시.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-22/IT.md",
+      "archive_url": "/news/2026-10-22/IT.html#1-php-긴급-보안-업데이트-발견만큼-중요한-실제-패치-적용",
+      "section_sha256": "bd0c0fff6a422f5de4bddcfb4478d5fa398204e2ffa11e3a999650faee6fb82d",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-22/IT/2",
+      "article_id": "url-283a10a734a97f3fd2cfb0400260fa00aeae003150e117e41df3c927130de998",
+      "revision_id": "editorial-7739603cc834bb63c85baba737ee2df3a581ab21ae3ad725e2dbefee39e6b9a4",
+      "briefing_date": "2026-10-22",
+      "category": "IT",
+      "heading": "2. NVIDIA DSX POD: 데이터센터를 현장에서 짓기보다 공장에서 조립한다",
+      "title": "NVIDIA DSX POD: 데이터센터를 현장에서 짓기보다 공장에서 조립한다",
+      "summary": "NVIDIA가 GTC(GPU Technology Conference, 엔비디아 개발자 행사) Berlin에서 Vera Rubin 기반 AI 데이터센터를 모듈형 컨테이너로 제작하는 DSX POD 참조 설계를 발표했다. 참조 설계는 실제 설비 구현의 출발점이 되는 설계 지침이다. 계산 장비뿐 아니라 배선·배관과 랙 수준의 전력·냉각을 출하 전에 통합하고 검증한다. 회사는 준비된 부지에서의 배치 기간을 6개월에서 최소 14일로 단축할 수 있다고 주장했다.",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment"
+      ],
+      "canonical_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment"
+      ],
+      "publication_note": "원문 2026-10-21. 발행 시각·시간대가 없어 정확한 KST 시각은 확인되지 않으며, 10월 22일 KST 아침 기준 확인한 발표다.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-22/IT.md",
+      "archive_url": "/news/2026-10-22/IT.html#2-nvidia-dsx-pod-데이터센터를-현장에서-짓기보다-공장에서-조립한다",
+      "section_sha256": "eb98d56d6f24869ecfd6d1f7592027155b6061dc34ca39caebd4d58d5e417edb",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-22/모델/1",
+      "article_id": "url-c2ed162a157709f5cb47598d7a4a9ff0ca7927682ea3c9a0e259f86971bb2de7",
+      "revision_id": "editorial-1d0daae5cf9b038418a97f4b13ef160f5f6d2bd2bcf154e54faa62a317d5dad8",
+      "briefing_date": "2026-10-22",
+      "category": "모델",
+      "heading": "1. IBM, Granite Speech 5의 정확도·처리량·화자 기능을 나눠 개선",
+      "title": "IBM, Granite Speech 5의 정확도·처리량·화자 기능을 나눠 개선",
+      "summary": "IBM이 10월 21일 Granite Speech 제품군의 변경점을 설명했다. ASR(Automatic Speech Recognition, 자동 음성 인식)·번역용 20억 매개변수 모델, 빠른 전사용 4억7000만 매개변수 Turbo CTC(Connectionist Temporal Classification, 음성과 문자 대응을 학습하는 방식), 화자·시간 정보에 초점을 맞춘 4.1 2B Plus(20억 매개변수)를 구분했다. 20억 매개변수 모델 카드의 출시일은 10월 20일이므로 이날의 최초 출시로 해석하면 안 된다.",
+      "source_urls": [
+        "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+      ],
+      "canonical_urls": [
+        "https://huggingface.co/blog/ibm-granite/granite-speech-5"
+      ],
+      "publication_note": "2026-10-21 (원문은 날짜만 표시, 정확한 시각 미확인)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-22/모델.md",
+      "archive_url": "/news/2026-10-22/모델.html#1-ibm-granite-speech-5의-정확도처리량화자-기능을-나눠-개선",
+      "section_sha256": "8d196d63b3932ab7907afd435d47aaa8786073625648e1c87ce585f6817a5fa7",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-22/모델/2",
+      "article_id": "url-e161fb8b79b9c12653410781a0ab8d6e8c99e3f0d364f5eb319e9a345f8cb8cc",
+      "revision_id": "editorial-abb4c344c4c0fc15c0aa59e7cb664d1747f6d9ad3cf425fdab0f90ea9185cce1",
+      "briefing_date": "2026-10-22",
+      "category": "모델",
+      "heading": "2. bekko, GPU 없는 검색을 겨냥한 다국어 정적 임베딩 공개",
+      "title": "bekko, GPU 없는 검색을 겨냥한 다국어 정적 임베딩 공개",
+      "summary": "개발자 Yuichi Tateno가 bekko-static-embedding-v1을 소개했다. 정적 임베딩(static embedding, 토큰마다 고정된 숫자 표현을 쓰는 방식)은 Transformer(입력 사이 관계를 계산하는 신경망)의 문맥 연산 대신 토큰별 고정 벡터를 찾아 평균낸다. 모델 카드는 MIT 라이선스와 공개 모델 파일을 제공한다.",
+      "source_urls": [
+        "https://huggingface.co/blog/hotchpotch/bekko-static-embedding"
+      ],
+      "canonical_urls": [
+        "https://huggingface.co/blog/hotchpotch/bekko-static-embedding"
+      ],
+      "publication_note": "2026-10-21 (원문은 날짜만 표시, 정확한 시각 미확인)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-22/모델.md",
+      "archive_url": "/news/2026-10-22/모델.html#2-bekko-gpu-없는-검색을-겨냥한-다국어-정적-임베딩-공개",
+      "section_sha256": "23f0c10d9282bff925b789a5291912c96968ec308008daa8ce96deb24b486ae1",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-22/엔진/1",
+      "article_id": "url-bb132bf741e1159b4d9c3028f89f923d2bb7de74d7f5c66e1f9e61655ed4a429",
+      "revision_id": "editorial-caf1a29afa731a55bcdaf416a1a0e9bc8b820d3644f6a68e0e9df714f6537c3f",
+      "briefing_date": "2026-10-22",
+      "category": "엔진",
+      "heading": "1. Ollama v0.40.8, Recursive Flint 지원 — 이번 지원 범위는 macOS",
+      "title": "Ollama v0.40.8, Recursive Flint 지원 — 이번 지원 범위는 macOS",
+      "summary": "Ollama가 정식 릴리스 v0.40.8에서 Recursive의 코딩 모델 Flint 지원을 추가했다. 낯선 저장소 이해, 버그 추적, 기능 구현과 테스트 작성처럼 여러 파일·도구를 오가는 작업을 대상으로 소개했다. 컨텍스트는 262K 토큰(모델이 한 번에 참고하는 입력 단위)으로 표기됐다.",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.8"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.8"
+      ],
+      "publication_note": "2026-10-22 01:20:30 KST (GitHub 공개 시각 2026-10-21 16:20:30 UTC)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-22/엔진.md",
+      "archive_url": "/news/2026-10-22/엔진.html#1-ollama-v0408-recursive-flint-지원--이번-지원-범위는-macos",
+      "section_sha256": "ce223a1eabbb8b9f382ffaa8d2084aacbd1f3708b9da1077e5011e5ebb51daae",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

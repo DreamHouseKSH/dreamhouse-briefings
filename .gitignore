@@ -10,3 +10,7 @@ output/
 # Python bytecode from local checks
 __pycache__/
 *.py[cod]
+
+# Regenerable local article search database, never the durable source
+.cache/article-index.sqlite3*
+.cache/article-index-locks/

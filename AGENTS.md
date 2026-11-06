@@ -4,6 +4,8 @@
 
 ## 변경 이력 (요약 — 상세는 [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 맨 위 '변경 이력')
 
+- **2026-11-07 (기사 색인·중복 검사):** 과거 공개 요약 236건(10/6~11/6)을 원본 수정 없이 `article-index/editions/` JSON으로 색인했다. 새 뉴스는 `prepare → 사건 메타 작성 → candidates → review → gate`를 통과한 JSON을 본문과 함께 커밋한다. 발표·GitHub 유무와 무관하게 매일 뉴스 게시 전에 실행한다. 같은 URL·같은 사건 후보와 실질적 후속 변화를 구분하며, 원문·사건·후보가 바뀌면 재검토한다. 상세 [`docs/ARTICLE-INDEX.md`](docs/ARTICLE-INDEX.md).
+
 - **2026-11-06 (매일 뉴스):** 토·일도 평일과 같은 아침 뉴스 브리핑을 08:01 KST에 발행한다. 토요일 주간 정리·일요일 전망은 별도로 유지하며 GitHub 트렌드는 기존 평일 08:06을 유지한다.
 - **2026-11-06 (뉴스 수집 보강):** 직전 성공 발행본의 수집 종료부터 이번 정규 마감까지 KST 구간을 이어서 조사한다. 주말·공휴일·실패 기간도 포함한다. 국내외 IT·반도체·AI 기업·모델·엔진을 개별 점검하고 최초 게시 시각·시간대를 확인한다. 시간 미확인 후보, 중복·제외·접근 차단과 빈 분야 재검색을 `docs/news-reviews/YYYY-MM-DD.md`에 기록한다. 적은 기사 수를 억지로 채우지 않는다. 사용자 승인 사후 보충만 기존 본문을 보존해 추가하며 정규 수집 마감은 바꾸지 않는다. 상세 WORKFLOW 1-1장.
 
@@ -63,7 +65,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 
 1. `cd /workspace/dreamhouse-briefings && git pull --rebase`
 2. WORKFLOW 1-1장의 구간·분야별 조사와 검토 기록을 먼저 완료한 뒤, 직접 조사한 또는 아침 루틴에서 전달된 검증된 브리핑 내용으로 `news/<오늘>/*.md`, `github/<오늘>.md` 작성 (템플릿·스타일은 WORKFLOW 참고; GitHub는 카드 형식 `templates/github-item.md`, 레포마다 `gh api` 로 README·릴리스·라이선스 확인). 각 항목 원문의 `og:image` 를 찾아 `### 미디어` 에 핫링크(WORKFLOW 3·4장). 각 뉴스 항목에 `### 논조·다른 시각` 작성(웹 검색으로 다른 매체·반응 확인)
-3. `_data/highlights.yml` 맨 위에 오늘 날짜 하이라이트 추가 (날짜 목록·분야 링크는 사이트가 폴더에서 **자동 생성**하므로 목차 표 편집 불필요)
+3. 뉴스 작성 후 [`docs/ARTICLE-INDEX.md`](docs/ARTICLE-INDEX.md)의 색인·중복 검토를 완료하고 `python3 scripts/article-index.py gate YYYY-MM-DD`가 성공해야 게시한다. 주말 또는 GitHub/발표 미완성일에도 필수다. 원본을 수정한 날짜는 색인을 명시적으로 갱신·재검토한다. 이후 `_data/highlights.yml` 맨 위에 오늘 날짜 하이라이트 추가 (날짜 목록·분야 링크는 사이트가 폴더에서 **자동 생성**하므로 목차 표 편집 불필요)
 4. **뉴스와 GitHub 양쪽 완성 후 하루 발표 생성:** `python3 scripts/build-daily.py YYYY-MM-DD --audio --audio-backend sohee --if-ready` → 생성 완료면 `python3 scripts/build-daily.py YYYY-MM-DD --check`. PENDING이면 체크를 보류한다. 한쪽만 있으면 PENDING으로 남기고, 두 번째 발행 루틴이 반드시 생성한다. 기존 판의 아카이브가 바뀌었거나 다른 작성자가 동일 날짜 파일을 만들면 덮어쓰지 말고 중단·보고한다. Sohee 실행 환경·공식 모델·합성/검증이 준비되지 않으면 무음 성공이나 임의 음성 대체로 게시하지 말고 막힌 단계를 보고한다. 실행 전에 `docs/SOHEE-CLOUD.md`의 별도 환경·캐시 설정을 적용한다.
 5. `git add -A && git commit -m "briefings: YYYY-MM-DD news + github trends" && git pull --rebase && git push origin main` → Pages `built` 확인
 

@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-09",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-09/AI.md": "838fe5ce078e473241dafda7d8aa1ba7e52f33729bb4cba01319dae0521535e6",
+    "news/2026-10-09/IT.md": "3ac0b53c9d179ca7950b124db7173f95fa402eeaa555551c36c422afc0e67daa",
+    "news/2026-10-09/모델.md": "2acba62a9ae73c129edfacc0463087d265bc2bee68d086f6cd8836baf112f04b",
+    "news/2026-10-09/엔진.md": "98c92d9355de7f4a7c39fa1254907923ff5b306ae09e1b276870691fd2fb7719"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-09/AI/1",
+      "article_id": "url-34de0981eaae0131b15c4a8a51e3140952839ada9f316fa1f70cd059e3fd58a0",
+      "revision_id": "editorial-cbcc1ba95e5bee39c5600daaaf0cd5dab0c12e5d9d2057750150c45e928587d9",
+      "briefing_date": "2026-10-09",
+      "category": "AI",
+      "heading": "1. 구글 클라우드, 기업용 Gemini agent 공개 — 목표만 주면 계획·도구·시스템 연동까지",
+      "title": "구글 클라우드, 기업용 Gemini agent 공개 — 목표만 주면 계획·도구·시스템 연동까지",
+      "summary": "구글이 8일 Gemini at Work 2026에서 Gemini agent(질문에 답하는 것을 넘어 업무를 대신 수행하는 통합 에이전트) 를 기업 대상으로 먼저 공개했습니다. 순다르 피차이 CEO는 Gemini 월간 활성 이용자가 10억 명 이상, Fortune 100의 약 90%가 Gemini Enterprise를 쓴다고 밝혔고, 보안·규모·성능 문제를 먼저 풀기 위해 B2B(기업) 우선 후 소비자 확대 순서를 택했다고 설명했습니다.",
+      "source_urls": [
+        "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+      ],
+      "canonical_urls": [
+        "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/AI.md",
+      "archive_url": "/news/2026-10-09/AI.html#1-구글-클라우드-기업용-gemini-agent-공개--목표만-주면-계획도구시스템-연동까지",
+      "section_sha256": "f5dc0c50e5036431d35b90a3f35fe057c77c28dac46cd8de01e9992aa965571f",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/AI/2",
+      "article_id": "url-8a91476189cc19d34a4f6c96c4122596c1f28528f946b9249cfc1fe799f22967",
+      "revision_id": "editorial-f78220948b4a7ace8a377ab0563560de8984024961e4f880eca60eae0cdd42c7",
+      "briefing_date": "2026-10-09",
+      "category": "AI",
+      "heading": "2. Anthropic, OSS Scanner 공개 — 오픈소스 취약점 스캔을 옵트인·무료로",
+      "title": "Anthropic, OSS Scanner 공개 — 오픈소스 취약점 스캔을 옵트인·무료로",
+      "summary": "Anthropic이 Project Glasswing(클로드로 취약점을 찾는 내부·파트너 보안 프로그램) 경험을 바탕으로, 오픈소스 프로젝트가 신청하면 최강 모델로 주기적 보안 스캔을 무료로 받는 OSS Scanner를 8일 공개했습니다. Google OSS-Fuzz(퍼저로 OSS를 자동 검사하는 프로젝트) 에 영감을 받았다고 밝혔습니다. 기업용 Claude Security와 달리 OSS 유지보수 팀을 대상으로 합니다.",
+      "source_urls": [
+        "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source"
+      ],
+      "canonical_urls": [
+        "https://www.anthropic.com/research/launching-opt-in-vuln-finding-service-for-open-source"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/AI.md",
+      "archive_url": "/news/2026-10-09/AI.html#2-anthropic-oss-scanner-공개--오픈소스-취약점-스캔을-옵트인무료로",
+      "section_sha256": "ebdfb8d10d3b7e1c6379583b45d7324aba57e70d11a5e3afa095335588add11b",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/AI/3",
+      "article_id": "url-6c062b861d6d205bc313e939a094b3dab87b6b0c40df64dfabe563ffb4db5445",
+      "revision_id": "editorial-0a0dc2976063cf678f64e3f52a0f864bc14db87c0cf77f54b955b0e346e9e36d",
+      "briefing_date": "2026-10-09",
+      "category": "AI",
+      "heading": "3. Anthropic, DOE Genesis Mission에 3년간 1억 5천만 달러 지원",
+      "title": "Anthropic, DOE Genesis Mission에 3년간 1억 5천만 달러 지원",
+      "summary": "Anthropic이 미국 에너지부(DOE) 주도 Genesis Mission(국가 연구소·산업·학계가 AI로 과학·에너지·안보 돌파를 가속하려는 연방 이니셔티브) 에 앞으로 3년간 1억 5천만 달러를 투입한다고 8일 발표했습니다. 자금은 NASA·NIH·NSF 등 미션 참여 15개 이상 기관에 Claude를 제공하는 데 쓰입니다. 백악관 OSTP의 “Science: A New Golden Age” 서밋에서 발표했습니다.",
+      "source_urls": [
+        "https://www.anthropic.com/news/genesis-mission-commitment"
+      ],
+      "canonical_urls": [
+        "https://www.anthropic.com/news/genesis-mission-commitment"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/AI.md",
+      "archive_url": "/news/2026-10-09/AI.html#3-anthropic-doe-genesis-mission에-3년간-1억-5천만-달러-지원",
+      "section_sha256": "15c1cc17bb80edf051c4ad012a7e8e280d94e1c9d38b4a57a7f283031affbb82",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/AI/4",
+      "article_id": "url-19113621a8008e5cb6735115682702537aedab6294baa034768a054fb5db1d7b",
+      "revision_id": "editorial-1014dbf8128a145a401d6a61de075d43d246ad86ff14c5717b028fd2a1d6a352",
+      "briefing_date": "2026-10-09",
+      "category": "AI",
+      "heading": "4. OpenAI, GPT-6.1 Sol Ultrafast 모드 롤아웃 — API·Codex·ChatGPT Work",
+      "title": "OpenAI, GPT-6.1 Sol Ultrafast 모드 롤아웃 — API·Codex·ChatGPT Work",
+      "summary": "OpenAI가 8일(UTC) GPT-6.1 Sol에 Ultrafast(초저지연 서빙 티어) 모드를 API·Codex·ChatGPT Work에 롤아웃한다고 개발자 커뮤니티에 공지했습니다. 회사 표현으로는 Sol Standard 대비 최대 약 8배 빠르고, 지능은 Astra에 가깝다고 합니다. API 가격은 입력 100만 토큰당 12달러·출력 60달러로, Astra의 약 1.2배 수준이라고 밝혔습니다.",
+      "source_urls": [
+        "https://community.openai.com/t/ultrafast-is-rolling-out-today-for-gpt-6-1-sol-in-the-api-codex-and-chatgpt-work/1404475"
+      ],
+      "canonical_urls": [
+        "https://community.openai.com/t/ultrafast-is-rolling-out-today-for-gpt-6-1-sol-in-the-api-codex-and-chatgpt-work/1404475"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/AI.md",
+      "archive_url": "/news/2026-10-09/AI.html#4-openai-gpt-61-sol-ultrafast-모드-롤아웃--apicodexchatgpt-work",
+      "section_sha256": "f6f5b3f2a474d99ddfe8e7d2fc56ee91d5e02f5919e13333118b54775af4f4a3",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/IT/1",
+      "article_id": "url-56a12a89a73dab00cdd6895995a6196ad1ea3c5b34d5f4e86478f4eb140841e6",
+      "revision_id": "editorial-e0dcf1f3bc1b1537996e5027b3fb354703d748b3dde072b347ac1b5f8b377fca",
+      "briefing_date": "2026-10-09",
+      "category": "IT",
+      "heading": "1. 삼성전자 3분기 잠정실적 — 매출 195조·영업익 107.4조, 분기 영업익 100조 돌파",
+      "title": "삼성전자 3분기 잠정실적 — 매출 195조·영업익 107.4조, 분기 영업익 100조 돌파",
+      "summary": "삼성전자가 8일 연결 기준 2026년 3분기 잠정실적(확정 전 회사가 먼저 공개하는 대략적 실적) 으로 매출 195조 원, 영업이익 107.4조 원을 발표했습니다. 전년 동기 대비 매출은 126.59%, 영업이익은 782.50% 늘었고, 직전 분기 대비로는 매출 13.70%, 영업이익 20.01% 증가했습니다. 국내 기업 가운데 분기 영업이익 100조 원을 넘은 첫 사례로 보도됐습니다.",
+      "source_urls": [
+        "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C"
+      ],
+      "canonical_urls": [
+        "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-2026%EB%85%84-3%EB%B6%84%EA%B8%B0-%EC%9E%A0%EC%A0%95%EC%8B%A4%EC%A0%81-%EB%B0%9C%ED%91%9C"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/IT.md",
+      "archive_url": "/news/2026-10-09/IT.html#1-삼성전자-3분기-잠정실적--매출-195조영업익-1074조-분기-영업익-100조-돌파",
+      "section_sha256": "69ce9c6e0288330e110481cafdad0d985a86a71b1597148e555d9c525bdd44d1",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/IT/2",
+      "article_id": "url-1781466722fd7ab51c8888ab47d86061750ee54c0d717d81329fbed08682c913",
+      "revision_id": "editorial-7d903c25558646c13d4ae7a731c8ce37f6aa0d16e56731e32abd550baba799c5",
+      "briefing_date": "2026-10-09",
+      "category": "IT",
+      "heading": "2. 브로드컴, OpenAI 커스텀 AI 칩용 500억 달러 이상 자금 조달 추진 — WSJ",
+      "title": "브로드컴, OpenAI 커스텀 AI 칩용 500억 달러 이상 자금 조달 추진 — WSJ",
+      "summary": "월스트리트저널(WSJ)에 따르면 브로드컴이 OpenAI와 공동 개발 중인 커스텀 AI 칩(특정 고객용으로 설계한 가속기) 구매·배치를 위해 프라이빗 크레딧(비공개 대출·채권성 자금) 으로 500억 달러가 넘는 조달을 추진 중입니다. 아폴로·블랙스톤 등이 논의에 참여한 것으로 알려졌고, 협상은 초기 단계라 규모가 바뀔 수 있으며 연말 클로즈를 목표로 한다는 보도입니다.",
+      "source_urls": [
+        "https://investinglive.com/stocks/wsj-broadcom-seeks-over-50-billion-for-openai-chips-as-oracle-spacex-chase-ai-debt-deals/"
+      ],
+      "canonical_urls": [
+        "https://investinglive.com/stocks/wsj-broadcom-seeks-over-50-billion-for-openai-chips-as-oracle-spacex-chase-ai-debt-deals/"
+      ],
+      "publication_note": "2026-10-07~08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/IT.md",
+      "archive_url": "/news/2026-10-09/IT.html#2-브로드컴-openai-커스텀-ai-칩용-500억-달러-이상-자금-조달-추진--wsj",
+      "section_sha256": "64a026b1b11d411b0d1bab93015710ac8f082461921838142e3aad3c32a3529c",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/IT/3",
+      "article_id": "url-2db566b1454e3ee36d4463288d47de34d64466989bb555bdb985383b847b1a91",
+      "revision_id": "editorial-b47eb23a827043852f174138a68a92a4658a37452e1472e3867df8a058a6e25a",
+      "briefing_date": "2026-10-09",
+      "category": "IT",
+      "heading": "3. GlobalFoundries–TSMC, 미 뉴욕 몰타서 AI용 실리콘 인터포저 공급 — 5년·약 20억 달러",
+      "title": "GlobalFoundries–TSMC, 미 뉴욕 몰타서 AI용 실리콘 인터포저 공급 — 5년·약 20억 달러",
+      "summary": "GlobalFoundries(GF)가 TSMC의 CoWoS(Chip-on-Wafer-on-Substrate, AI GPU·HBM을 한 패키지로 묶는 고급 패키징) 생태계에 들어갈 실리콘 인터포저(칩과 기판 사이 배선층) 를 미국 뉴욕주 몰타 공장에서 생산하기로 TSMC와 다년 협약을 발표했습니다. 보도에 따르면 초기 약 5년·20억 달러 규모이며, 수요에 따라 용량을 늘릴 수 있는 틀입니다.",
+      "source_urls": [
+        "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/"
+      ],
+      "canonical_urls": [
+        "https://gf.com/news-and-events/news/globalfoundries-reaches-agreement-to-establish-us-based-supply-of-silicon-interposers-for-advanced-ai-packaging/"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/IT.md",
+      "archive_url": "/news/2026-10-09/IT.html#3-globalfoundriestsmc-미-뉴욕-몰타서-ai용-실리콘-인터포저-공급--5년약-20억-달러",
+      "section_sha256": "7be015306d9130adc40a16bd51952632f234f394592af3314998da29a2a3f12b",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/IT/4",
+      "article_id": "url-4d89d88e06bf501275418533c782af52f65da1914b78a6e52e4692497316b768",
+      "revision_id": "editorial-78ba70ebf039a789b7235effa9b8a4c290a232f21f39dc3304cefde5c763f9dd",
+      "briefing_date": "2026-10-09",
+      "category": "IT",
+      "heading": "4. 엔비디아 DCGM Exporter 고위험 취약점 CVE-2026-47483 — 인터넷에 노출된 GPU 모니터링",
+      "title": "엔비디아 DCGM Exporter 고위험 취약점 CVE-2026-47483 — 인터넷에 노출된 GPU 모니터링",
+      "summary": "데이터센터 보안 스타트업 Lava 연구원이 엔비디아 DCGM Exporter(GPU 상태·성능 지표를 HTTP로 내보내는 모니터링 도구) 의 고위험 결함을 보고했고, 엔비디아는 CVE-2026-47483(공개 취약점 식별 번호)으로 추적하며 CVSS(공통 취약점 점수) 8.2(High)를 부여했습니다. 인증 없이 다량 요청을 보내면 익스포터가 메모리 부족으로 크래시해 GPU 가시성이 끊기고, 훈련·추론 워크로드에도 영향을 줄 수 있습니다. 수정은 버전 4.8.2 이상입니다.",
+      "source_urls": [
+        "https://www.theregister.com/security/2026/10/08/high-severity-nvidia-bug-could-crash-gpu-monitoring-on-exposed-servers/5302077"
+      ],
+      "canonical_urls": [
+        "https://www.theregister.com/security/2026/10/08/high-severity-nvidia-bug-could-crash-gpu-monitoring-on-exposed-servers/5302077"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/IT.md",
+      "archive_url": "/news/2026-10-09/IT.html#4-엔비디아-dcgm-exporter-고위험-취약점-cve-2026-47483--인터넷에-노출된-gpu-모니터링",
+      "section_sha256": "ba187bbd32082f0e2d45c4fa351b5a8fe91f6ec0e3be6f849d9241b37694e40f",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/IT/5",
+      "article_id": "url-a82f279323600bf0b4e5e5847416be08813b146f9564410257548d8aef0c08f7",
+      "revision_id": "editorial-48df8d67662e9d49b3aeed7a727bd5826bc634d894dfd61a103b18e568c5c4fd",
+      "briefing_date": "2026-10-09",
+      "category": "IT",
+      "heading": "5. Shai-Hulud 웜, Tensorlake npm SDK 침투 — AI 에이전트 인프라로 확산",
+      "title": "Shai-Hulud 웜, Tensorlake npm SDK 침투 — AI 에이전트 인프라로 확산",
+      "summary": "자격증명 탈취형 웜(자기 확산형 악성코드) Shai-Hulud가 AI 에이전트 플랫폼 Tensorlake의 npm SDK 0.5.144에 침투한 것으로 보안 연구자들이 8일(UTC) 보고했습니다. 해당 패키지는 주간 다운로드 약 1만 2,000회·GitHub 스타 1,000개 이상으로, 설치 스크립트가 개발자 PC나 빌드 서버에서 실행될 수 있어 Tensorlake 샌드박스 밖 호스트를 먼저 감염시킬 수 있다고 Socket 등이 경고했습니다.",
+      "source_urls": [
+        "https://www.theregister.com/security/2026/10/08/shai-hulud-worm-makes-jump-to-ai-infrastructure-with-tensorlake-compromise/5302054"
+      ],
+      "canonical_urls": [
+        "https://www.theregister.com/security/2026/10/08/shai-hulud-worm-makes-jump-to-ai-infrastructure-with-tensorlake-compromise/5302054"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/IT.md",
+      "archive_url": "/news/2026-10-09/IT.html#5-shai-hulud-웜-tensorlake-npm-sdk-침투--ai-에이전트-인프라로-확산",
+      "section_sha256": "3c7e8356071260c076aa6b1d29396d42638a04d74eb48b1c1984d286922b8fe4",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/모델/1",
+      "article_id": "url-b6d182abb572ced493c6f1d28680c6a7fbd8b0d945cc0d92a8874de450890fb8",
+      "revision_id": "editorial-2399cac8b6a2569fc4b25c05e93de634efef1064ccd6651c16f81bd71a2f14bb",
+      "briefing_date": "2026-10-09",
+      "category": "모델",
+      "heading": "1. JetBrains Mellum2.1 — 코딩 에이전트용 12B MoE 오픈 모델 후속",
+      "title": "JetBrains Mellum2.1 — 코딩 에이전트용 12B MoE 오픈 모델 후속",
+      "summary": "JetBrains가 6월에 오픈소스화한 Mellum2의 후속 Mellum2.1을 공개했습니다. 아키텍처는 그대로 12B MoE(Mixture-of-Experts, 전문가 혼합·활성 파라미터만 쓰는 구조) ·활성 약 2.5B·Apache 2.0 라이선스입니다. 달라진 것은 사전학습 이후 단계로, 실제 환경에서 강화학습(RL) 을 대규모로 돌려 코드베이스를 탐색·파일 수정·자체 검증까지 하도록 다듬었다고 합니다.",
+      "source_urls": [
+        "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
+      ],
+      "canonical_urls": [
+        "https://blog.jetbrains.com/ai/2026/10/mellum2-1-gets-to-work-a-fast-open-model-for-coding-agents/"
+      ],
+      "publication_note": "2026-10 (JetBrains 블로그)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/모델.md",
+      "archive_url": "/news/2026-10-09/모델.html#1-jetbrains-mellum21--코딩-에이전트용-12b-moe-오픈-모델-후속",
+      "section_sha256": "2539ef750f09958b9e6139f441e092a919fbed178f4070133c7289bb02eeec61",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/모델/2",
+      "article_id": "url-a808e320a08a611ac81f84ecc63365f9e062f8fcbdd2f7339c7f6a7b35a7fce1",
+      "revision_id": "editorial-d765f324c90bf567d37b5c7859c9426701b0458dd0c3daf6a6eac0b600e04ccb",
+      "briefing_date": "2026-10-09",
+      "category": "모델",
+      "heading": "2. Hugging Face Bio Carbon-A — 1.2B 유전체 주석 모델·5.66억 유전자 후보 DB",
+      "title": "Hugging Face Bio Carbon-A — 1.2B 유전체 주석 모델·5.66억 유전자 후보 DB",
+      "summary": "Hugging Face Bio가 DNA에서 단백질 코딩 구간을 직접 예측하는 Carbon-Annotator(Carbon-A) 1.2B 모델과, 그걸로 GenBank 진핵생물 조립본을 돌린 Carbon Annotation Database(CADB) 를 8일 공개했습니다. 컨텍스트 창은 98,304 bp(염기쌍), 양가닥·뉴클레오타이드 해상도 예측이며, 포유류·기타 척추·무척추·식물·균류·원생생물에 한 모델로 대응한다고 합니다.",
+      "source_urls": [
+        "https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation"
+      ],
+      "canonical_urls": [
+        "https://huggingface.co/blog/HuggingFaceBio/carbon-annotator-genbank-genome-annotation"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/모델.md",
+      "archive_url": "/news/2026-10-09/모델.html#2-hugging-face-bio-carbon-a--12b-유전체-주석-모델566억-유전자-후보-db",
+      "section_sha256": "f0aaa8de139b59b8fda61d1d221a9d4ea101ed53ffd28a8486c3e4f848d51b19",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/모델/3",
+      "article_id": "url-8c45142199b11dd8ad4e8bbf26a76458d27f9e0d90cb63bd1b4bd9483972eacd",
+      "revision_id": "editorial-917bce8915f5cc257734994c82297efcfa2e7dfa0d4b891febaa981c0cbaf0c9",
+      "briefing_date": "2026-10-09",
+      "category": "모델",
+      "heading": "3. LightOnOCR-3 — 0.8B·4B 문서 이해 OCR 패밀리 (Apache 2.0)",
+      "title": "LightOnOCR-3 — 0.8B·4B 문서 이해 OCR 패밀리 (Apache 2.0)",
+      "summary": "프랑스 LightOn이 LightOnOCR-3 패밀리를 공개했습니다. 단순 텍스트 전사에 더해 레이아웃·바운딩 박스, 이미지 설명, 차트·과학 그림 데이터 추출까지 한 모델 호출로 처리하는 것이 핵심입니다. 크기는 회사·보도에 따라 0.8B·4B(일부 자료는 1B도 언급)이며 Apache 2.0으로 상업 이용·개조·재배포가 가능합니다.",
+      "source_urls": [
+        "https://www.lighton.ai/research/lightonocr-3"
+      ],
+      "canonical_urls": [
+        "https://www.lighton.ai/research/lightonocr-3"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/모델.md",
+      "archive_url": "/news/2026-10-09/모델.html#3-lightonocr-3--08b4b-문서-이해-ocr-패밀리-apache-20",
+      "section_sha256": "49ba80e9388b8ef59beef964b7ab764b2a7fbdfe2a71f86df88ce20315143bc2",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/엔진/1",
+      "article_id": "url-4f8bbc5cc6eedd4e461b193fb51c01807c02ba9cd5eafd4c140d399450e424bd",
+      "revision_id": "editorial-adbc009ca8962db81c823681d0af5ace22c471c67d600bb2288707a74e0deb55",
+      "briefing_date": "2026-10-09",
+      "category": "엔진",
+      "heading": "1. llama.cpp b11499 — CUDA roll non-contiguous 수정·다중 플랫폼 바이너리",
+      "title": "llama.cpp b11499 — CUDA roll non-contiguous 수정·다중 플랫폼 바이너리",
+      "summary": "ggml-org llama.cpp가 8일(UTC) 프리릴리스 b11499를 올렸습니다. 핵심 변경은 CUDA 백엔드에서 roll 연산(텐서를 축 방향으로 순환 이동) 이 non-contiguous(메모리상 연속이 아닌) 텐서도 바이트 스트라이드로 처리할 수 있게 한 수정(#29547)입니다. GPU에서 일부 연산이 깨지던 케이스를 줄이는 성격입니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11499"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11499"
+      ],
+      "publication_note": "2026-10-08",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/엔진.md",
+      "archive_url": "/news/2026-10-09/엔진.html#1-llamacpp-b11499--cuda-roll-non-contiguous-수정다중-플랫폼-바이너리",
+      "section_sha256": "61d917fc19062e53264f5c7e591791a254c9907ca5016f0ef057dd3165695db0",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-09/엔진/2",
+      "article_id": "url-37acfe428526cde8f1d9fac5c3c1ca73487cc6d2e887f82684a7926aa7e8be11",
+      "revision_id": "editorial-6ae88667dab7179f730823ae77e5473404418099e574c53eef5d8d113188e7e9",
+      "briefing_date": "2026-10-09",
+      "category": "엔진",
+      "heading": "2. Ollama v0.40.1 — 클라우드 usage/balance API 프록시·Windows 대용량 모델 수정",
+      "title": "Ollama v0.40.1 — 클라우드 usage/balance API 프록시·Windows 대용량 모델 수정",
+      "summary": "Ollama가 v0.40.1을 냈습니다. 서버가 클라우드 usage·balance API(사용량·잔액 조회) 를 프록시할 수 있게 됐고(#18829), Windows에서 2GiB를 넘는 모델 헤드 읽기 버그(#18777)·매니페스트 심볼릭 링크(바로가기형 파일 링크) 회피(#18852)가 들어갔습니다. CLI 온보딩에서 계정 단계가 빠졌고(#18826), 업스트림에 반영된 MLX Metal residency 패치는 제거됐습니다(#18854).",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.1"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.1"
+      ],
+      "publication_note": "2026-10-07",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-09/엔진.md",
+      "archive_url": "/news/2026-10-09/엔진.html#2-ollama-v0401--클라우드-usagebalance-api-프록시windows-대용량-모델-수정",
+      "section_sha256": "85768ff68ba99518575755ab6579ecd0305af3edbe2b35c12d6145d18c9df810",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-14",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-14/AI.md": "2e54679bb411dfcf3ced8945249a92a07ca3b426cfcc0e76ba3f83eec97352cf",
+    "news/2026-10-14/IT.md": "10fced162231f524263bcad3ce5f1ca01e1bbe2ced6ad075b684a1b21a5c80ce",
+    "news/2026-10-14/모델.md": "ec534853a25107a44371412b448ee2acae61451f5b205d290c96421762635839",
+    "news/2026-10-14/엔진.md": "f1a8c661f682805c7ef7da08268e9e7b59c0e19a41fdc4d4b3160a8dd41db442"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-14/AI/1",
+      "article_id": "url-6dcf433c6f6630bf7f9096ab0b6461affe0b0bf170371c1d3b50d35212fbafc0",
+      "revision_id": "editorial-f8604ec9a44190f24382bdfd073af8104ba47f3e8c9ffafcad81e1d924f5faa6",
+      "briefing_date": "2026-10-14",
+      "category": "AI",
+      "heading": "1. Anthropic, 상장 앞두고 3분기 실적 첫 공개 예정 — 기관투자자 대상, '사상 최대 IPO' 가늠자",
+      "title": "Anthropic, 상장 앞두고 3분기 실적 첫 공개 예정 — 기관투자자 대상, '사상 최대 IPO' 가늠자",
+      "summary": "CNBC는 사정을 아는 두 사람을 인용해, Anthropic이 수요일(미국 현지 14일) 샌프란시스코 본사에 모이는 기관투자자들에게 3분기 재무 실적을 처음으로 공개할 계획이라고 보도했습니다. 블룸버그가 먼저 이 모임을 보도했고, Anthropic은 논평을 거부했습니다. 회사는 올해 초 SEC(Securities and Exchange Commission, 미국 증권거래위원회) 에 비공개로 상장 서류를 냈지만 S-1(Form S-1, 미국 상장 신고서 — 재무제표가 담긴 공개 문서) 재무 내용은 아직 공개하지 않았습니다.",
+      "source_urls": [
+        "https://www.cnbc.com/2026/10/13/anthropic-q3-financials-ipo.html"
+      ],
+      "canonical_urls": [
+        "https://www.cnbc.com/2026/10/13/anthropic-q3-financials-ipo.html"
+      ],
+      "publication_note": "2026-10-13 (미국 EDT 10:50 = 한국 시각 13일 23:50)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/AI.md",
+      "archive_url": "/news/2026-10-14/AI.html#1-anthropic-상장-앞두고-3분기-실적-첫-공개-예정--기관투자자-대상-사상-최대-ipo-가늠자",
+      "section_sha256": "3ba7ec6dd4232401d615060675bed299c7b4e32dd01aca59df7fcf84ab2063d5",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/AI/2",
+      "article_id": "url-709e1a641e3c5ea9787d53beb9777ba2c58765d89c4de18d130db9303a59b34c",
+      "revision_id": "editorial-c6674951daebec045077a36fd8a2814650d543182bfa6c2e26b90dcc920d36a5",
+      "briefing_date": "2026-10-14",
+      "category": "AI",
+      "heading": "2. 워크데이·Anthropic 제휴 — Claude 안에서 Sana 에이전트로 인사·재무 업무, 신원관리 C1.ai 인수도",
+      "title": "워크데이·Anthropic 제휴 — Claude 안에서 Sana 에이전트로 인사·재무 업무, 신원관리 C1.ai 인수도",
+      "summary": "인사·재무 소프트웨어 회사 워크데이가 연례 행사 Workday Rising 2026에서 Anthropic과 새 제휴를 발표했습니다. 직원은 Claude 안에서 워크데이의 AI 에이전트 'Sana'를 불러 HR(Human Resources, 인사) ·재무 데이터를 분석하고 결재까지 할 수 있고, 반대로 Sana가 복잡한 업무를 돌리다 필요한 단계(예: 연봉 인상 이유를 설명하는 관리자 메모 초안)에서만 Claude의 추론을 불러 씁니다. 두 서비스는 MCP(Model Context Protocol, AI가 외부 도구·데이터에 붙는 표준 규격) 로 정보와 작업을 주고받고, 모든 요청에는 워크데이의 기존 권한·결재·감사 기록 규칙이 그대로 적용되며 변경은 사용자가 매번 확인합니다(회사 발표).",
+      "source_urls": [
+        "https://newsroom.workday.com/2026-10-13-Workday-and-Anthropic-Announce-New-Partnership-to-Connect-Reasoning-to-the-Rules-That-Run-the-Business,-Wherever-People-Choose-to-Work"
+      ],
+      "canonical_urls": [
+        "https://newsroom.workday.com/2026-10-13-Workday-and-Anthropic-Announce-New-Partnership-to-Connect-Reasoning-to-the-Rules-That-Run-the-Business,-Wherever-People-Choose-to-Work"
+      ],
+      "publication_note": "2026-10-13 (미국 라스베이거스 Workday Rising 2026)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/AI.md",
+      "archive_url": "/news/2026-10-14/AI.html#2-워크데이anthropic-제휴--claude-안에서-sana-에이전트로-인사재무-업무-신원관리-c1ai-인수도",
+      "section_sha256": "06676a1efcf55a98f99f9280f841783f917d5dc688fa502bc8ebc9696674f2ec",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/AI/3",
+      "article_id": "url-246669d5472c4caf76ed41f8d8a2aa27af8d36f42c129f407c9d5fd3d5d48ecc",
+      "revision_id": "editorial-0b5dab9fbe5533702760ba9997088bdec0bcd3c77a73099101fa7901c134443b",
+      "briefing_date": "2026-10-14",
+      "category": "AI",
+      "heading": "3. Prime Intellect, 소형 비전 모델 Moondream 인수 — 추론 엔진 Photon 통합",
+      "title": "Prime Intellect, 소형 비전 모델 Moondream 인수 — 추론 엔진 Photon 통합",
+      "summary": "오픈 AI 학습·추론 플랫폼 회사 Prime Intellect가 작은 오픈 가중치 VLM(Vision-Language Model, 이미지와 글을 함께 이해하는 모델) 'Moondream'을 만든 회사를 인수했다고 발표했습니다. 공동창업자 비크 코라파티와 제이 앨런이 합류해 추론 사업을 이끌고, 비전·컴퓨터 사용(화면을 보고 조작하는 AI) 같은 멀티모달 연구를 키운다는 계획입니다. 인수 금액은 공개되지 않았습니다.",
+      "source_urls": [
+        "https://www.primeintellect.ai/blog/moondream"
+      ],
+      "canonical_urls": [
+        "https://www.primeintellect.ai/blog/moondream"
+      ],
+      "publication_note": "2026-10-13",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/AI.md",
+      "archive_url": "/news/2026-10-14/AI.html#3-prime-intellect-소형-비전-모델-moondream-인수--추론-엔진-photon-통합",
+      "section_sha256": "2254a31b085d52873ee8b13bc4dbc36a92ff42758edb1952fc4443083697f9fb",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/AI/4",
+      "article_id": "url-195bfbc46d4fc31c8b5af0edcc9d2826c4a15154f0a1a9216ec4377905687e69",
+      "revision_id": "editorial-7124ae8659b56c1062c62c0301c1bf3a9e3660e55fab116bfbd8b78782212844",
+      "briefing_date": "2026-10-14",
+      "category": "AI",
+      "heading": "4. 젠슨 황 \"유럽, 경주에 뛰어들어야\" — 일주일 안에 20억 달러 추가 투자 발표 예고, 프랑스 스타트업 4곳 투자",
+      "title": "젠슨 황 \"유럽, 경주에 뛰어들어야\" — 일주일 안에 20억 달러 추가 투자 발표 예고, 프랑스 스타트업 4곳 투자",
+      "summary": "엔비디아 젠슨 황 CEO가 유럽 순방 첫날인 13일 파리에서 일주일 안에 20억 달러 규모의 유럽 투자를 발표하겠다고 밝혔습니다. 블룸버그 보도 기준으로 지난 1년간 유럽에 넣은 80억 달러에 더해지는 금액으로, 합치면 약 100억 달러입니다. 같은 자리에서 의료 예약 플랫폼 Doctolib, Genesis AI, 기업 계획 소프트웨어 Pigment, 소재 연구 Entalpic 등 프랑스 스타트업 4곳에 대한 투자도 공개했습니다(TNW). 순방은 런던·베를린으로 이어집니다.",
+      "source_urls": [
+        "https://thenextweb.com/news/nvidia-huang-europe-2-billion"
+      ],
+      "canonical_urls": [
+        "https://thenextweb.com/news/nvidia-huang-europe-2-billion"
+      ],
+      "publication_note": "2026-10-13 (UTC 16:34 = 한국 시각 14일 01:34)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/AI.md",
+      "archive_url": "/news/2026-10-14/AI.html#4-젠슨-황-유럽-경주에-뛰어들어야--일주일-안에-20억-달러-추가-투자-발표-예고-프랑스-스타트업-4곳-투자",
+      "section_sha256": "4f06f7951658382e869d985210b55e4ee897a81195af5c816fa0e6d6b78f09b3",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/IT/1",
+      "article_id": "url-4ec6407b9da1210806e0c84d70d622eff17e587a52f72a241194c82a08edbf93",
+      "revision_id": "editorial-12927d61e8e3a955f410cdddfed673d9ef1f490468236c5eaae23338b3d2ec4e",
+      "briefing_date": "2026-10-14",
+      "category": "IT",
+      "heading": "1. 코스피 5.46% 급락 'CXMT 쇼크' — 삼성전자 -7.39%·SK하이닉스 -10.09%, 공포지수 19% 급등",
+      "title": "코스피 5.46% 급락 'CXMT 쇼크' — 삼성전자 -7.39%·SK하이닉스 -10.09%, 공포지수 19% 급등",
+      "summary": "13일 코스피가 전 거래일보다 348.89포인트(5.46%) 내린 6,035.35로 마감했습니다. 3.10% 내린 6,186.08로 출발해 장중 한때 5,911.11(-7.41%)까지 밀렸고, 개장 직후에는 8월 19일 이후 약 두 달 만에 매도 사이드카(프로그램 매매의 매도 호가 효력을 잠시 멈추는 시장 안정 장치) 가 발동됐습니다. 코스피는 6일부터 5거래일 연속 총 968.39포인트(13.83%) 떨어졌고, 시가총액은 4,979조 원으로 7월 30일 이후 처음 5,000조 원 아래로 내려왔습니다. 한국형 공포지수인 VKOSPI(KOSPI 200 Volatility Index, 코스피200 변동성지수 — 앞으로 시장이 얼마나 출렁일지에 대한 투자자 예상) 는 19.15% 급등한 48.53으로, 3월 4일 이후 가장 큰 하루 상승률을 기록했습니다(연합뉴스).",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20261013101451008"
+      ],
+      "canonical_urls": [
+        "https://www.yna.co.kr/view/AKR20261013101451008"
+      ],
+      "publication_note": "2026-10-13 (KST 16:22 송고)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/IT.md",
+      "archive_url": "/news/2026-10-14/IT.html#1-코스피-546-급락-cxmt-쇼크--삼성전자--739sk하이닉스--1009-공포지수-19-급등",
+      "section_sha256": "1918e6bd1f1674f44f57ab4f1e2cf5d131ed059ff47143b6c7a27a5424d1f9e0",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/IT/2",
+      "article_id": "url-6d5f004d3883642dce86d8504fb3d52148e222e67e1e9b770b9cf75a80a84762",
+      "revision_id": "editorial-4c24009c6c0a55e6e731667b919dc52dae638e8af6d5481008b743d36e0bbd6c",
+      "briefing_date": "2026-10-14",
+      "category": "IT",
+      "heading": "2. 마이크로소프트 10월 패치 화요일, 사상 최대 1,411개 취약점 수정 — 실제 악용 제로데이 1건(MotW 우회)",
+      "title": "마이크로소프트 10월 패치 화요일, 사상 최대 1,411개 취약점 수정 — 실제 악용 제로데이 1건(MotW 우회)",
+      "summary": "마이크로소프트가 매달 둘째 화요일에 내는 정기 보안 업데이트(패치 화요일)에서 10월에는 BleepingComputer 집계 기준 1,411개라는 사상 최대 규모의 취약점을 고쳤습니다. 이 가운데 70개가 '긴급(Critical)' 등급이고, 그중 57개는 RCE(Remote Code Execution, 원격에서 공격자가 임의 코드를 실행할 수 있는 취약점), 11개는 EoP(Elevation of Privilege, 권한 상승 — 낮은 권한으로 관리자 권한을 얻는 취약점), 2개는 스푸핑(위장)입니다. 집계 방식에 따라 숫자가 조금씩 달라서 ZDI(Zero Day Initiative, 트렌드마이크로의 취약점 연구·보상 프로그램)는 1,415개, SANS ISC는 1,417개로 셌습니다.",
+      "source_urls": [
+        "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/"
+      ],
+      "canonical_urls": [
+        "https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/"
+      ],
+      "publication_note": "2026-10-13 (미국 PT 10:00 배포 = 한국 시각 14일 새벽 2시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/IT.md",
+      "archive_url": "/news/2026-10-14/IT.html#2-마이크로소프트-10월-패치-화요일-사상-최대-1411개-취약점-수정--실제-악용-제로데이-1건motw-우회",
+      "section_sha256": "1c79ffea2a61ece7be3f1ba6184a7b293dd64dde34a1e75f1804a5fdc848cfda",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/IT/3",
+      "article_id": "url-a59a9af7ace6e94c96f7bf603ab198222d2fefe34a2a64409ac0269f8119faab",
+      "revision_id": "editorial-04dc5f1294c6202e996a0533251bd5de971aaa533dc19c02e77a7290af7c5928",
+      "briefing_date": "2026-10-14",
+      "category": "IT",
+      "heading": "3. 이반티 Connect Secure VPN 제로데이 CVE-2026-104935 실제 악용 — 3개 연쇄 중 권한 상승 1건은 아직 미패치",
+      "title": "이반티 Connect Secure VPN 제로데이 CVE-2026-104935 실제 악용 — 3개 연쇄 중 권한 상승 1건은 아직 미패치",
+      "summary": "이반티가 13일(현지) 기업용 VPN(Virtual Private Network, 회사 내부망에 밖에서 안전하게 접속하게 해 주는 가상 사설망) 장비 'Connect Secure'의 제로데이 CVE-2026-104935 가 실제 공격에 쓰이고 있다고 경고했습니다. 등급은 '높음(High)'이고, 로그인 없이 원격에서 명령을 실행할 수 있는 인증 우회 버그입니다. 이반티는 \"제한된 수의 고객\"이 영향을 받았다고 밝혔습니다(SecurityWeek).",
+      "source_urls": [
+        "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/"
+      ],
+      "canonical_urls": [
+        "https://www.securityweek.com/ivanti-zero-day-chain-gave-attackers-root-access-to-fully-patched-vpn/"
+      ],
+      "publication_note": "2026-10-13 (미국 ET 14:43 = 한국 시각 14일 03:43)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/IT.md",
+      "archive_url": "/news/2026-10-14/IT.html#3-이반티-connect-secure-vpn-제로데이-cve-2026-104935-실제-악용--3개-연쇄-중-권한-상승-1건은-아직-미패치",
+      "section_sha256": "3d579261d050f23ba4514e1f949b16940c54c76dfd492a3767da9edec70adf05",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/모델/1",
+      "article_id": "url-74c9e10c02543c499970682cdc00d05dd116e332e885e53c72a5b5135c768141",
+      "revision_id": "editorial-658e4a022ddbea3b50922690b942f42f3abb08195a95f7ba6dbbbc78fa523c75",
+      "briefing_date": "2026-10-14",
+      "category": "모델",
+      "heading": "1. 구글 Gemini 4 Argon 정식 출시 — 입력 100만 토큰당 2달러(11/30까지), API 100만 토큰 입출력 한도",
+      "title": "구글 Gemini 4 Argon 정식 출시 — 입력 100만 토큰당 2달러(11/30까지), API 100만 토큰 입출력 한도",
+      "summary": "구글이 새 프론티어 모델 Gemini 4 Argon 을 13일(UTC) 전 세계에 정식 공개했습니다. 9월 30일 처음 발표하면서 'Fairwind 프로그램'으로 신뢰할 수 있는 사이버 방어 전문가들에게만 먼저 열었던 모델로, 이번에 개발자·기업·일반 사용자에게 넓혔습니다. 개발자는 Gemini API(Application Programming Interface, 프로그램끼리 기능을 주고받는 창구) 유료 등급(AI Studio·Android Studio), 기업은 Gemini for business와 API, 구글의 에이전트형 개발 도구 Antigravity에서 쓸 수 있고, 일반 사용자는 Google AI Pro·Ultra 구독자에 한해 Gemini 앱과 검색 AI 모드에서 쓸 수 있습니다(구글 블로그). The Verge는 하위 요금제(Plus)나 무료 사용자에게 언제 열릴지는 불분명하다고 전했습니다.",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+      ],
+      "canonical_urls": [
+        "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+      ],
+      "publication_note": "2026-10-13 (UTC 16:00 = 한국 시각 14일 01:00)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/모델.md",
+      "archive_url": "/news/2026-10-14/모델.html#1-구글-gemini-4-argon-정식-출시--입력-100만-토큰당-2달러1130까지-api-100만-토큰-입출력-한도",
+      "section_sha256": "bbe4a866016be5b6fdde110346483a7297d4b51413e08bb06a0cba1db09343c4",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/모델/2",
+      "article_id": "url-364f5f1cad75fb5b888bd305eb4d36ed1dfe682885160c7e1fb6f4bcf2916f1f",
+      "revision_id": "editorial-203288410637b78936c7aa15912559b225d8e01a89861a1aeaf0ddd97a203d00",
+      "briefing_date": "2026-10-14",
+      "category": "모델",
+      "heading": "2. Liquid AI, 온디바이스 에이전트용 오픈 모델 LFM2.5-24B-A2B — 240억 파라미터 중 20억만 사용",
+      "title": "Liquid AI, 온디바이스 에이전트용 오픈 모델 LFM2.5-24B-A2B — 240억 파라미터 중 20억만 사용",
+      "summary": "Liquid AI가 노트북·PC 같은 기기 안에서 돌아가는 에이전트를 겨냥한 LFM2.5-24B-A2B 를 오픈 가중치로 공개했습니다. 전체 파라미터는 240억 개지만 토큰마다 약 20억 개만 쓰는 MoE(Mixture of Experts, 전문가 혼합 — 일부 하위 네트워크만 골라 계산하는 구조) 모델이며, LFM2.5 제품군(2억 3천만~240억 파라미터)의 가장 크고 마지막 모델입니다. 기본(Base) 모델과 에이전트용 후속 학습 모델 두 가지를 Hugging Face에 올렸고, 답하기 전에 항상 생각 과정을 먼저 쓰는 '추론 전용' 모델로 바뀌었습니다.",
+      "source_urls": [
+        "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+      ],
+      "canonical_urls": [
+        "https://www.liquid.ai/blog/lfm2-5-24b-a2b"
+      ],
+      "publication_note": "2026-10-13 (Hugging Face 블로그 UTC 17:05 = 한국 시각 14일 02:05)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/모델.md",
+      "archive_url": "/news/2026-10-14/모델.html#2-liquid-ai-온디바이스-에이전트용-오픈-모델-lfm25-24b-a2b--240억-파라미터-중-20억만-사용",
+      "section_sha256": "f03be91004fca65e5c317f6826ea96cfe8e507c0e09c2e52fc8e0f24718eb409",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/모델/3",
+      "article_id": "url-2b898d1521444b3e7781a9cd0ba8cb310a0a9476547fb2a006368ee7b6dd6ff3",
+      "revision_id": "editorial-85f2427b3fc1c7d69899de6892ab3f2d627f355eb93606c2760b7161850cb29c",
+      "briefing_date": "2026-10-14",
+      "category": "모델",
+      "heading": "3. ScaleDown, '글을 쓰지 않는' 제약 디코딩 모델 공개 — 분류·추출·요약·압축 전용, 100만 토큰 입력",
+      "title": "ScaleDown, '글을 쓰지 않는' 제약 디코딩 모델 공개 — 분류·추출·요약·압축 전용, 100만 토큰 입력",
+      "summary": "스타트업 ScaleDown이 CDM(Constrained Decoding Model, 제약 디코딩 모델 — 자유롭게 글을 쓰지 않고 정해진 답(라벨·입력 속 구간 등)만 고르도록 만든 작업 전용 모델) 제품군을 공개했고, LangChain이 같은 날 통합 패키지(langchain-scaledown)와 사용법을 블로그로 냈습니다. 일반 LLM(Large Language Model, 대규모 언어 모델) 이 토큰을 하나씩 생성하는 것과 달리, CDM은 한 가지 작업만 학습해 허용된 답만 돌려주므로 훨씬 작고 빠르고 싸다는 설명입니다. ScaleDown은 이런 좁은 작업에서 프론티어 모델보다 200배 빠르고 467배 싸다고 주장합니다(회사 발표).",
+      "source_urls": [
+        "https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents"
+      ],
+      "canonical_urls": [
+        "https://www.langchain.com/blog/building-long-running-agents-with-scaledown-and-deep-agents"
+      ],
+      "publication_note": "2026-10-13",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/모델.md",
+      "archive_url": "/news/2026-10-14/모델.html#3-scaledown-글을-쓰지-않는-제약-디코딩-모델-공개--분류추출요약압축-전용-100만-토큰-입력",
+      "section_sha256": "825d20cd663d0634f8a9431f55a8e9e3ca3ce7422f6a3b5c0a632e1c771bad6f",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/엔진/1",
+      "article_id": "url-c797109315ba608bc0ba3c1e79e809d4b4f1f4a12ccbc9a4cc5bccfe42de22b4",
+      "revision_id": "editorial-6bd3428f612fcb53ce935fed4b1ad3e54a2b2c82638f785276ed1a09abea8848",
+      "briefing_date": "2026-10-14",
+      "category": "엔진",
+      "heading": "1. Strata 0.1.44 — 맥(Apple Silicon) 실험 지원, Qwen3.6-35B-A3B·NVFP4 팩 추가… 단 M2 등 일부 맥은 '엉뚱한 답' 알려진 버그",
+      "title": "Strata 0.1.44 — 맥(Apple Silicon) 실험 지원, Qwen3.6-35B-A3B·NVFP4 팩 추가… 단 M2 등 일부 맥은 '엉뚱한 답' 알려진 버그",
+      "summary": "1,250억 파라미터급 MoE(Mixture of Experts, 전문가 혼합 — 일부 하위 네트워크만 골라 계산하는 구조) 모델 Qwen3.8-Flash-Next를 일반 게이밍 PC에서 돌리게 해 주는 오픈소스(MIT 라이선스) 추론 엔진 Strata 가 0.1.44를 냈습니다. 9월 24일 만들어진 저장소인데 별이 2만 3천 개를 넘고 열린 이슈가 683개일 만큼 빠르게 크는 프로젝트입니다. 이번 판의 가장 큰 변화는 맥(M1~M5, macOS 15 이상) 실험 지원입니다. ./setup.sh 를 돌리면 맥에서 직접 Metal 엔진을 빌드(약 7분)하고 모델을 받아 서버를 띄웁니다. 개발자 측정으로 M5 Max 128GB에서 같은 GGUF(llama.cpp 계열의 모델 파일 형식) 파일 기준 llama.cpp Metal보다 MTP(Multi-Token Prediction, 한 번에 여러 토큰을 미리 예측해 생성을 빠르게 하는 기법) 포함 생성 속도 1.6~1.9배, 프롬프트 처리 1.5~1.6배가 나왔다고 합니다. 다만 한 번에 요청 1개, 측정된 컨텍스트 32K까지, 테스트한 맥은 두 대뿐입니다.",
+      "source_urls": [
+        "https://github.com/Niko1221/Strata/releases/tag/v0.1.44"
+      ],
+      "canonical_urls": [
+        "https://github.com/Niko1221/Strata/releases/tag/v0.1.44"
+      ],
+      "publication_note": "2026-10-13 (UTC 19:26 = 한국 시각 14일 04:26)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/엔진.md",
+      "archive_url": "/news/2026-10-14/엔진.html#1-strata-0144--맥apple-silicon-실험-지원-qwen36-35b-a3bnvfp4-팩-추가-단-m2-등-일부-맥은-엉뚱한-답-알려진-버그",
+      "section_sha256": "bc80b848d3276d934e340d6ed1d8eb114cc07ecb0fb29c4f3aa9231d2f121617",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-14/엔진/2",
+      "article_id": "url-38c445fba78be444f32b8e42a11830961dfc94f5fa983f64a121981bc50877ab",
+      "revision_id": "editorial-3fa7d9cc4dd0f276766f0d12648a25bd24f89d187ae5ff6c92b8ef00e33e430a",
+      "briefing_date": "2026-10-14",
+      "category": "엔진",
+      "heading": "2. llama.cpp b11580~b11606 — Qwen3.8 Flash Next 이미지 입력+MTP 수정, Arm SME2 양자화 행렬곱, CUDA 그래프 디버그 스위치",
+      "title": "llama.cpp b11580~b11606 — Qwen3.8 Flash Next 이미지 입력+MTP 수정, Arm SME2 양자화 행렬곱, CUDA 그래프 디버그 스위치",
+      "summary": "로컬 LLM 실행 엔진 llama.cpp 는 13일(UTC) 하루 동안 b11580부터 b11606까지 프리릴리스 빌드를 연달아 냈습니다. 사용자 입장에서 가장 눈에 띄는 건 b11588(PR #30397)입니다. Qwen3.8 Flash Next 모델을 이미지 입력(mmproj)과 MTP 추측 디코딩(--spec-type draft-mtp)을 함께 켜고 llama-server 로 돌릴 때 실패하던 문제(#30307)를 고쳐, 이제 이미지 요청 → 텍스트 요청 → 같은 이미지 재요청이 정상 동작합니다. 앞선 #30257의 후속이며, PR 작성자는 관련 버그 맥락을 찾는 데 Codex를 썼다고 밝혔습니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11588"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11588"
+      ],
+      "publication_note": "2026-10-13 (UTC 04:02~22:35 = 한국 시각 13일 13:02 ~ 14일 07:35)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-14/엔진.md",
+      "archive_url": "/news/2026-10-14/엔진.html#2-llamacpp-b11580b11606--qwen38-flash-next-이미지-입력mtp-수정-arm-sme2-양자화-행렬곱-cuda-그래프-디버그-스위치",
+      "section_sha256": "d2f278d5332b22cde813773829fdef87ebc7ebd69b5ed0d595968950e0107a5f",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

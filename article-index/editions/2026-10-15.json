@@ -1,0 +1,301 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-15",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-15/AI.md": "b2fb3d5ce3963e586b2c7681d2807529b2bf4a358b267cb75291651a99f237ec",
+    "news/2026-10-15/IT.md": "de1b3dfb781cd01617868201e087eab0c4d90fe9632859fc6ec9b067b3238571",
+    "news/2026-10-15/모델.md": "c37aba9b719d71ddca5c7c2a2658cf9f2e610980066b6234c55bb42747392c0d",
+    "news/2026-10-15/엔진.md": "2f3768c7ab6ab6578a859ae609706fca5c0c3ddf5499cf04eae7354ef9f647aa"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-15/AI/1",
+      "article_id": "url-083280bfe2bb8455294dac27bd606c3a16769a71e916ff02246571c6296e5507",
+      "revision_id": "editorial-1767f800a2fd633eb0a171d253af6e22bca813615377bfb2cfd2c866722f8e77",
+      "briefing_date": "2026-10-15",
+      "category": "AI",
+      "heading": "1. OpenAI 인프라 수장 Sachin Katti 사임 — xAI 출신 Uday Ruddarraju가 컴퓨트 조직 총괄",
+      "title": "OpenAI 인프라 수장 Sachin Katti 사임 — xAI 출신 Uday Ruddarraju가 컴퓨트 조직 총괄",
+      "summary": "OpenAI의 인프라·컴퓨트 책임자 Sachin Katti가 14일(현지) 역할을 떠나고, 마지막 근무일은 11월 15일이며 이후에는 고문으로 남는다고 밝혔습니다. 링크드인에서 “새로운 것을 만들기로 했다(build something new)”고 썼고, CNBC에 보낸 성명에서도 “빌더”로서 다음에 집중하겠다고 했습니다. 후임은 OpenAI CTO(Chief Technology Officer, 최고기술책임자) of Compute인 Uday Ruddarraju로, 대변인에 따르면 그가 컴퓨트 조직 전체를 이끕니다. Ruddarraju는 약 2025년 7월 OpenAI에 합류했고, 그전에는 일론 머스크의 xAI에서 인프라 엔지니어링을 이끌었습니다. xAI는 올해 초 SpaceX에 인수됐습니다(CNBC).",
+      "source_urls": [
+        "https://www.cnbc.com/2026/10/14/openais-sachin-katti-to-leave-infrastructure-role-stay-on-as-advisor.html"
+      ],
+      "canonical_urls": [
+        "https://www.cnbc.com/2026/10/14/openais-sachin-katti-to-leave-infrastructure-role-stay-on-as-advisor.html"
+      ],
+      "publication_note": "2026-10-14 (미국 EDT)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-15/AI.md",
+      "archive_url": "/news/2026-10-15/AI.html#1-openai-인프라-수장-sachin-katti-사임--xai-출신-uday-ruddarraju가-컴퓨트-조직-총괄",
+      "section_sha256": "2c4d1ab87c53932e5c469d45a3f6461128ad45d323c646fc7063623f74a1d812",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-15/AI/2",
+      "article_id": "url-f18761cbf6e7439367b554bb4be754543a4309cd5a910284bf1270b7b897c1b0",
+      "revision_id": "editorial-9442e7ec0f8da1c1e8ead715b504b87ef7ee985bfcd9c031273ab55ad239981c",
+      "briefing_date": "2026-10-15",
+      "category": "AI",
+      "heading": "2. 엔비디아, 영국 에이전트 안전·보안 연구에 5년 2억 5천만 달러 규모 컴퓨트 기부",
+      "title": "엔비디아, 영국 에이전트 안전·보안 연구에 5년 2억 5천만 달러 규모 컴퓨트 기부",
+      "summary": "엔비디아가 영국의 에이전트(agentic AI, 목표를 받아 여러 단계를 스스로 계획·실행하는 AI) 안전·보안 연구를 위해 5년간 총 2억 5천만 달러 가치의 컴퓨트 접근권(연 5천만 달러)을 기부한다고 발표했습니다. 공식 보도자료(10월 13일 날짜)에 따르면 대부분을 영국 AI 안전·보안 연구 커뮤니티 전반에 쓰고, 일부는 옥스퍼드 BOLD(British Open-Ended Learning and Discovery Lab), UCL의 SOFAIR(Science of Fundamental AI Research Lab), 임페리얼 칼리지 런던 연구에 배정됩니다. 컴퓨트는 영국에 있는 NVIDIA Cloud Partners를 통해 제공하며, 사업자·기술 구성·계약 조건은 앞으로 정한다고 명시했습니다.",
+      "source_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years"
+      ],
+      "canonical_urls": [
+        "https://nvidianews.nvidia.com/news/nvidia-commits-250-million-to-advance-uk-agentic-safety-and-security-research-over-the-next-five-years"
+      ],
+      "publication_note": "2026-10-13 (공식 보도자료; 14일 KST 보도·확산)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-15/AI.md",
+      "archive_url": "/news/2026-10-15/AI.html#2-엔비디아-영국-에이전트-안전보안-연구에-5년-2억-5천만-달러-규모-컴퓨트-기부",
+      "section_sha256": "189effd9c9a13d323a392414f1c517d3bcff4c4c66181a9111914ae7cc12be85",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-15/AI/3",
+      "article_id": "url-37beb581c740de80953224425634bca91fcbac51034403af5d2d6da5246ab42e",
+      "revision_id": "editorial-7325ca8ab9a7764ed427be4741e016dba659a737ae8e53e8aa209882f9af152b",
+      "briefing_date": "2026-10-15",
+      "category": "AI",
+      "heading": "3. Anthropic 국제총괄 Guillaume Princen — “오픈웨이트는 정의상 위험이 더 크다”",
+      "title": "Anthropic 국제총괄 Guillaume Princen — “오픈웨이트는 정의상 위험이 더 크다”",
+      "summary": "Anthropic의 국제(및 스타트업·디지털 네이티브 영업) 책임자 Guillaume Princen이 14일 아일랜드 더블린 International AI Summit에서 Bloomberg TV에 “오픈소스 안전에는 정말 조심해야 한다. 오픈 모델을 대신 말할 수는 없지만, 정의상(by definition) 위험이 더 있다”고 말했습니다(Business Standard 전재). 맥락은 Anthropic의 상장 준비와, 미국 폐쇄형 모델 의존을 줄이려는 각국의 오픈웨이트(open-weight, 모델 가중치를 공개해 직접 수정·로컬 실행할 수 있는 형태) 경쟁입니다. 프랑스 Mistral의 유럽 주권형 오픈웨이트, 중국발 오픈 모델의 해외 확산이 기사에 함께 언급됩니다.",
+      "source_urls": [
+        "https://www.business-standard.com/technology/artificial-intelligence/open-source-ai-models-carry-more-cybersecurity-risks-anthropic-executive-126101400731_1.html"
+      ],
+      "canonical_urls": [
+        "https://www.business-standard.com/technology/artificial-intelligence/open-source-ai-models-carry-more-cybersecurity-risks-anthropic-executive-126101400731_1.html"
+      ],
+      "publication_note": "2026-10-14 (더블린 국제 AI 정상회의, Bloomberg TV)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-15/AI.md",
+      "archive_url": "/news/2026-10-15/AI.html#3-anthropic-국제총괄-guillaume-princen--오픈웨이트는-정의상-위험이-더-크다",
+      "section_sha256": "6b96b37e8aadaf02c37308783f0787d719c08fa0a9aa2e00ac1ce4c8f7096824",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-15/IT/1",
+      "article_id": "url-c07fcabcb3b18c956220c6a9454ce92894f1f5b0ea7418d9f55979abda60bbb4",
+      "revision_id": "editorial-5393ce0582e53374d77414e5572734ff8f15be7f5ae40c0d939a774652b381a2",
+      "briefing_date": "2026-10-15",
+      "category": "IT",
+      "heading": "1. SEDEX 2026 — 삼성·SK하이닉스 HBM4E 실물 전시, zHBM·HBF·용인 360조 원 계획",
+      "title": "SEDEX 2026 — 삼성·SK하이닉스 HBM4E 실물 전시, zHBM·HBF·용인 360조 원 계획",
+      "summary": "14일 서울 삼성동 코엑스에서 SEDEX(Semiconductor Exhibition, 반도체대전 — 한국반도체산업협회가 여는 국내 최대 반도체 전시회) 2026이 개막해 금요일까지 이어집니다. 헤럴드경제(영문)에 따르면 삼성전자와 SK하이닉스는 7세대 HBM(High Bandwidth Memory, D램을 수직으로 쌓아 데이터 통로를 크게 넓힌 AI 가속기용 메모리) 인 HBM4E 실물 샘플을 나란히 내놓았습니다. 삼성은 5월에 12단 HBM4E 샘플을 엔비디아에 보냈고, SK하이닉스는 6월에 뒤따랐습니다. 삼성 HBM4E는 핀당 최대 16 Gbps(HBM4의 14 Gbps 대비 약 20% 향상)로 3.6 TB/s 대역폭을 내세웠고, SK하이닉스 HBM4E도 피크 16 Gbps에 전작 대비 에너지 효율 20% 이상 개선을 강조했습니다.",
+      "source_urls": [
+        "https://biz.heraldcorp.com/article/10902062"
+      ],
+      "canonical_urls": [
+        "https://biz.heraldcorp.com/article/10902062"
+      ],
+      "publication_note": "2026-10-14 (KST)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-15/IT.md",
+      "archive_url": "/news/2026-10-15/IT.html#1-sedex-2026--삼성sk하이닉스-hbm4e-실물-전시-zhbmhbf용인-360조-원-계획",
+      "section_sha256": "3e306d0bf677e623f88962b9e1e8cebeed498bbf6cadb6c8b8ec74bddedcff2b",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-15/IT/2",
+      "article_id": "url-6a6c2f603c32374f3d6bdfe06873d954d2b8f7e4d931b820503d68d29670410b",
+      "revision_id": "editorial-4c7f1f6e997995abe51016b00acb3947806faa726113c3c8f35229714b4e3c3e",
+      "briefing_date": "2026-10-15",
+      "category": "IT",
+      "heading": "2. ASML 3분기 — 순이익 예상치 상회, 2026 매출 가이던스 상향, 고객이 2029·2030 주문까지 관심",
+      "title": "ASML 3분기 — 순이익 예상치 상회, 2026 매출 가이던스 상향, 고객이 2029·2030 주문까지 관심",
+      "summary": "네덜란드 반도체 노광 장비 업체 ASML이 14일(현지) 3분기 실적을 발표했습니다. CNBC에 따르면 분기 순매출 116.6억 유로(시장 예상 약 117.2억 유로), 순이익 49.6억 유로(예상 약 41억 유로)로 이익이 기대를 크게 웃돌았습니다. 2026년 연간 순매출 가이던스 하단을 올려 440억~450억 유로(이전 하단 430억 유로)로 잡았고, 4분기 순매출은 142억~152억 유로를 제시했습니다.",
+      "source_urls": [
+        "https://www.cnbc.com/2026/10/14/asml-3q-earnings-ai-demand-orders-capacity.html"
+      ],
+      "canonical_urls": [
+        "https://www.cnbc.com/2026/10/14/asml-3q-earnings-ai-demand-orders-capacity.html"
+      ],
+      "publication_note": "2026-10-14 (미국 EDT 새벽 = KST 오후)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-15/IT.md",
+      "archive_url": "/news/2026-10-15/IT.html#2-asml-3분기--순이익-예상치-상회-2026-매출-가이던스-상향-고객이-20292030-주문까지-관심",
+      "section_sha256": "da138fc3cdc4d668aed48bb96192eddd51df6811835fa925f929948111aafb4b",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-15/모델/1",
+      "article_id": "url-12251940b3b4d2234012ad5b78b04670a82d5e155a62b6535868c5ede029e745",
+      "revision_id": "editorial-20c64d3df201d7b5a98867192b3c3120b586081a2641a50660af36c256de398f",
+      "briefing_date": "2026-10-15",
+      "category": "모델",
+      "heading": "1. xAI Grok Voice 3.0 — AA Speech-to-Speech Index 86.9로 1위, Voice Agent API 분당 0.08달러",
+      "title": "xAI Grok Voice 3.0 — AA Speech-to-Speech Index 86.9로 1위, Voice Agent API 분당 0.08달러",
+      "summary": "xAI가 Grok Voice 3.0을 “가장 지능적인 speech-to-speech(음성-음성 — 글을 거치지 않고 말소리를 바로 말로 주고받는 방식) 모델”로 발표했습니다. 독립 벤치마크 업체 Artificial Analysis의 Speech-to-Speech Index에서 86.9점으로 1위(표기 일자 2026-10-13), 대화 끼어들기·턴테이킹을 보는 Full Duplex Bench에서 97%, 다양한 억양·소음·방해가 있는 고객지원 시나리오 τ-Voice에서 71.6%를 기록했다고 회사 페이지가 인용합니다. 비교표에는 Grok Voice 2.0(81.3), GPT-Live-1(Astra, Medium)(83.2), Gemini 3.8 Live(Ext. Thinking, High)(82.6)가 함께 있습니다. 응답 지연은 1초 미만을 내세웠습니다.",
+      "source_urls": [
+        "https://x.ai/news/grok-voice-3"
+      ],
+      "canonical_urls": [
+        "https://x.ai/news/grok-voice-3"
+      ],
+      "publication_note": "2026-10-15 (회사 발표 페이지; Artificial Analysis 수치는 2026-10-13 표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-15/모델.md",
+      "archive_url": "/news/2026-10-15/모델.html#1-xai-grok-voice-30--aa-speech-to-speech-index-869로-1위-voice-agent-api-분당-008달러",
+      "section_sha256": "019a9d4b979c7833ff93b2db4570c2c5c25d290e0668c51eb6308d974d2b1d0d",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-15/엔진/1",
+      "article_id": "url-c93c3e8d8c8dfb19f8dd20e4c30b062b51d1f3cbe9e853d0677abbd0fec138a8",
+      "revision_id": "editorial-c1c5019bb00db612747d8a133c462a88029d9e175868a17b04baa1d1c2f465a7",
+      "briefing_date": "2026-10-15",
+      "category": "엔진",
+      "heading": "1. Ollama v0.40.5-rc0 — Metal 커스텀 커널 CUDA 이식, Responses 히스토리 커스텀 툴콜",
+      "title": "Ollama v0.40.5-rc0 — Metal 커스텀 커널 CUDA 이식, Responses 히스토리 커스텀 툴콜",
+      "summary": "Ollama가 v0.40.5-rc0(RC(Release Candidate, 정식 출시 전 후보판))을 14일(UTC) 공개했습니다. 변경 요약에 따르면 MLX(애플이 만든 머신러닝 프레임워크 — 맥의 통합 메모리에 최적화) 쪽 Metal 커스텀 커널을 CUDA(Compute Unified Device Architecture, 엔비디아 GPU로 범용 연산을 하게 해 주는 플랫폼) 로 이식하는 작업(#18657), OpenAI 호환 Responses 히스토리에서 커스텀 툴 콜(tool call, 모델이 외부 함수·도구를 부르도록 하는 호출) 을 받아들이도록 한 수정(#18911), MLX 버전 bump(#18993), 문서 정리(#18981), 클라우드 결제 오류 메시지 명확화(#18986)가 들어갔습니다. 정식 v0.40.5가 아닌 RC이므로 프로덕션 반영 전에는 회귀 여부를 보는 단계입니다.",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.5-rc0"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.5-rc0"
+      ],
+      "publication_note": "2026-10-14 (UTC 19:45 ≈ KST 10/15 04:45)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-15/엔진.md",
+      "archive_url": "/news/2026-10-15/엔진.html#1-ollama-v0405-rc0--metal-커스텀-커널-cuda-이식-responses-히스토리-커스텀-툴콜",
+      "section_sha256": "612ff99d6a52e8e45b2983907125c17ac57de8bab9f5807538209a3e4b9f66ed",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-15/엔진/2",
+      "article_id": "url-332f060329350fb7af9bf8e6dbc92b8c64ce93bb2271eadc26391a45e8737034",
+      "revision_id": "editorial-b25ef9182afeab15573b6c49775bf347277f8989b4402e8266bb8cbbb81f299a",
+      "briefing_date": "2026-10-15",
+      "category": "엔진",
+      "heading": "2. llama.cpp b11607~b11624 — Unigram NFC 옵션, 서버 특수토큰 이스케이프 수정, Adreno MoE·WebGPU 수정",
+      "title": "llama.cpp b11607~b11624 — Unigram NFC 옵션, 서버 특수토큰 이스케이프 수정, Adreno MoE·WebGPU 수정",
+      "summary": "llama.cpp가 14일(UTC) b11607부터 b11624까지 연속 프리릴리스를 올렸습니다(전날 브리핑의 b11580~b11606 이후분). 눈에 띄는 항목만 고르면, Unigram 토크나이저용 NFC(Normalization Form C, 유니코드 정규화 형식 C — 같은 글자의 다른 바이트 표현을 하나로 맞춤) 정규화를 선택적으로 켜는 변경(#30390), d1-omni·kev 프롬프트 경로에서 std::regex 대신 루프로 특수 토큰을 이스케이프해 긴 이름에 HTTP 스레드 스택이 터지던 문제 수정(#30243, b11608), OpenCL Adreno MoE(Mixture of Experts, 전문가 혼합 — 일부 하위 네트워크만 골라 계산하는 구조) 관련 mul_mat_id·q8_0 수정(b11620~b11621), WebGPU mul_mat_id 중복 expert id 수정, Vulkan 컴파일 오류 수정(b11617), RPC 텐서 전송 로그 개선(b11624) 등입니다. 개별 태그는 기능 단위 야간 빌드에 가깝고, 하나로 묶인 ‘메이저 버전’ 발표는 아닙니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases"
+      ],
+      "publication_note": "2026-10-14 (여러 pre-release 태그)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-15/엔진.md",
+      "archive_url": "/news/2026-10-15/엔진.html#2-llamacpp-b11607b11624--unigram-nfc-옵션-서버-특수토큰-이스케이프-수정-adreno-moewebgpu-수정",
+      "section_sha256": "cb5c2d9901cbfba034f6caeb653b3aeca094d6af1501825263c27d88fd15c0cf",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

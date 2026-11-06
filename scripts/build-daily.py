@@ -107,6 +107,13 @@ def check(date):
         last=c['end']
     assert abs(info['duration']-last)<0.001
     return {'date':date,'items':len(data['items']),'slides':len(data['slides']),'seconds':info['duration'],'status':'verified'}
+def news_index_gate(date):
+    """New publication only; existing edition checks remain byte-for-byte compatible."""
+    spec=importlib.util.spec_from_file_location('article_index',ROOT/'scripts/article-index.py')
+    module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
+    module.gate(ROOT,date)
+    return digest(sorted((ROOT/'article-index').glob('**/*.json')))
+
 def main():
     p=argparse.ArgumentParser(description=__doc__);p.add_argument('date');p.add_argument('--audio',action='store_true');p.add_argument('--audio-backend',choices=['sohee','yuna'],default='sohee');p.add_argument('--model-dir',type=Path);p.add_argument('--work-dir',type=Path);p.add_argument('--check',action='store_true');p.add_argument('--if-ready',action='store_true');p.add_argument('--plan',type=Path,help='Portable HTML/JSON preview directory; no audio or publication');args=p.parse_args()
     Date.fromisoformat(args.date)
@@ -124,6 +131,7 @@ def main():
         print(json.dumps({'date':args.date,'status':'HTML/JSON preview only; no audio generated','items':len(data['items'])}));return
     targets=paths(args.date)
     if any(x.exists() for x in targets):print(json.dumps(check(args.date)));return
+    index_snapshot=news_index_gate(args.date)
     manifest_path=ROOT/f'_data/day_{key}_visuals.json'
     if not manifest_path.is_file():raise ValueError('PENDING: reviewed content-specific visual manifest required; use --plan first (WORKFLOW 10)')
     spec=importlib.util.spec_from_file_location('visual_validator',ROOT/'scripts/check-daily-visuals.py')
@@ -141,6 +149,7 @@ def main():
         staged[1].write_text(page_text)
         if args.audio_backend=='sohee':audio_builder.build(data,args.date,staged[2],staged[3],model_dir=args.model_dir,work_dir=args.work_dir)
         else:audio_builder.build(data,args.date,staged[2],staged[3])
+        if index_snapshot!=news_index_gate(args.date):raise ValueError('Article index/review changed during generation; stopped without writing')
         if data['source_hashes']!=digest(inputs(args.date)):raise ValueError('Source changed during generation; stopped without writing')
         if manifest_digest!=hashlib.sha256(manifest_path.read_bytes()).hexdigest():raise ValueError('Visual plan changed during generation; stopped without writing')
         if any(x.exists() for x in targets):raise ValueError('Another writer created this date; stopped without overwriting')

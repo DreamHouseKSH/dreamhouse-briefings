@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-28",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-28/AI.md": "9e8f969017770bcbcb15bf7e4c597a50e60de0752c5a934692990bd1b4cf8330",
+    "news/2026-10-28/IT.md": "cc4ca0c912c85e76047efef18dcd69c47f31ac3a80f325c5aaaab8cccb539fa4",
+    "news/2026-10-28/모델.md": "f3b371f59e23ad9f6e08058179576f2753478432248716e71c4598ffd6894ead",
+    "news/2026-10-28/엔진.md": "222d5b0010d3eae5ee2022b0a97dfc6befa0246c4446759911f33934906cfb87"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-28/AI/1",
+      "article_id": "url-142f8439c46d329d2d534c177ab57e0d99021b7f14cc9ca00d2fb444fe58f2ea",
+      "revision_id": "editorial-daaa0ab381873176537866744b6751d1d0e073e6a64372705f579199dcca84a2",
+      "briefing_date": "2026-10-28",
+      "category": "AI",
+      "heading": "1. NVIDIA–Meta, Muse 협력 확대와 30억 달러 투자 계획",
+      "title": "NVIDIA–Meta, Muse 협력 확대와 30억 달러 투자 계획",
+      "summary": "NVIDIA와 Meta는 Muse 에이전트와 모델의 학습·추론을 개선하는 협력을 확대한다고 발표했다. NVIDIA는 Meta의 주식 공모에 30억 달러를 투자할 계획이다. 발표된 계획과 실제 납입 완료를 구분하며, 협력 전체의 비용 절감 실측치가 공개된 것으로 해석하지 않는다.",
+      "source_urls": [
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Meta-to-Expand-Collaboration-on-Muse-and-Muse-Family-of-Models-Amid-Robust-Growth/default.aspx"
+      ],
+      "canonical_urls": [
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-and-Meta-to-Expand-Collaboration-on-Muse-and-Muse-Family-of-Models-Amid-Robust-Growth/default.aspx"
+      ],
+      "publication_note": "회사 배포본 2026-10-27 14:52 KST (01:52 EDT). 배포본",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/AI.md",
+      "archive_url": "/news/2026-10-28/AI.html#1-nvidiameta-muse-협력-확대와-30억-달러-투자-계획",
+      "section_sha256": "aebdadcf5ce110e45411e124b70b44141fc070a4d5bac512bc4bd2044a07dd01",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/AI/2",
+      "article_id": "url-dcad83d827337ce853e769bf19b79a79ad8c761d88eacae14de27814d19f0b1d",
+      "revision_id": "editorial-ea02e184aae99fc7649c531deb66dfab2fbe5a79e987ba6dfc8946e27538d562",
+      "briefing_date": "2026-10-28",
+      "category": "AI",
+      "heading": "2. Anthropic, 신약개발 협업과 Mithril Medicine 인수 공개",
+      "title": "Anthropic, 신약개발 협업과 Mithril Medicine 인수 공개",
+      "summary": "Anthropic은 Bristol Myers Squibb·Enveda·BigHat 등 6개 기관과 진행한 Claude 기반 신약개발 협업을 소개했다. 분자 설계 외에 제조 문서 검토와 임상시험 계획도 적용 범위에 포함한다. 희귀 근이영양증 치료제를 연구하는 Mithril Medicine 인수도 공개했다.",
+      "source_urls": [
+        "https://www.anthropic.com/research/early-progress-drug-development"
+      ],
+      "canonical_urls": [
+        "https://www.anthropic.com/research/early-progress-drug-development"
+      ],
+      "publication_note": "2026-10-27 날짜만 공개. 시각·시간대 미공개로 정확한 24시간 포함 여부는 미확정.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/AI.md",
+      "archive_url": "/news/2026-10-28/AI.html#2-anthropic-신약개발-협업과-mithril-medicine-인수-공개",
+      "section_sha256": "b0d461c528bc846f7ad1eb16b22df1b684040c0acbf044078b7ca57126de7366",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/IT/1",
+      "article_id": "url-d29dba9243055781eb57717ff1817773d02b4f06d272ea19762aaf1e32a29c15",
+      "revision_id": "editorial-a86573e5f0c0d87c823c41588645550c0f103fb785741c919659aa883afde668",
+      "briefing_date": "2026-10-28",
+      "category": "IT",
+      "heading": "1. AMD–Meta, Helios 초기 시험과 10억 달러 투자 계획",
+      "title": "AMD–Meta, Helios 초기 시험과 10억 달러 투자 계획",
+      "summary": "AMD는 Meta에 초기 Helios 랙 시스템을 설치해 시험하고 있다고 발표했다. 랙은 여러 연산장치와 연결 장비를 한 묶음으로 구성한 시스템이다. AMD의 EPYC 프로세서는 Muse AI 에이전트의 전용 계산 환경도 지원한다는 설명이다.",
+      "source_urls": [
+        "https://newsroom.amd.com/news/amd-meta-advance-strategic-partnership-power-metas-ai-infrastructure/"
+      ],
+      "canonical_urls": [
+        "https://newsroom.amd.com/news/amd-meta-advance-strategic-partnership-power-metas-ai-infrastructure/"
+      ],
+      "publication_note": "2026-10-27 22:15 KST (원문 08:15 CDT)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/IT.md",
+      "archive_url": "/news/2026-10-28/IT.html#1-amdmeta-helios-초기-시험과-10억-달러-투자-계획",
+      "section_sha256": "87fc3b49f9e961666771eeb991292162d9a8221de89555f892f09614863a1b7a",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/IT/2",
+      "article_id": "url-15cd672b97cc61b1a32699be616538d56ae4cd69d4650a3edb2d189650407e9a",
+      "revision_id": "editorial-b975ecea58c1dabe997d039769444da0c681ccf557d0f6f39332ae7a505b4e72",
+      "briefing_date": "2026-10-28",
+      "category": "IT",
+      "heading": "2. ASM, 3분기 매출 11억5,940만 유로…2027년 전망 상향",
+      "title": "ASM, 3분기 매출 11억5,940만 유로…2027년 전망 상향",
+      "summary": "반도체 장비업체 ASM은 2026년 3분기 매출이 11억5,940만 유로라고 발표했다. 회사 발표 기준 전년 대비 보고환율로 45%, 고정환율로 44% 증가했다. 고정환율은 환율 변화 영향을 제외해 사업 변화를 비교하는 방식이다. 회사는 선단 로직·파운드리와 메모리 투자를 성장 요인으로 꼽았다.",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/27/3389491/0/en/asm-reports-third-quarter-2026-results.html"
+      ],
+      "canonical_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/27/3389491/0/en/asm-reports-third-quarter-2026-results.html"
+      ],
+      "publication_note": "2026-10-28 02:00 KST (원문 10월 27일 13:00 ET)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/IT.md",
+      "archive_url": "/news/2026-10-28/IT.html#2-asm-3분기-매출-11억5940만-유로2027년-전망-상향",
+      "section_sha256": "20a032d39ab0b6659bb9d03f5fb31d1918c96c8040d3b598252b3719e3aa10cf",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/IT/3",
+      "article_id": "url-9c1fdbd6e6b3c7d0acc6e1a4550476c23a63337c342d485a050d40458b618135",
+      "revision_id": "editorial-be2764738d3e914939923a32da9189d322ad18332e5deef83da3277ad14efb4e",
+      "briefing_date": "2026-10-28",
+      "category": "IT",
+      "heading": "3. Apple, M6 기반 MacBook Pro·iMac 공개",
+      "title": "Apple, M6 기반 MacBook Pro·iMac 공개",
+      "summary": "Apple은 M6를 탑재한 14형 MacBook Pro와 iMac을 공개했다. 미국 시작 가격은 각각 1,999달러와 1,499달러이며, 발표된 예약 주문일은 10월 28일, 출시일은 11월 6일이다. 미국 발표의 가격·일정을 한국 판매 조건으로 그대로 적용하지 않는다.",
+      "source_urls": [
+        "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/"
+      ],
+      "canonical_urls": [
+        "https://www.apple.com/newsroom/2026/10/apple-introduces-the-new-14-inch-macbook-pro-with-m6/"
+      ],
+      "publication_note": "Apple 원문 2026-10-27, 시각 미공개. MacRumors 보도는 10월 27일 22:01 KST로 기준 구간 내 확인 (공식 발표 시각과 동일하다는 뜻은 아님).",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/IT.md",
+      "archive_url": "/news/2026-10-28/IT.html#3-apple-m6-기반-macbook-proimac-공개",
+      "section_sha256": "37d4651fe3af312f9dcea918e4b1c0645952ed88446b82e124ca47158685e345",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/IT/4",
+      "article_id": "url-73a3b515772d1b742fd2968fd22a58eba41a9a76ceef186d010b444460cfb950",
+      "revision_id": "editorial-bf61b269521d32485b1e3f7481e35f2f120650304a978a3e550938055f1cee75",
+      "briefing_date": "2026-10-28",
+      "category": "IT",
+      "heading": "4. NIST, 양자내성암호 전환 최종 보고서 공개",
+      "title": "NIST, 양자내성암호 전환 최종 보고서 공개",
+      "summary": "NIST(National Institute of Standards and Technology, 미국 국립표준기술연구소)가 양자 취약 암호에서 PQC(Post-Quantum Cryptography, 양자컴퓨터 공격에도 견디도록 설계한 암호)로 전환하는 최종 보고서 IR 8547을 공개했다. 기존 취약 표준과 대체 표준, 전환 활동과 일정을 정리한 문서다.",
+      "source_urls": [
+        "https://www.nist.gov/news-events/news/2026/10/nist-report-provides-guidelines-transition-post-quantum-cryptography"
+      ],
+      "canonical_urls": [
+        "https://www.nist.gov/news-events/news/2026/10/nist-report-provides-guidelines-transition-post-quantum-cryptography"
+      ],
+      "publication_note": "2026-10-27 날짜만 확인 (등록부 최종본 이력 10/27/26). 시각·시간대 미공개로 정확한 24시간 포함 여부는 미확정.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/IT.md",
+      "archive_url": "/news/2026-10-28/IT.html#4-nist-양자내성암호-전환-최종-보고서-공개",
+      "section_sha256": "ff6ff9e2e0d95bc7c57489dbba4e18ae552140b149f465470b45fd683f8aec91",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/모델/1",
+      "article_id": "url-393575ee7d83ff0a65d333d8be46ec5237c4c4f8ffd65a18f4b5764a81e08f2c",
+      "revision_id": "editorial-c57fbee4a4368ce14af84f58a7ea7b84345c697b64d21ff822d557cd2066cf82",
+      "briefing_date": "2026-10-28",
+      "category": "모델",
+      "heading": "1. Google Genie 4, 소리를 포함한 상호작용 세계 생성",
+      "title": "Google Genie 4, 소리를 포함한 상호작용 세계 생성",
+      "summary": "Google DeepMind는 Genie 4를 연구 프리뷰로 발표했다. 월드모델(world model, 환경의 상태와 변화를 학습해 다음 상황을 만들어 내는 모델)로서 사용자가 탐색하는 가상세계를 생성하고, 진행 중 자연어로 장면을 바꾸는 기능을 소개한다. 음악·환경음·대화 생성도 포함한다.",
+      "source_urls": [
+        "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+      ],
+      "canonical_urls": [
+        "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/"
+      ],
+      "publication_note": "공식 원문 2026-10-27, 시각 미공개. TechCrunch 보도 2026-10-28 01:30 KST로 기준 구간 내 확인.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/모델.md",
+      "archive_url": "/news/2026-10-28/모델.html#1-google-genie-4-소리를-포함한-상호작용-세계-생성",
+      "section_sha256": "d40a933d93ffa9d4fe112deb70572b1c1d0410653dd64699eba791d5f31156a8",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/모델/2",
+      "article_id": "url-d8989963e8e03233d51f94de6360bb5d99e836be2173113ddea1ada304d14a18",
+      "revision_id": "editorial-332dd3434f6b0d8b3f1203c7403cec162f95d1eac516ad617622ade945c90f7d",
+      "briefing_date": "2026-10-28",
+      "category": "모델",
+      "heading": "2. Liquid AI LFM3, 소형 모델을 텍스트·시각·음성·의사결정으로 확대",
+      "title": "Liquid AI LFM3, 소형 모델을 텍스트·시각·음성·의사결정으로 확대",
+      "summary": "Liquid AI는 공통 LFM3-1.7B 기반의 약 20억 매개변수급 모델군을 발표했다. 매개변수는 모델이 학습한 수치이며, 계열은 텍스트·시각·오디오·옴니·의사결정 용도로 나뉜다. 회사는 가중치 다운로드와 프로그램 연결 인터페이스 이용을 제공한다고 밝혔다.",
+      "source_urls": [
+        "https://www.liquid.ai/blog/lfm3"
+      ],
+      "canonical_urls": [
+        "https://www.liquid.ai/blog/lfm3"
+      ],
+      "publication_note": "2026-10-27 날짜만 확인. 시각·시간대 미공개로 정확한 24시간 포함 여부는 미확정.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/모델.md",
+      "archive_url": "/news/2026-10-28/모델.html#2-liquid-ai-lfm3-소형-모델을-텍스트시각음성의사결정으로-확대",
+      "section_sha256": "0aff67763a2bce1740da1fb0a417e4918064160b656eea5e830b7b16cf9000ad",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/모델/3",
+      "article_id": "url-f0e3f8456fcbc65dfd0ac1fd15702645c6c8f9d853d9f4d1bb92bb80366588fc",
+      "revision_id": "editorial-83671d25220c33e657e921ce1abd7ddf28bdf6de8d051f82406dddea7d2901f3",
+      "briefing_date": "2026-10-28",
+      "category": "모델",
+      "heading": "3. Microsoft MAI Image 2.7, 이미지 편집 중심 프리뷰 공개",
+      "title": "Microsoft MAI Image 2.7, 이미지 편집 중심 프리뷰 공개",
+      "summary": "Microsoft AI는 MAI Image 2.7을 공개했다. 기존 이미지의 스타일·조명 변경, 글자와 기호 수정, 자산 복원·개선에 초점을 둔 편집 모델이다. Arena·Artificial Analysis·MAI Playground에서 편집 기능을 시험할 수 있다고 안내했다.",
+      "source_urls": [
+        "https://microsoft.ai/news/mai-image-2-7-debut/"
+      ],
+      "canonical_urls": [
+        "https://microsoft.ai/news/mai-image-2-7-debut/"
+      ],
+      "publication_note": "2026-10-27 날짜만 확인. 시각·시간대 미공개로 정확한 24시간 포함 여부는 미확정.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/모델.md",
+      "archive_url": "/news/2026-10-28/모델.html#3-microsoft-mai-image-27-이미지-편집-중심-프리뷰-공개",
+      "section_sha256": "0c1649808381a25db05bae7e28ac9509c26567f61b94661d9d327438f861a38b",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/엔진/1",
+      "article_id": "url-740c5733ca5094b5da389e6d6bcbd2c2cbf7d5019cc80b0e74b6424261c1132e",
+      "revision_id": "editorial-86c6132cd9b44ebed5528094d90c7f77b0a6fb88bc0054bb3da032470c8c6b94",
+      "briefing_date": "2026-10-28",
+      "category": "엔진",
+      "heading": "1. Ollama 0.40.12, LFM3·d1 2B를 Apple 하드웨어부터 지원",
+      "title": "Ollama 0.40.12, LFM3·d1 2B를 Apple 하드웨어부터 지원",
+      "summary": "Ollama 0.40.12는 Liquid AI의 LFM3 계열과 d1 2B 지원을 추가했다. 텍스트뿐 아니라 이미지·음성을 다루는 계열을 같은 실행 도구에서 접근할 수 있게 한 변화다. 다만 이번 릴리스에서 LFM3와 d1 2B 지원은 Apple 하드웨어에 한정되며, Linux와 Windows는 후속 지원 예정이라고 명시했다.",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.12"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.12"
+      ],
+      "publication_note": "2026-10-27 09:07:12 KST (GitHub 릴리스 시각)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/엔진.md",
+      "archive_url": "/news/2026-10-28/엔진.html#1-ollama-04012-lfm3d1-2b를-apple-하드웨어부터-지원",
+      "section_sha256": "94c0420068fd98aa4388cab8a171d81b5c9e711f35aa4f902eea10f1b40482e8",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-28/엔진/2",
+      "article_id": "url-6ab4af60dfbaadfbd81d718b26317d5f97e075fe0e2ce19e648c844c5b243e5a",
+      "revision_id": "editorial-9c780d211ed205a2892e58c38f65a7c8c27936a68e7dca3279609fd601b7786a",
+      "briefing_date": "2026-10-28",
+      "category": "엔진",
+      "heading": "2. llama.cpp, RPC 메시지 오류가 서버 전체를 종료시키는 경로 수정",
+      "title": "llama.cpp, RPC 메시지 오류가 서버 전체를 종료시키는 경로 수정",
+      "summary": "llama.cpp는 RPC(Remote Procedure Call, 다른 프로세스나 컴퓨터에 작업을 요청하는 방식) 서버가 가변 길이 메시지를 읽을 때 발생하는 예외 처리 누락을 수정했다. 수신 길이가 버퍼가 표현할 수 있는 최대 범위를 넘으면 기존 메모리 할당 실패 처리와 다른 종류의 오류가 발생해 서버 프로세스가 종료될 수 있었다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/pull/31204"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/pull/31204"
+      ],
+      "publication_note": "2026-10-27 22:04:56 KST 병합 / b11935 릴리스 2026-10-28 02:15:04 KST",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-28/엔진.md",
+      "archive_url": "/news/2026-10-28/엔진.html#2-llamacpp-rpc-메시지-오류가-서버-전체를-종료시키는-경로-수정",
+      "section_sha256": "c78527ebff0c61214007c324e6e604bcc7ed78eb76dcb9096035e8fe2be3317c",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

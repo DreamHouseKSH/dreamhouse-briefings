@@ -1,0 +1,379 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-27",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-27/AI.md": "a5ed88acaad4910b62d64dc211acfd8f58c67a95168ed4cea823eca62060a09e",
+    "news/2026-10-27/IT.md": "6bbc3315acbe74474676e308e065ea3a0afbc569129e2e4ae70e3d8ca406a381",
+    "news/2026-10-27/모델.md": "a77eb8d387da21c9bb418ed6f8cce61737a067286f886d2ec7afa1c93ce11a3d",
+    "news/2026-10-27/엔진.md": "a50cfade5d9b9f790b69aef541553689a8d822270c5b9730a39bd1813a005f9d"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-27/AI/1",
+      "article_id": "url-97442d8e30b73df323fc925de14a25c069783c1ac158eec29f0e8f836a16b9e6",
+      "revision_id": "editorial-2e24042b09e2885e1c4c225b88d7b886688fd4795485def6d7b38d79647f8b59",
+      "briefing_date": "2026-10-27",
+      "category": "AI",
+      "heading": "1. Anthropic, 비영리 전용 Claude 플러그인…모금·채용·정책 확인 지원",
+      "title": "Anthropic, 비영리 전용 Claude 플러그인…모금·채용·정책 확인 지원",
+      "summary": "Anthropic이 약 30개 비영리단체와 만든 Claude for Nonprofits 플러그인(plugin, 기존 제품에 업무 기능을 덧붙이는 확장 묶음)을 공개했다. 비영리 Team·Enterprise 요금제에는 추가 비용 없이 자동 설치된다고 안내한다. 새로운 범용 모델이 아니라 기존 Claude에 단체 업무에 맞춘 기능을 더한 발표다.",
+      "source_urls": [
+        "https://claude.com/resources/articles/expanding-claude-for-nonprofits"
+      ],
+      "canonical_urls": [
+        "https://claude.com/resources/articles/expanding-claude-for-nonprofits"
+      ],
+      "publication_note": "2026-10-26 (원문 날짜; 게시 시각·시간대 미공개로 정확한 기준 구간 포함 여부 불확실)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/AI.md",
+      "archive_url": "/news/2026-10-27/AI.html#1-anthropic-비영리-전용-claude-플러그인모금채용정책-확인-지원",
+      "section_sha256": "4d9252cfa0666652a436c6fa9d5e7ff128b5a60a3a70eba25e92e21a0cb60817",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-27/AI/2",
+      "article_id": "url-f3abc595267bc5ae429a9571cf66235a567967b4e1bbd3bbb08690e0be42fff2",
+      "revision_id": "editorial-2206eba424f4360b8c1db564eb5479227595fe811ddfaea7bfc3b810c881f880",
+      "briefing_date": "2026-10-27",
+      "category": "AI",
+      "heading": "2. Oracle, Fusion 업무용 에이전트 앱 25개 제공…승인 절차 안에서 실행 확대",
+      "title": "Oracle, Fusion 업무용 에이전트 앱 25개 제공…승인 절차 안에서 실행 확대",
+      "summary": "Oracle이 Fusion Claw 기반 업무용 에이전트(agent, 목표에 맞춰 도구를 사용하며 여러 단계의 일을 수행하는 AI) 애플리케이션 25개를 현재 제공한다고 발표했다. 재무·인사·공급망·고객 서비스 영역이 대상이다. 새 범용 모델 발표가 아니라, 기존 기업 시스템의 자료와 권한을 활용해 여러 단계의 업무를 수행하는 소프트웨어 확장이다.",
+      "source_urls": [
+        "https://www.oracle.com/news/announcement/ai-world-oracle-advances-outcome-driven-ai-across-fusion-applications-2026-10-26/"
+      ],
+      "canonical_urls": [
+        "https://www.oracle.com/news/announcement/ai-world-oracle-advances-outcome-driven-ai-across-fusion-applications-2026-10-26/"
+      ],
+      "publication_note": "2026-10-26 (원문 날짜; 게시 시각 미공개로 정확한 기준 구간 포함 여부 불확실)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/AI.md",
+      "archive_url": "/news/2026-10-27/AI.html#2-oracle-fusion-업무용-에이전트-앱-25개-제공승인-절차-안에서-실행-확대",
+      "section_sha256": "9d9600ac0b8b9acd1a60f3ebfb0efbe1fe26775dc9a7f0531cfeed7295c7895e",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-27/AI/3",
+      "article_id": "url-9a064d95901e645ea065cfa704b4762ef050dfe46763269ed9ec0fab35c9cee2",
+      "revision_id": "editorial-6fa2960bb21a93177685b0079e18f8bada399030caec1aeae5c208e56df920ba",
+      "briefing_date": "2026-10-27",
+      "category": "AI",
+      "heading": "3. Anthropic, S-1 제출로 기업공개 절차 공개 — 상장 완료는 아님",
+      "title": "Anthropic, S-1 제출로 기업공개 절차 공개 — 상장 완료는 아님",
+      "summary": "Anthropic이 IPO(Initial Public Offering, 기업공개)를 위한 S-1(Form S-1, 미국 증권등록 신고서)을 제출했다. 회사 발표와 SEC(Securities and Exchange Commission, 미국 증권거래위원회)의 접수 기록으로 제출 사실을 확인했다. 이는 계획을 공개 신고 단계로 옮겼다는 소식이지, 상장을 마쳤다는 뜻은 아니다.",
+      "source_urls": [
+        "https://www.anthropic.com/news/s1-sec",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/0001628280-26-067168-index.html"
+      ],
+      "canonical_urls": [
+        "https://www.anthropic.com/news/s1-sec",
+        "https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/0001628280-26-067168-index.html"
+      ],
+      "publication_note": "2026-10-26 22:00:11 KST (SEC 접수시각 기준)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/AI.md",
+      "archive_url": "/news/2026-10-27/AI.html#3-anthropic-s-1-제출로-기업공개-절차-공개--상장-완료는-아님",
+      "section_sha256": "5b29a2a1edd9072b7f65661d5972a367c61335b3ecbe3833b410181d6dd291ae",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-27/AI/4",
+      "article_id": "url-33250a9e3bb4e1f08bb8ea274de5871f63898b064309dc9082aa437ecf362ee7",
+      "revision_id": "editorial-fc0d3741ee5b80a78a9d71ee004d0a0768945e09518a0a848b478d1980b9d8b7",
+      "briefing_date": "2026-10-27",
+      "category": "AI",
+      "heading": "4. Broadcom·금융기관, Anthropic용 630억 달러 컴퓨팅 금융구조 발표",
+      "title": "Broadcom·금융기관, Anthropic용 630억 달러 컴퓨팅 금융구조 발표",
+      "summary": "Broadcom과 Bank of America·Blackstone·Citi·Morgan Stanley가 Anthropic의 AI 컴퓨팅 용량을 위한 630억 달러 규모 거래를 발표했다. 금액은 당사자 발표값이며, Anthropic에 같은 금액의 현금이 직접 투자됐다는 의미는 아니다.",
+      "source_urls": [
+        "https://www.prnewswire.com/news-releases/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute-capacity-in-partnership-with-broadcom-302919849.html"
+      ],
+      "canonical_urls": [
+        "https://www.prnewswire.com/news-releases/bank-of-america-blackstone-citi-and-morgan-stanley-announce-landmark-63-billion-financing-structure-to-enable-ai-compute-capacity-in-partnership-with-broadcom-302919849.html"
+      ],
+      "publication_note": "2026-10-27 05:15 KST (원문 10월 26일 16:15 미국 동부시간)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/AI.md",
+      "archive_url": "/news/2026-10-27/AI.html#4-broadcom금융기관-anthropic용-630억-달러-컴퓨팅-금융구조-발표",
+      "section_sha256": "8a13183015438cdea6ae2e125fb410ce8985b99d84b5a766a6efbdc694f68aa2",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-27/IT/1",
+      "article_id": "url-d963615711bd49d79610dca2b177db9ef8b95b4c11611b4c98f7151ae45c8648",
+      "revision_id": "editorial-0e4013a74a6b97870b927c7138c9d08f0fe19a5711ba400cc1e287f97f03b0dc",
+      "briefing_date": "2026-10-27",
+      "category": "IT",
+      "heading": "1. tuios 0.11.1, 세 가지 보안 문제 수정 — 설치 후 데몬 재시작 필요",
+      "title": "tuios 0.11.1, 세 가지 보안 문제 수정 — 설치 후 데몬 재시작 필요",
+      "summary": "터미널에서 창과 개발 에이전트를 관리하는 tuios가 0.11.1을 공개했습니다. 전일 브리핑의 0.11.0과는 별도 업데이트로, 프로젝트가 심각도 High로 분류한 세 가지 보안 문제를 고쳤습니다. 개발자는 프로그램 파일을 교체하는 것만으로는 부족하고, 뒤에서 계속 실행되는 데몬(daemon)을 새 버전으로 재시작해야 한다고 명시했습니다.",
+      "source_urls": [
+        "https://github.com/Gaurav-Gosain/tuios/releases/tag/v0.11.1"
+      ],
+      "canonical_urls": [
+        "https://github.com/Gaurav-Gosain/tuios/releases/tag/v0.11.1"
+      ],
+      "publication_note": "2026-10-26 22:17 KST (릴리스)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/IT.md",
+      "archive_url": "/news/2026-10-27/IT.html#1-tuios-0111-세-가지-보안-문제-수정--설치-후-데몬-재시작-필요",
+      "section_sha256": "626050a408de067564d4d902c4d059d1f982c3d64d2380d4db9221426e984d4b",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-27/IT/2",
+      "article_id": "url-8a24e2c7ee572badb0aa5992977dee7ba470f040d54eae45d3ad16e7ba42107b",
+      "revision_id": "editorial-bbd3bff94d0cbfd384aa144fd2117925556cf7c431b6c0b922500cfed474f363",
+      "briefing_date": "2026-10-27",
+      "category": "IT",
+      "heading": "2. Applied Materials, Besi 지분 약 20%로 확대하는 계약 체결",
+      "title": "Applied Materials, Besi 지분 약 20%로 확대하는 계약 체결",
+      "summary": "Applied Materials가 반도체 조립장비 업체 Besi의 발행주식 약 20%를 보유하도록 투자를 늘리는 계약을 체결했다고 밝혔다. 회사 발표에 따른 목표 지분이며, 발표 시점에 추가 주식 인도가 완료됐다는 뜻은 아니다.",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/26/3388586/0/en/applied-materials-to-increase-its-strategic-investment-in-be-semiconductor-industries.html"
+      ],
+      "canonical_urls": [
+        "https://www.globenewswire.com/news-release/2026/10/26/3388586/0/en/applied-materials-to-increase-its-strategic-investment-in-be-semiconductor-industries.html"
+      ],
+      "publication_note": "2026-10-27 05:30 KST (원문 10월 26일 16:30 미국 동부시간)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/IT.md",
+      "archive_url": "/news/2026-10-27/IT.html#2-applied-materials-besi-지분-약-20로-확대하는-계약-체결",
+      "section_sha256": "ca0b814cb040be00b338d827299be2fc06c3449f2ae6f32fc5562e17fbdc8320",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-27/IT/3",
+      "article_id": "url-24809cb07c67262e08db1ee7c0b0280d43a1d646114763dbd6d521153a693b67",
+      "revision_id": "editorial-698243028ba63f63d3d747f82f3b831ce0124108a0365a56728b060aae447e20",
+      "briefing_date": "2026-10-27",
+      "category": "IT",
+      "heading": "3. Volkswagen·NXP, 미래 차량의 구역제어 칩 협력 — 첫 차량은 2027년 계획",
+      "title": "Volkswagen·NXP, 미래 차량의 구역제어 칩 협력 — 첫 차량은 2027년 계획",
+      "summary": "Volkswagen과 NXP가 미래 차량용 반도체 협력을 발표했다. NXP의 S32K5 MCU(Microcontroller Unit, 센서와 장치를 제어하는 소형 칩)를 여러 브랜드·차급에 공통으로 쓰는 구역제어 기반으로 삼겠다는 계획이다.",
+      "source_urls": [
+        "https://www.nxp.com/company/about-nxp/newsroom/NW-VOLKSWAGEN-STRENGTHENS-PARTNERSHIP-NXP"
+      ],
+      "canonical_urls": [
+        "https://www.nxp.com/company/about-nxp/newsroom/NW-VOLKSWAGEN-STRENGTHENS-PARTNERSHIP-NXP"
+      ],
+      "publication_note": "2026-10-26 18:00 KST (원문 10:00 CET·UTC+1)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/IT.md",
+      "archive_url": "/news/2026-10-27/IT.html#3-volkswagennxp-미래-차량의-구역제어-칩-협력--첫-차량은-2027년-계획",
+      "section_sha256": "ca0da0a1dd3c9c0062bda4576a0e19c28ed5bf4b40a258ba9ed7b1dbbb8c3472",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-27/모델/1",
+      "article_id": "url-b32fb058c22551822d82cde1f388ead12c0194ae66c43d8ca3340f75b9bc08e2",
+      "revision_id": "editorial-ea589728f406ee7b9b620d86bc7795aba73988ab7cfff4d608bc09f9ac0482fa",
+      "briefing_date": "2026-10-27",
+      "category": "모델",
+      "heading": "1. OpenAI, GPT-6.1 Terra 출시…시각 작업·컴퓨터 조작의 비용 낮춰",
+      "title": "OpenAI, GPT-6.1 Terra 출시…시각 작업·컴퓨터 조작의 비용 낮춰",
+      "summary": "OpenAI가 GPT-6.1 Terra를 ChatGPT Work·Codex와 API(Application Programming Interface, 프로그램끼리 기능을 주고받는 창구)에 출시했다. 이미지를 읽고 화면을 조작하는 작업, 문서 작성에 초점을 둔 모델이다. API 식별자는 gpt-6.1-terra이며, 기존 제품의 기능 추가가 아니라 새 모델 공개다.",
+      "source_urls": [
+        "https://openai.com/index/introducing-gpt-6-1-terra/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/introducing-gpt-6-1-terra/"
+      ],
+      "publication_note": "2026-10-26 발표. 공식 커뮤니티 공지 2026-10-26 18:32:49 UTC(10/27 03:32:49 KST)로 기준 구간 포함 확인. 공지 시각 원자료",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/모델.md",
+      "archive_url": "/news/2026-10-27/모델.html#1-openai-gpt-61-terra-출시시각-작업컴퓨터-조작의-비용-낮춰",
+      "section_sha256": "f0367512c930c08fd33cd776adecf88e77296294b3f8031803d88debe773d186",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-27/엔진/1",
+      "article_id": "url-686ae76031355764883a6b3cc42f4167a6f19b846ed1a32ab9fff8455774dcbd",
+      "revision_id": "editorial-46044d23a9dbe8d048c1ac57a64210a68299289d59ecca1132ef94f13d262d0e",
+      "briefing_date": "2026-10-27",
+      "category": "엔진",
+      "heading": "1. llama.cpp OpenCL, 성공으로 보이던 캐시 복원의 누락 수정",
+      "title": "llama.cpp OpenCL, 성공으로 보이던 캐시 복원의 누락 수정",
+      "summary": "llama.cpp가 OpenCL(Open Computing Language, 여러 제조사 연산 장치에서 병렬 계산을 수행하는 규격) 경로의 상태 복원 오류를 수정했습니다. 대상은 KV 캐시(Key-Value cache, 앞서 처리한 입력의 계산 결과를 보관하는 공간)를 다시 불러오는 코드입니다. 일부 압축 캐시 형식에서 저장 공간의 일부를 가리키는 뷰(view)에 실제 데이터를 쓰지 않은 채 복원이 끝난 것으로 처리했습니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11910",
+        "https://github.com/ggml-org/llama.cpp/pull/30471"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11910",
+        "https://github.com/ggml-org/llama.cpp/pull/30471"
+      ],
+      "publication_note": "2026-10-27 06:20 KST (릴리스)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/엔진.md",
+      "archive_url": "/news/2026-10-27/엔진.html#1-llamacpp-opencl-성공으로-보이던-캐시-복원의-누락-수정",
+      "section_sha256": "787fc52240cd0879a67bd8af4995ef8deb348bc6f01faebe6b629d824ac96b07",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-27/엔진/2",
+      "article_id": "url-ac2dba7d51e93c7bd65504e737af34cb414362874a0512c995c1ba3bb172ad0b",
+      "revision_id": "editorial-bc26b754e0ba6bfdce6e6d56be5b1779212cc6502363c9d798495889017c5ca5",
+      "briefing_date": "2026-10-27",
+      "category": "엔진",
+      "heading": "2. Metal 큰 행렬 출력의 주소 계산 확대 — 대용량 조건의 오류 방지",
+      "title": "Metal 큰 행렬 출력의 주소 계산 확대 — 대용량 조건의 오류 방지",
+      "summary": "llama.cpp는 애플 Metal의 큰 행렬 출력에서 메모리 위치 계산이 넘치는 문제를 수정했습니다. Metal은 애플 기기에서 그래픽과 병렬 계산을 처리하는 기술입니다. 이번 변경은 행렬 곱셈 결과를 저장하는 위치 계산의 정수 폭을 넓혀, 매우 큰 출력에서 주소가 잘못 계산되는 상황을 막는 데 초점을 맞춥니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11895",
+        "https://github.com/ggml-org/llama.cpp/pull/30072"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11895",
+        "https://github.com/ggml-org/llama.cpp/pull/30072"
+      ],
+      "publication_note": "2026-10-26 18:54 KST (릴리스)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-27/엔진.md",
+      "archive_url": "/news/2026-10-27/엔진.html#2-metal-큰-행렬-출력의-주소-계산-확대--대용량-조건의-오류-방지",
+      "section_sha256": "f64eddd4c0a6da1f8b3f34bfdb2bdea680c9ad1b574f67ecf7caedb8f3f11d40",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

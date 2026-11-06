@@ -59,3 +59,7 @@ index.html, archive.html, category/           # 홈·아카이브·분야별 페
 - 매일 24시간, 15분마다(매시 05·20·35·50분) 리서치 요청 이슈 확인 → `research/` (요청 있을 때만, 최대 3건)
 
 방문 통계는 GoatCounter(`dh-news`, IP·쿠키 저장 없음)로 헤더에 '오늘 N명'을 표시합니다. 작업 방식 변경 이력은 [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 맨 위에 있습니다.
+
+## 기사 색인·중복 검사
+
+공개 요약의 제목·원문 URL·자체 요약·사건 판정을 `article-index/editions/`의 날짜별 JSON에 보존합니다. 과거 Markdown과 발표 데이터는 수정하지 않고 별도로 색인했습니다. 새 뉴스는 게시 전 중복 검토가 필요합니다. 실행법과 한계는 [기사 색인 운영](docs/ARTICLE-INDEX.md)을 참고하세요.

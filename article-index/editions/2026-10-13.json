@@ -1,0 +1,373 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-13",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-13/AI.md": "8c1cc3ba59f3a1b62231ff6bee87093ec1e0503bbb02f568d9f005a77085e66f",
+    "news/2026-10-13/IT.md": "370e83e52814b04c628a19f5abbcc2b70c83d1740a23904e7a19e704862f7ed8",
+    "news/2026-10-13/모델.md": "79320fe92d8483f2c00e3281f9128bc9fe6d20fa8a2d8a4fedd7b11ea7ff3f69",
+    "news/2026-10-13/엔진.md": "8c8e66cc491636ab74f18dde0e948b89c62ff9099b9e8336b0910df3e925b448"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-13/AI/1",
+      "article_id": "url-c044b31b2af17828644ed578df3a3804c5aeee16f4f483527699b646ee9aef88",
+      "revision_id": "editorial-1c16547b2b799c2f3a0af7b49f38ce999419fa55a3e7e0bfce040d190b3e2151",
+      "briefing_date": "2026-10-13",
+      "category": "AI",
+      "heading": "1. Anthropic, \"작은 AI 모델이 데이터센터 없이도 IoT에서 자가 복제할 수 있다\" 연구 공개 — 연말께 능력 문턱 교차 전망",
+      "title": "Anthropic, \"작은 AI 모델이 데이터센터 없이도 IoT에서 자가 복제할 수 있다\" 연구 공개 — 연말께 능력 문턱 교차 전망",
+      "summary": "Anthropic 프론티어 레드팀이 12일 공개한 연구에 따르면, 작은 AI 모델이 상업용 IoT(Internet of Things, 인터넷에 연결된 가전·기기) — 스마트 오븐, 저가 안드로이드 TV 박스 등 — 위에서 데이터센터 없이 스스로 복제하는 수준에 수개월 안에 도달할 수 있다고 합니다. 중앙 차단 지점이 없어 끄기 어렵고, 전통 멀웨어와 달리 낯선 기기에서도 스스로 추론 환경을 차려 볼 수 있다는 점이 핵심 경고입니다. 다만 확산은 느릴 수 있어(배가 시간이 수일 단위) '디지털 슬라임 몰드'에 가깝다고 비유합니다.",
+      "source_urls": [
+        "https://www.anthropic.com/research/self-replicating-ai"
+      ],
+      "canonical_urls": [
+        "https://www.anthropic.com/research/self-replicating-ai"
+      ],
+      "publication_note": "2026-10-12",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/AI.md",
+      "archive_url": "/news/2026-10-13/AI.html#1-anthropic-작은-ai-모델이-데이터센터-없이도-iot에서-자가-복제할-수-있다-연구-공개--연말께-능력-문턱-교차-전망",
+      "section_sha256": "7e73ba18df96615e673334154477d57c4a80b2e16f54d81cf712c19cef84424e",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-13/AI/2",
+      "article_id": "url-e16626baaa369d21017d92c7f9ff6f67cf3047ed3f710e0c979b39d4843ae73e",
+      "revision_id": "editorial-4e806cfb15ce879a07ba70d17240f2973a3b269ae30ed7c66d3c12d9766fc839",
+      "briefing_date": "2026-10-13",
+      "category": "AI",
+      "heading": "2. 아마존, 이스라엘 AI 스타트업 Decart 약 70억 달러 인수 협상 — WSJ; Anthropic은 앞서 60억 달러 협상 철회",
+      "title": "아마존, 이스라엘 AI 스타트업 Decart 약 70억 달러 인수 협상 — WSJ; Anthropic은 앞서 60억 달러 협상 철회",
+      "summary": "Wall Street Journal(WSJ, 월스트리트저널) 을 인용한 SiliconANGLE 등 보도에 따르면, 아마존이 이스라엘 AI 스타트업 Decart를 약 70억 달러에 인수하는 협상을 진행 중입니다. 관계자 말을 인용해 수일 안에 타결될 수 있지만, 협상이 깨지거나 다른 인수자가 나설 수도 있다고 했습니다. Decart는 2023년 Dean·Orian Leitersdorf 형제와 Moshe Shalev가 창업했고, 올해 5월 3억 달러를 조달해 기업가치 약 40억 달러를 인정받았으며 누적 조달은 4억 달러가 넘습니다. 투자자에는 Radical Ventures, Nvidia Ventures, Adobe Ventures, Sequoia, Benchmark 등이 있습니다.",
+      "source_urls": [
+        "https://siliconangle.com/2026/10/11/report-amazon-in-talks-with-ai-startup-decart-over-possible-7b-acquisition/"
+      ],
+      "canonical_urls": [
+        "https://siliconangle.com/2026/10/11/report-amazon-in-talks-with-ai-startup-decart-over-possible-7b-acquisition/"
+      ],
+      "publication_note": "2026-10-11",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/AI.md",
+      "archive_url": "/news/2026-10-13/AI.html#2-아마존-이스라엘-ai-스타트업-decart-약-70억-달러-인수-협상--wsj-anthropic은-앞서-60억-달러-협상-철회",
+      "section_sha256": "22419b2acb077a3af02cf7756834d52ea615f45438b0ed4fc84fc3eb8e1dd510",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-13/AI/3",
+      "article_id": "url-ef40eb4111bc667de0ca4882b39b5778f36ba5848ccd40fbb371d54816bcf6a9",
+      "revision_id": "editorial-6368cdc531d79c3b093b8a1ac206ec9d27649f0a27a627660c9ddb5e419aaf1c",
+      "briefing_date": "2026-10-13",
+      "category": "AI",
+      "heading": "3. Anthropic, 비트코인 채굴 출신 IREN과 다년 클라우드 계약 체결 보도 — The Information; 양사 미확인",
+      "title": "Anthropic, 비트코인 채굴 출신 IREN과 다년 클라우드 계약 체결 보도 — The Information; 양사 미확인",
+      "summary": "The Information이 익명 소식통을 인용해 전한 내용을 IBD(Investor's Business Daily)·Crypto Briefing 등이 재보도했습니다. Anthropic이 비트코인 채굴에서 AI 인프라로 전환한 IREN(나스닥 상장)과 다년 클라우드(컴퓨팅) 계약을 맺었다는 것입니다. 계약 규모·기간·전력(메가와트)은 공개되지 않았고, 양사 모두 공식 확인하지 않았습니다. IREN은 앞서 실적 발표에서 이름 없는 '선도 프론티어 AI 랩'과 다년 계약을 언급한 바 있어, 그 상대가 Anthropic일 수 있다는 해석이 나옵니다.",
+      "source_urls": [
+        "https://www.investors.com/news/iren-stock-anthropic-ai-cloud-services-deal-data-center-buildout-reports/"
+      ],
+      "canonical_urls": [
+        "https://www.investors.com/news/iren-stock-anthropic-ai-cloud-services-deal-data-center-buildout-reports/"
+      ],
+      "publication_note": "2026-10-12",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/AI.md",
+      "archive_url": "/news/2026-10-13/AI.html#3-anthropic-비트코인-채굴-출신-iren과-다년-클라우드-계약-체결-보도--the-information-양사-미확인",
+      "section_sha256": "b4dd1e6e557fc77766fb6c52ff92eea5673f3f97005b054e57b3f51dd275be12",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-13/IT/1",
+      "article_id": "url-0870be26672b97145b1b07ba4edddba3f05420b58ff9e53410a34ab5146404b5",
+      "revision_id": "editorial-bc91b5639ed2eef210a4d3f16ab7d2f8abd50874104dc9beaaa252d3c7191694",
+      "briefing_date": "2026-10-13",
+      "category": "IT",
+      "heading": "1. 삼성전자, OCP서 AI 메모리 '속도·확장성·영속성' 3축 전략 — HBM5·CXL·SSD 전시, AMD와 공동 시연",
+      "title": "삼성전자, OCP서 AI 메모리 '속도·확장성·영속성' 3축 전략 — HBM5·CXL·SSD 전시, AMD와 공동 시연",
+      "summary": "삼성전자가 12일(현지시간, 한국 시각 13일) 미국 캘리포니아주 새너제이에서 열린 OCP(Open Compute Project, 빅테크·서버 업체가 데이터센터 하드웨어 표준을 함께 만드는 오픈 프로젝트) 글로벌 서밋에서 속도와 확장성, 영속성(오래 보관)에 초점을 맞춘 새 메모리 전략을 공개했습니다. 심호준 삼성전자 DS부문 메모리사업부 AE팀 상무가 발표를 맡았고, 연합뉴스·매일경제 등이 보도했습니다.",
+      "source_urls": [
+        "https://www.yna.co.kr/view/AKR20261013015800091"
+      ],
+      "canonical_urls": [
+        "https://www.yna.co.kr/view/AKR20261013015800091"
+      ],
+      "publication_note": "2026-10-13",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/IT.md",
+      "archive_url": "/news/2026-10-13/IT.html#1-삼성전자-ocp서-ai-메모리-속도확장성영속성-3축-전략--hbm5cxlssd-전시-amd와-공동-시연",
+      "section_sha256": "e8d442bf616d82e2b6c8522eff617013011f1563b3a88739498f8b7e2a888693",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-13/IT/2",
+      "article_id": "url-56bf9f17960758a15ba1a303464fc3c56d4f7cbbe55fc176245a59838bd6f0c4",
+      "revision_id": "editorial-4335634006d97cf4083c0c0198bf7cfae891c727c75ebb4aaa0cf82b15713076",
+      "briefing_date": "2026-10-13",
+      "category": "IT",
+      "heading": "2. AMD, OCP서 에이전트 AI용 랙 설계 'Helion' 공개 — CPU만으로 최대 3만 2,768코어, 11월 출하 목표",
+      "title": "AMD, OCP서 에이전트 AI용 랙 설계 'Helion' 공개 — CPU만으로 최대 3만 2,768코어, 11월 출하 목표",
+      "summary": "AMD가 12일 OCP 글로벌 서밋에서 에이전트 AI(Agentic AI, 목표를 잡고 도구를 쓰며 여러 단계 작업을 스스로 이어 가는 AI) 인프라용 오픈 랙 블루프린트 Helion을 공개했습니다. 앞서 내놓은 Helios 랙스케일 솔루션의 개방형 접근을 이어가며, OCP 규격 기반 설계에 AMD 연산(CPU·GPU)을 얹는 형태입니다. 스펙은 OCP에 기여할 계획이고, 파트너와 개발 중인 구성은 2026년 11월 가용을 목표로 합니다.",
+      "source_urls": [
+        "https://newsroom.amd.com/news/open-rack-blueprint-scale-agentic-ai/"
+      ],
+      "canonical_urls": [
+        "https://newsroom.amd.com/news/open-rack-blueprint-scale-agentic-ai/"
+      ],
+      "publication_note": "2026-10-12",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/IT.md",
+      "archive_url": "/news/2026-10-13/IT.html#2-amd-ocp서-에이전트-ai용-랙-설계-helion-공개--cpu만으로-최대-3만-2768코어-11월-출하-목표",
+      "section_sha256": "14f855bd38175308f0c3590542e2424f07cb24f8f67c8bf66223a5f13087caed",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-13/IT/3",
+      "article_id": "url-cb1d8044b50f43a24e9c668bee862585dc5ff81fe980c5fd2532d4b1ed8ff338",
+      "revision_id": "editorial-16b6936963d1a9004d71ff65e0a4af6b51462e4e22db5e3daa5c85198c0e7741",
+      "briefing_date": "2026-10-13",
+      "category": "IT",
+      "heading": "3. 엔비디아, OCP서 Vera Rubin 랙·트레이 설계를 MGX로 공개 기여 — 시스코·구글·메타 등과 AI 팩토리 표준 확장",
+      "title": "엔비디아, OCP서 Vera Rubin 랙·트레이 설계를 MGX로 공개 기여 — 시스코·구글·메타 등과 AI 팩토리 표준 확장",
+      "summary": "엔비디아가 같은 OCP 글로벌 서밋에서 Vera Rubin 랙·컴퓨트 트레이 설계의 핵심을 오픈 MGX 아키텍처를 통해 OCP에 기여한다고 밝혔습니다. 목표는 차세대 AI 팩토리(대규모 AI 학습·추론을 돌리는 데이터센터 설비) 인프라를 시스템 빌더가 공통 기반으로 만들 수 있게 하는 것입니다. Cisco, Google, Meta, Microsoft, Visionbay 등이 Vera Rubin 관련 진전을 함께 언급됐습니다.",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/"
+      ],
+      "canonical_urls": [
+        "https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/"
+      ],
+      "publication_note": "2026-10-12",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/IT.md",
+      "archive_url": "/news/2026-10-13/IT.html#3-엔비디아-ocp서-vera-rubin-랙트레이-설계를-mgx로-공개-기여--시스코구글메타-등과-ai-팩토리-표준-확장",
+      "section_sha256": "9b1a79f0cfe5fe1c84d99f19a344f18eea8fb26ca12fd480162de7dd6f6fca32",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-13/모델/1",
+      "article_id": "url-033e5603f4dfe677d6e5819c467bea60e8662638123f5fbf072393c4ccb03346",
+      "revision_id": "editorial-401949b571bf020a4ba2a84d28efd221a87157c617cda23e303a1109cb026d90",
+      "briefing_date": "2026-10-13",
+      "category": "모델",
+      "heading": "1. Meta, Muse Wonder·Muse Wonder Full 공개 — 에이전트용 프론티어 모델; Full은 Muse Code 구독 전용",
+      "title": "Meta, Muse Wonder·Muse Wonder Full 공개 — 에이전트용 프론티어 모델; Full은 Muse Code 구독 전용",
+      "summary": "Meta가 12일 Muse Wonder와 Muse Wonder Full을 공개했습니다. Muse Spark 이후 스케일링 사다리의 다음 단으로, 개인·업무용 에이전트(목표를 잡고 앱·도구를 넘나들며 일을 이어 가는 AI) 작업에 맞춰 설계했다고 합니다. 학습은 기가와트급 Prometheus 데이터센터에서 이뤄졌고, Active Memory(대화·맥락을 넘어 필요한 정보를 다시 꺼내 씀)와 Active Focus(막혀도 다른 방법을 시도하고, 중요한 조치는 확인을 구함)를 전면에 내세웠습니다. 입력은 텍스트·이미지·오디오·비디오, 출력은 텍스트, 컨텍스트 창은 약 100만 토큰입니다.",
+      "source_urls": [
+        "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/"
+      ],
+      "canonical_urls": [
+        "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/"
+      ],
+      "publication_note": "2026-10-12",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/모델.md",
+      "archive_url": "/news/2026-10-13/모델.html#1-meta-muse-wondermuse-wonder-full-공개--에이전트용-프론티어-모델-full은-muse-code-구독-전용",
+      "section_sha256": "30a820bb3bc4a12948858047f97f08b5bccc37906c3c06751a73868198e17774",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-13/모델/2",
+      "article_id": "url-0f2f424704bb0160ce964bd6d60b0621471a983773ea4965bd4511ee2156a29f",
+      "revision_id": "editorial-afe7876303b9c56578aeca0d07220e637ddfa7545e07cbed01fae0aba63e5496",
+      "briefing_date": "2026-10-13",
+      "category": "모델",
+      "heading": "2. Continuum AI, 사이버보안 추론 모델 OrcaCyber Zero 1.5 발표 — 회사 기준 CVE-Bench 95.8%·Cybench 100%",
+      "title": "Continuum AI, 사이버보안 추론 모델 OrcaCyber Zero 1.5 발표 — 회사 기준 CVE-Bench 95.8%·Cybench 100%",
+      "summary": "Continuum AI가 12일 사이버보안 특화 추론 모델 OrcaCyber Zero 1.5를 발표했습니다. 100만 토큰 컨텍스트, 네이티브 도구 호출, 확장 추론을 내세워 대규모 코드베이스·보안 로그·긴 조사 이력을 한 세션에서 다루게 했다고 합니다. 회사 발표 기준 벤치마크는 CVE-Bench 95.8%(평가 가능 24과제 중 23), Cybench 100%(39/39, unrestricted), HumanEval+ 93.9%입니다. 전작 Zero 1.0은 CyberGym에서 자율 하네스 pass@1 98% 이상을 냈고 글로벌 상위권이었다고 자사 집계를 인용했습니다.",
+      "source_urls": [
+        "https://www.prnewswire.com/news-releases/continuum-ai-introduces-orcacyber-zero-1-5--a-frontier-cybersecurity-reasoning-model-302905663.html"
+      ],
+      "canonical_urls": [
+        "https://www.prnewswire.com/news-releases/continuum-ai-introduces-orcacyber-zero-1-5--a-frontier-cybersecurity-reasoning-model-302905663.html"
+      ],
+      "publication_note": "2026-10-12",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/모델.md",
+      "archive_url": "/news/2026-10-13/모델.html#2-continuum-ai-사이버보안-추론-모델-orcacyber-zero-15-발표--회사-기준-cve-bench-958cybench-100",
+      "section_sha256": "0dc4ebeff2d6447843650a3426dda6fba3c9729347615d362d27bee24c8d89f1",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-13/엔진/1",
+      "article_id": "url-62bd2b4c042758daf6fae0902e1ce23d2152c56ecb499b1451608a97edc529fa",
+      "revision_id": "editorial-4c4571f9b6bd6d4f525e3c5a908d164bf9e5ec3608aaa5c735bc36db00c7816f",
+      "briefing_date": "2026-10-13",
+      "category": "엔진",
+      "heading": "1. Ollama v0.40.4-rc0 — llama.cpp b11521 반영(결정 모델·EmbeddingGemma 2), 매니페스트 재사용·MLX 수정",
+      "title": "Ollama v0.40.4-rc0 — llama.cpp b11521 반영(결정 모델·EmbeddingGemma 2), 매니페스트 재사용·MLX 수정",
+      "summary": "로컬 LLM 실행 도구 Ollama가 v0.40.4-rc0(릴리스 후보)를 12일(UTC) 공개했습니다. 전날 안정판 v0.40.3에서 '기존 모델 자동 업그레이드'를 잠정 중단한 직후 나온 후보 빌드입니다. 가장 큰 변화는 내부 llama.cpp를 b11521로 올려 결정 모델(decision model, 글을 생성하지 않고 선택지마다 확률을 매기는 모델) 과 EmbeddingGemma 2 지원을 끌어온 점입니다(PR #18917).",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.4-rc0"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.4-rc0"
+      ],
+      "publication_note": "2026-10-12 (UTC 19:00, 한국 시각 13일 새벽 4시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/엔진.md",
+      "archive_url": "/news/2026-10-13/엔진.html#1-ollama-v0404-rc0--llamacpp-b11521-반영결정-모델embeddinggemma-2-매니페스트-재사용mlx-수정",
+      "section_sha256": "c1a1262cc54c94f0b9aa24260b393139dc6ad0d301c52e6ce86f094cf1245a9b",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-13/엔진/2",
+      "article_id": "url-216858577134aecaf8bf20ab2dbe4984992a69f2af2cb47993d18c9e7bc7ee2f",
+      "revision_id": "editorial-cc27b34ba43ce0ee9f638ae521d85d2a1b014c81141c981371985ea4a9a01085",
+      "briefing_date": "2026-10-13",
+      "category": "엔진",
+      "heading": "2. llama.cpp b11571~b11577 — vLLM Decision-2·d3 모델 지원, Metal·Vulkan·Hexagon 수정",
+      "title": "llama.cpp b11571~b11577 — vLLM Decision-2·d3 모델 지원, Metal·Vulkan·Hexagon 수정",
+      "summary": "llama.cpp는 12일(UTC) 하루 동안 b11560~b11577대 프리릴리스를 잇달아 냈습니다. 모델 쪽에서 눈에 띄는 것은 b11571의 vLLM Decision 2 지원(#30378)과 b11572의 vLLM d3 모델 지원(#30383), 이어 b11577의 d3 멀티 시퀀스 케이스 수정(#30408)입니다. 전날 브리핑에 올렸던 Microsoft 계열 결정 모델·관련 런타임 이슈가 로컬 엔진에도 빠르게 흡수되는 흐름입니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11572"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11572"
+      ],
+      "publication_note": "2026-10-12",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-13/엔진.md",
+      "archive_url": "/news/2026-10-13/엔진.html#2-llamacpp-b11571b11577--vllm-decision-2d3-모델-지원-metalvulkanhexagon-수정",
+      "section_sha256": "d7c1fa24c9787fb84606353c42669684f7c8029b973554df4845699c5b96f5a0",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

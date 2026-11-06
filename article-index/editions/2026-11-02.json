@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-11-02",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-11-02/AI.md": "a752d630032e3756d3e3793f23cbfef1b98379715b6bc8d476fe414589342bdc",
+    "news/2026-11-02/IT.md": "3fb67aa853b097ce47c23b0a83963c8a4d13a6060b6224a1a0ad10b89c6a935f",
+    "news/2026-11-02/엔진.md": "06598ca0cb3da6c39a7baceb2fff9748085f7315dae1c41d2e77ed5b7beb2380"
+  },
+  "records": [
+    {
+      "entry_id": "2026-11-02/AI/1",
+      "article_id": "url-9b175871291c1b25c1cbc3179c45d578d5cea96be613a7d9c5fa198ee166cde3",
+      "revision_id": "editorial-e56d8e13d3d37f7c03e7334b5317349041c811314e6db102ff23756525d7521d",
+      "briefing_date": "2026-11-02",
+      "category": "AI",
+      "heading": "1. 아람코, HUMAIN 지분 49% 거래 마무리… 3GW는 2030년까지의 계획",
+      "title": "아람코, HUMAIN 지분 49% 거래 마무리… 3GW는 2030년까지의 계획",
+      "summary": "아람코는 완전자회사를 통한 HUMAIN 지분 49% 인수 거래가 마무리됐다고 발표했다. 사우디 공공투자기금 PIF(Public Investment Fund, 사우디아라비아의 국부펀드)는 나머지 51%를 유지한다. 모델 공개가 아니라 AI 인프라 기업의 소유·자본 구조에 관한 소식이다.",
+      "source_urls": [
+        "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth"
+      ],
+      "canonical_urls": [
+        "https://www.aramco.com/en/news-media/news/2026/pif-and-aramco-close-humain-transaction-to-accelerate-humains-global-growth"
+      ],
+      "publication_note": "2026-11-01. 공식 원문에 시각·시간대 미표기. 날짜 기준 포함했으며 정확한 24시간 경계는 확인되지 않는다.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-02/AI.md",
+      "archive_url": "/news/2026-11-02/AI.html#1-아람코-humain-지분-49-거래-마무리-3gw는-2030년까지의-계획",
+      "section_sha256": "a5516eda49ac4a1b3a1b2e3e88ba1341a4588e35cf021fb34631579274ab87ee",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-02/IT/1",
+      "article_id": "url-3e9fd904426cfd9a048a98d43e8294532b391c5567873036401d7b2ef46dd356",
+      "revision_id": "editorial-66a4b80b270a13b8a8068c7989913bd807244989e79f0ce892b6f73df41ee1f8",
+      "briefing_date": "2026-11-02",
+      "category": "IT",
+      "heading": "1. 삼성, 요코하마 첨단 패키징 연구 거점 점검… 새 투자 발표와는 구분",
+      "title": "삼성, 요코하마 첨단 패키징 연구 거점 점검… 새 투자 발표와는 구분",
+      "summary": "삼성전자는 이재용 회장이 11월 1일 일본 요코하마의 APL(Advanced Package Lab·첨단 반도체 패키징 연구소)을 방문했다고 밝혔다. 패키징은 여러 반도체를 연결하고 보호해 하나의 시스템처럼 작동시키는 기술이다. 이번 점검은 소재·공정 연구와 일본 협력사와의 협업에 초점이 맞춰졌다.",
+      "source_urls": [
+        "https://news.samsung.com/kr/이재용-삼성전자-회장-미래-반도체-패키징-기술-일본"
+      ],
+      "canonical_urls": [
+        "https://news.samsung.com/kr/이재용-삼성전자-회장-미래-반도체-패키징-기술-일본"
+      ],
+      "publication_note": "2026-11-01. 공식 원문의 게시 시각은 미표기이며, 한국 날짜 기준으로 포함했으나 정확한 24시간 경계는 확인되지 않는다.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-02/IT.md",
+      "archive_url": "/news/2026-11-02/IT.html#1-삼성-요코하마-첨단-패키징-연구-거점-점검-새-투자-발표와는-구분",
+      "section_sha256": "cc5df6349049e3d28abc35243b0ba3da7fcc00bb794923a0a210a18c31afc5d6",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-02/IT/2",
+      "article_id": "url-6b4d00aecff494a835bddba42f8b594af0aa3bd9e74c79912680bdfe42a6d398",
+      "revision_id": "editorial-df2328ec64aefaad0f14823c5d4af481b2dc68ba196f288c88dcbaf5dc29137a",
+      "briefing_date": "2026-11-02",
+      "category": "IT",
+      "heading": "2. 10월 반도체 수출 564.4억 달러… AI 수요 설명과 가격 효과를 함께 읽어야",
+      "title": "10월 반도체 수출 564.4억 달러… AI 수요 설명과 가격 효과를 함께 읽어야",
+      "summary": "산업통상부는 10월 전체 수출이 1,152.8억 달러로 전년 동월보다 93.7% 늘었다고 발표했다. 반도체 수출은 564.4억 달러로 259.4% 증가했다. 이는 수출 금액 통계이며 출하량 증가율이나 기업 이익 증가율이 아니다.",
+      "source_urls": [
+        "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view?mno=&pageIndex=1"
+      ],
+      "canonical_urls": [
+        "https://www.motir.go.kr/kor/article/ATCL3f49a5a8c/172360/view?mno=&pageIndex=1"
+      ],
+      "publication_note": "2026-11-01 등록. 공식 원문은 시각 미표기.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-02/IT.md",
+      "archive_url": "/news/2026-11-02/IT.html#2-10월-반도체-수출-5644억-달러-ai-수요-설명과-가격-효과를-함께-읽어야",
+      "section_sha256": "38d26f1bf8872afef0d57e734e50512c58c669c6b965852d867b201dd3c8f463",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-02/엔진/1",
+      "article_id": "url-ee089bed34253d92bb05313f35266763a54804f7f57de5b36b1877ea21669955",
+      "revision_id": "editorial-5084592d269ddacafa574c1ced495696078a182415b767c930009f5cde3a252c",
+      "briefing_date": "2026-11-02",
+      "category": "엔진",
+      "heading": "1. llama.cpp, OpenCL의 IQ3 초기 지원과 Hexagon 대용량 전송 오류 수정",
+      "title": "llama.cpp, OpenCL의 IQ3 초기 지원과 Hexagon 대용량 전송 오류 수정",
+      "summary": "llama.cpp의 b12031은 OpenCL(Open Computing Language, 여러 종류의 연산 장치를 같은 규격으로 다루는 기술) 경로에 IQ3_S와 IQ3_XXS(모델 가중치를 낮은 비트 수로 저장하는 양자화 형식)의 초기 지원을 추가했다. 양자화는 모델의 수치를 더 적은 비트로 표현해 저장 공간과 계산 부담을 줄이는 방법이다. 변경 기록에는 Qualcomm Adreno 그래픽 장치를 위한 행렬 연산과 좁은 배치의 처리 개선이 포함된다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12031"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12031"
+      ],
+      "publication_note": "b12031 2026-11-01 16:41:33 KST, b12030 16:16:14 KST. 두 판 모두 GitHub 사전 릴리스 표시.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-02/엔진.md",
+      "archive_url": "/news/2026-11-02/엔진.html#1-llamacpp-opencl의-iq3-초기-지원과-hexagon-대용량-전송-오류-수정",
+      "section_sha256": "f0ebc60cb3456fba27864e921c2252b30c9b29a58002e4505046e4ca74ac847c",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

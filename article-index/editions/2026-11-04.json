@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-11-04",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-11-04/AI.md": "7f13948727e4b4f6402889c13aa3f13b70e99f71eea8cc00487ed2cdc73df54e",
+    "news/2026-11-04/IT.md": "15795fdd63b7e5d0192f69cf430e823186fa17dfdaaea12c0c7fbce524da4388",
+    "news/2026-11-04/X.md": "ccc6db8ca6d813aafd6d3ba1bd83bcb587e48f0ff8485d4259b60db5bb123be4",
+    "news/2026-11-04/엔진.md": "5e0c45c428fb6a471dfcd04a64dc9e01156d29810a6a8e030a2a52c13e4b8230"
+  },
+  "records": [
+    {
+      "entry_id": "2026-11-04/AI/1",
+      "article_id": "url-8bc47e2b314460fe30c9ab30e11b423d735faf3c045b41a3465fb11294c3f331",
+      "revision_id": "editorial-15e4ca986982798dec2b8906e1c261288c41f1a416ba43f5e4107dd70262d75e",
+      "briefing_date": "2026-11-04",
+      "category": "AI",
+      "heading": "1. Google, Classroom에 Guided Learning 확대…학교의 AI 통제권에는 검색 문제가 남는다",
+      "title": "Google, Classroom에 Guided Learning 확대…학교의 AI 통제권에는 검색 문제가 남는다",
+      "summary": "Google은 정답을 바로 제시하기보다 질문과 단계별 설명으로 학습을 돕는 Guided Learning을 Google Classroom에 전 세계적으로 배포한다고 발표했다. 교사가 지정한 수업 자료에 맞춰 학생의 활동을 안내하고, 교사가 진행 상황을 살펴볼 수 있게 하는 방식이다. 회사는 답을 대신 내는 것과 학생 스스로 문제를 풀도록 돕는 것을 구별하겠다고 설명한다.",
+      "source_urls": [
+        "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/"
+      ],
+      "canonical_urls": [
+        "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/"
+      ],
+      "publication_note": "두 원문 모두 2026-11-03 23:00 KST(HTML 게시 시각 14:00 UTC)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-04/AI.md",
+      "archive_url": "/news/2026-11-04/AI.html#1-google-classroom에-guided-learning-확대학교의-ai-통제권에는-검색-문제가-남는다",
+      "section_sha256": "f0d8f1bd2c686cf1d5ea15a3e62a692c78275385e1720ad4f6bdb21103cd8ad5",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-04/AI/2",
+      "article_id": "url-6d3b5b9ceb736524c424871aa2cf050ffa1bf392fcc639b1ee8b493781c63e2e",
+      "revision_id": "editorial-d2f5bf773147d9e42c77739ac8a45a3169c8c9317d157d6a5da494eb147e3c0d",
+      "briefing_date": "2026-11-04",
+      "category": "AI",
+      "heading": "2. OpenAI, 물리 제품 설계와 Mazda 연구 협업 공개…제조 검토는 여전히 사람의 몫",
+      "title": "OpenAI, 물리 제품 설계와 Mazda 연구 협업 공개…제조 검토는 여전히 사람의 몫",
+      "summary": "OpenAI가 GPT-6 Astra를 활용한 기계·전기 설계 사례와 산업 연구 협력을 공개했다. 직원 두 명이 부수 프로젝트로 일주일 이내에 Codex와 대화하는 기기를 설계하고, 계약 제조사가 한 달 이내에 소량 시제품을 만들었다는 회사 설명이다. 외함·PCB(Printed Circuit Board, 전자 부품과 배선을 연결하는 인쇄회로기판)·소프트웨어 연동을 함께 다룬 사례다.",
+      "source_urls": [
+        "https://openai.com/index/accelerating-engineering-for-the-physical-world/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/accelerating-engineering-for-the-physical-world/"
+      ],
+      "publication_note": "원문 2026-11-03, 게시 시각·시간대 미공개",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-04/AI.md",
+      "archive_url": "/news/2026-11-04/AI.html#2-openai-물리-제품-설계와-mazda-연구-협업-공개제조-검토는-여전히-사람의-몫",
+      "section_sha256": "9e4a38bb4ac420ddd42110ae7d77d8abccda75f2a6817294122f9360a31c9a5f",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-04/IT/1",
+      "article_id": "url-50e36827f339577a87ad816d4670929e784716e9f6c035bac843f8d6527980a7",
+      "revision_id": "editorial-32315cf9c9a3590dc2f5770313f82640b28dfe968ad414ccacf2e463fe9b2c03",
+      "briefing_date": "2026-11-04",
+      "category": "IT",
+      "heading": "1. AMD, 데이터센터 매출 97% 증가…게임 부진과 현금흐름은 별도로 봐야",
+      "title": "AMD, 데이터센터 매출 97% 증가…게임 부진과 현금흐름은 별도로 봐야",
+      "summary": "AMD가 2026년 3분기 매출 133억7,700만 달러, 전년 동기 대비 45% 증가를 발표했다. 회사 발표 기준 미국 회계기준인 GAAP(Generally Accepted Accounting Principles, 일반적으로 인정되는 회계 원칙) 순이익은 24억2,800만 달러, 희석 주당순이익은 1.46달러다. 일부 비용·손익을 조정한 비GAAP 주당순이익 2.09달러와 혼동하면 안 된다.",
+      "source_urls": [
+        "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+      ],
+      "canonical_urls": [
+        "https://ir.amd.com/news-events/press-releases/detail/1303/amd-reports-third-quarter-2026-financial-results"
+      ],
+      "publication_note": "2026-11-04 06:15 KST(원문 11월 3일 16:15 EST)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-04/IT.md",
+      "archive_url": "/news/2026-11-04/IT.html#1-amd-데이터센터-매출-97-증가게임-부진과-현금흐름은-별도로-봐야",
+      "section_sha256": "81a8818ae597a53d6136a1eb308183ec351039a652bd6feb8ff448ad63be29b6",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-04/IT/2",
+      "article_id": "url-035d80ccbd2f129d2d6bea7cac871ededa7e30e8dad2feb79edcfeeaac27f338",
+      "revision_id": "editorial-c61f9e17c4e7fec4ad1d1ec225f0f2efb8143bd9ac0bbc864ccd3dda8f269c19",
+      "briefing_date": "2026-11-04",
+      "category": "IT",
+      "heading": "2. CrowdStrike, AI Kill Switch 확대…현재 게이트웨이와 향후 단말 기능 구분",
+      "title": "CrowdStrike, AI Kill Switch 확대…현재 게이트웨이와 향후 단말 기능 구분",
+      "summary": "CrowdStrike가 Falcon Guardian의 AI Kill Switch와 여러 에이전트 보안 기능을 발표했다. 핵심 주장은 명령을 받는 에이전트, 통신 경로, 실제 프로그램이 실행되는 단말을 함께 관찰해야 승인하지 않은 행동을 막을 수 있다는 것이다. 이는 자사 제품 구조에 대한 설명이지 모든 공격을 차단했다는 독립 시험 결과는 아니다.",
+      "source_urls": [
+        "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-delivers-ai-security-safety-for-the-enterprise/"
+      ],
+      "canonical_urls": [
+        "https://www.crowdstrike.com/en-us/press-releases/crowdstrike-delivers-ai-security-safety-for-the-enterprise/"
+      ],
+      "publication_note": "원문 2026-11-03, 게시 시각·시간대 미공개",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-04/IT.md",
+      "archive_url": "/news/2026-11-04/IT.html#2-crowdstrike-ai-kill-switch-확대현재-게이트웨이와-향후-단말-기능-구분",
+      "section_sha256": "ef0a9f62cea43fb975532d9e64152e3bfed536991e8e3450e45b9a75ab4e4b09",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-04/X/1",
+      "article_id": "url-72484386c065696f18cf620c7a1fedb9a40855c6e4cca850fd85792b2e53491c",
+      "revision_id": "editorial-5c333b4e49049ad8a0c6bb8219df5dd96030f471c39dbe4aa440793f74722165",
+      "briefing_date": "2026-11-04",
+      "category": "X",
+      "heading": "1. Elon Musk — Grok의 전화·예약 사례 홍보, 성공 사례와 일반 성능은 구분",
+      "title": "Elon Musk — Grok의 전화·예약 사례 홍보, 성공 사례와 일반 성능은 구분",
+      "summary": "Musk는 Grok Bot의 전화 기능을 사용해 보라고 권유하고, 여행과 예약 업무를 수행했다는 이용자 사례를 공유했다. 질문에 답하는 챗봇보다 사용자를 대신해 여러 단계를 진행하는 에이전트로 제품을 설명하는 발언이다. 해당 게시글을 확인했다는 사실과 실제 예약·통화가 원하는 대로 끝났는지를 독립 검증했다는 것은 다르다.",
+      "source_urls": [
+        "https://x.com/elonmusk/status/2117722703738310713"
+      ],
+      "canonical_urls": [
+        "https://x.com/elonmusk/status/2117722703738310713"
+      ],
+      "publication_note": "전화 기능 권유 2026-11-04 05:56:52 KST, 여행 02:06:16 KST, 전화 예약 02:11:25 KST(원문에 포함된 게시 시각 기준)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-04/X.md",
+      "archive_url": "/news/2026-11-04/X.html#1-elon-musk--grok의-전화예약-사례-홍보-성공-사례와-일반-성능은-구분",
+      "section_sha256": "ec5cc1d4d3eebd63040a82b24e748825ba672fde7b5b2e34374cdb9759460705",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-04/엔진/1",
+      "article_id": "url-b53d42e9c538fd7656efa2b9632258068870d4d2b093dcc174fbb6da1f0f9bef",
+      "revision_id": "editorial-3a004d77ffce14addcb98cfad36d015c2137a32e41109ff0a42e84c331eaeae0",
+      "briefing_date": "2026-11-04",
+      "category": "엔진",
+      "heading": "1. Ollama v0.40.14, 모델 기본 생성 설정과 코딩 도구 연결 수정",
+      "title": "Ollama v0.40.14, 모델 기본 생성 설정과 코딩 도구 연결 수정",
+      "summary": "Ollama v0.40.14가 정식 릴리스로 게시됐다. 주요 수정은 OpenAI 호환 API(Application Programming Interface, 프로그램끼리 요청·결과를 주고받는 연결 규칙)에서 사용자가 생성 설정을 생략했을 때 모델에 포함된 기본 설정을 지키는 것이다. 기존처럼 temperature(답변 선택의 무작위성을 조절하는 값)와 top_p(누적 확률로 후보 범위를 제한하는 값)를 1.0으로 덮어쓰지 않고 자체 채팅 경로와 동작을 맞췄다고 설명한다.",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.14"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.14"
+      ],
+      "publication_note": "v0.40.14 2026-11-03 10:40:40 KST, v0.40.15-rc0 2026-11-04 07:52:31 KST",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-04/엔진.md",
+      "archive_url": "/news/2026-11-04/엔진.html#1-ollama-v04014-모델-기본-생성-설정과-코딩-도구-연결-수정",
+      "section_sha256": "595a8d9c78dea514f7a95b1e8f552cf5fe019f1d36a269dd69a2fb3133e0a80f",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-04/엔진/2",
+      "article_id": "url-9700c07623d0788d582591ffa474c377b1ef3b3fad61e0a1f3c2914841840c05",
+      "revision_id": "editorial-343f175d889ca0e9323410fc14a339cc87b82f2bccd6d4892d14467a75ffe1d3",
+      "briefing_date": "2026-11-04",
+      "category": "엔진",
+      "heading": "2. llama.cpp, 여러 노드의 연산 분할과 모델 파일 검사 보강",
+      "title": "llama.cpp, 여러 노드의 연산 분할과 모델 파일 검사 보강",
+      "summary": "llama.cpp의 b12079는 NCCL(NVIDIA Collective Communications Library, 여러 그래픽 연산 장치 사이의 데이터 교환을 돕는 라이브러리)을 이용한 다중 노드 텐서 병렬 처리를 추가했다. 텐서 병렬 처리(Tensor Parallelism)는 모델 계산을 여러 장치로 나누는 방식이다. 변경 기록은 서로 다른 프로세스의 집단 통신 인터페이스와 지원되는 원격 실행 경로의 활용을 설명한다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12079"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12079"
+      ],
+      "publication_note": "b12079 2026-11-04 06:58:54 KST, b12078 03:23:30 KST, b12081 07:47:34 KST",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-04/엔진.md",
+      "archive_url": "/news/2026-11-04/엔진.html#2-llamacpp-여러-노드의-연산-분할과-모델-파일-검사-보강",
+      "section_sha256": "d212adbc7d108f24b3c7678783db8c317788c69e35a1c443be75f18b3a65b796",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

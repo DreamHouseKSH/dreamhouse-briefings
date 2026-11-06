@@ -1,0 +1,445 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-11-06",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-11-06/AI.md": "53132e95b8a15fa1dfcc9791a846db91a6f90051e21949e0731284e365225547",
+    "news/2026-11-06/IT.md": "078163f18e037c7fae9499b153f48210a2c4cedb6b5036689e0decb20e812d51",
+    "news/2026-11-06/모델.md": "86fc7ad251f4bc005e1d7236839a54ee448ccdd478fdb125bd723dd201b2b932",
+    "news/2026-11-06/엔진.md": "84d12065339895ba25278d9981480d5c403f43ede88cfef720d573635a15e95e"
+  },
+  "records": [
+    {
+      "entry_id": "2026-11-06/AI/1",
+      "article_id": "url-259ab2eb05b0186eda5bfe180400cc66e0fcb6893b9d8e05074af9073170f808",
+      "revision_id": "editorial-87fd9c6d8a7dacade3a2f15461db9c36d6dcd7ed307e516019ae15df034d8ab1",
+      "briefing_date": "2026-11-06",
+      "category": "AI",
+      "heading": "1. Claude 개인재무 베타, 미국 이용자에게 읽기 전용 계좌 분석 제공",
+      "title": "Claude 개인재무 베타, 미국 이용자에게 읽기 전용 계좌 분석 제공",
+      "summary": "Anthropic이 Claude의 개인재무 기능을 미국 Pro·Max·Ultra 구독자에게 이번 주부터 베타(Beta, 정식 출시 전 제한적으로 제공하는 시험 단계)로 순차 제공한다고 밝혔다. 연결한 은행·카드 계좌의 잔액과 거래를 바탕으로 소비 내역과 다가오는 지출을 설명하는 기능이다. 한국 제공이나 모든 구독자의 즉시 사용을 약속한 발표는 아니다.",
+      "source_urls": [
+        "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+      ],
+      "canonical_urls": [
+        "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+      ],
+      "publication_note": "2026-11-05 (원문 날짜, 정확한 게시 시각·시간대 미표시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/AI.md",
+      "archive_url": "/news/2026-11-06/AI.html#1-claude-개인재무-베타-미국-이용자에게-읽기-전용-계좌-분석-제공",
+      "section_sha256": "44dff5c23b9454d6f54e12854e700b29c412db3916b87e192a942f512b741189",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/AI/2",
+      "article_id": "url-480dd369b21eec5546d2a10e1a7c1e7d8fe89c3ce276245cf2140f3984422194",
+      "revision_id": "editorial-b5e758f4e191d6569e14a92633e6363d03665e698ec7a0d7375dfa2370af35f2",
+      "briefing_date": "2026-11-06",
+      "category": "AI",
+      "heading": "2. Claude Enterprise, 입력·도구 실행 전 검사와 보안 관리 기능 확대",
+      "title": "Claude Enterprise, 입력·도구 실행 전 검사와 보안 관리 기능 확대",
+      "summary": "Anthropic이 Claude Enterprise의 보안·관리 기능을 확대했다. 추론 훅(Inference hooks, 모델 입력이나 도구 실행 전에 조직의 보안 검사를 연결하는 기능)은 정식 제공으로 전환됐고, 보안 센터와 조직 통합 관리 등은 베타다. 여러 기능을 한꺼번에 발표했지만 성숙도와 적용 제품은 같지 않다.",
+      "source_urls": [
+        "https://claude.com/resources/articles/claude-enterprise-security-updates"
+      ],
+      "canonical_urls": [
+        "https://claude.com/resources/articles/claude-enterprise-security-updates"
+      ],
+      "publication_note": "2026-11-05 (원문 날짜, 정확한 게시 시각·시간대 미표시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/AI.md",
+      "archive_url": "/news/2026-11-06/AI.html#2-claude-enterprise-입력도구-실행-전-검사와-보안-관리-기능-확대",
+      "section_sha256": "78f6e669489cac31a8b23609bacef236eb4f458c05d424cb30cdf7ba34843834",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/AI/3",
+      "article_id": "url-850ffbfc56c1fbbd5e042b00bcf138f7251435d7f66c19cddac07683363de9cc",
+      "revision_id": "editorial-cebbd814e8936a0ad25ffe3cdc18aa16d06aabd79b51410cc3af7f3367c26a28",
+      "briefing_date": "2026-11-06",
+      "category": "AI",
+      "heading": "3. Mistral Studio 확장…장시간 에이전트 실행과 승인 대기는 미리보기 단계",
+      "title": "Mistral Studio 확장…장시간 에이전트 실행과 승인 대기는 미리보기 단계",
+      "summary": "Mistral이 기업용 Studio에 관리형 에이전트, 자연어 워크플로 빌더, 앱 개발 명령줄 도구와 평가·추적 기능을 추가했다. 모델과 연결 도구를 정의한 에이전트를 개발 환경, 자체 서버 또는 Mistral 관리 환경에서 실행하는 흐름을 제공한다고 설명했다.",
+      "source_urls": [
+        "https://mistral.ai/news/build-with-studio/"
+      ],
+      "canonical_urls": [
+        "https://mistral.ai/news/build-with-studio/"
+      ],
+      "publication_note": "2026-11-05 (발표 HTML과 공식 릴리스 노트의 날짜, 시각·시간대 미확인)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/AI.md",
+      "archive_url": "/news/2026-11-06/AI.html#3-mistral-studio-확장장시간-에이전트-실행과-승인-대기는-미리보기-단계",
+      "section_sha256": "4deefb9cbf0f4144f8b48935516997df875907bac62fc139b165d4b56b777875",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/AI/4",
+      "article_id": "url-4d8d334a13b7d79187db2b229848ae80f8a52625ff36371f4ce49a36f1053178",
+      "revision_id": "editorial-5aa47004f7dda6a8dba699e579f18b258c90dc2c07788572f495796c9df79245",
+      "briefing_date": "2026-11-06",
+      "category": "AI",
+      "heading": "4. METR, Anthropic 연구개발 가속 평가…약 두 배 추정과 비공개 근거의 한계",
+      "title": "METR, Anthropic 연구개발 가속 평가…약 두 배 추정과 비공개 근거의 한계",
+      "summary": "독립 평가기관 METR이 Anthropic 내부 자료에 접근해 AI가 AI 연구개발을 얼마나 가속하는지 분석했다. 보고서는 잘 정의된 과제에서 모델 역량이 개선되는 속도가 2024년 3월~2025년 10월에 비해 약 두 배가 됐을 가능성이 높다고 평가했다. 모델이 모든 업무에서 두 배 더 뛰어나다는 뜻은 아니다.",
+      "source_urls": [
+        "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+      ],
+      "canonical_urls": [
+        "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+      ],
+      "publication_note": "2026-11-05 (보고서 본문 날짜). HTML은 2026-11-05 00:00 UTC−8을 표시하지만 자정 기본값 가능성이 있어 실제 발행 시각으로 확정하지 않음",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/AI.md",
+      "archive_url": "/news/2026-11-06/AI.html#4-metr-anthropic-연구개발-가속-평가약-두-배-추정과-비공개-근거의-한계",
+      "section_sha256": "4af0e398166a220a463dc78a8fe3f67dc78a3247fc0a1ffbfb40f468dcdbe65a",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/AI/5",
+      "article_id": "url-51d57eb87b77bc8f82e11f6c450832f9ee49ac709cac9e2f1a63c1625d5b23cd",
+      "revision_id": "editorial-be68124f343a5aa387ff6c5aac7b7981f52384ef3a09046eb8e0782769df6a95",
+      "briefing_date": "2026-11-06",
+      "category": "AI",
+      "heading": "5. 카카오, 3분기 실적과 AI 서비스 일정 제시…12월 시범 운영과 연내 목표 구분",
+      "title": "카카오, 3분기 실적과 AI 서비스 일정 제시…12월 시범 운영과 연내 목표 구분",
+      "summary": "카카오가 3분기 매출 2조867억 원과 영업이익 2,403억 원을 발표했다. 전자신문과 머니투데이의 당일 보도에서 금액을 교차 확인했다. 전자신문은 플랫폼 사업의 성장과 콘텐츠 사업의 부진이 함께 나타났으며 직전 분기 대비 매출과 영업이익은 줄었다고 설명했다.",
+      "source_urls": [
+        "https://www.etnews.com/20261105000308"
+      ],
+      "canonical_urls": [
+        "https://www.etnews.com/20261105000308"
+      ],
+      "publication_note": "전자신문 2026-11-05 14:01 KST. 머니투데이 2026-11-05 10:58 KST (수정 14:18은 별도)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/AI.md",
+      "archive_url": "/news/2026-11-06/AI.html#5-카카오-3분기-실적과-ai-서비스-일정-제시12월-시범-운영과-연내-목표-구분",
+      "section_sha256": "ce9ca9e59cd769bf55291a6b96958674ce91cb715af2ff910d35c91324af8dfc",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/IT/1",
+      "article_id": "url-297f77279829b406a7e4933de3f60c29c7684f179d1ee0343caaa166c8be912a",
+      "revision_id": "editorial-6981d9cd33b70545bf436dc9f6cdfd4ce83b90acf2b52e5bd976e6e7a15b774d",
+      "briefing_date": "2026-11-06",
+      "category": "IT",
+      "heading": "1. OpenAI, 데이터센터 지역사회 약정 공개…적용 대상과 이행을 구분해야",
+      "title": "OpenAI, 데이터센터 지역사회 약정 공개…적용 대상과 이행을 구분해야",
+      "summary": "OpenAI가 앞으로 직접 소유하고 운영할 컴퓨팅 시설에 적용할 지역사회 약정과 정책 제안서를 공개했다. 주민 의견을 계획 단계부터 듣고, 지역 담당 창구를 두며, 해마다 이행 상황을 보고하겠다는 내용이다. 기존 시설과 모든 협력사 시설에 같은 약정이 자동 적용된다고 발표한 것은 아니다.",
+      "source_urls": [
+        "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure/"
+      ],
+      "publication_note": "2026-11-05 (원문 날짜, 정확한 게시 시각·시간대 미표시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/IT.md",
+      "archive_url": "/news/2026-11-06/IT.html#1-openai-데이터센터-지역사회-약정-공개적용-대상과-이행을-구분해야",
+      "section_sha256": "f64d708caf6fd8e7a91bdbcb57c72537da1eeb4bd337a5b593c1f32e9435fc32",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/IT/2",
+      "article_id": "url-50c85e9bb6beab100123636c7454b72137295ba65b6dd1f52001fe6cd9fc517b",
+      "revision_id": "editorial-ae9b9ddfa30e4292a880bd47e4ef5a534785bdc68bca7ddc8e52c6243d8fdce1",
+      "briefing_date": "2026-11-06",
+      "category": "IT",
+      "heading": "2. Supermicro·IBM·NVIDIA, 공유 KV 캐시 발표…56배는 특정 첫 응답 시험 결과",
+      "title": "Supermicro·IBM·NVIDIA, 공유 KV 캐시 발표…56배는 특정 첫 응답 시험 결과",
+      "summary": "Supermicro가 IBM Storage Scale과 NVIDIA Dynamo·Spectrum-X를 결합한 공유 KV 캐시(Key-Value cache, 이전 입력의 계산 결과를 저장해 재사용하는 구조) 솔루션을 발표했다. 긴 문맥의 계산 결과를 GPU(Graphics Processing Unit, 병렬 연산용 그래픽 처리 장치) 메모리에만 두지 않고 외부 저장 계층으로 옮겨 여러 요청에서 다시 활용하는 방식이다.",
+      "source_urls": [
+        "https://www.prnewswire.co.uk/news-releases/supermicro-launches-kv-cache-solution-with-ibm-and-nvidia-demonstrating-significant-inference-performance-benefits-302929080.html"
+      ],
+      "canonical_urls": [
+        "https://www.prnewswire.co.uk/news-releases/supermicro-launches-kv-cache-solution-with-ibm-and-nvidia-demonstrating-significant-inference-performance-benefits-302929080.html"
+      ],
+      "publication_note": "2026-11-05 14:05 GMT → 2026-11-05 23:05 KST (회사 보도자료 배포 시각)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/IT.md",
+      "archive_url": "/news/2026-11-06/IT.html#2-supermicroibmnvidia-공유-kv-캐시-발표56배는-특정-첫-응답-시험-결과",
+      "section_sha256": "e9b3d8eaba8f236412e302485cf70d068e13dd4af18480ac070ffa12ca04d384",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/IT/3",
+      "article_id": "url-d5c7a60aea1c57442d645c306f1a0a5154193c56bc77788d6338423586ae3e39",
+      "revision_id": "editorial-666ebd777c99761f8035f31e68ebb9a128edb452aa2f8946a73c2f2d56653dba",
+      "briefing_date": "2026-11-06",
+      "category": "IT",
+      "heading": "3. MACOM, 분기 매출 4억2,480만 달러…실적과 다음 분기 전망 구분",
+      "title": "MACOM, 분기 매출 4억2,480만 달러…실적과 다음 분기 전망 구분",
+      "summary": "반도체 업체 MACOM이 회계연도 2026년 4분기 매출을 4억2,480만 달러로 발표했다. 회사 공시 기준 전년 같은 분기보다 62.7%, 직전 분기보다 24.1% 증가했다. 발표일과 실적이 발생한 회계기간은 다르며, 11월 매출을 집계한 수치가 아니다.",
+      "source_urls": [
+        "https://www.globenewswire.com/news-release/2026/11/05/3396302/19814/en/macom-reports-fiscal-fourth-quarter-and-fiscal-year-2026-financial-results.html"
+      ],
+      "canonical_urls": [
+        "https://www.globenewswire.com/news-release/2026/11/05/3396302/19814/en/macom-reports-fiscal-fourth-quarter-and-fiscal-year-2026-financial-results.html"
+      ],
+      "publication_note": "2026-11-05 07:30 ET (당일 EST, UTC−5) → 2026-11-05 21:30 KST",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/IT.md",
+      "archive_url": "/news/2026-11-06/IT.html#3-macom-분기-매출-4억2480만-달러실적과-다음-분기-전망-구분",
+      "section_sha256": "b572d84cd1900796f0ce69ddfd9b594d0866e83d23a4b64b2d03a0d43b1662c5",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/모델/1",
+      "article_id": "url-9434ac3945d97bda5d81dd9f79f7808cbcacd77a0fafecf440a2d287d227192b",
+      "revision_id": "editorial-837bc9f5b9675b8558820d586666af693fe55c5281c1c7e8b46afa96b058c626",
+      "briefing_date": "2026-11-06",
+      "category": "모델",
+      "heading": "1. GPT-6 Cyber 제한 제공…보안 성능 향상과 접근 통제를 함께 발표",
+      "title": "GPT-6 Cyber 제한 제공…보안 성능 향상과 접근 통제를 함께 발표",
+      "summary": "OpenAI가 보안 연구용 GPT-6 Cyber를 일부 승인된 Daybreak Red 고객에게 먼저 제공한다고 발표했다. 접근 경로는 API(Application Programming Interface, 프로그램끼리 기능을 주고받는 창구)와 Codex이며, 전체 Daybreak Red 고객으로 확대하는 것은 향후 계획이다. 일반 이용자에게 제한 없이 공개된 모델은 아니다.",
+      "source_urls": [
+        "https://openai.com/index/introducing-gpt-6-cyber/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/introducing-gpt-6-cyber/"
+      ],
+      "publication_note": "2026-11-05 (공식 원문 날짜, 정확한 게시 시각·시간대 미표시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/모델.md",
+      "archive_url": "/news/2026-11-06/모델.html#1-gpt-6-cyber-제한-제공보안-성능-향상과-접근-통제를-함께-발표",
+      "section_sha256": "f236916b77d1fbfc1a3ca8928a55cd58d209e9bf6a4888754e0336560db13adb",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/모델/2",
+      "article_id": "url-27b87d65d3f99406683fa7dda81aab35cf60c186172d77624ee987317ff5f9f1",
+      "revision_id": "editorial-314a3149622b1d61aedbdf53a20eda66caafa97168464510ceec228dceaf3553",
+      "briefing_date": "2026-11-06",
+      "category": "모델",
+      "heading": "2. Google Gemini Omni 1.2 Flash, 영상 15초·720p 초당 0.07달러 제시",
+      "title": "Google Gemini Omni 1.2 Flash, 영상 15초·720p 초당 0.07달러 제시",
+      "summary": "Google이 영상 생성 모델 Gemini Omni 1.2 Flash를 공개했다. 최대 영상 길이를 기존 10초에서 15초로 늘리고 대화로 결과를 반복 편집하는 기능과 참조 이미지의 일관성을 개선했다고 설명했다. 품질 개선은 공급사 발표이며 이번 브리핑에서 독립 비교 시험은 하지 않았다.",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+      ],
+      "canonical_urls": [
+        "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+      ],
+      "publication_note": "원문 HTML의 datePublished 2026-11-05 17:00 UTC → 2026-11-06 02:00 KST (화면은 11월 5일 날짜만 표시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/모델.md",
+      "archive_url": "/news/2026-11-06/모델.html#2-google-gemini-omni-12-flash-영상-15초720p-초당-007달러-제시",
+      "section_sha256": "c49e16a53c4c32fd47b7f64bd3947ad1a609356702b6444ff39a5066e20992f8",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/모델/3",
+      "article_id": "url-9c1ac57a51f80d22713a507d97886305a4c11d3c8aebf7077ac2d17f07fb4993",
+      "revision_id": "editorial-dc59696d31f672b70b643bcd434d0b11454b829c8bb95aec420f1687ce81c127",
+      "briefing_date": "2026-11-06",
+      "category": "모델",
+      "heading": "3. Baidu ERNIE 5.5 Flash Base 가중치 공개…완성형 챗봇이 아닌 후속 학습 출발점",
+      "title": "Baidu ERNIE 5.5 Flash Base 가중치 공개…완성형 챗봇이 아닌 후속 학습 출발점",
+      "summary": "Baidu가 ERNIE 5.5 Flash Base의 사전학습 종료 가중치를 공개했다. 회사 설명상 총 2,800억 파라미터 중 토큰(Token, 모델이 입력·출력을 나누어 처리하는 단위)마다 140억 개를 활성화하는 MoE(Mixture of Experts, 일부 하위 신경망을 골라 계산하는 전문가 혼합 구조) 모델이다. 총 크기와 한 번에 활성화하는 크기는 다르다.",
+      "source_urls": [
+        "https://ernie.baidu.com/zh/release/ernie-5-5-flash-base/"
+      ],
+      "canonical_urls": [
+        "https://ernie.baidu.com/zh/release/ernie-5-5-flash-base/"
+      ],
+      "publication_note": "공식 HTML time datetime은 2026-11-05, 시각·시간대 없음. IT之家는 11월 5일 16:21:01을 표시하나 페이지의 시간대는 미표시",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/모델.md",
+      "archive_url": "/news/2026-11-06/모델.html#3-baidu-ernie-55-flash-base-가중치-공개완성형-챗봇이-아닌-후속-학습-출발점",
+      "section_sha256": "c45e5d3446cfa96d86f4c99b67bc508929e1f694dfbf780aa726e65ccf07bbb8",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-06/엔진/1",
+      "article_id": "url-e6276a951fd4cf5fa69b377a4a9fa40293791a83649ad08906be3750b23ff461",
+      "revision_id": "editorial-efda367fc1ae004777a1c0e3bcf0faa43f50c5c152e737764d808d71b1414348",
+      "briefing_date": "2026-11-06",
+      "category": "엔진",
+      "heading": "1. llama.cpp, 잘못된 실시간 세션 갱신으로 서버가 종료되는 문제 수정",
+      "title": "llama.cpp, 잘못된 실시간 세션 갱신으로 서버가 종료되는 문제 수정",
+      "summary": "llama.cpp의 b12137 사전 릴리스에 잘못된 형식의 실시간 세션(session, 여러 요청에 걸쳐 작업 상태를 유지하는 연결) 갱신을 거부하는 수정이 담겼다. 공식 변경 설명은 해당 입력으로 처리되지 않은 오류가 발생해 서버가 종료되는 일을 막는다고 명시한다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12137"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12137"
+      ],
+      "publication_note": "b12137 게시 2026-11-06 06:49:44 KST. 공식 릴리스 published_at 기준, prerelease=true. 변경 제안 병합은 2026-11-05 17:38:09 KST.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-06/엔진.md",
+      "archive_url": "/news/2026-11-06/엔진.html#1-llamacpp-잘못된-실시간-세션-갱신으로-서버가-종료되는-문제-수정",
+      "section_sha256": "2e73f1c4399e9683d4bdc923b8a7790be0889b8826a89f35445c54cad6a10e3c",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

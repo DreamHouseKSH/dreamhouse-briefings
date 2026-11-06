@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-11-05",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-11-05/AI.md": "3244b66c51c95ff809bc871927ed58fd5ac3aff8c285228388597f8be02d1b0e",
+    "news/2026-11-05/IT.md": "090a179b36ecbb86e160958e527c27a38fe9cf3bcff72858becce6549f73486f",
+    "news/2026-11-05/모델.md": "d2c8c8b564141611629594cea6880969799c8855d5d4c15b589f08694bd0cdef",
+    "news/2026-11-05/엔진.md": "ec4d51c0b398dd36b071257e3a940368621596924d728e4ee3b203274fbae84d"
+  },
+  "records": [
+    {
+      "entry_id": "2026-11-05/AI/1",
+      "article_id": "url-27c884392a2cbbbbb440168da08a770aa9a9ebe8e0ce721fb85369e326b5f725",
+      "revision_id": "editorial-e7cb9827578cd2f5f90e167a009d5767c7483bd4893de8a12f6553844eca090b",
+      "briefing_date": "2026-11-05",
+      "category": "AI",
+      "heading": "1. OpenAI, Pierre 인수 계획…코딩 에이전트의 Git 작업 기반 강화",
+      "title": "OpenAI, Pierre 인수 계획…코딩 에이전트의 Git 작업 기반 강화",
+      "summary": "OpenAI는 개발 도구 회사 Pierre Computer를 인수할 예정이라고 11월 4일 밝혔다. Pierre는 코드 변경 이력을 관리하는 Git 기반의 저장 서비스 Code Storage와 오픈소스 개발 도구를 만든다. 파일 탐색용 Trees와 변경 내역 표시용 Diffs는 이미 OpenAI의 코딩 지원 제품인 Codex 앱에 사용되고 있다. 공식 발표",
+      "source_urls": [
+        "https://openai.com/index/openai-to-acquire-pierre/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/openai-to-acquire-pierre/"
+      ],
+      "publication_note": "2026-11-04 (원문 표기, 정확한 시각·시간대 미표시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-05/AI.md",
+      "archive_url": "/news/2026-11-05/AI.html#1-openai-pierre-인수-계획코딩-에이전트의-git-작업-기반-강화",
+      "section_sha256": "81f2ea20241fe3c21dd5749c44238138e1b254e6eea579c6b3cf19895996de29",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-05/AI/2",
+      "article_id": "url-6ce2fe0b6d704e4cf8b5132d0cb360b17d84cf73267d971f1d8f7aea99f997b0",
+      "revision_id": "editorial-0320e9ed54e185c2dce01ea145ab966c9201a3cce1a127ad91bb266cc4b9fa39",
+      "briefing_date": "2026-11-05",
+      "category": "AI",
+      "heading": "2. OpenAI, Daybreak Red의 GovCloud 이용 조건 안내…AWS 선행 발표는 10월 30일",
+      "title": "OpenAI, Daybreak Red의 GovCloud 이용 조건 안내…AWS 선행 발표는 10월 30일",
+      "summary": "OpenAI는 11월 4일 승인된 고객이 AWS(Amazon Web Services, 아마존의 클라우드 서비스)의 AI 모델 제공 서비스인 Amazon Bedrock을 통해 정부·규제 업무용 클라우드 리전인 AWS GovCloud(US-East)에서 보안 특화 모델 GPT-5.6 Cyber를 이용할 수 있다고 안내했다. 다만 AWS 공식 공지는 10월 30일에 이미 같은 제공 사실을 알렸다. 이번 항목은 새로운 개통이 아니라 최근 OpenAI 측 안내로 읽어야 한다.",
+      "source_urls": [
+        "https://openai.com/index/daybreak-red-aws-govcloud/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/daybreak-red-aws-govcloud/"
+      ],
+      "publication_note": "2026-11-04 OpenAI 안내 / AWS 선행 공지 2026-10-30 (정확한 시각·시간대 미표시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-05/AI.md",
+      "archive_url": "/news/2026-11-05/AI.html#2-openai-daybreak-red의-govcloud-이용-조건-안내aws-선행-발표는-10월-30일",
+      "section_sha256": "ce53297155e1defa804f0f8a78b681dc82c02f495839e23f6d47a9c3f2fb323e",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-05/AI/3",
+      "article_id": "url-0b3068cb9f5cd4ef233671c1ba1374795d79335334bd6a8552a5cf3e9247e150",
+      "revision_id": "editorial-3c126b316046c5f5374a6af0fc73d32188cbd392a606dc60c43a3c49587ba2b9",
+      "briefing_date": "2026-11-05",
+      "category": "AI",
+      "heading": "3. Cloudflare, 주요 개인 에이전트별 웹사이트 접근 설정 도입",
+      "title": "Cloudflare, 주요 개인 에이전트별 웹사이트 접근 설정 도입",
+      "summary": "Cloudflare는 11월 4일 공식 변경 기록에서 주요 개인 에이전트마다 접근 정책을 따로 정할 수 있다고 밝혔다. 개인 에이전트는 사람이 요청한 정보 검색이나 웹 탐색을 대신 수행하는 자동화 도구를 뜻한다. 공식 변경 기록",
+      "source_urls": [
+        "https://developers.cloudflare.com/changelog/post/2026-11-04-personal-agent-policies/"
+      ],
+      "canonical_urls": [
+        "https://developers.cloudflare.com/changelog/post/2026-11-04-personal-agent-policies/"
+      ],
+      "publication_note": "2026-11-04 (원문 표기, 정확한 시각·시간대 미표시)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-05/AI.md",
+      "archive_url": "/news/2026-11-05/AI.html#3-cloudflare-주요-개인-에이전트별-웹사이트-접근-설정-도입",
+      "section_sha256": "5664fafc2f95b64972f9c687fd9f9985ac10d74798af36d9a42e72d05be50979",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-05/IT/1",
+      "article_id": "url-cd2b702c0679f31c9f982ca164d7eed4e616549c983293f1acfa3825e3f3359b",
+      "revision_id": "editorial-f0c5ef1150633d57939197771476a45f4ea3cd221ae7fafce4ef85ca85f5ad47",
+      "briefing_date": "2026-11-05",
+      "category": "IT",
+      "heading": "1. 갤럭시 버즈 청력 기능, 국내 허가와 실제 제공 시점을 구분해야",
+      "title": "갤럭시 버즈 청력 기능, 국내 허가와 실제 제공 시점을 구분해야",
+      "summary": "삼성전자는 갤럭시 버즈의 청력 검사·보조 기능이 식품의약품안전처 의료기기 허가를 받았다고 밝혔다. 대상은 버즈4 프로와 버즈3 프로다. 허가와 즉시 사용 가능은 다르다. 국내 제공은 2027년 초부터 소프트웨어 업데이트로 순차 진행할 계획이다.",
+      "source_urls": [
+        "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EB%B2%84%EC%A6%88-%EC%B2%AD%EB%A0%A5-%EC%B2%B4%ED%81%AC-%EF%82%9E-%EC%B2%AD%EB%A0%A5-%EC%BC%80%EC%96%B4-%EA%B8%B0%EB%8A%A5"
+      ],
+      "canonical_urls": [
+        "https://news.samsung.com/kr/%EC%82%BC%EC%84%B1%EC%A0%84%EC%9E%90-%EA%B0%A4%EB%9F%AD%EC%8B%9C-%EB%B2%84%EC%A6%88-%EC%B2%AD%EB%A0%A5-%EC%B2%B4%ED%81%AC-%EF%82%9E-%EC%B2%AD%EB%A0%A5-%EC%BC%80%EC%96%B4-%EA%B8%B0%EB%8A%A5"
+      ],
+      "publication_note": "2026-11-04, 국내 보도자료. 같은 날 보도는 08:11 KST부터 확인.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-05/IT.md",
+      "archive_url": "/news/2026-11-05/IT.html#1-갤럭시-버즈-청력-기능-국내-허가와-실제-제공-시점을-구분해야",
+      "section_sha256": "7f0d5a5b3c78b5416f58a586caa0b19801fce70932c6b3c57ff7ca83944cfb5a",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-05/IT/2",
+      "article_id": "url-bfede81cbb6b1084b5252a2af95c1432f223ee842978282c1d0216d2c813cacc",
+      "revision_id": "editorial-57dda242447f70a1636b5a434201c74bc3cf9b9197088fbbaa9abb33c25d26b9",
+      "briefing_date": "2026-11-05",
+      "category": "IT",
+      "heading": "2. CUDA 13.5, Vera Rubin 정식 지원과 자원 공유 제어 확대",
+      "title": "CUDA 13.5, Vera Rubin 정식 지원과 자원 공유 제어 확대",
+      "summary": "NVIDIA는 CUDA(Compute Unified Device Architecture, 그래픽 처리 장치로 범용 계산을 수행하는 개발 플랫폼) 13.5에서 Vera Rubin 지원을 초기 개발자 단계에서 정식 제공 단계로 전환했다고 밝혔다. Windows의 Arm 지원 범위도 DGX Station for Windows로 확대했다.",
+      "source_urls": [
+        "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/"
+      ],
+      "canonical_urls": [
+        "https://developer.nvidia.com/blog/nvidia-cuda-13-5-brings-nvidia-vera-rubin-ga-support/"
+      ],
+      "publication_note": "원문 2026-11-04. 정확한 게시 시각·시간대 미표시.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-05/IT.md",
+      "archive_url": "/news/2026-11-05/IT.html#2-cuda-135-vera-rubin-정식-지원과-자원-공유-제어-확대",
+      "section_sha256": "54ed234ca54f7ba3484dba7324eefa01e766d291ed4871f642b66f5aec1d901e",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-05/모델/1",
+      "article_id": "url-f4a904d03d800a16a7770eb45e6294e17d198382b354ef891a63e5cd21dfe6b8",
+      "revision_id": "editorial-ad04676007c7c1924e68ef13fcffaa2dcf78734fa28052c1d34a456e6e9ea9ac",
+      "briefing_date": "2026-11-05",
+      "category": "모델",
+      "heading": "1. Kimi K3.1 Pro 가중치 공개 확인, 사용 조건은 별도 라이선스",
+      "title": "Kimi K3.1 Pro 가중치 공개 확인, 사용 조건은 별도 라이선스",
+      "summary": "Moonshot AI의 공식 Hugging Face 저장소에서 Kimi K3.1 Pro 모델 설명, 설정, 라이선스와 96개 가중치 조각의 목록을 확인했다. 조회 당시 비공개·승인 필요 상태가 아니었다. 이번 소식은 모델 자체를 처음 소개했다는 의미가 아니라 가중치를 직접 이용할 수 있는 공개 상태를 확인한 것이다.",
+      "source_urls": [
+        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+      ],
+      "canonical_urls": [
+        "https://huggingface.co/moonshotai/Kimi-K3.1-Pro"
+      ],
+      "publication_note": "공개 안내는 2026-11-05 01:00 KST로 외부 게시글 기록에서 확인. 공식 저장소의 파일 커밋은 11월 2일이며 최초 공개 전환 시각은 확인 불가.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-05/모델.md",
+      "archive_url": "/news/2026-11-05/모델.html#1-kimi-k31-pro-가중치-공개-확인-사용-조건은-별도-라이선스",
+      "section_sha256": "4c3a23ccefe0c25516ac621b34b34b5ba2823dc7869788a02ac7ea99fb4fb9a9",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-11-05/엔진/1",
+      "article_id": "url-9dccbf755eee5d2d6d841d2cb2563c30f29074d586c2ff8599d178121c47a766",
+      "revision_id": "editorial-33dc05fbd2262ca9e7d813a2e5d29134f63d357fb19cc8534cff835dda55993e",
+      "briefing_date": "2026-11-05",
+      "category": "엔진",
+      "heading": "1. llama.cpp v0.9.0, 새 모델·음성 지원을 정식 버전으로 묶다",
+      "title": "llama.cpp v0.9.0, 새 모델·음성 지원을 정식 버전으로 묶다",
+      "summary": "llama.cpp가 v0.9.0을 게시했다. 공식 릴리스는 초안이나 사전판이 아닌 버전으로 표시되며, 수치 계산 기반 라이브러리 ggml v0.29.0을 함께 반영한다. 이전 며칠의 개별 변경을 한 버전으로 정리한 것이므로 모든 기능이 오늘 처음 작성된 것은 아니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/v0.9.0"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/v0.9.0"
+      ],
+      "publication_note": "2026-11-04 22:08:06 KST. 공식 API의 published_at 기준, prerelease=false.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-05/엔진.md",
+      "archive_url": "/news/2026-11-05/엔진.html#1-llamacpp-v090-새-모델음성-지원을-정식-버전으로-묶다",
+      "section_sha256": "d045fa0bb86c4cc64aea68e0c47a9cfedf1cfc042f8de33f72eb3cc147210b5b",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

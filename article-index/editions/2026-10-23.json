@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-10-23",
+  "origin": "legacy",
+  "source_hashes": {
+    "news/2026-10-23/AI.md": "35f5f1e256040bee0c65320f53313044b5dff36f459251f2f1d17ee84d8cda4a",
+    "news/2026-10-23/IT.md": "90b9e46bfae70195214bbfd7d14349f861538a9f4716caf4999a2f1407492c7b",
+    "news/2026-10-23/모델.md": "79465857d922908369addb34c8e5cf77b14227c8c3e5751098e0b78ed1b128b4",
+    "news/2026-10-23/엔진.md": "ba5a5c51c2f000252501655211a578514ca1cd7f9fc1f426b9fba4e1a03e09ed"
+  },
+  "records": [
+    {
+      "entry_id": "2026-10-23/AI/1",
+      "article_id": "url-42dc5172617fe2e4460c70629ccb594908808a82cb2190109ad1181a6bb0202d",
+      "revision_id": "editorial-1a6c5175f03bd627349106e428a75f33ab709f86cd9db80f8177994f72b6ec02",
+      "briefing_date": "2026-10-23",
+      "category": "AI",
+      "heading": "1. OpenAI Decisions API 정식 출시, 반복 판단을 전용 경로로 분리",
+      "title": "OpenAI Decisions API 정식 출시, 반복 판단을 전용 경로로 분리",
+      "summary": "OpenAI가 Decisions API(Application Programming Interface, 프로그램끼리 기능을 주고받는 창구)를 정식 출시했다. 긴 답변 생성보다 입력 분류, 요청 전달 경로 선택, 다음 행동 결정처럼 답의 범위가 정해진 작업에 초점을 둔 서비스다. 기반 모델은 GPT-6 Luna이며 텍스트·이미지·구조화된 데이터를 받는다.",
+      "source_urls": [
+        "https://openai.com/index/decisions-api/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/decisions-api/"
+      ],
+      "publication_note": "2026-10-22 (원문 날짜, 세부 시각 미표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-23/AI.md",
+      "archive_url": "/news/2026-10-23/AI.html#1-openai-decisions-api-정식-출시-반복-판단을-전용-경로로-분리",
+      "section_sha256": "b8a85d89d9ab2680eaf5fbda84cdeac8c9e3ad4fa044cb3cf012abc7586cefa4",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-23/AI/2",
+      "article_id": "url-8a40836974acd9507d87327f6fa0a65be93dd6f6042194c172e54a6f71c85736",
+      "revision_id": "editorial-3955a748980ab966be834b7cc58574cfb7a135d05488b08e04959e17823938c5",
+      "briefing_date": "2026-10-23",
+      "category": "AI",
+      "heading": "2. Uber, ChatGPT Work를 3만 명 이상 직원에게 확대",
+      "title": "Uber, ChatGPT Work를 3만 명 이상 직원에게 확대",
+      "summary": "Uber가 ChatGPT Enterprise 안의 업무 에이전트인 ChatGPT Work를 전사에 배포한다고 발표했다. OpenAI가 공개한 대상은 전 세계 직원 3만 명 이상이며, 앞선 1,000명 규모의 시험 운영에서 범위를 확대한 것이다. 발표의 대상은 직원 업무이고 운전자 전체에게 제공한다는 내용은 아니다.",
+      "source_urls": [
+        "https://openai.com/index/uber-chatgpt-work-rollout/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/uber-chatgpt-work-rollout/"
+      ],
+      "publication_note": "2026-10-22 (원문 날짜, 세부 시각 미표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-23/AI.md",
+      "archive_url": "/news/2026-10-23/AI.html#2-uber-chatgpt-work를-3만-명-이상-직원에게-확대",
+      "section_sha256": "5955aa29a485e5cf619567bde289cea825f44f3387665016baf8e65a15cdfcf0",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-23/IT/1",
+      "article_id": "url-090cce2541c1c8c7f4ea4679e0e80c952610307c4c5708948a982903cf5606d6",
+      "revision_id": "editorial-066bdbed8a5c2872e9031d750a0269f3f60ab9f14710ef7d0223936b9a8de48e",
+      "briefing_date": "2026-10-23",
+      "category": "IT",
+      "heading": "1. Railway, 보안 사고 뒤 모든 요금제 빌드 재개… 조사 종료와는 별개",
+      "title": "Railway, 보안 사고 뒤 모든 요금제 빌드 재개… 조사 종료와는 별개",
+      "summary": "Railway는 23일 오전 7시 49분 KST 상태 공지에서 Free·Trial을 포함한 다섯 요금제 모두 빌드와 배포를 다시 사용할 수 있으며, 처리 속도도 대체로 정상 수준이라고 밝혔다. 다만 상태는 여전히 조사 중인 ‘Identified’이고 신규 가입은 잠시 막혀 있다. 따라서 배포 재개를 보안 사고의 완전한 해결이나 피해 조사 종료로 읽어서는 안 된다.",
+      "source_urls": [
+        "https://status.railway.com/"
+      ],
+      "canonical_urls": [
+        "https://status.railway.com/"
+      ],
+      "publication_note": "2026-10-23 07:49 KST 업데이트, 08:04 KST 확인",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-23/IT.md",
+      "archive_url": "/news/2026-10-23/IT.html#1-railway-보안-사고-뒤-모든-요금제-빌드-재개-조사-종료와는-별개",
+      "section_sha256": "4094dd07149337cf104c1e82e16c77b28262e02043c19f1bf9c4ab153cab5aac",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-23/IT/2",
+      "article_id": "url-79d28f4426c56dad73f1f607909c9c3f2058709d532779fb57ef898b9f91f8d0",
+      "revision_id": "editorial-d7b7e6b7c2e85618919ea8e39a2a81b33662a36d21e89e2fe7dd89b6764f89c6",
+      "briefing_date": "2026-10-23",
+      "category": "IT",
+      "heading": "2. Renesas RX74M·RX74N, 22nm와 MRAM을 RX 산업용 제어기로 확대",
+      "title": "Renesas RX74M·RX74N, 22nm와 MRAM을 RX 산업용 제어기로 확대",
+      "summary": "Renesas는 RX74M과 RX74N을 발표하고 즉시 공급한다고 밝혔다. 두 제품은 장비 제어를 담당하는 MCU(Microcontroller Unit, 연산부와 메모리·입출력을 묶은 소형 제어 칩)로, RX 제품군에서 처음으로 22nm 공정과 내장 MRAM(Magnetoresistive Random Access Memory, 자기 상태로 정보를 저장하는 비휘발성 메모리)을 적용했다. 일반 PC용 프로세서나 대형 AI 학습 칩 발표와는 다른 산업 제어 분야의 소식이다.",
+      "source_urls": [
+        "https://www.renesas.com/en/about/newsroom/renesas-launches-rx74m-and-rx74n-flagship-32-bit-mcus-first-rx-family-built-22nm-process-and"
+      ],
+      "canonical_urls": [
+        "https://www.renesas.com/en/about/newsroom/renesas-launches-rx74m-and-rx74n-flagship-32-bit-mcus-first-rx-family-built-22nm-process-and"
+      ],
+      "publication_note": "2026-10-22 (원문 날짜, 세부 시각 미표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-23/IT.md",
+      "archive_url": "/news/2026-10-23/IT.html#2-renesas-rx74mrx74n-22nm와-mram을-rx-산업용-제어기로-확대",
+      "section_sha256": "5e9df8d24d38c0ec739e20bc9b47d732b81b45db855e7095241051aea961a115",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-23/모델/1",
+      "article_id": "url-67297d2df9a3d7f196c35fa6ebbaab936e2f788f3fe9d6bed07634b74dd71599",
+      "revision_id": "editorial-45b45c6871e16eefdf42524d701d8807710177255b883a2147c8fc43076da492",
+      "briefing_date": "2026-10-23",
+      "category": "모델",
+      "heading": "1. OlmoEarth v1.3, 10m 위성 특징 데이터를 지도 분석에 재사용",
+      "title": "OlmoEarth v1.3, 10m 위성 특징 데이터를 지도 분석에 재사용",
+      "summary": "Ai2가 위성영상 분석용 OlmoEarth v1.3과 미리 계산한 연간 임베딩(embedding, 영상의 특징을 숫자 벡터로 압축한 표현)을 공개했다. Sentinel-1 레이더와 Sentinel-2·Landsat 관측을 결합해 10m 단위의 땅을 128차원 벡터로 표현하며, 앞의 64차원만 사용하는 경량 형태도 제공한다.",
+      "source_urls": [
+        "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+      ],
+      "canonical_urls": [
+        "https://huggingface.co/blog/allenai/olmoearth-v1-3"
+      ],
+      "publication_note": "2026-10-22 (원문 날짜, 세부 시각 미표기)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-23/모델.md",
+      "archive_url": "/news/2026-10-23/모델.html#1-olmoearth-v13-10m-위성-특징-데이터를-지도-분석에-재사용",
+      "section_sha256": "cf613cda756147ecc096b5d0cbcc8bfd3444a607e94c3de18c1d84da7f806a65",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-23/모델/2",
+      "article_id": "url-0e5fad3ca5f8a881acf7d04bb62a3859c2c74e88d36ad866cc1ffd77a9610def",
+      "revision_id": "editorial-df0f9d1602080c49053eba706424c960ec9066d41af6779b9aa5684a51c0c6f4",
+      "briefing_date": "2026-10-23",
+      "category": "모델",
+      "heading": "2. IBM, Granite 4개 모델을 묶는 시계열 예측 운용법 공개",
+      "title": "IBM, Granite 4개 모델을 묶는 시계열 예측 운용법 공개",
+      "summary": "IBM Research가 네 가지 Granite 시계열 모델의 예측을 합치는 Ensemble R1의 운용법과 평가를 설명했다. 앙상블(ensemble, 여러 모델의 결과를 결합하는 방식)은 하나의 새 모델로 가중치를 합치는 것이 아니라, 서로 다른 모델을 각각 불러와 결과를 결합하는 레시피다. 추가 학습 없이 중앙 예측값과 여러 분위수의 예측을 반환한다.",
+      "source_urls": [
+        "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1"
+      ],
+      "canonical_urls": [
+        "https://huggingface.co/blog/ibm-research/granite-timeseries-ensemble-r1"
+      ],
+      "publication_note": "2026-10-22 (설명 글 발행일; 모델 레시피는 이전 공개)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-23/모델.md",
+      "archive_url": "/news/2026-10-23/모델.html#2-ibm-granite-4개-모델을-묶는-시계열-예측-운용법-공개",
+      "section_sha256": "438bea7f0bc35c174ece15d48aec53f38afebe6f5fbce440d7ba51fe36df98aa",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    },
+    {
+      "entry_id": "2026-10-23/엔진/1",
+      "article_id": "url-66a2b0ce114a65fe5ef2bde185e6b769a552bca65b5666791406fd50ee3f5f7c",
+      "revision_id": "editorial-11151a1d650d928d3d8242415019660687ecdc369af9df8c56594b24b78a16da",
+      "briefing_date": "2026-10-23",
+      "category": "엔진",
+      "heading": "1. llama.cpp, MiniCPM-OCR 1.0 지원… ‘빈 응답’처럼 보이는 출력 위치에 주의",
+      "title": "llama.cpp, MiniCPM-OCR 1.0 지원… ‘빈 응답’처럼 보이는 출력 위치에 주의",
+      "summary": "llama.cpp의 b11826 릴리스에 MiniCPM-OCR 1.0 지원이 들어갔다. OCR(Optical Character Recognition, 이미지 속 글자를 문자 데이터로 바꾸는 기술) 모델을 기존 로컬 추론 환경에서 다룰 수 있도록 연결한 변경이다. 모델 자체의 신규 공개나 인식 정확도 향상을 발표한 것이 아니라, 추론 엔진 측 호환성 추가라는 점이 핵심이다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11826"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b11826"
+      ],
+      "publication_note": "2026-10-23 03:56:50 KST (릴리스)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-10-23/엔진.md",
+      "archive_url": "/news/2026-10-23/엔진.html#1-llamacpp-minicpm-ocr-10-지원-빈-응답처럼-보이는-출력-위치에-주의",
+      "section_sha256": "5a7d446e07a669559947405b24f3fe6859f8e5c82f9e0baf8495fb9b7facebb2",
+      "event": {
+        "key": "",
+        "entities": [],
+        "date": null,
+        "action": "",
+        "core_facts": []
+      },
+      "review": {
+        "decision": "legacy-unreviewed",
+        "matched_entries": [],
+        "reason": "기존 공개 요약에서 색인만 생성. 원출처·시각·중복을 새로 검증하지 않음.",
+        "material_change": "",
+        "basis_sha256": ""
+      }
+    }
+  ]
+}

@@ -6,6 +6,7 @@
 | 문서 | 내용 |
 |---|---|
 | [AGENTS.md](../AGENTS.md) | 에이전트 핸드오프 — 작업 전 필독, 매일 체크리스트 |
+| [기사 색인·중복 검사](ARTICLE-INDEX.md) | 공개 JSON 원본 · URL/사건/수정 구분 · 발행 전 검토 · 로컬 검색 |
 | [WORKFLOW.md](WORKFLOW.md) | 루틴 · 요약 스타일 · 저작권 · Pages 사이트 구조 상세 규칙 |
 | [README (GitHub)](https://github.com/DreamHouseKSH/dreamhouse-briefings#readme) | 저장소 소개 (public) |
 | [심층 리서치](../research/index.md) | 리서치 요청 버튼으로 요청된 기사 심층 정리 목록 (규칙: WORKFLOW 8장) |
