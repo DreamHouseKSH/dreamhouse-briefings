@@ -549,3 +549,8 @@
 - {"term": "베타", "full": "Beta", "ko": "정식 출시 전에 제한된 범위에서 제공하는 시험 단계"}
 - {"term": "추론 훅", "full": "Inference hooks", "ko": "모델 입력이나 도구 실행 전에 조직의 보안 검사를 연결하는 기능"}
 - {"term": "EDR", "full": "Endpoint Detection and Response", "ko": "사용자 기기의 위협을 탐지하고 대응하는 보안 체계"}
+
+# --- 2026-11-06 뉴스 보충 ---
+- { term: "파라미터", full: "parameter", ko: "모델이 학습으로 조정하는 내부 수치" }
+- { term: "체크포인트", full: "checkpoint", ko: "학습의 특정 단계에서 저장한 모델 상태" }
+- { term: "METR", full: "", ko: "AI 모델의 역량과 위험을 평가하는 연구기관" }

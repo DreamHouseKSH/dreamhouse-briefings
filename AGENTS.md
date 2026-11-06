@@ -4,6 +4,9 @@
 
 ## 변경 이력 (요약 — 상세는 [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 맨 위 '변경 이력')
 
+- **2026-11-06 (매일 뉴스):** 토·일도 평일과 같은 아침 뉴스 브리핑을 08:01 KST에 발행한다. 토요일 주간 정리·일요일 전망은 별도로 유지하며 GitHub 트렌드는 기존 평일 08:06을 유지한다.
+- **2026-11-06 (뉴스 수집 보강):** 직전 성공 발행본의 수집 종료부터 이번 정규 마감까지 KST 구간을 이어서 조사한다. 주말·공휴일·실패 기간도 포함한다. 국내외 IT·반도체·AI 기업·모델·엔진을 개별 점검하고 최초 게시 시각·시간대를 확인한다. 시간 미확인 후보, 중복·제외·접근 차단과 빈 분야 재검색을 `docs/news-reviews/YYYY-MM-DD.md`에 기록한다. 적은 기사 수를 억지로 채우지 않는다. 사용자 승인 사후 보충만 기존 본문을 보존해 추가하며 정규 수집 마감은 바꾸지 않는다. 상세 WORKFLOW 1-1장.
+
 - **2026-11-02 (내용별 시각화):** 새 하루 발표는 `_data/day_YYYYMMDD_visuals.json`의 근거 연결 장면과 `visual_key`를 갖추고 `python3 scripts/check-daily-visuals.py YYYY-MM-DD` 및 실제 모바일/데스크톱 검수를 통과해야 완성이다. 같은 세 원·카드 반복은 초안으로 남긴다. 원본 대본·오디오·cue는 보존하며 과거 판 검사·재사용은 변경하지 않는다. WORKFLOW 10장 내용별 시각화 발행 게이트 참고.
 - **2026-10-30 (클라우드 Sohee):** 사용자 승인 후 새 발표의 기본 합성을 공식 Qwen3-TTS Sohee의 Linux CPU 경로로 전환한다. `--audio-backend sohee`로 명시할 수 있으며 `--check`는 합성 없이 실행된다. 10/27~29 Yuna 기록은 보존하고, 기존 판의 교체는 별도 생성·전사·cue 검증 후에만 진행한다. 새 계정·유료 음성 서비스·Mac 실행은 필요 없다. 실행 환경 준비와 매일 발행 명령은 [`docs/SOHEE-CLOUD.md`](docs/SOHEE-CLOUD.md). 이는 실행 가능한 생성 경로이지 새 예약 실행기나 Actions 스케줄을 설치했다는 뜻은 아니다.
 - **2026-10-30 (일일 발표):** 뉴스와 GitHub 작성 후 `python3 scripts/build-daily.py YYYY-MM-DD --audio --if-ready`, 생성 완료 후 `--check`를 실행한다. 날짜별 데이터·공용 화면·연속 오디오·cue를 생성하며 기존 판은 체크만 한다. source hash 변경·경합은 중단한다. 홈·날짜 칩·기사 탭·`daily/` 목록은 실제 판을 자동 연결한다. HTML/JSON 생성은 표준 Python이며, Sohee 합성은 별도 Python 환경에서 실행한다. 보존용 Yuna 합성 경로만 macOS에 의존한다. WORKFLOW 10장 참고.
@@ -22,7 +25,7 @@
 
 ## 이 저장소는 무엇인가
 
-- 사용자(성현 김)에게 평일 아침 전달되는 **IT·AI·모델·엔진 뉴스 브리핑**과 **GitHub 트렌드 브리핑**을 날짜별로 쌓는 아카이브입니다. 저장소는 **public**이고, 내용은 **GitHub Pages로 인터넷에 공개(운영 중)** 됩니다 → https://daily.dahangis.co.kr/ (사용자 승인, 2026-10-06)
+- 사용자(성현 김)에게 매일 아침 전달되는 **IT·AI·모델·엔진 뉴스 브리핑**과 평일 아침의 **GitHub 트렌드 브리핑**을 날짜별로 쌓는 아카이브입니다. 저장소는 **public**이고, 내용은 **GitHub Pages로 인터넷에 공개(운영 중)** 됩니다 → https://daily.dahangis.co.kr/ (사용자 승인, 2026-10-06)
 - 저장소: https://github.com/DreamHouseKSH/dreamhouse-briefings (public, 기본 브랜치 `main`)
 - 박스(box) 작업 경로: `/workspace/dreamhouse-briefings` — 없으면 `gh repo clone DreamHouseKSH/dreamhouse-briefings`
 - gh 인증 계정: **DreamHouseKSH** (박스에 이미 로그인됨, `gh auth status`로 확인). 다른 계정으로 push하지 마세요.
@@ -59,7 +62,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 ## 매일 해야 할 일 (체크리스트)
 
 1. `cd /workspace/dreamhouse-briefings && git pull --rebase`
-2. 아침 루틴에서 전달된 브리핑 내용으로 `news/<오늘>/*.md`, `github/<오늘>.md` 작성 (템플릿·스타일은 WORKFLOW 참고; GitHub는 카드 형식 `templates/github-item.md`, 레포마다 `gh api` 로 README·릴리스·라이선스 확인). 각 항목 원문의 `og:image` 를 찾아 `### 미디어` 에 핫링크(WORKFLOW 3·4장). 각 뉴스 항목에 `### 논조·다른 시각` 작성(웹 검색으로 다른 매체·반응 확인)
+2. WORKFLOW 1-1장의 구간·분야별 조사와 검토 기록을 먼저 완료한 뒤, 직접 조사한 또는 아침 루틴에서 전달된 검증된 브리핑 내용으로 `news/<오늘>/*.md`, `github/<오늘>.md` 작성 (템플릿·스타일은 WORKFLOW 참고; GitHub는 카드 형식 `templates/github-item.md`, 레포마다 `gh api` 로 README·릴리스·라이선스 확인). 각 항목 원문의 `og:image` 를 찾아 `### 미디어` 에 핫링크(WORKFLOW 3·4장). 각 뉴스 항목에 `### 논조·다른 시각` 작성(웹 검색으로 다른 매체·반응 확인)
 3. `_data/highlights.yml` 맨 위에 오늘 날짜 하이라이트 추가 (날짜 목록·분야 링크는 사이트가 폴더에서 **자동 생성**하므로 목차 표 편집 불필요)
 4. **뉴스와 GitHub 양쪽 완성 후 하루 발표 생성:** `python3 scripts/build-daily.py YYYY-MM-DD --audio --audio-backend sohee --if-ready` → 생성 완료면 `python3 scripts/build-daily.py YYYY-MM-DD --check`. PENDING이면 체크를 보류한다. 한쪽만 있으면 PENDING으로 남기고, 두 번째 발행 루틴이 반드시 생성한다. 기존 판의 아카이브가 바뀌었거나 다른 작성자가 동일 날짜 파일을 만들면 덮어쓰지 말고 중단·보고한다. Sohee 실행 환경·공식 모델·합성/검증이 준비되지 않으면 무음 성공이나 임의 음성 대체로 게시하지 말고 막힌 단계를 보고한다. 실행 전에 `docs/SOHEE-CLOUD.md`의 별도 환경·캐시 설정을 적용한다.
 5. `git add -A && git commit -m "briefings: YYYY-MM-DD news + github trends" && git pull --rebase && git push origin main` → Pages `built` 확인
@@ -68,7 +71,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 
 | 루틴 | 시각 | 결과물 |
 |---|---|---|
-| 뉴스 브리핑 아카이브 | 평일 **08:01** | `news/YYYY-MM-DD/` |
+| 뉴스 브리핑 아카이브 | 매일(토·일 포함) **08:01** | `news/YYYY-MM-DD/` |
 | GitHub 트렌드 아카이브 | 평일 **08:06** | `github/YYYY-MM-DD.md` |
 | 주간 정리 | 토요일 **오전, 유연한 시간대** | `weekly/YYYY-MM-DD-review.md` |
 | 주간 전망 | 일요일 **오전, 유연한 시간대** | `weekly/YYYY-MM-DD-outlook.md` |

@@ -1,6 +1,6 @@
 # DreamHouse 브리핑 — GitHub Pages (Jekyll, 브랜치 main / 루트(/) 게시)
 title: DreamHouse 브리핑
-description: 평일 아침 IT·AI·모델·엔진 뉴스와 GitHub 트렌드, X 유명인 동향을 날짜별로 쌓는 한국어 요약 아카이브
+description: 매일 아침 IT·AI·모델·엔진 뉴스와 평일 GitHub 트렌드, X 유명인 동향을 날짜별로 쌓는 한국어 요약 아카이브
 lang: ko-KR
 url: https://daily.dahangis.co.kr
 baseurl: ""
