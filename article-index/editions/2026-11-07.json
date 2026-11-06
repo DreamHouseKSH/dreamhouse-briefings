@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-11-07",
+  "origin": "reviewed",
+  "source_hashes": {
+    "news/2026-11-07/AI.md": "e24242b6fe004c1793e103e72c88333f3225268fcd03e018bcf94aef9225b624",
+    "news/2026-11-07/IT.md": "85218bd9dfd8499a5317221855229546a5e40024597d7eee67a370d572576f4d",
+    "news/2026-11-07/엔진.md": "afccbf40233615b65ca664e1f302c9e0f93076cc4e90013968bb45de7fd56b79"
+  },
+  "records": [
+    {
+      "entry_id": "2026-11-07/AI/1",
+      "article_id": "url-d5764ee3d06ac915983fe52ff94f5bb7e66e350139aa3a2eae702e64427472f0",
+      "revision_id": "editorial-0f84cfcf08fa0f8b0567f0d5109dbd25a0e6d9110d3b57486477b00be2d2d6c0",
+      "briefing_date": "2026-11-07",
+      "category": "AI",
+      "heading": "1. OpenAI, 실험실 원자료 평가 BioBasicsBench 공개…높은 점수도 실험 판단의 신뢰성을 보장하지 않는다",
+      "title": "OpenAI, 실험실 원자료 평가 BioBasicsBench 공개…높은 점수도 실험 판단의 신뢰성을 보장하지 않는다",
+      "summary": "OpenAI가 효소 설계 기업 Ligo와 만든 BioBasicsBench를 공개했다. 생물학 실험실의 일상 작업 100개를 통해 AI가 가공 전 실험 자료를 해석하고, 오류를 찾으며, 증거가 부족할 때 결론을 보류하는지 평가한다. 논문에 쓰기 좋게 정리한 그림 대신 실제 실험 사진과 장비 출력 등을 사용한다.",
+      "source_urls": [
+        "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
+      ],
+      "canonical_urls": [
+        "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
+      ],
+      "publication_note": "2026-11-06, 공식 페이지 날짜만 확인·시간 및 시간대 미확인",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-07/AI.md",
+      "archive_url": "/news/2026-11-07/AI.html#1-openai-실험실-원자료-평가-biobasicsbench-공개높은-점수도-실험-판단의-신뢰성을-보장하지-않는다",
+      "section_sha256": "954c780494356d55d72f1702871ab8837d9a869a15d86649f17b2d7a94dcc69a",
+      "event": {
+        "key": "openai-biobasicsbench-publication-2026-11-06",
+        "entities": [
+          "OpenAI",
+          "Ligo",
+          "BioBasicsBench"
+        ],
+        "date": "2026-11-06",
+        "action": "benchmark-publication",
+        "core_facts": [
+          "생물학 실험실 원자료 100개 과제 평가 공개",
+          "회사 보고 xhigh 평균 획득 점수 Astra 66.7%, Sol 43.8%"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "공식 BioBasicsBench 원문과 OpenAI·BioBasics 검색을 대조했다. 기존 METR/GPT-6 Cyber 기사와 달리 생물학 실험 원자료 100과제 평가의 공개 사건이다. 자동 중복 후보 없음. 최초 시각은 미확인으로 참고 보충 처리했다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "254820314928afce1a29d41a080107ed97791fa2d69c1e290288808ac4f0ca7f"
+      }
+    },
+    {
+      "entry_id": "2026-11-07/AI/2",
+      "article_id": "url-f0247d2be6d23fda27989bba50a71943168bf8e5f68168df2bbd40b50bab75f3",
+      "revision_id": "editorial-852d4ad0e16935f2837decf837c52afb63fae504c264c94947cf66a758ff8ad2",
+      "briefing_date": "2026-11-07",
+      "category": "AI",
+      "heading": "2. Anthropic, 에이전트 메모리 실험 공개…많이 저장하기보다 검증·정리가 중요",
+      "title": "Anthropic, 에이전트 메모리 실험 공개…많이 저장하기보다 검증·정리가 중요",
+      "summary": "Anthropic이 AI 에이전트의 장기 기억을 어떻게 구성하고 점검할지 연구 결과를 공개했다. 여기서 기억은 모델 가중치를 다시 학습시키는 것이 아니라, 다음 작업에서 읽을 수 있도록 경험을 외부 문서로 남기는 방식이다. 작업 사이에 원래 기록을 다시 읽고 틀린 내용을 고치는 과정도 실험했다.",
+      "source_urls": [
+        "https://www.anthropic.com/research/components-of-agent-memory"
+      ],
+      "canonical_urls": [
+        "https://www.anthropic.com/research/components-of-agent-memory"
+      ],
+      "publication_note": "2026-11-06, 공식 페이지 날짜만 확인·시간 및 시간대 미확인",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-07/AI.md",
+      "archive_url": "/news/2026-11-07/AI.html#2-anthropic-에이전트-메모리-실험-공개많이-저장하기보다-검증정리가-중요",
+      "section_sha256": "53f8c7869a8b92dd0e27f48ba3772cd31b45a3aae92eb640d98790d0e2d2d959",
+      "event": {
+        "key": "anthropic-agent-memory-research-2026-11-06",
+        "entities": [
+          "Anthropic",
+          "Claude"
+        ],
+        "date": "2026-11-06",
+        "action": "research-publication",
+        "core_facts": [
+          "외부 기억 문서의 정리·검색 결합 연구 공개",
+          "내부 문서 35만 개·25문항에서 검색53%, 위키와 검색 최고61%"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "Anthropic 원문과 memory·메모리·Anthropic 색인 검색을 대조했다. 기존 개인재무·기업 도구 검사 출시가 아닌 외부 기억 문서 설계 실험 공개다. 자동 중복 후보 없음. 최초 시각은 미확인으로 참고 보충 처리했다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "c8139d898e3b5b753ab54ab7f34df527e309b04e1a0e82f8c649c602720af283"
+      }
+    },
+    {
+      "entry_id": "2026-11-07/IT/1",
+      "article_id": "url-0a4847851686441be76b34cd09a9b2f356689d1c3c53ec7cb91e497f8f1dcc80",
+      "revision_id": "editorial-bcf8c312918a3267370b02d4df77a0fd7884417fcfe01225caec55087d49fa64",
+      "briefing_date": "2026-11-07",
+      "category": "IT",
+      "heading": "1. IBM, 시카고 Quantum System Two 가동 공개…연구 인프라와 상용 성과는 구분",
+      "title": "IBM, 시카고 Quantum System Two 가동 공개…연구 인프라와 상용 성과는 구분",
+      "summary": "IBM은 시카고대학교가 호스팅하는 Hyde Park Labs에 Quantum System Two를 가동했다고 발표했다. 일리노이주에 설치된 회사의 첫 양자컴퓨터이며 Nighthawk 칩을 사용한다. 새로운 범용 컴퓨터 판매 발표보다는 지역 연구기관이 접근할 계산 인프라의 실제 설치가 핵심이다.",
+      "source_urls": [
+        "https://newsroom.ibm.com/2026-11-06-ibm-unveils-its-most-advanced-quantum-computer-in-chicago%2C-marking-a-milestone-for-illinoiss-quantum-future"
+      ],
+      "canonical_urls": [
+        "https://newsroom.ibm.com/2026-11-06-ibm-unveils-its-most-advanced-quantum-computer-in-chicago%2C-marking-a-milestone-for-illinoiss-quantum-future"
+      ],
+      "publication_note": "IBM 공식 원문 2026-11-06. 시각·시간대 미확인으로 KST 최초 게시 시각 환산 불가.",
+      "publisher_update_note": null,
+      "event_date_note": "2026-11-06 시카고 공개 행사. 시스템은 현재 Hyde Park Labs에서 가동, 향후 연구단지 이전 예정.",
+      "archive_path": "news/2026-11-07/IT.md",
+      "archive_url": "/news/2026-11-07/IT.html#1-ibm-시카고-quantum-system-two-가동-공개연구-인프라와-상용-성과는-구분",
+      "section_sha256": "7b45334e5c4fdfeb36ff4d07b2cf3de84b877986bcf05b185bfd382632ff1667",
+      "event": {
+        "key": "ibm-chicago-system-two-unveiling-2026-11-06",
+        "entities": [
+          "IBM",
+          "University of Chicago",
+          "Illinois"
+        ],
+        "date": "2026-11-06",
+        "action": "system-deployment",
+        "core_facts": [
+          "Hyde Park Labs에서 Quantum System Two 가동 공개",
+          "향후 Illinois Quantum and Microelectronics Park 이전 예정"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "IBM·주정부 원문과 IBM 색인 검색을 대조했다. 기존 Granite 모델·Supermicro 공유 KV 캐시와 다른 시카고 Quantum System Two 실제 가동 사건이다. 자동 중복 후보 없음. 날짜만 확인되어 참고 보충 처리했다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "b8f8c002bf47b98ba87486d4e0a8b6dbf1e7ce4e3a62d5f0700fa26938a0f876"
+      }
+    },
+    {
+      "entry_id": "2026-11-07/엔진/1",
+      "article_id": "url-dd1266c7ee42e16d36eb8cb00a0eaac7c33976095328dd71d9cf7c8bf8dd98d5",
+      "revision_id": "editorial-fa2143742cf0ddddaa3cdf9e1e8da1faeb05c5e51f114c5ced1e82b37fc998c9",
+      "briefing_date": "2026-11-07",
+      "category": "엔진",
+      "heading": "1. llama.cpp, 잘못된 UTF-8 입력으로 CLI가 종료되는 문제 수정",
+      "title": "llama.cpp, 잘못된 UTF-8 입력으로 CLI가 종료되는 문제 수정",
+      "summary": "llama.cpp의 b12177 사전 릴리스는 CLI(Command-Line Interface, 글자 명령으로 프로그램을 조작하는 방식)에서 잘못된 UTF-8 문자가 포함된 입력을 처리하다 프로그램이 종료되는 문제를 수정했다. UTF-8은 문자를 바이트로 표현하는 규칙이며, 다른 문자 인코딩으로 저장한 파일을 읽으면 이 규칙에 맞지 않는 바이트가 들어올 수 있다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12177"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12177"
+      ],
+      "publication_note": "공식 GitHub published_at 2026-11-06 17:09:46 UTC → 2026-11-07 02:09:46 KST. prerelease=true.",
+      "publisher_update_note": null,
+      "event_date_note": "변경 제안 병합 2026-11-06 12:54:49 UTC → 2026-11-06 21:54:49 KST. 실행 파일 게시와 구분.",
+      "archive_path": "news/2026-11-07/엔진.md",
+      "archive_url": "/news/2026-11-07/엔진.html#1-llamacpp-잘못된-utf-8-입력으로-cli가-종료되는-문제-수정",
+      "section_sha256": "ccd6aaa646721ccbe73a4d0bac931d649f898787ccb93d1c454d544090771390",
+      "event": {
+        "key": "llama-cpp-b12177-invalid-utf8-cli-fix",
+        "entities": [
+          "llama.cpp",
+          "ggml-org"
+        ],
+        "date": "2026-11-06",
+        "action": "prerelease-publication",
+        "core_facts": [
+          "b12177 사전 릴리스에 PR31563 포함",
+          "잘못된 UTF-8 입력을 대체 문자로 처리해 CLI 종료 방지"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "b12177 릴리스와 PR31563을 대조했다. 전날 b12137/PR31714 서버 session.update 입력 객체 오류와 달리 CLI 프롬프트·파일의 잘못된 UTF-8 직렬화 충돌 수정이다. 기존 검색의 v0.9.0 기능 발표와도 별개다. 자동 중복 후보 없음.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "75c914a1254dea4807b79dfcc0a4b41d0895942dfa5014376f262d5ea56d3db1"
+      }
+    }
+  ]
+}

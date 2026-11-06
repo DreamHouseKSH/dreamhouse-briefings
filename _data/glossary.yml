@@ -554,3 +554,9 @@
 - { term: "파라미터", full: "parameter", ko: "모델이 학습으로 조정하는 내부 수치" }
 - { term: "체크포인트", full: "checkpoint", ko: "학습의 특정 단계에서 저장한 모델 상태" }
 - { term: "METR", full: "", ko: "AI 모델의 역량과 위험을 평가하는 연구기관" }
+
+- { term: "UTF-8", full: "Unicode Transformation Format, 8-bit", ko: "문자를 1~4바이트로 표현하는 유니코드 문자 인코딩 방식" }
+- { term: "BioBasicsBench", full: "", ko: "실험실의 가공 전 자료 해석과 오류 판단을 평가하는 OpenAI·Ligo의 과제 모음" }
+- { term: "Quantum System Two", full: "", ko: "IBM의 모듈형 양자컴퓨팅 시스템 제품 이름" }
+- { term: "Nighthawk", full: "", ko: "IBM 양자컴퓨터에 사용하는 양자 프로세서 제품 이름" }
+- { term: "위키", full: "wiki", ko: "여러 문서를 연결하고 계속 수정해 지식을 정리하는 문서 체계" }
