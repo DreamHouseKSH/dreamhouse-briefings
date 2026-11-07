@@ -577,3 +577,11 @@
 - term: CNCF
   full: Cloud Native Computing Foundation
   ko: 클라우드 네이티브 기술을 지원하는 재단
+
+# 2026-11-08 주간 전망
+- term: "양자컴퓨팅"
+  full: "Quantum computing"
+  ko: "양자역학의 성질을 이용해 정보를 처리하는 계산 방식"
+- term: "회귀 검사"
+  full: "Regression testing"
+  ko: "변경 뒤 기존 기능이 다시 망가지지 않았는지 확인하는 시험"
