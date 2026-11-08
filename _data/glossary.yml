@@ -585,3 +585,8 @@
 - term: "회귀 검사"
   full: "Regression testing"
   ko: "변경 뒤 기존 기능이 다시 망가지지 않았는지 확인하는 시험"
+
+# --- 2026-11-08 뉴스 지연 복구 ---
+- { term: "RoPE", full: "Rotary Position Embedding", ko: "회전 연산으로 입력의 위치 정보를 표현하는 방식" }
+- {"term": "3D DRAM", "full": "Three-Dimensional Dynamic Random Access Memory", "ko": "정보를 담는 메모리 셀을 여러 층으로 배치해 저장 밀도를 높이는 D램 구조"}
+- {"term": "파운드리", "full": "Foundry", "ko": "고객이 설계한 반도체를 대신 제조하는 사업"}

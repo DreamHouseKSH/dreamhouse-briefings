@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-11-08",
+  "origin": "reviewed",
+  "source_hashes": {
+    "news/2026-11-08/IT.md": "64773894f289301590965a89220f6f5d7e4e1d73c3fa27c8799c0c4517b5f1d3",
+    "news/2026-11-08/엔진.md": "16afeff22037d2fd27d9718899589f33835ca876b59423286eee0a07f2130799"
+  },
+  "records": [
+    {
+      "entry_id": "2026-11-08/IT/1",
+      "article_id": "url-1806c3112ad7cc062d83ef54f00d9bd6b64fda98805d11e06f28bb29e9cd72f4",
+      "revision_id": "editorial-ff59ecc741a24a8471076df62cc8cdec7a9eef432a923bf12b623a8107f13aab",
+      "briefing_date": "2026-11-08",
+      "category": "IT",
+      "heading": "1. TSMC, 3D D램 진출설에 파운드리 집중 원칙 재확인",
+      "title": "TSMC, 3D D램 진출설에 파운드리 집중 원칙 재확인",
+      "summary": "TSMC(Taiwan Semiconductor Manufacturing Company, 대만의 반도체 위탁생산 기업)가 3차원 D램 생산 검토설에 대해 전문 파운드리(Foundry, 고객이 설계한 반도체를 대신 제조하는 사업)에 집중한다는 입장을 밝혔다. Tom’s Hardware가 직접 받은 대변인 답변으로, 회사는 앞으로도 전 세계 연산용 반도체 산업에 기술과 생산능력을 제공한다는 역할을 강조했다.",
+      "source_urls": [
+        "https://www.tomshardware.com/pc-components/dram/tsmc-denies-exploring-3d-dram-at-nvidias-request-advanced-memory-tech-is-still-years-from-market-viability"
+      ],
+      "canonical_urls": [
+        "https://www.tomshardware.com/pc-components/dram/tsmc-denies-exploring-3d-dram-at-nvidias-request-advanced-memory-tech-is-still-years-from-market-viability"
+      ],
+      "publication_note": "Tom’s Hardware 원문 메타데이터 2026-11-07 13:00 UTC → 2026-11-07 22:00 KST. TSMC 답변을 직접 받은 보도의 최초 공개 시각이며, 회사가 기자에게 답한 정확한 시각은 공개되지 않았다.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-08/IT.md",
+      "archive_url": "/news/2026-11-08/IT.html#1-tsmc-3d-d램-진출설에-파운드리-집중-원칙-재확인",
+      "section_sha256": "9febe10440c4b3c736aeb4241b0e12e66cc5938964449e4c06ba46c022847eb3",
+      "event": {
+        "key": "toms-hardware-tsmc-foundry-response-publication-2026-11-07",
+        "entities": [
+          "TSMC",
+          "NVIDIA",
+          "Tom's Hardware",
+          "3D DRAM"
+        ],
+        "date": "2026-11-07",
+        "action": "spokesperson-response-publication",
+        "core_facts": [
+          "Tom's Hardware published a directly obtained TSMC spokesperson response at 2026-11-07T13:00:00Z.",
+          "TSMC reiterated its focus on dedicated IC foundry and its role as technology and capacity provider for the global logic IC industry.",
+          "The article interprets the response as a denial of a prior 3D DRAM manufacturing report, but the direct statement does not disclose a detailed investment or production timetable."
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "Tom’s Hardware가 직접 받은 TSMC 답변의 구간 내 최초 보도와 원문 시간 메타데이터를 확인했다. 기존 11/7 검토의 미채택 진출설과 달리 새 회사 답변이며, 10/19 삼성 NVHBM 제조 위탁 및 10/9 GlobalFoundries 기판 협약과도 다른 사건이다. 자동 중복 후보 없음.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "b064ddd392941767d2ce595eb4cb99ddacbe133691dadbc15195499dfd970e94"
+      }
+    },
+    {
+      "entry_id": "2026-11-08/엔진/1",
+      "article_id": "url-15811ccb0e51d72e4df42f7a019636f220595ce6550fbef43df91443c773bfa5",
+      "revision_id": "editorial-7ee95b5130512a006221d9aa93b37258545c0e85cd261583f174b32c56710e22",
+      "briefing_date": "2026-11-08",
+      "category": "엔진",
+      "heading": "1. llama.cpp, MoE 캐시에서 빠진 계산을 CPU와 나누는 기능 추가",
+      "title": "llama.cpp, MoE 캐시에서 빠진 계산을 CPU와 나누는 기능 추가",
+      "summary": "llama.cpp의 b12191 사전 릴리스에 MoE(Mixture of Experts, 여러 하위 전문가 중 필요한 일부만 골라 계산하는 구조) 캐시에서 찾지 못한 전문가의 계산을 CPU(Central Processing Unit, 중앙처리장치)에 나눠 맡기는 기능이 들어갔다. 필요한 전문가 데이터를 매번 GPU(Graphics Processing Unit, 병렬 계산에 쓰는 그래픽 처리장치)로 옮기는 대신, 일부는 시스템 메모리에서 CPU가 처리하도록 비중을 조절한다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12191"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12191"
+      ],
+      "publication_note": "공식 GitHub 릴리스 published_at 2026-11-07 21:11:11 UTC → 2026-11-08 06:11:11 KST. prerelease=true인 사전 릴리스.",
+      "publisher_update_note": null,
+      "event_date_note": "변경 제안은 10월 22일 처음 열렸고, 병합은 2026-11-07 16:20:59 UTC → 11월 8일 01:20:59 KST. 아이디어의 첫 공개와 실행 파일에 반영된 시점을 구분한다.",
+      "archive_path": "news/2026-11-08/엔진.md",
+      "archive_url": "/news/2026-11-08/엔진.html#1-llamacpp-moe-캐시에서-빠진-계산을-cpu와-나누는-기능-추가",
+      "section_sha256": "db5eb8a767633bbf717044d41c61c85673065a296bc2cdbeee5c51de20114a24",
+      "event": {
+        "key": "llama-cpp-b12191-moe-cpu-share-prerelease-2026-11-08",
+        "entities": [
+          "llama.cpp",
+          "ggml-org",
+          "MoE"
+        ],
+        "date": "2026-11-08",
+        "action": "prerelease-publication",
+        "core_facts": [
+          "b12191 사전 릴리스에 PR30966 CPU 전문가 계산 분담 지원 반영",
+          "캐시 크기와 CPU 분담 비율을 시험하는 조정 도구 추가",
+          "릴리스 2026-11-07T21:11:11Z, 병합 2026-11-07T16:20:59Z"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "공식 b12191 릴리스·PR30966·논의 댓글을 대조했다. 10/8·10/16 캐시 소개와 달리 CPU가 캐시 누락 전문가를 함께 계산하는 기능 및 조정 도구가 주 개발 브랜치에 병합되어 사전판으로 배포된 사건이다. 이전 제안 생성일과 이번 배포 시각을 구분했다. 자동 중복 후보 없음.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "1ff930c8c24d23aaa9cd25ce7c0f3dd3db46b4dd089c9df3bff7c3509e335c65"
+      }
+    },
+    {
+      "entry_id": "2026-11-08/엔진/2",
+      "article_id": "url-d7b816006b5bc16a0dfef5cf0b7e0d6e79a4975b3c2e73e2b3557005d7b9975a",
+      "revision_id": "editorial-048953bf6e90a35c46a1cb458d6c700658203d1e47d64bc720381a83ab162132",
+      "briefing_date": "2026-11-08",
+      "category": "엔진",
+      "heading": "2. llama.cpp, Mage-VL-Cowork 실행 지원을 사전판에 반영",
+      "title": "llama.cpp, Mage-VL-Cowork 실행 지원을 사전판에 반영",
+      "summary": "llama.cpp의 b12192 사전 릴리스에 Microsoft의 Mage-VL-Cowork 모델을 처리하는 지원이 추가됐다. 변경 제안은 해당 모델의 공개 모델 카드를 연결하고, llama.cpp의 멀티모달 처리 부분에서 이 모델을 읽고 계산하도록 구현했다고 설명한다. 새 모델을 발표한 소식이 아니라 기존 추론 도구의 호환 모델 범위가 늘어난 소식이다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12192"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12192"
+      ],
+      "publication_note": "공식 GitHub 릴리스 published_at 2026-11-07 21:28:25 UTC → 2026-11-08 06:28:25 KST. prerelease=true인 사전 릴리스.",
+      "publisher_update_note": null,
+      "event_date_note": "병합 2026-11-07 18:36:45 UTC → 11월 8일 03:36:45 KST. Microsoft 모델 자체의 최초 출시일을 뜻하지 않는다.",
+      "archive_path": "news/2026-11-08/엔진.md",
+      "archive_url": "/news/2026-11-08/엔진.html#2-llamacpp-mage-vl-cowork-실행-지원을-사전판에-반영",
+      "section_sha256": "e5e7999f4d89bf7a1b37ce3067b99ecfad766f47be516db6f081088577b5314e",
+      "event": {
+        "key": "llama-cpp-b12192-mage-vl-cowork-support-prerelease-2026-11-08",
+        "entities": [
+          "llama.cpp",
+          "ggml-org",
+          "Microsoft",
+          "Mage-VL-Cowork"
+        ],
+        "date": "2026-11-08",
+        "action": "prerelease-publication",
+        "core_facts": [
+          "b12192 사전 릴리스에 Mage-VL-Cowork 실행 지원 반영",
+          "공유 위치 계산 정보의 관리와 형식·크기 검사 추가",
+          "릴리스 2026-11-07T21:28:25Z, 병합 2026-11-07T18:36:45Z",
+          "개발자는 Metal 일부 연산의 정밀도 문제를 후속 수정 사항으로 설명"
+        ]
+      },
+      "review": {
+        "decision": "distinct",
+        "reason": "후보는 같은 llama.cpp의 같은 날 사전판이지만, 비교한 PR31819/b12192는 Mage-VL-Cowork 모델 호환성과 위치 정보 관리이고 PR30966/b12191은 MoE CPU 분담·조정 기능이다. 서로 다른 변경 제안, 릴리스, 핵심 기능이며 동일 발표를 재서술한 것이 아니다.",
+        "matched_entries": [
+          "2026-11-08/엔진/1"
+        ],
+        "material_change": "",
+        "basis_sha256": "50d727ef0c92ab7f3cd081468dc232056924c4b1c893f2c31f314a106885ddc5"
+      }
+    },
+    {
+      "entry_id": "2026-11-08/엔진/3",
+      "article_id": "url-e1833b6ba9cd6bab261dadb1e8483020b60998fc86e1d82e1d94ff741b8130be",
+      "revision_id": "editorial-53e9482e5566b201a6f9b15df29e9883e08bfafcb33717bb00b4d23ed9139366",
+      "briefing_date": "2026-11-08",
+      "category": "엔진",
+      "heading": "3. Kimi K3.1 Pro, llama.cpp의 텍스트 실행 경로 추가",
+      "title": "Kimi K3.1 Pro, llama.cpp의 텍스트 실행 경로 추가",
+      "summary": "llama.cpp의 b12180 사전 릴리스에 Kimi K3.1 Pro의 텍스트 모델 실행 지원이 들어갔다. 11월 5일 브리핑에서 다룬 모델 가중치 공개 이후, 별도의 실행 도구가 이 구조를 변환하고 계산하는 기능을 추가한 후속 변화다. 모델의 최초 출시를 반복해 소개하는 항목은 아니다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12180"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12180"
+      ],
+      "publication_note": "공식 GitHub 릴리스 published_at 2026-11-06 23:18:52 UTC → 2026-11-07 08:18:52 KST. prerelease=true인 사전 릴리스.",
+      "publisher_update_note": null,
+      "event_date_note": "병합은 2026-11-06 22:42:47 UTC → 11월 7일 07:42:47 KST로 정규 구간 시작 전이다. 이 항목은 08:18 공개된 실행 파일 배포를 기준으로 한다.",
+      "archive_path": "news/2026-11-08/엔진.md",
+      "archive_url": "/news/2026-11-08/엔진.html#3-kimi-k31-pro-llamacpp의-텍스트-실행-경로-추가",
+      "section_sha256": "c44f04f49aa9d24eded9a3d1f4321234bd6fa8ecf6182cec1d9afa1337f9a758",
+      "event": {
+        "key": "llama-cpp-b12180-kimi-k31-text-support-prerelease-2026-11-07",
+        "entities": [
+          "llama.cpp",
+          "ggml-org",
+          "Kimi K3.1 Pro",
+          "Moonshot AI"
+        ],
+        "date": "2026-11-07",
+        "action": "prerelease-publication",
+        "core_facts": [
+          "b12180 사전 릴리스로 Kimi K3.1 Pro 텍스트 모델 실행 지원 배포",
+          "이번 변환·실행 경로는 이미지 처리 부분을 제외",
+          "릴리스 2026-11-06T23:18:52Z는 수집 구간 안, 병합 2026-11-06T22:42:47Z는 수집 시작 전"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "공식 b12180 릴리스와 PR31779를 읽고 11/5 Kimi 모델 가중치 기사와 비교했다. 이번 사건은 llama.cpp의 텍스트 전용 실행 지원 배포로 모델 최초 공개와 다르다. 병합은 시작 전이지만 사전 릴리스 published_at은 11/7 08:18:52 KST로 정규 구간 안이다. 자동 중복 후보 없음.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "77d92379c36994380609283f8e1b93e38fd44d039cbc98a33231cda01182c7b0"
+      }
+    }
+  ]
+}
