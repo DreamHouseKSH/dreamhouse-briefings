@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-11-09",
+  "origin": "reviewed",
+  "source_hashes": {
+    "news/2026-11-09/AI.md": "8cbc9c06131030f2e30dc052108feda050ef56a44caeaa59d163da42cf46b1e3",
+    "news/2026-11-09/X.md": "f696510eff85c458659c14ca1ddc5829ff91dcd63627a884c9b1df628c25fd69",
+    "news/2026-11-09/모델.md": "d0d245c8836fb4b8afc5a542f465381a80a3520864ac0c0df3de0fa1af5544b7",
+    "news/2026-11-09/엔진.md": "ea4752415fd36a10201c38a7dbd34151e9da3ec7df81b679122e2eb596594253"
+  },
+  "records": [
+    {
+      "entry_id": "2026-11-09/AI/1",
+      "article_id": "url-cb8c6b1adf460b531efed6f8e30a2e0f09f7817f9f447c3d13b68161f37cd6ce",
+      "revision_id": "editorial-7316ec9fc7d53a8557c620b6d36169dac41c3ccd5766f22d0183613d50c4395b",
+      "briefing_date": "2026-11-09",
+      "category": "AI",
+      "heading": "1. Anthropic, 34억 달러 가스발전기 확보 거래 보도…계약과 가동은 구분",
+      "title": "Anthropic, 34억 달러 가스발전기 확보 거래 보도…계약과 가동은 구분",
+      "summary": "Financial Times는 Anthropic이 OnePWR Solutions로부터 약 34억 달러에 가스발전기 1.7GW(Gigawatt, 기가와트·10억 와트) 규모의 구매 약정을 확보했다고 보도했다. 전력 확보가 인공지능 사업 확장의 중요한 조건으로 떠오르는 가운데 나온 대규모 장비 거래다. 다만 이 수치를 현재 가동 중인 발전량이나 완공된 데이터센터 규모로 읽어서는 안 된다.",
+      "source_urls": [
+        "https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0"
+      ],
+      "canonical_urls": [
+        "https://www.ft.com/content/41bf5c6a-9735-4f1a-a8e3-2bcccad58ba0"
+      ],
+      "publication_note": "Financial Times 2026-11-08 11:00:09 UTC → 2026-11-08 20:00:09 KST. Reuters 후속 보도는 12:54:06 UTC → 21:54:06 KST.",
+      "publisher_update_note": null,
+      "event_date_note": "보도에 따르면 계약은 2026년 9월 말 체결.",
+      "archive_path": "news/2026-11-09/AI.md",
+      "archive_url": "/news/2026-11-09/AI.html#1-anthropic-34억-달러-가스발전기-확보-거래-보도계약과-가동은-구분",
+      "section_sha256": "3f3a78dfe2b5d0a03ca589bc979856bd637c52ead07c445981d6162d3a6dbe2c",
+      "event": {
+        "key": "anthropic-onepwr-generator-deal-report-2026-11-08",
+        "entities": [
+          "Anthropic",
+          "OnePWR Solutions"
+        ],
+        "date": null,
+        "action": "reported-generator-purchase-commitments",
+        "core_facts": [
+          "FT reported $3.4bn commitments for 1.7GW generators",
+          "Agreement reportedly in late September; exact date unconfirmed",
+          "Reuters did not independently verify the report"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "FT의 새 전력설비 거래 보도이며 과거 Anthropic 투자·서비스 기사와 다른 사건이다. 계약일은 정확히 확인되지 않아 null로 보존했다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "b7371d51c1b896bd9bcf4026bd6f986ab765411e49150ea65ec7669648793108"
+      }
+    },
+    {
+      "entry_id": "2026-11-09/X/1",
+      "article_id": "url-780ead876d097d61dc12ecf7a24a4bfc0ae47f057e969ffdbf37a2b3e396d3fb",
+      "revision_id": "editorial-b079b80c3b7ed7ea1e838c49d56dddf1a9febc1831e97dd11787ee66ba219c84",
+      "briefing_date": "2026-11-09",
+      "category": "X",
+      "heading": "1. 일론 머스크 — Grok Bot의 토큰 효율·행동 개선 작업을 예고",
+      "title": "일론 머스크 — Grok Bot의 토큰 효율·행동 개선 작업을 예고",
+      "summary": "머스크는 Grok Bot의 사용량과 품질을 개선할 계획을 알렸지만 완료 시점이나 구체적인 변경 내용을 밝히지 않았다. 토큰(Token, 모델이 글을 처리할 때 사용하는 작은 단위)을 덜 쓰게 하는 것과 주간 제공량을 늘리는 것은 다른 조치다. 이 게시글만으로 요금 인하·한도 확대·수정 배포 완료를 주장할 수 없다.",
+      "source_urls": [
+        "https://x.com/elonmusk/status/2119419126045454531"
+      ],
+      "canonical_urls": [
+        "https://x.com/elonmusk/status/2119419126045454531"
+      ],
+      "publication_note": "2026-11-08 13:17 UTC → 22:17 KST. 공개 아카이브는 01:17 PM으로 표시하되 시간대를 명시하지 않는다. 보도에 인용된 08:17 ET와 게시글 ID의 UTC 생성 시각이 일치한다. 초 단위는 원문 화면을 직접 확인한 시각이 아니므로 표기하지 않았다.",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-09/X.md",
+      "archive_url": "/news/2026-11-09/X.html#1-일론-머스크--grok-bot의-토큰-효율행동-개선-작업을-예고",
+      "section_sha256": "2136a28bea1356fac6fd7dbe1dc94f29879c75a401f80253a67ae65bc78580fc",
+      "event": {
+        "key": "musk-grok-bot-efficiency-fixes-2026-11-08",
+        "entities": [
+          "Elon Musk",
+          "Grok Bot"
+        ],
+        "date": "2026-11-08",
+        "action": "announced-work-on-efficiency-and-behavior",
+        "core_facts": [
+          "Public reporting quotes Musk saying fixes underway",
+          "No delivery date or increased usage allowance promised",
+          "X original inaccessible; indirect verification disclosed"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "기존 11/4 X1 전화예약 홍보와 다른 효율·행동 수정 예고다. 자동 중복 후보는 없다. 원문 접근 제한과 간접 검증을 명시했다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "2932d73cdbcbd7bdb49c015257b0c163b061e7e1edcc9324489dedfdc819ca57"
+      }
+    },
+    {
+      "entry_id": "2026-11-09/모델/1",
+      "article_id": "url-81603d86765ca0a85875c85350f48d1f8aff72a9995f77db3879d97d5df71568",
+      "revision_id": "editorial-9edceeaf89d5d1e4293d3a57faf52fdb0ac9c9fe9091b5996ffaee7f0a6151df",
+      "briefing_date": "2026-11-09",
+      "category": "모델",
+      "heading": "1. [시간 미확인 참고] Shizuku-Duplex, 듣고 말하기를 동시에 처리하는 일본어 음성 모델 소개",
+      "title": "[시간 미확인 참고] Shizuku-Duplex, 듣고 말하기를 동시에 처리하는 일본어 음성 모델 소개",
+      "summary": "Shizuku AI가 일본어 음성 대화 모델 Shizuku-Duplex를 소개했다. Full-Duplex(전이중, 상대의 말을 들으면서 동시에 말하는 방식) 구조를 사용해 맞장구와 끼어들기, 말할 순서를 모델이 처리한다. 회사 설명상 80밀리초 단위로 음성을 입력받고 출력을 만든다. 이 처리 간격은 사용자가 질문을 마친 뒤 완성된 답을 받기까지의 전체 지연시간과는 다르다.",
+      "source_urls": [
+        "https://shizuku.ai/en/blog/1/"
+      ],
+      "canonical_urls": [
+        "https://shizuku.ai/en/blog/1/"
+      ],
+      "publication_note": "공식 영문 기술 글에 2026-11-08 날짜만 확인. 정확한 게시 시각·시간대는 미확인.",
+      "publisher_update_note": null,
+      "event_date_note": "개발 내용과 시연 공개. 일반 이용 시작일·가중치 배포일은 확인되지 않음.",
+      "archive_path": "news/2026-11-09/모델.md",
+      "archive_url": "/news/2026-11-09/모델.html#1-시간-미확인-참고-shizuku-duplex-듣고-말하기를-동시에-처리하는-일본어-음성-모델-소개",
+      "section_sha256": "ffddaca9f3b8d1c3ddd58f26097a97f07ffa91cb63d36a6e59272dedb8c3e617",
+      "event": {
+        "key": "shizuku-duplex-technical-introduction-2026-11-08",
+        "entities": [
+          "Shizuku AI",
+          "Shizuku-Duplex"
+        ],
+        "date": "2026-11-08",
+        "action": "technical-introduction",
+        "core_facts": [
+          "Japanese full-duplex speech dialogue model described",
+          "Developer reports 80ms processing intervals",
+          "Blog publication timezone and exact time unconfirmed; reference only"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "Shizuku-Duplex 기술 소개는 기존 색인에 없다. 날짜만 확인된 참고 항목으로 구간 확정 건수에서 제외한다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "b2c41a9317218356cf6152df7ea393974f10eac131fc47c8db078e36489565c9"
+      }
+    },
+    {
+      "entry_id": "2026-11-09/엔진/1",
+      "article_id": "url-3a23f7f560d629a2629ab245a97f84655bc8e8af09eb31d28f7a22639845d606",
+      "revision_id": "editorial-c34f501fecb36a74a5a4e36ff601e4826b3c6d4bf6d87f5293ef60ca770a606c",
+      "briefing_date": "2026-11-09",
+      "category": "엔진",
+      "heading": "1. llama.cpp, 같은 점수의 후보를 고를 때 생기던 실행 간 차이 수정",
+      "title": "llama.cpp, 같은 점수의 후보를 고를 때 생기던 실행 간 차이 수정",
+      "summary": "llama.cpp의 b12208 사전 릴리스가 Top-K(Top K Selection, 점수가 큰 후보 K개를 고르는 연산)의 동점 처리 문제를 수정했다. 선택 경계에 같은 값이 여러 개 있으면 처리 스레드의 실행 순서에 따라 다른 후보가 남을 수 있었는데, CUDA(Compute Unified Device Architecture, 엔비디아 그래픽처리장치의 범용 계산 플랫폼)와 Metal(애플의 그래픽·범용 병렬 계산 기술)의 해당 계산 경로에서 반복 가능한 선택 규칙을 적용했다. ROCm(AMD의 그래픽처리장치 연산 플랫폼) 경로에도 결정성 검사가 활성화됐다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12208"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12208"
+      ],
+      "publication_note": "공식 릴리스 published_at 2026-11-08 15:47:03 UTC → 2026-11-09 00:47:03 KST. prerelease=true인 사전 릴리스.",
+      "publisher_update_note": null,
+      "event_date_note": "변경 제안은 10월 24일 공개됐고, 11월 8일 14:42:58 UTC에 병합됐다. 이번 뉴스는 새 아이디어의 최초 발표가 아니라 사전 빌드 반영이다.",
+      "archive_path": "news/2026-11-09/엔진.md",
+      "archive_url": "/news/2026-11-09/엔진.html#1-llamacpp-같은-점수의-후보를-고를-때-생기던-실행-간-차이-수정",
+      "section_sha256": "e13503ed3910c5d7bd07976749cf5a1ab284f5af1e59a2b43f1a050253072df3",
+      "event": {
+        "key": "llama-cpp-b12208-top-k-determinism",
+        "entities": [
+          "llama.cpp",
+          "ggml-org"
+        ],
+        "date": "2026-11-08",
+        "action": "prerelease-top-k-determinism-fix",
+        "core_facts": [
+          "b12208 released with PR31084",
+          "Tie handling reproducibility improved in CUDA and Metal paths",
+          "DeviceTopK exception remains"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "기존 릴리스와 다른 PR31084의 Top-K 동점 처리 배포다. 자동 후보 없으며 기존 엔진 본문도 검색했다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "8b040cf484f4b3f5e7d2a5882a68779102fd1ed3e151aa19b087fce476102eb8"
+      }
+    },
+    {
+      "entry_id": "2026-11-09/엔진/2",
+      "article_id": "url-13cd00d76df5acec5f77c62f87e85fae36620fde2a5db922e16ccdd0585cc7c3",
+      "revision_id": "editorial-d095127df3bffda40e43095d3e9546880603ee02f16e2f2d02736525387422d4",
+      "briefing_date": "2026-11-09",
+      "category": "엔진",
+      "heading": "2. 전날 추가된 MoE CPU 분담, Gemma 4에서 불필요하게 기다리던 부분 수정",
+      "title": "전날 추가된 MoE CPU 분담, Gemma 4에서 불필요하게 기다리던 부분 수정",
+      "summary": "llama.cpp의 b12206은 MoE(Mixture of Experts, 필요한 전문가 하위망 일부만 골라 계산하는 구조) 캐시의 CPU(Central Processing Unit, 중앙처리장치) 분담 기능에서 계산 순서를 바로잡았다. Gemma 4처럼 전문가를 고르는 입력과 전문가가 실제 계산하는 입력이 다른 모델에서는, CPU가 맡은 부분도 GPU(Graphics Processing Unit, 병렬 계산에 쓰는 그래픽처리장치)의 캐시된 전문가 계산이 끝나기를 기다리는 문제가 있었다. 이번 수정은 필요한 입력을 먼저 계산 그래프에 넣어 불필요한 대기를 줄인다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12206"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12206"
+      ],
+      "publication_note": "공식 릴리스 published_at 2026-11-08 14:01:08 UTC → 2026-11-08 23:01:08 KST. prerelease=true인 사전 릴리스.",
+      "publisher_update_note": null,
+      "event_date_note": "제안 공개 2026-11-08 10:45:22 UTC, 병합 13:29:12 UTC. 전날 다룬 #30966의 후속 수정이며 같은 기능의 재소개가 아니다.",
+      "archive_path": "news/2026-11-09/엔진.md",
+      "archive_url": "/news/2026-11-09/엔진.html#2-전날-추가된-moe-cpu-분담-gemma-4에서-불필요하게-기다리던-부분-수정",
+      "section_sha256": "39237ccdccaed86eb8edf287005223b7a83d611be21eff3089aa89852fd2d95e",
+      "event": {
+        "key": "llama-cpp-b12206-moe-offload-graph-fix",
+        "entities": [
+          "llama.cpp",
+          "Gemma 4",
+          "ggml-org"
+        ],
+        "date": "2026-11-08",
+        "action": "prerelease-publication",
+        "core_facts": [
+          "b12206 includes PR31888 follow-up to PR30966",
+          "Fix removes unnecessary GPU-cache wait in CPU expert offload for differing routing input",
+          "Author reports about 7 to 9 percent for specific RTX5090 configuration only"
+        ]
+      },
+      "review": {
+        "decision": "update",
+        "reason": "엔진1 PR30966 분담 기능의 후속 수정이다. 엔진2 Mage-VL 모델 지원과는 별개 사건이며 같은 프로젝트 사전 배포로 후보에 포함됐다.",
+        "matched_entries": [
+          "2026-11-08/엔진/1",
+          "2026-11-08/엔진/2"
+        ],
+        "material_change": "Gemma4 등 라우팅 입력과 전문가 입력이 다른 구조에서 CPU 전문가가 GPU 캐시 계산을 불필요하게 기다리던 계산 그래프 순서를 수정했다.",
+        "basis_sha256": "0e766d765e3f929d3873c649a365b495d75743f87842adddb0d3d2faab789291"
+      }
+    }
+  ]
+}
