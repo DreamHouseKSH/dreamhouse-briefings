@@ -595,3 +595,8 @@
 - { term: "CCCL", full: "CUDA Core Compute Libraries", ko: "CUDA용 핵심 병렬 계산 라이브러리 모음" }
 - { term: "Full-Duplex", full: "", ko: "전이중 — 입력을 받는 동시에 출력을 보내는 방식" }
 - { term: "DeviceTopK", full: "", ko: "NVIDIA 병렬 계산 라이브러리의 장치 단위 상위 K개 선택 기능" }
+
+# --- 2026-11-09 GitHub 지연 복구 ---
+- { term: "온톨로지", full: "Ontology", ko: "개념과 개념 사이 관계를 명시적으로 정의한 구조" }
+- { term: "MuJoCo", full: "Multi-Joint dynamics with Contact", ko: "관절 구조와 접촉의 운동을 계산하는 범용 물리 엔진" }
+- { term: "React", full: "", ko: "재사용 화면 구성 요소를 만드는 자바스크립트 라이브러리", inline: false }
