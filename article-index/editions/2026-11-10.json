@@ -1,0 +1,397 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-11-10",
+  "origin": "reviewed",
+  "source_hashes": {
+    "news/2026-11-10/AI.md": "8764da86629729285ac57ef094cae48ef727e84e21ea1a087221a39de8b15205",
+    "news/2026-11-10/IT.md": "9a2a8473f848a7771fdec9f7a71a55e9ed08f69b6a617c234486d32c9eaf18c0",
+    "news/2026-11-10/모델.md": "a9da3545dcf7847b4121b1354d4420a5353598a737d9d8eb62353de923d28aef",
+    "news/2026-11-10/엔진.md": "5ba373dd9ae842af11db1a874c2faed1202e53a278ba79502109a6cf52d00a3a"
+  },
+  "records": [
+    {
+      "entry_id": "2026-11-10/AI/1",
+      "article_id": "url-78a38ab1bb2e5e3a2eb9f6bcdf3a75b5c0e1f01e1d6615cc7fc0c1c6d00de0b3",
+      "revision_id": "editorial-45947a192acaf71c0e2a5d78718e61065c78169c33aecf19ecc6c8f1b9a94f04",
+      "briefing_date": "2026-11-10",
+      "category": "AI",
+      "heading": "1. NVIDIA, 한국 AI 스타트업 투자 계획 공개…집행과 계획을 구분해야",
+      "title": "NVIDIA, 한국 AI 스타트업 투자 계획 공개…집행과 계획을 구분해야",
+      "summary": "NVIDIA는 과학기술정보통신부와 연 스타트업 행사에서 Point2 투자와 Motif Technologies·RLWRLD·Upstage에 대한 추가 투자 계획을 밝혔다. 공식 발표의 표현은 서로 다르다. 이를 네 회사에 대한 신규 투자가 모두 완료됐다고 묶으면 집행 상태를 잘못 전달하게 된다.",
+      "source_urls": [
+        "https://blogs.nvidia.com/blog/korean-startup-investments-msit/"
+      ],
+      "canonical_urls": [
+        "https://blogs.nvidia.com/blog/korean-startup-investments-msit/"
+      ],
+      "publication_note": "NVIDIA 2026-11-09, 시각·시간대 미표시",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-10/AI.md",
+      "archive_url": "/news/2026-11-10/AI.html#1-nvidia-한국-ai-스타트업-투자-계획-공개집행과-계획을-구분해야",
+      "section_sha256": "fa052bfa0fa08b6306ec0f1c14c2ad1863d5cad59f2d89b8a0a5736bbf3bf7b3",
+      "event": {
+        "key": "nvidia-korean-startups-investment-plans-2026-11-09",
+        "entities": [
+          "NVIDIA",
+          "Point2",
+          "Motif Technologies",
+          "RLWRLD",
+          "Upstage"
+        ],
+        "date": "2026-11-09",
+        "action": "announce-investment-plans",
+        "core_facts": [
+          "Point2 investment distinguished from plans for three further firms",
+          "Amounts and future closing dates not confirmed"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "NVIDIA 공식 투자 계획 발표를 기존 Point2 검색과 비교했다. SKT 가속기 협력과 별개 자본 참여 사건이며 자동 후보 없음. 시각 미확인 참고 유지.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "5dca250587fa837c9b43c6b66ffd4cab3804b39d72a73e389e89b4472dd083fe"
+      }
+    },
+    {
+      "entry_id": "2026-11-10/AI/2",
+      "article_id": "url-dcd3b44cd4b06b4464e7e49e3bf5bad3ff826909c52cd00238f1eb712cc2b9ad",
+      "revision_id": "editorial-77daaf350be165141a33edd84cae0bb53e72bd03733c18e971a3abec5549412a",
+      "briefing_date": "2026-11-10",
+      "category": "AI",
+      "heading": "2. Northern Trust·Microsoft, 고객 데이터 준비에 AI 적용…83% 단축은 특정 단계의 자체 측정",
+      "title": "Northern Trust·Microsoft, 고객 데이터 준비에 AI 적용…83% 단축은 특정 단계의 자체 측정",
+      "summary": "Northern Trust와 Microsoft는 기관 고객을 서비스에 등록하는 과정에서 과거 거래 자료를 표준 형식으로 바꾸는 AI 에이전트를 배치했다고 발표했다. 금융상품을 자동으로 매매하거나 투자 결정을 대신하는 도구가 아니라, 기존 자료를 정리해 보고 환경에 넣는 업무 자동화 사례다.",
+      "source_urls": [
+        "https://news.microsoft.com/source/2026/11/09/northern-trust-and-microsoft-frontier-company-collaborate-to-transform-client-onboarding-through-ai/"
+      ],
+      "canonical_urls": [
+        "https://news.microsoft.com/source/2026/11/09/northern-trust-and-microsoft-frontier-company-collaborate-to-transform-client-onboarding-through-ai/"
+      ],
+      "publication_note": "2026-11-09, 시각·시간대 미표시",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-10/AI.md",
+      "archive_url": "/news/2026-11-10/AI.html#2-northern-trustmicrosoft-고객-데이터-준비에-ai-적용83-단축은-특정-단계의-자체-측정",
+      "section_sha256": "eae8b66225bc302299828ca327aaf024ce3fc2619381d14b2f250042da9ffd4e",
+      "event": {
+        "key": "northern-trust-microsoft-onboarding-agent-2026-11-09",
+        "entities": [
+          "Northern Trust",
+          "Microsoft"
+        ],
+        "date": "2026-11-09",
+        "action": "announce-workflow-deployment",
+        "core_facts": [
+          "83 percent reduction reported for data preparation not total onboarding",
+          "F1 96.5 percent based on seven anonymized test workbooks"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "Northern Trust의 특정 자료 준비 단계 자동화 사례로 기존 고객등록 사건 검색 결과 없음. 회사 측 수치의 범위와 표본을 구분함.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "174d00ec6983f6d18413825981fbe597623f7b4e9f96e1b321aca2fbb9eba782"
+      }
+    },
+    {
+      "entry_id": "2026-11-10/IT/1",
+      "article_id": "url-e9950a58c8925934c58a1e8f535dff9f10228ce40da6705b5bd0ac23b0c5bb22",
+      "revision_id": "editorial-d9369456db462fdf6a8b2baaa34d6f633706e804d096446b47f8548c858a54d7",
+      "briefing_date": "2026-11-10",
+      "category": "IT",
+      "heading": "1. Google, TPU 8tx·8i Max 시스템 공개…기밀 계산과 추론 메모리를 각각 보강",
+      "title": "Google, TPU 8tx·8i Max 시스템 공개…기밀 계산과 추론 메모리를 각각 보강",
+      "summary": "Google이 8세대 TPU(Tensor Processing Unit, 인공지능 계산용 자체 가속기) 제품군에 8tx와 8i Max 시스템을 추가했다. 지난 4월 공개한 8t·8i를 바탕으로 서로 다른 운영 요구를 겨냥한 확장이다. 새로운 반도체 세대 전체를 발표한 것으로 읽으면 안 된다.",
+      "source_urls": [
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+      ],
+      "canonical_urls": [
+        "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/"
+      ],
+      "publication_note": "2026-11-09 13:00:00 UTC → 2026-11-09 22:00:00 KST. 원문 datePublished 기준.",
+      "publisher_update_note": "2026-11-09 18:35:51.244741 UTC → 2026-11-10 03:35:51.244741 KST. 수집 판정에는 최초 게시를 사용.",
+      "event_date_note": null,
+      "archive_path": "news/2026-11-10/IT.md",
+      "archive_url": "/news/2026-11-10/IT.html#1-google-tpu-8tx8i-max-시스템-공개기밀-계산과-추론-메모리를-각각-보강",
+      "section_sha256": "b6214ad91669bad01e77e9556becd004c27c36137e024d4f274b5fae1beee0b9",
+      "event": {
+        "key": "google-tpu8tx-8i-max-system-launch-2026-11-09",
+        "entities": [
+          "Google",
+          "TPU 8tx",
+          "TPU 8i Max"
+        ],
+        "date": "2026-11-09",
+        "action": "announce-systems",
+        "core_facts": [
+          "8tx combines 8t silicon and AMD hosts for confidential computing",
+          "8i Max combines two 8i chips; company-reported hardware capacity doubling"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "TPU8t와 같은 실리콘의 새8tx 및 두8i 결합 시스템 발표로 기존 과거 가속기 기사와 구분. 11월9일 최초 메타 확인.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "81e47c9788624af89ad78c5f73931a94378d82b43df771c42957328ed7ddefb4"
+      }
+    },
+    {
+      "entry_id": "2026-11-10/IT/2",
+      "article_id": "url-164126c655bc59edf156d1c08ca34d2107dbb07046da30a605d1a3387839f87e",
+      "revision_id": "editorial-502dfd0bacd5656dbe3e9a1392923cb6246c25d6db3e793053e97a6e156587f9",
+      "briefing_date": "2026-11-10",
+      "category": "IT",
+      "heading": "2. SKT·NVIDIA·리벨리온, GPU와 국산 NPU 결합 추진 — 시간 미확인 참고",
+      "title": "SKT·NVIDIA·리벨리온, GPU와 국산 NPU 결합 추진 — 시간 미확인 참고",
+      "summary": "SK텔레콤·NVIDIA·리벨리온이 서로 다른 가속기를 결합한 추론 시스템 개발·검증을 추진한다. GPU(Graphics Processing Unit, 병렬 계산에 쓰는 그래픽 처리 장치)와 NPU(Neural Processing Unit, 신경망 계산에 특화한 처리 장치)를 한 시스템에서 역할별로 쓰려는 협력이다.",
+      "source_urls": [
+        "https://news.sktelecom.com/232944"
+      ],
+      "canonical_urls": [
+        "https://news.sktelecom.com/232944"
+      ],
+      "publication_note": "공식 페이지에 2026.11.09 날짜만 표시. 최초 시각·시간대 미확인으로 KST 시각을 만들어 넣지 않음.",
+      "publisher_update_note": null,
+      "event_date_note": "회사 발표에 따르면 11월 9일 서울 NVIDIA AI Day Seoul에서 협력 양해각서 체결.",
+      "archive_path": "news/2026-11-10/IT.md",
+      "archive_url": "/news/2026-11-10/IT.html#2-sktnvidia리벨리온-gpu와-국산-npu-결합-추진--시간-미확인-참고",
+      "section_sha256": "c2b79adbc0e6549c27eb0177d0a89f2f153a9f871e5cdfd3ce27bb0d27a70216",
+      "event": {
+        "key": "skt-nvidia-rebellions-nvlink-fusion-mou-2026-11-09",
+        "entities": [
+          "SK Telecom",
+          "NVIDIA",
+          "Rebellions"
+        ],
+        "date": "2026-11-09",
+        "action": "sign-development-mou",
+        "core_facts": [
+          "Joint GPU NPU rack system development and testing plan",
+          "Not completed commercial deployment"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "SKT NVIDIA 리벨리온의 GPU NPU 결합 개발 MOU로 기존 검색 무중복. 투자계획 기사와 별개 시스템 검증 협약. 시간 미확인 참고 유지.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "1777548a11be06c963a9723f1fc35e5a38b509f520a19be9928ca54349813f9b"
+      }
+    },
+    {
+      "entry_id": "2026-11-10/모델/1",
+      "article_id": "url-a989f1582084d0cf153c32d2fa32483a4ec12dee696b65f0f20a1d5ab4b8abfd",
+      "revision_id": "editorial-048d103057b74fa35002355bf7508ec3e4f7c0b179f97d84d4292be72bb2b211",
+      "briefing_date": "2026-11-10",
+      "category": "모델",
+      "heading": "1. Anthropic, Fable·Mythos 5.2 공개…표준 API 가격 낮추고 접근 조건은 구분",
+      "title": "Anthropic, Fable·Mythos 5.2 공개…표준 API 가격 낮추고 접근 조건은 구분",
+      "summary": "Anthropic이 Claude Fable 5.2와 Mythos 5.2를 공개했다. 같은 기반 모델을 사용하되 Fable에는 광범위한 사이버·생물학 안전장치를 적용하고, Mythos는 검증 프로그램에 참여하는 기관을 중심으로 제공한다. 두 이름을 단순한 성능 등급으로 이해하기보다 접근 조건과 안전 설정이 다른 배포 방식으로 보는 편이 정확하다.",
+      "source_urls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      ],
+      "canonical_urls": [
+        "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      ],
+      "publication_note": "공식 원문 2026-11-09, 시각·시간대 미표시",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-10/모델.md",
+      "archive_url": "/news/2026-11-10/모델.html#1-anthropic-fablemythos-52-공개표준-api-가격-낮추고-접근-조건은-구분",
+      "section_sha256": "f01331c5d5ae6515b58ffa92b10d9b7b28083febb51f5f854b599f2ba0d05174",
+      "event": {
+        "key": "anthropic-fable-mythos-5-2-launch-2026-11-09",
+        "entities": [
+          "Anthropic",
+          "Fable 5.2",
+          "Mythos 5.2"
+        ],
+        "date": "2026-11-09",
+        "action": "release-models",
+        "core_facts": [
+          "Standard API input output prices $8 and $40 per million tokens",
+          "Mythos access through verification programs"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "이전 Fable 장애 기사와 다른 5.2 모델 출시 및 표준 단가 인하. 기존 모델 발표와 버전/사건 다름. 원문 최초 시간 미확인.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "901a87ab10993d6fa4283ae5183935114465bb91eebba955206af4b7f0f2fc02"
+      }
+    },
+    {
+      "entry_id": "2026-11-10/모델/2",
+      "article_id": "url-5b372cbfe6616a5a1a7e0c0223f6d69377b8ba3451d01398a7273b365ad18b7d",
+      "revision_id": "editorial-97c691d802b9e78965869ac90e66fa0200722a0bba23f93bf7ab0a70de59051b",
+      "briefing_date": "2026-11-10",
+      "category": "모델",
+      "heading": "2. LG K-EXAONE 2.5 무료 API…상업 서비스에 바로 붙일 수 있는 공개는 아니다",
+      "title": "LG K-EXAONE 2.5 무료 API…상업 서비스에 바로 붙일 수 있는 공개는 아니다",
+      "summary": "LG AI연구원이 K-EXAONE 2.5의 API를 무료로 공개했다. 지난 8월 버전에 추가 학습한 기술 검증 모델로, 공식 설명은 코딩·추론·업무 자동화 능력에 초점을 맞춘다. 여기서 API(Application Programming Interface, 프로그램이 외부 기능을 호출하는 접속 규칙)는 모델 서버에 요청해 결과를 받는 접속 방식으로, 모델 가중치를 내려받아 자체 서버에서 실행하는 공개와는 다르다.",
+      "source_urls": [
+        "https://www.lgresearch.ai/news/view?seq=754"
+      ],
+      "canonical_urls": [
+        "https://www.lgresearch.ai/news/view?seq=754"
+      ],
+      "publication_note": "공식 원문 2026.11.09, 시각·시간대 미표시",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-10/모델.md",
+      "archive_url": "/news/2026-11-10/모델.html#2-lg-k-exaone-25-무료-api상업-서비스에-바로-붙일-수-있는-공개는-아니다",
+      "section_sha256": "d01ab30bccccdcbf2261ca0c0dd4fdedec2418dc6888711df6c91d6f1336a3f7",
+      "event": {
+        "key": "lg-k-exaone-2-5-free-api-2026-11-09",
+        "entities": [
+          "LG AI Research",
+          "K-EXAONE 2.5"
+        ],
+        "date": "2026-11-09",
+        "action": "release-api",
+        "core_facts": [
+          "Free text-only API with 524288 context",
+          "Current terms restrict noncommercial use and third party integration"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "K-EXAONE2.5 API 공개와 현행 비상업 이용 조건 확인. 기존 모델 기사와 동일 사건 없음. 최초 시간 미확인.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "73baac4a57e629c20c97703a0aa6bdd74f54ac23d0ab5b8c2fd6832cafd707ac"
+      }
+    },
+    {
+      "entry_id": "2026-11-10/엔진/1",
+      "article_id": "url-e85e3f3ffe1e843f80b887907a56ba3f76bf00cd8e6d026c486ba228f69a581c",
+      "revision_id": "editorial-7a9514b236d28431a8e7fcacc2a4d6d8d6555a29a6795d55f86c3b2538356676",
+      "briefing_date": "2026-11-10",
+      "category": "엔진",
+      "heading": "1. Ollama 사전판, Qwen3.8 Flash Next 메모리 부담과 Claude Code 실행 경로 수정",
+      "title": "Ollama 사전판, Qwen3.8 Flash Next 메모리 부담과 Claude Code 실행 경로 수정",
+      "summary": "Ollama 0.40.16-rc0는 Qwen3.8 Flash Next를 애플 실리콘에서 실행할 때의 메모리 사용 방식을 조정하고, Claude Code를 실행할 때 선택한 제공자가 다른 설정에 가려지는 문제를 수정했다. RC(Release Candidate, 정식 배포 전 검증 후보)이므로 일반 안정판과 구분해야 한다.",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.16-rc0"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.16-rc0"
+      ],
+      "publication_note": "공식 릴리스 published_at 2026-11-09 18:21:19 UTC → 2026-11-10 03:21:19 KST. prerelease=true.",
+      "publisher_update_note": null,
+      "event_date_note": "메모리 변경은 11월 6일 21:39:22 UTC, Claude Code 수정은 11월 7일 02:28:13 UTC에 병합됐다. 이번 항목은 이 변경들이 들어간 새 사전판의 공개를 다룬다.",
+      "archive_path": "news/2026-11-10/엔진.md",
+      "archive_url": "/news/2026-11-10/엔진.html#1-ollama-사전판-qwen38-flash-next-메모리-부담과-claude-code-실행-경로-수정",
+      "section_sha256": "96d5adb61fec512bdffb63b31675a5eebc9533b8c9f2517bc3f26d48b7dbd607",
+      "event": {
+        "key": "ollama-v0-40-16-rc0-release-2026-11-09",
+        "entities": [
+          "Ollama",
+          "Qwen3.8 Flash Next",
+          "Claude Code"
+        ],
+        "date": "2026-11-09",
+        "action": "release",
+        "core_facts": [
+          "RC release includes model memory handling and provider routing fixes"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "이전 MLX 기본 실행 변경과 다른0.40.16-rc0 새 배포. Qwen 메모리 및 Claude Code 연결 수정의 배포 사건.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "a5b937a52231b467b0daaab69d622fafe105d808f5f9c1cc87cdaf9a4154ce3d"
+      }
+    },
+    {
+      "entry_id": "2026-11-10/엔진/2",
+      "article_id": "url-5bcbb602a5dce00ac99e5530b246b0d882127248b6395f5391a60612a215a77b",
+      "revision_id": "editorial-e68dc83bc7323d46d5131f5bf551a5c9aa6ffeb8af69bdfc3792a3e4cb9b4f31",
+      "briefing_date": "2026-11-10",
+      "category": "엔진",
+      "heading": "2. llama.cpp, 요청에 넣었지만 조용히 무시되던 JSON 형식 지정 수정",
+      "title": "llama.cpp, 요청에 넣었지만 조용히 무시되던 JSON 형식 지정 수정",
+      "summary": "llama.cpp의 b12229 사전 빌드는 서버 요청에서 문서에 안내된 JSON Schema(구조화 데이터의 필드·형식·조건을 지정하는 규칙)가 조용히 무시되는 경우를 수정했다. response_format의 형식을 json_schema로 지정하면서 response_format.schema에 직접 규칙을 넣으면 적용되지 않던 문제다. 규칙을 한 단계 더 감싼 response_format.json_schema.schema 방식은 이미 작동하고 있었다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12229"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12229"
+      ],
+      "publication_note": "공식 릴리스 published_at 2026-11-09 16:41:41 UTC → 2026-11-10 01:41:41 KST. prerelease=true.",
+      "publisher_update_note": null,
+      "event_date_note": "변경 제안 병합은 2026-11-09 13:10:12 UTC.",
+      "archive_path": "news/2026-11-10/엔진.md",
+      "archive_url": "/news/2026-11-10/엔진.html#2-llamacpp-요청에-넣었지만-조용히-무시되던-json-형식-지정-수정",
+      "section_sha256": "7d99c04a0f850889f6975f20968e394a6dd13f353b9ce23c672fcebcc0ef3931",
+      "event": {
+        "key": "llama-cpp-top-level-json-schema-fix-2026-11-09",
+        "entities": [
+          "llama.cpp",
+          "llama-server"
+        ],
+        "date": "2026-11-09",
+        "action": "fix",
+        "core_facts": [
+          "b12229 accepts direct schema with nested schema priority"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "b12229 직접 schema 처리 수정은 전일 TopK 결정성 및 Gemma CPU 분담과 다른 서버 요청 형식 오류.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "f6eb647fc56ff3477c41bd8da84285de71b2f861d28648c6d9f7ad6bd257bb27"
+      }
+    },
+    {
+      "entry_id": "2026-11-10/엔진/3",
+      "article_id": "url-62cba07321a0571c690234a873a7823d228219cd7fe82e7906969477ea2df8b9",
+      "revision_id": "editorial-3f4fd1f4cfd4df9c991acd4238d8ae8c0c724363304b135f39d4d6f33ab65a1f",
+      "briefing_date": "2026-11-10",
+      "category": "엔진",
+      "heading": "3. llama.cpp, Metal Flash Attention의 임시 메모리 범위 초과 수정",
+      "title": "llama.cpp, Metal Flash Attention의 임시 메모리 범위 초과 수정",
+      "summary": "llama.cpp b12221은 Metal(애플의 그래픽·범용 병렬 계산 기술)에서 Flash Attention(어텐션 계산의 메모리 이동을 줄이는 구현)을 실행할 때 특정 임시 메모리를 할당 범위 밖까지 초기화할 수 있는 문제를 수정했다. 벡터 계산 경로에서 SIMD(하나의 명령으로 여러 데이터를 병렬 처리하는 방식) 그룹의 모든 실행 단위가 초기화에 참여하면서, 일부 크기 조합에서는 허용 범위를 넘는 주소에 접근할 수 있었다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12221"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12221"
+      ],
+      "publication_note": "공식 릴리스 published_at 2026-11-09 12:28:21 UTC → 2026-11-09 21:28:21 KST. prerelease=true.",
+      "publisher_update_note": null,
+      "event_date_note": "변경 제안 병합은 2026-11-09 11:32:28 UTC.",
+      "archive_path": "news/2026-11-10/엔진.md",
+      "archive_url": "/news/2026-11-10/엔진.html#3-llamacpp-metal-flash-attention의-임시-메모리-범위-초과-수정",
+      "section_sha256": "a8bc9edd92ad0aeb8a9074a57f2c03836f56649bddb52b3ae4695d255ed0c067",
+      "event": {
+        "key": "llama-cpp-metal-flash-attention-scratch-guard-2026-11-09",
+        "entities": [
+          "llama.cpp",
+          "Metal"
+        ],
+        "date": "2026-11-09",
+        "action": "fix",
+        "core_facts": [
+          "b12221 guards Flash Attention scratch initialization boundary"
+        ]
+      },
+      "review": {
+        "decision": "distinct",
+        "reason": "후보 엔진2는 서버 JSON schema 해석 오류이고 이 항목은 Metal 임시 버퍼 초기화 경계 수정이다. 같은 llama.cpp/날짜이나 PR28697과 PR31662의 별개 결함·릴리스.",
+        "matched_entries": [
+          "2026-11-10/엔진/2"
+        ],
+        "material_change": "",
+        "basis_sha256": "39ddc66a6551385d80e219f2e400fb0fb05641ea2e1e82af442fdb5b27487408"
+      }
+    }
+  ]
+}

@@ -600,3 +600,12 @@
 - { term: "온톨로지", full: "Ontology", ko: "개념과 개념 사이 관계를 명시적으로 정의한 구조" }
 - { term: "MuJoCo", full: "Multi-Joint dynamics with Contact", ko: "관절 구조와 접촉의 운동을 계산하는 범용 물리 엔진" }
 - { term: "React", full: "", ko: "재사용 화면 구성 요소를 만드는 자바스크립트 라이브러리", inline: false }
+
+- {"term": "TPU", "full": "Tensor Processing Unit", "ko": "인공지능 계산용 전용 가속기"}
+- {"term": "NVLink Fusion", "full": "", "ko": "다른 회사 가속기까지 연결하는 NVIDIA 고속 접속 기술"}
+- {"term": "MGX", "full": "", "ko": "NVIDIA 서버·랙 구성을 위한 모듈형 참조 설계"}
+- {"term": "decode", "full": "", "ko": "모델이 답변을 차례로 생성하는 계산 단계"}
+- {"term": "JSON Schema", "full": "", "ko": "JSON 데이터의 항목·자료형을 정하는 규칙"}
+- {"term": "Flash Attention", "full": "", "ko": "어텐션 계산의 메모리 접근을 줄이는 기법"}
+- {"term": "GiB", "full": "Gibibyte", "ko": "2의 30승 바이트를 뜻하는 메모리 용량 단위"}
+- {"term": "F1", "full": "F1 score", "ko": "정밀도와 재현율을 함께 반영하는 평가값"}
