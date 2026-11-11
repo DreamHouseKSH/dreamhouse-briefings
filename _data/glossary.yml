@@ -614,3 +614,6 @@
 - { term: "Preview", full: "", ko: "정식 제공 전 미리보기 단계로, 지원과 이용 조건을 별도로 확인해야 하는 상태" }
 
 - { term: "saved flows", full: "saved flows", ko: "기록해 둔 브라우저 작업을 다시 실행하는 agent-browser의 실험 기능" }
+
+# 2026-11-11 뉴스
+- { term: "CSV", full: "Comma-Separated Values", ko: "쉼표로 값을 구분해 표를 저장하는 파일 형식" }

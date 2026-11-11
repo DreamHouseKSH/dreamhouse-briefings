@@ -1,0 +1,436 @@
+{
+  "schema_version": 1,
+  "briefing_date": "2026-11-11",
+  "origin": "reviewed",
+  "source_hashes": {
+    "news/2026-11-11/AI.md": "eed83e73c5bc56490a0f82e691bb20c4f0782b4a3d80d0b77a7a8a45f41287de",
+    "news/2026-11-11/IT.md": "1684bcd5cd7920968b6b6ba0b0083d891acf7b401f75668b3802cd58332417df",
+    "news/2026-11-11/X.md": "7eb46d9e532f9d1330d61324a5f3580a1993ad7574041540318a7c70152b7729",
+    "news/2026-11-11/엔진.md": "0df5e292ee0dbee5dde3bd7ee329d56953a69bbedf27d9c529a552bd536fb53c"
+  },
+  "records": [
+    {
+      "entry_id": "2026-11-11/AI/1",
+      "article_id": "url-001cd33c965241bc733395330dc1002dceba1895316b2079b3357cff11fd774d",
+      "revision_id": "editorial-6048c9b3572a3a56156a71562b30407fe15c33564bac5824a7c32182263162de",
+      "briefing_date": "2026-11-11",
+      "category": "AI",
+      "heading": "1. Claude, 공동 작업용 Sheets·Whiteboards 베타와 Data 정식 제공",
+      "title": "Claude, 공동 작업용 Sheets·Whiteboards 베타와 Data 정식 제공",
+      "summary": "Anthropic이 Claude 안에서 동료와 함께 편집하는 스프레드시트 Sheets와 아이디어 보드 Whiteboards를 베타로 공개했다. 기존 Dashboards는 Claude Data라는 이름으로 정식 제공하며, 인증된 지표 정의와 실시간 공유 기능은 별도로 베타 상태다. 모두 유료 요금제 대상이다. Sheets는 여러 탭·수식·서식을 함께 편집하고 변경 지점을 표시하며, 필요하면 Excel 파일이나 CSV(Comma-Separated Values, 쉼표로 값을 구분하는 표 파일)로 내보낸다.",
+      "source_urls": [
+        "https://claude.com/resources/articles/sheets-whiteboards-data"
+      ],
+      "canonical_urls": [
+        "https://claude.com/resources/articles/sheets-whiteboards-data"
+      ],
+      "publication_note": "공식 2026-11-10 날짜만 확인, 최초 시각·시간대 미확인",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-11/AI.md",
+      "archive_url": "/news/2026-11-11/AI.html#1-claude-공동-작업용-sheetswhiteboards-베타와-data-정식-제공",
+      "section_sha256": "4097e66fa37a7045aa177303fd7f2a3122170566f03d9eb5d814fd474f54c146",
+      "event": {
+        "key": "claude-sheets-whiteboards-data-launch-2026-11-10",
+        "entities": [
+          "Anthropic",
+          "Claude Sheets",
+          "Claude Whiteboards",
+          "Claude Data"
+        ],
+        "date": "2026-11-10",
+        "action": "collaborative artifact products launch",
+        "core_facts": [
+          "Sheets and Whiteboards launch in beta on paid plans",
+          "Dashboards becomes generally available as Claude Data; certified queries and live sharing remain beta",
+          "Enterprise defaults differ; Sheets help documents feature and mobile limitations"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "원출처와 기존 사건을 대조한 별도 신규 발표: collaborative artifact products launch",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "a08ff4e956957a4be81127c96457ed47e682070a01fd1cdc0edbf40b94637ac4"
+      }
+    },
+    {
+      "entry_id": "2026-11-11/AI/2",
+      "article_id": "url-7631ecf8891c97f11fea9718343697785f00a27aadffb2b50c357395cdd35f72",
+      "revision_id": "editorial-92b29ba4d9ffb3f0c9657960d3de4c3c94221936fa967b2f5c3407edb3e066c4",
+      "briefing_date": "2026-11-11",
+      "category": "AI",
+      "heading": "2. TSMC, Anthropic·OpenAI에 각각 최대 5억 달러 투자 승인",
+      "title": "TSMC, Anthropic·OpenAI에 각각 최대 5억 달러 투자 승인",
+      "summary": "TSMC 이사회가 Anthropic 보통주와 OpenAI 우선주에 각각 최대 5억 달러, 합계 최대 10억 달러를 투자하는 안을 승인했다. Anthropic 주식은 기업공개(IPO, Initial Public Offering, 주식을 처음 공개 시장에 내놓는 절차) 공모가격으로 취득한다는 조건이 붙었다. 공식 문서의 표현은 ‘승인’이므로, 이미 해당 금액을 모두 지급했거나 지분 취득을 끝냈다는 뜻으로 쓰면 안 된다.",
+      "source_urls": [
+        "https://pr.tsmc.com/system/files/newspdf/attachment/e05987700f76438755c64d950b3b0b99369aeed2/1110%20board%20meeting%20%28E%29_final_wmn.pdf"
+      ],
+      "canonical_urls": [
+        "https://pr.tsmc.com/system/files/newspdf/attachment/e05987700f76438755c64d950b3b0b99369aeed2/1110%20board%20meeting%20%28E%29_final_wmn.pdf"
+      ],
+      "publication_note": "공식 이사회 결의문 2026-11-10 날짜만 확인, 최초 시각·시간대 미확인",
+      "publisher_update_note": null,
+      "event_date_note": "이사회 승인 2026-11-10. 실제 납입 완료 시점은 이번 결의문에서 확인되지 않음.",
+      "archive_path": "news/2026-11-11/AI.md",
+      "archive_url": "/news/2026-11-11/AI.html#2-tsmc-anthropicopenai에-각각-최대-5억-달러-투자-승인",
+      "section_sha256": "8dca73dc3ee3e079e3df1a6e156cab9830dc3a2eb20939e23e2e919b9551f09a",
+      "event": {
+        "key": "tsmc-anthropic-openai-investment-approval-2026-11-10",
+        "entities": [
+          "TSMC",
+          "Anthropic",
+          "OpenAI"
+        ],
+        "date": "2026-11-10",
+        "action": "board approves equity investments",
+        "core_facts": [
+          "Up to USD500m in Anthropic common shares at IPO price",
+          "Up to USD500m in OpenAI preferred stock",
+          "Approval does not establish completed payment"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "원출처와 기존 사건을 대조한 별도 신규 발표: board approves equity investments",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "1bf512907d85fc0b7772ff383878115d936512baec21abaf517468f45c97f96b"
+      }
+    },
+    {
+      "entry_id": "2026-11-11/IT/1",
+      "article_id": "url-42350136e5a983a8a776109b93ce1a5abc56b966ee1d24f32c8f2deb3bf81d27",
+      "revision_id": "editorial-c27cf8bbf00215d7ccafd548460489073c1996d8e7ade4c56048078f2869bc3b",
+      "briefing_date": "2026-11-11",
+      "category": "IT",
+      "heading": "1. TSMC 10월 매출, 전년 대비 59.7% 증가… 수요와 수익성은 구분",
+      "title": "TSMC 10월 매출, 전년 대비 59.7% 증가… 수요와 수익성은 구분",
+      "summary": "TSMC는 10월 연결 매출이 5,868억9,000만 대만달러로 전월보다 14.7%, 전년 같은 달보다 59.7% 늘었다고 발표했다. 1~10월 누적 매출은 4조4,856억2,000만 대만달러로 전년 동기 대비 43.3% 증가했다.",
+      "source_urls": [
+        "https://pr.tsmc.com/english/news/3349"
+      ],
+      "canonical_urls": [
+        "https://pr.tsmc.com/english/news/3349"
+      ],
+      "publication_note": "공식 발표 날짜 2026-11-10. 최초 시각 미확인. 공식 일정은 13:30 Asia/Taipei(14:30 KST)이지만 예정 시각을 실제 게시 시각으로 대체하지 않았다.",
+      "publisher_update_note": null,
+      "event_date_note": "2026년 10월 매출 실적",
+      "archive_path": "news/2026-11-11/IT.md",
+      "archive_url": "/news/2026-11-11/IT.html#1-tsmc-10월-매출-전년-대비-597-증가-수요와-수익성은-구분",
+      "section_sha256": "d2ecb56960a0d1a6282527755d212f599d71105c81a116ca1f79196dc7dc8b48",
+      "event": {
+        "key": "tsmc-october-2026-revenue",
+        "entities": [
+          "TSMC"
+        ],
+        "date": "2026-11-10",
+        "action": "publishes October revenue",
+        "core_facts": [
+          "October revenue TWD586.89bn, year-on-year +59.7%",
+          "Monthly revenue is not profit or AI-specific sales"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "원출처와 기존 사건을 대조한 별도 신규 발표: publishes October revenue",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "5cc2709d012ad90dc2ea09a8a5586022c0c26165076cf241e6746e77ef292ea1"
+      }
+    },
+    {
+      "entry_id": "2026-11-11/IT/2",
+      "article_id": "url-06fb56ac41f99576ffa8b7f6f269c9437c8355411abce303f1ecb2170728cb65",
+      "revision_id": "editorial-9e528ec180c4c3b2a040e987a11b8efd9bea7f3f5778be9576730b35b02b3d78",
+      "briefing_date": "2026-11-11",
+      "category": "IT",
+      "heading": "2. NHN, 3분기 매출·영업이익 증가와 데이터센터 확장 계획 공개",
+      "title": "NHN, 3분기 매출·영업이익 증가와 데이터센터 확장 계획 공개",
+      "summary": "NHN은 3분기 연결 매출 7,583억원, 영업이익 588억원을 발표했다. 전년 동기 대비 각각 21.2%, 112.6% 증가한 회사 집계다.",
+      "source_urls": [
+        "https://inside.nhn.com/news/985"
+      ],
+      "canonical_urls": [
+        "https://inside.nhn.com/news/985"
+      ],
+      "publication_note": "공식 발표 날짜 2026-11-10. 최초 시각·시간대 미확인",
+      "publisher_update_note": null,
+      "event_date_note": "2026년 3분기 실적 및 2027년 인프라 계획",
+      "archive_path": "news/2026-11-11/IT.md",
+      "archive_url": "/news/2026-11-11/IT.html#2-nhn-3분기-매출영업이익-증가와-데이터센터-확장-계획-공개",
+      "section_sha256": "e8c7abb656703c8bccf3a7fa2ed21c893fe9c9ba2527f11b4487308d2aa577e6",
+      "event": {
+        "key": "nhn-q3-2026-results-infrastructure",
+        "entities": [
+          "NHN"
+        ],
+        "date": "2026-11-10",
+        "action": "reports quarterly results and infrastructure plans",
+        "core_facts": [
+          "Revenue KRW758.3bn and operating profit KRW58.8bn",
+          "Pohang20MW lease and Gwangju10MW own infrastructure are planned, not operational"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "원출처와 기존 사건을 대조한 별도 신규 발표: reports quarterly results and infrastructure plans",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "c8a9fde8b3bf787314b6e80c8540fbc434ab9f0f6046f913273725239818e2bb"
+      }
+    },
+    {
+      "entry_id": "2026-11-11/X/1",
+      "article_id": "url-67cb8d008515c730a4dcf70731fce3945c7ad61bbefcf2be5d1dee5b69ab1393",
+      "revision_id": "editorial-62b0b124dc90421f2e86b067969a2e0992fa3468bccc94c68ee2b5ecfdff252f",
+      "briefing_date": "2026-11-11",
+      "category": "X",
+      "heading": "1. Demis Hassabis — Gemini 4 Carbon 프론티어 모델 공개, 1994년 명작 'Theme Park' 바이너리 원샷 웹 포팅",
+      "title": "Demis Hassabis — Gemini 4 Carbon 프론티어 모델 공개, 1994년 명작 'Theme Park' 바이너리 원샷 웹 포팅",
+      "summary": "배경은 구글 딥마인의 프론티어 코딩·추론 모델 세대교체다. 데미스 하사비스가 10대 시절 피터 몰리뉴와 불프로그(Bullfrog)에서 개발했던 1994년 DOS 명작 경영 시뮬레이션 게임 『Theme Park』의 컴파일된 x86 바이너리 기계어를 모델에 직접 입력했다. Gemini 4 Carbon은 레거시 어셈블리/바이너리를 스스로 분석·디컴파일하여 게임 로직과 스프라이트를 복원하고, DeepMind 브랜딩 놀이기구를 새로 코딩해 끼워 넣은 뒤, WebAssembly/HTML5 웹 브라우저 구동 코드로 '원샷(단일 프롬프트)' 변환해 냈다.",
+      "source_urls": [
+        "https://x.com/demishassabis/status/2120210297948696997"
+      ],
+      "canonical_urls": [
+        "https://x.com/demishassabis/status/2120210297948696997"
+      ],
+      "publication_note": "2026-11-10 (KST 2026-11-11 02:41)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-11/X.md",
+      "archive_url": "/news/2026-11-11/X.html#1-demis-hassabis--gemini-4-carbon-프론티어-모델-공개-1994년-명작-theme-park-바이너리-원샷-웹-포팅",
+      "section_sha256": "9c045c06e7eb5edfde1aeda0dbe73fb7dbea5ae1642b5f0fa1a61f2f1bd2b917",
+      "event": {
+        "key": "gemini-4-carbon-general-access-2026-11-10",
+        "entities": [
+          "Google",
+          "Gemini 4 Carbon"
+        ],
+        "date": "2026-11-10",
+        "action": "expand paid developer enterprise and Ultra access",
+        "core_facts": [
+          "Google expands Gemini 4 Carbon to paid developers and enterprises and rolls out to Ultra subscribers",
+          "Official announcement discloses introductory API prices of USD 2 input and USD 10 output per million tokens"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "중복 판정만 기록한다. 과거 색인과 비교해 Carbon 접근 확대 사건의 기존 게재를 찾지 못했고, 같은 날 준비한 모델 기사는 같은 사건이므로 제외했다. 기존 공개 X 본문은 보존한다. 구현 세부·X 인용·시각·외부 반응은 이번에 재검증하지 않았고, 가격·벤치마크 미공개라는 해설은 Google 공식 발표와 불일치한다. 사실 승인이나 정정 완료를 뜻하지 않으며 공개 검토 기록에 한계를 남겼다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "ac3f3b9c98c79548ecc047889483d69c4afc6aedd556ff7379df3a5ef0213471"
+      }
+    },
+    {
+      "entry_id": "2026-11-11/X/2",
+      "article_id": "url-1f7f988695276d9080b5a19883239ad9ae3d900ec3c8c0dd4e3c1532b31ab8da",
+      "revision_id": "editorial-36370b346dc2078d1259c7a9a74966858671ce77e5bbb913d54c0ef83bbe50df",
+      "briefing_date": "2026-11-11",
+      "category": "X",
+      "heading": "2. Dr. Jim Fan — NVIDIA, 차세대 로봇 파운데이션 'GR00T 2' 및 물리 AI 풀스택 전면 오픈소스 공개",
+      "title": "Dr. Jim Fan — NVIDIA, 차세대 로봇 파운데이션 'GR00T 2' 및 물리 AI 풀스택 전면 오픈소스 공개",
+      "summary": "엔비디아가 텍사스 오스틴에서 열린 CoRL 2026(로봇 학습 학술대회)에서 차세대 물리 AI 플랫폼을 공개했다. GR00T 2는 기존 시각-언어-행동(VLA) 모델을 넘어선 '세계-행동 모델(World-Action Model, WAM)'이다. 미래 비디오 프레임과 로봇의 모터 제어 명령을 동시에 디노이징(denoising)하여, 세상이 어떻게 움직일지 상상하면서 행동을 출력한다. 특히 인간 작업 1인칭 비디오 10만 시간(Human-1M-100K), 시뮬레이션 합성 엔진(SimFoundry), 에이전트 프레임워크(ASPIRE), 3D 프린터로 제작 가능한 외골격/그리퍼 하드웨어 CAD 도면(DexUMI, UMI)까지 풀스택을 무료 공개했다.",
+      "source_urls": [
+        "https://x.com/DrJimFan/status/2120186653448810948"
+      ],
+      "canonical_urls": [
+        "https://x.com/DrJimFan/status/2120186653448810948"
+      ],
+      "publication_note": "2026-11-10 (KST 2026-11-11 01:07)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-11/X.md",
+      "archive_url": "/news/2026-11-11/X.html#2-dr-jim-fan--nvidia-차세대-로봇-파운데이션-gr00t-2-및-물리-ai-풀스택-전면-오픈소스-공개",
+      "section_sha256": "92998a4ec69c38d757cc0f4a6e71a8614458fd5255f8cddd54c00b4ebbebcb37",
+      "event": {
+        "key": "nvidia-gr00t-2-research-2026-11",
+        "entities": [
+          "NVIDIA",
+          "GR00T 2"
+        ],
+        "date": null,
+        "action": "announce world action model research and staged code availability",
+        "core_facts": [
+          "Official project page states code available in December",
+          "Company 95 percent result is after five demonstrations per task and 30 minute fine tuning on one RTX 5090; zero shot result is 40 percent across 50 tasks"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "중복 판정만 기록한다. NVIDIA의 GR00T 2 발표는 과거 색인의 로봇·GPU 관련 다른 사건들과 구분되며 오늘 다른 분야에 중복 채택하지 않았다. 기존 공개 X 본문은 보존한다. 95% 측정 조건과 코드 공개 단계는 공식 연구 페이지로 확인했으나 기존 해설의 일부 표현·인용·시각·반응은 확인이 부족하다. 사실 승인이나 정정 완료를 뜻하지 않으며 공개 검토 기록에 한계를 남겼다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "59a057ecc7743e3e30420d748d7eddbba14dae44449d172e3539e26497a158b8"
+      }
+    },
+    {
+      "entry_id": "2026-11-11/X/3",
+      "article_id": "url-480a6a09c86a61765222a9f9139313e527f3f720b15887e4ab3d2479ad329580",
+      "revision_id": "editorial-09a5ec5b63c20f819f0a13d312421e64383a44e00ebddb4a5e26c6b9aea08f37",
+      "briefing_date": "2026-11-11",
+      "category": "X",
+      "heading": "3. Guillermo Rauch — Vercel Security Review 1주일 성과, \"AI 에이전트가 취약점 1.4만 건 자동 패치\"",
+      "title": "Guillermo Rauch — Vercel Security Review 1주일 성과, \"AI 에이전트가 취약점 1.4만 건 자동 패치\"",
+      "summary": "Vercel이 지난주 공개 베타로 전환한 사내 보안 에이전트 기반 감사 도구의 실전 운영 데이터다. 깃허브 코드 푸시 단계에서 인증 누락, 시크릿 키 노출, 논리적 취약점을 스캔하고 에이전트가 직접 수정 PR(Pull Request)을 생성해 클릭 한 번으로 배포하는 시스템이다. 1주일 만에 약 5만 8천 건의 취약점을 찾아내고 1만 4천 건 이상을 전자동으로 패치했다.",
+      "source_urls": [
+        "https://x.com/rauchg/status/2120188488628977819"
+      ],
+      "canonical_urls": [
+        "https://x.com/rauchg/status/2120188488628977819"
+      ],
+      "publication_note": "2026-11-10 (KST 2026-11-11 01:15)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-11/X.md",
+      "archive_url": "/news/2026-11-11/X.html#3-guillermo-rauch--vercel-security-review-1주일-성과-ai-에이전트가-취약점-14만-건-자동-패치",
+      "section_sha256": "c1a902d9f2ebe6ad05e4fe29d5fbe680eb74e9bf738df39aabdab1c22f17e3a7",
+      "event": {
+        "key": "vercel-security-review-week-one-2026-11-10",
+        "entities": [
+          "Vercel",
+          "Vercel Security Review"
+        ],
+        "date": null,
+        "action": "report product usage claims after public beta launch",
+        "core_facts": [
+          "Existing archive records week one usage claims from Guillermo Rauch; original X totals and exact posting time not reverified",
+          "Official beta documentation says Pro and Enterprise availability, reviews free through November 10, fixes billed separately, and approval required before merge"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "중복 판정만 기록한다. 기존 색인에 동일한 Security Review 첫 주 집계 사건이 없고 초기 베타 출시와 이용 집계는 구분한다. 기존 공개 X 본문은 보존한다. X 누적 수치·시각은 미재검증이며 무조건 무료·전자동 병합으로 읽힐 표현은 공식 이용 조건과 맞지 않는다. 사실 승인이나 정정 완료를 뜻하지 않으며 공개 검토 기록에 한계를 남겼다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "70b11b7719d32785df61e93b2ba3a22fa7170511dbd3e8317bb96cda692f3231"
+      }
+    },
+    {
+      "entry_id": "2026-11-11/X/4",
+      "article_id": "url-ad4b3b2551865411669633b55ca87cc2fc1d559f65581c994f90a5e949911df8",
+      "revision_id": "editorial-02f5dad4f339bf2ca477a8779e7acb14bccdd994cc010ac50219b8f0ba0a83dd",
+      "briefing_date": "2026-11-11",
+      "category": "X",
+      "heading": "4. Brad Gerstner — Anthropic, 10월 연환산 매출 810억 달러($81B) 돌파… \"40% 가격 인하 속 $10B 순증\"",
+      "title": "Brad Gerstner — Anthropic, 10월 연환산 매출 810억 달러($81B) 돌파… \"40% 가격 인하 속 $10B 순증\"",
+      "summary": "알티미터 캐피털(Altimeter Capital)의 브래드 거스트너 회장이 앤트로픽(Anthropic)의 SEC S-1 수정 서류 및 최신 공시 지표를 분석한 글이다. 앤트로픽의 연환산 매출(ARR)이 10월 한 달 사이에만 710억 달러에서 810억 달러로 100억 달러(월 환산 기준 약 8.3억 달러 순증) 폭증했다. 주목할 점은 앤트로픽이 토큰당 API 공급 가격을 40% 인하했음에도 불구하고, 사용량(Token Volume)의 폭발적 증가가 단가 하락을 완전히 압도하며 기록적인 매출 순증을 견인했다는 사실이다.",
+      "source_urls": [
+        "https://x.com/altcap/status/2120161925078426101"
+      ],
+      "canonical_urls": [
+        "https://x.com/altcap/status/2120161925078426101"
+      ],
+      "publication_note": "2026-11-10 (KST 2026-11-10 23:29)",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-11/X.md",
+      "archive_url": "/news/2026-11-11/X.html#4-brad-gerstner--anthropic-10월-연환산-매출-810억-달러81b-돌파-40-가격-인하-속-10b-순증",
+      "section_sha256": "2f02f10235c1fb469a6b0f04eba19af752cba70032c62163f649624c512c4d51",
+      "event": {
+        "key": "anthropic-october-run-rate-2026-11-10",
+        "entities": [
+          "Anthropic"
+        ],
+        "date": "2026-11-10",
+        "action": "disclose October run rate revenue in amended SEC filing",
+        "core_facts": [
+          "SEC filing reports October 31 run rate revenue of about USD 81 billion, up USD 10 billion from September 30",
+          "Q2 operating income USD 974 million was followed by Q3 operating loss USD 567 million",
+          "Run rate is not recognized annual revenue and does not prove a causal Jevons effect"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "중복 판정만 기록한다. Anthropic 10월 말 연환산 매출 공시는 기존 모델 출시·투자·사업 소식과 다른 사건이며, 오늘 AI 2번 TSMC 지분 투자 승인과도 다르다. 기존 공개 X 본문은 보존한다. SEC 신고서의 연환산 매출 및 분기손익은 확인했지만 가격인하 인과·제본스 역설 증명·언론 반응·X 인용과 시각까지 검증된 것은 아니다. 사실 승인이나 정정 완료를 뜻하지 않으며 공개 검토 기록에 한계를 남겼다.",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "0568e7b41011385afdd62cd803f8ccf52f3976b8492c3288b67e41b31a19ecf3"
+      }
+    },
+    {
+      "entry_id": "2026-11-11/엔진/1",
+      "article_id": "url-60786b016c122ab8631cd3a0c7ecf8dc255c9b74dfc2fc0c608d48df9d055c61",
+      "revision_id": "editorial-94f78db340b43ae3efe3ac9a1d66bed8f8523871d70e6ec6be6862e54325b25b",
+      "briefing_date": "2026-11-11",
+      "category": "엔진",
+      "heading": "1. Ollama 사전판, Apple용 MLX 모델의 여러 요청 동시 생성 지원",
+      "title": "Ollama 사전판, Apple용 MLX 모델의 여러 요청 동시 생성 지원",
+      "summary": "Ollama v0.40.17-rc0에는 Apple용 기계학습 프레임워크 MLX를 사용하는 모델이 여러 생성 요청을 함께 처리하는 변경이 포함됐다. 기본 동시 요청 수는 여전히 하나이며, OLLAMA_NUM_PARALLEL 설정으로 늘릴 수 있다.",
+      "source_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc0"
+      ],
+      "canonical_urls": [
+        "https://github.com/ollama/ollama/releases/tag/v0.40.17-rc0"
+      ],
+      "publication_note": "GitHub published_at 2026-11-10 22:25:00 UTC → 2026-11-11 07:25:00 KST",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-11/엔진.md",
+      "archive_url": "/news/2026-11-11/엔진.html#1-ollama-사전판-apple용-mlx-모델의-여러-요청-동시-생성-지원",
+      "section_sha256": "c7c24a0101e035b780f813184020f0e1604c88f3d3235db88bb7bb0090b23433",
+      "event": {
+        "key": "ollama-0.40.17-rc0-mlx-parallel",
+        "entities": [
+          "Ollama",
+          "MLX"
+        ],
+        "date": "2026-11-10",
+        "action": "adds parallel generation",
+        "core_facts": [
+          "Default parallel count remains1",
+          "Request latency and total throughput tradeoffs in developer test"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "원출처와 기존 사건을 대조한 별도 신규 발표: adds parallel generation",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "81168161fdae60415ec91bb087b654c6e013f33d8caf80a0c19b0e774bb140a4"
+      }
+    },
+    {
+      "entry_id": "2026-11-11/엔진/2",
+      "article_id": "url-06caa1015b4111713a1554c14fd553d6c978dd3c0081cad8273d8d91cef9bfc7",
+      "revision_id": "editorial-4f6af49d0574a3fff2f1d45515accbb4f197d63c7e3721b59c42abfcde5b9c84",
+      "briefing_date": "2026-11-11",
+      "category": "엔진",
+      "heading": "2. llama.cpp, Kimi K3.1의 이미지 입력 경로를 사전판에 추가",
+      "title": "llama.cpp, Kimi K3.1의 이미지 입력 경로를 사전판에 추가",
+      "summary": "llama.cpp b12259에는 Kimi K3.1의 이미지 처리 지원이 추가됐다. 11월 8일 브리핑에서 다룬 텍스트 실행 지원에 이어, 모델이 이미지를 입력받는 경로가 새로 반영된 것이다.",
+      "source_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12259"
+      ],
+      "canonical_urls": [
+        "https://github.com/ggml-org/llama.cpp/releases/tag/b12259"
+      ],
+      "publication_note": "GitHub published_at 2026-11-10 22:11:56 UTC → 2026-11-11 07:11:56 KST",
+      "publisher_update_note": null,
+      "event_date_note": null,
+      "archive_path": "news/2026-11-11/엔진.md",
+      "archive_url": "/news/2026-11-11/엔진.html#2-llamacpp-kimi-k31의-이미지-입력-경로를-사전판에-추가",
+      "section_sha256": "b60fc8f926728afd422496d454c528b0ef631826c513043c19a54b8b749022d4",
+      "event": {
+        "key": "llama-cpp-kimi-k3.1-vision-b12259",
+        "entities": [
+          "llama.cpp",
+          "Kimi K3.1"
+        ],
+        "date": "2026-11-10",
+        "action": "adds image input support",
+        "core_facts": [
+          "b12259 adds vision support beyond earlier text support",
+          "Developer tested text slice and full vision tower"
+        ]
+      },
+      "review": {
+        "decision": "new",
+        "reason": "자동 후보 없음. 11/8 엔진3 텍스트지원과 수동 대조, 이번 PR31980 이미지 전처리·영상 특징 연결 지원이라는 실제 기능 변화 확인",
+        "matched_entries": [],
+        "material_change": "",
+        "basis_sha256": "42102833da5e5a9e32576039c45b10d46a529bb4755e2c28917eb2b4af4bfc57"
+      }
+    }
+  ]
+}
