@@ -1,4 +1,5 @@
 "2026-11-12":
+  GitHub: "Astryx +2,776·Sure +1,078 / 검증·권한·운영 부담 6카드 / Astryx v0.7.14·ha-mcp v9.2.0"
   X: "Meta Muse @muse.ai 이메일 수신함 부여 / 르쿤 생성형 한계와 JEPA 재점화 / 카파시 TristanTube 3분 원샷 / 폴 그레이엄 볼베어링 설계 혁신"
 
 "2026-11-11":
@@ -191,6 +192,7 @@
   모델: "Reflection Beam(501B/23B MoE, SWE 80.9) / Reka Rho-1(19B 옴니) / interfaze-1-lite"
   엔진: "Strata / vLLM 0.31 + CVE / llama.cpp 0.6.0 / SGLang 0.5.21 / Ollama MLX RC / 결정 모델 API / KoboldCpp Agent / vllm-metal"
   GitHub: "VoiceStudio(주간 +14.7K), hindsight(+10.6K), paperclip(+8.7K), OpenShell(+6.0K) 등 25개 저장소"
+
 
 
 
