@@ -13,6 +13,7 @@
 # --- 2026-10-13 뉴스 브리핑 추가분
 
 # --- 2026-10-15 github trends ---
+- { term: "ABI", full: "Application Binary Interface", ko: "응용 프로그램 이진 인터페이스 — 컴파일된 바이너리 수준에서 OS/라이브러리와 프로그램을 연결하는 약속 규격" }
 - { term: "JEPA", full: "Joint Embedding Predictive Architecture", ko: "관절 임베딩 예측 아키텍처 — 픽셀 생성 대신 잠재 공간에서 상태를 예측하는 세계 모델 구조" }
 - { term: "JDK", full: "Java Development Kit", ko: "자바 프로그램을 만들고 돌리는 개발 도구 묶음" }
 - { term: "NSA", full: "National Security Agency", ko: "미국 국가안보국 — 신호정보·사이버보안 담당 정보기관" }
