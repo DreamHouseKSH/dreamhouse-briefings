@@ -4,6 +4,8 @@
 
 ## 변경 이력 (요약 — 상세는 [`docs/WORKFLOW.md`](docs/WORKFLOW.md) 맨 위 '변경 이력')
 
+- **2026-11-14 (X 브리핑 주말 확대):** X 브리핑은 평일뿐만 아니라 토요일·일요일을 포함해 **주 7일 매일 07:00 KST**에 발행한다. `PEOPLE.md`의 19인 모니터링 풀을 기준으로 최근 24시간 내 핵심 포스트 3~5건을 수집·해석·교차검증하여 `news/YYYY-MM-DD/X.md`로 작성·배포한다.
+
 - **2026-11-07 (기사 색인·중복 검사):** 과거 공개 요약 236건(10/6~11/6)을 원본 수정 없이 `article-index/editions/` JSON으로 색인했다. 새 뉴스는 `prepare → 사건 메타 작성 → candidates → review → gate`를 통과한 JSON을 본문과 함께 커밋한다. 발표·GitHub 유무와 무관하게 매일 뉴스 게시 전에 실행한다. 같은 URL·같은 사건 후보와 실질적 후속 변화를 구분하며, 원문·사건·후보가 바뀌면 재검토한다. 상세 [`docs/ARTICLE-INDEX.md`](docs/ARTICLE-INDEX.md).
 
 - **2026-11-06 (매일 뉴스):** 토·일도 평일과 같은 아침 뉴스 브리핑을 08:01 KST에 발행한다. 토요일 주간 정리·일요일 전망은 별도로 유지하며 GitHub 트렌드는 기존 평일 08:06을 유지한다.
@@ -73,6 +75,7 @@ _config.yml, _layouts/, _includes/, assets/, index.html, archive.html, category/
 
 | 루틴 | 시각 | 결과물 |
 |---|---|---|
+| X 브리핑 아카이브 | **매일(토·일 포함) 07:00** | `news/YYYY-MM-DD/X.md` |
 | 뉴스 브리핑 아카이브 | 매일(토·일 포함) **08:01** | `news/YYYY-MM-DD/` |
 | GitHub 트렌드 아카이브 | 평일 **08:06** | `github/YYYY-MM-DD.md` |
 | 주간 정리 | 토요일 **오전, 유연한 시간대** | `weekly/YYYY-MM-DD-review.md` |
