@@ -1,56 +1,102 @@
-# X 추적 명단 — dream 재량으로 주기적 추가·삭제 (2026-10-18 사용자 일임)
-# 형식: handle — 이름 — 소속/역할 — 추적 이유
-# 뉴스 크론이 매일 아침 이 명단을 읽고 최근 24시간 게시글 중 화제가 된 것을 선정.
-# 매월 첫 평일에 명단 점검: 2주 이상 게시글 없는 계정은 후보 교체, 새로 부상한 인물은 추가.
-# 2026-10-19 월간 점검: @karpathy role 업데이트(Anthropic 프리트레이닝 팀 합류), @AmandaAskell(2주 무활동)→@alexandrw 교체
+# X 추적 명단 — 성현님 승인 19인 핵심 인물 풀 (2026-11-10 확정)
+# 형식: handle — name — role — reason
+# 매일 아침 07:00 X 브리핑 작성 시 이 명단을 기준으로 최근 24시간 핵심 포스트 3~5건 선별.
+# 루트의 PEOPLE.md 문서에 상세 프로필 및 추적 테마가 정리되어 있습니다.
 
+# 1. AI (프론티어 랩 · 연구자 · 오픈소스)
 - handle: "@sama"
   name: "Sam Altman"
   role: "OpenAI CEO"
-  reason: "OpenAI 발표·제품 힌트를 X에 먼저 흘림"
+  reason: "OpenAI 제품·모델 로드맵(GPT/o-series), AGI 인프라 투자 방향"
 
 - handle: "@elonmusk"
   name: "Elon Musk"
   role: "xAI · Tesla · X"
-  reason: "xAI/Grok 발표, AI 논쟁의 진원지"
+  reason: "Grok 모델, Colossus 클러스터, 자율주행, AI 규제·안전 논쟁"
 
 - handle: "@demishassabis"
   name: "Demis Hassabis"
   role: "Google DeepMind CEO"
-  reason: "DeepMind 연구 방향·AGI 관점"
+  reason: "AlphaFold 등 과학용 AI, DeepMind 연구 방향 및 AGI 관점"
 
 - handle: "@ylecun"
   name: "Yann LeCun"
   role: "AMI Labs 공동창업자·의장 (전 Meta 수석 AI 과학자)"
-  reason: "월드모델 vs LLM 논쟁, 10.3억 달러 시드 유치"
+  reason: "월드 모델(JEPA), 오픈소스 파운데이션 모델, LLM 한계론 논쟁"
 
 - handle: "@karpathy"
   name: "Andrej Karpathy"
-  role: "Anthropic 프리트레이닝 팀 (2026-05-19 합류, 전 OpenAI 공동창업자·Tesla AI)"
-  reason: "AI 교육·기술 해설, 개발자 영향력 큼 — Anthropic 합류로 경쟁 구도 발언 주목"
+  role: "Eureka Labs 창업자 · Anthropic 프리트레이닝 팀"
+  reason: "AI 기술 원리 해설, 교육, 차세대 에이전트 및 코드 아키텍처"
 
+- handle: "@alexandrw"
+  name: "Alexandr Wang"
+  role: "Meta 최고AI책임자(CAIO) · Scale AI 창업자"
+  reason: "Meta Superintelligence Labs 총괄, Muse AI 생태계, 데이터 파이프라인"
+
+- handle: "@jackclarkSF"
+  name: "Jack Clark / Dario Amodei"
+  role: "Anthropic 정책총괄 / CEO"
+  reason: "Claude 모델 로드맵, AI 안전 정책, 스케일링 법칙 거시 전망"
+
+- handle: "@DrJimFan"
+  name: "Jim Fan"
+  role: "NVIDIA 수석 연구과학자 (GEAR Lead)"
+  reason: "체화 AI(Embodied AI), 시뮬레이션 및 GR00T 로보틱스 파운데이션 모델"
+
+# 2. IT · 반도체 · 클라우드 인프라
 - handle: "@satyanadella"
   name: "Satya Nadella"
   role: "Microsoft CEO"
-  reason: "MS AI 전략·Copilot 관련 발언"
+  reason: "엔터프라이즈 AI 전환, Azure 클라우드 인프라, Copilot 생태계"
+
+- handle: "@pc"
+  name: "Patrick Collison"
+  role: "Stripe CEO"
+  reason: "인터넷 경제 인프라, 금융 API, 기술 진보 및 과학 정책 철학"
+
+- handle: "@Werner"
+  name: "Werner Vogels"
+  role: "AWS CTO"
+  reason: "분산 시스템 아키텍처, 24/7 클라우드 회복탄력성 및 운영 통찰"
+
+- handle: "@rauchg"
+  name: "Guillermo Rauch"
+  role: "Vercel CEO"
+  reason: "웹 프론트엔드 생태계, Next.js, AI UI/UX 인터페이스 트렌드"
 
 - handle: "@LisaSu"
   name: "Lisa Su"
   role: "AMD CEO"
-  reason: "AMD AI 칩·데이터센터 전략"
+  reason: "AMD Instinct AI 가속기, ROCm 오픈소스 스택, 데이터센터 인프라"
 
-- handle: "@nvidia"
-  name: "NVIDIA (공식)"
-  role: "NVIDIA"
-  reason: "Jensen Huang 개인 계정 비활성이라 공식 계정으로 대체 — GTC·제품 발표"
+# 3. 경제 · 매크로 · 테크 벤처 투자
+- handle: "@pmarca"
+  name: "Marc Andreessen"
+  role: "a16z 공동창업자"
+  reason: "테크노 낙관주의, 실리콘밸리 벤처 자본 흐름, AI 정책·규제 비판"
 
-- handle: "@DarioAmodei"
-  name: "Dario Amodei"
-  role: "Anthropic CEO"
-  reason: "Anthropic 전략·AI 안전 관점, 드물지만 무거운 발언"
+- handle: "@paulg"
+  name: "Paul Graham"
+  role: "Y Combinator 공동창업자"
+  reason: "스타트업 생태계, 기구·소프트웨어 혁신의 본질, 에세이성 통찰"
 
-- handle: "@alexandrw"
-  name: "Alexandr Wang"
-  role: "Meta 최고AI책임자·Meta Superintelligence Labs 총괄"
-  reason: "10월 17~18경 Muse 출시 감사 장문 포스트, X 파워유저 (밈 350+개 포스트로 Muse 앱 미국 앱스토어 1위 견인)"
+- handle: "@vkhosla"
+  name: "Vinod Khosla"
+  role: "Khosla Ventures 설립자"
+  reason: "AI 토큰 소비량 밸류에이션, 에너지·의료 AI 전환, 벤처 거시경제"
 
+- handle: "@BillAckman"
+  name: "Bill Ackman"
+  role: "Pershing Square Capital 회장"
+  reason: "미국 거시경제, 인플레이션·금리 사이클, 기업 지배구조 및 자본 배분"
+
+- handle: "@RayDalio"
+  name: "Ray Dalio"
+  role: "Bridgewater Associates 설립자"
+  reason: "글로벌 매크로 경제, 부채 위기 사이클, 지정학적 위험과 공급망"
+
+- handle: "@altcap"
+  name: "Brad Gerstner"
+  role: "Altimeter Capital 설립자"
+  reason: "빅테크 밸류에이션, 공개/비공개 자본 시장 동향, AI CapEx 분석"

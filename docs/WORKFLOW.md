@@ -129,7 +129,7 @@
 | `news/YYYY-MM-DD/AI.md` | AI 기업·투자·제품·M&A | |
 | `news/YYYY-MM-DD/모델.md` | 신규 모델 발표 | 성능 수치는 "회사 발표" 명시 |
 | `news/YYYY-MM-DD/엔진.md` | 추론 엔진·런타임 릴리스, 관련 CVE | 소식 없으면 **파일 생략** |
-| `news/YYYY-MM-DD/X.md` | X 유명인 게시글·해석 | `_data/x-watchlist.yml` 명단 기준, 3~5건 |
+| `news/YYYY-MM-DD/X.md` | X 유명인 게시글·해석 | `PEOPLE.md` 및 `_data/x-watchlist.yml` 명단 기준, 3~5건 |
 | `github/YYYY-MM-DD.md` | GitHub 트렌드 | 카테고리별 표 + 별 증가량 |
 | `templates/news-item.md` | 뉴스 항목 템플릿 | |
 | `_data/highlights.yml` | 날짜별 하이라이트 한 줄(분야별) | **새 날짜마다 맨 위에 추가** |

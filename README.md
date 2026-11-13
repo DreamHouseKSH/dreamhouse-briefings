@@ -28,6 +28,7 @@
 
 ```
 AGENTS.md            # 에이전트 핸드오프
+PEOPLE.md            # X 브리핑 모니터링 인물 명단 (19인)
 docs/
   WORKFLOW.md        # 루틴·스타일·저작권 규칙
   index.md           # 문서 허브 (사이트 /docs/)
