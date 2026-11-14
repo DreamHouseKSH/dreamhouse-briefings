@@ -249,7 +249,7 @@ a:hover { color: var(--link-hover); text-decoration: underline; text-underline-o
     background: var(--surface);
   }
   .prose tbody tr:hover { background: var(--surface); }
-  .prose td { padding: .6rem .9rem; border-bottom: 1px solid var(--border); word-break: keep-all; overflow-wrap: break-word; }
+  .prose td { padding: .6rem .9rem; border-bottom: 1px solid var(--border); word-break: keep-all; overflow-wrap: break-word; text-align: left; }
   .prose tbody tr > td:last-child { border-bottom: 0; }
   .prose td[data-label]::before {
     content: attr(data-label);
