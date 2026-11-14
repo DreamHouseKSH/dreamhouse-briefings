@@ -230,6 +230,15 @@
 
   // 4) 표는 가로 스크롤 래퍼로 감싸기
   prose.querySelectorAll("table").forEach(function (t) {
+    // 4-a) 좁은 화면의 카드형 표를 위해 각 칸에 열 제목을 심어 둠 (CSS의 td[data-label]::before)
+    var heads = Array.prototype.map.call(t.querySelectorAll("thead th"), function (h) { return h.textContent.trim(); });
+    if (heads.length) {
+      t.querySelectorAll("tbody tr").forEach(function (r) {
+        Array.prototype.forEach.call(r.children, function (c, i) {
+          if ((c.tagName === "TD" || c.tagName === "TH") && heads[i] && !c.hasAttribute("data-label")) c.setAttribute("data-label", heads[i]);
+        });
+      });
+    }
     if (t.parentNode.classList && t.parentNode.classList.contains("table-wrap")) return;
     var w = document.createElement("div");
     w.className = "table-wrap";
